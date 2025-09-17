@@ -1,0 +1,24 @@
+{
+  "id": "prt_958f261c0001XfV6XRhJiUR9XJ",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01Qvoizs3vk8TQzjgWa38sS6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "VisibleDx"
+    },
+    "output": "Found 22 matches\n/home/user/project/MULTILINGUAL_README.md:\n  Line 1: # VisibleDx Multilingual Implementation\n  Line 5: VisibleDx now supports 7 languages with full medical terminology translation:\n  Line 132:         title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',\n  Line 197: The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\n/home/user/project/lib/translations/fr.ts:\n  Line 5:     title: 'VisibleDx',\n\n/home/user/project/lib/translations/no.ts:\n  Line 5:     title: 'VisibleDx',\n\n/home/user/project/lib/translations/sv.ts:\n  Line 5:     title: 'VisibleDx',\n\n/home/user/project/lib/translations/de.ts:\n  Line 5:     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/lib/translations/da.ts:\n  Line 5:     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 5:     title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n\n/home/user/project/lib/translations/en.ts:\n  Line 5:     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/components/navigation.tsx:\n  Line 189:                   Evidence-based guidelines used in VisibleDx diagnostic algorithms\n  Line 240:                    VisibleDx Menu\n\n/home/user/project/components/disclaimer.tsx:\n  Line 26:           {/* About VisibleDx */}\n  Line 30:               <h3 className=\"font-semibold text-gray-900\">About VisibleDx</h3>\n  Line 33:               VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, \n  Line 83:             <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>\n  Line 87:             <span>© 2024 VisibleDx</span>\n\n/home/user/project/app/layout.tsx:\n  Line 11:   title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/app/new-patient/page.tsx:\n  Line 219:     let soap = `CLINICAL ASSESSMENT - VisibleDx Report\\n`\n  Line 310:     soap += `Clinical Decision Support provided by VisibleDx v1.0\\n`\n\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 119:     let report = \"VisibleDx Clinical Decision Support Report\\n\"",
+    "metadata": {
+      "matches": 22,
+      "truncated": false
+    },
+    "title": "VisibleDx",
+    "time": {
+      "start": 1758133904018,
+      "end": 1758133904036
+    }
+  }
+}

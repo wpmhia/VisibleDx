@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f059b4001xiuRtEi2AEiH8g",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012FKXvyhC8AExbtvEG17tKH",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 215,
+      "limit": 10
+    },
+    "output": "<file>\n00216|     const { demographics, quickScreen, redFlags, standTest, pemQuest, diagnoses } = patientData\n00217|     const currentDate = new Date().toLocaleDateString()\n00218|     \n00219|     let soap = `CLINICAL ASSESSMENT - AutoDx Report\\n`\n00220|     soap += `=========================================\\n\\n`\n00221|     soap += `Date: ${currentDate}\\n`\n00222|     soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\\n`\n00223|     soap += `Patient ID: ${demographics.patientId || 'Not specified'}\\n`\n00224|     soap += `Age: ${demographics.age || 'Not specified'} | Gender: ${demographics.gender || 'Not specified'}\\n\\n`\n00225| \n\n(File has more lines. Use 'offset' parameter to read beyond line 225)\n</file>",
+    "metadata": {
+      "preview": "    const { demographics, quickScreen, redFlags, standTest, pemQuest, diagnoses } = patientData\n    const currentDate = new Date().toLocaleDateString()\n    \n    let soap = `CLINICAL ASSESSMENT - AutoDx Report\\n`\n    soap += `=========================================\\n\\n`\n    soap += `Date: ${currentDate}\\n`\n    soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\\n`\n    soap += `Patient ID: ${demographics.patientId || 'Not specified'}\\n`\n    soap += `Age: ${demographics.age || 'Not specified'} | Gender: ${demographics.gender || 'Not specified'}\\n\\n`\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758133771282,
+      "end": 1758133771283
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f31e7e001BCQjnZjGEV5e9B",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FWy4kLALt9g5iUNVoJjYP7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 1,
+      "limit": 20
+    },
+    "output": "<file>\n00002| \n00003| import { useState } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Badge } from '@/components/ui/badge'\n00007| import { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'\n00008| import Link from 'next/link'\n00009| import { useTranslation } from '@/lib/language-context'\n00010| \n00011| const getModules = (t: any) => [\n00012|   {\n00013|     id: 'quick-screen',\n00014|     title: t.dashboard.modules.quickScreen.title,\n00015|     description: t.dashboard.modules.quickScreen.description,\n00016|     icon: Clock,\n00017|     sensitivity: '0.92',\n00018|     route: '/quick-screen'\n00019|   },\n00020|   {\n00021|     id: 'red-flag',\n\n(File has more lines. Use 'offset' parameter to read beyond line 21)\n</file>",
+    "metadata": {
+      "preview": "\nimport { useState } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Badge } from '@/components/ui/badge'\nimport { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\nconst getModules = (t: any) => [\n  {\n    id: 'quick-screen',\n    title: t.dashboard.modules.quickScreen.title,\n    description: t.dashboard.modules.quickScreen.description,\n    icon: Clock,\n    sensitivity: '0.92',\n    route: '/quick-screen'\n  },\n  {\n    id: 'red-flag',"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758133952713,
+      "end": 1758133952717
+    }
+  }
+}

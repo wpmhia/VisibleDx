@@ -1,0 +1,62 @@
+{
+  "id": "prt_958f2231a001Rd1pHjYIggTMcN",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01BiKU7thCiX5gFU7BRs37Jb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/MULTILINGUAL_README.md",
+      "edits": [
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "# AutoDx Multilingual Implementation",
+          "newString": "# VisibleDx Multilingual Implementation"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "AutoDx now supports 7 languages with full medical terminology translation:",
+          "newString": "VisibleDx now supports 7 languages with full medical terminology translation:"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "        title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',",
+          "newString": "        title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "The multilingual implementation ensures AutoDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.",
+          "newString": "The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity."
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -1,5 +1,5 @@\n-# AutoDx Multilingual Implementation\n+# VisibleDx Multilingual Implementation\n \n ## 🌍 **Supported Languages**\n \n AutoDx now supports 7 languages with full medical terminology translation:\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -1,9 +1,9 @@\n # VisibleDx Multilingual Implementation\n \n ## 🌍 **Supported Languages**\n \n-AutoDx now supports 7 languages with full medical terminology translation:\n+VisibleDx now supports 7 languages with full medical terminology translation:\n \n - 🇺🇸 **English** (en) - Complete\n - 🇳🇱 **Dutch** (nl) - Complete  \n - 🇩🇰 **Danish** (da) - Complete\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -128,9 +128,9 @@\n import { Translation } from './types'\n \n export const sv: Translation = {\n   app: {\n-    title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',\n+     title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',\n     subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',\n     // ... continue translation\n   }\n   // ... complete all sections\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -193,5 +193,5 @@\n - Patient portal language selection\n - Automated language detection from patient records\n - Multi-language clinical report generation\n \n-The multilingual implementation ensures AutoDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\\ No newline at end of file\n+The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\\ No newline at end of file\n"
+        }
+      ]
+    },
+    "title": "MULTILINGUAL_README.md",
+    "time": {
+      "start": 1758133891486,
+      "end": 1758133891502
+    }
+  }
+}

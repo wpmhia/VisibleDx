@@ -1,0 +1,35 @@
+{
+  "id": "prt_958f13ed3001pi9495apbaXs6h",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01UnayXKU7x9mdFJhM34SpwW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    title: 'AutoDx: ME/CFS · Long COVID · POTS',",
+          "newString": "    title: 'VisibleDx: ME/CFS · Long COVID · POTS',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const en: Translation = {\n   app: {\n-    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n+    title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n     subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n     backToDashboard: 'Back to Dashboard'\n   },\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758133830510,
+      "end": 1758133830515
+    }
+  }
+}

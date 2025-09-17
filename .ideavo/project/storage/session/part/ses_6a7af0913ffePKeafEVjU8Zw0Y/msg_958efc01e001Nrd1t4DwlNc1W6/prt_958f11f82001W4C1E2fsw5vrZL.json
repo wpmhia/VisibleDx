@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f11f82001W4C1E2fsw5vrZL",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01R8ci4A9nw4wM1TwPV3xHhk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const en: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n00007|     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n00008|     backToDashboard: 'Back to Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Yes',\n00013|     no: 'No',\n00014|     next: 'Next',\n00015|     previous: 'Previous',\n00016|     continue: 'Continue',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const en: Translation = {\n  app: {\n    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n    tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n    backToDashboard: 'Back to Dashboard'\n  },\n\n  common: {\n    yes: 'Yes',\n    no: 'No',\n    next: 'Next',\n    previous: 'Previous',\n    continue: 'Continue',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758133821898,
+      "end": 1758133821904
+    }
+  }
+}

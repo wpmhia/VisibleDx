@@ -1,0 +1,11 @@
+{
+  "id": "prt_958f3459b001C1SdrhgzeBQLfW",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "## ✅ **App Rebranding Complete!**\n\nSuccessfully updated the app name from **\"AutoDx\"** to **\"VisibleDx\"** throughout the entire application:\n\n### **Updated Files (22 instances total):**\n\n**🔧 Core Application Files:**\n- `/app/layout.tsx` - Main page title\n- `/app/criteria-engine/page.tsx` - Clinical report headers\n- `/app/new-patient/page.tsx` - SOAP report headers and footers\n- `/components/disclaimer.tsx` - About section, version info, copyright\n- `/components/navigation.tsx` - Menu titles and descriptions\n\n**🌍 Translation Files (All 7 Languages):**\n- `/lib/translations/en.ts` - English\n- `/lib/translations/nl.ts` - Dutch  \n- `/lib/translations/da.ts` - Danish\n- `/lib/translations/de.ts` - German\n- `/lib/translations/sv.ts` - Swedish\n- `/lib/translations/no.ts` - Norwegian\n- `/lib/translations/fr.ts` - French\n\n**📄 Documentation:**\n- `/MULTILINGUAL_README.md` - Updated branding references\n\n### **Changes Made:**\n- ✅ Browser tab title now shows \"VisibleDx: ME/CFS · Long COVID · POTS\"\n- ✅ All clinical reports now header as \"VisibleDx Clinical Decision Support Report\" \n- ✅ About section in footer updated to \"About VisibleDx\"\n- ✅ Version info shows \"VisibleDx v1.0\"\n- ✅ Copyright notice updated to \"© 2024 VisibleDx\"\n- ✅ Navigation menu shows \"VisibleDx Menu\"\n- ✅ All language translations updated consistently\n\n### **Verification:**\n- ✅ Build succeeds without errors\n- ✅ No remaining \"AutoDx\" references found\n- ✅ All 22 \"VisibleDx\" references confirmed in correct locations\n\nThe app is now fully rebranded as **VisibleDx** while maintaining all functionality and translations!",
+  "time": {
+    "start": 1758133971985,
+    "end": 1758133971985
+  }
+}

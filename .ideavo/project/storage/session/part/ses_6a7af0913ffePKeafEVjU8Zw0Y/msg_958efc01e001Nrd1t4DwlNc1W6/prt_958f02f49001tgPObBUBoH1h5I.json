@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f02f49001tgPObBUBoH1h5I",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_018NCKLg9oAvunfjVTVEtoMT",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "    let report = \"AutoDx Clinical Decision Support Report\\n\"",
+          "newString": "    let report = \"VisibleDx Clinical Decision Support Report\\n\""
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/app/criteria-engine/page.tsx before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758133761716,
+      "end": 1758133761735
+    }
+  }
+}

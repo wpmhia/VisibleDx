@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f1b947001Ql4j666GgPsQFW",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01AryVebQfD9vkU4L1tfFGae",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/sv.ts",
+      "oldString": "    title: 'AutoDx',",
+      "newString": "    title: 'VisibleDx',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/sv.ts\n===================================================================\n--- /home/user/project/lib/translations/sv.ts\n+++ /home/user/project/lib/translations/sv.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const sv: Translation = {\n   app: {\n-    title: 'AutoDx',\n+    title: 'VisibleDx',\n     subtitle: 'ME/CFS, Long COVID & POTS Diagnostisk Platform',\n     tagline: 'Evidensbaserat diagnostiskt verktyg för ME/CFS, Long COVID och POTS',\n     backToDashboard: 'Tillbaka till Dashboard'\n   },\n"
+    },
+    "title": "lib/translations/sv.ts",
+    "time": {
+      "start": 1758133861384,
+      "end": 1758133861390
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f16357001tPtyjs6D8pNx5S",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ArYbEQV3XYPvazhzQ9AdAK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "    title: 'AutoDx: ME/CVS · Long COVID · POTS',",
+      "newString": "    title: 'VisibleDx: ME/CVS · Long COVID · POTS',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const nl: Translation = {\n   app: {\n-    title: 'AutoDx: ME/CVS · Long COVID · POTS',\n+    title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n     subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',\n     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n     backToDashboard: 'Terug naar Dashboard'\n   },\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758133839678,
+      "end": 1758133839684
+    }
+  }
+}

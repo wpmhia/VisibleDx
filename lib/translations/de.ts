@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const de: Translation = {
   app: {
-    title: 'AutoDx: ME/CFS · Long COVID · POTS',
+    title: 'VisibleDx: ME/CFS · Long COVID · POTS',
     subtitle: 'Ein geführtes, leitlinienbasiertes Diagnosewerkzeug und Entscheidungsunterstützungstool für Kliniker, die Patienten mit Müdigkeit, Schwindel, Gehirnnebel oder Herzklopfen behandeln.',
     tagline: 'Unsichtbare Krankheiten sichtbar machen - mit Evidenz, Empathie und Code.',
     backToDashboard: 'Zurück zum Dashboard'

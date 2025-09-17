@@ -1,0 +1,71 @@
+{
+  "id": "prt_958f0b4c6001xS2C4QRse7mSMB",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_013iPJsbWEZe14MrwQ4QnEwX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "          {/* About AutoDx */}",
+          "newString": "          {/* About VisibleDx */}"
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "              <h3 className=\"font-semibold text-gray-900\">About AutoDx</h3>",
+          "newString": "              <h3 className=\"font-semibold text-gray-900\">About VisibleDx</h3>"
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "              AutoDx is an evidence-based diagnostic decision support tool for ME/CFS,",
+          "newString": "              VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS,"
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "            <span>AutoDx v1.0 - Clinical Decision Support Tool</span>",
+          "newString": "            <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>"
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "            <span>© 2024 AutoDx</span>",
+          "newString": "            <span>© 2024 VisibleDx</span>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -22,9 +22,9 @@\n   </AlertDescription>\n </Alert>\n \n <div className=\"grid md:grid-cols-3 gap-8 mb-8\">\n-  {/* About AutoDx */}\n+  {/* About VisibleDx */}\n   <div>\n     <div className=\"flex items-center gap-2 mb-3\">\n       <Stethoscope className=\"h-4 w-4 text-blue-600\" />\n       <h3 className=\"font-semibold text-gray-900\">About AutoDx</h3>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -26,9 +26,9 @@\n {/* About VisibleDx */}\n <div>\n   <div className=\"flex items-center gap-2 mb-3\">\n     <Stethoscope className=\"h-4 w-4 text-blue-600\" />\n-    <h3 className=\"font-semibold text-gray-900\">About AutoDx</h3>\n+    <h3 className=\"font-semibold text-gray-900\">About VisibleDx</h3>\n   </div>\n   <p className=\"text-sm text-gray-600 mb-3\">\n     AutoDx is an evidence-based diagnostic decision support tool for ME/CFS, \n     Long COVID, and POTS. It implements validated criteria from leading medical \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -29,9 +29,9 @@\n   <Stethoscope className=\"h-4 w-4 text-blue-600\" />\n   <h3 className=\"font-semibold text-gray-900\">About VisibleDx</h3>\n </div>\n <p className=\"text-sm text-gray-600 mb-3\">\n-  AutoDx is an evidence-based diagnostic decision support tool for ME/CFS, \n+  VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, \n   Long COVID, and POTS. It implements validated criteria from leading medical \n   organizations to assist clinicians in systematic evaluation.\n </p>\n <div className=\"flex flex-wrap gap-1\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -79,9 +79,9 @@\n {/* Bottom Footer */}\n <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n   <div className=\"flex items-center gap-2\">\n     <Stethoscope className=\"h-4 w-4\" />\n-    <span>AutoDx v1.0 - Clinical Decision Support Tool</span>\n+    <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>\n   </div>\n   \n   <div className=\"flex items-center gap-4\">\n     <span>© 2024 AutoDx</span>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -83,9 +83,9 @@\n   <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>\n </div>\n \n <div className=\"flex items-center gap-4\">\n-  <span>© 2024 AutoDx</span>\n+  <span>© 2024 VisibleDx</span>\n   <span>•</span>\n   <span>For Healthcare Professionals</span>\n   <span>•</span>\n   <Badge variant=\"secondary\" className=\"text-xs\">\n"
+        }
+      ]
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758133798445,
+      "end": 1758133798467
+    }
+  }
+}

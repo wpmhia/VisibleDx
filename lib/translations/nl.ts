@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const nl: Translation = {
   app: {
-    title: 'AutoDx: ME/CVS · Long COVID · POTS',
+    title: 'VisibleDx: ME/CVS · Long COVID · POTS',
     subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',
     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',
     backToDashboard: 'Terug naar Dashboard'

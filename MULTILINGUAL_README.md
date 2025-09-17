@@ -1,8 +1,8 @@
-# AutoDx Multilingual Implementation
+# VisibleDx Multilingual Implementation
 
 ## 🌍 **Supported Languages**
 
-AutoDx now supports 7 languages with full medical terminology translation:
+VisibleDx now supports 7 languages with full medical terminology translation:
 
 - 🇺🇸 **English** (en) - Complete
 - 🇳🇱 **Dutch** (nl) - Complete  
@@ -129,7 +129,7 @@ To add a new language:
    
    export const sv: Translation = {
      app: {
-       title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',
+        title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',
        subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',
        // ... continue translation
      }
@@ -194,4 +194,4 @@ To add a new language:
 - Automated language detection from patient records
 - Multi-language clinical report generation
 
-The multilingual implementation ensures AutoDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.
+The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f0d361001LUK15CvugI5XMW",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01GJCUNdvBFUKWkZN7wLqCRK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 185,
+      "limit": 15
+    },
+    "output": "<file>\n00186|               <SheetHeader>\n00187|                 <SheetTitle>Clinical Guidelines & References</SheetTitle>\n00188|                 <SheetDescription>\n00189|                   Evidence-based guidelines used in AutoDx diagnostic algorithms\n00190|                 </SheetDescription>\n00191|               </SheetHeader>\n00192|               <div className=\"mt-6 space-y-4\">\n00193|                 {guidelines.map((guideline, index) => (\n00194|                   <div key={index} className=\"border rounded-lg p-4 hover:bg-gray-50\">\n00195|                     <div className=\"flex items-start justify-between gap-2\">\n00196|                       <div className=\"flex-1\">\n00197|                         <h4 className=\"font-medium text-sm leading-relaxed\">{guideline.title}</h4>\n00198|                         <Badge variant=\"outline\" className=\"mt-2 text-xs\">\n00199|                           {guideline.organization}\n00200|                         </Badge>\n\n(File has more lines. Use 'offset' parameter to read beyond line 200)\n</file>",
+    "metadata": {
+      "preview": "              <SheetHeader>\n                <SheetTitle>Clinical Guidelines & References</SheetTitle>\n                <SheetDescription>\n                  Evidence-based guidelines used in AutoDx diagnostic algorithms\n                </SheetDescription>\n              </SheetHeader>\n              <div className=\"mt-6 space-y-4\">\n                {guidelines.map((guideline, index) => (\n                  <div key={index} className=\"border rounded-lg p-4 hover:bg-gray-50\">\n                    <div className=\"flex items-start justify-between gap-2\">\n                      <div className=\"flex-1\">\n                        <h4 className=\"font-medium text-sm leading-relaxed\">{guideline.title}</h4>\n                        <Badge variant=\"outline\" className=\"mt-2 text-xs\">\n                          {guideline.organization}\n                        </Badge>"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758133802471,
+      "end": 1758133802473
+    }
+  }
+}

@@ -23,14 +23,14 @@ export default function Disclaimer() {
         </Alert>
 
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* About AutoDx */}
+          {/* About VisibleDx */}
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Stethoscope className="h-4 w-4 text-blue-600" />
-              <h3 className="font-semibold text-gray-900">About AutoDx</h3>
+              <h3 className="font-semibold text-gray-900">About VisibleDx</h3>
             </div>
             <p className="text-sm text-gray-600 mb-3">
-              AutoDx is an evidence-based diagnostic decision support tool for ME/CFS, 
+              VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, 
               Long COVID, and POTS. It implements validated criteria from leading medical 
               organizations to assist clinicians in systematic evaluation.
             </p>
@@ -80,11 +80,11 @@ export default function Disclaimer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-2">
             <Stethoscope className="h-4 w-4" />
-            <span>AutoDx v1.0 - Clinical Decision Support Tool</span>
+            <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>
           </div>
           
           <div className="flex items-center gap-4">
-            <span>© 2024 AutoDx</span>
+            <span>© 2024 VisibleDx</span>
             <span>•</span>
             <span>For Healthcare Professionals</span>
             <span>•</span>

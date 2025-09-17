@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const no: Translation = {
   app: {
-    title: 'AutoDx',
+    title: 'VisibleDx',
     subtitle: 'ME/CFS, Long COVID & POTS Diagnostisk Plattform',
     tagline: 'Evidensbasert diagnostisk verktøy for ME/CFS, Long COVID og POTS',
     backToDashboard: 'Tilbake til Dashboard'

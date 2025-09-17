@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f14c19001xtqVZtf9ajsyXP",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01F4vkZznS4aHmfU8gXXmJWR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const nl: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx: ME/CVS · Long COVID · POTS',\n00006|     subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',\n00007|     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n00008|     backToDashboard: 'Terug naar Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Ja',\n00013|     no: 'Nee',\n00014|     next: 'Volgende',\n00015|     previous: 'Vorige',\n00016|     continue: 'Doorgaan',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const nl: Translation = {\n  app: {\n    title: 'AutoDx: ME/CVS · Long COVID · POTS',\n    subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',\n    tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n    backToDashboard: 'Terug naar Dashboard'\n  },\n\n  common: {\n    yes: 'Ja',\n    no: 'Nee',\n    next: 'Volgende',\n    previous: 'Vorige',\n    continue: 'Doorgaan',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758133833354,
+      "end": 1758133833356
+    }
+  }
+}

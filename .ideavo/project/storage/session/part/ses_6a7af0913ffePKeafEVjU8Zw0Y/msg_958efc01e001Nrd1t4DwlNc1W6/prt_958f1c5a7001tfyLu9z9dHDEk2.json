@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f1c5a7001tfyLu9z9dHDEk2",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UPBBM4DoUAMBPQeSofVwg5",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const no: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx',\n00006|     subtitle: 'ME/CFS, Long COVID & POTS Diagnostisk Plattform',\n00007|     tagline: 'Evidensbasert diagnostisk verktøy for ME/CFS, Long COVID og POTS',\n00008|     backToDashboard: 'Tilbake til Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Ja',\n00013|     no: 'Nei',\n00014|     next: 'Neste',\n00015|     previous: 'Forrige',\n00016|     continue: 'Fortsett',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const no: Translation = {\n  app: {\n    title: 'AutoDx',\n    subtitle: 'ME/CFS, Long COVID & POTS Diagnostisk Plattform',\n    tagline: 'Evidensbasert diagnostisk verktøy for ME/CFS, Long COVID og POTS',\n    backToDashboard: 'Tilbake til Dashboard'\n  },\n\n  common: {\n    yes: 'Ja',\n    no: 'Nei',\n    next: 'Neste',\n    previous: 'Forrige',\n    continue: 'Fortsett',"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758133864463,
+      "end": 1758133864465
+    }
+  }
+}

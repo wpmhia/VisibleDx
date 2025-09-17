@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f204960012rsi1wp5tpIDnS",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01M23c9F1FTedGEPKtF3Eeyh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/MULTILINGUAL_README.md",
+      "offset": 125,
+      "limit": 15
+    },
+    "output": "<file>\n00126|    ```typescript\n00127|    // lib/translations/sv.ts (Swedish example)\n00128|    import { Translation } from './types'\n00129|    \n00130|    export const sv: Translation = {\n00131|      app: {\n00132|        title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',\n00133|        subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',\n00134|        // ... continue translation\n00135|      }\n00136|      // ... complete all sections\n00137|    }\n00138|    ```\n00139| \n00140| 2. **Update Translation Index**\n\n(File has more lines. Use 'offset' parameter to read beyond line 140)\n</file>",
+    "metadata": {
+      "preview": "   ```typescript\n   // lib/translations/sv.ts (Swedish example)\n   import { Translation } from './types'\n   \n   export const sv: Translation = {\n     app: {\n       title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',\n       subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',\n       // ... continue translation\n     }\n     // ... complete all sections\n   }\n   ```\n\n2. **Update Translation Index**"
+    },
+    "title": "MULTILINGUAL_README.md",
+    "time": {
+      "start": 1758133880538,
+      "end": 1758133880539
+    }
+  }
+}

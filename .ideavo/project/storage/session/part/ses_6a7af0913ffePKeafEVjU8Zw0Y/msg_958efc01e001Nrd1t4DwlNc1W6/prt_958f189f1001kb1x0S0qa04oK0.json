@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f189f1001kb1x0S0qa04oK0",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AbVEFuaguFEoBj7yr4unwC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const de: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'Ein geführtes, leitlinienbasiertes Diagnosewerkzeug und Entscheidungsunterstützungstool für Kliniker, die Patienten mit Müdigkeit, Schwindel, Gehirnnebel oder Herzklopfen behandeln.',\n00007|     tagline: 'Unsichtbare Krankheiten sichtbar machen - mit Evidenz, Empathie und Code.',\n00008|     backToDashboard: 'Zurück zum Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Ja',\n00013|     no: 'Nein',\n00014|     next: 'Weiter',\n00015|     previous: 'Zurück',\n00016|     continue: 'Fortfahren',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const de: Translation = {\n  app: {\n    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'Ein geführtes, leitlinienbasiertes Diagnosewerkzeug und Entscheidungsunterstützungstool für Kliniker, die Patienten mit Müdigkeit, Schwindel, Gehirnnebel oder Herzklopfen behandeln.',\n    tagline: 'Unsichtbare Krankheiten sichtbar machen - mit Evidenz, Empathie und Code.',\n    backToDashboard: 'Zurück zum Dashboard'\n  },\n\n  common: {\n    yes: 'Ja',\n    no: 'Nein',\n    next: 'Weiter',\n    previous: 'Zurück',\n    continue: 'Fortfahren',"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758133849171,
+      "end": 1758133849174
+    }
+  }
+}

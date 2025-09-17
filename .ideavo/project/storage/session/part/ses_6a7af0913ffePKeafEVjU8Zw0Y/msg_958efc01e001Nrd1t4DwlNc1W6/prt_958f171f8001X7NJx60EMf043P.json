@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f171f8001X7NJx60EMf043P",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013wQ8fzxkCf7Jxf2Wwdr9Yc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const da: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'Et guidet, retningslinje-baseret diagnostisk værktøj og beslutningsstøtte til klinikere, der behandler patienter med træthed, svimmelhed, hjernetåge eller hjertebanken.',\n00007|     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',\n00008|     backToDashboard: 'Tilbage til Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Ja',\n00013|     no: 'Nej',\n00014|     next: 'Næste',\n00015|     previous: 'Forrige',\n00016|     continue: 'Fortsæt',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const da: Translation = {\n  app: {\n    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'Et guidet, retningslinje-baseret diagnostisk værktøj og beslutningsstøtte til klinikere, der behandler patienter med træthed, svimmelhed, hjernetåge eller hjertebanken.',\n    tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',\n    backToDashboard: 'Tilbage til Dashboard'\n  },\n\n  common: {\n    yes: 'Ja',\n    no: 'Nej',\n    next: 'Næste',\n    previous: 'Forrige',\n    continue: 'Fortsæt',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758133842964,
+      "end": 1758133842966
+    }
+  }
+}

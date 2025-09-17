@@ -1,0 +1,24 @@
+{
+  "id": "prt_958f00584001gWhTLQho6MzlyN",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_018cfTuDYZg3x3eptpUBWisM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "AutoDx"
+    },
+    "output": "Found 22 matches\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 119:     let report = \"AutoDx Clinical Decision Support Report\\n\"\n\n/home/user/project/app/new-patient/page.tsx:\n  Line 219:     let soap = `CLINICAL ASSESSMENT - AutoDx Report\\n`\n  Line 310:     soap += `Clinical Decision Support provided by AutoDx v1.0\\n`\n\n/home/user/project/app/layout.tsx:\n  Line 11:   title: 'AutoDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/components/disclaimer.tsx:\n  Line 26:           {/* About AutoDx */}\n  Line 30:               <h3 className=\"font-semibold text-gray-900\">About AutoDx</h3>\n  Line 33:               AutoDx is an evidence-based diagnostic decision support tool for ME/CFS, \n  Line 83:             <span>AutoDx v1.0 - Clinical Decision Support Tool</span>\n  Line 87:             <span>© 2024 AutoDx</span>\n\n/home/user/project/components/navigation.tsx:\n  Line 189:                   Evidence-based guidelines used in AutoDx diagnostic algorithms\n  Line 240:                   AutoDx Menu\n\n/home/user/project/lib/translations/fr.ts:\n  Line 5:     title: 'AutoDx',\n\n/home/user/project/lib/translations/no.ts:\n  Line 5:     title: 'AutoDx',\n\n/home/user/project/lib/translations/sv.ts:\n  Line 5:     title: 'AutoDx',\n\n/home/user/project/MULTILINGUAL_README.md:\n  Line 1: # AutoDx Multilingual Implementation\n  Line 5: AutoDx now supports 7 languages with full medical terminology translation:\n  Line 132:        title: 'AutoDx: ME/CFS · Långvarig COVID · POTS',\n  Line 197: The multilingual implementation ensures AutoDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\n/home/user/project/lib/translations/de.ts:\n  Line 5:     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/lib/translations/da.ts:\n  Line 5:     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 5:     title: 'AutoDx: ME/CVS · Long COVID · POTS',\n\n/home/user/project/lib/translations/en.ts:\n  Line 5:     title: 'AutoDx: ME/CFS · Long COVID · POTS',",
+    "metadata": {
+      "matches": 22,
+      "truncated": false
+    },
+    "title": "AutoDx",
+    "time": {
+      "start": 1758133749402,
+      "end": 1758133749416
+    }
+  }
+}

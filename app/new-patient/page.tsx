@@ -216,7 +216,7 @@ export default function NewPatientWorkflow() {
     const { demographics, quickScreen, redFlags, standTest, pemQuest, diagnoses } = patientData
     const currentDate = new Date().toLocaleDateString()
     
-    let soap = `CLINICAL ASSESSMENT - AutoDx Report\n`
+    let soap = `CLINICAL ASSESSMENT - VisibleDx Report\n`
     soap += `=========================================\n\n`
     soap += `Date: ${currentDate}\n`
     soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\n`
@@ -307,7 +307,7 @@ export default function NewPatientWorkflow() {
     soap += `  • Review laboratory results and adjust treatment accordingly\n`
     soap += `  • Patient education materials provided\n\n`
     
-    soap += `Clinical Decision Support provided by AutoDx v1.0\n`
+    soap += `Clinical Decision Support provided by VisibleDx v1.0\n`
     soap += `This assessment is for clinical decision support only and does not replace physician judgment.\n`
 
     return soap

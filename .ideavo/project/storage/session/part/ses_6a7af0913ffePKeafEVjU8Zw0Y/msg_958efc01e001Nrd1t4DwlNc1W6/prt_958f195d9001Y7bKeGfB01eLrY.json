@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f195d9001Y7bKeGfB01eLrY",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01NLyds5sHexihVnbLqTbf4k",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "oldString": "    title: 'AutoDx: ME/CFS · Long COVID · POTS',",
+      "newString": "    title: 'VisibleDx: ME/CFS · Long COVID · POTS',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/de.ts\n===================================================================\n--- /home/user/project/lib/translations/de.ts\n+++ /home/user/project/lib/translations/de.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const de: Translation = {\n   app: {\n-    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n+    title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n     subtitle: 'Ein geführtes, leitlinienbasiertes Diagnosewerkzeug und Entscheidungsunterstützungstool für Kliniker, die Patienten mit Müdigkeit, Schwindel, Gehirnnebel oder Herzklopfen behandeln.',\n     tagline: 'Unsichtbare Krankheiten sichtbar machen - mit Evidenz, Empathie und Code.',\n     backToDashboard: 'Zurück zum Dashboard'\n   },\n"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758133852494,
+      "end": 1758133852499
+    }
+  }
+}

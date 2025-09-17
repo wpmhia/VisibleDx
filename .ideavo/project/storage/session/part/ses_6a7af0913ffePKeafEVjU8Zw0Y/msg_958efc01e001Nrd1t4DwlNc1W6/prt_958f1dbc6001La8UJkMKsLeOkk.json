@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f1dbc6001La8UJkMKsLeOkk",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AUo63P2DC3WirokuZLPbU2",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| export const fr: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx',\n00006|     subtitle: 'Plateforme Diagnostique ME/CFS, Long COVID & POTS',\n00007|     tagline: 'Outil diagnostique basé sur les preuves pour ME/CFS, Long COVID et POTS',\n00008|     backToDashboard: 'Retour au Tableau de Bord'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Oui',\n00013|     no: 'Non',\n00014|     next: 'Suivant',\n00015|     previous: 'Précédent',\n00016|     continue: 'Continuer',\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nexport const fr: Translation = {\n  app: {\n    title: 'AutoDx',\n    subtitle: 'Plateforme Diagnostique ME/CFS, Long COVID & POTS',\n    tagline: 'Outil diagnostique basé sur les preuves pour ME/CFS, Long COVID et POTS',\n    backToDashboard: 'Retour au Tableau de Bord'\n  },\n\n  common: {\n    yes: 'Oui',\n    no: 'Non',\n    next: 'Suivant',\n    previous: 'Précédent',\n    continue: 'Continuer',"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758133870100,
+      "end": 1758133870107
+    }
+  }
+}

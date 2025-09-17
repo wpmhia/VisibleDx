@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f040ba0014J0h4LDci7GpeJ",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01WCgaDn2tVpZjarnc13c3Lg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 115,
+      "limit": 10
+    },
+    "output": "<file>\n00116|     const diagnoses = calculateDiagnoses()\n00117|     const positives = diagnoses.filter(d => d.met)\n00118|     \n00119|     let report = \"AutoDx Clinical Decision Support Report\\n\"\n00120|     report += \"=====================================\\n\\n\"\n00121|     \n00122|     report += \"DIAGNOSTIC SUMMARY:\\n\"\n00123|     if (positives.length === 0) {\n00124|       report += \"• No criteria met for ME/CFS, Long COVID, or POTS\\n\"\n00125|       report += \"• Consider alternative diagnoses\\n\"\n\n(File has more lines. Use 'offset' parameter to read beyond line 125)\n</file>",
+    "metadata": {
+      "preview": "    const diagnoses = calculateDiagnoses()\n    const positives = diagnoses.filter(d => d.met)\n    \n    let report = \"AutoDx Clinical Decision Support Report\\n\"\n    report += \"=====================================\\n\\n\"\n    \n    report += \"DIAGNOSTIC SUMMARY:\\n\"\n    if (positives.length === 0) {\n      report += \"• No criteria met for ME/CFS, Long COVID, or POTS\\n\"\n      report += \"• Consider alternative diagnoses\\n\""
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758133764966,
+      "end": 1758133764970
+    }
+  }
+}

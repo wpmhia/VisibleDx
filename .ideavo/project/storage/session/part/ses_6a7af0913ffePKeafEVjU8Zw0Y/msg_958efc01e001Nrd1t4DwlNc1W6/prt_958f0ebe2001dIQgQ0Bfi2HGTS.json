@@ -1,0 +1,44 @@
+{
+  "id": "prt_958f0ebe2001dIQgQ0Bfi2HGTS",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01HJiJvSRTCvHst3PF3VDLcC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "                  Evidence-based guidelines used in AutoDx diagnostic algorithms",
+          "newString": "                  Evidence-based guidelines used in VisibleDx diagnostic algorithms"
+        },
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "                   AutoDx Menu",
+          "newString": "                   VisibleDx Menu"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -185,9 +185,9 @@\n <SheetContent>\n   <SheetHeader>\n     <SheetTitle>Clinical Guidelines & References</SheetTitle>\n     <SheetDescription>\n-      Evidence-based guidelines used in AutoDx diagnostic algorithms\n+      Evidence-based guidelines used in VisibleDx diagnostic algorithms\n     </SheetDescription>\n   </SheetHeader>\n   <div className=\"mt-6 space-y-4\">\n     {guidelines.map((guideline, index) => (\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -236,9 +236,9 @@\n <SheetContent side=\"right\">\n   <SheetHeader>\n     <SheetTitle className=\"flex items-center gap-2\">\n       <Stethoscope className=\"h-5 w-5 text-blue-600\" />\n-      AutoDx Menu\n+       VisibleDx Menu\n     </SheetTitle>\n   </SheetHeader>\n   <div className=\"mt-6 space-y-4\">\n     <div>\n"
+        }
+      ]
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758133809702,
+      "end": 1758133809710
+    }
+  }
+}

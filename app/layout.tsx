@@ -8,7 +8,7 @@ import Disclaimer from '@/components/disclaimer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AutoDx: ME/CFS · Long COVID · POTS',
+  title: 'VisibleDx: ME/CFS · Long COVID · POTS',
   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',
 };
 

@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const da: Translation = {
   app: {
-    title: 'AutoDx: ME/CFS · Long COVID · POTS',
+    title: 'VisibleDx: ME/CFS · Long COVID · POTS',
     subtitle: 'Et guidet, retningslinje-baseret diagnostisk værktøj og beslutningsstøtte til klinikere, der behandler patienter med træthed, svimmelhed, hjernetåge eller hjertebanken.',
     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',
     backToDashboard: 'Tilbage til Dashboard'

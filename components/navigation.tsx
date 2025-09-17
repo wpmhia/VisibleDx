@@ -186,7 +186,7 @@ export default function Navigation() {
               <SheetHeader>
                 <SheetTitle>Clinical Guidelines & References</SheetTitle>
                 <SheetDescription>
-                  Evidence-based guidelines used in AutoDx diagnostic algorithms
+                  Evidence-based guidelines used in VisibleDx diagnostic algorithms
                 </SheetDescription>
               </SheetHeader>
               <div className="mt-6 space-y-4">
@@ -237,7 +237,7 @@ export default function Navigation() {
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
                   <Stethoscope className="h-5 w-5 text-blue-600" />
-                  AutoDx Menu
+                   VisibleDx Menu
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-6 space-y-4">

@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const sv: Translation = {
   app: {
-    title: 'AutoDx',
+    title: 'VisibleDx',
     subtitle: 'ME/CFS, Long COVID & POTS Diagnostisk Platform',
     tagline: 'Evidensbaserat diagnostiskt verktyg för ME/CFS, Long COVID och POTS',
     backToDashboard: 'Tillbaka till Dashboard'

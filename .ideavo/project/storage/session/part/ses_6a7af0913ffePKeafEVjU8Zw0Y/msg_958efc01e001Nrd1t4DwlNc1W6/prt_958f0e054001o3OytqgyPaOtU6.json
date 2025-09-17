@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f0e054001o3OytqgyPaOtU6",
+  "messageID": "msg_958efc01e001Nrd1t4DwlNc1W6",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JUJL8m39DBjH5nCMiWc3NA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 235,
+      "limit": 15
+    },
+    "output": "<file>\n00236|             <SheetContent side=\"right\">\n00237|               <SheetHeader>\n00238|                 <SheetTitle className=\"flex items-center gap-2\">\n00239|                   <Stethoscope className=\"h-5 w-5 text-blue-600\" />\n00240|                   AutoDx Menu\n00241|                 </SheetTitle>\n00242|               </SheetHeader>\n00243|               <div className=\"mt-6 space-y-4\">\n00244|                 <div>\n00245|                   <h3 className=\"font-semibold mb-3 text-sm uppercase tracking-wide text-gray-500\">\n00246|                     Assessment Modules\n00247|                   </h3>\n00248|                   <div className=\"space-y-2\">\n00249|                     {assessmentModules.map((module) => (\n00250|                       <Link\n\n(File has more lines. Use 'offset' parameter to read beyond line 250)\n</file>",
+    "metadata": {
+      "preview": "            <SheetContent side=\"right\">\n              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <Stethoscope className=\"h-5 w-5 text-blue-600\" />\n                  AutoDx Menu\n                </SheetTitle>\n              </SheetHeader>\n              <div className=\"mt-6 space-y-4\">\n                <div>\n                  <h3 className=\"font-semibold mb-3 text-sm uppercase tracking-wide text-gray-500\">\n                    Assessment Modules\n                  </h3>\n                  <div className=\"space-y-2\">\n                    {assessmentModules.map((module) => (\n                      <Link"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758133805393,
+      "end": 1758133805395
+    }
+  }
+}
