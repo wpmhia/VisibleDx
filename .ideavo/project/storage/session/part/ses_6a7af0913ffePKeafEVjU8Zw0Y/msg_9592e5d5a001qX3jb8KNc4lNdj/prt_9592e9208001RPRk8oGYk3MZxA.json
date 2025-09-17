@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592e9208001RPRk8oGYk3MZxA",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01DbMQiXhqneUjRGrSw9RPxk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "const routineLabs|getRoutineLabs\"",
+      "path": "/home/user/project/app/red-flag-checker"
+    },
+    "output": "Found 1 matches\n/home/user/project/app/red-flag-checker/page.tsx:\n  Line 69:   const routineLabs = getRoutineLabs(t)",
+    "metadata": {
+      "matches": 1,
+      "truncated": false
+    },
+    "title": "const routineLabs|getRoutineLabs\"",
+    "time": {
+      "start": 1758137848947,
+      "end": 1758137848960
+    }
+  }
+}

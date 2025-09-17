@@ -1,0 +1,11 @@
+{
+  "id": "prt_9592ead8a0012mqBnZMhT0aAsj",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I need to check what `mecfsChecked` and `longCovidChecked` contain. Let me look at how they're defined:",
+  "time": {
+    "start": 1758137856171,
+    "end": 1758137856171
+  }
+}

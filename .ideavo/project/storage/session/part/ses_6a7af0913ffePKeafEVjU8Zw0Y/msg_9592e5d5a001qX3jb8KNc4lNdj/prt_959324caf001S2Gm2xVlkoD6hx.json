@@ -1,0 +1,18 @@
+{
+  "id": "prt_959324caf001S2Gm2xVlkoD6hx",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(i18n): add multilingual comorbidity options to subtype advisor",
+  "cost": 1.0387497,
+  "tokens": {
+    "input": 0,
+    "output": 579,
+    "reasoning": 0,
+    "cache": {
+      "write": 358,
+      "read": 58960
+    }
+  }
+}

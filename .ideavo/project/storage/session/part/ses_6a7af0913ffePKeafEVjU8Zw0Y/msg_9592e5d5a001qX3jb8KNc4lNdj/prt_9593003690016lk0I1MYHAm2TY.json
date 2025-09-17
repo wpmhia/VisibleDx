@@ -1,0 +1,20 @@
+{
+  "id": "prt_9593003690016lk0I1MYHAm2TY",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01KgqAUwaTKcBdVCb4zy19v3",
+  "state": {
+    "status": "error",
+    "input": {
+      "pattern": "comorbidities\"",
+      "path": "/home/user/project/lib/translations\""
+    },
+    "error": "Error: ripgrep failed: /home/user/project/lib/translations\": No such file or directory (os error 2)\n",
+    "time": {
+      "start": 1758137943090,
+      "end": 1758137943099
+    }
+  }
+}

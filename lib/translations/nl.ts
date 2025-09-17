@@ -507,7 +507,8 @@ export const nl: Translation = {
     patientInfo: {
       title: 'Patiënt Informatie',
       description: 'Basis patiëntgegevens voor behandelingsplanning',
-      comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'
+      comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)',
+      comorbidityOptions: ['Diabetes', 'Auto-immuunziekte', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592eb0ac001wFJV6bcovNeT9S",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01MuXHNpmYhbvfobJadfPXCA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "mecfsChecked|longCovidChecked\"",
+      "path": "/home/user/project/app/criteria-engine"
+    },
+    "output": "Found 5 matches\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 47:   const [mecfsChecked, setMecfsChecked] = useState(() => getMECFSCriteria())\n  Line 75:     const mecfsCore = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep'].includes(c.id) && c.met).length\n  Line 76:     const mecfsAdditional = mecfsChecked.filter(c => ['cognitive', 'orthostatic'].includes(c.id) && c.met).length\n  Line 83:       criteria: mecfsChecked,\n  Line 329:                 {mecfsChecked.map((criterion) => (",
+    "metadata": {
+      "matches": 5,
+      "truncated": false
+    },
+    "title": "mecfsChecked|longCovidChecked\"",
+    "time": {
+      "start": 1758137856739,
+      "end": 1758137856750
+    }
+  }
+}

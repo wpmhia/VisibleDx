@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592f533e001uG2lahl4NrVsV7",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_018PhnSqAr6AkgRbbEdLweTx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "createRedFlagSymptoms",
+      "path": "/home/user/project"
+    },
+    "output": "Found 2 matches\n/home/user/project/app/new-patient/page.tsx:\n  Line 99: const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  Line 143:   const redFlagSymptoms = createRedFlagSymptoms(t)",
+    "metadata": {
+      "matches": 2,
+      "truncated": false
+    },
+    "title": "createRedFlagSymptoms",
+    "time": {
+      "start": 1758137898264,
+      "end": 1758137898280
+    }
+  }
+}

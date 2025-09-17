@@ -539,7 +539,8 @@ export const fr: Translation = {
     patientInfo: {
       title: 'Information Patient',
       description: 'Détails de base du patient pour planification du traitement',
-      comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\'appliquent)'
+      comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\'appliquent)',
+      comorbidityOptions: ['Diabète', 'Maladie Auto-immune', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592f0339001oVqFR7abLU0ne0",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AZL4xYvkQEoGKq4deiBo3V",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 720,
+      "limit": 20
+    },
+    "output": "<file>\n00721|               <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n00722|             </CardHeader>\n00723|             <CardContent>\n00724|               <div className=\"space-y-3\">\n00725|                 {redFlagSymptoms.map((flag) => (\n00726|                   <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00727|                     <Checkbox\n00728|                       id={flag.id}\n00729|                       checked={patientData.redFlags.symptoms.includes(flag.id)}\n00730|                       onCheckedChange={(checked) => {\n00731|                         if (checked) {\n00732|                           setPatientData(prev => ({\n00733|                             ...prev,\n00734|                             redFlags: {\n00735|                               ...prev.redFlags,\n00736|                               symptoms: [...prev.redFlags.symptoms, flag.id],\n00737|                               priority: flag.priority === 'high' ? 'urgent' : prev.redFlags.priority\n00738|                             }\n00739|                           }))\n00740|                         } else {\n\n(File has more lines. Use 'offset' parameter to read beyond line 740)\n</file>",
+    "metadata": {
+      "preview": "              <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n            </CardHeader>\n            <CardContent>\n              <div className=\"space-y-3\">\n                {redFlagSymptoms.map((flag) => (\n                  <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={flag.id}\n                      checked={patientData.redFlags.symptoms.includes(flag.id)}\n                      onCheckedChange={(checked) => {\n                        if (checked) {\n                          setPatientData(prev => ({\n                            ...prev,\n                            redFlags: {\n                              ...prev.redFlags,\n                              symptoms: [...prev.redFlags.symptoms, flag.id],\n                              priority: flag.priority === 'high' ? 'urgent' : prev.redFlags.priority\n                            }\n                          }))\n                        } else {"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758137878229,
+      "end": 1758137878231
+    }
+  }
+}

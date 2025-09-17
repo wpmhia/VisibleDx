@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592edf070011vVYfKf99evSSX",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DKH8m8xE9f2JnLZGe81rbR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 385,
+      "limit": 50
+    },
+    "output": "<file>\n00386|                   <Label>{t.subtype.patientInfo.comorbidities}</Label>\n00387|                   <div className=\"flex gap-4 mt-2\">\n00388|                     {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (\n00389|                       <div key={condition} className=\"flex items-center space-x-2\">\n00390|                         <Checkbox\n00391|                           id={condition}\n00392|                           checked={comorbidities.includes(condition)}\n00393|                           onCheckedChange={(checked) => {\n00394|                             if (checked) {\n00395|                               setComorbidities(prev => [...prev, condition])\n00396|                             } else {\n00397|                               setComorbidities(prev => prev.filter(c => c !== condition))\n00398|                             }\n00399|                           }}\n00400|                         />\n00401|                         <Label htmlFor={condition} className=\"text-sm\">{condition}</Label>\n00402|                       </div>\n00403|                     ))}\n00404|                   </div>\n00405|                 </div>\n00406|               </div>\n00407|             </CardContent>\n00408|           </Card>\n00409| \n00410|           {subtypeData.map((subtype) => (\n00411|             <Card key={subtype.id} className={`border-${subtype.color}-200`}>\n00412|               <CardHeader>\n00413|                 <CardTitle className={`text-lg text-${subtype.color}-800 flex items-center gap-2`}>\n00414|                   <subtype.icon className=\"h-5 w-5\" />\n00415|                   {subtype.name}\n00416|                 </CardTitle>\n00417|                 <CardDescription>{subtype.description}</CardDescription>\n00418|               </CardHeader>\n00419|               <CardContent>\n00420|                 <div className=\"space-y-3\">\n00421|                   {subtype.criteria.map((criterion) => (\n00422|                     <div key={criterion.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00423|                       <Checkbox\n00424|                         id={`${subtype.id}-${criterion.id}`}\n00425|                         checked={criterion.checked}\n00426|                         onCheckedChange={(checked) => handleCriteriaChange(subtype.id, criterion.id, !!checked)}\n00427|                       />\n00428|                       <Label htmlFor={`${subtype.id}-${criterion.id}`} className=\"cursor-pointer text-sm flex-1\">\n00429|                         {criterion.description}\n00430|                       </Label>\n00431|                     </div>\n00432|                   ))}\n00433|                 </div>\n00434|                 \n00435|                 <div className=\"mt-4 p-3 bg-gray-50 rounded-lg\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 435)\n</file>",
+    "metadata": {
+      "preview": "                  <Label>{t.subtype.patientInfo.comorbidities}</Label>\n                  <div className=\"flex gap-4 mt-2\">\n                    {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (\n                      <div key={condition} className=\"flex items-center space-x-2\">\n                        <Checkbox\n                          id={condition}\n                          checked={comorbidities.includes(condition)}\n                          onCheckedChange={(checked) => {\n                            if (checked) {\n                              setComorbidities(prev => [...prev, condition])\n                            } else {\n                              setComorbidities(prev => prev.filter(c => c !== condition))\n                            }\n                          }}\n                        />\n                        <Label htmlFor={condition} className=\"text-sm\">{condition}</Label>\n                      </div>\n                    ))}\n                  </div>\n                </div>"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758137868955,
+      "end": 1758137868956
+    }
+  }
+}

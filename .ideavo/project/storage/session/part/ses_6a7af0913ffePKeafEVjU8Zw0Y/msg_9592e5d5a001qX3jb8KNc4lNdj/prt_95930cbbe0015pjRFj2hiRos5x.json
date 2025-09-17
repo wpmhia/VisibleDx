@@ -1,0 +1,25 @@
+{
+  "id": "prt_95930cbbe0015pjRFj2hiRos5x",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011qVywpewZMuSejJAFA5S9R",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 540,
+      "limit": 5
+    },
+    "output": "<file>\n00541|       description: 'Grunnleggende pasientdata for behandlingsplanlegging',\n00542|       comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'\n00543|     },\n00544|     subtypes: {\n00545|       hypovolemic: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 545)\n</file>",
+    "metadata": {
+      "preview": "      description: 'Grunnleggende pasientdata for behandlingsplanlegging',\n      comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'\n    },\n    subtypes: {\n      hypovolemic: {"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758137994777,
+      "end": 1758137994779
+    }
+  }
+}

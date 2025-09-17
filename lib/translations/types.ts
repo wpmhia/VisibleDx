@@ -389,6 +389,7 @@ export interface Translation {
       title: string
       description: string
       comorbidities: string
+      comorbidityOptions: string[]
     }
     subtypes: {
       hypovolemic: {

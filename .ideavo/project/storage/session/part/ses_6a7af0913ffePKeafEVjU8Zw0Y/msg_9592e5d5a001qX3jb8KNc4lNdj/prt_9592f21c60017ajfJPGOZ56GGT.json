@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592f21c60017ajfJPGOZ56GGT",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01QcWqx6MAS8WgA233ciJMRM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "redFlagSymptoms\"",
+      "path": "/home/user/project/app/new-patient"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "redFlagSymptoms\"",
+    "time": {
+      "start": 1758137885363,
+      "end": 1758137885372
+    }
+  }
+}

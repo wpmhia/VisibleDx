@@ -1,0 +1,11 @@
+{
+  "id": "prt_9592eeb70001V0B86b5ORIrSF8",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I found an issue! On line 388, the comorbidities are hardcoded in English: `['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS']` and on line 401 they display as `{condition}` without translation.\n\nLet me also check what `subtypeData` contains by looking at the beginning of the file:",
+  "time": {
+    "start": 1758137873013,
+    "end": 1758137873013
+  }
+}

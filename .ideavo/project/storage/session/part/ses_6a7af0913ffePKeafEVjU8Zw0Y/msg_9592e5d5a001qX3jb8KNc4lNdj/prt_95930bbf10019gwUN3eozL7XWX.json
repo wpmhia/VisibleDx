@@ -1,0 +1,26 @@
+{
+  "id": "prt_95930bbf10019gwUN3eozL7XWX",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Hvn1oEYRRQXZCbGVHRP2tS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/sv.ts",
+      "oldString": "      comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)'\n    },",
+      "newString": "      comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)',\n      comorbidityOptions: ['Diabetes', 'Autoimmun sjukdom', 'EDS', 'MCAS']\n    },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/sv.ts\n===================================================================\n--- /home/user/project/lib/translations/sv.ts\n+++ /home/user/project/lib/translations/sv.ts\n@@ -538,9 +538,10 @@\n description: 'Bestäm POTS-subtyp för personaliserade behandlingsrekommendationer',\n patientInfo: {\n   title: 'Patientinformation',\n   description: 'Grundläggande patientuppgifter för behandlingsplanering',\n-  comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)'\n+  comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)',\n+  comorbidityOptions: ['Diabetes', 'Autoimmun sjukdom', 'EDS', 'MCAS']\n },\n subtypes: {\n   hypovolemic: {\n     name: 'Hypovolemisk POTS',\n"
+    },
+    "title": "lib/translations/sv.ts",
+    "time": {
+      "start": 1758137991452,
+      "end": 1758137991465
+    }
+  }
+}

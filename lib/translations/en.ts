@@ -507,7 +507,8 @@ export const en: Translation = {
     patientInfo: {
       title: 'Patient Information',
       description: 'Basic patient details for treatment planning',
-      comorbidities: 'Relevant Comorbidities (check all that apply)'
+      comorbidities: 'Relevant Comorbidities (check all that apply)',
+      comorbidityOptions: ['Diabetes', 'Autoimmune Disease', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

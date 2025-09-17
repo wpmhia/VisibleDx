@@ -1,0 +1,20 @@
+{
+  "id": "prt_9592f4688001DobrcfFNOgp80U",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01RYuqpBKjxbFET3DXnMmULJ",
+  "state": {
+    "status": "error",
+    "input": {
+      "pattern": "(createRedFlagSymptoms|function createRedFlagSymptoms\"",
+      "path": "/home/user/project/app/new-patient"
+    },
+    "error": "Error: ripgrep failed: regex parse error:\n    (createRedFlagSymptoms|function createRedFlagSymptoms\"\n    ^\nerror: unclosed group\n",
+    "time": {
+      "start": 1758137895241,
+      "end": 1758137895247
+    }
+  }
+}

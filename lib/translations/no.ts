@@ -539,7 +539,8 @@ export const no: Translation = {
     patientInfo: {
       title: 'Pasientinformasjon',
       description: 'Grunnleggende pasientdata for behandlingsplanlegging',
-      comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'
+      comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)',
+      comorbidityOptions: ['Diabetes', 'Autoimmun sykdom', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

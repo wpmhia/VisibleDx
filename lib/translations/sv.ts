@@ -539,7 +539,8 @@ export const sv: Translation = {
     patientInfo: {
       title: 'Patientinformation',
       description: 'Grundläggande patientuppgifter för behandlingsplanering',
-      comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)'
+      comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)',
+      comorbidityOptions: ['Diabetes', 'Autoimmun sjukdom', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

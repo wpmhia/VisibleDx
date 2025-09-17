@@ -1,0 +1,26 @@
+{
+  "id": "prt_95930a062001vDWpkl34jBUVl0",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GLdY6xqZ8ZouqYze6gsgQY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "oldString": "      comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)'\n    },",
+      "newString": "      comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)',\n      comorbidityOptions: ['Diabetes', 'Autoimmunerkrankung', 'EDS', 'MCAS']\n    },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/de.ts\n===================================================================\n--- /home/user/project/lib/translations/de.ts\n+++ /home/user/project/lib/translations/de.ts\n@@ -512,9 +512,10 @@\n description: 'POTS-Subtyp für personalisierte Behandlungsempfehlungen bestimmen',\n patientInfo: {\n   title: 'Patienteninformation',\n   description: 'Grundlegende Patientendaten für Behandlungsplanung',\n-  comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)'\n+  comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)',\n+  comorbidityOptions: ['Diabetes', 'Autoimmunerkrankung', 'EDS', 'MCAS']\n },\n subtypes: {\n   hypovolemic: {\n     name: 'Hypovolämisches POTS',\n"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758137984464,
+      "end": 1758137984480
+    }
+  }
+}

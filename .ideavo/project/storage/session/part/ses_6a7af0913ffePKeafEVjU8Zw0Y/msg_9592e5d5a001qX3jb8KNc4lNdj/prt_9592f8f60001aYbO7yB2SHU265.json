@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592f8f60001aYbO7yB2SHU265",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013iQfMa2KvBSphPU78e6NRk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 385,
+      "limit": 15
+    },
+    "output": "<file>\n00386|     title: string\n00387|     description: string\n00388|     patientInfo: {\n00389|       title: string\n00390|       description: string\n00391|       comorbidities: string\n00392|     }\n00393|     subtypes: {\n00394|       hypovolemic: {\n00395|         name: string\n00396|         description: string\n00397|         criteria: string[]\n00398|         treatments: {\n00399|           nonPharmacological: string[]\n00400|           firstLine: string[]\n\n(File has more lines. Use 'offset' parameter to read beyond line 400)\n</file>",
+    "metadata": {
+      "preview": "    title: string\n    description: string\n    patientInfo: {\n      title: string\n      description: string\n      comorbidities: string\n    }\n    subtypes: {\n      hypovolemic: {\n        name: string\n        description: string\n        criteria: string[]\n        treatments: {\n          nonPharmacological: string[]\n          firstLine: string[]"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758137914098,
+      "end": 1758137914100
+    }
+  }
+}

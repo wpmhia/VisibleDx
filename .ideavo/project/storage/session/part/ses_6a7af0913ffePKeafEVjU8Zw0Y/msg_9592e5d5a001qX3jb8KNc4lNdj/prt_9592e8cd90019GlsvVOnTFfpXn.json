@@ -1,0 +1,11 @@
+{
+  "id": "prt_9592e8cd90019GlsvVOnTFfpXn",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see that the red flag symptoms are using `t.redFlag.symptoms.list[index]` which is multilingual, but I notice line 319 shows `{labCategory.category}` which might not be translated. Let me check what `routineLabs` contains:",
+  "time": {
+    "start": 1758137848327,
+    "end": 1758137848327
+  }
+}

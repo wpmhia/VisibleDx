@@ -1,0 +1,26 @@
+{
+  "id": "prt_959312301001JeT3FN4vku2dNz",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01386kPoLpCCrtpuqgtUP7eM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "                  <Label>{t.subtype.patientInfo.comorbidities}</Label>\n                  <div className=\"flex gap-4 mt-2\">\n                    {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (\n                      <div key={condition} className=\"flex items-center space-x-2\">\n                        <Checkbox\n                          id={condition}\n                          checked={comorbidities.includes(condition)}\n                          onCheckedChange={(checked) => {\n                            if (checked) {\n                              setComorbidities(prev => [...prev, condition])\n                            } else {\n                              setComorbidities(prev => prev.filter(c => c !== condition))\n                            }\n                          }}\n                        />\n                        <Label htmlFor={condition} className=\"text-sm\">{condition}</Label>\n                      </div>\n                    ))}",
+      "newString": "                  <Label>{t.subtype.patientInfo.comorbidities}</Label>\n                  <div className=\"flex gap-4 mt-2\">\n                    {t.subtype.patientInfo.comorbidityOptions.map((condition, index) => (\n                      <div key={index} className=\"flex items-center space-x-2\">\n                        <Checkbox\n                          id={`comorbidity-${index}`}\n                          checked={comorbidities.includes(condition)}\n                          onCheckedChange={(checked) => {\n                            if (checked) {\n                              setComorbidities(prev => [...prev, condition])\n                            } else {\n                              setComorbidities(prev => prev.filter(c => c !== condition))\n                            }\n                          }}\n                        />\n                        <Label htmlFor={`comorbidity-${index}`} className=\"text-sm\">{condition}</Label>\n                      </div>\n                    ))}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -384,12 +384,12 @@\n </div>\n <div>\n   <Label>{t.subtype.patientInfo.comorbidities}</Label>\n   <div className=\"flex gap-4 mt-2\">\n-    {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (\n-      <div key={condition} className=\"flex items-center space-x-2\">\n+    {t.subtype.patientInfo.comorbidityOptions.map((condition, index) => (\n+      <div key={index} className=\"flex items-center space-x-2\">\n         <Checkbox\n-          id={condition}\n+          id={`comorbidity-${index}`}\n           checked={comorbidities.includes(condition)}\n           onCheckedChange={(checked) => {\n             if (checked) {\n               setComorbidities(prev => [...prev, condition])\n@@ -397,9 +397,9 @@\n               setComorbidities(prev => prev.filter(c => c !== condition))\n             }\n           }}\n         />\n-        <Label htmlFor={condition} className=\"text-sm\">{condition}</Label>\n+        <Label htmlFor={`comorbidity-${index}`} className=\"text-sm\">{condition}</Label>\n       </div>\n     ))}\n   </div>\n </div>\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138021762,
+      "end": 1758138021775
+    }
+  }
+}

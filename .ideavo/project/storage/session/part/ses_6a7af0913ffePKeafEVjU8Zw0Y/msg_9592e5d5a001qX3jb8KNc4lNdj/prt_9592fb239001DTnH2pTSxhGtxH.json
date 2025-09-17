@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592fb239001DTnH2pTSxhGtxH",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FeTXPfv66Lee1eBb7CAVgk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 580,
+      "limit": 15
+    },
+    "output": "<file>\n00581|             'Avoid stimulants (caffeine)',\n00582|             'Regular sleep schedule',\n00583|             'Gentle exercise'\n00584|           ],\n00585|           firstLine: [\n00586|             'Propranolol 10-40mg BID',\n00587|             'Clonidine 0.1-0.2mg BID'\n00588|           ],\n00589|           secondLine: [\n00590|             'Ivabradine 2.5-7.5mg BID',\n00591|             'Methyldopa',\n00592|             'Labetalol for hypertension'\n00593|           ]\n00594|         }\n00595|       },\n\n(File has more lines. Use 'offset' parameter to read beyond line 595)\n</file>",
+    "metadata": {
+      "preview": "            'Avoid stimulants (caffeine)',\n            'Regular sleep schedule',\n            'Gentle exercise'\n          ],\n          firstLine: [\n            'Propranolol 10-40mg BID',\n            'Clonidine 0.1-0.2mg BID'\n          ],\n          secondLine: [\n            'Ivabradine 2.5-7.5mg BID',\n            'Methyldopa',\n            'Labetalol for hypertension'\n          ]\n        }\n      },"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758137922641,
+      "end": 1758137922643
+    }
+  }
+}

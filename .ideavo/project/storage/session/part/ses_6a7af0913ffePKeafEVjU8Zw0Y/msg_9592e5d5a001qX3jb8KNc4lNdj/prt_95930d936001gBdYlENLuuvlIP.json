@@ -1,0 +1,26 @@
+{
+  "id": "prt_95930d936001gBdYlENLuuvlIP",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WRUyx4LFgcrZegHcoDNeb6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "oldString": "      comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'\n    },",
+      "newString": "      comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)',\n      comorbidityOptions: ['Diabetes', 'Autoimmun sykdom', 'EDS', 'MCAS']\n    },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/no.ts\n===================================================================\n--- /home/user/project/lib/translations/no.ts\n+++ /home/user/project/lib/translations/no.ts\n@@ -538,9 +538,10 @@\n description: 'Bestem POTS-undertype for personlige behandlingsanbefalinger',\n patientInfo: {\n   title: 'Pasientinformasjon',\n   description: 'Grunnleggende pasientdata for behandlingsplanlegging',\n-  comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'\n+  comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)',\n+  comorbidityOptions: ['Diabetes', 'Autoimmun sykdom', 'EDS', 'MCAS']\n },\n subtypes: {\n   hypovolemic: {\n     name: 'Hypovolemisk POTS',\n"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758137998911,
+      "end": 1758137998929
+    }
+  }
+}

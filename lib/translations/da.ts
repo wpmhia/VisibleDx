@@ -516,7 +516,8 @@ export const da: Translation = {
     patientInfo: {
       title: 'Patient Information',
       description: 'Grundlæggende patientdata til behandlingsplanlægning',
-      comorbidities: 'Relevante Komorbiditeter (markér alle der gælder)'
+      comorbidities: 'Relevante Komorbiditeter (markér alle der gælder)',
+      comorbidityOptions: ['Diabetes', 'Autoimmun sygdom', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

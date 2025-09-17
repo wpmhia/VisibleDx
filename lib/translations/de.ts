@@ -513,7 +513,8 @@ export const de: Translation = {
     patientInfo: {
       title: 'Patienteninformation',
       description: 'Grundlegende Patientendaten für Behandlungsplanung',
-      comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)'
+      comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)',
+      comorbidityOptions: ['Diabetes', 'Autoimmunerkrankung', 'EDS', 'MCAS']
     },
     subtypes: {
       hypovolemic: {

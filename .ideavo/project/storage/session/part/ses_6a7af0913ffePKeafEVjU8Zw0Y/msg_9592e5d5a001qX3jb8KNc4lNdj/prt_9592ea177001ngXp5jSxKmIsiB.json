@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592ea177001ngXp5jSxKmIsiB",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01WG6uESTaQtYXcAUNhKuQTf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 325,
+      "limit": 40
+    },
+    "output": "<file>\n00326|             </CardHeader>\n00327|             <CardContent>\n00328|               <div className=\"space-y-3\">\n00329|                 {mecfsChecked.map((criterion) => (\n00330|                   <div key={criterion.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00331|                     <Checkbox\n00332|                       id={criterion.id}\n00333|                       checked={criterion.met}\n00334|                       onCheckedChange={(checked) => handleMECFSChange(criterion.id, !!checked)}\n00335|                     />\n00336|                     <Label htmlFor={criterion.id} className=\"cursor-pointer text-sm flex-1\">\n00337|                       {criterion.description}\n00338|                     </Label>\n00339|                   </div>\n00340|                 ))}\n00341|               </div>\n00342|             </CardContent>\n00343|           </Card>\n00344| \n00345|           <Card>\n00346|             <CardHeader>\n00347|               <CardTitle className=\"text-lg text-green-800\">{t.criteria.longCovid.title}</CardTitle>\n00348|               <CardDescription>\n00349|                 {t.criteria.longCovid.description}\n00350|               </CardDescription>\n00351|             </CardHeader>\n00352|             <CardContent>\n00353|               <div className=\"space-y-3\">\n00354|                 {longCovidChecked.map((criterion) => (\n00355|                   <div key={criterion.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00356|                     <Checkbox\n00357|                       id={criterion.id}\n00358|                       checked={criterion.met}\n00359|                       onCheckedChange={(checked) => handleLongCovidChange(criterion.id, !!checked)}\n00360|                     />\n00361|                     <Label htmlFor={criterion.id} className=\"cursor-pointer text-sm flex-1\">\n00362|                       {criterion.description}\n00363|                     </Label>\n00364|                   </div>\n00365|                 ))}\n\n(File has more lines. Use 'offset' parameter to read beyond line 365)\n</file>",
+    "metadata": {
+      "preview": "            </CardHeader>\n            <CardContent>\n              <div className=\"space-y-3\">\n                {mecfsChecked.map((criterion) => (\n                  <div key={criterion.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={criterion.id}\n                      checked={criterion.met}\n                      onCheckedChange={(checked) => handleMECFSChange(criterion.id, !!checked)}\n                    />\n                    <Label htmlFor={criterion.id} className=\"cursor-pointer text-sm flex-1\">\n                      {criterion.description}\n                    </Label>\n                  </div>\n                ))}\n              </div>\n            </CardContent>\n          </Card>\n\n          <Card>"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758137853034,
+      "end": 1758137853037
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "prt_9592f6550001tRIca6VQThcUfB",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01MCBTC6Gj4PFG3XXgRQ2MYX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Add comorbidities translations to translation files",
+          "status": "pending",
+          "priority": "high",
+          "id": "comorbidities-1"
+        },
+        {
+          "content": "Update subtype-advisor to use translated comorbidities",
+          "status": "pending",
+          "priority": "high",
+          "id": "comorbidities-2"
+        },
+        {
+          "content": "Test build and verify comorbidities translations work",
+          "status": "pending",
+          "priority": "medium",
+          "id": "comorbidities-3"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Add comorbidities translations to translation files\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"comorbidities-1\"\n  },\n  {\n    \"content\": \"Update subtype-advisor to use translated comorbidities\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"comorbidities-2\"\n  },\n  {\n    \"content\": \"Test build and verify comorbidities translations work\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"comorbidities-3\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Add comorbidities translations to translation files",
+          "status": "pending",
+          "priority": "high",
+          "id": "comorbidities-1"
+        },
+        {
+          "content": "Update subtype-advisor to use translated comorbidities",
+          "status": "pending",
+          "priority": "high",
+          "id": "comorbidities-2"
+        },
+        {
+          "content": "Test build and verify comorbidities translations work",
+          "status": "pending",
+          "priority": "medium",
+          "id": "comorbidities-3"
+        }
+      ]
+    },
+    "title": "3 todos",
+    "time": {
+      "start": 1758137904590,
+      "end": 1758137904611
+    }
+  }
+}

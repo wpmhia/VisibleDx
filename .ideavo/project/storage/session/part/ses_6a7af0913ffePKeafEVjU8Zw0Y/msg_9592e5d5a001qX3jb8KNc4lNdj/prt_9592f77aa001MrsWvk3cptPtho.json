@@ -1,0 +1,11 @@
+{
+  "id": "prt_9592f77aa001MrsWvk3cptPtho",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I found that **almost all checkbox items are multilingual**, but there's one issue in the subtype-advisor page where comorbidities are hardcoded in English.\n\n**Current Status:**\n- ✅ **Red Flag Checker** - All checkboxes use `t.redFlag.symptoms.list[index]` and `getRoutineLabs(t)`\n- ✅ **Criteria Engine** - All checkboxes use `t.criteria.mecfs.criteria`, `t.criteria.longCovid.criteria`, `t.criteria.pots.criteria`\n- ✅ **New Patient** - Red flag checkboxes use `createRedFlagSymptoms(t)` which maps from `t.redFlag.symptoms.list`\n- ❌ **Subtype Advisor** - POTS subtype criteria are multilingual, but comorbidities are hardcoded: `['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS']`\n\nLet me fix the comorbidities issue. First, I'll add translations to the TypeScript types:",
+  "time": {
+    "start": 1758137913182,
+    "end": 1758137913182
+  }
+}

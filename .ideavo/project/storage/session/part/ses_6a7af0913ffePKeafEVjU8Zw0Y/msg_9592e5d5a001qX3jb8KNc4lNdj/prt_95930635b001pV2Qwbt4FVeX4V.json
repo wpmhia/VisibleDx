@@ -1,0 +1,35 @@
+{
+  "id": "prt_95930635b001pV2Qwbt4FVeX4V",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Hj6fv5uJBnyiHTevVvQbY6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'\n    },",
+          "newString": "      comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)',\n      comorbidityOptions: ['Diabetes', 'Auto-immuunziekte', 'EDS', 'MCAS']\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -506,9 +506,10 @@\n description: 'Bepaal POTS subtype voor gepersonaliseerde behandelingsaanbevelingen',\n patientInfo: {\n   title: 'Patiënt Informatie',\n   description: 'Basis patiëntgegevens voor behandelingsplanning',\n-  comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'\n+  comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)',\n+  comorbidityOptions: ['Diabetes', 'Auto-immuunziekte', 'EDS', 'MCAS']\n },\n subtypes: {\n   hypovolemic: {\n     name: 'Hypovolemische POTS',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758137968933,
+      "end": 1758137968946
+    }
+  }
+}

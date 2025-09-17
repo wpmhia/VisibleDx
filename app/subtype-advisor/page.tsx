@@ -385,10 +385,10 @@ export default function SubtypeAdvisor() {
                 <div>
                   <Label>{t.subtype.patientInfo.comorbidities}</Label>
                   <div className="flex gap-4 mt-2">
-                    {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (
-                      <div key={condition} className="flex items-center space-x-2">
+                    {t.subtype.patientInfo.comorbidityOptions.map((condition, index) => (
+                      <div key={index} className="flex items-center space-x-2">
                         <Checkbox
-                          id={condition}
+                          id={`comorbidity-${index}`}
                           checked={comorbidities.includes(condition)}
                           onCheckedChange={(checked) => {
                             if (checked) {
@@ -398,7 +398,7 @@ export default function SubtypeAdvisor() {
                             }
                           }}
                         />
-                        <Label htmlFor={condition} className="text-sm">{condition}</Label>
+                        <Label htmlFor={`comorbidity-${index}`} className="text-sm">{condition}</Label>
                       </div>
                     ))}
                   </div>

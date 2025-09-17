@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592fc29e001tqUxrE18uRiRPK",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01CtWHvarhSNQ9TPvngYx8wr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "patientInfo:\"",
+      "path": "/home/user/project/lib/translations/en.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "patientInfo:\"",
+    "time": {
+      "start": 1758137926783,
+      "end": 1758137926791
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95930e9e9001NbFvHNJTUP3POV",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013C7LPprif1Acdgarc6i7Kn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 540,
+      "limit": 5
+    },
+    "output": "<file>\n00541|       description: 'Détails de base du patient pour planification du traitement',\n00542|       comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)'\n00543|     },\n00544|     subtypes: {\n00545|       hypovolemic: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 545)\n</file>",
+    "metadata": {
+      "preview": "      description: 'Détails de base du patient pour planification du traitement',\n      comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)'\n    },\n    subtypes: {\n      hypovolemic: {"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758138002498,
+      "end": 1758138002500
+    }
+  }
+}

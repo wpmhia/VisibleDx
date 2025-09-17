@@ -1,0 +1,11 @@
+{
+  "id": "prt_9592ed9330014Tp75bqyLU1VlS",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Great! I can see that the criteria-engine checkboxes are properly multilingual because they use `t.criteria.mecfs.criteria.map((desc, index) => ...)` which pulls from the translation files.\n\nLet me check the subtype-advisor page:",
+  "time": {
+    "start": 1758137868037,
+    "end": 1758137868037
+  }
+}

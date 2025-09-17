@@ -1,0 +1,26 @@
+{
+  "id": "prt_95930f712001HbTp3GJlUZ45yP",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01KZ9aiQEJenUBqVrtwaJreq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "oldString": "      comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)'\n    },",
+      "newString": "      comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)',\n      comorbidityOptions: ['Diabète', 'Maladie Auto-immune', 'EDS', 'MCAS']\n    },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/fr.ts\n===================================================================\n--- /home/user/project/lib/translations/fr.ts\n+++ /home/user/project/lib/translations/fr.ts\n@@ -538,9 +538,10 @@\n description: 'Déterminer sous-type POTS pour recommandations de traitement personnalisées',\n patientInfo: {\n   title: 'Information Patient',\n   description: 'Détails de base du patient pour planification du traitement',\n-  comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)'\n+  comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)',\n+  comorbidityOptions: ['Diabète', 'Maladie Auto-immune', 'EDS', 'MCAS']\n },\n subtypes: {\n   hypovolemic: {\n     name: 'POTS Hypovolémique',\n"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758138006642,
+      "end": 1758138006651
+    }
+  }
+}

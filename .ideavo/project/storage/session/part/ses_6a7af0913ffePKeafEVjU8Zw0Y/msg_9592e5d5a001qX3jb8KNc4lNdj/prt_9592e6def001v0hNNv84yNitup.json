@@ -1,0 +1,26 @@
+{
+  "id": "prt_9592e6def001v0hNNv84yNitup",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01PbQGm2nH34Vk3N5DiaYWJx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "type=\"checkbox\"|Checkbox",
+      "path": "/home/user/project",
+      "include": "*.tsx"
+    },
+    "output": "Found 45 matches\n/home/user/project/app/red-flag-checker/page.tsx:\n  Line 6: import { Checkbox } from '@/components/ui/checkbox'\n  Line 277:                     <Checkbox\n  Line 312:                     <Checkbox\n\n/home/user/project/app/new-patient/page.tsx:\n  Line 11: import { Checkbox } from '@/components/ui/checkbox'\n  Line 727:                     <Checkbox\n\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 6: import { Checkbox } from '@/components/ui/checkbox'\n  Line 331:                     <Checkbox\n  Line 356:                     <Checkbox\n  Line 401:                     <Checkbox\n\n/home/user/project/app/subtype-advisor/page.tsx:\n  Line 6: import { Checkbox } from '@/components/ui/checkbox'\n  Line 390:                         <Checkbox\n  Line 423:                       <Checkbox\n\n/home/user/project/components/ui/menubar.tsx:\n  Line 128: const MenubarCheckboxItem = React.forwardRef<\n  Line 129:   React.ElementRef<typeof MenubarPrimitive.CheckboxItem>,\n  Line 130:   React.ComponentPropsWithoutRef<typeof MenubarPrimitive.CheckboxItem>\n  Line 132:   <MenubarPrimitive.CheckboxItem\n  Line 147:   </MenubarPrimitive.CheckboxItem>\n  Line 149: MenubarCheckboxItem.displayName = MenubarPrimitive.CheckboxItem.displayName;\n  Line 227:   MenubarCheckboxItem,\n\n/home/user/project/components/ui/dropdown-menu.tsx:\n  Line 95: const DropdownMenuCheckboxItem = React.forwardRef<\n  Line 96:   React.ElementRef<typeof DropdownMenuPrimitive.CheckboxItem>,\n  Line 97:   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.CheckboxItem>\n  Line 99:   <DropdownMenuPrimitive.CheckboxItem\n  Line 114:   </DropdownMenuPrimitive.CheckboxItem>\n  Line 116: DropdownMenuCheckboxItem.displayName =\n  Line 117:   DropdownMenuPrimitive.CheckboxItem.displayName;\n  Line 189:   DropdownMenuCheckboxItem,\n\n/home/user/project/components/ui/context-menu.tsx:\n  Line 92: const ContextMenuCheckboxItem = React.forwardRef<\n  Line 93:   React.ElementRef<typeof ContextMenuPrimitive.CheckboxItem>,\n  Line 94:   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.CheckboxItem>\n  Line 96:   <ContextMenuPrimitive.CheckboxItem\n  Line 111:   </ContextMenuPrimitive.CheckboxItem>\n  Line 113: ContextMenuCheckboxItem.displayName =\n  Line 114:   ContextMenuPrimitive.CheckboxItem.displayName;\n  Line 189:   ContextMenuCheckboxItem,\n\n/home/user/project/components/ui/checkbox.tsx:\n  Line 4: import * as CheckboxPrimitive from '@radix-ui/react-checkbox';\n  Line 9: const Checkbox = React.forwardRef<\n  Line 10:   React.ElementRef<typeof CheckboxPrimitive.Root>,\n  Line 11:   React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>\n  Line 13:   <CheckboxPrimitive.Root\n  Line 21:     <CheckboxPrimitive.Indicator\n  Line 25:     </CheckboxPrimitive.Indicator>\n  Line 26:   </CheckboxPrimitive.Root>\n  Line 28: Checkbox.displayName = CheckboxPrimitive.Root.displayName;\n  Line 30: export { Checkbox };",
+    "metadata": {
+      "matches": 45,
+      "truncated": false
+    },
+    "title": "type=\"checkbox\"|Checkbox",
+    "time": {
+      "start": 1758137840147,
+      "end": 1758137840166
+    }
+  }
+}

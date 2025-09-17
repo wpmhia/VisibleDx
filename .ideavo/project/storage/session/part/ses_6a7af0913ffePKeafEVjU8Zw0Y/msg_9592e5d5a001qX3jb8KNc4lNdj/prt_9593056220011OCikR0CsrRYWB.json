@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593056220011OCikR0CsrRYWB",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01WUwUJNavP6iCERF24G3sex",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 508,
+      "limit": 5
+    },
+    "output": "<file>\n00509|       description: 'Basis patiëntgegevens voor behandelingsplanning',\n00510|       comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'\n00511|     },\n00512|     subtypes: {\n00513|       hypovolemic: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 513)\n</file>",
+    "metadata": {
+      "preview": "      description: 'Basis patiëntgegevens voor behandelingsplanning',\n      comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'\n    },\n    subtypes: {\n      hypovolemic: {"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758137964663,
+      "end": 1758137964667
+    }
+  }
+}

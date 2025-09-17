@@ -1,0 +1,25 @@
+{
+  "id": "prt_959300e8a001L45Fvn9hGxVJJq",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01BNrQTNa3wzgwrGsqpcKKYL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "comorbidities",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/types.ts:\n  Line 391:       comorbidities: string\n\n/home/user/project/lib/translations/fr.ts:\n  Line 542:       comorbidities: 'Comorbidités Pertinentes (cocher toutes qui s\\'appliquent)'\n\n/home/user/project/lib/translations/no.ts:\n  Line 542:       comorbidities: 'Relevante Komorbiditeter (merk alle som gjelder)'\n\n/home/user/project/lib/translations/sv.ts:\n  Line 542:       comorbidities: 'Relevanta Komorbiditeter (markera alla tillämpliga)'\n\n/home/user/project/lib/translations/de.ts:\n  Line 516:       comorbidities: 'Relevante Komorbiditäten (alle zutreffenden ankreuzen)'\n\n/home/user/project/lib/translations/da.ts:\n  Line 519:       comorbidities: 'Relevante Komorbiditeter (markér alle der gælder)'\n\n/home/user/project/lib/translations/nl.ts:\n  Line 510:       comorbidities: 'Relevante Comorbiditeiten (vink alle toepasselijke aan)'\n\n/home/user/project/lib/translations/en.ts:\n  Line 510:       comorbidities: 'Relevant Comorbidities (check all that apply)'",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "comorbidities",
+    "time": {
+      "start": 1758137946207,
+      "end": 1758137946219
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9592fdc4a001R45zgXDfRQ44ng",
+  "messageID": "msg_9592e5d5a001qX3jb8KNc4lNdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01CuW2KNPcstESz9HRt4Rcb2",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "comorbidities\"",
+      "path": "/home/user/project/lib/translations/en.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "comorbidities\"",
+    "time": {
+      "start": 1758137933418,
+      "end": 1758137933424
+    }
+  }
+}
