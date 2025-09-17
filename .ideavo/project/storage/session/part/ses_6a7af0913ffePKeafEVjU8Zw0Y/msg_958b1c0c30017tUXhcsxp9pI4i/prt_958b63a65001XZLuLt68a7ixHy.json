@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b63a65001XZLuLt68a7ixHy",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015T51nB38Le5KXPZHb2mZwF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "            <CardHeader>\n              <CardTitle>Patient Information</CardTitle>\n              <CardDescription>Basic demographics for clinical documentation</CardDescription>\n            </CardHeader>",
+      "newString": "            <CardHeader>\n              <CardTitle>{t.newPatient.demographics.title}</CardTitle>\n              <CardDescription>{t.newPatient.demographics.description}</CardDescription>\n            </CardHeader>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -529,10 +529,10 @@\n </div>\n \n <Card>\n   <CardHeader>\n-    <CardTitle>Patient Information</CardTitle>\n-    <CardDescription>Basic demographics for clinical documentation</CardDescription>\n+    <CardTitle>{t.newPatient.demographics.title}</CardTitle>\n+    <CardDescription>{t.newPatient.demographics.description}</CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-4\">\n     <div className=\"grid md:grid-cols-2 gap-4\">\n       <div>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129963300,
+      "end": 1758129963309
+    }
+  }
+}

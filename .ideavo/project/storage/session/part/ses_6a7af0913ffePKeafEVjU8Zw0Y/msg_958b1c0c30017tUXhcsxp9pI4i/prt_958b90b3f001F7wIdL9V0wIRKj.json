@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b90b3f001F7wIdL9V0wIRKj",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017uC9G2fX1UvSQWdnVzPtVz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                }} variant=\"outline\">\n                  New Assessment\n                </Button>\n                <Button onClick={() => {\n                  const blob = new Blob([soap], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = `autodx-soap-note-${new Date().toISOString().split('T')[0]}.txt`\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  Download SOAP Note\n                </Button>",
+      "newString": "                }} variant=\"outline\">\n                  {t.newPatient.results.newAssessment}\n                </Button>\n                <Button onClick={() => {\n                  const blob = new Blob([soap], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = `autodx-soap-note-${new Date().toISOString().split('T')[0]}.txt`\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  {t.newPatient.results.downloadSOAP}\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -482,9 +482,9 @@\n         setCurrentStep('demographics')\n         setCurrentQuestionIndex(0)\n         setIsComplete(false)\n       }} variant=\"outline\">\n-        New Assessment\n+        {t.newPatient.results.newAssessment}\n       </Button>\n       <Button onClick={() => {\n         const blob = new Blob([soap], { type: 'text/plain' })\n         const url = URL.createObjectURL(blob)\n@@ -494,9 +494,9 @@\n         a.click()\n         URL.revokeObjectURL(url)\n       }} className=\"flex items-center gap-2\">\n         <Download className=\"h-4 w-4\" />\n-        Download SOAP Note\n+        {t.newPatient.results.downloadSOAP}\n       </Button>\n     </div>\n   </CardContent>\n </Card>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130150605,
+      "end": 1758130150614
+    }
+  }
+}

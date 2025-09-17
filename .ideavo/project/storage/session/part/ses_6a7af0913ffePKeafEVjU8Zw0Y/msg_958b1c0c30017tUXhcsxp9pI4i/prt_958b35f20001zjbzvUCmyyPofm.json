@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b35f20001zjbzvUCmyyPofm",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01X6EQWyecihq2udiYpZoKWx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  {\n    id: 'hyperadrenergic',\n    name: 'Hyperadrenergic POTS',\n    description: 'Excessive sympathetic nervous system activation',\n    icon: Activity,\n    color: 'red',\n    criteria: [\n      { id: 'high_bp', description: 'Hypertension when standing', checked: false },\n      { id: 'anxiety_panic', description: 'Anxiety, panic attacks, tremor', checked: false },\n      { id: 'migraine', description: 'Migraine headaches', checked: false },\n      { id: 'cold_hands', description: 'Cold hands and feet', checked: false },\n      { id: 'norepinephrine_high', description: 'Elevated standing norepinephrine >600 pg/mL', checked: false }\n    ],\n    treatments: {\n      nonPharmacological: [\n        'Stress reduction techniques',\n        'Avoid stimulants (caffeine)',\n        'Regular sleep schedule',\n        'Gentle exercise'\n      ],\n      firstLine: [\n        'Propranolol 10-40mg BID',\n        'Clonidine 0.1-0.2mg BID'\n      ],\n      secondLine: [\n        'Ivabradine 2.5-7.5mg BID',\n        'Methyldopa',\n        'Labetalol for hypertension'\n      ]\n    }\n  },",
+      "newString": "  {\n    id: 'hyperadrenergic',\n    name: t.subtype.subtypes.hyperadrenergic.name,\n    description: t.subtype.subtypes.hyperadrenergic.description,\n    icon: Activity,\n    color: 'red',\n    criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({\n      id: ['high_bp', 'anxiety_panic', 'migraine', 'cold_hands', 'norepinephrine_high'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n    }\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -62,35 +62,21 @@\n   }\n },\n {\n   id: 'hyperadrenergic',\n-  name: 'Hyperadrenergic POTS',\n-  description: 'Excessive sympathetic nervous system activation',\n+  name: t.subtype.subtypes.hyperadrenergic.name,\n+  description: t.subtype.subtypes.hyperadrenergic.description,\n   icon: Activity,\n   color: 'red',\n-  criteria: [\n-    { id: 'high_bp', description: 'Hypertension when standing', checked: false },\n-    { id: 'anxiety_panic', description: 'Anxiety, panic attacks, tremor', checked: false },\n-    { id: 'migraine', description: 'Migraine headaches', checked: false },\n-    { id: 'cold_hands', description: 'Cold hands and feet', checked: false },\n-    { id: 'norepinephrine_high', description: 'Elevated standing norepinephrine >600 pg/mL', checked: false }\n-  ],\n+  criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({\n+    id: ['high_bp', 'anxiety_panic', 'migraine', 'cold_hands', 'norepinephrine_high'][index],\n+    description: desc,\n+    checked: false\n+  })),\n   treatments: {\n-    nonPharmacological: [\n-      'Stress reduction techniques',\n-      'Avoid stimulants (caffeine)',\n-      'Regular sleep schedule',\n-      'Gentle exercise'\n-    ],\n-    firstLine: [\n-      'Propranolol 10-40mg BID',\n-      'Clonidine 0.1-0.2mg BID'\n-    ],\n-    secondLine: [\n-      'Ivabradine 2.5-7.5mg BID',\n-      'Methyldopa',\n-      'Labetalol for hypertension'\n-    ]\n+    nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n+    firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n+    secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n   }\n },\n {\n   id: 'autoimmune',\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129780929,
+      "end": 1758129780942
+    }
+  }
+}

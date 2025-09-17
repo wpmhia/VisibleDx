@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b3835c001XuR5lMUL8A8Pq2",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0186G179UUahqAy6pgpX3dxS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  {\n    id: 'autoimmune',\n    name: 'Autoimmune POTS',\n    description: 'Autoimmune-mediated autonomic dysfunction',\n    icon: Shield,\n    color: 'green',\n    criteria: [\n      { id: 'autoimmune_history', description: 'Personal/family history of autoimmune disease', checked: false },\n      { id: 'rapid_onset', description: 'Rapid onset of symptoms', checked: false },\n      { id: 'viral_trigger', description: 'Viral illness trigger (EBV, COVID, etc.)', checked: false },\n      { id: 'antibodies', description: 'Positive autonomic antibodies (if tested)', checked: false },\n      { id: 'other_autoimmune', description: 'Other autoimmune markers positive', checked: false }\n    ],\n    treatments: {\n      nonPharmacological: [\n        'Standard POTS measures',\n        'Avoid infection triggers',\n        'Stress management',\n        'Anti-inflammatory diet'\n      ],\n      firstLine: [\n        'Standard POTS medications',\n        'Trial of corticosteroids'\n      ],\n      secondLine: [\n        'IVIG therapy',\n        'Immunosuppressive agents',\n        'Plasmapheresis for severe cases'\n      ]\n    }\n  }\n]",
+      "newString": "  {\n    id: 'autoimmune',\n    name: t.subtype.subtypes.autoimmune.name,\n    description: t.subtype.subtypes.autoimmune.description,\n    icon: Shield,\n    color: 'green',\n    criteria: t.subtype.subtypes.autoimmune.criteria.map((desc: string, index: number) => ({\n      id: ['autoimmune_history', 'rapid_onset', 'viral_trigger', 'antibodies', 'other_autoimmune'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine\n    }\n  }\n]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -79,35 +79,21 @@\n     }\n   },\n   {\n     id: 'autoimmune',\n-    name: 'Autoimmune POTS',\n-    description: 'Autoimmune-mediated autonomic dysfunction',\n+    name: t.subtype.subtypes.autoimmune.name,\n+    description: t.subtype.subtypes.autoimmune.description,\n     icon: Shield,\n     color: 'green',\n-    criteria: [\n-      { id: 'autoimmune_history', description: 'Personal/family history of autoimmune disease', checked: false },\n-      { id: 'rapid_onset', description: 'Rapid onset of symptoms', checked: false },\n-      { id: 'viral_trigger', description: 'Viral illness trigger (EBV, COVID, etc.)', checked: false },\n-      { id: 'antibodies', description: 'Positive autonomic antibodies (if tested)', checked: false },\n-      { id: 'other_autoimmune', description: 'Other autoimmune markers positive', checked: false }\n-    ],\n+    criteria: t.subtype.subtypes.autoimmune.criteria.map((desc: string, index: number) => ({\n+      id: ['autoimmune_history', 'rapid_onset', 'viral_trigger', 'antibodies', 'other_autoimmune'][index],\n+      description: desc,\n+      checked: false\n+    })),\n     treatments: {\n-      nonPharmacological: [\n-        'Standard POTS measures',\n-        'Avoid infection triggers',\n-        'Stress management',\n-        'Anti-inflammatory diet'\n-      ],\n-      firstLine: [\n-        'Standard POTS medications',\n-        'Trial of corticosteroids'\n-      ],\n-      secondLine: [\n-        'IVIG therapy',\n-        'Immunosuppressive agents',\n-        'Plasmapheresis for severe cases'\n-      ]\n+      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n+      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n+      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine\n     }\n   }\n ]\n \n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129790449,
+      "end": 1758129790457
+    }
+  }
+}

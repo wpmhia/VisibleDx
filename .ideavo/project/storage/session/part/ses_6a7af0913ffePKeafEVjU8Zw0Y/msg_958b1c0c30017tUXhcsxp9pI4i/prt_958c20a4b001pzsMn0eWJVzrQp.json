@@ -1,0 +1,11 @@
+{
+  "id": "prt_958c20a4b001pzsMn0eWJVzrQp",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I see the issue. The `screeningQuestions` variable is not defined in the current scope. Let me fix this by defining it using the translation:",
+  "time": {
+    "start": 1758130736726,
+    "end": 1758130736726
+  }
+}

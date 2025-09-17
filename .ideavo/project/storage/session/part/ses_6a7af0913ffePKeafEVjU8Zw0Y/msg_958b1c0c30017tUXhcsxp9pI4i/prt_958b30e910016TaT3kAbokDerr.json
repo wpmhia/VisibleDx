@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b30e910016TaT3kAbokDerr",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01AgTWXNe7u6hPK9A4yMWEQb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  {\n    id: 'hypovolemic',\n    name: 'Hypovolemic POTS',\n    description: 'Low blood volume causing orthostatic intolerance',\n    icon: Droplets,\n    color: 'blue',\n    criteria: [\n      { id: 'low_bp', description: 'Low-normal blood pressure (<110/70)', checked: false },\n      { id: 'thirst', description: 'Excessive thirst', checked: false },\n      { id: 'salt_craving', description: 'Salt craving', checked: false },\n      { id: 'volume_depletion', description: 'Signs of volume depletion', checked: false },\n      { id: 'renin_high', description: 'Elevated renin/aldosterone (if available)', checked: false }\n    ],\n    treatments: {\n      nonPharmacological: [\n        'Increase fluid intake to 2.5-3L daily',\n        'Increase sodium intake to 8-10g daily',\n        'Compression garments (30-40 mmHg)',\n        'Gradual exercise reconditioning'\n      ],\n      firstLine: [\n        'Fludrocortisone 0.1-0.2mg daily',\n        'Salt tablets if dietary intake insufficient'\n      ],\n      secondLine: [\n        'Desmopressin (DDAVP) for severe cases',\n        'Erythropoietin if anemic'\n      ]\n    }\n  },",
+      "newString": "  {\n    id: 'hypovolemic',\n    name: t.subtype.subtypes.hypovolemic.name,\n    description: t.subtype.subtypes.hypovolemic.description,\n    icon: Droplets,\n    color: 'blue',\n    criteria: t.subtype.subtypes.hypovolemic.criteria.map((desc: string, index: number) => ({\n      id: ['low_bp', 'thirst', 'salt_craving', 'volume_depletion', 'renin_high'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n    }\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -28,34 +28,21 @@\n \n const createSubtypes = (t: any): POTSSubtype[] => [\n   {\n     id: 'hypovolemic',\n-    name: 'Hypovolemic POTS',\n-    description: 'Low blood volume causing orthostatic intolerance',\n+    name: t.subtype.subtypes.hypovolemic.name,\n+    description: t.subtype.subtypes.hypovolemic.description,\n     icon: Droplets,\n     color: 'blue',\n-    criteria: [\n-      { id: 'low_bp', description: 'Low-normal blood pressure (<110/70)', checked: false },\n-      { id: 'thirst', description: 'Excessive thirst', checked: false },\n-      { id: 'salt_craving', description: 'Salt craving', checked: false },\n-      { id: 'volume_depletion', description: 'Signs of volume depletion', checked: false },\n-      { id: 'renin_high', description: 'Elevated renin/aldosterone (if available)', checked: false }\n-    ],\n+    criteria: t.subtype.subtypes.hypovolemic.criteria.map((desc: string, index: number) => ({\n+      id: ['low_bp', 'thirst', 'salt_craving', 'volume_depletion', 'renin_high'][index],\n+      description: desc,\n+      checked: false\n+    })),\n     treatments: {\n-      nonPharmacological: [\n-        'Increase fluid intake to 2.5-3L daily',\n-        'Increase sodium intake to 8-10g daily',\n-        'Compression garments (30-40 mmHg)',\n-        'Gradual exercise reconditioning'\n-      ],\n-      firstLine: [\n-        'Fludrocortisone 0.1-0.2mg daily',\n-        'Salt tablets if dietary intake insufficient'\n-      ],\n-      secondLine: [\n-        'Desmopressin (DDAVP) for severe cases',\n-        'Erythropoietin if anemic'\n-      ]\n+      nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n+      firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n+      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n     }\n   },\n   {\n     id: 'neuropathic',\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129761786,
+      "end": 1758129761799
+    }
+  }
+}

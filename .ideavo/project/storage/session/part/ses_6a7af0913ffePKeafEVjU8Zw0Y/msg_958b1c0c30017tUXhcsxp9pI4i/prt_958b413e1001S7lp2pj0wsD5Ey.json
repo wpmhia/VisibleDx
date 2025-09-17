@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b413e1001S7lp2pj0wsD5Ey",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_019iChZSo9bHaoxvf9GU2wBZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "                    <div className=\"space-y-2\">\n                      <h4 className=\"font-semibold text-sm\">Criteria Met:</h4>",
+      "newString": "                    <div className=\"space-y-2\">\n                      <h4 className=\"font-semibold text-sm\">{t.subtype.results.criteriaMetTitle}:</h4>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -211,9 +211,9 @@\n   <CardDescription>{primarySubtype.description}</CardDescription>\n </CardHeader>\n <CardContent>\n   <div className=\"space-y-2\">\n-    <h4 className=\"font-semibold text-sm\">Criteria Met:</h4>\n+    <h4 className=\"font-semibold text-sm\">{t.subtype.results.criteriaMetTitle}:</h4>\n     {primarySubtype.criteria.filter(c => c.checked).map((criterion, index) => (\n       <div key={index} className=\"text-sm flex items-center gap-2\">\n         <span className=\"text-green-600\">✓</span>\n         {criterion.description}\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129822507,
+      "end": 1758129822512
+    }
+  }
+}

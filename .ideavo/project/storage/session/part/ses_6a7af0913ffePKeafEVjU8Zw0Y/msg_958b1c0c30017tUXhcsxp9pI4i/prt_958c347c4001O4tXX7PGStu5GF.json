@@ -1,0 +1,18 @@
+{
+  "id": "prt_958c347c4001O4tXX7PGStu5GF",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(i18n): implement full multilingual support for AutoDx",
+  "cost": 3.4569450000000006,
+  "tokens": {
+    "input": 2,
+    "output": 720,
+    "reasoning": 0,
+    "cache": {
+      "write": 627,
+      "read": 118863
+    }
+  }
+}

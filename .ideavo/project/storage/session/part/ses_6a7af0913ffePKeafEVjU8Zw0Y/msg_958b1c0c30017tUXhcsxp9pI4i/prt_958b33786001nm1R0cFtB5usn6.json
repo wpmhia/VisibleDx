@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b33786001nm1R0cFtB5usn6",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_011b4wY8259xnoSZYnifysDX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  {\n    id: 'neuropathic',\n    name: 'Neuropathic POTS',\n    description: 'Peripheral autonomic neuropathy affecting blood vessel control',\n    icon: Brain,\n    color: 'purple',\n    criteria: [\n      { id: 'distal_neuropathy', description: 'Distal small fiber neuropathy symptoms', checked: false },\n      { id: 'gi_dysfunction', description: 'GI dysfunction (gastroparesis, constipation)', checked: false },\n      { id: 'anhidrosis', description: 'Anhidrosis or reduced sweating', checked: false },\n      { id: 'pupil_abnormal', description: 'Pupillary abnormalities', checked: false },\n      { id: 'diabetes_autoimmune', description: 'History of diabetes or autoimmune disease', checked: false }\n    ],\n    treatments: {\n      nonPharmacological: [\n        'Compression garments',\n        'Leg elevation',\n        'Avoid heat exposure',\n        'Small frequent meals'\n      ],\n      firstLine: [\n        'Midodrine 2.5-10mg TID',\n        'Pyridostigmine 30-60mg TID'\n      ],\n      secondLine: [\n        'Droxidopa (if available)',\n        'Alpha-lipoic acid for neuropathy',\n        'IVIG for autoimmune cases'\n      ]\n    }\n  },",
+      "newString": "  {\n    id: 'neuropathic',\n    name: t.subtype.subtypes.neuropathic.name,\n    description: t.subtype.subtypes.neuropathic.description,\n    icon: Brain,\n    color: 'purple',\n    criteria: t.subtype.subtypes.neuropathic.criteria.map((desc: string, index: number) => ({\n      id: ['distal_neuropathy', 'gi_dysfunction', 'anhidrosis', 'pupil_abnormal', 'diabetes_autoimmune'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine\n    }\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -45,35 +45,21 @@\n   }\n },\n {\n   id: 'neuropathic',\n-  name: 'Neuropathic POTS',\n-  description: 'Peripheral autonomic neuropathy affecting blood vessel control',\n+  name: t.subtype.subtypes.neuropathic.name,\n+  description: t.subtype.subtypes.neuropathic.description,\n   icon: Brain,\n   color: 'purple',\n-  criteria: [\n-    { id: 'distal_neuropathy', description: 'Distal small fiber neuropathy symptoms', checked: false },\n-    { id: 'gi_dysfunction', description: 'GI dysfunction (gastroparesis, constipation)', checked: false },\n-    { id: 'anhidrosis', description: 'Anhidrosis or reduced sweating', checked: false },\n-    { id: 'pupil_abnormal', description: 'Pupillary abnormalities', checked: false },\n-    { id: 'diabetes_autoimmune', description: 'History of diabetes or autoimmune disease', checked: false }\n-  ],\n+  criteria: t.subtype.subtypes.neuropathic.criteria.map((desc: string, index: number) => ({\n+    id: ['distal_neuropathy', 'gi_dysfunction', 'anhidrosis', 'pupil_abnormal', 'diabetes_autoimmune'][index],\n+    description: desc,\n+    checked: false\n+  })),\n   treatments: {\n-    nonPharmacological: [\n-      'Compression garments',\n-      'Leg elevation',\n-      'Avoid heat exposure',\n-      'Small frequent meals'\n-    ],\n-    firstLine: [\n-      'Midodrine 2.5-10mg TID',\n-      'Pyridostigmine 30-60mg TID'\n-    ],\n-    secondLine: [\n-      'Droxidopa (if available)',\n-      'Alpha-lipoic acid for neuropathy',\n-      'IVIG for autoimmune cases'\n-    ]\n+    nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n+    firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n+    secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine\n   }\n },\n {\n   id: 'hyperadrenergic',\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129771235,
+      "end": 1758129771247
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b688b0001GVPOkVhDw9k3zL",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01C53TKWWzmyQzibjFWhjDbG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                      <Label htmlFor=\"other\">Other</Label>",
+      "newString": "                      <Label htmlFor=\"other\">{t.common.other}</Label>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -567,9 +567,9 @@\n         <Label htmlFor=\"male\">{t.common.male}</Label>\n       </div>\n       <div className=\"flex items-center space-x-2\">\n         <RadioGroupItem value=\"other\" id=\"other\" />\n-        <Label htmlFor=\"other\">Other</Label>\n+        <Label htmlFor=\"other\">{t.common.other}</Label>\n       </div>\n     </RadioGroup>\n   </div>\n </div>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129982409,
+      "end": 1758129982415
+    }
+  }
+}

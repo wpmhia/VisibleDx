@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b8b18a001cAX5cgs8WAhXpv",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013vnsCVteXKysUsopVteoix",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                    <strong>No Definitive Diagnoses:</strong> Consider alternative diagnoses, \n                    subclinical presentations, or ongoing symptom monitoring. Some patients may \n                    benefit from symptomatic treatment while monitoring for progression.",
+      "newString": "                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}:</strong> Consider alternative diagnoses, \n                    subclinical presentations, or ongoing symptom monitoring. Some patients may \n                    benefit from symptomatic treatment while monitoring for progression."
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -452,9 +452,9 @@\n {!anyDiagnosis && (\n   <Alert>\n     <AlertTriangle className=\"h-4 w-4\" />\n     <AlertDescription>\n-      <strong>No Definitive Diagnoses:</strong> Consider alternative diagnoses, \n+      <strong>{t.newPatient.results.noDefinitiveDiagnoses}:</strong> Consider alternative diagnoses, \n       subclinical presentations, or ongoing symptom monitoring. Some patients may \n       benefit from symptomatic treatment while monitoring for progression.\n     </AlertDescription>\n   </Alert>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130125691,
+      "end": 1758130125697
+    }
+  }
+}

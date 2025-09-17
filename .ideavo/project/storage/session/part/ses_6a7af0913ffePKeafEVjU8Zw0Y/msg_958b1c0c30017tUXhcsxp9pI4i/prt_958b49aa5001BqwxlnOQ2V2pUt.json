@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b49aa5001BqwxlnOQ2V2pUt",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HoKps3CKRkXAr5Mod9A826",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "                <Button onClick={() => {\n                  setSubtypeData(potsSubtypes.map(s => ({ ...s })))\n                  setIsComplete(false)\n                }} variant=\"outline\">\n                  Reassess Subtype\n                </Button>\n                <Button onClick={() => {\n                  const plan = generateTreatmentPlan()\n                  const blob = new Blob([plan], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = 'pots-treatment-plan.txt'\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  Download Treatment Plan\n                </Button>",
+      "newString": "                <Button onClick={() => {\n                  const newSubtypes = createSubtypes(t)\n                  setSubtypeData(newSubtypes.map(s => ({ ...s })))\n                  setIsComplete(false)\n                }} variant=\"outline\">\n                  {t.subtype.results.reassess}\n                </Button>\n                <Button onClick={() => {\n                  const plan = generateTreatmentPlan()\n                  const blob = new Blob([plan], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = 'pots-treatment-plan.txt'\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  {t.subtype.results.downloadPlan}\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -322,12 +322,13 @@\n     </div>\n \n     <div className=\"flex gap-4 justify-center\">\n       <Button onClick={() => {\n-        setSubtypeData(potsSubtypes.map(s => ({ ...s })))\n+        const newSubtypes = createSubtypes(t)\n+        setSubtypeData(newSubtypes.map(s => ({ ...s })))\n         setIsComplete(false)\n       }} variant=\"outline\">\n-        Reassess Subtype\n+        {t.subtype.results.reassess}\n       </Button>\n       <Button onClick={() => {\n         const plan = generateTreatmentPlan()\n         const blob = new Blob([plan], { type: 'text/plain' })\n@@ -338,9 +339,9 @@\n         a.click()\n         URL.revokeObjectURL(url)\n       }} className=\"flex items-center gap-2\">\n         <Download className=\"h-4 w-4\" />\n-        Download Treatment Plan\n+        {t.subtype.results.downloadPlan}\n       </Button>\n     </div>\n   </CardContent>\n </Card>\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129860755,
+      "end": 1758129860776
+    }
+  }
+}

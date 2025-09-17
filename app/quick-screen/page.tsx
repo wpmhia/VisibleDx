@@ -20,6 +20,8 @@ export default function QuickScreen() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [isComplete, setIsComplete] = useState(false)
   const { t } = useTranslation()
+  
+  const screeningQuestions = t.quickScreen.questions
 
   const handleAnswer = (questionId: number, answer: boolean) => {
     setAnswers(prev => ({

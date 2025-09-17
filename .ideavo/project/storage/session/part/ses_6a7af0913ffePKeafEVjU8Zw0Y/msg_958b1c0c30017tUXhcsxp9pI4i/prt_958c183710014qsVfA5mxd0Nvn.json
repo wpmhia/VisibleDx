@@ -1,0 +1,26 @@
+{
+  "id": "prt_958c183710014qsVfA5mxd0Nvn",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01YSV6p11T4hP8s8adEcm761",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Test build to verify translations work correctly"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/quick-screen/page.tsx:32:27\nType error: Cannot find name 'screeningQuestions'.\n\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36mconst\u001b[39m nextQuestion \u001b[33m=\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mif\u001b[39m (currentQuestion \u001b[33m<\u001b[39m screeningQuestions\u001b[33m.\u001b[39mlength \u001b[33m-\u001b[39m \u001b[35m1\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       setCurrentQuestion(prev \u001b[33m=>\u001b[39m prev \u001b[33m+\u001b[39m \u001b[35m1\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     } \u001b[36melse\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m       setIsComplete(\u001b[36mtrue\u001b[39m)\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/quick-screen/page.tsx:32:27\nType error: Cannot find name 'screeningQuestions'.\n\n\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36mconst\u001b[39m nextQuestion \u001b[33m=\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mif\u001b[39m (currentQuestion \u001b[33m<\u001b[39m screeningQuestions\u001b[33m.\u001b[39mlength \u001b[33m-\u001b[39m \u001b[35m1\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m       setCurrentQuestion(prev \u001b[33m=>\u001b[39m prev \u001b[33m+\u001b[39m \u001b[35m1\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     } \u001b[36melse\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m       setIsComplete(\u001b[36mtrue\u001b[39m)\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Test build to verify translations work correctly"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758130701876,
+      "end": 1758130723340
+    }
+  }
+}

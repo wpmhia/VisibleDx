@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b67738001L7dfuQ8PD8mRhP",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Q3K9dJ14ckEwYdYwxRsrkv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                      <Label htmlFor=\"male\">Male</Label>",
+      "newString": "                      <Label htmlFor=\"male\">{t.common.male}</Label>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -563,9 +563,9 @@\n   <Label htmlFor=\"female\">{t.common.female}</Label>\n </div>\n <div className=\"flex items-center space-x-2\">\n   <RadioGroupItem value=\"male\" id=\"male\" />\n-  <Label htmlFor=\"male\">Male</Label>\n+  <Label htmlFor=\"male\">{t.common.male}</Label>\n </div>\n <div className=\"flex items-center space-x-2\">\n   <RadioGroupItem value=\"other\" id=\"other\" />\n   <Label htmlFor=\"other\">Other</Label>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129977945,
+      "end": 1758129977951
+    }
+  }
+}

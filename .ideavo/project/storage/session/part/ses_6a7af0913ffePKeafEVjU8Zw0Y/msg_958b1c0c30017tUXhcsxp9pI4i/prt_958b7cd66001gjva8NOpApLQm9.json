@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b7cd66001gjva8NOpApLQm9",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Uo1QeV8B9hGYZSse4qnX6h",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                  Continue to PEM Assessment",
+      "newString": "                  {t.newPatient.standTest.continueToPEM}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -847,9 +847,9 @@\n       <Button \n         onClick={() => setCurrentStep(determineNextStep())}\n         disabled={!patientData.standTest.baselineHR || !patientData.standTest.peakHR}\n       >\n-        Continue to PEM Assessment\n+        {t.newPatient.standTest.continueToPEM}\n       </Button>\n     </div>\n   </CardContent>\n </Card>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130065455,
+      "end": 1758130065464
+    }
+  }
+}

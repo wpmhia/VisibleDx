@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b5adc5001WbHyV0HoVcMkkU",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01KDHGDBuDxSgEtU2crB3LBx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "const redFlagSymptoms = [\n  { id: 'fever', symptom: 'Persistent fever or night sweats', priority: 'high' },\n  { id: 'weight_loss', symptom: 'Unintentional weight loss >10% in 6 months', priority: 'high' },\n  { id: 'chest_pain', symptom: 'Chest pain with exertion or at rest', priority: 'high' },\n  { id: 'dyspnea', symptom: 'Progressive shortness of breath', priority: 'high' },\n  { id: 'neurological', symptom: 'New neurological symptoms (weakness, numbness, seizures)', priority: 'high' },\n  { id: 'bleeding', symptom: 'Abnormal bleeding or bruising', priority: 'high' }\n]",
+      "newString": "const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n  symptom,\n  priority: 'high'\n}))"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -95,16 +95,13 @@\n   question,\n   category: ['core', 'pem', 'core', 'core', 'cardiovascular', 'orthostatic', 'history', 'duration', 'pain', 'neurological', 'autonomic', 'gi', 'respiratory', 'functional', 'sensory', 'functional'][index]\n }))\n \n-const redFlagSymptoms = [\n-  { id: 'fever', symptom: 'Persistent fever or night sweats', priority: 'high' },\n-  { id: 'weight_loss', symptom: 'Unintentional weight loss >10% in 6 months', priority: 'high' },\n-  { id: 'chest_pain', symptom: 'Chest pain with exertion or at rest', priority: 'high' },\n-  { id: 'dyspnea', symptom: 'Progressive shortness of breath', priority: 'high' },\n-  { id: 'neurological', symptom: 'New neurological symptoms (weakness, numbness, seizures)', priority: 'high' },\n-  { id: 'bleeding', symptom: 'Abnormal bleeding or bruising', priority: 'high' }\n-]\n+const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n+  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n+  symptom,\n+  priority: 'high'\n+}))\n \n const pemQuestions = [\n   {\n     id: 'frequency',\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129930041,
+      "end": 1758129930056
+    }
+  }
+}

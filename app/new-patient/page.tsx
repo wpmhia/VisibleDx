@@ -12,6 +12,7 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { ArrowLeft, ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 interface PatientData {
   demographics: {
@@ -89,75 +90,58 @@ const initialPatientData: PatientData = {
 
 type WorkflowStep = 'demographics' | 'quickScreen' | 'redFlags' | 'standTest' | 'pemQuest' | 'criteria' | 'summary'
 
-const screeningQuestions = [
-  { id: 1, question: "Do you experience severe fatigue that is not relieved by rest?", category: "core" },
-  { id: 2, question: "Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?", category: "pem" },
-  { id: 3, question: "Do you have unrefreshing sleep, regardless of duration?", category: "core" },
-  { id: 4, question: "Do you experience cognitive difficulties (brain fog, memory problems)?", category: "core" },
-  { id: 5, question: "Do you have palpitations or rapid heart rate, especially when standing?", category: "cardiovascular" },
-  { id: 6, question: "Do you experience dizziness or lightheadedness when standing up?", category: "orthostatic" },
-  { id: 7, question: "Have you had COVID-19 or suspected COVID-19 infection?", category: "history" },
-  { id: 8, question: "Have your symptoms persisted for 3 months or longer?", category: "duration" },
-  { id: 9, question: "Do you experience muscle pain or joint pain without swelling?", category: "pain" },
-  { id: 10, question: "Do you have frequent headaches or changes in headache patterns?", category: "neurological" },
-  { id: 11, question: "Do you experience temperature dysregulation (feeling too hot/cold)?", category: "autonomic" },
-  { id: 12, question: "Do you have gastrointestinal symptoms (nausea, bloating, changes in bowel habits)?", category: "gi" },
-  { id: 13, question: "Do you experience shortness of breath or breathing difficulties?", category: "respiratory" },
-  { id: 14, question: "Have you noticed decreased exercise tolerance or physical capacity?", category: "functional" },
-  { id: 15, question: "Do you experience sensitivity to light, sound, or touch?", category: "sensory" },
-  { id: 16, question: "Have you been unable to maintain your previous level of activity?", category: "functional" }
-]
+const createScreeningQuestions = (t: any) => t.quickScreen.questions.map((question: string, index: number) => ({
+  id: index + 1,
+  question,
+  category: ['core', 'pem', 'core', 'core', 'cardiovascular', 'orthostatic', 'history', 'duration', 'pain', 'neurological', 'autonomic', 'gi', 'respiratory', 'functional', 'sensory', 'functional'][index]
+}))
 
-const redFlagSymptoms = [
-  { id: 'fever', symptom: 'Persistent fever or night sweats', priority: 'high' },
-  { id: 'weight_loss', symptom: 'Unintentional weight loss >10% in 6 months', priority: 'high' },
-  { id: 'chest_pain', symptom: 'Chest pain with exertion or at rest', priority: 'high' },
-  { id: 'dyspnea', symptom: 'Progressive shortness of breath', priority: 'high' },
-  { id: 'neurological', symptom: 'New neurological symptoms (weakness, numbness, seizures)', priority: 'high' },
-  { id: 'bleeding', symptom: 'Abnormal bleeding or bruising', priority: 'high' }
-]
+const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({
+  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],
+  symptom,
+  priority: 'high'
+}))
 
-const pemQuestions = [
+const createPemQuestions = (t: any) => [
   {
     id: 'frequency',
-    question: 'How often do you experience a worsening of symptoms following physical activity?',
-    options: [
-      { value: 'never', label: 'Never', score: 0 },
-      { value: 'rarely', label: 'Rarely (less than 25% of the time)', score: 1 },
-      { value: 'sometimes', label: 'Sometimes (25-50% of the time)', score: 2 },
-      { value: 'often', label: 'Often (50-75% of the time)', score: 3 },
-      { value: 'always', label: 'Always or almost always (more than 75% of the time)', score: 4 }
-    ]
+    question: t.pem.questions.frequency.question,
+    options: t.pem.questions.frequency.options.map((label: string, index: number) => ({
+      value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],
+      label,
+      score: index
+    }))
   },
   {
     id: 'severity',
-    question: 'How severe is the worsening of your symptoms after activity?',
-    options: [
-      { value: 'none', label: 'No worsening', score: 0 },
-      { value: 'mild', label: 'Mild - slightly worse than before activity', score: 1 },
-      { value: 'moderate', label: 'Moderate - noticeably worse, but manageable', score: 2 },
-      { value: 'severe', label: 'Severe - significantly worse, difficult to function', score: 3 },
-      { value: 'very_severe', label: 'Very severe - unable to function, bedridden', score: 4 }
-    ]
+    question: t.pem.questions.severity.question,
+    options: t.pem.questions.severity.options.map((label: string, index: number) => ({
+      value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],
+      label,
+      score: index
+    }))
   },
   {
     id: 'recovery_time',
-    question: 'How long does it typically take for your symptoms to return to baseline after activity?',
-    options: [
-      { value: 'no_recovery_needed', label: 'No recovery time needed', score: 0 },
-      { value: 'hours', label: 'A few hours', score: 1 },
-      { value: 'one_day', label: 'About one day', score: 2 },
-      { value: 'several_days', label: 'Several days (2-6 days)', score: 3 },
-      { value: 'week_or_more', label: 'A week or more', score: 4 }
-    ]
+    question: t.pem.questions.recoveryTime.question,
+    options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({
+      value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],
+      label,
+      score: index
+    }))
   }
 ]
 
 export default function NewPatientWorkflow() {
+  const { t } = useTranslation()
   const [currentStep, setCurrentStep] = useState<WorkflowStep>('demographics')
   const [patientData, setPatientData] = useState<PatientData>(initialPatientData)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [isComplete, setIsComplete] = useState(false)
+  
+  const screeningQuestions = createScreeningQuestions(t)
+  const redFlagSymptoms = createRedFlagSymptoms(t)
+  const pemQuestions = createPemQuestions(t)
 
   const getStepProgress = () => {
     const steps: WorkflowStep[] = ['demographics', 'quickScreen', 'redFlags', 'standTest', 'pemQuest', 'criteria', 'summary']
@@ -408,10 +392,10 @@ export default function NewPatientWorkflow() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <CheckCircle className="h-6 w-6 text-green-600" />
-                Patient Assessment Complete
+                {t.newPatient.results.title}
               </CardTitle>
               <CardDescription>
-                Comprehensive clinical evaluation with SOAP documentation
+                {t.newPatient.results.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -421,11 +405,11 @@ export default function NewPatientWorkflow() {
                     <div className="text-center">
                       <h3 className="font-semibold text-sm">ME/CFS (G93.32)</h3>
                       <Badge variant={patientData.diagnoses.mecfs.met ? 'default' : 'secondary'} className="mt-2">
-                        {patientData.diagnoses.mecfs.met ? 'CRITERIA MET' : 'Not Met'}
+                        {patientData.diagnoses.mecfs.met ? t.criteria.results.criteriaMet : t.common.notMet}
                       </Badge>
                       {patientData.diagnoses.mecfs.met && (
                         <p className="text-xs text-green-700 mt-1">
-                          Confidence: {patientData.diagnoses.mecfs.confidence}
+                          {t.common.confidence}: {patientData.diagnoses.mecfs.confidence}
                         </p>
                       )}
                     </div>
@@ -437,11 +421,11 @@ export default function NewPatientWorkflow() {
                     <div className="text-center">
                       <h3 className="font-semibold text-sm">Long COVID (U09.9)</h3>
                       <Badge variant={patientData.diagnoses.longCovid.met ? 'default' : 'secondary'} className="mt-2">
-                        {patientData.diagnoses.longCovid.met ? 'CRITERIA MET' : 'Not Met'}
+                        {patientData.diagnoses.longCovid.met ? t.criteria.results.criteriaMet : t.common.notMet}
                       </Badge>
                       {patientData.diagnoses.longCovid.met && (
                         <p className="text-xs text-green-700 mt-1">
-                          Confidence: {patientData.diagnoses.longCovid.confidence}
+                          {t.common.confidence}: {patientData.diagnoses.longCovid.confidence}
                         </p>
                       )}
                     </div>
@@ -453,11 +437,11 @@ export default function NewPatientWorkflow() {
                     <div className="text-center">
                       <h3 className="font-semibold text-sm">POTS (I47.1)</h3>
                       <Badge variant={patientData.diagnoses.pots.met ? 'default' : 'secondary'} className="mt-2">
-                        {patientData.diagnoses.pots.met ? 'CRITERIA MET' : 'Not Met'}
+                        {patientData.diagnoses.pots.met ? t.criteria.results.criteriaMet : t.common.notMet}
                       </Badge>
                       {patientData.diagnoses.pots.met && (
                         <p className="text-xs text-green-700 mt-1">
-                          Confidence: {patientData.diagnoses.pots.confidence}
+                          {t.common.confidence}: {patientData.diagnoses.pots.confidence}
                         </p>
                       )}
                     </div>
@@ -469,7 +453,7 @@ export default function NewPatientWorkflow() {
                 <Alert>
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>No Definitive Diagnoses:</strong> Consider alternative diagnoses, 
+                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}:</strong> Consider alternative diagnoses, 
                     subclinical presentations, or ongoing symptom monitoring. Some patients may 
                     benefit from symptomatic treatment while monitoring for progression.
                   </AlertDescription>
@@ -477,17 +461,17 @@ export default function NewPatientWorkflow() {
               )}
 
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2 text-blue-900">Key Assessment Results</h4>
+                <h4 className="font-semibold mb-2 text-blue-900">{t.newPatient.results.keyResults}</h4>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <p><strong>Risk Level:</strong> {patientData.quickScreen.riskLevel.toUpperCase()}</p>
-                    <p><strong>Screening Score:</strong> {patientData.quickScreen.score}/16</p>
-                    <p><strong>PEM Present:</strong> {patientData.pemQuest.present ? 'Yes' : 'No'}</p>
+                    <p><strong>{t.newPatient.results.riskLevel}:</strong> {patientData.quickScreen.riskLevel.toUpperCase()}</p>
+                    <p><strong>{t.newPatient.results.screeningScore}:</strong> {patientData.quickScreen.score}/16</p>
+                    <p><strong>{t.newPatient.results.pemPresent}:</strong> {patientData.pemQuest.present ? t.common.yes : t.common.no}</p>
                   </div>
                   <div>
-                    <p><strong>POTS Criteria:</strong> {patientData.standTest.meetsPOTS ? 'Met' : 'Not met'}</p>
-                    <p><strong>Red Flags:</strong> {patientData.redFlags.symptoms.length > 0 ? patientData.redFlags.symptoms.length + ' identified' : 'None'}</p>
-                    <p><strong>Priority:</strong> {patientData.redFlags.priority}</p>
+                    <p><strong>{t.newPatient.results.potsCriteria}:</strong> {patientData.standTest.meetsPOTS ? t.common.met : t.common.notMet}</p>
+                    <p><strong>{t.newPatient.results.redFlags}:</strong> {patientData.redFlags.symptoms.length > 0 ? patientData.redFlags.symptoms.length + ' identified' : t.common.none}</p>
+                    <p><strong>{t.newPatient.results.priority}:</strong> {patientData.redFlags.priority}</p>
                   </div>
                 </div>
               </div>
@@ -499,7 +483,7 @@ export default function NewPatientWorkflow() {
                   setCurrentQuestionIndex(0)
                   setIsComplete(false)
                 }} variant="outline">
-                  New Assessment
+                  {t.newPatient.results.newAssessment}
                 </Button>
                 <Button onClick={() => {
                   const blob = new Blob([soap], { type: 'text/plain' })
@@ -511,7 +495,7 @@ export default function NewPatientWorkflow() {
                   URL.revokeObjectURL(url)
                 }} className="flex items-center gap-2">
                   <Download className="h-4 w-4" />
-                  Download SOAP Note
+                  {t.newPatient.results.downloadSOAP}
                 </Button>
               </div>
             </CardContent>
@@ -529,30 +513,30 @@ export default function NewPatientWorkflow() {
           <div className="mb-6">
             <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
               <ArrowLeft className="h-4 w-4" />
-              Back to Dashboard
+              {t.app.backToDashboard}
             </Link>
             
             <div className="flex items-center gap-4 mb-4">
               <User className="h-5 w-5 text-blue-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">New Patient Assessment</h1>
-                <p className="text-gray-600">Intelligent guided evaluation for ME/CFS, Long COVID, and POTS</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.newPatient.title}</h1>
+                <p className="text-gray-600">{t.newPatient.description}</p>
               </div>
             </div>
             
             <Progress value={getStepProgress()} className="h-2" />
-            <p className="text-sm text-gray-600 mt-2">Step 1 of 7: Patient Demographics</p>
+            <p className="text-sm text-gray-600 mt-2">{t.newPatient.demographics.step}</p>
           </div>
 
           <Card>
             <CardHeader>
-              <CardTitle>Patient Information</CardTitle>
-              <CardDescription>Basic demographics for clinical documentation</CardDescription>
+              <CardTitle>{t.newPatient.demographics.title}</CardTitle>
+              <CardDescription>{t.newPatient.demographics.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="age">Patient Age *</Label>
+                  <Label htmlFor="age">{t.newPatient.demographics.age} *</Label>
                   <Input
                     id="age"
                     type="number"
@@ -565,7 +549,7 @@ export default function NewPatientWorkflow() {
                   />
                 </div>
                 <div>
-                  <Label>Gender *</Label>
+                  <Label>{t.newPatient.demographics.gender} *</Label>
                   <RadioGroup 
                     value={patientData.demographics.gender} 
                     onValueChange={(value) => setPatientData(prev => ({
@@ -576,15 +560,15 @@ export default function NewPatientWorkflow() {
                   >
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="female" id="female" />
-                      <Label htmlFor="female">Female</Label>
+                      <Label htmlFor="female">{t.common.female}</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="male" id="male" />
-                      <Label htmlFor="male">Male</Label>
+                      <Label htmlFor="male">{t.common.male}</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="other" id="other" />
-                      <Label htmlFor="other">Other</Label>
+                      <Label htmlFor="other">{t.common.other}</Label>
                     </div>
                   </RadioGroup>
                 </div>
@@ -592,7 +576,7 @@ export default function NewPatientWorkflow() {
               
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="clinician">Clinician Name</Label>
+                  <Label htmlFor="clinician">{t.newPatient.demographics.clinicianName}</Label>
                   <Input
                     id="clinician"
                     placeholder="Dr. Smith"
@@ -604,7 +588,7 @@ export default function NewPatientWorkflow() {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="patientId">Patient ID/MRN</Label>
+                  <Label htmlFor="patientId">{t.newPatient.demographics.patientId}</Label>
                   <Input
                     id="patientId"
                     placeholder="12345"
@@ -623,7 +607,7 @@ export default function NewPatientWorkflow() {
                   disabled={!patientData.demographics.age || !patientData.demographics.gender}
                   className="flex items-center gap-2"
                 >
-                  Start Assessment
+                  {t.newPatient.demographics.startAssessment}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </div>
@@ -647,15 +631,15 @@ export default function NewPatientWorkflow() {
             <div className="flex items-center gap-4 mb-4">
               <Clock className="h-5 w-5 text-orange-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Quick Screening Assessment</h1>
-                <p className="text-gray-600">16 evidence-based questions (92% sensitivity)</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.quickScreen.title}</h1>
+                <p className="text-gray-600">{t.quickScreen.description}</p>
               </div>
             </div>
             
             <Progress value={getStepProgress()} className="h-2 mb-2" />
             <Progress value={progress} className="h-1" />
             <p className="text-sm text-gray-600 mt-2">
-              Question {currentQuestionIndex + 1} of {screeningQuestions.length}
+              {t.common.question} {currentQuestionIndex + 1} {t.common.of} {screeningQuestions.length}
             </p>
           </div>
 
@@ -672,14 +656,14 @@ export default function NewPatientWorkflow() {
                     variant={currentAnswer === true ? "default" : "outline"}
                     className="flex items-center gap-2 px-8"
                   >
-                    Yes
+                    {t.common.yes}
                   </Button>
                   <Button
                     onClick={() => handleQuickScreenAnswer(currentQuestion.id, false)}
                     variant={currentAnswer === false ? "default" : "outline"}
                     className="flex items-center gap-2 px-8"
                   >
-                    No
+                    {t.common.no}
                   </Button>
                 </div>
 
@@ -689,7 +673,7 @@ export default function NewPatientWorkflow() {
                     disabled={currentQuestionIndex === 0}
                     variant="outline"
                   >
-                    Previous
+                    {t.common.previous}
                   </Button>
                   
                   <Button 
@@ -702,7 +686,7 @@ export default function NewPatientWorkflow() {
                     }}
                     disabled={currentAnswer === undefined}
                   >
-                    {currentQuestionIndex === screeningQuestions.length - 1 ? 'Continue' : 'Next'}
+                    {currentQuestionIndex === screeningQuestions.length - 1 ? t.common.continue : t.common.next}
                   </Button>
                 </div>
               </div>
@@ -722,8 +706,8 @@ export default function NewPatientWorkflow() {
             <div className="flex items-center gap-4 mb-4">
               <AlertTriangle className="h-5 w-5 text-red-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Red Flag Assessment</h1>
-                <p className="text-gray-600">Check for symptoms requiring urgent evaluation</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.newPatient.redFlags.title}</h1>
+                <p className="text-gray-600">{t.newPatient.redFlags.description}</p>
               </div>
             </div>
             <Progress value={getStepProgress()} className="h-2" />
@@ -731,8 +715,8 @@ export default function NewPatientWorkflow() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Red Flag Symptoms</CardTitle>
-              <CardDescription>Select any symptoms present</CardDescription>
+              <CardTitle>{t.redFlag.symptoms.title}</CardTitle>
+              <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
@@ -773,7 +757,7 @@ export default function NewPatientWorkflow() {
               
               <div className="flex justify-center pt-6">
                 <Button onClick={() => setCurrentStep(determineNextStep())}>
-                  Continue Assessment
+                  {t.newPatient.redFlags.continueAssessment}
                 </Button>
               </div>
             </CardContent>
@@ -792,8 +776,8 @@ export default function NewPatientWorkflow() {
             <div className="flex items-center gap-4 mb-4">
               <Heart className="h-5 w-5 text-red-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Orthostatic Assessment</h1>
-                <p className="text-gray-600">Record baseline and standing heart rates</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.newPatient.standTest.title}</h1>
+                <p className="text-gray-600">{t.newPatient.standTest.description}</p>
               </div>
             </div>
             <Progress value={getStepProgress()} className="h-2" />
@@ -801,13 +785,13 @@ export default function NewPatientWorkflow() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Heart Rate Measurements</CardTitle>
-              <CardDescription>Enter heart rate after 5 minutes lying down and peak heart rate within 10 minutes of standing</CardDescription>
+              <CardTitle>{t.newPatient.standTest.measurements}</CardTitle>
+              <CardDescription>{t.newPatient.standTest.measurementDescription}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="baselineHR">Baseline HR (lying down)</Label>
+                  <Label htmlFor="baselineHR">{t.newPatient.standTest.baselineHR}</Label>
                   <Input
                     id="baselineHR"
                     type="number"
@@ -823,7 +807,7 @@ export default function NewPatientWorkflow() {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="peakHR">Peak Standing HR</Label>
+                  <Label htmlFor="peakHR">{t.newPatient.standTest.peakHR}</Label>
                   <Input
                     id="peakHR"
                     type="number"
@@ -853,8 +837,8 @@ export default function NewPatientWorkflow() {
                 <Alert className={patientData.standTest.meetsPOTS ? 'border-red-200 bg-red-50' : 'border-green-200 bg-green-50'}>
                   <Heart className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>HR Increase: {patientData.standTest.peakHR - patientData.standTest.baselineHR} bpm</strong><br />
-                    POTS Criteria (≥30 bpm): {patientData.standTest.meetsPOTS ? 'MET' : 'Not met'}
+                    <strong>{t.newPatient.standTest.hrIncrease}: {patientData.standTest.peakHR - patientData.standTest.baselineHR} {t.common.bpm}</strong><br />
+                    {t.newPatient.standTest.potsCriteria} (≥30 {t.common.bpm}): {patientData.standTest.meetsPOTS ? t.common.met.toUpperCase() : t.common.notMet}
                   </AlertDescription>
                 </Alert>
               )}
@@ -864,7 +848,7 @@ export default function NewPatientWorkflow() {
                   onClick={() => setCurrentStep(determineNextStep())}
                   disabled={!patientData.standTest.baselineHR || !patientData.standTest.peakHR}
                 >
-                  Continue to PEM Assessment
+                  {t.newPatient.standTest.continueToPEM}
                 </Button>
               </div>
             </CardContent>
@@ -887,14 +871,14 @@ export default function NewPatientWorkflow() {
             <div className="flex items-center gap-4 mb-4">
               <Activity className="h-5 w-5 text-orange-600" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">PEM Assessment</h1>
-                <p className="text-gray-600">Post-Exertional Malaise evaluation</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.newPatient.pemAssessment.title}</h1>
+                <p className="text-gray-600">{t.newPatient.pemAssessment.description}</p>
               </div>
             </div>
             <Progress value={getStepProgress()} className="h-2 mb-2" />
             <Progress value={progress} className="h-1" />
             <p className="text-sm text-gray-600 mt-2">
-              Question {(currentQuestionIndex % pemQuestions.length) + 1} of {pemQuestions.length}
+              {t.common.question} {(currentQuestionIndex % pemQuestions.length) + 1} {t.common.of} {pemQuestions.length}
             </p>
           </div>
 
@@ -937,7 +921,7 @@ export default function NewPatientWorkflow() {
                   }}
                   disabled={!currentAnswer}
                 >
-                  {currentQuestionIndex === pemQuestions.length - 1 ? 'Finalize Assessment' : 'Next'}
+                  {currentQuestionIndex === pemQuestions.length - 1 ? t.newPatient.pemAssessment.finalizeAssessment : t.common.next}
                 </Button>
               </div>
             </CardContent>
@@ -959,8 +943,8 @@ export default function NewPatientWorkflow() {
           <Card>
             <CardContent className="pt-6 text-center">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-4"></div>
-              <h3 className="text-lg font-semibold mb-2">Processing Diagnostic Criteria...</h3>
-              <p className="text-gray-600">Analyzing responses against CDC, NASEM, ESC, and WHO guidelines</p>
+              <h3 className="text-lg font-semibold mb-2">{t.newPatient.processing.title}</h3>
+              <p className="text-gray-600">{t.newPatient.processing.description}</p>
             </CardContent>
           </Card>
         </div>

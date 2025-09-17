@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b7470c001oqpcV1XHrcdj9H",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01P3MVA4tyLJThW6M8khcLzb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "            <CardHeader>\n              <CardTitle>Red Flag Symptoms</CardTitle>\n              <CardDescription>Select any symptoms present</CardDescription>\n            </CardHeader>",
+      "newString": "            <CardHeader>\n              <CardTitle>{t.redFlag.symptoms.title}</CardTitle>\n              <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n            </CardHeader>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -714,10 +714,10 @@\n </div>\n \n <Card>\n   <CardHeader>\n-    <CardTitle>Red Flag Symptoms</CardTitle>\n-    <CardDescription>Select any symptoms present</CardDescription>\n+    <CardTitle>{t.redFlag.symptoms.title}</CardTitle>\n+    <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n   </CardHeader>\n   <CardContent>\n     <div className=\"space-y-3\">\n       {redFlagSymptoms.map((flag) => (\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130032204,
+      "end": 1758130032216
+    }
+  }
+}

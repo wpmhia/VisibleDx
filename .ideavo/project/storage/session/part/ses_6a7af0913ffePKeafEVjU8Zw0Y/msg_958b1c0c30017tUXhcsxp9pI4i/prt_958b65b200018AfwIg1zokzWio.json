@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b65b200018AfwIg1zokzWio",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0141jcxHAkg2ayuX66HB1rck",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                  <Label>Gender *</Label>",
+      "newString": "                  <Label>{t.newPatient.demographics.gender} *</Label>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -548,9 +548,9 @@\n     }))}\n   />\n </div>\n <div>\n-  <Label>Gender *</Label>\n+  <Label>{t.newPatient.demographics.gender} *</Label>\n   <RadioGroup \n     value={patientData.demographics.gender} \n     onValueChange={(value) => setPatientData(prev => ({\n       ...prev,\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129970854,
+      "end": 1758129970860
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b793d3001O6NE4kv28lUBiP",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ExTJ5DzFHjPPdH8w7Dn1gZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                  <Label htmlFor=\"baselineHR\">Baseline HR (lying down)</Label>",
+      "newString": "                  <Label htmlFor=\"baselineHR\">{t.newPatient.standTest.baselineHR}</Label>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -790,9 +790,9 @@\n </CardHeader>\n <CardContent className=\"space-y-4\">\n   <div className=\"grid md:grid-cols-2 gap-4\">\n     <div>\n-      <Label htmlFor=\"baselineHR\">Baseline HR (lying down)</Label>\n+      <Label htmlFor=\"baselineHR\">{t.newPatient.standTest.baselineHR}</Label>\n       <Input\n         id=\"baselineHR\"\n         type=\"number\"\n         placeholder=\"70\"\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130051204,
+      "end": 1758130051209
+    }
+  }
+}

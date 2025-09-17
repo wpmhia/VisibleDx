@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b3bb9e001UOzNHUQaldQOPb",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01LSyDLTdidoawV1jpEPhCtX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "    let plan = \"POTS Subtype & Treatment Plan\\n\"\n    plan += \"=============================\\n\\n\"\n    \n    plan += \"SUBTYPE ANALYSIS:\\n\"\n    plan += `Primary: ${primarySubtype.name} (${primarySubtype.percentage}% likelihood)\\n`\n    if (secondarySubtypes.length > 0) {\n      plan += \"Secondary considerations:\\n\"\n      secondarySubtypes.forEach(s => {\n        plan += `  • ${s.name} (${s.percentage}% likelihood)\\n`\n      })\n    }\n    plan += \"\\n\"\n    \n    plan += \"TREATMENT RECOMMENDATIONS:\\n\\n\"\n    plan += \"Non-Pharmacological:\\n\"\n    primarySubtype.treatments.nonPharmacological.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })\n    plan += \"\\n\"\n    \n    plan += \"First-Line Medications:\\n\"\n    primarySubtype.treatments.firstLine.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })\n    plan += \"\\n\"\n    \n    plan += \"Second-Line Options:\\n\"\n    primarySubtype.treatments.secondLine.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })",
+      "newString": "    let plan = `${t.subtype.title}\\n`\n    plan += \"=============================\\n\\n\"\n    \n    plan += \"SUBTYPE ANALYSIS:\\n\"\n    plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\\n`\n    if (secondarySubtypes.length > 0) {\n      plan += \"Secondary considerations:\\n\"\n      secondarySubtypes.forEach(s => {\n        plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\\n`\n      })\n    }\n    plan += \"\\n\"\n    \n    plan += `${t.common.recommendations.toUpperCase()}:\\n\\n`\n    plan += `${t.subtype.results.nonPharmacological}:\\n`\n    primarySubtype.treatments.nonPharmacological.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })\n    plan += \"\\n\"\n    \n    plan += `${t.subtype.results.firstLineRx}:\\n`\n    primarySubtype.treatments.firstLine.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })\n    plan += \"\\n\"\n    \n    plan += `${t.subtype.results.secondLineOptions}:\\n`\n    primarySubtype.treatments.secondLine.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -138,35 +138,35 @@\n const scores = calculateSubtypeScores()\n const primarySubtype = scores[0]\n const secondarySubtypes = scores.filter(s => s.percentage >= 40 && s.id !== primarySubtype.id)\n \n-let plan = \"POTS Subtype & Treatment Plan\\n\"\n+let plan = `${t.subtype.title}\\n`\n plan += \"=============================\\n\\n\"\n \n plan += \"SUBTYPE ANALYSIS:\\n\"\n-plan += `Primary: ${primarySubtype.name} (${primarySubtype.percentage}% likelihood)\\n`\n+plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\\n`\n if (secondarySubtypes.length > 0) {\n   plan += \"Secondary considerations:\\n\"\n   secondarySubtypes.forEach(s => {\n-    plan += `  • ${s.name} (${s.percentage}% likelihood)\\n`\n+    plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\\n`\n   })\n }\n plan += \"\\n\"\n \n-plan += \"TREATMENT RECOMMENDATIONS:\\n\\n\"\n-plan += \"Non-Pharmacological:\\n\"\n+plan += `${t.common.recommendations.toUpperCase()}:\\n\\n`\n+plan += `${t.subtype.results.nonPharmacological}:\\n`\n primarySubtype.treatments.nonPharmacological.forEach(treatment => {\n   plan += `  • ${treatment}\\n`\n })\n plan += \"\\n\"\n \n-plan += \"First-Line Medications:\\n\"\n+plan += `${t.subtype.results.firstLineRx}:\\n`\n primarySubtype.treatments.firstLine.forEach(treatment => {\n   plan += `  • ${treatment}\\n`\n })\n plan += \"\\n\"\n \n-plan += \"Second-Line Options:\\n\"\n+plan += `${t.subtype.results.secondLineOptions}:\\n`\n primarySubtype.treatments.secondLine.forEach(treatment => {\n   plan += `  • ${treatment}\\n`\n })\n \n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129805869,
+      "end": 1758129805876
+    }
+  }
+}

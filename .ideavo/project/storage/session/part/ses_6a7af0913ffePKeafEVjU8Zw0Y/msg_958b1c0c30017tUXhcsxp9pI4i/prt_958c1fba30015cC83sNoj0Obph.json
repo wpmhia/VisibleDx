@@ -1,0 +1,25 @@
+{
+  "id": "prt_958c1fba30015cC83sNoj0Obph",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DwAXxtJkaqqox7PeH7kNM2",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "offset": 1,
+      "limit": 50
+    },
+    "output": "<file>\n00002| \n00003| import { useState } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Progress } from '@/components/ui/progress'\n00007| import { Badge } from '@/components/ui/badge'\n00008| import { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from 'lucide-react'\n00009| import Link from 'next/link'\n00010| import { useTranslation } from '@/lib/language-context'\n00011| \n00012| const questionCategories = [\n00013|   \"core\", \"pem\", \"core\", \"core\", \"cardiovascular\", \"orthostatic\", \"history\", \n00014|   \"duration\", \"pain\", \"neurological\", \"autonomic\", \"gi\", \"respiratory\", \n00015|   \"functional\", \"sensory\", \"functional\"\n00016| ]\n00017| \n00018| export default function QuickScreen() {\n00019|   const [answers, setAnswers] = useState<Record<number, boolean>>({})\n00020|   const [currentQuestion, setCurrentQuestion] = useState(0)\n00021|   const [isComplete, setIsComplete] = useState(false)\n00022|   const { t } = useTranslation()\n00023| \n00024|   const handleAnswer = (questionId: number, answer: boolean) => {\n00025|     setAnswers(prev => ({\n00026|       ...prev,\n00027|       [questionId]: answer\n00028|     }))\n00029|   }\n00030| \n00031|   const nextQuestion = () => {\n00032|     if (currentQuestion < screeningQuestions.length - 1) {\n00033|       setCurrentQuestion(prev => prev + 1)\n00034|     } else {\n00035|       setIsComplete(true)\n00036|     }\n00037|   }\n00038| \n00039|   const prevQuestion = () => {\n00040|     if (currentQuestion > 0) {\n00041|       setCurrentQuestion(prev => prev - 1)\n00042|     }\n00043|   }\n00044| \n00045|   const calculateRisk = () => {\n00046|     const totalYes = Object.values(answers).filter(Boolean).length\n00047|     const coreSymptoms = [1, 3, 4].filter(id => answers[id]).length\n00048|     const pemPresent = answers[2]\n00049|     const covidHistory = answers[7]\n00050|     const chronicity = answers[8]\n00051|     \n\n(File has more lines. Use 'offset' parameter to read beyond line 51)\n</file>",
+    "metadata": {
+      "preview": "\nimport { useState } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\nconst questionCategories = [\n  \"core\", \"pem\", \"core\", \"core\", \"cardiovascular\", \"orthostatic\", \"history\", \n  \"duration\", \"pain\", \"neurological\", \"autonomic\", \"gi\", \"respiratory\", \n  \"functional\", \"sensory\", \"functional\"\n]\n\nexport default function QuickScreen() {\n  const [answers, setAnswers] = useState<Record<number, boolean>>({})\n  const [currentQuestion, setCurrentQuestion] = useState(0)\n  const [isComplete, setIsComplete] = useState(false)"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758130732507,
+      "end": 1758130732509
+    }
+  }
+}

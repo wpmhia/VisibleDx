@@ -10,6 +10,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { ArrowLeft, Users, Pill, Heart, Droplets, Activity, Brain, Shield, Download } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 interface POTSSubtype {
   id: string
@@ -25,133 +26,80 @@ interface POTSSubtype {
   }
 }
 
-const potsSubtypes: POTSSubtype[] = [
+const createSubtypes = (t: any): POTSSubtype[] => [
   {
     id: 'hypovolemic',
-    name: 'Hypovolemic POTS',
-    description: 'Low blood volume causing orthostatic intolerance',
+    name: t.subtype.subtypes.hypovolemic.name,
+    description: t.subtype.subtypes.hypovolemic.description,
     icon: Droplets,
     color: 'blue',
-    criteria: [
-      { id: 'low_bp', description: 'Low-normal blood pressure (<110/70)', checked: false },
-      { id: 'thirst', description: 'Excessive thirst', checked: false },
-      { id: 'salt_craving', description: 'Salt craving', checked: false },
-      { id: 'volume_depletion', description: 'Signs of volume depletion', checked: false },
-      { id: 'renin_high', description: 'Elevated renin/aldosterone (if available)', checked: false }
-    ],
+    criteria: t.subtype.subtypes.hypovolemic.criteria.map((desc: string, index: number) => ({
+      id: ['low_bp', 'thirst', 'salt_craving', 'volume_depletion', 'renin_high'][index],
+      description: desc,
+      checked: false
+    })),
     treatments: {
-      nonPharmacological: [
-        'Increase fluid intake to 2.5-3L daily',
-        'Increase sodium intake to 8-10g daily',
-        'Compression garments (30-40 mmHg)',
-        'Gradual exercise reconditioning'
-      ],
-      firstLine: [
-        'Fludrocortisone 0.1-0.2mg daily',
-        'Salt tablets if dietary intake insufficient'
-      ],
-      secondLine: [
-        'Desmopressin (DDAVP) for severe cases',
-        'Erythropoietin if anemic'
-      ]
+      nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,
+      firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,
+      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine
     }
   },
   {
     id: 'neuropathic',
-    name: 'Neuropathic POTS',
-    description: 'Peripheral autonomic neuropathy affecting blood vessel control',
+    name: t.subtype.subtypes.neuropathic.name,
+    description: t.subtype.subtypes.neuropathic.description,
     icon: Brain,
     color: 'purple',
-    criteria: [
-      { id: 'distal_neuropathy', description: 'Distal small fiber neuropathy symptoms', checked: false },
-      { id: 'gi_dysfunction', description: 'GI dysfunction (gastroparesis, constipation)', checked: false },
-      { id: 'anhidrosis', description: 'Anhidrosis or reduced sweating', checked: false },
-      { id: 'pupil_abnormal', description: 'Pupillary abnormalities', checked: false },
-      { id: 'diabetes_autoimmune', description: 'History of diabetes or autoimmune disease', checked: false }
-    ],
+    criteria: t.subtype.subtypes.neuropathic.criteria.map((desc: string, index: number) => ({
+      id: ['distal_neuropathy', 'gi_dysfunction', 'anhidrosis', 'pupil_abnormal', 'diabetes_autoimmune'][index],
+      description: desc,
+      checked: false
+    })),
     treatments: {
-      nonPharmacological: [
-        'Compression garments',
-        'Leg elevation',
-        'Avoid heat exposure',
-        'Small frequent meals'
-      ],
-      firstLine: [
-        'Midodrine 2.5-10mg TID',
-        'Pyridostigmine 30-60mg TID'
-      ],
-      secondLine: [
-        'Droxidopa (if available)',
-        'Alpha-lipoic acid for neuropathy',
-        'IVIG for autoimmune cases'
-      ]
+      nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,
+      firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,
+      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine
     }
   },
   {
     id: 'hyperadrenergic',
-    name: 'Hyperadrenergic POTS',
-    description: 'Excessive sympathetic nervous system activation',
+    name: t.subtype.subtypes.hyperadrenergic.name,
+    description: t.subtype.subtypes.hyperadrenergic.description,
     icon: Activity,
     color: 'red',
-    criteria: [
-      { id: 'high_bp', description: 'Hypertension when standing', checked: false },
-      { id: 'anxiety_panic', description: 'Anxiety, panic attacks, tremor', checked: false },
-      { id: 'migraine', description: 'Migraine headaches', checked: false },
-      { id: 'cold_hands', description: 'Cold hands and feet', checked: false },
-      { id: 'norepinephrine_high', description: 'Elevated standing norepinephrine >600 pg/mL', checked: false }
-    ],
+    criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({
+      id: ['high_bp', 'anxiety_panic', 'migraine', 'cold_hands', 'norepinephrine_high'][index],
+      description: desc,
+      checked: false
+    })),
     treatments: {
-      nonPharmacological: [
-        'Stress reduction techniques',
-        'Avoid stimulants (caffeine)',
-        'Regular sleep schedule',
-        'Gentle exercise'
-      ],
-      firstLine: [
-        'Propranolol 10-40mg BID',
-        'Clonidine 0.1-0.2mg BID'
-      ],
-      secondLine: [
-        'Ivabradine 2.5-7.5mg BID',
-        'Methyldopa',
-        'Labetalol for hypertension'
-      ]
+      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,
+      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,
+      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine
     }
   },
   {
     id: 'autoimmune',
-    name: 'Autoimmune POTS',
-    description: 'Autoimmune-mediated autonomic dysfunction',
+    name: t.subtype.subtypes.autoimmune.name,
+    description: t.subtype.subtypes.autoimmune.description,
     icon: Shield,
     color: 'green',
-    criteria: [
-      { id: 'autoimmune_history', description: 'Personal/family history of autoimmune disease', checked: false },
-      { id: 'rapid_onset', description: 'Rapid onset of symptoms', checked: false },
-      { id: 'viral_trigger', description: 'Viral illness trigger (EBV, COVID, etc.)', checked: false },
-      { id: 'antibodies', description: 'Positive autonomic antibodies (if tested)', checked: false },
-      { id: 'other_autoimmune', description: 'Other autoimmune markers positive', checked: false }
-    ],
+    criteria: t.subtype.subtypes.autoimmune.criteria.map((desc: string, index: number) => ({
+      id: ['autoimmune_history', 'rapid_onset', 'viral_trigger', 'antibodies', 'other_autoimmune'][index],
+      description: desc,
+      checked: false
+    })),
     treatments: {
-      nonPharmacological: [
-        'Standard POTS measures',
-        'Avoid infection triggers',
-        'Stress management',
-        'Anti-inflammatory diet'
-      ],
-      firstLine: [
-        'Standard POTS medications',
-        'Trial of corticosteroids'
-      ],
-      secondLine: [
-        'IVIG therapy',
-        'Immunosuppressive agents',
-        'Plasmapheresis for severe cases'
-      ]
+      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,
+      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,
+      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine
     }
   }
 ]
 
 export default function SubtypeAdvisor() {
+  const { t } = useTranslation()
+  const potsSubtypes = createSubtypes(t)
   const [subtypeData, setSubtypeData] = useState(potsSubtypes.map(s => ({ ...s })))
   const [patientAge, setPatientAge] = useState<number | null>(null)
   const [comorbidities, setComorbidities] = useState<string[]>([])
@@ -191,33 +139,33 @@ export default function SubtypeAdvisor() {
     const primarySubtype = scores[0]
     const secondarySubtypes = scores.filter(s => s.percentage >= 40 && s.id !== primarySubtype.id)
     
-    let plan = "POTS Subtype & Treatment Plan\n"
+    let plan = `${t.subtype.title}\n`
     plan += "=============================\n\n"
     
     plan += "SUBTYPE ANALYSIS:\n"
-    plan += `Primary: ${primarySubtype.name} (${primarySubtype.percentage}% likelihood)\n`
+    plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\n`
     if (secondarySubtypes.length > 0) {
       plan += "Secondary considerations:\n"
       secondarySubtypes.forEach(s => {
-        plan += `  • ${s.name} (${s.percentage}% likelihood)\n`
+        plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\n`
       })
     }
     plan += "\n"
     
-    plan += "TREATMENT RECOMMENDATIONS:\n\n"
-    plan += "Non-Pharmacological:\n"
+    plan += `${t.common.recommendations.toUpperCase()}:\n\n`
+    plan += `${t.subtype.results.nonPharmacological}:\n`
     primarySubtype.treatments.nonPharmacological.forEach(treatment => {
       plan += `  • ${treatment}\n`
     })
     plan += "\n"
     
-    plan += "First-Line Medications:\n"
+    plan += `${t.subtype.results.firstLineRx}:\n`
     primarySubtype.treatments.firstLine.forEach(treatment => {
       plan += `  • ${treatment}\n`
     })
     plan += "\n"
     
-    plan += "Second-Line Options:\n"
+    plan += `${t.subtype.results.secondLineOptions}:\n`
     primarySubtype.treatments.secondLine.forEach(treatment => {
       plan += `  • ${treatment}\n`
     })
@@ -235,21 +183,21 @@ export default function SubtypeAdvisor() {
         <div className="container mx-auto px-4 max-w-5xl">
           <Card>
             <CardHeader className="text-center">
-              <CardTitle className="flex items-center justify-center gap-2 text-2xl">
+                <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <Users className="h-6 w-6 text-blue-600" />
-                POTS Subtype Analysis Complete
+                {t.subtype.results.complete}
               </CardTitle>
               <CardDescription>
-                Personalized treatment recommendations based on subtype assessment
+                {t.subtype.results.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
                 <Badge className={`px-4 py-2 text-lg bg-${primarySubtype.color}-100 text-${primarySubtype.color}-800`}>
-                  Primary: {primarySubtype.name}
+                  {t.subtype.results.primary}: {primarySubtype.name}
                 </Badge>
                 <p className="text-sm text-gray-600 mt-2">
-                  {primarySubtype.percentage}% likelihood ({primarySubtype.score}/{primarySubtype.maxScore} criteria)
+                  {primarySubtype.percentage}% {t.subtype.results.likelihood} ({primarySubtype.score}/{primarySubtype.maxScore} {t.common.criteria})
                 </p>
               </div>
 
@@ -264,7 +212,7 @@ export default function SubtypeAdvisor() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-sm">Criteria Met:</h4>
+                      <h4 className="font-semibold text-sm">{t.subtype.results.criteriaMetTitle}:</h4>
                       {primarySubtype.criteria.filter(c => c.checked).map((criterion, index) => (
                         <div key={index} className="text-sm flex items-center gap-2">
                           <span className="text-green-600">✓</span>
@@ -276,7 +224,7 @@ export default function SubtypeAdvisor() {
                 </Card>
 
                 <div className="space-y-4">
-                  <h3 className="font-semibold text-lg">All Subtype Scores</h3>
+                  <h3 className="font-semibold text-lg">{t.subtype.results.allSubtypeScores}</h3>
                   {scores.map((subtype) => (
                     <div key={subtype.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                       <div className="flex items-center gap-2">
@@ -301,7 +249,7 @@ export default function SubtypeAdvisor() {
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg text-green-800 flex items-center gap-2">
                       <Activity className="h-5 w-5" />
-                      Non-Pharmacological
+                      {t.subtype.results.nonPharmacological}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -320,7 +268,7 @@ export default function SubtypeAdvisor() {
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg text-blue-800 flex items-center gap-2">
                       <Pill className="h-5 w-5" />
-                      First-Line Rx
+                      {t.subtype.results.firstLineRx}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -339,7 +287,7 @@ export default function SubtypeAdvisor() {
                   <CardHeader className="pb-3">
                     <CardTitle className="text-lg text-purple-800 flex items-center gap-2">
                       <Heart className="h-5 w-5" />
-                      Second-Line Options
+                      {t.subtype.results.secondLineOptions}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -359,30 +307,27 @@ export default function SubtypeAdvisor() {
                 <Alert className="border-yellow-200 bg-yellow-50">
                   <Shield className="h-4 w-4 text-yellow-600" />
                   <AlertDescription className="text-yellow-800">
-                    <strong>Mixed Subtype Considerations:</strong> This patient also shows features of{' '}
-                    {secondarySubtypes.map(s => s.name).join(' and ')}. Consider combination therapy approaches 
-                    and monitor response to initial treatment.
+                    <strong>{t.subtype.results.mixedSubtype}</strong> {secondarySubtypes.map(s => s.name).join(' and ')}.
                   </AlertDescription>
                 </Alert>
               )}
 
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2">Clinical Pearls</h4>
+                <h4 className="font-semibold mb-2">{t.subtype.results.clinicalPearls}</h4>
                 <div className="text-sm space-y-2">
-                  <p>• Start with non-pharmacological interventions for all POTS subtypes</p>
-                  <p>• Begin medications at low doses and titrate slowly</p>
-                  <p>• Monitor response and adjust treatment based on symptom improvement</p>
-                  <p>• Consider specialist referral for complex cases or treatment failures</p>
-                  <p>• Re-assess subtype if treatment response is poor</p>
+                  {t.subtype.results.pearls.map((pearl, index) => (
+                    <p key={index}>• {pearl}</p>
+                  ))}
                 </div>
               </div>
 
               <div className="flex gap-4 justify-center">
                 <Button onClick={() => {
-                  setSubtypeData(potsSubtypes.map(s => ({ ...s })))
+                  const newSubtypes = createSubtypes(t)
+                  setSubtypeData(newSubtypes.map(s => ({ ...s })))
                   setIsComplete(false)
                 }} variant="outline">
-                  Reassess Subtype
+                  {t.subtype.results.reassess}
                 </Button>
                 <Button onClick={() => {
                   const plan = generateTreatmentPlan()
@@ -395,7 +340,7 @@ export default function SubtypeAdvisor() {
                   URL.revokeObjectURL(url)
                 }} className="flex items-center gap-2">
                   <Download className="h-4 w-4" />
-                  Download Treatment Plan
+                  {t.subtype.results.downloadPlan}
                 </Button>
               </div>
             </CardContent>
@@ -411,14 +356,14 @@ export default function SubtypeAdvisor() {
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
             <ArrowLeft className="h-4 w-4" />
-            Back to Dashboard
+            {t.app.backToDashboard}
           </Link>
           
           <div className="flex items-center gap-4 mb-4">
             <Users className="h-5 w-5 text-blue-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">POTS Subtype & Treatment Advisor</h1>
-              <p className="text-gray-600">Determine POTS subtype for personalized treatment recommendations</p>
+              <h1 className="text-2xl font-bold text-gray-900">{t.subtype.title}</h1>
+              <p className="text-gray-600">{t.subtype.description}</p>
             </div>
           </div>
         </div>
@@ -426,13 +371,13 @@ export default function SubtypeAdvisor() {
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Patient Information</CardTitle>
-              <CardDescription>Basic patient details for treatment planning</CardDescription>
+              <CardTitle>{t.subtype.patientInfo.title}</CardTitle>
+              <CardDescription>{t.subtype.patientInfo.description}</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="age">Patient Age</Label>
+                  <Label htmlFor="age">{t.common.age}</Label>
                   <Input
                     id="age"
                     type="number"
@@ -442,7 +387,7 @@ export default function SubtypeAdvisor() {
                   />
                 </div>
                 <div>
-                  <Label>Relevant Comorbidities (check all that apply)</Label>
+                  <Label>{t.subtype.patientInfo.comorbidities}</Label>
                   <div className="flex gap-4 mt-2">
                     {['Diabetes', 'Autoimmune disease', 'EDS', 'MCAS'].map((condition) => (
                       <div key={condition} className="flex items-center space-x-2">
@@ -493,7 +438,7 @@ export default function SubtypeAdvisor() {
                 
                 <div className="mt-4 p-3 bg-gray-50 rounded-lg">
                   <div className="text-sm text-gray-600">
-                    <strong>Score:</strong> {subtype.criteria.filter(c => c.checked).length}/{subtype.criteria.length} criteria met
+                    <strong>{t.common.score}:</strong> {subtype.criteria.filter(c => c.checked).length}/{subtype.criteria.length} {t.common.criteria} {t.common.met.toLowerCase()}
                   </div>
                 </div>
               </CardContent>
@@ -503,7 +448,7 @@ export default function SubtypeAdvisor() {
           <div className="flex justify-center">
             <Button onClick={() => setIsComplete(true)} size="lg" className="px-8">
               <Pill className="h-4 w-4 mr-2" />
-              Generate Treatment Recommendations
+              {t.common.recommendations}
             </Button>
           </div>
         </div>

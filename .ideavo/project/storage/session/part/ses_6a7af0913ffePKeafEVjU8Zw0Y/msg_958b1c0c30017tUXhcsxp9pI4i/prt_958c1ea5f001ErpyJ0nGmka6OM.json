@@ -1,0 +1,25 @@
+{
+  "id": "prt_958c1ea5f001ErpyJ0nGmka6OM",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01MaZcj1DsbPsZZTWrs2RVJM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "offset": 25,
+      "limit": 15
+    },
+    "output": "<file>\n00026|       ...prev,\n00027|       [questionId]: answer\n00028|     }))\n00029|   }\n00030| \n00031|   const nextQuestion = () => {\n00032|     if (currentQuestion < screeningQuestions.length - 1) {\n00033|       setCurrentQuestion(prev => prev + 1)\n00034|     } else {\n00035|       setIsComplete(true)\n00036|     }\n00037|   }\n00038| \n00039|   const prevQuestion = () => {\n00040|     if (currentQuestion > 0) {\n\n(File has more lines. Use 'offset' parameter to read beyond line 40)\n</file>",
+    "metadata": {
+      "preview": "      ...prev,\n      [questionId]: answer\n    }))\n  }\n\n  const nextQuestion = () => {\n    if (currentQuestion < screeningQuestions.length - 1) {\n      setCurrentQuestion(prev => prev + 1)\n    } else {\n      setIsComplete(true)\n    }\n  }\n\n  const prevQuestion = () => {\n    if (currentQuestion > 0) {"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758130728156,
+      "end": 1758130728158
+    }
+  }
+}

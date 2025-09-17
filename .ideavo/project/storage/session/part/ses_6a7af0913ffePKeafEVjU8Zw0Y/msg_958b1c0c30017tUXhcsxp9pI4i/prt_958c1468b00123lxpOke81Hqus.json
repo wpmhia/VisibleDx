@@ -1,0 +1,23 @@
+{
+  "id": "prt_958c1468b00123lxpOke81Hqus",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011vnw4dCCZ1M3sU84soBT7a",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/index.ts"
+    },
+    "output": "<file>\n00001| import { en } from './en'\n00002| import { nl } from './nl'\n00003| import { da } from './da'\n00004| import { de } from './de'\n00005| // Import other languages when created\n00006| // import { sv } from './sv'\n00007| // import { no } from './no'\n00008| // import { fr } from './fr'\n00009| \n00010| export const translations = {\n00011|   en,\n00012|   nl,\n00013|   da,\n00014|   de,\n00015|   // Add other languages when available\n00016|   sv: en, // Fallback to English for now\n00017|   no: en, // Fallback to English for now\n00018|   fr: en  // Fallback to English for now\n00019| }\n00020| \n00021| export * from './types'\n</file>",
+    "metadata": {
+      "preview": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\nimport { de } from './de'\n// Import other languages when created\n// import { sv } from './sv'\n// import { no } from './no'\n// import { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  de,\n  // Add other languages when available\n  sv: en, // Fallback to English for now\n  no: en, // Fallback to English for now\n  fr: en  // Fallback to English for now\n}\n"
+    },
+    "title": "lib/translations/index.ts",
+    "time": {
+      "start": 1758130686031,
+      "end": 1758130686033
+    }
+  }
+}

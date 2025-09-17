@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b8c6b2001RPkDlbXw2DeYPi",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GouXn1Cfm4vnteJ4Ai539T",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">Key Assessment Results</h4>",
+      "newString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">{t.newPatient.results.keyResults}</h4>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -460,9 +460,9 @@\n   </Alert>\n )}\n \n <div className=\"bg-blue-50 p-4 rounded-lg\">\n-  <h4 className=\"font-semibold mb-2 text-blue-900\">Key Assessment Results</h4>\n+  <h4 className=\"font-semibold mb-2 text-blue-900\">{t.newPatient.results.keyResults}</h4>\n   <div className=\"grid md:grid-cols-2 gap-4 text-sm\">\n     <div>\n       <p><strong>Risk Level:</strong> {patientData.quickScreen.riskLevel.toUpperCase()}</p>\n       <p><strong>Screening Score:</strong> {patientData.quickScreen.score}/16</p>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130130087,
+      "end": 1758130130105
+    }
+  }
+}

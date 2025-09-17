@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b6ff23001lOPGri87C44Lj7",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GohpBVdVdL1PEXQvRAZ1WE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                    No",
+      "newString": "                    {t.common.no}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -662,9 +662,9 @@\n     onClick={() => handleQuickScreenAnswer(currentQuestion.id, false)}\n     variant={currentAnswer === false ? \"default\" : \"outline\"}\n     className=\"flex items-center gap-2 px-8\"\n   >\n-    No\n+    {t.common.no}\n   </Button>\n </div>\n \n <div className=\"flex justify-between pt-6\">\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130012590,
+      "end": 1758130012595
+    }
+  }
+}

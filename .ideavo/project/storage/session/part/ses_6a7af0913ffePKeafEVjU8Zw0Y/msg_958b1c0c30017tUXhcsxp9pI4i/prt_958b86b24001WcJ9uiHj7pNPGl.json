@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b86b24001WcJ9uiHj7pNPGl",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017R9stuatThta6nBGYNCQpV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                        {patientData.diagnoses.longCovid.met ? 'CRITERIA MET' : 'Not Met'}",
+      "newString": "                        {patientData.diagnoses.longCovid.met ? t.criteria.results.criteriaMet : t.common.notMet}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -420,9 +420,9 @@\n <CardContent className=\"pt-4\">\n   <div className=\"text-center\">\n     <h3 className=\"font-semibold text-sm\">Long COVID (U09.9)</h3>\n     <Badge variant={patientData.diagnoses.longCovid.met ? 'default' : 'secondary'} className=\"mt-2\">\n-      {patientData.diagnoses.longCovid.met ? 'CRITERIA MET' : 'Not Met'}\n+      {patientData.diagnoses.longCovid.met ? t.criteria.results.criteriaMet : t.common.notMet}\n     </Badge>\n     {patientData.diagnoses.longCovid.met && (\n       <p className=\"text-xs text-green-700 mt-1\">\n         Confidence: {patientData.diagnoses.longCovid.confidence}\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758130106351,
+      "end": 1758130106358
+    }
+  }
+}

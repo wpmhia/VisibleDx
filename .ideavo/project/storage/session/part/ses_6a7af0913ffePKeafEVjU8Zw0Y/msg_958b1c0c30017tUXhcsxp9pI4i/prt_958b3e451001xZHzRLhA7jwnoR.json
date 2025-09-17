@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b3e451001xZHzRLhA7jwnoR",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RzNUSAyoFvn6bTDjiruvkQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "                <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <Users className=\"h-6 w-6 text-blue-600\" />\n                POTS Subtype Analysis Complete\n              </CardTitle>\n              <CardDescription>\n                Personalized treatment recommendations based on subtype assessment\n              </CardDescription>",
+      "newString": "                <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <Users className=\"h-6 w-6 text-blue-600\" />\n                {t.subtype.results.complete}\n              </CardTitle>\n              <CardDescription>\n                {t.subtype.results.description}\n              </CardDescription>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -182,14 +182,14 @@\n <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n   <div className=\"container mx-auto px-4 max-w-5xl\">\n     <Card>\n       <CardHeader className=\"text-center\">\n-        <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n+          <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n           <Users className=\"h-6 w-6 text-blue-600\" />\n-          POTS Subtype Analysis Complete\n+          {t.subtype.results.complete}\n         </CardTitle>\n         <CardDescription>\n-          Personalized treatment recommendations based on subtype assessment\n+          {t.subtype.results.description}\n         </CardDescription>\n       </CardHeader>\n       <CardContent className=\"space-y-6\">\n         <div className=\"text-center\">\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758129811376,
+      "end": 1758129811383
+    }
+  }
+}

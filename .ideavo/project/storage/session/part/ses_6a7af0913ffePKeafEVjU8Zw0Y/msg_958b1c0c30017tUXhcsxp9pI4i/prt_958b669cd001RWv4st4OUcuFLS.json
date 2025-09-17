@@ -1,0 +1,26 @@
+{
+  "id": "prt_958b669cd001RWv4st4OUcuFLS",
+  "messageID": "msg_958b1c0c30017tUXhcsxp9pI4i",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Y7uWqDfizxP1Q2iCajKwV9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                      <Label htmlFor=\"female\">Female</Label>",
+      "newString": "                      <Label htmlFor=\"female\">{t.common.female}</Label>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -559,9 +559,9 @@\n   className=\"flex gap-4 mt-2\"\n >\n   <div className=\"flex items-center space-x-2\">\n     <RadioGroupItem value=\"female\" id=\"female\" />\n-    <Label htmlFor=\"female\">Female</Label>\n+    <Label htmlFor=\"female\">{t.common.female}</Label>\n   </div>\n   <div className=\"flex items-center space-x-2\">\n     <RadioGroupItem value=\"male\" id=\"male\" />\n     <Label htmlFor=\"male\">Male</Label>\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758129974559,
+      "end": 1758129974571
+    }
+  }
+}
