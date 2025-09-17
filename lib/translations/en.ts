@@ -643,7 +643,10 @@ export const en: Translation = {
         'Re-assess subtype if treatment response is poor'
       ],
       reassess: 'Reassess Subtype',
-      downloadPlan: 'Download Treatment Plan'
+      downloadPlan: 'Download Treatment Plan',
+      analysisHeader: 'SUBTYPE ANALYSIS',
+      secondaryConsiderations: 'Secondary considerations',
+      and: ' and '
     }
   },
 

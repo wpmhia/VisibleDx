@@ -142,10 +142,10 @@ export default function SubtypeAdvisor() {
     let plan = `${t.subtype.title}\n`
     plan += "=============================\n\n"
     
-    plan += "SUBTYPE ANALYSIS:\n"
+    plan += `${t.subtype.results.analysisHeader}:\n`
     plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\n`
     if (secondarySubtypes.length > 0) {
-      plan += "Secondary considerations:\n"
+      plan += `${t.subtype.results.secondaryConsiderations}:\n`
       secondarySubtypes.forEach(s => {
         plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\n`
       })
@@ -307,7 +307,7 @@ export default function SubtypeAdvisor() {
                 <Alert className="border-yellow-200 bg-yellow-50">
                   <Shield className="h-4 w-4 text-yellow-600" />
                   <AlertDescription className="text-yellow-800">
-                    <strong>{t.subtype.results.mixedSubtype}</strong> {secondarySubtypes.map(s => s.name).join(' and ')}.
+                    <strong>{t.subtype.results.mixedSubtype}</strong> {secondarySubtypes.map(s => s.name).join(t.subtype.results.and)}.
                   </AlertDescription>
                 </Alert>
               )}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593a1174001FjBhyDIJGx6RRm",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01LeTco37Sw9y473aW4XrhUf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "downloadPlan",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/en.ts:\n  Line 646:       downloadPlan: 'Download Treatment Plan',\n\n/home/user/project/lib/translations/types.ts:\n  Line 450:       downloadPlan: string\n\n/home/user/project/lib/translations/fr.ts:\n  Line 678:       downloadPlan: 'Télécharger Plan Traitement'\n\n/home/user/project/lib/translations/no.ts:\n  Line 678:       downloadPlan: 'Last Ned Behandlingsplan'\n\n/home/user/project/lib/translations/sv.ts:\n  Line 678:       downloadPlan: 'Ladda Ner Behandlingsplan'\n\n/home/user/project/lib/translations/de.ts:\n  Line 652:       downloadPlan: 'Behandlungsplan Herunterladen'\n\n/home/user/project/lib/translations/da.ts:\n  Line 655:       downloadPlan: 'Download Behandlingsplan'\n\n/home/user/project/lib/translations/nl.ts:\n  Line 646:       downloadPlan: 'Behandelingsplan Downloaden'",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "downloadPlan",
+    "time": {
+      "start": 1758138602301,
+      "end": 1758138602312
+    }
+  }
+}

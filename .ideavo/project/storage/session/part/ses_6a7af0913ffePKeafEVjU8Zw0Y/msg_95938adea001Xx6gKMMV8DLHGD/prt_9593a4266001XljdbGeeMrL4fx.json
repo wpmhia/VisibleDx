@@ -1,0 +1,26 @@
+{
+  "id": "prt_9593a4266001XljdbGeeMrL4fx",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01N9Y7NqnpC6P5SdHHnZy8fA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      downloadPlan: 'Behandelingsplan Downloaden'\n    }",
+      "newString": "      downloadPlan: 'Behandelingsplan Downloaden',\n      analysisHeader: 'SUBTYPE ANALYSE',\n      secondaryConsiderations: 'Secundaire overwegingen',\n      and: ' en '\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -642,9 +642,12 @@\n       'Overweeg specialist verwijzing voor complexe gevallen of behandelingsfalen',\n       'Herbeoordeel subtype als behandelingsrespons slecht is'\n     ],\n     reassess: 'Subtype Herbeoordelen',\n-    downloadPlan: 'Behandelingsplan Downloaden'\n+    downloadPlan: 'Behandelingsplan Downloaden',\n+    analysisHeader: 'SUBTYPE ANALYSE',\n+    secondaryConsiderations: 'Secundaire overwegingen',\n+    and: ' en '\n   }\n },\n \n newPatient: {\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758138615659,
+      "end": 1758138615666
+    }
+  }
+}

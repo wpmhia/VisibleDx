@@ -652,7 +652,10 @@ export const da: Translation = {
         'Revurder subtype hvis behandlingsrespons er dårlig'
       ],
       reassess: 'Revurder Subtype',
-      downloadPlan: 'Download Behandlingsplan'
+      downloadPlan: 'Download Behandlingsplan',
+      analysisHeader: 'SUBTYPE ANALYSE',
+      secondaryConsiderations: 'Sekundære overvejelser',
+      and: ' og '
     }
   },
 

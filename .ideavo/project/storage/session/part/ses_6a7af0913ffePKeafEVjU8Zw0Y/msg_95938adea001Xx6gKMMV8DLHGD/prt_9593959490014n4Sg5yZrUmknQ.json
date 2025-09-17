@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593959490014n4Sg5yZrUmknQ",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01NuE8wca8njJooEGdvGh8Pg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 450,
+      "limit": 50
+    },
+    "output": "<file>\n00451|       </div>\n00452|     </div>\n00453|   )\n00454| }\n</file>",
+    "metadata": {
+      "preview": "      </div>\n    </div>\n  )\n}"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138555238,
+      "end": 1758138555239
+    }
+  }
+}

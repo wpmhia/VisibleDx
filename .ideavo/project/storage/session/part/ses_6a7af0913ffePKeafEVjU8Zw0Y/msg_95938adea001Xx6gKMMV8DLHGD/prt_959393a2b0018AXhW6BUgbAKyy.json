@@ -1,0 +1,25 @@
+{
+  "id": "prt_959393a2b0018AXhW6BUgbAKyy",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VfQhNuafpd2ZeFKNw1yeKq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 350,
+      "limit": 50
+    },
+    "output": "<file>\n00351|   }\n00352| \n00353|   return (\n00354|     <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n00355|       <div className=\"container mx-auto px-4 max-w-5xl\">\n00356|         <div className=\"mb-6\">\n00357|           \n00358|           <div className=\"flex items-center gap-4 mb-4\">\n00359|             <Users className=\"h-5 w-5 text-blue-600\" />\n00360|             <div>\n00361|               <h1 className=\"text-2xl font-bold text-gray-900\">{t.subtype.title}</h1>\n00362|               <p className=\"text-gray-600\">{t.subtype.description}</p>\n00363|             </div>\n00364|           </div>\n00365|         </div>\n00366| \n00367|         <div className=\"space-y-6\">\n00368|           <Card>\n00369|             <CardHeader>\n00370|               <CardTitle>{t.subtype.patientInfo.title}</CardTitle>\n00371|               <CardDescription>{t.subtype.patientInfo.description}</CardDescription>\n00372|             </CardHeader>\n00373|             <CardContent>\n00374|               <div className=\"grid md:grid-cols-2 gap-4\">\n00375|                 <div>\n00376|                   <Label htmlFor=\"age\">{t.common.age}</Label>\n00377|                   <Input\n00378|                     id=\"age\"\n00379|                     type=\"number\"\n00380|                     placeholder=\"25\"\n00381|                     value={patientAge || ''}\n00382|                     onChange={(e) => setPatientAge(parseInt(e.target.value) || null)}\n00383|                   />\n00384|                 </div>\n00385|                 <div>\n00386|                   <Label>{t.subtype.patientInfo.comorbidities}</Label>\n00387|                   <div className=\"flex gap-4 mt-2\">\n00388|                     {t.subtype.patientInfo.comorbidityOptions.map((condition, index) => (\n00389|                       <div key={index} className=\"flex items-center space-x-2\">\n00390|                         <Checkbox\n00391|                           id={`comorbidity-${index}`}\n00392|                           checked={comorbidities.includes(condition)}\n00393|                           onCheckedChange={(checked) => {\n00394|                             if (checked) {\n00395|                               setComorbidities(prev => [...prev, condition])\n00396|                             } else {\n00397|                               setComorbidities(prev => prev.filter(c => c !== condition))\n00398|                             }\n00399|                           }}\n00400|                         />\n\n(File has more lines. Use 'offset' parameter to read beyond line 400)\n</file>",
+    "metadata": {
+      "preview": "  }\n\n  return (\n    <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n      <div className=\"container mx-auto px-4 max-w-5xl\">\n        <div className=\"mb-6\">\n          \n          <div className=\"flex items-center gap-4 mb-4\">\n            <Users className=\"h-5 w-5 text-blue-600\" />\n            <div>\n              <h1 className=\"text-2xl font-bold text-gray-900\">{t.subtype.title}</h1>\n              <p className=\"text-gray-600\">{t.subtype.description}</p>\n            </div>\n          </div>\n        </div>\n\n        <div className=\"space-y-6\">\n          <Card>\n            <CardHeader>\n              <CardTitle>{t.subtype.patientInfo.title}</CardTitle>"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138547321,
+      "end": 1758138547323
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_959391d98001Cw4UjIzYnvdx28",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QrfmQcEniR7RTJ3dLWMQar",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 250,
+      "limit": 50
+    },
+    "output": "<file>\n00251|                       <Activity className=\"h-5 w-5\" />\n00252|                       {t.subtype.results.nonPharmacological}\n00253|                     </CardTitle>\n00254|                   </CardHeader>\n00255|                   <CardContent>\n00256|                     <ul className=\"space-y-2 text-sm\">\n00257|                       {primarySubtype.treatments.nonPharmacological.map((treatment, index) => (\n00258|                         <li key={index} className=\"flex items-start gap-2\">\n00259|                           <span className=\"text-green-600 mt-1\">•</span>\n00260|                           {treatment}\n00261|                         </li>\n00262|                       ))}\n00263|                     </ul>\n00264|                   </CardContent>\n00265|                 </Card>\n00266| \n00267|                 <Card className=\"border-blue-200 bg-blue-50\">\n00268|                   <CardHeader className=\"pb-3\">\n00269|                     <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n00270|                       <Pill className=\"h-5 w-5\" />\n00271|                       {t.subtype.results.firstLineRx}\n00272|                     </CardTitle>\n00273|                   </CardHeader>\n00274|                   <CardContent>\n00275|                     <ul className=\"space-y-2 text-sm\">\n00276|                       {primarySubtype.treatments.firstLine.map((treatment, index) => (\n00277|                         <li key={index} className=\"flex items-start gap-2\">\n00278|                           <span className=\"text-blue-600 mt-1\">•</span>\n00279|                           {treatment}\n00280|                         </li>\n00281|                       ))}\n00282|                     </ul>\n00283|                   </CardContent>\n00284|                 </Card>\n00285| \n00286|                 <Card className=\"border-purple-200 bg-purple-50\">\n00287|                   <CardHeader className=\"pb-3\">\n00288|                     <CardTitle className=\"text-lg text-purple-800 flex items-center gap-2\">\n00289|                       <Heart className=\"h-5 w-5\" />\n00290|                       {t.subtype.results.secondLineOptions}\n00291|                     </CardTitle>\n00292|                   </CardHeader>\n00293|                   <CardContent>\n00294|                     <ul className=\"space-y-2 text-sm\">\n00295|                       {primarySubtype.treatments.secondLine.map((treatment, index) => (\n00296|                         <li key={index} className=\"flex items-start gap-2\">\n00297|                           <span className=\"text-purple-600 mt-1\">•</span>\n00298|                           {treatment}\n00299|                         </li>\n00300|                       ))}\n\n(File has more lines. Use 'offset' parameter to read beyond line 300)\n</file>",
+    "metadata": {
+      "preview": "                      <Activity className=\"h-5 w-5\" />\n                      {t.subtype.results.nonPharmacological}\n                    </CardTitle>\n                  </CardHeader>\n                  <CardContent>\n                    <ul className=\"space-y-2 text-sm\">\n                      {primarySubtype.treatments.nonPharmacological.map((treatment, index) => (\n                        <li key={index} className=\"flex items-start gap-2\">\n                          <span className=\"text-green-600 mt-1\">•</span>\n                          {treatment}\n                        </li>\n                      ))}\n                    </ul>\n                  </CardContent>\n                </Card>\n\n                <Card className=\"border-blue-200 bg-blue-50\">\n                  <CardHeader className=\"pb-3\">\n                    <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n                      <Pill className=\"h-5 w-5\" />"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138540085,
+      "end": 1758138540088
+    }
+  }
+}

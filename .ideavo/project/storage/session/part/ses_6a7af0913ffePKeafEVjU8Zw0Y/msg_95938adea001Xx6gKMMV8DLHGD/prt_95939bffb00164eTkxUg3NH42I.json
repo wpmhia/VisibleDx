@@ -1,0 +1,25 @@
+{
+  "id": "prt_95939bffb00164eTkxUg3NH42I",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016jg9bJdafWaYfPbXS9Cfa5",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 445,
+      "limit": 20
+    },
+    "output": "<file>\n00446|       mixedSubtype: string\n00447|       clinicalPearls: string\n00448|       pearls: string[]\n00449|       reassess: string\n00450|       downloadPlan: string\n00451|     }\n00452|   }\n00453| \n00454|   // New Patient Workflow\n00455|   newPatient: {\n00456|     title: string\n00457|     description: string\n00458|     demographics: {\n00459|       title: string\n00460|       description: string\n00461|       step: string\n00462|       age: string\n00463|       gender: string\n00464|       clinicianName: string\n00465|       patientId: string\n\n(File has more lines. Use 'offset' parameter to read beyond line 465)\n</file>",
+    "metadata": {
+      "preview": "      mixedSubtype: string\n      clinicalPearls: string\n      pearls: string[]\n      reassess: string\n      downloadPlan: string\n    }\n  }\n\n  // New Patient Workflow\n  newPatient: {\n    title: string\n    description: string\n    demographics: {\n      title: string\n      description: string\n      step: string\n      age: string\n      gender: string\n      clinicianName: string\n      patientId: string"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758138581646,
+      "end": 1758138581648
+    }
+  }
+}

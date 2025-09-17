@@ -675,7 +675,10 @@ export const fr: Translation = {
         'Réévaluer sous-type si réponse traitement est pauvre'
       ],
       reassess: 'Réévaluer Sous-type',
-      downloadPlan: 'Télécharger Plan Traitement'
+      downloadPlan: 'Télécharger Plan Traitement',
+      analysisHeader: 'ANALYSE DE SOUS-TYPE',
+      secondaryConsiderations: 'Considérations secondaires',
+      and: ' et '
     }
   },
 

@@ -448,6 +448,9 @@ export interface Translation {
       pearls: string[]
       reassess: string
       downloadPlan: string
+      analysisHeader: string
+      secondaryConsiderations: string
+      and: string
     }
   }
 

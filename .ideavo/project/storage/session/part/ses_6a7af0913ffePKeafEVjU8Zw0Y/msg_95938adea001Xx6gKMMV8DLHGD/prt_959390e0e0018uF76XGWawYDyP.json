@@ -1,0 +1,25 @@
+{
+  "id": "prt_959390e0e0018uF76XGWawYDyP",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JTpJUhJep3sHsqtTAupdAw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 140,
+      "limit": 50
+    },
+    "output": "<file>\n00141|     \n00142|     let plan = `${t.subtype.title}\\n`\n00143|     plan += \"=============================\\n\\n\"\n00144|     \n00145|     plan += \"SUBTYPE ANALYSIS:\\n\"\n00146|     plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\\n`\n00147|     if (secondarySubtypes.length > 0) {\n00148|       plan += \"Secondary considerations:\\n\"\n00149|       secondarySubtypes.forEach(s => {\n00150|         plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\\n`\n00151|       })\n00152|     }\n00153|     plan += \"\\n\"\n00154|     \n00155|     plan += `${t.common.recommendations.toUpperCase()}:\\n\\n`\n00156|     plan += `${t.subtype.results.nonPharmacological}:\\n`\n00157|     primarySubtype.treatments.nonPharmacological.forEach(treatment => {\n00158|       plan += `  • ${treatment}\\n`\n00159|     })\n00160|     plan += \"\\n\"\n00161|     \n00162|     plan += `${t.subtype.results.firstLineRx}:\\n`\n00163|     primarySubtype.treatments.firstLine.forEach(treatment => {\n00164|       plan += `  • ${treatment}\\n`\n00165|     })\n00166|     plan += \"\\n\"\n00167|     \n00168|     plan += `${t.subtype.results.secondLineOptions}:\\n`\n00169|     primarySubtype.treatments.secondLine.forEach(treatment => {\n00170|       plan += `  • ${treatment}\\n`\n00171|     })\n00172|     \n00173|     return plan\n00174|   }\n00175| \n00176|   if (isComplete) {\n00177|     const scores = calculateSubtypeScores()\n00178|     const primarySubtype = scores[0]\n00179|     const secondarySubtypes = scores.filter(s => s.percentage >= 40 && s.id !== primarySubtype.id)\n00180|     \n00181|     return (\n00182|       <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n00183|         <div className=\"container mx-auto px-4 max-w-5xl\">\n00184|           <Card>\n00185|             <CardHeader className=\"text-center\">\n00186|                 <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n00187|                 <Users className=\"h-6 w-6 text-blue-600\" />\n00188|                 {t.subtype.results.complete}\n00189|               </CardTitle>\n00190|               <CardDescription>\n\n(File has more lines. Use 'offset' parameter to read beyond line 190)\n</file>",
+    "metadata": {
+      "preview": "    \n    let plan = `${t.subtype.title}\\n`\n    plan += \"=============================\\n\\n\"\n    \n    plan += \"SUBTYPE ANALYSIS:\\n\"\n    plan += `${t.subtype.results.primary}: ${primarySubtype.name} (${primarySubtype.percentage}% ${t.subtype.results.likelihood})\\n`\n    if (secondarySubtypes.length > 0) {\n      plan += \"Secondary considerations:\\n\"\n      secondarySubtypes.forEach(s => {\n        plan += `  • ${s.name} (${s.percentage}% ${t.subtype.results.likelihood})\\n`\n      })\n    }\n    plan += \"\\n\"\n    \n    plan += `${t.common.recommendations.toUpperCase()}:\\n\\n`\n    plan += `${t.subtype.results.nonPharmacological}:\\n`\n    primarySubtype.treatments.nonPharmacological.forEach(treatment => {\n      plan += `  • ${treatment}\\n`\n    })\n    plan += \"\\n\""
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138536185,
+      "end": 1758138536189
+    }
+  }
+}

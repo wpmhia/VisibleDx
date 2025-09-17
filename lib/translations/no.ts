@@ -675,7 +675,10 @@ export const no: Translation = {
         'Revurder undertype hvis behandlingsrespons er dårlig'
       ],
       reassess: 'Revurder Undertype',
-      downloadPlan: 'Last Ned Behandlingsplan'
+      downloadPlan: 'Last Ned Behandlingsplan',
+      analysisHeader: 'SUBTYPE ANALYSE',
+      secondaryConsiderations: 'Sekundære hensyn',
+      and: ' og '
     }
   },
 

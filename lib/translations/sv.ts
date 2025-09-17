@@ -675,7 +675,10 @@ export const sv: Translation = {
         'Ombedöm subtyp om behandlingsrespons är dålig'
       ],
       reassess: 'Ombedöm Subtyp',
-      downloadPlan: 'Ladda Ner Behandlingsplan'
+      downloadPlan: 'Ladda Ner Behandlingsplan',
+      analysisHeader: 'SUBTYP ANALYS',
+      secondaryConsiderations: 'Sekundära överväganden',
+      and: ' och '
     }
   },
 

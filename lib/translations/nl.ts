@@ -643,7 +643,10 @@ export const nl: Translation = {
         'Herbeoordeel subtype als behandelingsrespons slecht is'
       ],
       reassess: 'Subtype Herbeoordelen',
-      downloadPlan: 'Behandelingsplan Downloaden'
+      downloadPlan: 'Behandelingsplan Downloaden',
+      analysisHeader: 'SUBTYPE ANALYSE',
+      secondaryConsiderations: 'Secundaire overwegingen',
+      and: ' en '
     }
   },
 

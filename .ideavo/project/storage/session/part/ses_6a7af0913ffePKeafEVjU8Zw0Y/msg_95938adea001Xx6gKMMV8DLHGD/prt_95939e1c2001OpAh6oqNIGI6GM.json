@@ -1,0 +1,25 @@
+{
+  "id": "prt_95939e1c2001OpAh6oqNIGI6GM",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01XFTWkLdEkzcTNx9V2WNnUq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 640,
+      "limit": 15
+    },
+    "output": "<file>\n00641|         'Monitor response and adjust treatment based on symptom improvement',\n00642|         'Consider specialist referral for complex cases or treatment failures',\n00643|         'Re-assess subtype if treatment response is poor'\n00644|       ],\n00645|       reassess: 'Reassess Subtype',\n00646|       downloadPlan: 'Download Treatment Plan'\n00647|     }\n00648|   },\n00649| \n00650|   newPatient: {\n00651|     title: 'New Patient Assessment',\n00652|     description: 'Intelligent guided evaluation for ME/CFS, Long COVID, and POTS',\n00653|     demographics: {\n00654|       title: 'Patient Information',\n00655|       description: 'Basic demographics for clinical documentation',\n\n(File has more lines. Use 'offset' parameter to read beyond line 655)\n</file>",
+    "metadata": {
+      "preview": "        'Monitor response and adjust treatment based on symptom improvement',\n        'Consider specialist referral for complex cases or treatment failures',\n        'Re-assess subtype if treatment response is poor'\n      ],\n      reassess: 'Reassess Subtype',\n      downloadPlan: 'Download Treatment Plan'\n    }\n  },\n\n  newPatient: {\n    title: 'New Patient Assessment',\n    description: 'Intelligent guided evaluation for ME/CFS, Long COVID, and POTS',\n    demographics: {\n      title: 'Patient Information',\n      description: 'Basic demographics for clinical documentation',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758138590168,
+      "end": 1758138590170
+    }
+  }
+}

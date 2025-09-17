@@ -649,7 +649,10 @@ export const de: Translation = {
         'Subtyp neu bewerten, wenn Behandlungsantwort schlecht ist'
       ],
       reassess: 'Subtyp Neubewerten',
-      downloadPlan: 'Behandlungsplan Herunterladen'
+      downloadPlan: 'Behandlungsplan Herunterladen',
+      analysisHeader: 'SUBTYP ANALYSE',
+      secondaryConsiderations: 'Sekundäre Überlegungen',
+      and: ' und '
     }
   },
 

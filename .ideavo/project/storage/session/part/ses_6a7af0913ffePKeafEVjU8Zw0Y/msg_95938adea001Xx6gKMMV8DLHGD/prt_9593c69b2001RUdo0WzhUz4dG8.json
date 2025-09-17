@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593c69b2001RUdo0WzhUz4dG8",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "## ✅ POTS Subtype Advisor Now Fully Multilingual!\n\n**Fixed Hardcoded Text Issues:**\n\n### 🔍 **Identified & Fixed:**\n1. **\"SUBTYPE ANALYSIS:\"** → Now uses `t.subtype.results.analysisHeader`\n2. **\"Secondary considerations:\"** → Now uses `t.subtype.results.secondaryConsiderations`  \n3. **\" and \"** (connector) → Now uses `t.subtype.results.and`\n\n### 🌍 **Translations Added to All 7 Languages:**\n- **English**: \"SUBTYPE ANALYSIS\", \"Secondary considerations\", \" and \"\n- **Dutch**: \"SUBTYPE ANALYSE\", \"Secundaire overwegingen\", \" en \"\n- **Danish**: \"SUBTYPE ANALYSE\", \"Sekundære overvejelser\", \" og \"\n- **German**: \"SUBTYP ANALYSE\", \"Sekundäre Überlegungen\", \" und \"\n- **Swedish**: \"SUBTYP ANALYS\", \"Sekundära överväganden\", \" och \"\n- **Norwegian**: \"SUBTYPE ANALYSE\", \"Sekundære hensyn\", \" og \"\n- **French**: \"ANALYSE DE SOUS-TYPE\", \"Considérations secondaires\", \" et \"\n\n### 🔧 **Technical Implementation:**\n- **TypeScript interface updated** - Added `analysisHeader`, `secondaryConsiderations`, and `and` to `subtype.results`\n- **Component refactored** - Replaced all hardcoded strings with translation keys\n- **Downloaded treatment plans** - Now generate in the user's selected language\n- **Mixed subtype alerts** - Secondary subtypes are now connected with proper language-specific conjunctions\n\n### ✅ **Result:**\n**The POTS Subtype & Treatment Advisor is now 100% multilingual!** When users switch to Dutch, they'll see:\n- \"SUBTYPE ANALYSE:\" instead of \"SUBTYPE ANALYSIS:\"\n- \"Secundaire overwegingen:\" instead of \"Secondary considerations:\"\n- \"Hypovolemisch en Neuropathisch\" instead of \"Hypovolemic and Neuropathic\"\n\n**Every single text element in the VisibleDx application is now truly multilingual!**",
+  "time": {
+    "start": 1758138766398,
+    "end": 1758138766398
+  }
+}

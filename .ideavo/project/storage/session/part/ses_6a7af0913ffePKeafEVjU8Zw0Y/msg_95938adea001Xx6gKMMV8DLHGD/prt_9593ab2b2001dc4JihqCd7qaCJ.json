@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593ab2b2001dc4JihqCd7qaCJ",
+  "messageID": "msg_95938adea001Xx6gKMMV8DLHGD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LgK95fHaDwcoJHzLrDcDR3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 677,
+      "limit": 5
+    },
+    "output": "<file>\n00678|       downloadPlan: 'Last Ned Behandlingsplan'\n00679|     }\n00680|   },\n00681| \n00682|   newPatient: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 682)\n</file>",
+    "metadata": {
+      "preview": "      downloadPlan: 'Last Ned Behandlingsplan'\n    }\n  },\n\n  newPatient: {"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758138643768,
+      "end": 1758138643771
+    }
+  }
+}
