@@ -138,7 +138,7 @@ export default function RedFlagChecker() {
 
     // Add routine tests
     selectedRoutineLabs.forEach(categoryKey => {
-      const category = t.redFlag.routineLabs.categories[categoryKey as keyof typeof t.redFlag.routineLabs.categories]
+      const category = routineLabs.find(cat => cat.category === categoryKey)
       if (category) {
         category.tests.forEach(test => routineTests.add(test))
       }
@@ -352,21 +352,21 @@ export default function RedFlagChecker() {
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
-                {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (
-                  <div key={key} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
+                {routineLabs.map((labCategory, index) => (
+                  <div key={labCategory.category} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
                     <Checkbox
-                      id={key}
-                      checked={selectedRoutineLabs.includes(key)}
-                      onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}
+                      id={labCategory.category}
+                      checked={selectedRoutineLabs.includes(labCategory.category)}
+                      onCheckedChange={(checked) => handleRoutineLabChange(labCategory.category, !!checked)}
                     />
                     <div className="flex-1">
-                      <label htmlFor={key} className="text-sm font-medium cursor-pointer">
-                        {category.title}
+                      <label htmlFor={labCategory.category} className="text-sm font-medium cursor-pointer">
+                        {labCategory.category}
                       </label>
-                      <p className="text-xs text-gray-600 mt-1">{category.indication}</p>
+                      <p className="text-xs text-gray-600 mt-1">{labCategory.indication}</p>
                       <div className="text-xs text-gray-500 mt-1">
-                        {category.tests.slice(0, 3).join(', ')}
-                        {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}
+                        {labCategory.tests.slice(0, 3).join(', ')}
+                        {labCategory.tests.length > 3 && ` + ${labCategory.tests.length - 3} more`}
                       </div>
                     </div>
                   </div>

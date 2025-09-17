@@ -1,0 +1,21 @@
+{
+  "id": "prt_958ca2aff001EZcL8gBKzKFrFA",
+  "messageID": "msg_958c9989a001fyNQ3xqeHEqauc",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_012A2kPFnj1kXTzjGsN6cofW",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "  const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n    if (checked) {\n      setSelectedRoutineLabs(prev => [...prev, categoryKey])\n    } else {\n      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n    }\n  }",
+      "newString": "  const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n    if (checked) {\n      setSelectedRoutineLabs(prev => [...prev, categoryKey])\n    } else {\n      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n    }\n  }"
+    },
+    "error": "Error: oldString and newString must be different",
+    "time": {
+      "start": 1758131270367,
+      "end": 1758131270377
+    }
+  }
+}

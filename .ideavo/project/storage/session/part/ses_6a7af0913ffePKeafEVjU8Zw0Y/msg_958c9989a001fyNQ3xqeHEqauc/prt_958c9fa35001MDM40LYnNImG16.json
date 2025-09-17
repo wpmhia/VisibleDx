@@ -1,0 +1,25 @@
+{
+  "id": "prt_958c9fa35001MDM40LYnNImG16",
+  "messageID": "msg_958c9989a001fyNQ3xqeHEqauc",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016uURJLoqF1bjw47nu1QZ5k",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 354,
+      "limit": 20
+    },
+    "output": "<file>\n00355|                 {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (\n00356|                   <div key={key} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00357|                     <Checkbox\n00358|                       id={key}\n00359|                       checked={selectedRoutineLabs.includes(key)}\n00360|                       onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}\n00361|                     />\n00362|                     <div className=\"flex-1\">\n00363|                       <label htmlFor={key} className=\"text-sm font-medium cursor-pointer\">\n00364|                         {category.title}\n00365|                       </label>\n00366|                       <p className=\"text-xs text-gray-600 mt-1\">{category.indication}</p>\n00367|                       <div className=\"text-xs text-gray-500 mt-1\">\n00368|                         {category.tests.slice(0, 3).join(', ')}\n00369|                         {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}\n00370|                       </div>\n00371|                     </div>\n00372|                   </div>\n00373|                 ))}\n00374|               </div>\n\n(File has more lines. Use 'offset' parameter to read beyond line 374)\n</file>",
+    "metadata": {
+      "preview": "                {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (\n                  <div key={key} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={key}\n                      checked={selectedRoutineLabs.includes(key)}\n                      onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}\n                    />\n                    <div className=\"flex-1\">\n                      <label htmlFor={key} className=\"text-sm font-medium cursor-pointer\">\n                        {category.title}\n                      </label>\n                      <p className=\"text-xs text-gray-600 mt-1\">{category.indication}</p>\n                      <div className=\"text-xs text-gray-500 mt-1\">\n                        {category.tests.slice(0, 3).join(', ')}\n                        {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}\n                      </div>\n                    </div>\n                  </div>\n                ))}\n              </div>"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758131256502,
+      "end": 1758131256507
+    }
+  }
+}
