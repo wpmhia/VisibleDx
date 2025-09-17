@@ -1,0 +1,26 @@
+{
+  "id": "prt_9596e2b1c0019zkw2gSG6Lznnh",
+  "messageID": "msg_9596d7917001GthVmCimh88w2x",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01QAfWRcwYmyXRcWT4NgTxTx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  // Scroll to top when analysis is complete\n  useEffect(() => {\n    if (isComplete) {\n      window.scrollTo({ top: 0, behavior: 'smooth' })\n    }\n  }, [isComplete])",
+      "newString": "  // Scroll to top when analysis is complete\n  useEffect(() => {\n    if (isComplete) {\n      // Use setTimeout to ensure DOM is fully rendered before scrolling\n      setTimeout(() => {\n        window.scrollTo({ top: 0, behavior: 'smooth' })\n      }, 100)\n    }\n  }, [isComplete])"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -121,9 +121,12 @@\n \n // Scroll to top when analysis is complete\n useEffect(() => {\n   if (isComplete) {\n-    window.scrollTo({ top: 0, behavior: 'smooth' })\n+    // Use setTimeout to ensure DOM is fully rendered before scrolling\n+    setTimeout(() => {\n+      window.scrollTo({ top: 0, behavior: 'smooth' })\n+    }, 100)\n   }\n }, [isComplete])\n \n const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758142018631,
+      "end": 1758142018640
+    }
+  }
+}

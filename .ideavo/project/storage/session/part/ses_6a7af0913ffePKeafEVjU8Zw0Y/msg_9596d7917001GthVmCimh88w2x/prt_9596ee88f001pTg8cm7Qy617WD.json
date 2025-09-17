@@ -1,0 +1,18 @@
+{
+  "id": "prt_9596ee88f001pTg8cm7Qy617WD",
+  "messageID": "msg_9596d7917001GthVmCimh88w2x",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(ui): improve scroll to top reliability in subtypes page",
+  "cost": 0.1622076,
+  "tokens": {
+    "input": 5,
+    "output": 260,
+    "reasoning": 0,
+    "cache": {
+      "write": 627,
+      "read": 29899
+    }
+  }
+}

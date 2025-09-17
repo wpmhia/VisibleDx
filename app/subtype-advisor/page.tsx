@@ -122,7 +122,10 @@ export default function SubtypeAdvisor() {
   // Scroll to top when analysis is complete
   useEffect(() => {
     if (isComplete) {
-      window.scrollTo({ top: 0, behavior: 'smooth' })
+      // Use setTimeout to ensure DOM is fully rendered before scrolling
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 100)
     }
   }, [isComplete])
 
@@ -463,7 +466,11 @@ export default function SubtypeAdvisor() {
           ))}
 
           <div className="flex justify-center">
-            <Button onClick={() => setIsComplete(true)} size="lg" className="px-8">
+            <Button onClick={() => {
+              setIsComplete(true)
+              // Immediate scroll to top
+              setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50)
+            }} size="lg" className="px-8">
               <Pill className="h-4 w-4 mr-2" />
               {t.common.recommendations}
             </Button>
