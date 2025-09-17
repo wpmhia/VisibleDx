@@ -1,0 +1,18 @@
+{
+  "id": "prt_9596b8d5a001Oee2ywXnK5jH34",
+  "messageID": "msg_9596b4366001alCGD68F55hJYh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(ui): auto-scroll to top on POTS analysis completion",
+  "cost": 0.0882351,
+  "tokens": {
+    "input": 6,
+    "output": 121,
+    "reasoning": 0,
+    "cache": {
+      "write": 541,
+      "read": 25169
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "prt_9596b7e21001z0DtqPCupG6jAR",
+  "messageID": "msg_9596b4366001alCGD68F55hJYh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I've added a `useEffect` hook that will automatically scroll to the top of the page with a smooth animation whenever the analysis is completed (`isComplete` becomes true).\n\nThe fix ensures that when users click the recommendations button and reach the \"POTS Subtype Analyse Voltooid\" (completed analysis) page, they'll automatically be scrolled to the top to see their results instead of staying at the bottom where the form was.\n\nThe page will now open at the top with a smooth scrolling animation, providing a much better user experience.",
+  "time": {
+    "start": 1758141843654,
+    "end": 1758141843654
+  }
+}

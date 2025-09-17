@@ -119,6 +119,13 @@ export default function SubtypeAdvisor() {
     )
   }, [t])
 
+  // Scroll to top when analysis is complete
+  useEffect(() => {
+    if (isComplete) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }, [isComplete])
+
   const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {
     setSubtypeData(prev => prev.map(subtype => 
       subtype.id === subtypeId 

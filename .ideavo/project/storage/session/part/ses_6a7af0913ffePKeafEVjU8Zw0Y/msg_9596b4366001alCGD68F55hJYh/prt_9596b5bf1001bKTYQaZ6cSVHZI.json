@@ -1,0 +1,11 @@
+{
+  "id": "prt_9596b5bf1001bKTYQaZ6cSVHZI",
+  "messageID": "msg_9596b4366001alCGD68F55hJYh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see the issue. When the page switches to the completed results view (`isComplete` is true), there's no mechanism to scroll to the top. The page maintains its previous scroll position, which likely was at the bottom after users filled out the form. \n\nI'll add a `useEffect` hook that scrolls to the top when `isComplete` becomes true:",
+  "time": {
+    "start": 1758141834341,
+    "end": 1758141834341
+  }
+}

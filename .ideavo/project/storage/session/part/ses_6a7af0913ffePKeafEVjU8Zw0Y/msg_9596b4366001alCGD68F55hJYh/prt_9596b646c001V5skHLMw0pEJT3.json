@@ -1,0 +1,26 @@
+{
+  "id": "prt_9596b646c001V5skHLMw0pEJT3",
+  "messageID": "msg_9596b4366001alCGD68F55hJYh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Efzq6UbTa7dfNeJETf2kdx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  // Update subtype translations when language changes while preserving checked states\n  useEffect(() => {\n    const newSubtypes = createSubtypes(t)\n    setSubtypeData(prev => \n      newSubtypes.map((newSubtype, index) => ({\n        ...newSubtype,\n        criteria: newSubtype.criteria.map((newCriterion, criterionIndex) => ({\n          ...newCriterion,\n          checked: prev[index]?.criteria[criterionIndex]?.checked || false\n        }))\n      }))\n    )\n  }, [t])",
+      "newString": "  // Update subtype translations when language changes while preserving checked states\n  useEffect(() => {\n    const newSubtypes = createSubtypes(t)\n    setSubtypeData(prev => \n      newSubtypes.map((newSubtype, index) => ({\n        ...newSubtype,\n        criteria: newSubtype.criteria.map((newCriterion, criterionIndex) => ({\n          ...newCriterion,\n          checked: prev[index]?.criteria[criterionIndex]?.checked || false\n        }))\n      }))\n    )\n  }, [t])\n\n  // Scroll to top when analysis is complete\n  useEffect(() => {\n    if (isComplete) {\n      window.scrollTo({ top: 0, behavior: 'smooth' })\n    }\n  }, [isComplete])"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -118,8 +118,15 @@\n     }))\n   )\n }, [t])\n \n+// Scroll to top when analysis is complete\n+useEffect(() => {\n+  if (isComplete) {\n+    window.scrollTo({ top: 0, behavior: 'smooth' })\n+  }\n+}, [isComplete])\n+\n const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {\n   setSubtypeData(prev => prev.map(subtype => \n     subtype.id === subtypeId \n       ? {\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758141838982,
+      "end": 1758141838999
+    }
+  }
+}
