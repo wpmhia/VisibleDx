@@ -1,0 +1,25 @@
+{
+  "id": "prt_95973ee35001htzpMd3kaOFP0L",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DLYrJv53GmeWXrkFyapMmp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 375,
+      "limit": 25
+    },
+    "output": "<file>\n00376| \n00377|           {isRunning && (\n00378|             <>\n00379|               <Card>\n00380|                 <CardHeader>\n00381|                   <CardTitle className=\"flex items-center justify-between\">\n00382|                     <span>Phase: {currentPhaseData?.name}</span>\n00383|                     <div className=\"flex items-center gap-2\">\n00384|                       <Timer className=\"h-4 w-4\" />\n00385|                       {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}\n00386|                     </div>\n00387|                   </CardTitle>\n00388|                   <CardDescription>\n00389|                     {currentPhaseData?.instructions}\n00390|                   </CardDescription>\n00391|                 </CardHeader>\n00392|                 <CardContent>\n00393|                   <Progress value={progress} className=\"h-3 mb-4\" />\n00394|                   \n00395|                   <div className=\"flex gap-4 justify-center mb-4\">\n00396|                     <Button onClick={pauseTest} variant=\"outline\">\n00397|                       {isPaused ? <Play className=\"h-4 w-4\" /> : <Pause className=\"h-4 w-4\" />}\n00398|                       {isPaused ? t.standTest.controls.resume : t.standTest.controls.pause}\n00399|                     </Button>\n00400|                     <Button onClick={stopTest} variant=\"destructive\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 400)\n</file>",
+    "metadata": {
+      "preview": "\n          {isRunning && (\n            <>\n              <Card>\n                <CardHeader>\n                  <CardTitle className=\"flex items-center justify-between\">\n                    <span>Phase: {currentPhaseData?.name}</span>\n                    <div className=\"flex items-center gap-2\">\n                      <Timer className=\"h-4 w-4\" />\n                      {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}\n                    </div>\n                  </CardTitle>\n                  <CardDescription>\n                    {currentPhaseData?.instructions}\n                  </CardDescription>\n                </CardHeader>\n                <CardContent>\n                  <Progress value={progress} className=\"h-3 mb-4\" />\n                  \n                  <div className=\"flex gap-4 justify-center mb-4\">"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142394587,
+      "end": 1758142394590
+    }
+  }
+}

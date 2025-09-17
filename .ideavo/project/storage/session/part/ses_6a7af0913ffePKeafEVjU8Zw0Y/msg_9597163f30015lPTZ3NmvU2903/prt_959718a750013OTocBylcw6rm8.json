@@ -1,0 +1,73 @@
+{
+  "id": "prt_959718a750013OTocBylcw6rm8",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_015uoGZNntBuLAeAeMq3zgkw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Create PPG camera component with heart rate detection",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "ppg-1"
+        },
+        {
+          "content": "Integrate PPG component into Stand Test page",
+          "status": "pending",
+          "priority": "high",
+          "id": "ppg-2"
+        },
+        {
+          "content": "Add automatic heart rate recording when using camera mode",
+          "status": "pending",
+          "priority": "medium",
+          "id": "ppg-3"
+        },
+        {
+          "content": "Test and validate PPG accuracy",
+          "status": "pending",
+          "priority": "medium",
+          "id": "ppg-4"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Create PPG camera component with heart rate detection\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"ppg-1\"\n  },\n  {\n    \"content\": \"Integrate PPG component into Stand Test page\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"ppg-2\"\n  },\n  {\n    \"content\": \"Add automatic heart rate recording when using camera mode\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"ppg-3\"\n  },\n  {\n    \"content\": \"Test and validate PPG accuracy\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"ppg-4\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Create PPG camera component with heart rate detection",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "ppg-1"
+        },
+        {
+          "content": "Integrate PPG component into Stand Test page",
+          "status": "pending",
+          "priority": "high",
+          "id": "ppg-2"
+        },
+        {
+          "content": "Add automatic heart rate recording when using camera mode",
+          "status": "pending",
+          "priority": "medium",
+          "id": "ppg-3"
+        },
+        {
+          "content": "Test and validate PPG accuracy",
+          "status": "pending",
+          "priority": "medium",
+          "id": "ppg-4"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758142240349,
+      "end": 1758142240367
+    }
+  }
+}

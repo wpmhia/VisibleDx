@@ -11,6 +11,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert'
 import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
+import PPGCamera from '@/components/ppg-camera'
 
 interface HeartRateReading {
   time: number
@@ -37,6 +38,7 @@ export default function StandTest() {
   const [currentBP, setCurrentBP] = useState<{ systolic: number; diastolic: number } | null>(null)
   const [isComplete, setIsComplete] = useState(false)
   const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')
+  const [ppgStatus, setPPGStatus] = useState<'stopped' | 'starting' | 'detecting' | 'measuring'>('stopped')
   const { t } = useTranslation()
   
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
@@ -117,6 +119,15 @@ export default function StandTest() {
       setCurrentHR(null)
       setCurrentBP(null)
     }
+  }
+
+  const handlePPGHeartRate = (heartRate: number) => {
+    const reading: HeartRateReading = {
+      time: timeElapsed,
+      hr: heartRate,
+      bp: undefined
+    }
+    setReadings(prev => [...prev, reading])
   }
 
   const calculateResults = () => {
@@ -374,8 +385,13 @@ export default function StandTest() {
                       {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}
                     </div>
                   </CardTitle>
-                  <CardDescription>
-                    {currentPhaseData?.instructions}
+                  <CardDescription className="flex items-center justify-between">
+                    <span>{currentPhaseData?.instructions}</span>
+                    {testMethod === 'camera' && (
+                      <Badge variant={ppgStatus === 'measuring' ? 'default' : 'secondary'} className="ml-2">
+                        PPG: {ppgStatus}
+                      </Badge>
+                    )}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -394,62 +410,76 @@ export default function StandTest() {
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardHeader>
-                <CardTitle>{t.standTest.recording.title}</CardTitle>
-                <CardDescription>
-                  {t.standTest.recording.description}
-                </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div>
-                      <Label htmlFor="hr">Heart Rate ({t.common.bpm})</Label>
-                      <Input
-                        id="hr"
-                        type="number"
-                        placeholder="75"
-                        value={currentHR || ''}
-                        onChange={(e) => setCurrentHR(parseInt(e.target.value) || null)}
-                      />
+              {testMethod === 'manual' ? (
+                <Card>
+                  <CardHeader>
+                  <CardTitle>{t.standTest.recording.title}</CardTitle>
+                  <CardDescription>
+                    {t.standTest.recording.description}
+                  </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div>
+                        <Label htmlFor="hr">Heart Rate ({t.common.bpm})</Label>
+                        <Input
+                          id="hr"
+                          type="number"
+                          placeholder="75"
+                          value={currentHR || ''}
+                          onChange={(e) => setCurrentHR(parseInt(e.target.value) || null)}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="systolic">{t.standTest.recording.systolicBP}</Label>
+                        <Input
+                          id="systolic"
+                          type="number"
+                          placeholder="120"
+                          value={currentBP?.systolic || ''}
+                          onChange={(e) => setCurrentBP(prev => ({
+                            ...prev,
+                            systolic: parseInt(e.target.value) || 0,
+                            diastolic: prev?.diastolic || 0
+                          }))}
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="diastolic">{t.standTest.recording.diastolicBP}</Label>
+                        <Input
+                          id="diastolic"
+                          type="number"
+                          placeholder="80"
+                          value={currentBP?.diastolic || ''}
+                          onChange={(e) => setCurrentBP(prev => ({
+                            ...prev,
+                            systolic: prev?.systolic || 0,
+                            diastolic: parseInt(e.target.value) || 0
+                          }))}
+                        />
+                      </div>
                     </div>
-                    <div>
-                      <Label htmlFor="systolic">{t.standTest.recording.systolicBP}</Label>
-                      <Input
-                        id="systolic"
-                        type="number"
-                        placeholder="120"
-                        value={currentBP?.systolic || ''}
-                        onChange={(e) => setCurrentBP(prev => ({
-                          ...prev,
-                          systolic: parseInt(e.target.value) || 0,
-                          diastolic: prev?.diastolic || 0
-                        }))}
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="diastolic">{t.standTest.recording.diastolicBP}</Label>
-                      <Input
-                        id="diastolic"
-                        type="number"
-                        placeholder="80"
-                        value={currentBP?.diastolic || ''}
-                        onChange={(e) => setCurrentBP(prev => ({
-                          ...prev,
-                          systolic: prev?.systolic || 0,
-                          diastolic: parseInt(e.target.value) || 0
-                        }))}
-                      />
-                    </div>
-                  </div>
-                  
-                  <Button onClick={addReading} disabled={!currentHR} className="w-full">
-                    {t.standTest.recording.recordReading} at {formatTime(timeElapsed)}
-                  </Button>
-                  
-                  {readings.length > 0 && (
+                    
+                    <Button onClick={addReading} disabled={!currentHR} className="w-full">
+                      {t.standTest.recording.recordReading} at {formatTime(timeElapsed)}
+                    </Button>
+                  </CardContent>
+                </Card>
+              ) : (
+                <PPGCamera
+                  onHeartRateDetected={handlePPGHeartRate}
+                  isActive={isRunning && !isPaused}
+                  onStatusChange={setPPGStatus}
+                />
+              )}
+
+              {readings.length > 0 && (
+                <Card>
+                  <CardHeader>
+                    <CardTitle>{t.standTest.recording.recentReadings}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold mb-2">{t.standTest.recording.recentReadings}</h4>
                       <div className="text-sm space-y-1">
                         {readings.slice(-5).map((reading, index) => (
                           <div key={index} className="flex justify-between">
@@ -459,9 +489,9 @@ export default function StandTest() {
                         ))}
                       </div>
                     </div>
-                  )}
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              )}
             </>
           )}
         </div>

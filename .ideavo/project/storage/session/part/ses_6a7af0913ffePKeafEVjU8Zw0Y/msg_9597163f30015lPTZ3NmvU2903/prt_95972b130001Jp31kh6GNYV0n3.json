@@ -1,0 +1,25 @@
+{
+  "id": "prt_95972b130001Jp31kh6GNYV0n3",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0132oMWPmubyCwabcGjX3owY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 120,
+      "limit": 15
+    },
+    "output": "<file>\n00121|     }\n00122|   }\n00123| \n00124|   const calculateResults = () => {\n00125|     const lyingReadings = readings.filter(r => r.time < 300)\n00126|     const standingReadings = readings.filter(r => r.time >= 300)\n00127|     \n00128|     if (lyingReadings.length === 0 || standingReadings.length === 0) {\n00129|       return null\n00130|     }\n00131| \n00132|     const baselineHR = lyingReadings.reduce((sum, r) => sum + r.hr, 0) / lyingReadings.length\n00133|     const maxStandingHR = Math.max(...standingReadings.map(r => r.hr))\n00134|     const hrIncrease = maxStandingHR - baselineHR\n00135| \n\n(File has more lines. Use 'offset' parameter to read beyond line 135)\n</file>",
+    "metadata": {
+      "preview": "    }\n  }\n\n  const calculateResults = () => {\n    const lyingReadings = readings.filter(r => r.time < 300)\n    const standingReadings = readings.filter(r => r.time >= 300)\n    \n    if (lyingReadings.length === 0 || standingReadings.length === 0) {\n      return null\n    }\n\n    const baselineHR = lyingReadings.reduce((sum, r) => sum + r.hr, 0) / lyingReadings.length\n    const maxStandingHR = Math.max(...standingReadings.map(r => r.hr))\n    const hrIncrease = maxStandingHR - baselineHR\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142313322,
+      "end": 1758142313330
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95973fd3d001kMXm2r7RuTwSUX",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_011vHacuoWa6Z7qeiTgv8JHP",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "oldString": "                <CardHeader>\n                  <CardTitle className=\"flex items-center justify-between\">\n                    <span>Phase: {currentPhaseData?.name}</span>\n                    <div className=\"flex items-center gap-2\">\n                      <Timer className=\"h-4 w-4\" />\n                      {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}\n                    </div>\n                  </CardTitle>\n                  <CardDescription>\n                    {currentPhaseData?.instructions}\n                  </CardDescription>\n                </CardHeader>",
+      "newString": "                <CardHeader>\n                  <CardTitle className=\"flex items-center justify-between\">\n                    <span>Phase: {currentPhaseData?.name}</span>\n                    <div className=\"flex items-center gap-2\">\n                      <Timer className=\"h-4 w-4\" />\n                      {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}\n                    </div>\n                  </CardTitle>\n                  <CardDescription className=\"flex items-center justify-between\">\n                    <span>{currentPhaseData?.instructions}</span>\n                    {testMethod === 'camera' && (\n                      <Badge variant={ppgStatus === 'measuring' ? 'default' : 'secondary'} className=\"ml-2\">\n                        PPG: {ppgStatus}\n                      </Badge>\n                    )}\n                  </CardDescription>\n                </CardHeader>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -384,10 +384,15 @@\n       <Timer className=\"h-4 w-4\" />\n       {formatTime(timeElapsed)} / {formatTime(currentPhaseData?.duration || 0)}\n     </div>\n   </CardTitle>\n-  <CardDescription>\n-    {currentPhaseData?.instructions}\n+  <CardDescription className=\"flex items-center justify-between\">\n+    <span>{currentPhaseData?.instructions}</span>\n+    {testMethod === 'camera' && (\n+      <Badge variant={ppgStatus === 'measuring' ? 'default' : 'secondary'} className=\"ml-2\">\n+        PPG: {ppgStatus}\n+      </Badge>\n+    )}\n   </CardDescription>\n </CardHeader>\n <CardContent>\n   <Progress value={progress} className=\"h-3 mb-4\" />\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142401712,
+      "end": 1758142401723
+    }
+  }
+}

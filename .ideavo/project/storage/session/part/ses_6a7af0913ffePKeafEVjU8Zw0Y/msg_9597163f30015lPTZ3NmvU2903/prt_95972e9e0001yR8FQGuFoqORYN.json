@@ -1,0 +1,11 @@
+{
+  "id": "prt_95972e9e0001yR8FQGuFoqORYN",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! Now I'll replace the recording section to conditionally show either manual input or the PPG camera based on the selected method:",
+  "time": {
+    "start": 1758142328522,
+    "end": 1758142328522
+  }
+}

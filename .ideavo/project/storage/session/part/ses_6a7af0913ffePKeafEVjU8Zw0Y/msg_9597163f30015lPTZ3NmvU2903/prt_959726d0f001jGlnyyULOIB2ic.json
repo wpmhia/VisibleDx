@@ -1,0 +1,25 @@
+{
+  "id": "prt_959726d0f001jGlnyyULOIB2ic",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01SyUi7Dg8YnjSfNnQRkhWgm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 1,
+      "limit": 15
+    },
+    "output": "<file>\n00002| \n00003| import { useState, useEffect, useRef } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Input } from '@/components/ui/input'\n00007| import { Label } from '@/components/ui/label'\n00008| import { Progress } from '@/components/ui/progress'\n00009| import { Badge } from '@/components/ui/badge'\n00010| import { Alert, AlertDescription } from '@/components/ui/alert'\n00011| import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\n00012| import Link from 'next/link'\n00013| import { useTranslation } from '@/lib/language-context'\n00014| \n00015| interface HeartRateReading {\n00016|   time: number\n\n(File has more lines. Use 'offset' parameter to read beyond line 16)\n</file>",
+    "metadata": {
+      "preview": "\nimport { useState, useEffect, useRef } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Input } from '@/components/ui/input'\nimport { Label } from '@/components/ui/label'\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface HeartRateReading {\n  time: number"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142296275,
+      "end": 1758142296277
+    }
+  }
+}

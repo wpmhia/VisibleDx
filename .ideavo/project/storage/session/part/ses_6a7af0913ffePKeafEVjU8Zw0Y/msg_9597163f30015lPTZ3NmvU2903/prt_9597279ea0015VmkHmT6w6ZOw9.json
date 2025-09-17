@@ -1,0 +1,26 @@
+{
+  "id": "prt_9597279ea0015VmkHmT6w6ZOw9",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01NQuFSSoqaVRU2j3LoX7XXY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "oldString": "import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'",
+      "newString": "import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\nimport PPGCamera from '@/components/ppg-camera'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -10,8 +10,9 @@\n import { Alert, AlertDescription } from '@/components/ui/alert'\n import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n+import PPGCamera from '@/components/ppg-camera'\n \n interface HeartRateReading {\n   time: number\n   hr: number\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142300418,
+      "end": 1758142300435
+    }
+  }
+}

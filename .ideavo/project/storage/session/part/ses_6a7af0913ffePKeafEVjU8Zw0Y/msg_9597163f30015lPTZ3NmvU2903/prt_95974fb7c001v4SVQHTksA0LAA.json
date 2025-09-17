@@ -1,0 +1,18 @@
+{
+  "id": "prt_95974fb7c001v4SVQHTksA0LAA",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(ppg): implement camera-based heart rate detection",
+  "cost": 0.5570228999999999,
+  "tokens": {
+    "input": 1,
+    "output": 719,
+    "reasoning": 0,
+    "cache": {
+      "write": 622,
+      "read": 52404
+    }
+  }
+}

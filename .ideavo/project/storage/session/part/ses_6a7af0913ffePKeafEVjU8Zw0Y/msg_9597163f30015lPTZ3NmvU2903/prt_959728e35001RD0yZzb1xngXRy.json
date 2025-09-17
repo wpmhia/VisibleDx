@@ -1,0 +1,25 @@
+{
+  "id": "prt_959728e35001RD0yZzb1xngXRy",
+  "messageID": "msg_9597163f30015lPTZ3NmvU2903",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JwgE4r2JCFGqxMPkJcSg4u",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 35,
+      "limit": 20
+    },
+    "output": "<file>\n00036|   const [readings, setReadings] = useState<HeartRateReading[]>([])\n00037|   const [currentHR, setCurrentHR] = useState<number | null>(null)\n00038|   const [currentBP, setCurrentBP] = useState<{ systolic: number; diastolic: number } | null>(null)\n00039|   const [isComplete, setIsComplete] = useState(false)\n00040|   const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')\n00041|   const { t } = useTranslation()\n00042|   \n00043|   const intervalRef = useRef<NodeJS.Timeout | null>(null)\n00044| \n00045|   useEffect(() => {\n00046|     if (isRunning && !isPaused) {\n00047|       intervalRef.current = setInterval(() => {\n00048|         setTimeElapsed(prev => prev + 1)\n00049|       }, 1000)\n00050|     } else {\n00051|       if (intervalRef.current) {\n00052|         clearInterval(intervalRef.current)\n00053|       }\n00054|     }\n00055| \n\n(File has more lines. Use 'offset' parameter to read beyond line 55)\n</file>",
+    "metadata": {
+      "preview": "  const [readings, setReadings] = useState<HeartRateReading[]>([])\n  const [currentHR, setCurrentHR] = useState<number | null>(null)\n  const [currentBP, setCurrentBP] = useState<{ systolic: number; diastolic: number } | null>(null)\n  const [isComplete, setIsComplete] = useState(false)\n  const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')\n  const { t } = useTranslation()\n  \n  const intervalRef = useRef<NodeJS.Timeout | null>(null)\n\n  useEffect(() => {\n    if (isRunning && !isPaused) {\n      intervalRef.current = setInterval(() => {\n        setTimeElapsed(prev => prev + 1)\n      }, 1000)\n    } else {\n      if (intervalRef.current) {\n        clearInterval(intervalRef.current)\n      }\n    }\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758142304372,
+      "end": 1758142304375
+    }
+  }
+}
