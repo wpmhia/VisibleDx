@@ -800,5 +800,5 @@ export const sv: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Detta verktyg är endast för kliniskt beslutsstöd och ersätter inte professionell medicinsk bedömning. Konsultera alltid kvalificerade vårdpersonal för diagnos och behandling.'
+  disclaimer: 'Detta verktyg är endast för utbildningsändamål och ersätter inte professionell medicinsk bedömning eller klinisk utvärdering'
 }

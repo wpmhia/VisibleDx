@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fcf496001e8dgAVQfkVmVFh",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016CsTwsN3yCYkCRWFmuQxtb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 765,
+      "limit": 5
+    },
+    "output": "<file>\n00766| \n00767|   languages: {\n00768|     en: 'English',\n00769|     nl: 'Nederlands',\n00770|     da: 'Dansk',\n\n(File has more lines. Use 'offset' parameter to read beyond line 770)\n</file>",
+    "metadata": {
+      "preview": "\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758134597331,
+      "end": 1758134597333
+    }
+  }
+}

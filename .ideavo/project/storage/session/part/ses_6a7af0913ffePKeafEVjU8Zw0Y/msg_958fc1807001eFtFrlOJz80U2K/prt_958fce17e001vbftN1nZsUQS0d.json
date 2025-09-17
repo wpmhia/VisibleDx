@@ -1,0 +1,21 @@
+{
+  "id": "prt_958fce17e001vbftN1nZsUQS0d",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01PbMMBDRaddQAQjp7x1xaik",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "oldString": "  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'",
+      "newString": "  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'"
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/de.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758134593337,
+      "end": 1758134593363
+    }
+  }
+}

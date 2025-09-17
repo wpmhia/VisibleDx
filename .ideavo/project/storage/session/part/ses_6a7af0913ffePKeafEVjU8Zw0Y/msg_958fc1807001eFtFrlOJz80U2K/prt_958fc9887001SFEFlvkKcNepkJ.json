@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fc9887001SFEFlvkKcNepkJ",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LgVtUHSQfYW7fBr61hgxBZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 770,
+      "limit": 5
+    },
+    "output": "<file>\n00771|     en: 'English',\n00772|     nl: 'Nederlands',\n00773|     da: 'Dansk',\n00774|     de: 'Deutsch',\n00775|     sv: 'Svenska',\n\n(File has more lines. Use 'offset' parameter to read beyond line 775)\n</file>",
+    "metadata": {
+      "preview": "    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758134573715,
+      "end": 1758134573717
+    }
+  }
+}

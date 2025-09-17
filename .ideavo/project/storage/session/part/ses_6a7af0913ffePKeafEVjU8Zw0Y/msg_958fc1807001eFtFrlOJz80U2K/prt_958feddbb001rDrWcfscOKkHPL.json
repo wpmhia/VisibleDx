@@ -1,0 +1,25 @@
+{
+  "id": "prt_958feddbb001rDrWcfscOKkHPL",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Eq91CYomB59hBHuVa8en1K",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 82,
+      "limit": 15
+    },
+    "output": "<file>\n00083|             <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>\n00084|           </div>\n00085|           \n00086|           <div className=\"flex items-center gap-4\">\n00087|             <span>© 2024 VisibleDx</span>\n00088|             <span>•</span>\n00089|             <span>For Healthcare Professionals</span>\n00090|             <span>•</span>\n00091|             <Badge variant=\"secondary\" className=\"text-xs\">\n00092|               Research & Education Use\n00093|             </Badge>\n00094|           </div>\n00095|         </div>\n00096| \n00097|         {/* Technical Info */}\n\n(File has more lines. Use 'offset' parameter to read beyond line 97)\n</file>",
+    "metadata": {
+      "preview": "            <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>\n          </div>\n          \n          <div className=\"flex items-center gap-4\">\n            <span>© 2024 VisibleDx</span>\n            <span>•</span>\n            <span>For Healthcare Professionals</span>\n            <span>•</span>\n            <Badge variant=\"secondary\" className=\"text-xs\">\n              Research & Education Use\n            </Badge>\n          </div>\n        </div>\n\n        {/* Technical Info */}"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758134722552,
+      "end": 1758134722559
+    }
+  }
+}

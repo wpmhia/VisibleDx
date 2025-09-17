@@ -1,0 +1,26 @@
+{
+  "id": "prt_958fec9d8001xUYuggVUzavlTX",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GwePdvFk2ZoPtJAKDq3BP8",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "oldString": "            <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}. \n            This tool provides evidence-based guidance but does not replace clinical judgment, \n            physical examination, or comprehensive patient evaluation.",
+      "newString": "            <strong>Educational Tool:</strong> {t.disclaimer}. \n            This tool provides evidence-based educational content but does not replace clinical judgment, \n            physical examination, or comprehensive patient evaluation."
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -15,10 +15,10 @@\n {/* Main Disclaimer */}\n <Alert className=\"mb-6 border-amber-200 bg-amber-50\">\n   <AlertTriangle className=\"h-4 w-4 text-amber-600\" />\n   <AlertDescription className=\"text-amber-800\">\n-    <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}. \n-    This tool provides evidence-based guidance but does not replace clinical judgment, \n+    <strong>Educational Tool:</strong> {t.disclaimer}. \n+    This tool provides evidence-based educational content but does not replace clinical judgment, \n     physical examination, or comprehensive patient evaluation.\n   </AlertDescription>\n </Alert>\n \n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758134718475,
+      "end": 1758134718484
+    }
+  }
+}

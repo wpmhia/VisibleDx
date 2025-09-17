@@ -1,0 +1,25 @@
+{
+  "id": "prt_958feb6f5001BBupeWDWd7SSOP",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DjbmbPFrwpsxa6TzoXw433",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 15,
+      "limit": 10
+    },
+    "output": "<file>\n00016|         <Alert className=\"mb-6 border-amber-200 bg-amber-50\">\n00017|           <AlertTriangle className=\"h-4 w-4 text-amber-600\" />\n00018|           <AlertDescription className=\"text-amber-800\">\n00019|             <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}. \n00020|             This tool provides evidence-based guidance but does not replace clinical judgment, \n00021|             physical examination, or comprehensive patient evaluation.\n00022|           </AlertDescription>\n00023|         </Alert>\n00024| \n00025|         <div className=\"grid md:grid-cols-3 gap-8 mb-8\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 25)\n</file>",
+    "metadata": {
+      "preview": "        <Alert className=\"mb-6 border-amber-200 bg-amber-50\">\n          <AlertTriangle className=\"h-4 w-4 text-amber-600\" />\n          <AlertDescription className=\"text-amber-800\">\n            <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}. \n            This tool provides evidence-based guidance but does not replace clinical judgment, \n            physical examination, or comprehensive patient evaluation.\n          </AlertDescription>\n        </Alert>\n\n        <div className=\"grid md:grid-cols-3 gap-8 mb-8\">"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758134712745,
+      "end": 1758134712748
+    }
+  }
+}

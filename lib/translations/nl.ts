@@ -768,5 +768,5 @@ export const nl: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'
+  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie'
 }

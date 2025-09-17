@@ -768,5 +768,5 @@ export const en: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'
+  disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation'
 }

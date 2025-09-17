@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fc7741001OPO7IA5X9HzDBC",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01YAxLxZx5vCT4SLoc3FJzRg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 770,
+      "limit": 5
+    },
+    "output": "<file>\n00771|   disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'\n00772| }\n</file>",
+    "metadata": {
+      "preview": "  disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'\n}"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758134565243,
+      "end": 1758134565253
+    }
+  }
+}

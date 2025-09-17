@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fd46d1001nJFHjszUH4VkwN",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0162QswwSJL1YQSWUd5aYHG7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/sv.ts",
+      "offset": 775,
+      "limit": 5
+    },
+    "output": "<file>\n00776|         'Ortostatiska symptom ≥3 månader',\n00777|         'Ingen ortostatisk hypotension'\n00778|       ]\n00779|     }\n00780|   },\n\n(File has more lines. Use 'offset' parameter to read beyond line 780)\n</file>",
+    "metadata": {
+      "preview": "        'Ortostatiska symptom ≥3 månader',\n        'Ingen ortostatisk hypotension'\n      ]\n    }\n  },"
+    },
+    "title": "lib/translations/sv.ts",
+    "time": {
+      "start": 1758134618406,
+      "end": 1758134618408
+    }
+  }
+}

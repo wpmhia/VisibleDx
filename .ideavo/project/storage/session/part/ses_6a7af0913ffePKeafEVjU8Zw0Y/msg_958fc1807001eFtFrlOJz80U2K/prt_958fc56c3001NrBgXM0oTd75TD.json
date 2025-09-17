@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fc56c3001NrBgXM0oTd75TD",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Gg5ZKhZ3smXbEFHtVVSy3X",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 770,
+      "limit": 5
+    },
+    "output": "<file>\n00771|   disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'\n00772| }\n</file>",
+    "metadata": {
+      "preview": "  disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'\n}"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134557020,
+      "end": 1758134557028
+    }
+  }
+}

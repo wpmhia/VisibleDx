@@ -1,0 +1,26 @@
+{
+  "id": "prt_958fdfbaf001LGigLkzRsHR4IA",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01VH2rCtyif1cPMvngbZ9d2n",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "oldString": "  disclaimer: 'Cet outil est uniquement pour le support de décision clinique et ne remplace pas le jugement médical professionnel. Toujours consulter du personnel de santé qualifié pour le diagnostic et le traitement.'",
+      "newString": "  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/fr.ts\n===================================================================\n--- /home/user/project/lib/translations/fr.ts\n+++ /home/user/project/lib/translations/fr.ts\n@@ -799,6 +799,6 @@\n     no: 'Norsk',\n     fr: 'Français'\n   },\n \n-  disclaimer: 'Cet outil est uniquement pour le support de décision clinique et ne remplace pas le jugement médical professionnel. Toujours consulter du personnel de santé qualifié pour le diagnostic et le traitement.'\n+  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758134665627,
+      "end": 1758134665634
+    }
+  }
+}

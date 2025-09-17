@@ -777,5 +777,5 @@ export const da: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Dette screeningsværktøj er kun til klinisk beslutningsstøtte og erstatter ikke professionel medicinsk vurdering'
+  disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering'
 }

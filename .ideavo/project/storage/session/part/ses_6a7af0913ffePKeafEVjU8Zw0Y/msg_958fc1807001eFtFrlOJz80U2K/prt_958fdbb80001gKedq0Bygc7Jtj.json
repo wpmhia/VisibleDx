@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fdbb80001gKedq0Bygc7Jtj",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TtG5UtgHCExaoMpjKx9pQN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 800,
+      "limit": 5
+    },
+    "output": "<file>\n00801|   },\n00802| \n00803|   disclaimer: 'Dette verktøyet er kun for klinisk beslutningsstøtte og erstatter ikke profesjonell medisinsk vurdering. Konsulter alltid kvalifisert helsepersonell for diagnose og behandling.'\n00804| }\n</file>",
+    "metadata": {
+      "preview": "  },\n\n  disclaimer: 'Dette verktøyet er kun for klinisk beslutningsstøtte og erstatter ikke profesjonell medisinsk vurdering. Konsulter alltid kvalifisert helsepersonell for diagnose og behandling.'\n}"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758134648233,
+      "end": 1758134648235
+    }
+  }
+}

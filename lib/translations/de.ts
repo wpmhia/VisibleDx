@@ -774,5 +774,5 @@ export const de: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'
+  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'
 }

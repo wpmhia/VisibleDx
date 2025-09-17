@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fdabc3001juvRnGg1AaWmFf",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014KvXRiXHnu2PYMzCFKWT94",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 803,
+      "limit": 3
+    },
+    "output": "<file>\n00804| }\n</file>",
+    "metadata": {
+      "preview": "}"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758134644207,
+      "end": 1758134644209
+    }
+  }
+}

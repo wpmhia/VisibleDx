@@ -1,0 +1,26 @@
+{
+  "id": "prt_958fd23e9001eAFCY7V0MEWLcu",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01K1Kao9HGuEeLVByRFE1TAR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "oldString": "  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'",
+      "newString": "  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/de.ts\n===================================================================\n--- /home/user/project/lib/translations/de.ts\n+++ /home/user/project/lib/translations/de.ts\n@@ -773,6 +773,6 @@\n     no: 'Norsk',\n     fr: 'Français'\n   },\n \n-  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'\n+  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758134610140,
+      "end": 1758134610151
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fea73b0015mClJjY1qqbBXG",
+  "messageID": "msg_958fc1807001eFtFrlOJz80U2K",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_016pZ5ujL4BPQ3ZgtWhgbLhV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "disclaimer",
+      "include": "components/**/*.tsx"
+    },
+    "output": "Found 1 matches\n/home/user/project/components/disclaimer.tsx:\n  Line 19:             <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}.",
+    "metadata": {
+      "matches": 1,
+      "truncated": false
+    },
+    "title": "disclaimer",
+    "time": {
+      "start": 1758134708505,
+      "end": 1758134708514
+    }
+  }
+}

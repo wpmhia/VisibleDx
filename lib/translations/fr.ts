@@ -800,5 +800,5 @@ export const fr: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Cet outil est uniquement pour le support de décision clinique et ne remplace pas le jugement médical professionnel. Toujours consulter du personnel de santé qualifié pour le diagnostic et le traitement.'
+  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\'évaluation clinique'
 }

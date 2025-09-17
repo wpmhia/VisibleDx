@@ -16,8 +16,8 @@ export default function Disclaimer() {
         <Alert className="mb-6 border-amber-200 bg-amber-50">
           <AlertTriangle className="h-4 w-4 text-amber-600" />
           <AlertDescription className="text-amber-800">
-            <strong>Clinical Decision Support Tool:</strong> {t.disclaimer}. 
-            This tool provides evidence-based guidance but does not replace clinical judgment, 
+            <strong>Educational Tool:</strong> {t.disclaimer}. 
+            This tool provides evidence-based educational content but does not replace clinical judgment, 
             physical examination, or comprehensive patient evaluation.
           </AlertDescription>
         </Alert>
@@ -80,7 +80,7 @@ export default function Disclaimer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-2">
             <Stethoscope className="h-4 w-4" />
-            <span>VisibleDx v1.0 - Clinical Decision Support Tool</span>
+            <span>VisibleDx v1.0 - Educational Tool</span>
           </div>
           
           <div className="flex items-center gap-4">
