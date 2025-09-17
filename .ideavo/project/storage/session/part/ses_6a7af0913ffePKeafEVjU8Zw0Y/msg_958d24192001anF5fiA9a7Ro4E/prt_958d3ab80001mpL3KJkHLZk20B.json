@@ -1,0 +1,18 @@
+{
+  "id": "prt_958d3ab80001mpL3KJkHLZk20B",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(new-patient): resolve symptom mapping key prop mismatch",
+  "cost": 0.4190955,
+  "tokens": {
+    "input": 2,
+    "output": 178,
+    "reasoning": 0,
+    "cache": {
+      "write": 624,
+      "read": 63336
+    }
+  }
+}

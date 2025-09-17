@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d2a98e001Bop1KTTBo83nYA",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01Dq9Q6PjdQwFRH84q9zAf5v",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "\\.map\\(",
+      "path": "/home/user/project/app/new-patient"
+    },
+    "output": "Found 8 matches\n/home/user/project/app/new-patient/page.tsx:\n  Line 93: const createScreeningQuestions = (t: any) => t.quickScreen.questions.map((question: string, index: number) => ({\n  Line 99: const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  Line 109:     options: t.pem.questions.frequency.options.map((label: string, index: number) => ({\n  Line 118:     options: t.pem.questions.severity.options.map((label: string, index: number) => ({\n  Line 127:     options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({\n  Line 183:       return sum + Math.max(...question.options.map(opt => opt.score))\n  Line 730:                 {redFlagSymptoms.map((flag) => (\n  Line 902:                 {currentPEMQuestion.options.map((option) => (",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "\\.map\\(",
+    "time": {
+      "start": 1758131825561,
+      "end": 1758131825572
+    }
+  }
+}

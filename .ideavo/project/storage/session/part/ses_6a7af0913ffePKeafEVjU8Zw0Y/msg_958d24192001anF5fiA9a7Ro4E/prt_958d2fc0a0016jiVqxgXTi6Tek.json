@@ -1,0 +1,26 @@
+{
+  "id": "prt_958d2fc0a0016jiVqxgXTi6Tek",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017EfLpfDhW8E7fsobKvJwCk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n  symptom,\n  priority: 'high'\n}))",
+      "newString": "const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],\n  symptom,\n  priority: 'high'\n}))"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -96,9 +96,9 @@\n   category: ['core', 'pem', 'core', 'core', 'cardiovascular', 'orthostatic', 'history', 'duration', 'pain', 'neurological', 'autonomic', 'gi', 'respiratory', 'functional', 'sensory', 'functional'][index]\n }))\n \n const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n-  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n+  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],\n   symptom,\n   priority: 'high'\n }))\n \n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131848579,
+      "end": 1758131848593
+    }
+  }
+}

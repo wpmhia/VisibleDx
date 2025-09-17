@@ -97,7 +97,7 @@ const createScreeningQuestions = (t: any) => t.quickScreen.questions.map((questi
 }))
 
 const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({
-  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],
+  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],
   symptom,
   priority: 'high'
 }))

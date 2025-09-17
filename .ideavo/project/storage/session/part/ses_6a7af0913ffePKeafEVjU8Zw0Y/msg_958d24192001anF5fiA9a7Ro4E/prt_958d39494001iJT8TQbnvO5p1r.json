@@ -1,0 +1,11 @@
+{
+  "id": "prt_958d39494001iJT8TQbnvO5p1r",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Great! The build is successful. The issue was that the `createRedFlagSymptoms` function had a mismatch between the number of symptoms in the translation file (8 items) and the hard-coded ID array (6 items), which was causing undefined values and the React key warning.\n\nThe console errors you're seeing are mostly related to the development environment:\n\n1. **404 error for `/api/automation/reconnect/`** - This is likely from the development environment trying to reconnect to some automation service that's not relevant to your app\n2. **AudioContext warnings** - These are browser restrictions about audio that need user interaction first\n3. **React key warning** - This has now been fixed\n\nThe new patient assessment should now work properly without the React warnings and without getting stuck on loading screens.",
+  "time": {
+    "start": 1758131889972,
+    "end": 1758131889972
+  }
+}

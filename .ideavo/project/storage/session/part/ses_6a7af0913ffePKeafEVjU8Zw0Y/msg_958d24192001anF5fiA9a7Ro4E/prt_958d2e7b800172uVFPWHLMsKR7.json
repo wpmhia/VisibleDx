@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d2e7b800172uVFPWHLMsKR7",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QRKZRDJGYTaF2TMgSRT1Ls",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 99,
+      "limit": 5
+    },
+    "output": "<file>\n00100|   id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n00101|   symptom,\n00102|   priority: 'high'\n00103| }))\n00104| \n\n(File has more lines. Use 'offset' parameter to read beyond line 104)\n</file>",
+    "metadata": {
+      "preview": "  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding'][index],\n  symptom,\n  priority: 'high'\n}))\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131841781,
+      "end": 1758131841788
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d2c89c0017E2kD0tB562E9M",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_015JBtTct8VuqHSYVRvEFR8y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 165,
+      "limit": 15
+    },
+    "output": "<file>\n00166|     if (totalYes >= 8 && coreSymptoms >= 2 && pemPresent && chronicity) {\n00167|       riskLevel = 'high'\n00168|     } else if (totalYes >= 5 && (coreSymptoms >= 2 || pemPresent)) {\n00169|       riskLevel = 'medium'\n00170|     }\n00171|     \n00172|     return { score: totalYes, riskLevel }\n00173|   }\n00174| \n00175|   const calculatePEMScore = (answers: Record<string, string>) => {\n00176|     const totalScore = pemQuestions.reduce((sum, question) => {\n00177|       const answer = answers[question.id]\n00178|       const option = question.options.find(opt => opt.value === answer)\n00179|       return sum + (option?.score || 0)\n00180|     }, 0)\n\n(File has more lines. Use 'offset' parameter to read beyond line 180)\n</file>",
+    "metadata": {
+      "preview": "    if (totalYes >= 8 && coreSymptoms >= 2 && pemPresent && chronicity) {\n      riskLevel = 'high'\n    } else if (totalYes >= 5 && (coreSymptoms >= 2 || pemPresent)) {\n      riskLevel = 'medium'\n    }\n    \n    return { score: totalYes, riskLevel }\n  }\n\n  const calculatePEMScore = (answers: Record<string, string>) => {\n    const totalScore = pemQuestions.reduce((sum, question) => {\n      const answer = answers[question.id]\n      const option = question.options.find(opt => opt.value === answer)\n      return sum + (option?.score || 0)\n    }, 0)"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131833564,
+      "end": 1758131833567
+    }
+  }
+}

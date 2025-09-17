@@ -1,0 +1,21 @@
+{
+  "id": "prt_958d274a5001EWICUfVygBfe6S",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ACkH19GV6WytUwjieqkBcH",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "              <div className=\"space-y-3\">\n                {redFlagSymptoms.map((flag) => (\n                  <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">",
+      "newString": "              <div className=\"space-y-3\">\n                {redFlagSymptoms.map((flag) => (\n                  <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">"
+    },
+    "error": "Error: oldString and newString must be different",
+    "time": {
+      "start": 1758131813264,
+      "end": 1758131813286
+    }
+  }
+}

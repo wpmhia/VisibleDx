@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d2b684001t1mrnEuEUaeJmC",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VVfayDe9QsTEhgYsq6qzEm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 895,
+      "limit": 10
+    },
+    "output": "<file>\n00896|             <CardContent>\n00897|               <RadioGroup \n00898|                 value={currentAnswer || ''} \n00899|                 onValueChange={(value) => handlePEMAnswer(currentPEMQuestion.id, value)}\n00900|                 className=\"space-y-3\"\n00901|               >\n00902|                 {currentPEMQuestion.options.map((option) => (\n00903|                   <div key={option.value} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n00904|                     <RadioGroupItem value={option.value} id={option.value} className=\"mt-1\" />\n00905|                     <Label htmlFor={option.value} className=\"cursor-pointer flex-1\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 905)\n</file>",
+    "metadata": {
+      "preview": "            <CardContent>\n              <RadioGroup \n                value={currentAnswer || ''} \n                onValueChange={(value) => handlePEMAnswer(currentPEMQuestion.id, value)}\n                className=\"space-y-3\"\n              >\n                {currentPEMQuestion.options.map((option) => (\n                  <div key={option.value} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <RadioGroupItem value={option.value} id={option.value} className=\"mt-1\" />\n                    <Label htmlFor={option.value} className=\"cursor-pointer flex-1\">"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131828982,
+      "end": 1758131828988
+    }
+  }
+}

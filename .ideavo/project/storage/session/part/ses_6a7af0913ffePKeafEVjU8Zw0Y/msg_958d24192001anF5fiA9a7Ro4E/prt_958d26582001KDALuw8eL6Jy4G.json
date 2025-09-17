@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d26582001KDALuw8eL6Jy4G",
+  "messageID": "msg_958d24192001anF5fiA9a7Ro4E",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LnBwLk2uJ48CUFdQh8vMtN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 720,
+      "limit": 10
+    },
+    "output": "<file>\n00721|           </div>\n00722| \n00723|           <Card>\n00724|             <CardHeader>\n00725|               <CardTitle>{t.redFlag.symptoms.title}</CardTitle>\n00726|               <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n00727|             </CardHeader>\n00728|             <CardContent>\n00729|               <div className=\"space-y-3\">\n00730|                 {redFlagSymptoms.map((flag) => (\n\n(File has more lines. Use 'offset' parameter to read beyond line 730)\n</file>",
+    "metadata": {
+      "preview": "          </div>\n\n          <Card>\n            <CardHeader>\n              <CardTitle>{t.redFlag.symptoms.title}</CardTitle>\n              <CardDescription>{t.newPatient.redFlags.selectSymptoms}</CardDescription>\n            </CardHeader>\n            <CardContent>\n              <div className=\"space-y-3\">\n                {redFlagSymptoms.map((flag) => ("
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131808544,
+      "end": 1758131808556
+    }
+  }
+}
