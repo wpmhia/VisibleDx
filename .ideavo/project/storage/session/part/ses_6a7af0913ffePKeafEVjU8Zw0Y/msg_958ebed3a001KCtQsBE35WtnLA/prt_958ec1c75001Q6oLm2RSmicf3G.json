@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec1c75001Q6oLm2RSmicf3G",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01979nJTT2rS1ibsyQ13LREa",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 440,
+      "limit": 35
+    },
+    "output": "<file>\n00441|           'Streng aktivitetspacing essensielt',\n00442|           'Vurder funksjonshemming evaluering',\n00443|           'ME/CFS spesialistklinikk henvisning'\n00444|         ],\n00445|         moderate: [\n00446|           'Implementer forsiktig aktivitetspacing',\n00447|           'Overvåk for symptomprogresjon',\n00448|           'Vurder ergoterapi'\n00449|         ],\n00450|         mild: [\n00451|           'Begynn forsiktig aktivitetspacing',\n00452|           'Utdanning om PEM-gjenkjennelse',\n00453|           'Regelmessig symptomovervåking'\n00454|         ],\n00455|         none: [\n00456|           'PEM ikke signifikant tilstede',\n00457|           'Vurder andre diagnoser',\n00458|           'Standard aktivitet som tolereres'\n00459|         ]\n00460|       },\n00461|       important: 'Viktig: PEM er det karakteristiske symptomet ved ME/CFS. Hvis tilstede, unngå aktiviteter som konsekvent forårsaker symptomforverring. Energistyring og pacing er viktige behandlingsstrategier.',\n00462|       retake: 'Ta Vurdering På Nytt'\n00463|     }\n00464|   },\n00465| \n00466|   criteria: {\n00467|     title: 'Kriterieanalyse',\n00468|     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for definitiv bestemmelse',\n00469|     mecfs: {\n00470|       title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n00471|       description: 'Krever betydelig tretthet, PEM, ikke-oppfriskende søvn, OG kognitive forstyrrelser ELLER ortostatisk intoleranse',\n00472|       criteria: [\n00473|         'Betydelig reduksjon eller begrensning av aktivitetsnivåer som varer ≥6 måneder',\n00474|         'Post-exertional malaise (PEM) tilstede',\n00475|         'Ikke-oppfriskende søvn',\n\n(File has more lines. Use 'offset' parameter to read beyond line 475)\n</file>",
+    "metadata": {
+      "preview": "          'Streng aktivitetspacing essensielt',\n          'Vurder funksjonshemming evaluering',\n          'ME/CFS spesialistklinikk henvisning'\n        ],\n        moderate: [\n          'Implementer forsiktig aktivitetspacing',\n          'Overvåk for symptomprogresjon',\n          'Vurder ergoterapi'\n        ],\n        mild: [\n          'Begynn forsiktig aktivitetspacing',\n          'Utdanning om PEM-gjenkjennelse',\n          'Regelmessig symptomovervåking'\n        ],\n        none: [\n          'PEM ikke signifikant tilstede',\n          'Vurder andre diagnoser',\n          'Standard aktivitet som tolereres'\n        ]\n      },"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758133493564,
+      "end": 1758133493567
+    }
+  }
+}

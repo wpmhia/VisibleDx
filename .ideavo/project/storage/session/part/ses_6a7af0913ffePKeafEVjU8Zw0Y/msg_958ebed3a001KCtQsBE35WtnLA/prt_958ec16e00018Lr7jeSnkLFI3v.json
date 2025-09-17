@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec16e00018Lr7jeSnkLFI3v",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FkdgkhBm5X6tGRStvxHq9Y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 440,
+      "limit": 35
+    },
+    "output": "<file>\n00441|     description: 'CDC, NASEM, ESC, WHO diagnostische Kriterien für endgültige Bestimmung anwenden',\n00442|     mecfs: {\n00443|       title: 'ME/CFS-Kriterien (CDC/NASEM 2015)',\n00444|       description: 'Erfordert erhebliche Müdigkeit, PEM, nicht erholsamen Schlaf UND entweder kognitive Beeinträchtigung ODER orthostatische Intoleranz',\n00445|       criteria: [\n00446|         'Erhebliche Reduktion oder Beeinträchtigung der Aktivitätsniveaus, die ≥6 Monate anhält',\n00447|         'Post-exertionale Malaise (PEM) vorhanden',\n00448|         'Nicht erholsamer Schlaf',\n00449|         'Kognitive Beeinträchtigung (Gehirnnebel)',\n00450|         'Orthostatische Intoleranz ODER autonome Dysfunktion'\n00451|       ]\n00452|     },\n00453|     longCovid: {\n00454|       title: 'Long COVID-Kriterien (WHO/NASEM 2024)',\n00455|       description: 'Post-akute Folgen der SARS-CoV-2-Infektion mit anhaltenden Multi-System-Symptomen',\n00456|       criteria: [\n00457|         'Bestätigte oder wahrscheinliche SARS-CoV-2-Infektion',\n00458|         'Symptome halten ≥3 Monate nach akuter Erkrankung an',\n00459|         'Multi-System-Symptome, die die tägliche Funktionsfähigkeit beeinträchtigen',\n00460|         'Symptome nicht durch alternative Diagnose erklärt'\n00461|       ],\n00462|       timing: {\n00463|         confirmed: 'Durch Test bestätigt',\n00464|         probable: 'Wahrscheinlich basierend auf Symptomen/Exposition',\n00465|         suspected: 'Vermutet basierend auf Timing'\n00466|       }\n00467|     },\n00468|     pots: {\n00469|       title: 'POTS-Kriterien (ESC 2018/AAS-EFAS 2021)',\n00470|       description: 'Herzfrequenz-Anstieg ≥30 Schläge/Min innerhalb 10 Minuten des Stehens, mit Symptomen aber ohne orthostatische Hypotonie',\n00471|       criteria: [\n00472|         'Herzfrequenz-Anstieg ≥30 Schläge/Min innerhalb 10 Minuten des Stehens',\n00473|         'Anhaltende Herzfrequenz ≥120 Schläge/Min beim Stehen',\n00474|         'Orthostatische Symptome (Schwindel, Herzklopfen, Müdigkeit)',\n00475|         'Symptome vorhanden für ≥3 Monate',\n\n(File has more lines. Use 'offset' parameter to read beyond line 475)\n</file>",
+    "metadata": {
+      "preview": "    description: 'CDC, NASEM, ESC, WHO diagnostische Kriterien für endgültige Bestimmung anwenden',\n    mecfs: {\n      title: 'ME/CFS-Kriterien (CDC/NASEM 2015)',\n      description: 'Erfordert erhebliche Müdigkeit, PEM, nicht erholsamen Schlaf UND entweder kognitive Beeinträchtigung ODER orthostatische Intoleranz',\n      criteria: [\n        'Erhebliche Reduktion oder Beeinträchtigung der Aktivitätsniveaus, die ≥6 Monate anhält',\n        'Post-exertionale Malaise (PEM) vorhanden',\n        'Nicht erholsamer Schlaf',\n        'Kognitive Beeinträchtigung (Gehirnnebel)',\n        'Orthostatische Intoleranz ODER autonome Dysfunktion'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID-Kriterien (WHO/NASEM 2024)',\n      description: 'Post-akute Folgen der SARS-CoV-2-Infektion mit anhaltenden Multi-System-Symptomen',\n      criteria: [\n        'Bestätigte oder wahrscheinliche SARS-CoV-2-Infektion',\n        'Symptome halten ≥3 Monate nach akuter Erkrankung an',\n        'Multi-System-Symptome, die die tägliche Funktionsfähigkeit beeinträchtigen',\n        'Symptome nicht durch alternative Diagnose erklärt'"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758133492144,
+      "end": 1758133492148
+    }
+  }
+}

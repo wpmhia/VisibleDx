@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec3f96001bNE1vx2gAnb4be",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012Qg7WANm3bAgZd7TprPJDt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 475,
+      "limit": 10
+    },
+    "output": "<file>\n00476|         'Troubles cognitifs (brouillard cérébral)',\n00477|         'Intolérance orthostatique OU dysfonction autonome'\n00478|       ]\n00479|     },\n00480|     longCovid: {\n00481|       title: 'Critères Long COVID (WHO/NASEM 2024)',\n00482|       description: 'Séquelles post-aiguës de l\\'infection SARS-CoV-2 avec symptômes multi-systémiques persistants',\n00483|       criteria: [\n00484|         'Infection SARS-CoV-2 confirmée ou probable',\n00485|         'Symptômes persistent ≥3 mois depuis maladie aiguë',\n\n(File has more lines. Use 'offset' parameter to read beyond line 485)\n</file>",
+    "metadata": {
+      "preview": "        'Troubles cognitifs (brouillard cérébral)',\n        'Intolérance orthostatique OU dysfonction autonome'\n      ]\n    },\n    longCovid: {\n      title: 'Critères Long COVID (WHO/NASEM 2024)',\n      description: 'Séquelles post-aiguës de l\\'infection SARS-CoV-2 avec symptômes multi-systémiques persistants',\n      criteria: [\n        'Infection SARS-CoV-2 confirmée ou probable',\n        'Symptômes persistent ≥3 mois depuis maladie aiguë',"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758133501971,
+      "end": 1758133501981
+    }
+  }
+}

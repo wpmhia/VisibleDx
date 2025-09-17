@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec1f3e001YKWMdiSZt5QWeI",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014pjXM7vug1upSHqb9xgc3C",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 440,
+      "limit": 35
+    },
+    "output": "<file>\n00441|           'Gestion stricte de l\\'activité (pacing) essentielle',\n00442|           'Considérer évaluation d\\'invalidité',\n00443|           'Référence clinique spécialisée ME/CFS'\n00444|         ],\n00445|         moderate: [\n00446|           'Implémenter gestion prudente de l\\'activité',\n00447|           'Surveiller progression des symptômes',\n00448|           'Considérer ergothérapie'\n00449|         ],\n00450|         mild: [\n00451|           'Commencer gestion prudente de l\\'activité',\n00452|           'Éducation sur reconnaissance PEM',\n00453|           'Surveillance régulière des symptômes'\n00454|         ],\n00455|         none: [\n00456|           'PEM pas significativement présent',\n00457|           'Considérer autres diagnostics',\n00458|           'Activité standard comme tolérée'\n00459|         ]\n00460|       },\n00461|       important: 'Important : Le PEM est le symptôme caractéristique du ME/CFS. Si présent, évitez les activités qui causent systématiquement l\\'aggravation des symptômes. La gestion énergétique et le pacing sont des stratégies de traitement importantes.',\n00462|       retake: 'Refaire l\\'Évaluation'\n00463|     }\n00464|   },\n00465| \n00466|   criteria: {\n00467|     title: 'Moteur de Critères',\n00468|     description: 'Appliquer les critères diagnostiques CDC, NASEM, ESC, WHO pour détermination définitive',\n00469|     mecfs: {\n00470|       title: 'Critères ME/CFS (CDC/NASEM 2015)',\n00471|       description: 'Nécessite fatigue substantielle, PEM, sommeil non réparateur, ET troubles cognitifs OU intolérance orthostatique',\n00472|       criteria: [\n00473|         'Réduction ou limitation substantielle des niveaux d\\'activité durant ≥6 mois',\n00474|         'Malaise post-effort (PEM) présent',\n00475|         'Sommeil non réparateur',\n\n(File has more lines. Use 'offset' parameter to read beyond line 475)\n</file>",
+    "metadata": {
+      "preview": "          'Gestion stricte de l\\'activité (pacing) essentielle',\n          'Considérer évaluation d\\'invalidité',\n          'Référence clinique spécialisée ME/CFS'\n        ],\n        moderate: [\n          'Implémenter gestion prudente de l\\'activité',\n          'Surveiller progression des symptômes',\n          'Considérer ergothérapie'\n        ],\n        mild: [\n          'Commencer gestion prudente de l\\'activité',\n          'Éducation sur reconnaissance PEM',\n          'Surveillance régulière des symptômes'\n        ],\n        none: [\n          'PEM pas significativement présent',\n          'Considérer autres diagnostics',\n          'Activité standard comme tolérée'\n        ]\n      },"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758133493747,
+      "end": 1758133493752
+    }
+  }
+}

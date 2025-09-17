@@ -1,0 +1,27 @@
+{
+  "id": "prt_958edbbf3001mkD4U6uiPlAT1Q",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_017ajxy7H9D1ZhEcoRdrqHha",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run dev > /dev/null 2>&1 & echo \"Development server started\"",
+      "timeout": 5000,
+      "description": "Start development server to test translations"
+    },
+    "output": "Development server started\n",
+    "metadata": {
+      "output": "Development server started\n",
+      "exit": 0,
+      "description": "Start development server to test translations"
+    },
+    "title": "cd /home/user/project && npm run dev > /dev/null 2>&1 & echo \"Development server started\"",
+    "time": {
+      "start": 1758133600313,
+      "end": 1758133600320
+    }
+  }
+}

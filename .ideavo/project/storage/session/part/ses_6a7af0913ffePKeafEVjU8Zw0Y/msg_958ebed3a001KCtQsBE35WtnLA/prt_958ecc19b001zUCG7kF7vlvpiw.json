@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ecc19b001zUCG7kF7vlvpiw",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Fr4R5bTJBXBGmVTUpGxzZ6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 447,
+      "limit": 30
+    },
+    "output": "<file>\n00448|     longCovid: {\n00449|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00450|       description: 'Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms',\n00451|       criteria: [\n00452|         'Confirmed or probable SARS-CoV-2 infection',\n00453|         'Symptoms persist ≥3 months from acute illness',\n00454|         'Multi-system symptoms affecting daily functioning',\n00455|         'Symptoms not explained by alternative diagnosis'\n00456|       ],\n00457|       timing: {\n00458|         confirmed: 'Confirmed by test',\n00459|         probable: 'Probable based on symptoms/exposure',\n00460|         suspected: 'Suspected based on timing'\n00461|       }\n00462|     },\n00463|     pots: {\n00464|       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n00465|       description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',\n00466|       criteria: [\n00467|         'Heart rate increase ≥30 bpm within 10 minutes of standing',\n00468|         'Sustained heart rate ≥120 bpm while standing',\n00469|         'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n00470|         'Symptoms present for ≥3 months',\n00471|         'Absence of orthostatic hypotension'\n00472|       ]\n00473|     },\n00474|     results: {\n00475|       complete: 'Diagnostic Criteria Assessment Complete',\n00476|       description: 'Based on CDC, NASEM, ESC, WHO guidelines',\n00477|       diagnosesMet: 'Diagnoses Meeting Criteria',\n\n(File has more lines. Use 'offset' parameter to read beyond line 477)\n</file>",
+    "metadata": {
+      "preview": "    longCovid: {\n      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms',\n      criteria: [\n        'Confirmed or probable SARS-CoV-2 infection',\n        'Symptoms persist ≥3 months from acute illness',\n        'Multi-system symptoms affecting daily functioning',\n        'Symptoms not explained by alternative diagnosis'\n      ],\n      timing: {\n        confirmed: 'Confirmed by test',\n        probable: 'Probable based on symptoms/exposure',\n        suspected: 'Suspected based on timing'\n      }\n    },\n    pots: {\n      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n      description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',\n      criteria: [\n        'Heart rate increase ≥30 bpm within 10 minutes of standing',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758133535855,
+      "end": 1758133535857
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "prt_958ecd07f0018kJ7j7s6gKwBYW",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_015XXtFETzrFL5Bu4NG7kbKu",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      title: 'Long COVID Criteria (WHO/NASEM 2024)',",
+          "newString": "      title: 'Long COVID Criteria (WHO/NASEM 2024)',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',",
+          "newString": "      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',"
+        }
+      ]
+    },
+    "error": "Error: oldString and newString must be different",
+    "time": {
+      "start": 1758133540865,
+      "end": 1758133540872
+    }
+  }
+}

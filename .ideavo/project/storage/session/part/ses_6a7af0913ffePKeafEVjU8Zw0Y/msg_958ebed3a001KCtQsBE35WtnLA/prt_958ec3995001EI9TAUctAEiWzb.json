@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec3995001EI9TAUctAEiWzb",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01WSbSJXa2QUBMAaxNfPbfpm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/sv.ts",
+      "offset": 475,
+      "limit": 10
+    },
+    "output": "<file>\n00476|         'Kognitiva störningar (hjärndimma)',\n00477|         'Ortostatisk intolerans ELLER autonom dysfunktion'\n00478|       ]\n00479|     },\n00480|     longCovid: {\n00481|       title: 'Long COVID Kriterier (WHO/NASEM 2024)',\n00482|       description: 'Post-akuta följder av SARS-CoV-2-infektion med persistenta multisystemsymptom',\n00483|       criteria: [\n00484|         'Bekräftad eller sannolik SARS-CoV-2-infektion',\n00485|         'Symptom kvarstår ≥3 månader från akut sjukdom',\n\n(File has more lines. Use 'offset' parameter to read beyond line 485)\n</file>",
+    "metadata": {
+      "preview": "        'Kognitiva störningar (hjärndimma)',\n        'Ortostatisk intolerans ELLER autonom dysfunktion'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Kriterier (WHO/NASEM 2024)',\n      description: 'Post-akuta följder av SARS-CoV-2-infektion med persistenta multisystemsymptom',\n      criteria: [\n        'Bekräftad eller sannolik SARS-CoV-2-infektion',\n        'Symptom kvarstår ≥3 månader från akut sjukdom',"
+    },
+    "title": "lib/translations/sv.ts",
+    "time": {
+      "start": 1758133501079,
+      "end": 1758133501084
+    }
+  }
+}

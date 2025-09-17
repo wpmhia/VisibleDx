@@ -1,0 +1,25 @@
+{
+  "id": "prt_958edcda700154h2We5LWBAelf",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01CwCULBgEnvRhS7TJxsTpUM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 80,
+      "limit": 30
+    },
+    "output": "<file>\n00081|       condition: t.conditions.mecfs.fullName,\n00082|       met: mecfsMet,\n00083|       criteria: mecfsChecked,\n00084|       icdCode: t.conditions.mecfs.icdCode,\n00085|       confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n00086|     })\n00087| \n00088|     // Long COVID Diagnosis\n00089|     const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3\n00090|     diagnoses.push({\n00091|       id: 'longcovid',\n00092|       condition: t.conditions.longCovid.fullName,\n00093|       met: longCovidMet,\n00094|       criteria: longCovidChecked,\n00095|       icdCode: t.conditions.longCovid.icdCode,\n00096|       confidence: longCovidMet ? 'high' : 'low'\n00097|     })\n00098| \n00099|     // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n00100|     const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length\n00101|     const potsMet = potsEssential >= 4\n00102|     \n00103|     diagnoses.push({\n00104|       id: 'pots',\n00105|       condition: t.conditions.pots.fullName,\n00106|       met: potsMet,\n00107|       criteria: potsChecked,\n00108|       icdCode: t.conditions.pots.icdCode,\n00109|       confidence: potsMet ? 'high' : 'low'\n00110|     })\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "      condition: t.conditions.mecfs.fullName,\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })\n\n    // Long COVID Diagnosis\n    const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3\n    diagnoses.push({\n      id: 'longcovid',\n      condition: t.conditions.longCovid.fullName,\n      met: longCovidMet,\n      criteria: longCovidChecked,\n      icdCode: t.conditions.longCovid.icdCode,\n      confidence: longCovidMet ? 'high' : 'low'\n    })\n\n    // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n    const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758133604373,
+      "end": 1758133604375
+    }
+  }
+}

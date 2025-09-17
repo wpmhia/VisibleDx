@@ -1,0 +1,11 @@
+{
+  "id": "prt_958ede455001E1RwWBf35g4G54",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! The code is using `t.criteria.mecfs.criteria`, `t.criteria.longCovid.criteria`, and `t.criteria.pots.criteria` which should pull from the translation files. Let me now verify the Dutch translations are actually complete. Looking back at the Dutch file, I realized there might be a different issue. Let me check the exact content:",
+  "time": {
+    "start": 1758133611469,
+    "end": 1758133611469
+  }
+}

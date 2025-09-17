@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec12ab001Tn3o5jcHovQU0P",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011XdgNZWuw8GHR2a7xeCNcD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 440,
+      "limit": 35
+    },
+    "output": "<file>\n00441|   // Continue with abbreviated versions of remaining sections...\n00442|   criteria: {\n00443|     title: 'Kriterier Motor',\n00444|     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n00445|     mecfs: {\n00446|       title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n00447|       description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n00448|       criteria: [\n00449|         'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n00450|         'Post-exertionel utilpashed (PEM) til stede',\n00451|         'Ikke-forfriskende søvn',\n00452|         'Kognitiv svækkelse (hjernetåge)',\n00453|         'Ortostatisk intolerance ELLER autonom dysfunktion'\n00454|       ]\n00455|     },\n00456|     longCovid: {\n00457|       title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n00458|       description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n00459|       criteria: [\n00460|         'Bekræftet eller sandsynlig SARS-CoV-2 infektion',\n00461|         'Symptomer fortsætter ≥3 måneder fra akut sygdom',\n00462|         'Multi-system symptomer, der påvirker daglig funktionsevne',\n00463|         'Symptomer ikke forklaret af alternativ diagnose'\n00464|       ],\n00465|       timing: {\n00466|         confirmed: 'Bekræftet ved test',\n00467|         probable: 'Sandsynlig baseret på symptomer/eksponering',\n00468|         suspected: 'Mistænkt baseret på timing'\n00469|       }\n00470|     },\n00471|     pots: {\n00472|       title: 'POTS Kriterier (ESC 2018/AAS-EFAS 2021)',\n00473|       description: 'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå, med symptomer men uden ortostatisk hypotension',\n00474|       criteria: [\n00475|         'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå',\n\n(File has more lines. Use 'offset' parameter to read beyond line 475)\n</file>",
+    "metadata": {
+      "preview": "  // Continue with abbreviated versions of remaining sections...\n  criteria: {\n    title: 'Kriterier Motor',\n    description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n    mecfs: {\n      title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n      criteria: [\n        'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n        'Post-exertionel utilpashed (PEM) til stede',\n        'Ikke-forfriskende søvn',\n        'Kognitiv svækkelse (hjernetåge)',\n        'Ortostatisk intolerance ELLER autonom dysfunktion'\n      ]\n    },\n    longCovid: {\n      title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n      description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n      criteria: [\n        'Bekræftet eller sandsynlig SARS-CoV-2 infektion',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758133491421,
+      "end": 1758133491430
+    }
+  }
+}

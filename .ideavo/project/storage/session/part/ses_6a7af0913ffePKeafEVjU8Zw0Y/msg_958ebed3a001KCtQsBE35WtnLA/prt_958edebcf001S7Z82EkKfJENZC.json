@@ -1,0 +1,25 @@
+{
+  "id": "prt_958edebcf001S7Z82EkKfJENZC",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Q5qP5PAhNqYV5J8eXa8ecj",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 434,
+      "limit": 45
+    },
+    "output": "<file>\n00435|     title: 'Criteria Engine',\n00436|     description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n00437|     mecfs: {\n00438|       title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n00439|       description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n00440|       criteria: [\n00441|         'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n00442|         'Post-exertionele malaise (PEM) aanwezig',\n00443|         'Niet-verkwikkende slaap',\n00444|         'Cognitieve stoornissen (brain fog)',\n00445|         'Orthostatische intolerantie OF autonome disfunctie'\n00446|       ]\n00447|     },\n00448|     longCovid: {\n00449|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00450|       description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n00451|       criteria: [\n00452|         'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n00453|         'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n00454|         'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n00455|         'Symptomen niet verklaard door alternatieve diagnose'\n00456|       ],\n00457|       timing: {\n00458|         confirmed: 'Bevestigd door test',\n00459|         probable: 'Waarschijnlijk gebaseerd op symptomen/blootstelling',\n00460|         suspected: 'Vermoed gebaseerd op timing'\n00461|       }\n00462|     },\n00463|     pots: {\n00464|       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n00465|       description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',\n00466|       criteria: [\n00467|         'Hartslagtoename ≥30 spm binnen 10 minuten van staan',\n00468|         'Aanhoudende hartslag ≥120 spm tijdens staan',\n00469|         'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',\n00470|         'Symptomen aanwezig voor ≥3 maanden',\n00471|         'Afwezigheid van orthostatische hypotensie'\n00472|       ]\n00473|     },\n00474|     results: {\n00475|       complete: 'Diagnostische Criteria Beoordeling Voltooid',\n00476|       description: 'Gebaseerd op CDC, NASEM, ESC, WHO richtlijnen',\n00477|       diagnosesMet: 'Diagnoses Die Voldoen aan Criteria',\n00478|       criteriaMet: 'CRITERIA VOLDAAN',\n00479|       clinicalRecommendations: 'Klinische Aanbevelingen',\n\n(File has more lines. Use 'offset' parameter to read beyond line 479)\n</file>",
+    "metadata": {
+      "preview": "    title: 'Criteria Engine',\n    description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n    mecfs: {\n      title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n      description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n      criteria: [\n        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n        'Post-exertionele malaise (PEM) aanwezig',\n        'Niet-verkwikkende slaap',\n        'Cognitieve stoornissen (brain fog)',\n        'Orthostatische intolerantie OF autonome disfunctie'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n      criteria: [\n        'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n        'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n        'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758133612045,
+      "end": 1758133612047
+    }
+  }
+}

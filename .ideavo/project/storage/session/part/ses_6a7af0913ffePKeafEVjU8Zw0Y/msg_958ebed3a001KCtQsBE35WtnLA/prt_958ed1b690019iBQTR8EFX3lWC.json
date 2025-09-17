@@ -1,0 +1,21 @@
+{
+  "id": "prt_958ed1b690019iBQTR8EFX3lWC",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01S8vHe28xPGKne7yJzPv9e8",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      title: 'Long COVID Criteria (WHO/NASEM 2024)',",
+      "newString": "      title: 'Long COVID Criteria (WHO/NASEM 2024)',"
+    },
+    "error": "Error: oldString and newString must be different",
+    "time": {
+      "start": 1758133559005,
+      "end": 1758133559006
+    }
+  }
+}

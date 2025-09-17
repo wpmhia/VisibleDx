@@ -1,0 +1,25 @@
+{
+  "id": "prt_958edd8c4001ZtAayzMSvAU9Ig",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TuFisufJ4gGEQ3yy1ZLkxD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 25,
+      "limit": 30
+    },
+    "output": "<file>\n00026| export default function CriteriaEngine() {\n00027|   const { t } = useTranslation()\n00028|   \n00029|   const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n00030|     id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n00031|     description: desc,\n00032|     met: false\n00033|   }))\n00034|   \n00035|   const getLongCovidCriteria = () => t.criteria.longCovid.criteria.map((desc, index) => ({\n00036|     id: ['covid_history', 'duration', 'multisystem', 'unexplained'][index],\n00037|     description: desc,\n00038|     met: false\n00039|   }))\n00040|   \n00041|   const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({\n00042|     id: ['hr_increase', 'sustained', 'symptoms', 'duration_pots', 'no_oh'][index],\n00043|     description: desc,\n00044|     met: false\n00045|   }))\n00046| \n00047|   const [mecfsChecked, setMecfsChecked] = useState(() => getMECFSCriteria())\n00048|   const [longCovidChecked, setLongCovidChecked] = useState(() => getLongCovidCriteria())\n00049|   const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())\n00050|   const [covidTiming, setCovidTiming] = useState<string>('')\n00051|   const [isComplete, setIsComplete] = useState(false)\n00052| \n00053|   const handleMECFSChange = (id: string, checked: boolean) => {\n00054|     setMecfsChecked(prev => prev.map(item => \n00055|       item.id === id ? { ...item, met: checked } : item\n\n(File has more lines. Use 'offset' parameter to read beyond line 55)\n</file>",
+    "metadata": {
+      "preview": "export default function CriteriaEngine() {\n  const { t } = useTranslation()\n  \n  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n    description: desc,\n    met: false\n  }))\n  \n  const getLongCovidCriteria = () => t.criteria.longCovid.criteria.map((desc, index) => ({\n    id: ['covid_history', 'duration', 'multisystem', 'unexplained'][index],\n    description: desc,\n    met: false\n  }))\n  \n  const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({\n    id: ['hr_increase', 'sustained', 'symptoms', 'duration_pots', 'no_oh'][index],\n    description: desc,\n    met: false\n  }))"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758133607171,
+      "end": 1758133607173
+    }
+  }
+}

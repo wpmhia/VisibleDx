@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec368d001g1lnw3MxSdLJAu",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017hLgBJVHwToKiM4cTSXNuf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 475,
+      "limit": 10
+    },
+    "output": "<file>\n00476|         'Abwesenheit von orthostatischer Hypotonie'\n00477|       ]\n00478|     },\n00479|     results: {\n00480|       complete: 'Diagnostische Kriterien Bewertung Abgeschlossen',\n00481|       description: 'Basierend auf CDC, NASEM, ESC, WHO-Leitlinien',\n00482|       diagnosesMet: 'Diagnosen, die Kriterien Erfüllen',\n00483|       criteriaMet: 'KRITERIEN ERFÜLLT',\n00484|       clinicalRecommendations: 'Klinische Empfehlungen',\n00485|       mecfsManagement: [\n\n(File has more lines. Use 'offset' parameter to read beyond line 485)\n</file>",
+    "metadata": {
+      "preview": "        'Abwesenheit von orthostatischer Hypotonie'\n      ]\n    },\n    results: {\n      complete: 'Diagnostische Kriterien Bewertung Abgeschlossen',\n      description: 'Basierend auf CDC, NASEM, ESC, WHO-Leitlinien',\n      diagnosesMet: 'Diagnosen, die Kriterien Erfüllen',\n      criteriaMet: 'KRITERIEN ERFÜLLT',\n      clinicalRecommendations: 'Klinische Empfehlungen',\n      mecfsManagement: ["
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758133500306,
+      "end": 1758133500312
+    }
+  }
+}

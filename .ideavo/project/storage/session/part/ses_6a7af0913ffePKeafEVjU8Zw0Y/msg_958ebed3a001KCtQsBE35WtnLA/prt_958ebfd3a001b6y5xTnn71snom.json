@@ -1,0 +1,61 @@
+{
+  "id": "prt_958ebfd3a001b6y5xTnn71snom",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Nm5XGbF41S7NFd1jUjrfJu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Complete Dutch medical criteria translations in nl.ts",
+          "status": "pending",
+          "priority": "high",
+          "id": "complete-nl-translations"
+        },
+        {
+          "content": "Check and complete medical criteria in da.ts, de.ts, sv.ts, no.ts, fr.ts",
+          "status": "pending",
+          "priority": "high",
+          "id": "check-other-languages"
+        },
+        {
+          "content": "Test language switching in Criteria Engine to verify all translations work",
+          "status": "pending",
+          "priority": "medium",
+          "id": "verify-translations"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Complete Dutch medical criteria translations in nl.ts\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"complete-nl-translations\"\n  },\n  {\n    \"content\": \"Check and complete medical criteria in da.ts, de.ts, sv.ts, no.ts, fr.ts\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"check-other-languages\"\n  },\n  {\n    \"content\": \"Test language switching in Criteria Engine to verify all translations work\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"verify-translations\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Complete Dutch medical criteria translations in nl.ts",
+          "status": "pending",
+          "priority": "high",
+          "id": "complete-nl-translations"
+        },
+        {
+          "content": "Check and complete medical criteria in da.ts, de.ts, sv.ts, no.ts, fr.ts",
+          "status": "pending",
+          "priority": "high",
+          "id": "check-other-languages"
+        },
+        {
+          "content": "Test language switching in Criteria Engine to verify all translations work",
+          "status": "pending",
+          "priority": "medium",
+          "id": "verify-translations"
+        }
+      ]
+    },
+    "title": "3 todos",
+    "time": {
+      "start": 1758133487669,
+      "end": 1758133487688
+    }
+  }
+}

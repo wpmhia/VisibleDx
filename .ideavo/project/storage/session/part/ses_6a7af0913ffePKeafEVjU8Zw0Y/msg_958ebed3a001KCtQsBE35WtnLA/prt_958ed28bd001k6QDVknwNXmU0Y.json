@@ -1,0 +1,11 @@
+{
+  "id": "prt_958ed28bd001k6QDVknwNXmU0Y",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Ah I see the issue - \"Criteria\" is the same in Dutch and English! Let me check if there are any other untranslated parts by testing the application:",
+  "time": {
+    "start": 1758133562509,
+    "end": 1758133562509
+  }
+}

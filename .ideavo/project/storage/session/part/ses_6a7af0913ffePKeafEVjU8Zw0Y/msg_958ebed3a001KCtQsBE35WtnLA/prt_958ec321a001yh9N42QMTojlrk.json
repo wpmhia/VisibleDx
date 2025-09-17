@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec321a001yh9N42QMTojlrk",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011qTvMzp4tu33GkZLQDqgUo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 475,
+      "limit": 10
+    },
+    "output": "<file>\n00476|         'Vedvarende hjertefrekvens ≥120 slag/min mens stående',\n00477|         'Ortostatiske symptomer (svimmelhed, hjertebanken, træthed)',\n00478|         'Symptomer til stede i ≥3 måneder',\n00479|         'Fravær af ortostatisk hypotension'\n00480|       ]\n00481|     },\n00482|     results: {\n00483|       complete: 'Diagnostiske Kriterier Vurdering Afsluttet',\n00484|       description: 'Baseret på CDC, NASEM, ESC, WHO retningslinjer',\n00485|       diagnosesMet: 'Diagnoser Der Opfylder Kriterier',\n\n(File has more lines. Use 'offset' parameter to read beyond line 485)\n</file>",
+    "metadata": {
+      "preview": "        'Vedvarende hjertefrekvens ≥120 slag/min mens stående',\n        'Ortostatiske symptomer (svimmelhed, hjertebanken, træthed)',\n        'Symptomer til stede i ≥3 måneder',\n        'Fravær af ortostatisk hypotension'\n      ]\n    },\n    results: {\n      complete: 'Diagnostiske Kriterier Vurdering Afsluttet',\n      description: 'Baseret på CDC, NASEM, ESC, WHO retningslinjer',\n      diagnosesMet: 'Diagnoser Der Opfylder Kriterier',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758133499526,
+      "end": 1758133499535
+    }
+  }
+}

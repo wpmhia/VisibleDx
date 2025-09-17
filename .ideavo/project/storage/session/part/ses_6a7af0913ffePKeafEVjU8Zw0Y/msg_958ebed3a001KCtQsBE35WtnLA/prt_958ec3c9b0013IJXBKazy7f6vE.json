@@ -1,0 +1,25 @@
+{
+  "id": "prt_958ec3c9b0013IJXBKazy7f6vE",
+  "messageID": "msg_958ebed3a001KCtQsBE35WtnLA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Sy9dTzFcQAF9eXRu3GCw6F",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 475,
+      "limit": 10
+    },
+    "output": "<file>\n00476|         'Kognitive forstyrrelser (hjårnetåke)',\n00477|         'Ortostatisk intoleranse ELLER autonom dysfunksjon'\n00478|       ]\n00479|     },\n00480|     longCovid: {\n00481|       title: 'Long COVID Kriterier (WHO/NASEM 2024)',\n00482|       description: 'Post-akutte følger av SARS-CoV-2-infeksjon med vedvarende multisystemsymptomer',\n00483|       criteria: [\n00484|         'Bekreftet eller sannsynlig SARS-CoV-2-infeksjon',\n00485|         'Symptomer vedvarer ≥3 måneder fra akutt sykdom',\n\n(File has more lines. Use 'offset' parameter to read beyond line 485)\n</file>",
+    "metadata": {
+      "preview": "        'Kognitive forstyrrelser (hjårnetåke)',\n        'Ortostatisk intoleranse ELLER autonom dysfunksjon'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Kriterier (WHO/NASEM 2024)',\n      description: 'Post-akutte følger av SARS-CoV-2-infeksjon med vedvarende multisystemsymptomer',\n      criteria: [\n        'Bekreftet eller sannsynlig SARS-CoV-2-infeksjon',\n        'Symptomer vedvarer ≥3 måneder fra akutt sykdom',"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758133501842,
+      "end": 1758133501844
+    }
+  }
+}
