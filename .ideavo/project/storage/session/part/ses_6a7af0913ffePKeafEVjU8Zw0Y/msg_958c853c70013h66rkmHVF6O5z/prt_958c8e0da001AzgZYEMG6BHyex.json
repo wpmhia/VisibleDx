@@ -1,0 +1,26 @@
+{
+  "id": "prt_958c8e0da001AzgZYEMG6BHyex",
+  "messageID": "msg_958c853c70013h66rkmHVF6O5z",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01NSMY28WWHvzXnEUZ6agXsp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "ps aux | grep -E \"(next|node|npm|bun)\" | grep -v grep",
+      "description": "Check for running development servers"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 1,
+      "description": "Check for running development servers"
+    },
+    "title": "ps aux | grep -E \"(next|node|npm|bun)\" | grep -v grep",
+    "time": {
+      "start": 1758131184657,
+      "end": 1758131184750
+    }
+  }
+}
