@@ -1,0 +1,25 @@
+{
+  "id": "prt_958dfc5160011uJhI9GmKvp22j",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JF6vzTivTbejNvEK32KuD3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 79,
+      "limit": 10
+    },
+    "output": "<file>\n00080|       id: 'mecfs',\n00081|       condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',\n00082|       met: mecfsMet,\n00083|       criteria: mecfsChecked,\n00084|       icdCode: 'G93.32',\n00085|       confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n00086|     })\n00087| \n00088|     // Long COVID Diagnosis\n00089|     const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3\n\n(File has more lines. Use 'offset' parameter to read beyond line 89)\n</file>",
+    "metadata": {
+      "preview": "      id: 'mecfs',\n      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: 'G93.32',\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })\n\n    // Long COVID Diagnosis\n    const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132684725,
+      "end": 1758132684730
+    }
+  }
+}

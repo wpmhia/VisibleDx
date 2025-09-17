@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e3884f001s6NIliT8Wd5qGY",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01M9s7brsbC1aZogN3qm7g3g",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "npm run build",
+      "description": "Final build test after all fixes"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/12) ...\n   Generating static pages (3/12) \r\n   Generating static pages (6/12) \r\n   Generating static pages (9/12) \r\n ✓ Generating static pages (12/12)\n   Finalizing page optimization ...\n   Collecting build traces ...\nError: ENOENT: no such file or directory, open '/home/user/project/.next/server/app/_not-found/page.js.nft.json'\n    at async open (node:internal/fs/promises:639:25)\n    at async Object.readFile (node:internal/fs/promises:1246:14)\n    at async /home/user/project/node_modules/next/dist/build/collect-build-traces.js:429:50\n    at async Promise.all (index 0)\n    at async /home/user/project/node_modules/next/dist/build/collect-build-traces.js:410:13\n    at async Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:20)\n    at async collectBuildTraces (/home/user/project/node_modules/next/dist/build/collect-build-traces.js:164:5)\n    at async /home/user/project/node_modules/next/dist/build/index.js:2134:13\n    at async Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:20)\n    at async build (/home/user/project/node_modules/next/dist/build/index.js:368:9) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/home/user/project/.next/server/app/_not-found/page.js.nft.json'\n}\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/12) ...\n   Generating static pages (3/12) \r\n   Generating static pages (6/12) \r\n   Generating static pages (9/12) \r\n ✓ Generating static pages (12/12)\n   Finalizing page optimization ...\n   Collecting build traces ...\nError: ENOENT: no such file or directory, open '/home/user/project/.next/server/app/_not-found/page.js.nft.json'\n    at async open (node:internal/fs/promises:639:25)\n    at async Object.readFile (node:internal/fs/promises:1246:14)\n    at async /home/user/project/node_modules/next/dist/build/collect-build-traces.js:429:50\n    at async Promise.all (index 0)\n    at async /home/user/project/node_modules/next/dist/build/collect-build-traces.js:410:13\n    at async Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:20)\n    at async collectBuildTraces (/home/user/project/node_modules/next/dist/build/collect-build-traces.js:164:5)\n    at async /home/user/project/node_modules/next/dist/build/index.js:2134:13\n    at async Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:20)\n    at async build (/home/user/project/node_modules/next/dist/build/index.js:368:9) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: '/home/user/project/.next/server/app/_not-found/page.js.nft.json'\n}\n",
+      "exit": 1,
+      "description": "Final build test after all fixes"
+    },
+    "title": "npm run build",
+    "time": {
+      "start": 1758132931176,
+      "end": 1758132971783
+    }
+  }
+}

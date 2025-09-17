@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e1294100197O24cgzaOYirz",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DR1w4xRGPFt3aJdpDs9gwW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 430,
+      "limit": 20
+    },
+    "output": "<file>\n00431|           'PEM ikke betydeligt til stede',\n00432|           'Overvej andre diagnoser',\n00433|           'Standard aktivitet som tolereret'\n00434|         ]\n00435|       },\n00436|       important: 'Vigtigt: PEM er det karakteristiske symptom på ME/CFS. Hvis til stede, undgå aktiviteter, der konsekvent udløser symptomforværring. Energistyring og pacing er vigtige behandlingsstrategier.',\n00437|       retake: 'Gentag Vurdering'\n00438|     }\n00439|   },\n00440| \n00441|   // Continue with abbreviated versions of remaining sections...\n00442|   criteria: {\n00443|     title: 'Kriterier Motor',\n00444|     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n00445|     mecfs: {\n00446|       title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n00447|       description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n00448|       criteria: [\n00449|         'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n00450|         'Post-exertionel utilpashed (PEM) til stede',\n\n(File has more lines. Use 'offset' parameter to read beyond line 450)\n</file>",
+    "metadata": {
+      "preview": "          'PEM ikke betydeligt til stede',\n          'Overvej andre diagnoser',\n          'Standard aktivitet som tolereret'\n        ]\n      },\n      important: 'Vigtigt: PEM er det karakteristiske symptom på ME/CFS. Hvis til stede, undgå aktiviteter, der konsekvent udløser symptomforværring. Energistyring og pacing er vigtige behandlingsstrategier.',\n      retake: 'Gentag Vurdering'\n    }\n  },\n\n  // Continue with abbreviated versions of remaining sections...\n  criteria: {\n    title: 'Kriterier Motor',\n    description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n    mecfs: {\n      title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n      criteria: [\n        'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n        'Post-exertionel utilpashed (PEM) til stede',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758132775936,
+      "end": 1758132775938
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e0c92f0015jsHivb28eAMOM",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MpDRFNpEhkZzxyYkcMAfXA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "              Generate Diagnostic Report",
+      "newString": "              {t.criteria.results.downloadReport}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -419,9 +419,9 @@\n \n     <div className=\"flex justify-center\">\n       <Button onClick={() => setIsComplete(true)} size=\"lg\" className=\"px-8\">\n         <FileText className=\"h-4 w-4 mr-2\" />\n-        Generate Diagnostic Report\n+        {t.criteria.results.downloadReport}\n       </Button>\n     </div>\n   </div>\n </div>\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132751354,
+      "end": 1758132751361
+    }
+  }
+}

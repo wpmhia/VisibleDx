@@ -1,0 +1,11 @@
+{
+  "id": "prt_958dfa21b001yPkGYEyXpB1IX2",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see the issue. The Criteria Engine page has hardcoded English text instead of using translation keys. Let me fix the criteria engine to properly use translations and ensure all other language files have the complete translations.",
+  "time": {
+    "start": 1758132676907,
+    "end": 1758132676907
+  }
+}

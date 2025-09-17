@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
-import { ArrowLeft, BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'
+import { BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
@@ -78,10 +78,10 @@ export default function CriteriaEngine() {
     
     diagnoses.push({
       id: 'mecfs',
-      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',
+      condition: t.conditions.mecfs.fullName,
       met: mecfsMet,
       criteria: mecfsChecked,
-      icdCode: 'G93.32',
+      icdCode: t.conditions.mecfs.icdCode,
       confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'
     })
 
@@ -89,10 +89,10 @@ export default function CriteriaEngine() {
     const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3
     diagnoses.push({
       id: 'longcovid',
-      condition: 'Long COVID (Post-acute sequelae of SARS-CoV-2)',
+      condition: t.conditions.longCovid.fullName,
       met: longCovidMet,
       criteria: longCovidChecked,
-      icdCode: 'U09.9',
+      icdCode: t.conditions.longCovid.icdCode,
       confidence: longCovidMet ? 'high' : 'low'
     })
 
@@ -102,10 +102,10 @@ export default function CriteriaEngine() {
     
     diagnoses.push({
       id: 'pots',
-      condition: 'Postural Orthostatic Tachycardia Syndrome (POTS)',
+      condition: t.conditions.pots.fullName,
       met: potsMet,
       criteria: potsChecked,
-      icdCode: 'I47.1',
+      icdCode: t.conditions.pots.icdCode,
       confidence: potsMet ? 'high' : 'low'
     })
 
@@ -189,9 +189,7 @@ export default function CriteriaEngine() {
                 <Alert>
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>No Diagnostic Criteria Met</strong><br />
-                    Consider alternative diagnoses or reassess if symptoms progress. 
-                    Some patients may have subclinical presentations requiring ongoing monitoring.
+                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}</strong>
                   </AlertDescription>
                 </Alert>
               )}
@@ -210,7 +208,7 @@ export default function CriteriaEngine() {
                           {diagnosis.icdCode}
                         </Badge>
                         <Badge variant={diagnosis.met ? 'default' : 'outline'} className="text-xs">
-                          {diagnosis.met ? 'Met' : 'Not Met'}
+                          {diagnosis.met ? t.common.met : t.common.notMet}
                         </Badge>
                       </div>
                     </CardHeader>
@@ -309,11 +307,6 @@ export default function CriteriaEngine() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
-            <ArrowLeft className="h-4 w-4" />
-            {t.app.backToDashboard}
-          </Link>
-          
           <div className="flex items-center gap-4 mb-4">
             <BarChart3 className="h-5 w-5 text-blue-600" />
             <div>
@@ -422,7 +415,7 @@ export default function CriteriaEngine() {
           <div className="flex justify-center">
             <Button onClick={() => setIsComplete(true)} size="lg" className="px-8">
               <FileText className="h-4 w-4 mr-2" />
-              Generate Diagnostic Report
+              {t.criteria.results.downloadReport}
             </Button>
           </div>
         </div>

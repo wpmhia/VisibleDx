@@ -1,0 +1,27 @@
+{
+  "id": "prt_958e55e13001KBq9BH3JCiBJ5I",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01XjNFVFkKfrqPgd3hSoL5tc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "PORT=3000 npm run dev",
+      "timeout": 8000,
+      "description": "Start development server on port 3000"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 2.5s\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 2.5s\n",
+      "exit": null,
+      "description": "Start development server on port 3000"
+    },
+    "title": "PORT=3000 npm run dev",
+    "time": {
+      "start": 1758133051473,
+      "end": 1758133059479
+    }
+  }
+}

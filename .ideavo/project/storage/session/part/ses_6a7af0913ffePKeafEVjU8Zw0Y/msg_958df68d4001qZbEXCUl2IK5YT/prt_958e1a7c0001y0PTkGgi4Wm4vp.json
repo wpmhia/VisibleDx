@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e1a7c0001y0PTkGgi4Wm4vp",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01P6JVXVG5YFoNNxpbu8Q4HW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 740,
+      "limit": 26
+    },
+    "output": "<file>\n00741|       ]\n00742|     },\n00743|     pots: {\n00744|       name: 'POTS',\n00745|       fullName: 'Posturales Orthostatisches Tachykardie-Syndrom',\n00746|       icdCode: 'I47.1',\n00747|       criteria: [\n00748|         'HR-Anstieg ≥30 Schläge/Min beim Stehen',\n00749|         'Orthostatische Symptome',\n00750|         'Chronische Dauer ≥3 Monate',\n00751|         'Keine orthostatische Hypotonie'\n00752|       ]\n00753|     }\n00754|   },\n00755| \n00756|   languages: {\n00757|     en: 'English',\n00758|     nl: 'Nederlands',\n00759|     da: 'Dansk',\n00760|     de: 'Deutsch',\n00761|     sv: 'Svenska',\n00762|     no: 'Norsk',\n00763|     fr: 'Français'\n00764|   },\n00765| \n00766|   disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'\n\n(File has more lines. Use 'offset' parameter to read beyond line 766)\n</file>",
+    "metadata": {
+      "preview": "      ]\n    },\n    pots: {\n      name: 'POTS',\n      fullName: 'Posturales Orthostatisches Tachykardie-Syndrom',\n      icdCode: 'I47.1',\n      criteria: [\n        'HR-Anstieg ≥30 Schläge/Min beim Stehen',\n        'Orthostatische Symptome',\n        'Chronische Dauer ≥3 Monate',\n        'Keine orthostatische Hypotonie'\n      ]\n    }\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758132808232,
+      "end": 1758132808234
+    }
+  }
+}

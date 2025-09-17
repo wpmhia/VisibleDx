@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e02d490013D850fw4SAs6hh",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MvEcRfWVHhpRVR3DEQAMes",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: 'G93.32',\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })",
+      "newString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName,\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132713880,
+      "end": 1758132713892
+    }
+  }
+}

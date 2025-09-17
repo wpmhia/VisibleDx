@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e18b27001MObcxEHZ4iBk1z",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01EpnrkuR6j2Ece8tcDW7wHU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "conditions:",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/fr.ts:\n  Line 746:   conditions: {\n\n/home/user/project/lib/translations/no.ts:\n  Line 746:   conditions: {\n\n/home/user/project/lib/translations/sv.ts:\n  Line 746:   conditions: {\n\n/home/user/project/lib/translations/de.ts:\n  Line 720:   conditions: {\n\n/home/user/project/lib/translations/da.ts:\n  Line 723:   conditions: {\n\n/home/user/project/lib/translations/nl.ts:\n  Line 714:   conditions: {\n\n/home/user/project/lib/translations/en.ts:\n  Line 714:   conditions: {\n\n/home/user/project/lib/translations/types.ts:\n  Line 520:   conditions: {",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "conditions:",
+    "time": {
+      "start": 1758132800790,
+      "end": 1758132800803
+    }
+  }
+}

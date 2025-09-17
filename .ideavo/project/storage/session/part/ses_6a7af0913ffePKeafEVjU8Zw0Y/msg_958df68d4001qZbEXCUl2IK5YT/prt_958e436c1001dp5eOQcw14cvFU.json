@@ -1,0 +1,11 @@
+{
+  "id": "prt_958e436c1001dp5eOQcw14cvFU",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "There's a Next.js build issue with the not-found page, but it compiled successfully. Let me try a clean build:",
+  "time": {
+    "start": 1758132976201,
+    "end": 1758132976201
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "prt_958dfd33c0017OZIBqYhCpRQXr",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_011HPTfWqo93gwYLh8EJMPCU",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: 'G93.32',\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })",
+          "newString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName,\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "    diagnoses.push({\n      id: 'longcovid',\n      condition: 'Long COVID (Post-acute sequelae of SARS-CoV-2)',\n      met: longCovidMet,\n      criteria: longCovidChecked,\n      icdCode: 'U09.9',\n      confidence: longCovidMet ? 'high' : 'low'\n    })",
+          "newString": "    diagnoses.push({\n      id: 'longcovid',\n      condition: t.conditions.longCovid.fullName,\n      met: longCovidMet,\n      criteria: longCovidChecked,\n      icdCode: t.conditions.longCovid.icdCode,\n      confidence: longCovidMet ? 'high' : 'low'\n    })"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "    diagnoses.push({\n      id: 'pots',\n      condition: 'Postural Orthostatic Tachycardia Syndrome (POTS)',\n      met: potsMet,\n      criteria: potsChecked,\n      icdCode: 'I47.1',\n      confidence: potsMet ? 'high' : 'low'\n    })",
+          "newString": "    diagnoses.push({\n      id: 'pots',\n      condition: t.conditions.pots.fullName,\n      met: potsMet,\n      criteria: potsChecked,\n      icdCode: t.conditions.pots.icdCode,\n      confidence: potsMet ? 'high' : 'low'\n    })"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                    <strong>No Diagnostic Criteria Met</strong><br />\n                    Consider alternative diagnoses or reassess if symptoms progress. \n                    Some patients may have subclinical presentations requiring ongoing monitoring.",
+          "newString": "                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}</strong>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                        <Badge variant={diagnosis.met ? 'default' : 'outline'} className=\"text-xs\">\n                          {diagnosis.met ? 'Met' : 'Not Met'}\n                        </Badge>",
+          "newString": "                        <Badge variant={diagnosis.met ? 'default' : 'outline'} className=\"text-xs\">\n                          {diagnosis.met ? t.common.met : t.common.notMet}\n                        </Badge>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                <Button onClick={() => {\n                  const report = generateReport()\n                  const blob = new Blob([report], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = 'autodx-diagnostic-report.txt'\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  {t.criteria.results.downloadReport}\n                </Button>",
+          "newString": "                <Button onClick={() => {\n                  const report = generateReport()\n                  const blob = new Blob([report], { type: 'text/plain' })\n                  const url = URL.createObjectURL(blob)\n                  const a = document.createElement('a')\n                  a.href = url\n                  a.download = 'autodx-diagnostic-report.txt'\n                  a.click()\n                  URL.revokeObjectURL(url)\n                }} className=\"flex items-center gap-2\">\n                  <Download className=\"h-4 w-4\" />\n                  {t.criteria.results.downloadReport}\n                </Button>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "            <Button onClick={() => setIsComplete(true)} size=\"lg\" className=\"px-8\">\n              <FileText className=\"h-4 w-4 mr-2\" />\n              Generate Diagnostic Report\n            </Button>",
+          "newString": "            <Button onClick={() => setIsComplete(true)} size=\"lg\" className=\"px-8\">\n              <FileText className=\"h-4 w-4 mr-2\" />\n              {t.criteria.results.downloadReport}\n            </Button>"
+        }
+      ]
+    },
+    "error": "Error: oldString and newString must be different",
+    "time": {
+      "start": 1758132703632,
+      "end": 1758132703672
+    }
+  }
+}

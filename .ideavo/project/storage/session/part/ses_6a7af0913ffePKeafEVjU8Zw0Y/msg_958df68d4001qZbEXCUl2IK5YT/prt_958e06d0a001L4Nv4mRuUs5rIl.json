@@ -1,0 +1,21 @@
+{
+  "id": "prt_958e06d0a001L4Nv4mRuUs5rIl",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0136m94swemZRRzjLrVtX1dX",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "                    <strong>No Diagnostic Criteria Met</strong><br />\n                    Consider alternative diagnoses or reassess if symptoms progress. \n                    Some patients may have subclinical presentations requiring ongoing monitoring.",
+      "newString": "                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}</strong>"
+    },
+    "error": "Error: oldString not found in content or was found multiple times",
+    "time": {
+      "start": 1758132729475,
+      "end": 1758132729484
+    }
+  }
+}

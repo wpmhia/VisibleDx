@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e1bb01001Z6mj1VMbWobnyg",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_013UQrB38ifAhDeTs6S7kiir",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "npm run build",
+      "description": "Test build after fixing translation issues"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/quick-screen/page.tsx:213:20\nType error: Cannot find name 'ArrowLeft'.\n\n\u001b[0m \u001b[90m 211 |\u001b[39m                   className\u001b[33m=\u001b[39m\u001b[32m\"flex items-center gap-2\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 212 |\u001b[39m                 \u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 213 |\u001b[39m                   \u001b[33m<\u001b[39m\u001b[33mArrowLeft\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"h-4 w-4\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 214 |\u001b[39m                   {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39mprevious}\u001b[0m\n\u001b[0m \u001b[90m 215 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mButton\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 216 |\u001b[39m                 \u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/quick-screen/page.tsx:213:20\nType error: Cannot find name 'ArrowLeft'.\n\n\u001b[0m \u001b[90m 211 |\u001b[39m                   className\u001b[33m=\u001b[39m\u001b[32m\"flex items-center gap-2\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 212 |\u001b[39m                 \u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 213 |\u001b[39m                   \u001b[33m<\u001b[39m\u001b[33mArrowLeft\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"h-4 w-4\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 214 |\u001b[39m                   {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39mprevious}\u001b[0m\n\u001b[0m \u001b[90m 215 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mButton\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 216 |\u001b[39m                 \u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Test build after fixing translation issues"
+    },
+    "title": "npm run build",
+    "time": {
+      "start": 1758132813178,
+      "end": 1758132839336
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e05843001eTCQqe9x3ITwKm",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Ev3TV3HiDpCQScpMhwqK73",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "    diagnoses.push({\n      id: 'pots',\n      condition: 'Postural Orthostatic Tachycardia Syndrome (POTS)',\n      met: potsMet,\n      criteria: potsChecked,\n      icdCode: 'I47.1',\n      confidence: potsMet ? 'high' : 'low'\n    })",
+      "newString": "    diagnoses.push({\n      id: 'pots',\n      condition: t.conditions.pots.fullName,\n      met: potsMet,\n      criteria: potsChecked,\n      icdCode: t.conditions.pots.icdCode,\n      confidence: potsMet ? 'high' : 'low'\n    })"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132724008,
+      "end": 1758132724018
+    }
+  }
+}

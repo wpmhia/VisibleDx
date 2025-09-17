@@ -1,0 +1,11 @@
+{
+  "id": "prt_958e30b3a001JOvi8OUJjx2Kr6",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "These pages use ArrowLeft for internal navigation (previous/next buttons), not for back-to-home buttons, so they should keep the ArrowLeft import. Let me verify one to make sure:",
+  "time": {
+    "start": 1758132899872,
+    "end": 1758132899872
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e198e3001TtJ43dsVOV71zI",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UyGrom4VqMsaFFmAdizvJL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 720,
+      "limit": 20
+    },
+    "output": "<file>\n00721|     mecfs: {\n00722|       name: 'ME/CFS',\n00723|       fullName: 'Myalgische Enzephalomyelitis/Chronisches Müdigkeitssyndrom',\n00724|       icdCode: 'G93.32',\n00725|       criteria: [\n00726|         'Erhebliche Müdigkeit nicht durch Ruhe gelindert',\n00727|         'Post-exertionale Malaise',\n00728|         'Nicht erholsamer Schlaf',\n00729|         'Kognitive Beeinträchtigung oder orthostatische Intoleranz'\n00730|       ]\n00731|     },\n00732|     longCovid: {\n00733|       name: 'Long COVID',\n00734|       fullName: 'Post-akute Folgen von SARS-CoV-2',\n00735|       icdCode: 'U09.9',\n00736|       criteria: [\n00737|         'COVID-19-Infektionsanamnese',\n00738|         'Symptome ≥3 Monate Dauer',\n00739|         'Multi-System-Beteiligung',\n00740|         'Funktionale Beeinträchtigung'\n\n(File has more lines. Use 'offset' parameter to read beyond line 740)\n</file>",
+    "metadata": {
+      "preview": "    mecfs: {\n      name: 'ME/CFS',\n      fullName: 'Myalgische Enzephalomyelitis/Chronisches Müdigkeitssyndrom',\n      icdCode: 'G93.32',\n      criteria: [\n        'Erhebliche Müdigkeit nicht durch Ruhe gelindert',\n        'Post-exertionale Malaise',\n        'Nicht erholsamer Schlaf',\n        'Kognitive Beeinträchtigung oder orthostatische Intoleranz'\n      ]\n    },\n    longCovid: {\n      name: 'Long COVID',\n      fullName: 'Post-akute Folgen von SARS-CoV-2',\n      icdCode: 'U09.9',\n      criteria: [\n        'COVID-19-Infektionsanamnese',\n        'Symptome ≥3 Monate Dauer',\n        'Multi-System-Beteiligung',\n        'Funktionale Beeinträchtigung'"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758132804455,
+      "end": 1758132804458
+    }
+  }
+}

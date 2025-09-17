@@ -1,0 +1,27 @@
+{
+  "id": "prt_958e5409a001KRYWTfiOqBjUen",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_016DoAUnfg8ieVuKPAc6gBAu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"4000\\|next\" || true; sleep 2; PORT=4000 npm run dev",
+      "timeout": 8000,
+      "description": "Kill process on port 4000 and restart"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n ⨯ Failed to start server\nError: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1908:16)\n    at listenInCluster (node:net:1965:12)\n    at Server.listen (node:net:2067:7)\n    at /home/user/project/node_modules/next/dist/server/lib/start-server.js:280:16\n    at new Promise (<anonymous>)\n    at startServer (/home/user/project/node_modules/next/dist/server/lib/start-server.js:191:11)\n    at /home/user/project/node_modules/next/dist/server/lib/start-server.js:310:52\n    at Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:26)\n    at process.<anonymous> (/home/user/project/node_modules/next/dist/server/lib/start-server.js:310:35)\n    at process.emit (node:events:524:28) {\n  code: 'EADDRINUSE',\n  errno: -98,\n  syscall: 'listen',\n  address: '::',\n  port: 4000\n}\n\u001b[?25h\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n ⨯ Failed to start server\nError: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1908:16)\n    at listenInCluster (node:net:1965:12)\n    at Server.listen (node:net:2067:7)\n    at /home/user/project/node_modules/next/dist/server/lib/start-server.js:280:16\n    at new Promise (<anonymous>)\n    at startServer (/home/user/project/node_modules/next/dist/server/lib/start-server.js:191:11)\n    at /home/user/project/node_modules/next/dist/server/lib/start-server.js:310:52\n    at Span.traceAsyncFn (/home/user/project/node_modules/next/dist/trace/trace.js:154:26)\n    at process.<anonymous> (/home/user/project/node_modules/next/dist/server/lib/start-server.js:310:35)\n    at process.emit (node:events:524:28) {\n  code: 'EADDRINUSE',\n  errno: -98,\n  syscall: 'listen',\n  address: '::',\n  port: 4000\n}\n\u001b[?25h\n",
+      "exit": 0,
+      "description": "Kill process on port 4000 and restart"
+    },
+    "title": "pkill -f \"4000\\|next\" || true; sleep 2; PORT=4000 npm run dev",
+    "time": {
+      "start": 1758133044442,
+      "end": 1758133047503
+    }
+  }
+}

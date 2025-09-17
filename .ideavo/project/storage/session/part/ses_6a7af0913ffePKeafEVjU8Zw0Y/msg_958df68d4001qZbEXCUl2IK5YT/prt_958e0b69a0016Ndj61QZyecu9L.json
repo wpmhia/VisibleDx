@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e0b69a0016Ndj61QZyecu9L",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QziRaieir8W8REdefSnToN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 420,
+      "limit": 10
+    },
+    "output": "<file>\n00421|             <Button onClick={() => setIsComplete(true)} size=\"lg\" className=\"px-8\">\n00422|               <FileText className=\"h-4 w-4 mr-2\" />\n00423|               Generate Diagnostic Report\n00424|             </Button>\n00425|           </div>\n00426|         </div>\n00427|       </div>\n00428|     </div>\n00429|   )\n00430| }\n</file>",
+    "metadata": {
+      "preview": "            <Button onClick={() => setIsComplete(true)} size=\"lg\" className=\"px-8\">\n              <FileText className=\"h-4 w-4 mr-2\" />\n              Generate Diagnostic Report\n            </Button>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132746522,
+      "end": 1758132746524
+    }
+  }
+}

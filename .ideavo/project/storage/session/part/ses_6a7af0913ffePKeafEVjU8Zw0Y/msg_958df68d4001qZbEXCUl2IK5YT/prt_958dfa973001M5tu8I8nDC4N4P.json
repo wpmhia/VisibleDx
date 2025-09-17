@@ -1,0 +1,21 @@
+{
+  "id": "prt_958dfa973001M5tu8I8nDC4N4P",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Fkg7L5uZuvZGCHYxL2fji5",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: 'G93.32',\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })",
+      "newString": "    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName,\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })"
+    },
+    "error": "Error: You must read the file /home/user/project/app/criteria-engine/page.tsx before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758132681283,
+      "end": 1758132681326
+    }
+  }
+}

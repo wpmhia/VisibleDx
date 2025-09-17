@@ -1,0 +1,21 @@
+{
+  "id": "prt_958e01d96001eNNK11WV87SlyP",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01AKZgxe4aU7meo3aBgKLmWr",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "      condition: 'Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)',",
+      "newString": "      condition: t.conditions.mecfs.fullName,"
+    },
+    "error": "Error: oldString not found in content or was found multiple times",
+    "time": {
+      "start": 1758132707889,
+      "end": 1758132707898
+    }
+  }
+}

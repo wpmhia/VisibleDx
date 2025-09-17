@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e50fe8001sA0PFAK9hCyjot",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01U4XUbwsKpUSZtLZXf1T748",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\\|node\" || true",
+      "description": "Stop any running processes"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 0,
+      "description": "Stop any running processes"
+    },
+    "title": "pkill -f \"next\\|node\" || true",
+    "time": {
+      "start": 1758133031685,
+      "end": 1758133031711
+    }
+  }
+}

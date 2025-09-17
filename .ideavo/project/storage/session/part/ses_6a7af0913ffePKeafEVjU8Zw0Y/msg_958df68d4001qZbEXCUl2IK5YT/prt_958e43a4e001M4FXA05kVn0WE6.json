@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e43a4e001M4FXA05kVn0WE6",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_014V4VzuSR6a1NgtHFJK8xUt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "rm -rf .next && npm run build",
+      "description": "Clean build to fix build traces issue"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\nunhandledRejection Error [PageNotFoundError]: Cannot find module for page: /_document\n    at getPagePath (/home/user/project/node_modules/next/dist/server/require.js:94:15)\n    at requirePage (/home/user/project/node_modules/next/dist/server/require.js:99:22)\n    at /home/user/project/node_modules/next/dist/server/load-components.js:72:65\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async loadComponentsImpl (/home/user/project/node_modules/next/dist/server/load-components.js:71:33)\n    at async Object.hasCustomGetInitialProps (/home/user/project/node_modules/next/dist/build/utils.js:1274:24) {\n  type: 'PageNotFoundError',\n  code: 'ENOENT'\n}\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\nunhandledRejection Error [PageNotFoundError]: Cannot find module for page: /_document\n    at getPagePath (/home/user/project/node_modules/next/dist/server/require.js:94:15)\n    at requirePage (/home/user/project/node_modules/next/dist/server/require.js:99:22)\n    at /home/user/project/node_modules/next/dist/server/load-components.js:72:65\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Promise.all (index 0)\n    at async loadComponentsImpl (/home/user/project/node_modules/next/dist/server/load-components.js:71:33)\n    at async Object.hasCustomGetInitialProps (/home/user/project/node_modules/next/dist/build/utils.js:1274:24) {\n  type: 'PageNotFoundError',\n  code: 'ENOENT'\n}\n",
+      "exit": 1,
+      "description": "Clean build to fix build traces issue"
+    },
+    "title": "rm -rf .next && npm run build",
+    "time": {
+      "start": 1758132976922,
+      "end": 1758133026195
+    }
+  }
+}

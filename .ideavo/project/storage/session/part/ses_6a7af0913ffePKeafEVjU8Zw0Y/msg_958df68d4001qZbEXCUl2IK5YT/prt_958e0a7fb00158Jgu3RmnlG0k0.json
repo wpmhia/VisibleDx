@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e0a7fb00158Jgu3RmnlG0k0",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0175guGY8vnqaiCk3sXhZpfb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 210,
+      "limit": 5
+    },
+    "output": "<file>\n00211|                           {diagnosis.met ? t.common.met : t.common.notMet}\n00212|                         </Badge>\n00213|                       </div>\n00214|                     </CardHeader>\n00215|                     <CardContent>\n\n(File has more lines. Use 'offset' parameter to read beyond line 215)\n</file>",
+    "metadata": {
+      "preview": "                          {diagnosis.met ? t.common.met : t.common.notMet}\n                        </Badge>\n                      </div>\n                    </CardHeader>\n                    <CardContent>"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132742748,
+      "end": 1758132742750
+    }
+  }
+}

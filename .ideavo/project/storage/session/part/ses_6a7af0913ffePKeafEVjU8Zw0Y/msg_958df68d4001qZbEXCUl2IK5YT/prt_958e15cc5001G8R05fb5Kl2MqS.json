@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e15cc5001G8R05fb5Kl2MqS",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0194p5vnqtdBMfdqMHNTq2zD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 760,
+      "limit": 10
+    },
+    "output": "<file>\n00761|     nl: 'Nederlands',\n00762|     da: 'Dansk',\n00763|     de: 'Deutsch',\n00764|     sv: 'Svenska',\n00765|     no: 'Norsk',\n00766|     fr: 'Français'\n00767|   },\n00768| \n00769|   disclaimer: 'Dette screeningsværktøj er kun til klinisk beslutningsstøtte og erstatter ikke professionel medicinsk vurdering'\n00770| }\n</file>",
+    "metadata": {
+      "preview": "    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dette screeningsværktøj er kun til klinisk beslutningsstøtte og erstatter ikke professionel medicinsk vurdering'\n}"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758132789073,
+      "end": 1758132789076
+    }
+  }
+}

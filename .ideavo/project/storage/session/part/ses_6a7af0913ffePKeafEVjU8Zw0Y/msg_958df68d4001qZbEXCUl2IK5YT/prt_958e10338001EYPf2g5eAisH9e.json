@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e10338001EYPf2g5eAisH9e",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01YP4BdmDQuLyUnhQbPmNfvt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "import { ArrowLeft, BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'",
+      "newString": "import { BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -7,9 +7,9 @@\n import { Badge } from '@/components/ui/badge'\n import { Alert, AlertDescription } from '@/components/ui/alert'\n import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'\n import { Label } from '@/components/ui/label'\n-import { ArrowLeft, BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'\n+import { BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n \n interface DiagnosticCriteria {\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132766826,
+      "end": 1758132766833
+    }
+  }
+}

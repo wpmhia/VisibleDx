@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e13aa2001w7aTwhn7GjLEGY",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TheZmzwMqKzQzJT4zFW2ds",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 430,
+      "limit": 20
+    },
+    "output": "<file>\n00431|         ]\n00432|       },\n00433|       important: 'Wichtig: PEM ist das Kennzeichen-Symptom von ME/CFS. Falls vorhanden, vermeiden Sie Aktivitäten, die konsequent Symptomverschlechterung auslösen. Energiemanagement und Pacing sind wichtige Behandlungsstrategien.',\n00434|       retake: 'Bewertung Wiederholen'\n00435|     }\n00436|   },\n00437| \n00438|   // Continue with other sections...\n00439|   criteria: {\n00440|     title: 'Kriterien-Engine',\n00441|     description: 'CDC, NASEM, ESC, WHO diagnostische Kriterien für endgültige Bestimmung anwenden',\n00442|     mecfs: {\n00443|       title: 'ME/CFS-Kriterien (CDC/NASEM 2015)',\n00444|       description: 'Erfordert erhebliche Müdigkeit, PEM, nicht erholsamen Schlaf UND entweder kognitive Beeinträchtigung ODER orthostatische Intoleranz',\n00445|       criteria: [\n00446|         'Erhebliche Reduktion oder Beeinträchtigung der Aktivitätsniveaus, die ≥6 Monate anhält',\n00447|         'Post-exertionale Malaise (PEM) vorhanden',\n00448|         'Nicht erholsamer Schlaf',\n00449|         'Kognitive Beeinträchtigung (Gehirnnebel)',\n00450|         'Orthostatische Intoleranz ODER autonome Dysfunktion'\n\n(File has more lines. Use 'offset' parameter to read beyond line 450)\n</file>",
+    "metadata": {
+      "preview": "        ]\n      },\n      important: 'Wichtig: PEM ist das Kennzeichen-Symptom von ME/CFS. Falls vorhanden, vermeiden Sie Aktivitäten, die konsequent Symptomverschlechterung auslösen. Energiemanagement und Pacing sind wichtige Behandlungsstrategien.',\n      retake: 'Bewertung Wiederholen'\n    }\n  },\n\n  // Continue with other sections...\n  criteria: {\n    title: 'Kriterien-Engine',\n    description: 'CDC, NASEM, ESC, WHO diagnostische Kriterien für endgültige Bestimmung anwenden',\n    mecfs: {\n      title: 'ME/CFS-Kriterien (CDC/NASEM 2015)',\n      description: 'Erfordert erhebliche Müdigkeit, PEM, nicht erholsamen Schlaf UND entweder kognitive Beeinträchtigung ODER orthostatische Intoleranz',\n      criteria: [\n        'Erhebliche Reduktion oder Beeinträchtigung der Aktivitätsniveaus, die ≥6 Monate anhält',\n        'Post-exertionale Malaise (PEM) vorhanden',\n        'Nicht erholsamer Schlaf',\n        'Kognitive Beeinträchtigung (Gehirnnebel)',\n        'Orthostatische Intoleranz ODER autonome Dysfunktion'"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758132780193,
+      "end": 1758132780196
+    }
+  }
+}

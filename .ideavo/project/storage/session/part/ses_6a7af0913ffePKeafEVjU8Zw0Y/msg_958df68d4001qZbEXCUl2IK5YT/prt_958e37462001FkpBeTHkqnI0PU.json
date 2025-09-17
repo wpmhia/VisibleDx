@@ -1,0 +1,26 @@
+{
+  "id": "prt_958e37462001FkpBeTHkqnI0PU",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01SUsbDQFCDjD1mEkAdCt6Rn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "sed -i '/Link href=\"\\/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">/,+3d' /home/user/project/app/stand-test/page.tsx /home/user/project/app/subtype-advisor/page.tsx",
+      "description": "Remove back button links from remaining pages"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 0,
+      "description": "Remove back button links from remaining pages"
+    },
+    "title": "sed -i '/Link href=\"\\/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">/,+3d' /home/user/project/app/stand-test/page.tsx /home/user/project/app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758132927082,
+      "end": 1758132927097
+    }
+  }
+}

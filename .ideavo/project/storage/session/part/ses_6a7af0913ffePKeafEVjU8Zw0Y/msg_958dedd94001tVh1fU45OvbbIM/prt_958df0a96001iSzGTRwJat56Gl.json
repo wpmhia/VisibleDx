@@ -1,0 +1,11 @@
+{
+  "id": "prt_958df0a96001iSzGTRwJat56Gl",
+  "messageID": "msg_958dedd94001tVh1fU45OvbbIM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see that the Dutch translations are actually complete and correctly translated. The issue might be that the Criteria Engine page isn't properly using the translation keys. Let me check the Criteria Engine page:",
+  "time": {
+    "start": 1758132638029,
+    "end": 1758132638029
+  }
+}

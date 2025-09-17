@@ -279,11 +279,6 @@ export default function PEMQuest() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="mb-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
-            <ArrowLeft className="h-4 w-4" />
-            {t.app.backToDashboard}
-          </Link>
-          
           <div className="flex items-center gap-4 mb-4">
             <Activity className="h-5 w-5 text-orange-600" />
             <div>

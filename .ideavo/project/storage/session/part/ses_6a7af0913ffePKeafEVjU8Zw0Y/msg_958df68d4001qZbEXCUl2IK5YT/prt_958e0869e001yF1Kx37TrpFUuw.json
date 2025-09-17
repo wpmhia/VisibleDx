@@ -1,0 +1,25 @@
+{
+  "id": "prt_958e0869e001yF1Kx37TrpFUuw",
+  "messageID": "msg_958df68d4001qZbEXCUl2IK5YT",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JezEpMkEAjxW3qFUe19n1h",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 190,
+      "limit": 10
+    },
+    "output": "<file>\n00191|                   <AlertDescription>\n00192|                     <strong>{t.newPatient.results.noDefinitiveDiagnoses}</strong>\n00193|                   </AlertDescription>\n00194|                 </Alert>\n00195|               )}\n00196| \n00197|               <div className=\"grid md:grid-cols-3 gap-4\">\n00198|                 {diagnoses.map((diagnosis) => (\n00199|                   <Card key={diagnosis.id} className={`border-2 ${\n00200|                     diagnosis.met ? 'border-green-500 bg-green-50' : 'border-gray-200'\n\n(File has more lines. Use 'offset' parameter to read beyond line 200)\n</file>",
+    "metadata": {
+      "preview": "                  <AlertDescription>\n                    <strong>{t.newPatient.results.noDefinitiveDiagnoses}</strong>\n                  </AlertDescription>\n                </Alert>\n              )}\n\n              <div className=\"grid md:grid-cols-3 gap-4\">\n                {diagnoses.map((diagnosis) => (\n                  <Card key={diagnosis.id} className={`border-2 ${\n                    diagnosis.met ? 'border-green-500 bg-green-50' : 'border-gray-200'"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758132734243,
+      "end": 1758132734246
+    }
+  }
+}
