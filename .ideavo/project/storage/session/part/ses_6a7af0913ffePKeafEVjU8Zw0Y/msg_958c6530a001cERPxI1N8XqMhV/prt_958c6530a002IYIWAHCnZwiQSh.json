@@ -1,0 +1,7 @@
+{
+  "id": "prt_958c6530a002IYIWAHCnZwiQSh",
+  "type": "text",
+  "text": "Unhandled Runtime Error\nError: Rendered more hooks than during the previous render.\n\nSource\napp/new-patient/page.tsx (936:15) @ NewPatientWorkflow\n\n  934 |   // Criteria Step (auto-process)\n  935 |   if (currentStep === 'criteria') {\n> 936 |     useEffect(() => {\n      |               ^\n  937 |       finalizeDiagnoses()\n  938 |     }, [])\n  939 |     ",
+  "messageID": "msg_958c6530a001cERPxI1N8XqMhV",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}
