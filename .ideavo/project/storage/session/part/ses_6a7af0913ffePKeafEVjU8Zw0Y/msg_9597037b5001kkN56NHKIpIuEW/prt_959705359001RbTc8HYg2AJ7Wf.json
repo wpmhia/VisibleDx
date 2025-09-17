@@ -1,0 +1,26 @@
+{
+  "id": "prt_959705359001RbTc8HYg2AJ7Wf",
+  "messageID": "msg_9597037b5001kkN56NHKIpIuEW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_019TdMHPpZRcTddRT2oUAwya",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "ppg|PPG|photoplethysmography|camera.*heart|video.*heart",
+      "path": "/home/user/project",
+      "include": "*.tsx"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "ppg|PPG|photoplethysmography|camera.*heart|video.*heart",
+    "time": {
+      "start": 1758142158904,
+      "end": 1758142158914
+    }
+  }
+}

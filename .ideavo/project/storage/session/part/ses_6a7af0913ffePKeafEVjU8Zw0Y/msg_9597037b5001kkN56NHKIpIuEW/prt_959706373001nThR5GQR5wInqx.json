@@ -1,0 +1,26 @@
+{
+  "id": "prt_959706373001nThR5GQR5wInqx",
+  "messageID": "msg_9597037b5001kkN56NHKIpIuEW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01ULeGRAK7zgu33KLB9Z9k4u",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "getUserMedia|mediaDevices|camera|video",
+      "path": "/home/user/project",
+      "include": "*.tsx"
+    },
+    "output": "Found 7 matches\n/home/user/project/app/stand-test/page.tsx:\n  Line 39:   const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')\n  Line 337:                       testMethod === 'camera' ? 'ring-2 ring-blue-500' : ''\n  Line 339:                     onClick={() => setTestMethod('camera')}\n  Line 342:                       <h3 className=\"font-semibold mb-2\">{t.standTest.setup.camera.title}</h3>\n  Line 344:                         {t.standTest.setup.camera.description}\n  Line 346:                       <Badge variant=\"secondary\">{t.standTest.setup.camera.beta}</Badge>\n\n/home/user/project/components/ui/chart.tsx:\n  Line 55:           \"flex aspect-video justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-none [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-none [&_.recharts-surface]:outline-none\",",
+    "metadata": {
+      "matches": 7,
+      "truncated": false
+    },
+    "title": "getUserMedia|mediaDevices|camera|video",
+    "time": {
+      "start": 1758142162615,
+      "end": 1758142162627
+    }
+  }
+}
