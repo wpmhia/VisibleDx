@@ -143,6 +143,13 @@ export default function NewPatientWorkflow() {
   const redFlagSymptoms = createRedFlagSymptoms(t)
   const pemQuestions = createPemQuestions(t)
 
+  // Auto-process criteria when in criteria step
+  useEffect(() => {
+    if (currentStep === 'criteria') {
+      finalizeDiagnoses()
+    }
+  }, [currentStep])
+
   const getStepProgress = () => {
     const steps: WorkflowStep[] = ['demographics', 'quickScreen', 'redFlags', 'standTest', 'pemQuest', 'criteria', 'summary']
     const currentIndex = steps.indexOf(currentStep)
@@ -933,10 +940,6 @@ export default function NewPatientWorkflow() {
 
   // Criteria Step (auto-process)
   if (currentStep === 'criteria') {
-    useEffect(() => {
-      finalizeDiagnoses()
-    }, [])
-    
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
         <div className="container mx-auto px-4 max-w-2xl">

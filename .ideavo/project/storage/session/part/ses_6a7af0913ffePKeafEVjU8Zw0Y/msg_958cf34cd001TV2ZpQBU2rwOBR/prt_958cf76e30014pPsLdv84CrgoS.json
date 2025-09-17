@@ -1,0 +1,11 @@
+{
+  "id": "prt_958cf76e30014pPsLdv84CrgoS",
+  "messageID": "msg_958cf34cd001TV2ZpQBU2rwOBR",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to remove the conditional `useEffect` from the criteria step section:",
+  "time": {
+    "start": 1758131616012,
+    "end": 1758131616012
+  }
+}

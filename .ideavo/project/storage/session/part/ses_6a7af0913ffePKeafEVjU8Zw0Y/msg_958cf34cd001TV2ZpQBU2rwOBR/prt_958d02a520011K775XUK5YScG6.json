@@ -1,0 +1,18 @@
+{
+  "id": "prt_958d02a520011K775XUK5YScG6",
+  "messageID": "msg_958cf34cd001TV2ZpQBU2rwOBR",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(hooks): resolve react hooks violation in patient assessment",
+  "cost": 0.26882865,
+  "tokens": {
+    "input": 6,
+    "output": 184,
+    "reasoning": 0,
+    "cache": {
+      "write": 623,
+      "read": 56866
+    }
+  }
+}

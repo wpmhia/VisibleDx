@@ -1,0 +1,26 @@
+{
+  "id": "prt_958cf5c63001yY9rWwonFz3ld2",
+  "messageID": "msg_958cf34cd001TV2ZpQBU2rwOBR",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01PBGYirqWk8pa89AE9ktNLv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "export default function NewPatientWorkflow() {\n  const { t } = useTranslation()\n  const [currentStep, setCurrentStep] = useState<WorkflowStep>('demographics')\n  const [patientData, setPatientData] = useState<PatientData>(initialPatientData)\n  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)\n  const [isComplete, setIsComplete] = useState(false)\n  \n  const screeningQuestions = createScreeningQuestions(t)\n  const redFlagSymptoms = createRedFlagSymptoms(t)\n  const pemQuestions = createPemQuestions(t)",
+      "newString": "export default function NewPatientWorkflow() {\n  const { t } = useTranslation()\n  const [currentStep, setCurrentStep] = useState<WorkflowStep>('demographics')\n  const [patientData, setPatientData] = useState<PatientData>(initialPatientData)\n  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)\n  const [isComplete, setIsComplete] = useState(false)\n  \n  const screeningQuestions = createScreeningQuestions(t)\n  const redFlagSymptoms = createRedFlagSymptoms(t)\n  const pemQuestions = createPemQuestions(t)\n\n  // Auto-process criteria when in criteria step\n  useEffect(() => {\n    if (currentStep === 'criteria') {\n      finalizeDiagnoses()\n    }\n  }, [currentStep])"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -142,8 +142,15 @@\n const screeningQuestions = createScreeningQuestions(t)\n const redFlagSymptoms = createRedFlagSymptoms(t)\n const pemQuestions = createPemQuestions(t)\n \n+// Auto-process criteria when in criteria step\n+useEffect(() => {\n+  if (currentStep === 'criteria') {\n+    finalizeDiagnoses()\n+  }\n+}, [currentStep])\n+\n const getStepProgress = () => {\n   const steps: WorkflowStep[] = ['demographics', 'quickScreen', 'redFlags', 'standTest', 'pemQuest', 'criteria', 'summary']\n   const currentIndex = steps.indexOf(currentStep)\n   return ((currentIndex + 1) / steps.length) * 100\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758131613101,
+      "end": 1758131613112
+    }
+  }
+}
