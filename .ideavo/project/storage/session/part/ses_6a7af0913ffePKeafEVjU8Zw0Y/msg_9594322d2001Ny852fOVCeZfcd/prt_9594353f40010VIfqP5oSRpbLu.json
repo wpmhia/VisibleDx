@@ -1,0 +1,20 @@
+{
+  "id": "prt_9594353f40010VIfqP5oSRpbLu",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "webfetch",
+  "callID": "toolu_01NEAWZzWvwyCBzArVpkcDLV",
+  "state": {
+    "status": "error",
+    "input": {
+      "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000755",
+      "format": "text"
+    },
+    "error": "Error: Request failed with status code: 403",
+    "time": {
+      "start": 1758139209380,
+      "end": 1758139209428
+    }
+  }
+}

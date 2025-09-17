@@ -1,0 +1,11 @@
+{
+  "id": "prt_959434efa001PrfARhIJrnkEkO",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see that currently all translation files show \"Propranolol 10-40mg BID\" (twice daily). Let me check the medical guidelines to verify if this should be BID (twice daily) or QID (four times daily).",
+  "time": {
+    "start": 1758139208691,
+    "end": 1758139208691
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9594444b4001h4pKF6QNf5GnxM",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FkgtFffvMmQUraRTydAhpE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 592,
+      "limit": 5
+    },
+    "output": "<file>\n00593|             'Propranolol 10-40mg BID',\n00594|             'Clonidin 0,1-0,2mg BID'\n00595|           ],\n00596|           secondLine: [\n00597|             'Ivabradin 2,5-7,5mg BID',\n\n(File has more lines. Use 'offset' parameter to read beyond line 597)\n</file>",
+    "metadata": {
+      "preview": "            'Propranolol 10-40mg BID',\n            'Clonidin 0,1-0,2mg BID'\n          ],\n          secondLine: [\n            'Ivabradin 2,5-7,5mg BID',"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758139270927,
+      "end": 1758139270931
+    }
+  }
+}

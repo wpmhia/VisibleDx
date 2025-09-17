@@ -1,0 +1,26 @@
+{
+  "id": "prt_95943d27b001i7oMaaImr6kK6e",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01JhmpPHRK3UR1D8P1LRQ9Gw",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "            'Propranolol 10-40mg BID',",
+          "newString": "            'Propranolol 10-20mg BID-QID',"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758139242774,
+      "end": 1758139242807
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95943e42a0019OUXBptU43cW5y",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Usgjz6CuxYwrbqCioSZUVB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 585,
+      "limit": 5
+    },
+    "output": "<file>\n00586|           firstLine: [\n00587|             'Propranolol 10-40mg BID',\n00588|             'Clonidine 0.1-0.2mg BID'\n00589|           ],\n00590|           secondLine: [\n\n(File has more lines. Use 'offset' parameter to read beyond line 590)\n</file>",
+    "metadata": {
+      "preview": "          firstLine: [\n            'Propranolol 10-40mg BID',\n            'Clonidine 0.1-0.2mg BID'\n          ],\n          secondLine: ["
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758139246247,
+      "end": 1758139246256
+    }
+  }
+}

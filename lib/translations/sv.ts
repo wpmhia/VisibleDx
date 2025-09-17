@@ -616,7 +616,7 @@ export const sv: Translation = {
             'Skonsam träning'
           ],
           firstLine: [
-            'Propranolol 10-40mg BID',
+             'Propranolol 10-20mg BID-QID',
             'Klonidin 0,1-0,2mg BID'
           ],
           secondLine: [

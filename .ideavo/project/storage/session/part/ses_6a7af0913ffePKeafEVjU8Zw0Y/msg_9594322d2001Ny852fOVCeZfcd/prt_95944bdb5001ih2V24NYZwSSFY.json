@@ -1,0 +1,49 @@
+{
+  "id": "prt_95944bdb5001ih2V24NYZwSSFY",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_0134AhybM8GPqofPDraQ5nsF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update propranolol dosing in all translation files to match medical guidelines",
+          "status": "completed",
+          "priority": "medium",
+          "id": "propranolol-fix-1"
+        },
+        {
+          "content": "Test build after propranolol dosing correction",
+          "status": "in_progress",
+          "priority": "low",
+          "id": "propranolol-fix-2"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update propranolol dosing in all translation files to match medical guidelines\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"propranolol-fix-1\"\n  },\n  {\n    \"content\": \"Test build after propranolol dosing correction\",\n    \"status\": \"in_progress\",\n    \"priority\": \"low\",\n    \"id\": \"propranolol-fix-2\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update propranolol dosing in all translation files to match medical guidelines",
+          "status": "completed",
+          "priority": "medium",
+          "id": "propranolol-fix-1"
+        },
+        {
+          "content": "Test build after propranolol dosing correction",
+          "status": "in_progress",
+          "priority": "low",
+          "id": "propranolol-fix-2"
+        }
+      ]
+    },
+    "title": "1 todos",
+    "time": {
+      "start": 1758139303307,
+      "end": 1758139303346
+    }
+  }
+}

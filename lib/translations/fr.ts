@@ -616,7 +616,7 @@ export const fr: Translation = {
             'Exercice doux'
           ],
           firstLine: [
-            'Propranolol 10-40mg BID',
+             'Propranolol 10-20mg BID-QID',
             'Clonidine 0,1-0,2mg BID'
           ],
           secondLine: [

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95943404a001TFx8UAyL1lJikw",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01W2xLiHYicDpgWBvcH7DXaE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Propranolol|propranolol",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "Found 7 matches\n/home/user/project/lib/translations/fr.ts:\n  Line 619:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/no.ts:\n  Line 619:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/sv.ts:\n  Line 619:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/de.ts:\n  Line 593:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/da.ts:\n  Line 596:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 587:             'Propranolol 10-40mg BID',\n\n/home/user/project/lib/translations/en.ts:\n  Line 587:             'Propranolol 10-40mg BID',",
+    "metadata": {
+      "matches": 7,
+      "truncated": false
+    },
+    "title": "Propranolol|propranolol",
+    "time": {
+      "start": 1758139204291,
+      "end": 1758139204303
+    }
+  }
+}

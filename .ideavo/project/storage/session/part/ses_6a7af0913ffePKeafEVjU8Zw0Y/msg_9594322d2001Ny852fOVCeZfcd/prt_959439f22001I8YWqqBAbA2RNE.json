@@ -1,0 +1,11 @@
+{
+  "id": "prt_959439f22001I8YWqqBAbA2RNE",
+  "messageID": "msg_9594322d2001Ny852fOVCeZfcd",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Excellent! I found a comprehensive POTS treatment review by Dr. Satish Raj from Vanderbilt University. In the pharmacological treatment section, I can see the specific propranolol dosing recommendation:\n\n> \"When used in low doses, beta-adrenergic antagonists can be useful. We typical use propranolol 10-20 mg PO **BID-QID**. While this dose range is small, such doses can often have a significant impact on heart rate control, and higher doses are often not tolerated due to hypotension and fatigue.\"\n\n**Key Finding: The guideline recommends propranolol 10-20 mg BID-QID (twice to four times daily), not just BID.**\n\nThe current translation files show \"Propranolol 10-40mg BID\" but according to this authoritative source from Vanderbilt (a leading POTS research center), the dosing should be \"Propranolol 10-20mg BID-QID\" to reflect that it can be given 2-4 times daily depending on patient response.\n\nLet me update the translations to be more accurate to the medical literature:",
+  "time": {
+    "start": 1758139235444,
+    "end": 1758139235444
+  }
+}
