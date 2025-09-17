@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d89598001PrzGYuyECH0Y8Y",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01SFEkjHyy8HwdcmiumiaEKX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "ArrowLeft\\|backToDashboard",
+      "path": "/home/user/project/app/new-patient"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "ArrowLeft\\|backToDashboard",
+    "time": {
+      "start": 1758132213869,
+      "end": 1758132213879
+    }
+  }
+}

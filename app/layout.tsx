@@ -2,6 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { LanguageProvider } from '@/lib/language-context';
+import Navigation from '@/components/navigation';
+import Disclaimer from '@/components/disclaimer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +21,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LanguageProvider>
-          {children}
+          <div className="min-h-screen flex flex-col">
+            <Navigation />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Disclaimer />
+          </div>
         </LanguageProvider>
         {/* TODO: Remove iframe-navigation.js in production, should never be removed by AI */}
         <script src="/scripts/iframe-navigation.js"></script>

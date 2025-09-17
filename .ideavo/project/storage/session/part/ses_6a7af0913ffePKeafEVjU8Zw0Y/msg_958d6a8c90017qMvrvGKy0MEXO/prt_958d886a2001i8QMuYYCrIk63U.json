@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d886a2001i8QMuYYCrIk63U",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RvP7GjeGQFUAFRdweYYPZi",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 13,
+      "limit": 1
+    },
+    "output": "<file>\n00014| import Link from 'next/link'\n\n(File has more lines. Use 'offset' parameter to read beyond line 14)\n</file>",
+    "metadata": {
+      "preview": "import Link from 'next/link'"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758132210000,
+      "end": 1758132210003
+    }
+  }
+}

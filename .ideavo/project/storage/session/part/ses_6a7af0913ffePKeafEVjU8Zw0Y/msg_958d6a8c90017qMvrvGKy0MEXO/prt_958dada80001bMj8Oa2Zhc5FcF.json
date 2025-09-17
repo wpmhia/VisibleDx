@@ -1,0 +1,25 @@
+{
+  "id": "prt_958dada80001bMj8Oa2Zhc5FcF",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016zUjFCanZeFNez4oZvrSzm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "offset": 160,
+      "limit": 10
+    },
+    "output": "<file>\n00161|         <div className=\"mb-6\">\n00162|             <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n00163|             <ArrowLeft className=\"h-4 w-4\" />\n00164|             {t.app.backToDashboard}\n00165|           </Link>\n00166|           \n00167|           <div className=\"flex items-center gap-4 mb-4\">\n00168|             <Clock className=\"h-5 w-5 text-gray-600\" />\n00169|             <div>\n00170|               <h1 className=\"text-2xl font-bold text-gray-900\">{t.quickScreen.title}</h1>\n\n(File has more lines. Use 'offset' parameter to read beyond line 170)\n</file>",
+    "metadata": {
+      "preview": "        <div className=\"mb-6\">\n            <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n            <ArrowLeft className=\"h-4 w-4\" />\n            {t.app.backToDashboard}\n          </Link>\n          \n          <div className=\"flex items-center gap-4 mb-4\">\n            <Clock className=\"h-5 w-5 text-gray-600\" />\n            <div>\n              <h1 className=\"text-2xl font-bold text-gray-900\">{t.quickScreen.title}</h1>"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758132362541,
+      "end": 1758132362543
+    }
+  }
+}

@@ -7,7 +7,6 @@ import { Badge } from '@/components/ui/badge'
 import { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
-import { LanguageSelector } from '@/components/language-selector'
 
 const getModules = (t: any) => [
   {
@@ -61,11 +60,8 @@ export default function Home() {
   const modules = getModules(t)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
-        <div className="flex justify-end mb-4">
-          <LanguageSelector />
-        </div>
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             {t.app.title}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d8a481001AH0XjJCj4Ppk7K",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01N3rXf4p6vdZdp3DpaAPrXm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Link href.*/\"",
+      "path": "/home/user/project/app/new-patient"
+    },
+    "output": "Found 1 matches\n/home/user/project/app/new-patient/page.tsx:\n  Line 521:             <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">",
+    "metadata": {
+      "matches": 1,
+      "truncated": false
+    },
+    "title": "Link href.*/\"",
+    "time": {
+      "start": 1758132217600,
+      "end": 1758132217610
+    }
+  }
+}

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
-import { ArrowLeft, FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'
+import { FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
@@ -293,11 +293,6 @@ export default function RedFlagChecker() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
-            <ArrowLeft className="h-4 w-4" />
-            {t.app.backToDashboard}
-          </Link>
-          
           <div className="flex items-center gap-4 mb-4">
             <AlertTriangle className="h-5 w-5 text-red-600" />
             <div>

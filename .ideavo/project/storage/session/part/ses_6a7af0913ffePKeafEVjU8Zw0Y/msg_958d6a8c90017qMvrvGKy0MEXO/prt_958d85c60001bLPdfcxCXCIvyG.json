@@ -1,0 +1,26 @@
+{
+  "id": "prt_958d85c60001bLPdfcxCXCIvyG",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RV2Eo8CHbccwfqpRCGEBVU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "  return (\n    <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\">\n      <div className=\"container mx-auto px-4 py-8\">\n        <div className=\"flex justify-end mb-4\">\n          <LanguageSelector />\n        </div>",
+      "newString": "  return (\n    <div className=\"bg-gradient-to-br from-blue-50 to-indigo-100\">\n      <div className=\"container mx-auto px-4 py-8\">"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -59,13 +59,10 @@\n const { t } = useTranslation()\n const modules = getModules(t)\n \n return (\n-  <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\">\n+  <div className=\"bg-gradient-to-br from-blue-50 to-indigo-100\">\n     <div className=\"container mx-auto px-4 py-8\">\n-      <div className=\"flex justify-end mb-4\">\n-        <LanguageSelector />\n-      </div>\n       <div className=\"text-center mb-12\">\n         <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n           {t.app.title}\n         </h1>\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758132200631,
+      "end": 1758132200635
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958d8d8f0001S18NQc1gbaa9BL",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01SAaEf4CRaGk9gCzuz9PEQH",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "import { ArrowLeft, ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'",
+      "newString": "import { ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -9,9 +9,9 @@\n import { Badge } from '@/components/ui/badge'\n import { Alert, AlertDescription } from '@/components/ui/alert'\n import { Checkbox } from '@/components/ui/checkbox'\n import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'\n-import { ArrowLeft, ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'\n+import { ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n \n interface PatientData {\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758132232423,
+      "end": 1758132232433
+    }
+  }
+}

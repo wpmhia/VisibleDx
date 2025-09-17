@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d8b4d50015rVz3dXr5GSfC7",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01GTGwFYjAC4RiD4MvbSF9oR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 520,
+      "limit": 10
+    },
+    "output": "<file>\n00521|             <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n00522|               <ArrowLeft className=\"h-4 w-4\" />\n00523|               {t.app.backToDashboard}\n00524|             </Link>\n00525|             \n00526|             <div className=\"flex items-center gap-4 mb-4\">\n00527|               <User className=\"h-5 w-5 text-blue-600\" />\n00528|               <div>\n00529|                 <h1 className=\"text-2xl font-bold text-gray-900\">{t.newPatient.title}</h1>\n00530|                 <p className=\"text-gray-600\">{t.newPatient.description}</p>\n\n(File has more lines. Use 'offset' parameter to read beyond line 530)\n</file>",
+    "metadata": {
+      "preview": "            <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n              <ArrowLeft className=\"h-4 w-4\" />\n              {t.app.backToDashboard}\n            </Link>\n            \n            <div className=\"flex items-center gap-4 mb-4\">\n              <User className=\"h-5 w-5 text-blue-600\" />\n              <div>\n                <h1 className=\"text-2xl font-bold text-gray-900\">{t.newPatient.title}</h1>\n                <p className=\"text-gray-600\">{t.newPatient.description}</p>"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758132221710,
+      "end": 1758132221712
+    }
+  }
+}

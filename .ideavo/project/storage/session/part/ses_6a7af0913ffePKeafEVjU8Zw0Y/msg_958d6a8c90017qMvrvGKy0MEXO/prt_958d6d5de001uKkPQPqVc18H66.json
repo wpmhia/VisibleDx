@@ -1,0 +1,23 @@
+{
+  "id": "prt_958d6d5de001uKkPQPqVc18H66",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RCL3fEq15x3uXaJfSmV1BZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx"
+    },
+    "output": "<file>\n00001| import './globals.css';\n00002| import type { Metadata } from 'next';\n00003| import { Inter } from 'next/font/google';\n00004| import { LanguageProvider } from '@/lib/language-context';\n00005| \n00006| const inter = Inter({ subsets: ['latin'] });\n00007| \n00008| export const metadata: Metadata = {\n00009|   title: 'AutoDx: ME/CFS · Long COVID · POTS',\n00010|   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n00011| };\n00012| \n00013| export default function RootLayout({\n00014|   children,\n00015| }: {\n00016|   children: React.ReactNode;\n00017| }) {\n00018|   return (\n00019|     <html lang=\"en\">\n00020|       <body className={inter.className}>\n00021|         <LanguageProvider>\n00022|           {children}\n00023|         </LanguageProvider>\n00024|         {/* TODO: Remove iframe-navigation.js in production, should never be removed by AI */}\n00025|         <script src=\"/scripts/iframe-navigation.js\"></script>\n00026|       </body>\n00027|     </html>\n00028|   );\n00029| }\n00030| \n</file>",
+    "metadata": {
+      "preview": "import './globals.css';\nimport type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport { LanguageProvider } from '@/lib/language-context';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nexport const metadata: Metadata = {\n  title: 'AutoDx: ME/CFS · Long COVID · POTS',\n  description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body className={inter.className}>"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758132099070,
+      "end": 1758132099073
+    }
+  }
+}

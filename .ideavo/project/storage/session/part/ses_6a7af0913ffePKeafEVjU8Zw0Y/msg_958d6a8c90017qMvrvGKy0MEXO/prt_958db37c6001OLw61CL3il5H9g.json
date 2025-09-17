@@ -1,0 +1,18 @@
+{
+  "id": "prt_958db37c6001OLw61CL3il5H9g",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(nav): implement comprehensive navigation system with header, menu, and disclaimer",
+  "cost": 1.14379905,
+  "tokens": {
+    "input": 0,
+    "output": 364,
+    "reasoning": 0,
+    "cache": {
+      "write": 384,
+      "read": 80253
+    }
+  }
+}

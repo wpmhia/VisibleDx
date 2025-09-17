@@ -1,0 +1,26 @@
+{
+  "id": "prt_958d9c672001eAx9y3T3MbACAy",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HZ5z6fxVsLQbEJFcUqwMSc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "import { ArrowLeft, FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'",
+      "newString": "import { FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -5,9 +5,9 @@\n import { Button } from '@/components/ui/button'\n import { Checkbox } from '@/components/ui/checkbox'\n import { Badge } from '@/components/ui/badge'\n import { Alert, AlertDescription } from '@/components/ui/alert'\n-import { ArrowLeft, FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'\n+import { FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n \n const redFlagSymptoms = [\n"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758132292398,
+      "end": 1758132292401
+    }
+  }
+}

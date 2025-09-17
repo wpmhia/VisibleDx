@@ -1,0 +1,25 @@
+{
+  "id": "prt_958d90bec0011tsOBCOkeVE3uw",
+  "messageID": "msg_958d6a8c90017qMvrvGKy0MEXO",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01EKUGcQp91fEqAmfRFSxksM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 295,
+      "limit": 10
+    },
+    "output": "<file>\n00296|           <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n00297|             <ArrowLeft className=\"h-4 w-4\" />\n00298|             {t.app.backToDashboard}\n00299|           </Link>\n00300|           \n00301|           <div className=\"flex items-center gap-4 mb-4\">\n00302|             <AlertTriangle className=\"h-5 w-5 text-red-600\" />\n00303|             <div>\n00304|               <h1 className=\"text-2xl font-bold text-gray-900\">{t.redFlag.title}</h1>\n00305|               <p className=\"text-gray-600\">{t.redFlag.description}</p>\n\n(File has more lines. Use 'offset' parameter to read beyond line 305)\n</file>",
+    "metadata": {
+      "preview": "          <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n            <ArrowLeft className=\"h-4 w-4\" />\n            {t.app.backToDashboard}\n          </Link>\n          \n          <div className=\"flex items-center gap-4 mb-4\">\n            <AlertTriangle className=\"h-5 w-5 text-red-600\" />\n            <div>\n              <h1 className=\"text-2xl font-bold text-gray-900\">{t.redFlag.title}</h1>\n              <p className=\"text-gray-600\">{t.redFlag.description}</p>"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758132244131,
+      "end": 1758132244133
+    }
+  }
+}

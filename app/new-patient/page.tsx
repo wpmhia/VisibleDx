@@ -10,7 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Checkbox } from '@/components/ui/checkbox'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { ArrowLeft, ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'
+import { ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
@@ -518,11 +518,6 @@ export default function NewPatientWorkflow() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
         <div className="container mx-auto px-4 max-w-2xl">
           <div className="mb-6">
-            <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
-              <ArrowLeft className="h-4 w-4" />
-              {t.app.backToDashboard}
-            </Link>
-            
             <div className="flex items-center gap-4 mb-4">
               <User className="h-5 w-5 text-blue-600" />
               <div>
