@@ -768,5 +768,46 @@ export const en: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation'
+  disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation',
+
+  footer: {
+    about: {
+      title: 'About VisibleDx',
+      description: 'VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to assist clinicians in systematic evaluation.',
+      badges: {
+        sensitivity: '94% Sensitivity',
+        evidenceBased: 'Evidence-Based',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Evidence Base',
+      guidelines: [
+        'CDC ME/CFS Case Definition (2015)',
+        'NASEM ME/CFS Report (2015)',
+        'WHO Long COVID Definition (2021)',
+        'ESC POTS Guidelines (2018)',
+        'AAS/EFAS POTS Consensus (2021)',
+        'NASA Lean Stand Test Protocol'
+      ]
+    },
+    notes: {
+      title: 'Important Notes',
+      items: [
+        'Not a substitute for clinical assessment',
+        'Requires confirmation with physical exam',
+        'Consider patient history and context',
+        'Rule out red flags before diagnosis',
+        'Consult specialists for complex cases',
+        'Monitor patient response to treatment'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Educational Tool',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'For Healthcare Professionals',
+      badge: 'Research & Education Use'
+    },
+    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'
+  }
 }

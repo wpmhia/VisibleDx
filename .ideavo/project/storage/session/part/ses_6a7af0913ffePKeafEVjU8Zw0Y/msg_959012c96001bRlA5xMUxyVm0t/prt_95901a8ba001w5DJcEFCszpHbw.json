@@ -1,0 +1,26 @@
+{
+  "id": "prt_95901a8ba001w5DJcEFCszpHbw",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ESperR88tYEf7X5NwioSDT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "  // Disclaimer\n  disclaimer: string\n}",
+      "newString": "  // Disclaimer\n  disclaimer: string\n\n  // Footer\n  footer: {\n    about: {\n      title: string\n      description: string\n      badges: {\n        sensitivity: string\n        evidenceBased: string\n        openSource: string\n      }\n    }\n    evidence: {\n      title: string\n      guidelines: string[]\n    }\n    notes: {\n      title: string\n      items: string[]\n    }\n    bottom: {\n      version: string\n      copyright: string\n      audienceLabel: string\n      badge: string\n    }\n    technical: string\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -562,8 +562,36 @@\n   }\n \n   // Disclaimer\n   disclaimer: string\n+\n+  // Footer\n+  footer: {\n+    about: {\n+      title: string\n+      description: string\n+      badges: {\n+        sensitivity: string\n+        evidenceBased: string\n+        openSource: string\n+      }\n+    }\n+    evidence: {\n+      title: string\n+      guidelines: string[]\n+    }\n+    notes: {\n+      title: string\n+      items: string[]\n+    }\n+    bottom: {\n+      version: string\n+      copyright: string\n+      audienceLabel: string\n+      badge: string\n+    }\n+    technical: string\n+  }\n }\n \n export type SupportedLanguage = 'en' | 'nl' | 'da' | 'de' | 'sv' | 'no' | 'fr'\n \n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758134908201,
+      "end": 1758134908217
+    }
+  }
+}

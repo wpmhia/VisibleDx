@@ -774,5 +774,46 @@ export const de: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'
+  disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation',
+
+  footer: {
+    about: {
+      title: 'Über VisibleDx',
+      description: 'VisibleDx ist ein evidenzbasiertes diagnostisches Entscheidungsunterstützungsinstrument für ME/CFS, Long COVID und POTS. Es implementiert validierte Kriterien führender medizinischer Organisationen, um Klinikern bei der systematischen Bewertung zu helfen.',
+      badges: {
+        sensitivity: '94% Sensitivität',
+        evidenceBased: 'Evidenzbasiert',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Evidenzbasis',
+      guidelines: [
+        'CDC ME/CFS Falldefinition (2015)',
+        'NASEM ME/CFS Bericht (2015)',
+        'WHO Long COVID Definition (2021)',
+        'ESC POTS Leitlinien (2018)',
+        'AAS/EFAS POTS Konsens (2021)',
+        'NASA Lean Stand Test Protokoll'
+      ]
+    },
+    notes: {
+      title: 'Wichtige Hinweise',
+      items: [
+        'Kein Ersatz für klinische Bewertung',
+        'Erfordert Bestätigung durch körperliche Untersuchung',
+        'Patientengeschichte und Kontext berücksichtigen',
+        'Rote Flaggen vor Diagnose ausschließen',
+        'Spezialisten bei komplexen Fällen konsultieren',
+        'Patientenreaktion auf Behandlung überwachen'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Bildungstool',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'Für Gesundheitsfachkräfte',
+      badge: 'Forschung & Bildung'
+    },
+    technical: 'Basierend auf peer-reviewed Literatur und validierten diagnostischen Kriterien. Sensitivitätsdaten aus klinischen Validierungsstudien. Konsultieren Sie immer aktuelle Leitlinien und Spezialistenempfehlungen für komplexe Fälle.'
+  }
 }

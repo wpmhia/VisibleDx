@@ -1,0 +1,26 @@
+{
+  "id": "prt_95901eff5001q3XvlRN7lg7gmq",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01NVWdBunhnw1oQsvEofD3y9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "disclaimer.*:",
+      "path": "/home/user/project/lib/translations",
+      "include": "*.ts"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/types.ts:\n  Line 565:   disclaimer: string\n\n/home/user/project/lib/translations/fr.ts:\n  Line 803:   disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n\n/home/user/project/lib/translations/no.ts:\n  Line 803:   disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering'\n\n/home/user/project/lib/translations/sv.ts:\n  Line 803:   disclaimer: 'Detta verktyg är endast för utbildningsändamål och ersätter inte professionell medicinsk bedömning eller klinisk utvärdering'\n\n/home/user/project/lib/translations/de.ts:\n  Line 777:   disclaimer: 'Dieses Tool dient nur zu Bildungszwecken und ersetzt nicht die professionelle medizinische Beurteilung oder klinische Evaluation'\n\n/home/user/project/lib/translations/da.ts:\n  Line 780:   disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering'\n\n/home/user/project/lib/translations/nl.ts:\n  Line 771:   disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie'\n\n/home/user/project/lib/translations/en.ts:\n  Line 771:   disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation'",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "disclaimer.*:",
+    "time": {
+      "start": 1758134923852,
+      "end": 1758134923884
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95902be5f001Ru9Y44EcurqRd1",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01U6RUu2so2ZqU7Q7nhwpx46",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 802,
+      "limit": 5
+    },
+    "output": "<file>\n00803|   disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n00804| }\n</file>",
+    "metadata": {
+      "preview": "  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n}"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758134976731,
+      "end": 1758134976737
+    }
+  }
+}

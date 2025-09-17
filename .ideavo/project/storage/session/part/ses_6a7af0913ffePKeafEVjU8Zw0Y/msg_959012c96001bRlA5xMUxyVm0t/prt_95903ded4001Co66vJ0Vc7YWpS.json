@@ -1,0 +1,26 @@
+{
+  "id": "prt_95903ded4001Co66vJ0Vc7YWpS",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BfpzJvdReEJsxFbZptpB2J",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "oldString": "  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n}",
+      "newString": "  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique',\n\n  footer: {\n    about: {\n      title: 'À propos de VisibleDx',\n      description: 'VisibleDx est un outil d\\'aide à la décision diagnostique basé sur les preuves pour ME/SFC, COVID Long et POTS. Il implémente des critères validés d\\'organisations médicales de premier plan pour aider les cliniciens dans l\\'évaluation systématique.',\n      badges: {\n        sensitivity: '94% Sensibilité',\n        evidenceBased: 'Basé sur les Preuves',\n        openSource: 'Open Source'\n      }\n    },\n    evidence: {\n      title: 'Base de Preuves',\n      guidelines: [\n        'Définition de Cas CDC ME/SFC (2015)',\n        'Rapport NASEM ME/SFC (2015)',\n        'Définition OMS COVID Long (2021)',\n        'Directives ESC POTS (2018)',\n        'Consensus AAS/EFAS POTS (2021)',\n        'Protocole NASA Lean Stand Test'\n      ]\n    },\n    notes: {\n      title: 'Notes Importantes',\n      items: [\n        'Pas un substitut à l\\'évaluation clinique',\n        'Nécessite confirmation par examen physique',\n        'Considérer l\\'historique et le contexte du patient',\n        'Exclure les drapeaux rouges avant diagnostic',\n        'Consulter des spécialistes pour les cas complexes',\n        'Surveiller la réponse du patient au traitement'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Outil Éducatif',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'Pour les Professionnels de Santé',\n      badge: 'Recherche & Éducation'\n    },\n    technical: 'Basé sur la littérature évaluée par les pairs et des critères diagnostiques validés. Données de sensibilité d\\'études de validation clinique. Consultez toujours les directives actuelles et les recommandations de spécialistes pour les cas complexes.'\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/fr.ts\n===================================================================\n--- /home/user/project/lib/translations/fr.ts\n+++ /home/user/project/lib/translations/fr.ts\n@@ -799,6 +799,47 @@\n     no: 'Norsk',\n     fr: 'Français'\n   },\n \n-  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique'\n+  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\\'évaluation clinique',\n+\n+  footer: {\n+    about: {\n+      title: 'À propos de VisibleDx',\n+      description: 'VisibleDx est un outil d\\'aide à la décision diagnostique basé sur les preuves pour ME/SFC, COVID Long et POTS. Il implémente des critères validés d\\'organisations médicales de premier plan pour aider les cliniciens dans l\\'évaluation systématique.',\n+      badges: {\n+        sensitivity: '94% Sensibilité',\n+        evidenceBased: 'Basé sur les Preuves',\n+        openSource: 'Open Source'\n+      }\n+    },\n+    evidence: {\n+      title: 'Base de Preuves',\n+      guidelines: [\n+        'Définition de Cas CDC ME/SFC (2015)',\n+        'Rapport NASEM ME/SFC (2015)',\n+        'Définition OMS COVID Long (2021)',\n+        'Directives ESC POTS (2018)',\n+        'Consensus AAS/EFAS POTS (2021)',\n+        'Protocole NASA Lean Stand Test'\n+      ]\n+    },\n+    notes: {\n+      title: 'Notes Importantes',\n+      items: [\n+        'Pas un substitut à l\\'évaluation clinique',\n+        'Nécessite confirmation par examen physique',\n+        'Considérer l\\'historique et le contexte du patient',\n+        'Exclure les drapeaux rouges avant diagnostic',\n+        'Consulter des spécialistes pour les cas complexes',\n+        'Surveiller la réponse du patient au traitement'\n+      ]\n+    },\n+    bottom: {\n+      version: 'VisibleDx v1.0 - Outil Éducatif',\n+      copyright: '© 2024 VisibleDx',\n+      audienceLabel: 'Pour les Professionnels de Santé',\n+      badge: 'Recherche & Éducation'\n+    },\n+    technical: 'Basé sur la littérature évaluée par les pairs et des critères diagnostiques validés. Données de sensibilité d\\'études de validation clinique. Consultez toujours les directives actuelles et les recommandations de spécialistes pour les cas complexes.'\n+  }\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758135055806,
+      "end": 1758135055818
+    }
+  }
+}

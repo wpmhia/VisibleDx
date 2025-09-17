@@ -777,5 +777,46 @@ export const da: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering'
+  disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',
+
+  footer: {
+    about: {
+      title: 'Om VisibleDx',
+      description: 'VisibleDx er et evidensbaseret diagnostisk beslutningsstøtteværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at hjælpe klinikere med systematisk evaluering.',
+      badges: {
+        sensitivity: '94% Sensitivitet',
+        evidenceBased: 'Evidensbaseret',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Evidensbase',
+      guidelines: [
+        'CDC ME/CFS Casedefinition (2015)',
+        'NASEM ME/CFS Rapport (2015)',
+        'WHO Long COVID Definition (2021)',
+        'ESC POTS Retningslinjer (2018)',
+        'AAS/EFAS POTS Konsensus (2021)',
+        'NASA Lean Stand Test Protokol'
+      ]
+    },
+    notes: {
+      title: 'Vigtige Noter',
+      items: [
+        'Ikke en erstatning for klinisk vurdering',
+        'Kræver bekræftelse med fysisk undersøgelse',
+        'Overvej patienthistorie og kontekst',
+        'Udeluk røde flag før diagnose',
+        'Konsulter specialister ved komplekse tilfælde',
+        'Overvåg patientrespons på behandling'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Uddannelsesværktøj',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'For Sundhedsprofessionelle',
+      badge: 'Forskning & Uddannelse'
+    },
+    technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'
+  }
 }

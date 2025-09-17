@@ -768,5 +768,46 @@ export const nl: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie'
+  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie',
+
+  footer: {
+    about: {
+      title: 'Over VisibleDx',
+      description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',
+      badges: {
+        sensitivity: '94% Sensitiviteit',
+        evidenceBased: 'Evidence-Based',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Wetenschappelijke Basis',
+      guidelines: [
+        'CDC ME/CVS Casedefinitie (2015)',
+        'NASEM ME/CVS Rapport (2015)',
+        'WHO Long COVID Definitie (2021)',
+        'ESC POTS Richtlijnen (2018)',
+        'AAS/EFAS POTS Consensus (2021)',
+        'NASA Lean Stand Test Protocol'
+      ]
+    },
+    notes: {
+      title: 'Belangrijke Opmerkingen',
+      items: [
+        'Geen vervanging voor klinische beoordeling',
+        'Vereist bevestiging met lichamelijk onderzoek',
+        'Houd rekening met patiëntgeschiedenis en context',
+        'Sluit rode vlaggen uit voor diagnose',
+        'Raadpleeg specialisten bij complexe gevallen',
+        'Monitor patiëntrespons op behandeling'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Educatief Instrument',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'Voor Zorgverleners',
+      badge: 'Onderzoek & Onderwijs'
+    },
+    technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'
+  }
 }

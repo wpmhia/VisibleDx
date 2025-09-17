@@ -1,0 +1,26 @@
+{
+  "id": "prt_959045b99001hdrt0u2EGodDVG",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_012JMt98icgTA4sijJDhxb6d",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "oldString": "        {/* Bottom Footer */}\n        <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n          <div className=\"flex items-center gap-2\">\n            <Stethoscope className=\"h-4 w-4\" />\n            <span>VisibleDx v1.0 - Educational Tool</span>\n          </div>\n          \n          <div className=\"flex items-center gap-4\">\n            <span>© 2024 VisibleDx</span>\n            <span>•</span>\n            <span>For Healthcare Professionals</span>\n            <span>•</span>\n            <Badge variant=\"secondary\" className=\"text-xs\">\n              Research & Education Use\n            </Badge>\n          </div>\n        </div>\n\n        {/* Technical Info */}\n        <div className=\"mt-4 pt-4 border-t text-xs text-gray-400 text-center\">\n          <p>\n            Based on peer-reviewed literature and validated diagnostic criteria. \n            Sensitivity data from clinical validation studies. \n            Always consult current guidelines and specialist recommendations for complex cases.\n          </p>\n        </div>",
+      "newString": "        {/* Bottom Footer */}\n        <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n          <div className=\"flex items-center gap-2\">\n            <Stethoscope className=\"h-4 w-4\" />\n            <span>{t.footer.bottom.version}</span>\n          </div>\n          \n          <div className=\"flex items-center gap-4\">\n            <span>{t.footer.bottom.copyright}</span>\n            <span>•</span>\n            <span>{t.footer.bottom.audienceLabel}</span>\n            <span>•</span>\n            <Badge variant=\"secondary\" className=\"text-xs\">\n              {t.footer.bottom.badge}\n            </Badge>\n          </div>\n        </div>\n\n        {/* Technical Info */}\n        <div className=\"mt-4 pt-4 border-t text-xs text-gray-400 text-center\">\n          <p>\n            {t.footer.technical}\n          </p>\n        </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -71,28 +71,26 @@\n     {/* Bottom Footer */}\n     <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n       <div className=\"flex items-center gap-2\">\n         <Stethoscope className=\"h-4 w-4\" />\n-        <span>VisibleDx v1.0 - Educational Tool</span>\n+        <span>{t.footer.bottom.version}</span>\n       </div>\n       \n       <div className=\"flex items-center gap-4\">\n-        <span>© 2024 VisibleDx</span>\n+        <span>{t.footer.bottom.copyright}</span>\n         <span>•</span>\n-        <span>For Healthcare Professionals</span>\n+        <span>{t.footer.bottom.audienceLabel}</span>\n         <span>•</span>\n         <Badge variant=\"secondary\" className=\"text-xs\">\n-          Research & Education Use\n+          {t.footer.bottom.badge}\n         </Badge>\n       </div>\n     </div>\n \n     {/* Technical Info */}\n     <div className=\"mt-4 pt-4 border-t text-xs text-gray-400 text-center\">\n       <p>\n-        Based on peer-reviewed literature and validated diagnostic criteria. \n-        Sensitivity data from clinical validation studies. \n-        Always consult current guidelines and specialist recommendations for complex cases.\n+        {t.footer.technical}\n       </p>\n     </div>\n   </div>\n </footer>\n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758135089215,
+      "end": 1758135089225
+    }
+  }
+}

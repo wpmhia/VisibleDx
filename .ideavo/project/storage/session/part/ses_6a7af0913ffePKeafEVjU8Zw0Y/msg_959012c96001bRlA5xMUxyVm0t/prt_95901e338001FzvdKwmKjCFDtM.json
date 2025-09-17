@@ -1,0 +1,24 @@
+{
+  "id": "prt_95901e338001FzvdKwmKjCFDtM",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01C7vwmnH2QdjNs3wom9Sw9y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 800
+    },
+    "output": "<file>\n\n</file>",
+    "metadata": {
+      "preview": ""
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134920438,
+      "end": 1758134920440
+    }
+  }
+}

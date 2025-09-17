@@ -1,0 +1,25 @@
+{
+  "id": "prt_95902b325001tGTD1v70x4SPvq",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01ETtXhm8Ym1GkVoHvworeYk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 802,
+      "limit": 5
+    },
+    "output": "<file>\n00803|   disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering'\n00804| }\n</file>",
+    "metadata": {
+      "preview": "  disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering'\n}"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758134973842,
+      "end": 1758134973844
+    }
+  }
+}

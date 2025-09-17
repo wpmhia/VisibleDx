@@ -27,17 +27,15 @@ export default function Disclaimer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Stethoscope className="h-4 w-4 text-blue-600" />
-              <h3 className="font-semibold text-gray-900">About VisibleDx</h3>
+              <h3 className="font-semibold text-gray-900">{t.footer.about.title}</h3>
             </div>
             <p className="text-sm text-gray-600 mb-3">
-              VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, 
-              Long COVID, and POTS. It implements validated criteria from leading medical 
-              organizations to assist clinicians in systematic evaluation.
+              {t.footer.about.description}
             </p>
             <div className="flex flex-wrap gap-1">
-              <Badge variant="outline" className="text-xs">94% Sensitivity</Badge>
-              <Badge variant="outline" className="text-xs">Evidence-Based</Badge>
-              <Badge variant="outline" className="text-xs">Open Source</Badge>
+              <Badge variant="outline" className="text-xs">{t.footer.about.badges.sensitivity}</Badge>
+              <Badge variant="outline" className="text-xs">{t.footer.about.badges.evidenceBased}</Badge>
+              <Badge variant="outline" className="text-xs">{t.footer.about.badges.openSource}</Badge>
             </div>
           </div>
 
@@ -45,15 +43,12 @@ export default function Disclaimer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <BookOpen className="h-4 w-4 text-green-600" />
-              <h3 className="font-semibold text-gray-900">Evidence Base</h3>
+              <h3 className="font-semibold text-gray-900">{t.footer.evidence.title}</h3>
             </div>
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• CDC ME/CFS Case Definition (2015)</li>
-              <li>• NASEM ME/CFS Report (2015)</li>
-              <li>• WHO Long COVID Definition (2021)</li>
-              <li>• ESC POTS Guidelines (2018)</li>
-              <li>• AAS/EFAS POTS Consensus (2021)</li>
-              <li>• NASA Lean Stand Test Protocol</li>
+              {t.footer.evidence.guidelines.map((guideline, index) => (
+                <li key={index}>• {guideline}</li>
+              ))}
             </ul>
           </div>
 
@@ -61,15 +56,12 @@ export default function Disclaimer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Shield className="h-4 w-4 text-red-600" />
-              <h3 className="font-semibold text-gray-900">Important Notes</h3>
+              <h3 className="font-semibold text-gray-900">{t.footer.notes.title}</h3>
             </div>
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Not a substitute for clinical assessment</li>
-              <li>• Requires confirmation with physical exam</li>
-              <li>• Consider patient history and context</li>
-              <li>• Rule out red flags before diagnosis</li>
-              <li>• Consult specialists for complex cases</li>
-              <li>• Monitor patient response to treatment</li>
+              {t.footer.notes.items.map((note, index) => (
+                <li key={index}>• {note}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -80,16 +72,16 @@ export default function Disclaimer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-2">
             <Stethoscope className="h-4 w-4" />
-            <span>VisibleDx v1.0 - Educational Tool</span>
+            <span>{t.footer.bottom.version}</span>
           </div>
           
           <div className="flex items-center gap-4">
-            <span>© 2024 VisibleDx</span>
+            <span>{t.footer.bottom.copyright}</span>
             <span>•</span>
-            <span>For Healthcare Professionals</span>
+            <span>{t.footer.bottom.audienceLabel}</span>
             <span>•</span>
             <Badge variant="secondary" className="text-xs">
-              Research & Education Use
+              {t.footer.bottom.badge}
             </Badge>
           </div>
         </div>
@@ -97,9 +89,7 @@ export default function Disclaimer() {
         {/* Technical Info */}
         <div className="mt-4 pt-4 border-t text-xs text-gray-400 text-center">
           <p>
-            Based on peer-reviewed literature and validated diagnostic criteria. 
-            Sensitivity data from clinical validation studies. 
-            Always consult current guidelines and specialist recommendations for complex cases.
+            {t.footer.technical}
           </p>
         </div>
       </div>

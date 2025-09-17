@@ -1,0 +1,25 @@
+{
+  "id": "prt_95901d642001UhTJStAPte4S3e",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01T1bYpg5FSY2ZQktxy2JBcQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 600,
+      "limit": 50
+    },
+    "output": "<file>\n00601|           'Rapid onset of symptoms',\n00602|           'Viral illness trigger (EBV, COVID, etc.)',\n00603|           'Positive autonomic antibodies (if tested)',\n00604|           'Other autoimmune markers positive'\n00605|         ],\n00606|         treatments: {\n00607|           nonPharmacological: [\n00608|             'Standard POTS measures',\n00609|             'Avoid infection triggers',\n00610|             'Stress management',\n00611|             'Anti-inflammatory diet'\n00612|           ],\n00613|           firstLine: [\n00614|             'Standard POTS medications',\n00615|             'Trial of corticosteroids'\n00616|           ],\n00617|           secondLine: [\n00618|             'IVIG therapy',\n00619|             'Immunosuppressive agents',\n00620|             'Plasmapheresis for severe cases'\n00621|           ]\n00622|         }\n00623|       }\n00624|     },\n00625|     results: {\n00626|       complete: 'POTS Subtype Analysis Complete',\n00627|       description: 'Personalized treatment recommendations based on subtype assessment',\n00628|       primary: 'Primary',\n00629|       likelihood: 'likelihood',\n00630|       criteriaMetTitle: 'Criteria Met',\n00631|       allSubtypeScores: 'All Subtype Scores',\n00632|       nonPharmacological: 'Non-Pharmacological',\n00633|       firstLineRx: 'First-Line Rx',\n00634|       secondLineOptions: 'Second-Line Options',\n00635|       mixedSubtype: 'Mixed Subtype Considerations: This patient also shows features of multiple subtypes. Consider combination therapy approaches and monitor response to initial treatment.',\n00636|       clinicalPearls: 'Clinical Pearls',\n00637|       pearls: [\n00638|         'Start with non-pharmacological interventions for all POTS subtypes',\n00639|         'Begin medications at low doses and titrate slowly',\n00640|         'Monitor response and adjust treatment based on symptom improvement',\n00641|         'Consider specialist referral for complex cases or treatment failures',\n00642|         'Re-assess subtype if treatment response is poor'\n00643|       ],\n00644|       reassess: 'Reassess Subtype',\n00645|       downloadPlan: 'Download Treatment Plan'\n00646|     }\n00647|   },\n00648| \n00649|   newPatient: {\n00650|     title: 'New Patient Assessment',\n\n(File has more lines. Use 'offset' parameter to read beyond line 650)\n</file>",
+    "metadata": {
+      "preview": "          'Rapid onset of symptoms',\n          'Viral illness trigger (EBV, COVID, etc.)',\n          'Positive autonomic antibodies (if tested)',\n          'Other autoimmune markers positive'\n        ],\n        treatments: {\n          nonPharmacological: [\n            'Standard POTS measures',\n            'Avoid infection triggers',\n            'Stress management',\n            'Anti-inflammatory diet'\n          ],\n          firstLine: [\n            'Standard POTS medications',\n            'Trial of corticosteroids'\n          ],\n          secondLine: [\n            'IVIG therapy',\n            'Immunosuppressive agents',\n            'Plasmapheresis for severe cases'"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134917314,
+      "end": 1758134917316
+    }
+  }
+}

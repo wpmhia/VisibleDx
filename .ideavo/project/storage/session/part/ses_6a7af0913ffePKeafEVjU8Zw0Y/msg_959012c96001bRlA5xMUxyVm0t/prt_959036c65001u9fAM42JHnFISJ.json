@@ -1,0 +1,35 @@
+{
+  "id": "prt_959036c65001u9fAM42JHnFISJ",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01LMtw6P3qpWsVoJtx1fqoyE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/no.ts",
+          "oldString": "  disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering'\n}",
+          "newString": "  disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering',\n\n  footer: {\n    about: {\n      title: 'Om VisibleDx',\n      description: 'VisibleDx er et evidensbasert diagnostisk beslutningsstøtteverktøy for ME/CFS, Long COVID og POTS. Det implementerer validerte kriterier fra ledende medisinske organisasjoner for å hjelpe klinikere med systematisk evaluering.',\n      badges: {\n        sensitivity: '94% Sensitivitet',\n        evidenceBased: 'Evidensbasert',\n        openSource: 'Open Source'\n      }\n    },\n    evidence: {\n      title: 'Evidensgrunnlag',\n      guidelines: [\n        'CDC ME/CFS Casedefinisjon (2015)',\n        'NASEM ME/CFS Rapport (2015)',\n        'WHO Long COVID Definisjon (2021)',\n        'ESC POTS Retningslinjer (2018)',\n        'AAS/EFAS POTS Konsensus (2021)',\n        'NASA Lean Stand Test Protokoll'\n      ]\n    },\n    notes: {\n      title: 'Viktige Merknader',\n      items: [\n        'Ikke en erstatning for klinisk vurdering',\n        'Krever bekreftelse med fysisk undersøkelse',\n        'Vurder pasienthistorie og kontekst',\n        'Utelukk røde flagg før diagnose',\n        'Konsulter spesialister for komplekse tilfeller',\n        'Overvåk pasientrespons på behandling'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Utdanningsverktøy',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'For Helsepersonell',\n      badge: 'Forskning & Utdanning'\n    },\n    technical: 'Basert på peer-reviewed litteratur og validerte diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter alltid gjeldende retningslinjer og spesialistanbefalinger for komplekse tilfeller.'\n  }\n}"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/no.ts\n===================================================================\n--- /home/user/project/lib/translations/no.ts\n+++ /home/user/project/lib/translations/no.ts\n@@ -799,6 +799,47 @@\n     no: 'Norsk',\n     fr: 'Français'\n   },\n \n-  disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering'\n+  disclaimer: 'Dette verktøyet er kun for utdanningsformål og erstatter ikke profesjonell medisinsk vurdering eller klinisk evaluering',\n+\n+  footer: {\n+    about: {\n+      title: 'Om VisibleDx',\n+      description: 'VisibleDx er et evidensbasert diagnostisk beslutningsstøtteverktøy for ME/CFS, Long COVID og POTS. Det implementerer validerte kriterier fra ledende medisinske organisasjoner for å hjelpe klinikere med systematisk evaluering.',\n+      badges: {\n+        sensitivity: '94% Sensitivitet',\n+        evidenceBased: 'Evidensbasert',\n+        openSource: 'Open Source'\n+      }\n+    },\n+    evidence: {\n+      title: 'Evidensgrunnlag',\n+      guidelines: [\n+        'CDC ME/CFS Casedefinisjon (2015)',\n+        'NASEM ME/CFS Rapport (2015)',\n+        'WHO Long COVID Definisjon (2021)',\n+        'ESC POTS Retningslinjer (2018)',\n+        'AAS/EFAS POTS Konsensus (2021)',\n+        'NASA Lean Stand Test Protokoll'\n+      ]\n+    },\n+    notes: {\n+      title: 'Viktige Merknader',\n+      items: [\n+        'Ikke en erstatning for klinisk vurdering',\n+        'Krever bekreftelse med fysisk undersøkelse',\n+        'Vurder pasienthistorie og kontekst',\n+        'Utelukk røde flagg før diagnose',\n+        'Konsulter spesialister for komplekse tilfeller',\n+        'Overvåk pasientrespons på behandling'\n+      ]\n+    },\n+    bottom: {\n+      version: 'VisibleDx v1.0 - Utdanningsverktøy',\n+      copyright: '© 2024 VisibleDx',\n+      audienceLabel: 'For Helsepersonell',\n+      badge: 'Forskning & Utdanning'\n+    },\n+    technical: 'Basert på peer-reviewed litteratur og validerte diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter alltid gjeldende retningslinjer og spesialistanbefalinger for komplekse tilfeller.'\n+  }\n }\n\\ No newline at end of file\n"
+        }
+      ]
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758135029435,
+      "end": 1758135029441
+    }
+  }
+}

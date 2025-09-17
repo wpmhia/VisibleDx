@@ -800,5 +800,46 @@ export const fr: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\'évaluation clinique'
+  disclaimer: 'Cet outil est uniquement à des fins éducatives et ne remplace pas le jugement médical professionnel ou l\'évaluation clinique',
+
+  footer: {
+    about: {
+      title: 'À propos de VisibleDx',
+      description: 'VisibleDx est un outil d\'aide à la décision diagnostique basé sur les preuves pour ME/SFC, COVID Long et POTS. Il implémente des critères validés d\'organisations médicales de premier plan pour aider les cliniciens dans l\'évaluation systématique.',
+      badges: {
+        sensitivity: '94% Sensibilité',
+        evidenceBased: 'Basé sur les Preuves',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Base de Preuves',
+      guidelines: [
+        'Définition de Cas CDC ME/SFC (2015)',
+        'Rapport NASEM ME/SFC (2015)',
+        'Définition OMS COVID Long (2021)',
+        'Directives ESC POTS (2018)',
+        'Consensus AAS/EFAS POTS (2021)',
+        'Protocole NASA Lean Stand Test'
+      ]
+    },
+    notes: {
+      title: 'Notes Importantes',
+      items: [
+        'Pas un substitut à l\'évaluation clinique',
+        'Nécessite confirmation par examen physique',
+        'Considérer l\'historique et le contexte du patient',
+        'Exclure les drapeaux rouges avant diagnostic',
+        'Consulter des spécialistes pour les cas complexes',
+        'Surveiller la réponse du patient au traitement'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Outil Éducatif',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'Pour les Professionnels de Santé',
+      badge: 'Recherche & Éducation'
+    },
+    technical: 'Basé sur la littérature évaluée par les pairs et des critères diagnostiques validés. Données de sensibilité d\'études de validation clinique. Consultez toujours les directives actuelles et les recommandations de spécialistes pour les cas complexes.'
+  }
 }

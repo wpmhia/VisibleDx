@@ -563,6 +563,34 @@ export interface Translation {
 
   // Disclaimer
   disclaimer: string
+
+  // Footer
+  footer: {
+    about: {
+      title: string
+      description: string
+      badges: {
+        sensitivity: string
+        evidenceBased: string
+        openSource: string
+      }
+    }
+    evidence: {
+      title: string
+      guidelines: string[]
+    }
+    notes: {
+      title: string
+      items: string[]
+    }
+    bottom: {
+      version: string
+      copyright: string
+      audienceLabel: string
+      badge: string
+    }
+    technical: string
+  }
 }
 
 export type SupportedLanguage = 'en' | 'nl' | 'da' | 'de' | 'sv' | 'no' | 'fr'

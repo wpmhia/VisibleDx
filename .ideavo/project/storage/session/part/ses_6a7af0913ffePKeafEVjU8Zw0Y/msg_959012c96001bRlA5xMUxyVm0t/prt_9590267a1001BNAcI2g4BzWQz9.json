@@ -1,0 +1,26 @@
+{
+  "id": "prt_9590267a1001BNAcI2g4BzWQz9",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WsJvUkqKrJNFydtd7gMHKP",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie'\n}",
+      "newString": "  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie',\n\n  footer: {\n    about: {\n      title: 'Over VisibleDx',\n      description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',\n      badges: {\n        sensitivity: '94% Sensitiviteit',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },\n    evidence: {\n      title: 'Wetenschappelijke Basis',\n      guidelines: [\n        'CDC ME/CVS Casedefinitie (2015)',\n        'NASEM ME/CVS Rapport (2015)',\n        'WHO Long COVID Definitie (2021)',\n        'ESC POTS Richtlijnen (2018)',\n        'AAS/EFAS POTS Consensus (2021)',\n        'NASA Lean Stand Test Protocol'\n      ]\n    },\n    notes: {\n      title: 'Belangrijke Opmerkingen',\n      items: [\n        'Geen vervanging voor klinische beoordeling',\n        'Vereist bevestiging met lichamelijk onderzoek',\n        'Houd rekening met patiëntgeschiedenis en context',\n        'Sluit rode vlaggen uit voor diagnose',\n        'Raadpleeg specialisten bij complexe gevallen',\n        'Monitor patiëntrespons op behandeling'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Educatief Instrument',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'Voor Zorgverleners',\n      badge: 'Onderzoek & Onderwijs'\n    },\n    technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -767,6 +767,47 @@\n     no: 'Norsk',\n     fr: 'Français'\n   },\n \n-  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie'\n+  disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie',\n+\n+  footer: {\n+    about: {\n+      title: 'Over VisibleDx',\n+      description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',\n+      badges: {\n+        sensitivity: '94% Sensitiviteit',\n+        evidenceBased: 'Evidence-Based',\n+        openSource: 'Open Source'\n+      }\n+    },\n+    evidence: {\n+      title: 'Wetenschappelijke Basis',\n+      guidelines: [\n+        'CDC ME/CVS Casedefinitie (2015)',\n+        'NASEM ME/CVS Rapport (2015)',\n+        'WHO Long COVID Definitie (2021)',\n+        'ESC POTS Richtlijnen (2018)',\n+        'AAS/EFAS POTS Consensus (2021)',\n+        'NASA Lean Stand Test Protocol'\n+      ]\n+    },\n+    notes: {\n+      title: 'Belangrijke Opmerkingen',\n+      items: [\n+        'Geen vervanging voor klinische beoordeling',\n+        'Vereist bevestiging met lichamelijk onderzoek',\n+        'Houd rekening met patiëntgeschiedenis en context',\n+        'Sluit rode vlaggen uit voor diagnose',\n+        'Raadpleeg specialisten bij complexe gevallen',\n+        'Monitor patiëntrespons op behandeling'\n+      ]\n+    },\n+    bottom: {\n+      version: 'VisibleDx v1.0 - Educatief Instrument',\n+      copyright: '© 2024 VisibleDx',\n+      audienceLabel: 'Voor Zorgverleners',\n+      badge: 'Onderzoek & Onderwijs'\n+    },\n+    technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'\n+  }\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758134959163,
+      "end": 1758134959175
+    }
+  }
+}

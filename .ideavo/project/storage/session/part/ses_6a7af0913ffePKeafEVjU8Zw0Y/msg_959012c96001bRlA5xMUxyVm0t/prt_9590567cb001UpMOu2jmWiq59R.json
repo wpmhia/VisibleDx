@@ -1,0 +1,18 @@
+{
+  "id": "prt_9590567cb001UpMOu2jmWiq59R",
+  "messageID": "msg_959012c96001bRlA5xMUxyVm0t",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(i18n): implement full footer multilingual support",
+  "cost": 0.6167533499999999,
+  "tokens": {
+    "input": 0,
+    "output": 398,
+    "reasoning": 0,
+    "cache": {
+      "write": 507,
+      "read": 41192
+    }
+  }
+}

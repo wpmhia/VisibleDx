@@ -800,5 +800,46 @@ export const sv: Translation = {
     fr: 'Français'
   },
 
-  disclaimer: 'Detta verktyg är endast för utbildningsändamål och ersätter inte professionell medicinsk bedömning eller klinisk utvärdering'
+  disclaimer: 'Detta verktyg är endast för utbildningsändamål och ersätter inte professionell medicinsk bedömning eller klinisk utvärdering',
+
+  footer: {
+    about: {
+      title: 'Om VisibleDx',
+      description: 'VisibleDx är ett evidensbaserat diagnostiskt beslutstödverktyg för ME/CFS, Long COVID och POTS. Det implementerar validerade kriterier från ledande medicinska organisationer för att hjälpa kliniker med systematisk utvärdering.',
+      badges: {
+        sensitivity: '94% Känslighet',
+        evidenceBased: 'Evidensbaserat',
+        openSource: 'Open Source'
+      }
+    },
+    evidence: {
+      title: 'Evidensbas',
+      guidelines: [
+        'CDC ME/CFS Falldefinition (2015)',
+        'NASEM ME/CFS Rapport (2015)',
+        'WHO Long COVID Definition (2021)',
+        'ESC POTS Riktlinjer (2018)',
+        'AAS/EFAS POTS Konsensus (2021)',
+        'NASA Lean Stand Test Protokoll'
+      ]
+    },
+    notes: {
+      title: 'Viktiga Anteckningar',
+      items: [
+        'Inte en ersättning för klinisk bedömning',
+        'Kräver bekräftelse med fysisk undersökning',
+        'Överväg patienthistoria och sammanhang',
+        'Uteslut röda flaggor innan diagnos',
+        'Konsultera specialister för komplexa fall',
+        'Övervaka patientrespons på behandling'
+      ]
+    },
+    bottom: {
+      version: 'VisibleDx v1.0 - Utbildningsverktyg',
+      copyright: '© 2024 VisibleDx',
+      audienceLabel: 'För Hälso- och sjukvårdspersonal',
+      badge: 'Forskning & Utbildning'
+    },
+    technical: 'Baserat på peer-reviewed litteratur och validerade diagnostiska kriterier. Känslighetsdata från kliniska valideringsstudier. Konsultera alltid aktuella riktlinjer och specialistrekommendationer för komplexa fall.'
+  }
 }
