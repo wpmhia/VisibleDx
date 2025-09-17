@@ -1,0 +1,25 @@
+{
+  "id": "prt_95933eab1001c9eWIx4VCTYYBq",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017wRCFpGDQ6GbrXWw541FYL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 400,
+      "limit": 20
+    },
+    "output": "<file>\n00401|         none: 'Geen',\n00402|         mild: 'Milde PEM',\n00403|         moderate: 'Matige PEM',\n00404|         severe: 'Ernstige PEM'\n00405|       },\n00406|       clinicalInterpretation: 'Klinische Interpretatie',\n00407|       recommendations: {\n00408|         severe: [\n00409|           'Strikte activiteitenpacing essentieel',\n00410|           'Overweeg invaliditeitsevaluatie',\n00411|           'Specialist ME/CVS kliniek verwijzing'\n00412|         ],\n00413|         moderate: [\n00414|           'Implementeer zorgvuldige activiteitenpacing',\n00415|           'Monitor voor symptoomprogressie',\n00416|           'Overweeg ergotherapie'\n00417|         ],\n00418|         mild: [\n00419|           'Begin voorzichtige activiteitenpacing',\n00420|           'Educatie over PEM herkenning',\n\n(File has more lines. Use 'offset' parameter to read beyond line 420)\n</file>",
+    "metadata": {
+      "preview": "        none: 'Geen',\n        mild: 'Milde PEM',\n        moderate: 'Matige PEM',\n        severe: 'Ernstige PEM'\n      },\n      clinicalInterpretation: 'Klinische Interpretatie',\n      recommendations: {\n        severe: [\n          'Strikte activiteitenpacing essentieel',\n          'Overweeg invaliditeitsevaluatie',\n          'Specialist ME/CVS kliniek verwijzing'\n        ],\n        moderate: [\n          'Implementeer zorgvuldige activiteitenpacing',\n          'Monitor voor symptoomprogressie',\n          'Overweeg ergotherapie'\n        ],\n        mild: [\n          'Begin voorzichtige activiteitenpacing',\n          'Educatie over PEM herkenning',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758138199357,
+      "end": 1758138199359
+    }
+  }
+}

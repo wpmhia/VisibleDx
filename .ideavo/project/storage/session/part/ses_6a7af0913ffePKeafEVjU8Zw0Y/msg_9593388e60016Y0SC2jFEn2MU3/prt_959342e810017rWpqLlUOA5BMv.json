@@ -1,0 +1,25 @@
+{
+  "id": "prt_959342e810017rWpqLlUOA5BMv",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_016PnhFL7bbnzmRkMCzrXgcv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "criteria:",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "Found 100 matches\n/home/user/project/lib/translations/fr.ts:\n  Line 38:     criteria: 'critères',\n  Line 103:         criteria: 'CDC/NASEM 2015',\n  Line 108:         criteria: 'WHO/NASEM 2024',\n  Line 113:         criteria: 'ESC 2018/AAS-EFAS 2021',\n  Line 466:   criteria: {\n  Line 472:       criteria: [\n  Line 483:       criteria: [\n  Line 498:       criteria: [\n  Line 549:         criteria: [\n  Line 576:         criteria: [\n  Line 604:         criteria: [\n  Line 632:         criteria: [\n  Line 752:       criteria: [\n  Line 763:       criteria: [\n  Line 774:       criteria: [\n\n/home/user/project/lib/translations/no.ts:\n  Line 38:     criteria: 'kriterier',\n  Line 103:         criteria: 'CDC/NASEM 2015',\n  Line 108:         criteria: 'WHO/NASEM 2024',\n  Line 113:         criteria: 'ESC 2018/AAS-EFAS 2021',\n  Line 466:   criteria: {\n  Line 472:       criteria: [\n  Line 483:       criteria: [\n  Line 498:       criteria: [\n  Line 549:         criteria: [\n  Line 576:         criteria: [\n  Line 604:         criteria: [\n  Line 632:         criteria: [\n  Line 752:       criteria: [\n  Line 763:       criteria: [\n  Line 774:       criteria: [\n\n/home/user/project/lib/translations/sv.ts:\n  Line 38:     criteria: 'kriterier',\n  Line 103:         criteria: 'CDC/NASEM 2015',\n  Line 108:         criteria: 'WHO/NASEM 2024',\n  Line 113:         criteria: 'ESC 2018/AAS-EFAS 2021',\n  Line 466:   criteria: {\n  Line 472:       criteria: [\n  Line 483:       criteria: [\n  Line 498:       criteria: [\n  Line 549:         criteria: [\n  Line 576:         criteria: [\n  Line 604:         criteria: [\n  Line 632:         criteria: [\n  Line 752:       criteria: [\n  Line 763:       criteria: [\n  Line 774:       criteria: [\n\n/home/user/project/lib/translations/de.ts:\n  Line 38:     criteria: 'Kriterien',\n  Line 103:         criteria: 'CDC/NASEM 2015 + IOM Kriterien',\n  Line 108:         criteria: 'WHO + NASEM 2024 Kriterien',\n  Line 113:         criteria: 'ESC 2018 + AAS/EFAS 2021',\n  Line 439:   criteria: {\n  Line 445:       criteria: [\n  Line 456:       criteria: [\n  Line 471:       criteria: [\n  Line 523:         criteria: [\n  Line 550:         criteria: [\n  Line 578:         criteria: [\n  Line 606:         criteria: [\n  Line 726:       criteria: [\n  Line 737:       criteria: [\n  Line 748:       criteria: [\n\n/home/user/project/lib/translations/da.ts:\n  Line 38:     criteria: 'Kriterier',\n  Line 103:         criteria: 'CDC/NASEM 2015 + IOM kriterier',\n  Line 108:         criteria: 'WHO + NASEM 2024 kriterier',\n  Line 113:         criteria: 'ESC 2018 + AAS/EFAS 2021',\n  Line 442:   criteria: {\n  Line 448:       criteria: [\n  Line 459:       criteria: [\n  Line 474:       criteria: [\n  Line 526:         criteria: [\n  Line 553:         criteria: [\n  Line 581:         criteria: [\n  Line 609:         criteria: [\n  Line 729:       criteria: [\n  Line 740:       criteria: [\n  Line 751:       criteria: [\n\n/home/user/project/lib/translations/nl.ts:\n  Line 38:     criteria: 'Criteria',\n  Line 103:         criteria: 'CDC/NASEM 2015 + IOM criteria',\n  Line 108:         criteria: 'WHO + NASEM 2024 criteria',\n  Line 113:         criteria: 'ESC 2018 + AAS/EFAS 2021',\n  Line 434:   criteria: {\n  Line 440:       criteria: [\n  Line 451:       criteria: [\n  Line 466:       criteria: [\n  Line 517:         criteria: [\n  Line 544:         criteria: [\n  Line 572:         criteria: [\n  Line 600:         criteria: [\n  Line 720:       criteria: [\n  Line 731:       criteria: [\n  Line 742:       criteria: [\n\n/home/user/project/lib/translations/en.ts:\n  Line 38:     criteria: 'Criteria',\n  Line 103:         criteria: 'CDC/NASEM 2015 + IOM criteria',\n  Line 108:         criteria: 'WHO + NASEM 2024 criteria',\n  Line 113:         criteria: 'ESC 2018 + AAS/EFAS 2021',\n  Line 434:   criteria: {\n  Line 440:       criteria: [\n  Line 451:       criteria: [\n  Line 466:       criteria: [\n  Line 517:         criteria: [\n  Line 544:         criteria: [\n\n(Results are truncated. Consider using a more specific path or pattern.)",
+    "metadata": {
+      "matches": 100,
+      "truncated": true
+    },
+    "title": "criteria:",
+    "time": {
+      "start": 1758138216473,
+      "end": 1758138216496
+    }
+  }
+}

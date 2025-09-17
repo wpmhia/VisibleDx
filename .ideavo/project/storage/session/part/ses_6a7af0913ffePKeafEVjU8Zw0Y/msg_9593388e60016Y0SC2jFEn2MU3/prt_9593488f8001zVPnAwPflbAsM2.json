@@ -1,0 +1,26 @@
+{
+  "id": "prt_9593488f8001zVPnAwPflbAsM2",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GAf8bJAtYmkfxG9d12ZhSq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)\n\n  const handleMECFSChange = (id: string, checked: boolean) => {",
+      "newString": "  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)\n\n  // Update criteria descriptions when language changes\n  useEffect(() => {\n    setMecfsChecked(prev => {\n      const newCriteria = getMECFSCriteria()\n      return prev.map((item, index) => ({\n        ...item,\n        description: newCriteria[index].description\n      }))\n    })\n  }, [t])\n\n  useEffect(() => {\n    setLongCovidChecked(prev => {\n      const newCriteria = getLongCovidCriteria()\n      return prev.map((item, index) => ({\n        ...item,\n        description: newCriteria[index].description\n      }))\n    })\n  }, [t])\n\n  useEffect(() => {\n    setPotsChecked(prev => {\n      const newCriteria = getPOTSCriteria()\n      return prev.map((item, index) => ({\n        ...item,\n        description: newCriteria[index].description\n      }))\n    })\n  }, [t])\n\n  const handleMECFSChange = (id: string, checked: boolean) => {"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -49,8 +49,39 @@\n const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())\n const [covidTiming, setCovidTiming] = useState<string>('')\n const [isComplete, setIsComplete] = useState(false)\n \n+// Update criteria descriptions when language changes\n+useEffect(() => {\n+  setMecfsChecked(prev => {\n+    const newCriteria = getMECFSCriteria()\n+    return prev.map((item, index) => ({\n+      ...item,\n+      description: newCriteria[index].description\n+    }))\n+  })\n+}, [t])\n+\n+useEffect(() => {\n+  setLongCovidChecked(prev => {\n+    const newCriteria = getLongCovidCriteria()\n+    return prev.map((item, index) => ({\n+      ...item,\n+      description: newCriteria[index].description\n+    }))\n+  })\n+}, [t])\n+\n+useEffect(() => {\n+  setPotsChecked(prev => {\n+    const newCriteria = getPOTSCriteria()\n+    return prev.map((item, index) => ({\n+      ...item,\n+      description: newCriteria[index].description\n+    }))\n+  })\n+}, [t])\n+\n const handleMECFSChange = (id: string, checked: boolean) => {\n   setMecfsChecked(prev => prev.map(item => \n     item.id === id ? { ...item, met: checked } : item\n   ))\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758138243341,
+      "end": 1758138243356
+    }
+  }
+}

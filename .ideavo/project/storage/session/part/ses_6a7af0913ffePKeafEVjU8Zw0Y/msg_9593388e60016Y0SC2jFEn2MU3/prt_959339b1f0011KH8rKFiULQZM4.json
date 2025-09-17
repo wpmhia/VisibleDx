@@ -1,0 +1,11 @@
+{
+  "id": "prt_959339b1f0011KH8rKFiULQZM4",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "You're absolutely right! I can see that in the Criteria Engine page, the checkbox items are still showing in English instead of Dutch, even though the titles and descriptions are properly translated. Let me investigate and fix this issue.",
+  "time": {
+    "start": 1758138179575,
+    "end": 1758138179575
+  }
+}

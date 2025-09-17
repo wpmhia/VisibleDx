@@ -1,0 +1,11 @@
+{
+  "id": "prt_95934864c001qY160MUq3fO5Ie",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I'll add the useEffect hooks right after the state declarations and before the handler functions:",
+  "time": {
+    "start": 1758138239222,
+    "end": 1758138239222
+  }
+}

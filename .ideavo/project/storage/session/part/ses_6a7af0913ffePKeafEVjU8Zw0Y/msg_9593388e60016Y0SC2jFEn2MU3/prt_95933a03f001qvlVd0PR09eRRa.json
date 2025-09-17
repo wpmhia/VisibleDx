@@ -1,0 +1,61 @@
+{
+  "id": "prt_95933a03f001qvlVd0PR09eRRa",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Jv3GYozn1fSuwdxzHSHT47",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Investigate why criteria engine checkboxes show English text",
+          "status": "pending",
+          "priority": "high",
+          "id": "criteria-fix-1"
+        },
+        {
+          "content": "Fix criteria engine checkbox translations",
+          "status": "pending",
+          "priority": "high",
+          "id": "criteria-fix-2"
+        },
+        {
+          "content": "Test and verify all criteria checkboxes are multilingual",
+          "status": "pending",
+          "priority": "medium",
+          "id": "criteria-fix-3"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Investigate why criteria engine checkboxes show English text\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"criteria-fix-1\"\n  },\n  {\n    \"content\": \"Fix criteria engine checkbox translations\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"criteria-fix-2\"\n  },\n  {\n    \"content\": \"Test and verify all criteria checkboxes are multilingual\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"criteria-fix-3\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Investigate why criteria engine checkboxes show English text",
+          "status": "pending",
+          "priority": "high",
+          "id": "criteria-fix-1"
+        },
+        {
+          "content": "Fix criteria engine checkbox translations",
+          "status": "pending",
+          "priority": "high",
+          "id": "criteria-fix-2"
+        },
+        {
+          "content": "Test and verify all criteria checkboxes are multilingual",
+          "status": "pending",
+          "priority": "medium",
+          "id": "criteria-fix-3"
+        }
+      ]
+    },
+    "title": "3 todos",
+    "time": {
+      "start": 1758138181594,
+      "end": 1758138181638
+    }
+  }
+}

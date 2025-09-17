@@ -1,0 +1,25 @@
+{
+  "id": "prt_959341bb4001RvXdRljhazuqg3",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01BTh3QhvRpj17d1YYvwZpxZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "criteria:\"",
+      "path": "/home/user/project/lib/translations"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "criteria:\"",
+    "time": {
+      "start": 1758138211730,
+      "end": 1758138211747
+    }
+  }
+}

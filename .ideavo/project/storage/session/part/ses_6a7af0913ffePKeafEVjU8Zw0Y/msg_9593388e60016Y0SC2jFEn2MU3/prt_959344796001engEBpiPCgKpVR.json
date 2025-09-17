@@ -1,0 +1,11 @@
+{
+  "id": "prt_959344796001engEBpiPCgKpVR",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Great! I can see that the Dutch translations exist and are correct. The issue is indeed that the component state is not updating when the language changes. I need to add a `useEffect` to handle language changes.",
+  "time": {
+    "start": 1758138223774,
+    "end": 1758138223774
+  }
+}

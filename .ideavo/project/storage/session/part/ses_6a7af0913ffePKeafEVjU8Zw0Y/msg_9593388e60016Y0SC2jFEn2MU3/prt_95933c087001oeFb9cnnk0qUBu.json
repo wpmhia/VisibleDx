@@ -1,0 +1,11 @@
+{
+  "id": "prt_95933c087001oeFb9cnnk0qUBu",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The issue is that the criteria engine component is using the translation arrays correctly to create the initial state, but there's a problem with how the state is being updated when the language changes. Let me examine the criteria engine implementation:",
+  "time": {
+    "start": 1758138189240,
+    "end": 1758138189240
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "prt_959354c2e001b9rBs4huvnGIj3",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01781phNrWSM6PaE5kGFBKnU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Investigate why criteria engine checkboxes show English text",
+          "status": "completed",
+          "priority": "high",
+          "id": "criteria-fix-1"
+        },
+        {
+          "content": "Fix criteria engine checkbox translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "criteria-fix-2"
+        },
+        {
+          "content": "Test and verify all criteria checkboxes are multilingual",
+          "status": "completed",
+          "priority": "medium",
+          "id": "criteria-fix-3"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Investigate why criteria engine checkboxes show English text\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"criteria-fix-1\"\n  },\n  {\n    \"content\": \"Fix criteria engine checkbox translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"criteria-fix-2\"\n  },\n  {\n    \"content\": \"Test and verify all criteria checkboxes are multilingual\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"criteria-fix-3\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Investigate why criteria engine checkboxes show English text",
+          "status": "completed",
+          "priority": "high",
+          "id": "criteria-fix-1"
+        },
+        {
+          "content": "Fix criteria engine checkbox translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "criteria-fix-2"
+        },
+        {
+          "content": "Test and verify all criteria checkboxes are multilingual",
+          "status": "completed",
+          "priority": "medium",
+          "id": "criteria-fix-3"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758138290363,
+      "end": 1758138290391
+    }
+  }
+}

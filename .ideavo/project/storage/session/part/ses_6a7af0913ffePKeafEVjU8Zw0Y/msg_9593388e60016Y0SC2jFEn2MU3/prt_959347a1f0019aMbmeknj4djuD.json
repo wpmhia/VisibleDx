@@ -1,0 +1,25 @@
+{
+  "id": "prt_959347a1f0019aMbmeknj4djuD",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LiarDzc3uLnU8JFGYyxBAY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 50,
+      "limit": 20
+    },
+    "output": "<file>\n00051|   const [isComplete, setIsComplete] = useState(false)\n00052| \n00053|   const handleMECFSChange = (id: string, checked: boolean) => {\n00054|     setMecfsChecked(prev => prev.map(item => \n00055|       item.id === id ? { ...item, met: checked } : item\n00056|     ))\n00057|   }\n00058| \n00059|   const handleLongCovidChange = (id: string, checked: boolean) => {\n00060|     setLongCovidChecked(prev => prev.map(item => \n00061|       item.id === id ? { ...item, met: checked } : item\n00062|     ))\n00063|   }\n00064| \n00065|   const handlePOTSChange = (id: string, checked: boolean) => {\n00066|     setPotsChecked(prev => prev.map(item => \n00067|       item.id === id ? { ...item, met: checked } : item\n00068|     ))\n00069|   }\n00070| \n\n(File has more lines. Use 'offset' parameter to read beyond line 70)\n</file>",
+    "metadata": {
+      "preview": "  const [isComplete, setIsComplete] = useState(false)\n\n  const handleMECFSChange = (id: string, checked: boolean) => {\n    setMecfsChecked(prev => prev.map(item => \n      item.id === id ? { ...item, met: checked } : item\n    ))\n  }\n\n  const handleLongCovidChange = (id: string, checked: boolean) => {\n    setLongCovidChecked(prev => prev.map(item => \n      item.id === id ? { ...item, met: checked } : item\n    ))\n  }\n\n  const handlePOTSChange = (id: string, checked: boolean) => {\n    setPotsChecked(prev => prev.map(item => \n      item.id === id ? { ...item, met: checked } : item\n    ))\n  }\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758138236058,
+      "end": 1758138236060
+    }
+  }
+}

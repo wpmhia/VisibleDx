@@ -1,0 +1,11 @@
+{
+  "id": "prt_95933d2b5001ONVi1ONzecTHwc",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I found the issue! The problem is that the state is initialized only once with `useState(() => getMECFSCriteria())`, but when the language changes, the state doesn't update to reflect the new translations. The descriptions remain in the original language.\n\nI need to add a `useEffect` to update the state when the language changes. Let me check if there are any effects in the component:",
+  "time": {
+    "start": 1758138194709,
+    "end": 1758138194709
+  }
+}

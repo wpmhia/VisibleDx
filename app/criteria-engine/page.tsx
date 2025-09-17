@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -49,6 +49,37 @@ export default function CriteriaEngine() {
   const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())
   const [covidTiming, setCovidTiming] = useState<string>('')
   const [isComplete, setIsComplete] = useState(false)
+
+  // Update criteria descriptions when language changes
+  useEffect(() => {
+    setMecfsChecked(prev => {
+      const newCriteria = getMECFSCriteria()
+      return prev.map((item, index) => ({
+        ...item,
+        description: newCriteria[index].description
+      }))
+    })
+  }, [t])
+
+  useEffect(() => {
+    setLongCovidChecked(prev => {
+      const newCriteria = getLongCovidCriteria()
+      return prev.map((item, index) => ({
+        ...item,
+        description: newCriteria[index].description
+      }))
+    })
+  }, [t])
+
+  useEffect(() => {
+    setPotsChecked(prev => {
+      const newCriteria = getPOTSCriteria()
+      return prev.map((item, index) => ({
+        ...item,
+        description: newCriteria[index].description
+      }))
+    })
+  }, [t])
 
   const handleMECFSChange = (id: string, checked: boolean) => {
     setMecfsChecked(prev => prev.map(item => 

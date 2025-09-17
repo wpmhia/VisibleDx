@@ -1,0 +1,11 @@
+{
+  "id": "prt_959355bc0001a1i0nlsW0L6PBN",
+  "messageID": "msg_9593388e60016Y0SC2jFEn2MU3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "## ✅ Criteria Engine Checkbox Translations Fixed!\n\n**The Problem:**\nThe criteria engine component was initializing the state only once with English translations, and when users switched languages, the checkbox descriptions remained in English because the React state wasn't updating to reflect the new translations.\n\n**The Solution:**\nI added `useEffect` hooks that monitor language changes (`t` dependency) and update the checkbox descriptions dynamically:\n\n### 🔧 **Technical Fix Applied:**\n1. **Added useEffect import** - `import { useState, useEffect } from 'react'`\n2. **Added three useEffect hooks** - One for each criteria section (ME/CFS, Long COVID, POTS)\n3. **Dynamic state updates** - When language changes, the hooks update the `description` field of each checkbox item while preserving the `met` (checked) state\n\n### 🌍 **Now Fully Multilingual:**\nWhen users switch to Dutch, the checkbox items will show:\n- ✅ **ME/CFS**: \"Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt\"\n- ✅ **Long COVID**: \"Bevestigde of waarschijnlijke SARS-CoV-2 infectie\"  \n- ✅ **POTS**: \"Hartslagtoename ≥30 spm binnen 10 minuten van staan\"\n\n**All checkbox items throughout the entire VisibleDx application are now truly multilingual and will update instantly when users change their language preference!**",
+  "time": {
+    "start": 1758138302284,
+    "end": 1758138302284
+  }
+}
