@@ -1,0 +1,26 @@
+{
+  "id": "prt_958710444001vIYpLfRa5NWTlP",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015mtL6sAdxgC5oxdnvgZ8Kb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "const modules = [\n  {\n    id: 'quick-screen',\n    title: 'Quick-Screen',\n    description: '16 yes/no questions - 2 min assessment',\n    icon: Clock,\n    sensitivity: '0.92',\n    route: '/quick-screen'\n  },\n  {\n    id: 'red-flag',\n    title: 'Red-flag Checker',\n    description: 'Lab suggestions to rule out explanatory disease',\n    icon: FileText,\n    route: '/red-flag-checker'\n  },\n  {\n    id: 'stand-test',\n    title: 'Stand-Test Pro',\n    description: '10-min NASA Lean protocol with HR monitoring',\n    icon: Heart,\n    route: '/stand-test'\n  },\n  {\n    id: 'pem-quest',\n    title: 'PEM-Quest',\n    description: 'Post-Exertional Malaise assessment',\n    icon: Activity,\n    route: '/pem-quest'\n  },\n  {\n    id: 'criteria-engine',\n    title: 'Criteria Engine',\n    description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes',\n    icon: BarChart3,\n    route: '/criteria-engine'\n  },\n  {\n    id: 'subtype-advisor',\n    title: 'Subtype & Rx Advisor',\n    description: 'Personalized treatment recommendations',\n    icon: Users,\n    route: '/subtype-advisor'\n  }\n]",
+      "newString": "const getModules = (t: any) => [\n  {\n    id: 'quick-screen',\n    title: t.dashboard.modules.quickScreen.title,\n    description: t.dashboard.modules.quickScreen.description,\n    icon: Clock,\n    sensitivity: '0.92',\n    route: '/quick-screen'\n  },\n  {\n    id: 'red-flag',\n    title: t.dashboard.modules.redFlag.title,\n    description: t.dashboard.modules.redFlag.description,\n    icon: FileText,\n    route: '/red-flag-checker'\n  },\n  {\n    id: 'stand-test',\n    title: t.dashboard.modules.standTest.title,\n    description: t.dashboard.modules.standTest.description,\n    icon: Heart,\n    route: '/stand-test'\n  },\n  {\n    id: 'pem-quest',\n    title: t.dashboard.modules.pemQuest.title,\n    description: t.dashboard.modules.pemQuest.description,\n    icon: Activity,\n    route: '/pem-quest'\n  },\n  {\n    id: 'criteria-engine',\n    title: t.dashboard.modules.criteriaEngine.title,\n    description: t.dashboard.modules.criteriaEngine.description,\n    icon: BarChart3,\n    route: '/criteria-engine'\n  },\n  {\n    id: 'subtype-advisor',\n    title: t.dashboard.modules.subtypeAdvisor.title,\n    description: t.dashboard.modules.subtypeAdvisor.description,\n    icon: Users,\n    route: '/subtype-advisor'\n  }\n]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -8,49 +8,49 @@\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n import { LanguageSelector } from '@/components/language-selector'\n \n-const modules = [\n+const getModules = (t: any) => [\n   {\n     id: 'quick-screen',\n-    title: 'Quick-Screen',\n-    description: '16 yes/no questions - 2 min assessment',\n+    title: t.dashboard.modules.quickScreen.title,\n+    description: t.dashboard.modules.quickScreen.description,\n     icon: Clock,\n     sensitivity: '0.92',\n     route: '/quick-screen'\n   },\n   {\n     id: 'red-flag',\n-    title: 'Red-flag Checker',\n-    description: 'Lab suggestions to rule out explanatory disease',\n+    title: t.dashboard.modules.redFlag.title,\n+    description: t.dashboard.modules.redFlag.description,\n     icon: FileText,\n     route: '/red-flag-checker'\n   },\n   {\n     id: 'stand-test',\n-    title: 'Stand-Test Pro',\n-    description: '10-min NASA Lean protocol with HR monitoring',\n+    title: t.dashboard.modules.standTest.title,\n+    description: t.dashboard.modules.standTest.description,\n     icon: Heart,\n     route: '/stand-test'\n   },\n   {\n     id: 'pem-quest',\n-    title: 'PEM-Quest',\n-    description: 'Post-Exertional Malaise assessment',\n+    title: t.dashboard.modules.pemQuest.title,\n+    description: t.dashboard.modules.pemQuest.description,\n     icon: Activity,\n     route: '/pem-quest'\n   },\n   {\n     id: 'criteria-engine',\n-    title: 'Criteria Engine',\n-    description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes',\n+    title: t.dashboard.modules.criteriaEngine.title,\n+    description: t.dashboard.modules.criteriaEngine.description,\n     icon: BarChart3,\n     route: '/criteria-engine'\n   },\n   {\n     id: 'subtype-advisor',\n-    title: 'Subtype & Rx Advisor',\n-    description: 'Personalized treatment recommendations',\n+    title: t.dashboard.modules.subtypeAdvisor.title,\n+    description: t.dashboard.modules.subtypeAdvisor.description,\n     icon: Users,\n     route: '/subtype-advisor'\n   }\n ]\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758125435879,
+      "end": 1758125435887
+    }
+  }
+}

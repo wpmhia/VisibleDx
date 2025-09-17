@@ -1,0 +1,26 @@
+{
+  "id": "prt_958709f18001QVWfmPHiki5arL",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01L3Qnkkh6NUkgv8woDkNPXp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "    <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\">\n      <div className=\"container mx-auto px-4 py-8\">\n        <div className=\"text-center mb-12\">\n          <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n            AutoDx: ME/CFS · Long COVID · POTS\n          </h1>\n          <p className=\"text-xl text-gray-600 max-w-3xl mx-auto mb-6\">\n            A guided, guideline-based diagnostic engine and decision support tool for clinicians \n            treating patients with fatigue, dizziness, brain-fog, or palpitations.\n          </p>",
+      "newString": "    <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\">\n      <div className=\"container mx-auto px-4 py-8\">\n        <div className=\"flex justify-end mb-4\">\n          <LanguageSelector />\n        </div>\n        <div className=\"text-center mb-12\">\n          <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n            {t.app.title}\n          </h1>\n          <p className=\"text-xl text-gray-600 max-w-3xl mx-auto mb-6\">\n            {t.app.subtitle}\n          </p>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -61,15 +61,17 @@\n \n return (\n   <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100\">\n     <div className=\"container mx-auto px-4 py-8\">\n+      <div className=\"flex justify-end mb-4\">\n+        <LanguageSelector />\n+      </div>\n       <div className=\"text-center mb-12\">\n         <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n-          AutoDx: ME/CFS · Long COVID · POTS\n+          {t.app.title}\n         </h1>\n         <p className=\"text-xl text-gray-600 max-w-3xl mx-auto mb-6\">\n-          A guided, guideline-based diagnostic engine and decision support tool for clinicians \n-          treating patients with fatigue, dizziness, brain-fog, or palpitations.\n+          {t.app.subtitle}\n         </p>\n         <div className=\"flex justify-center gap-4 flex-wrap\">\n           <Badge variant=\"secondary\" className=\"px-3 py-1\">\n             4-5 year avg diagnostic delay\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758125405146,
+      "end": 1758125405152
+    }
+  }
+}

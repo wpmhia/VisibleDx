@@ -1,0 +1,26 @@
+{
+  "id": "prt_9587606b9001ixfo5KApHRLWn2",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Y76ktiCCWTpYmR4HPKZC3G",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "oldString": "                <Button \n                  onClick={prevQuestion} \n                  disabled={currentQuestion === 0}\n                  variant=\"outline\"\n                  className=\"flex items-center gap-2\"\n                >\n                  <ArrowLeft className=\"h-4 w-4\" />\n                  Previous\n                </Button>\n                \n                <Button \n                  onClick={nextQuestion}\n                  disabled={currentAnswer === undefined}\n                  className=\"flex items-center gap-2\"\n                >\n                  {currentQuestion === screeningQuestions.length - 1 ? 'Complete' : 'Next'}\n                  <ArrowRight className=\"h-4 w-4\" />\n                </Button>",
+      "newString": "                <Button \n                  onClick={prevQuestion} \n                  disabled={currentQuestion === 0}\n                  variant=\"outline\"\n                  className=\"flex items-center gap-2\"\n                >\n                  <ArrowLeft className=\"h-4 w-4\" />\n                  {t.common.previous}\n                </Button>\n                \n                <Button \n                  onClick={nextQuestion}\n                  disabled={currentAnswer === undefined}\n                  className=\"flex items-center gap-2\"\n                >\n                  {currentQuestion === t.quickScreen.questions.length - 1 ? t.common.complete : t.common.next}\n                  <ArrowRight className=\"h-4 w-4\" />\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -294,17 +294,17 @@\n       variant=\"outline\"\n       className=\"flex items-center gap-2\"\n     >\n       <ArrowLeft className=\"h-4 w-4\" />\n-      Previous\n+      {t.common.previous}\n     </Button>\n     \n     <Button \n       onClick={nextQuestion}\n       disabled={currentAnswer === undefined}\n       className=\"flex items-center gap-2\"\n     >\n-      {currentQuestion === screeningQuestions.length - 1 ? 'Complete' : 'Next'}\n+      {currentQuestion === t.quickScreen.questions.length - 1 ? t.common.complete : t.common.next}\n       <ArrowRight className=\"h-4 w-4\" />\n     </Button>\n   </div>\n </div>\n"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758125757809,
+      "end": 1758125757819
+    }
+  }
+}

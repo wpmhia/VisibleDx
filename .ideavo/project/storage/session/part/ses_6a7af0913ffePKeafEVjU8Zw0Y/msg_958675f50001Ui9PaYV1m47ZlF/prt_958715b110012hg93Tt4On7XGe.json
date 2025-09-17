@@ -1,0 +1,26 @@
+{
+  "id": "prt_958715b110012hg93Tt4On7XGe",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0135oxz6LgAwnQkJowwydAgD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "                {module.sensitivity && (\n                  <Badge variant=\"outline\" className=\"mb-3\">\n                    Sensitivity: {module.sensitivity}\n                  </Badge>\n                )}\n                <Button \n                  className=\"w-full\" \n                  onClick={(e) => {\n                    e.stopPropagation()\n                    window.location.href = module.route\n                  }}\n                >\n                  Start Assessment\n                </Button>",
+      "newString": "                {module.sensitivity && (\n                  <Badge variant=\"outline\" className=\"mb-3\">\n                    {t.common.sensitivity}: {module.sensitivity}\n                  </Badge>\n                )}\n                <Button \n                  className=\"w-full\" \n                  onClick={(e) => {\n                    e.stopPropagation()\n                    window.location.href = module.route\n                  }}\n                >\n                  {t.dashboard.startAssessment}\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -134,9 +134,9 @@\n     </CardHeader>\n     <CardContent>\n       {module.sensitivity && (\n         <Badge variant=\"outline\" className=\"mb-3\">\n-          Sensitivity: {module.sensitivity}\n+          {t.common.sensitivity}: {module.sensitivity}\n         </Badge>\n       )}\n       <Button \n         className=\"w-full\" \n@@ -144,9 +144,9 @@\n           e.stopPropagation()\n           window.location.href = module.route\n         }}\n       >\n-        Start Assessment\n+        {t.dashboard.startAssessment}\n       </Button>\n     </CardContent>\n   </Card>\n ))}\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758125451066,
+      "end": 1758125451070
+    }
+  }
+}

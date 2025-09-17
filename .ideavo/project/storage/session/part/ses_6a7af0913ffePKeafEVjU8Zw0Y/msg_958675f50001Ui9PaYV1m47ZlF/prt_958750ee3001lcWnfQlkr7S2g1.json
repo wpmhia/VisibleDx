@@ -1,0 +1,26 @@
+{
+  "id": "prt_958750ee3001lcWnfQlkr7S2g1",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RBAn3hkNEicE7Nrzeh6tgv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/index.ts",
+      "oldString": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\n// Import other languages when created\n// import { de } from './de'\n// import { sv } from './sv'\n// import { no } from './no'\n// import { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  // Add other languages when available\n  de: en, // Fallback to English for now\n  sv: en, // Fallback to English for now\n  no: en, // Fallback to English for now\n  fr: en  // Fallback to English for now\n}",
+      "newString": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\nimport { de } from './de'\n// Import other languages when created\n// import { sv } from './sv'\n// import { no } from './no'\n// import { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  de,\n  // Add other languages when available\n  sv: en, // Fallback to English for now\n  no: en, // Fallback to English for now\n  fr: en  // Fallback to English for now\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/index.ts\n===================================================================\n--- /home/user/project/lib/translations/index.ts\n+++ /home/user/project/lib/translations/index.ts\n@@ -1,19 +1,19 @@\n import { en } from './en'\n import { nl } from './nl'\n import { da } from './da'\n+import { de } from './de'\n // Import other languages when created\n-// import { de } from './de'\n // import { sv } from './sv'\n // import { no } from './no'\n // import { fr } from './fr'\n \n export const translations = {\n   en,\n   nl,\n   da,\n+  de,\n   // Add other languages when available\n-  de: en, // Fallback to English for now\n   sv: en, // Fallback to English for now\n   no: en, // Fallback to English for now\n   fr: en  // Fallback to English for now\n }\n"
+    },
+    "title": "lib/translations/index.ts",
+    "time": {
+      "start": 1758125694952,
+      "end": 1758125694961
+    }
+  }
+}

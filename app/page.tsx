@@ -6,48 +6,50 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
+import { LanguageSelector } from '@/components/language-selector'
 
-const modules = [
+const getModules = (t: any) => [
   {
     id: 'quick-screen',
-    title: 'Quick-Screen',
-    description: '16 yes/no questions - 2 min assessment',
+    title: t.dashboard.modules.quickScreen.title,
+    description: t.dashboard.modules.quickScreen.description,
     icon: Clock,
     sensitivity: '0.92',
     route: '/quick-screen'
   },
   {
     id: 'red-flag',
-    title: 'Red-flag Checker',
-    description: 'Lab suggestions to rule out explanatory disease',
+    title: t.dashboard.modules.redFlag.title,
+    description: t.dashboard.modules.redFlag.description,
     icon: FileText,
     route: '/red-flag-checker'
   },
   {
     id: 'stand-test',
-    title: 'Stand-Test Pro',
-    description: '10-min NASA Lean protocol with HR monitoring',
+    title: t.dashboard.modules.standTest.title,
+    description: t.dashboard.modules.standTest.description,
     icon: Heart,
     route: '/stand-test'
   },
   {
     id: 'pem-quest',
-    title: 'PEM-Quest',
-    description: 'Post-Exertional Malaise assessment',
+    title: t.dashboard.modules.pemQuest.title,
+    description: t.dashboard.modules.pemQuest.description,
     icon: Activity,
     route: '/pem-quest'
   },
   {
     id: 'criteria-engine',
-    title: 'Criteria Engine',
-    description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes',
+    title: t.dashboard.modules.criteriaEngine.title,
+    description: t.dashboard.modules.criteriaEngine.description,
     icon: BarChart3,
     route: '/criteria-engine'
   },
   {
     id: 'subtype-advisor',
-    title: 'Subtype & Rx Advisor',
-    description: 'Personalized treatment recommendations',
+    title: t.dashboard.modules.subtypeAdvisor.title,
+    description: t.dashboard.modules.subtypeAdvisor.description,
     icon: Users,
     route: '/subtype-advisor'
   }
@@ -55,27 +57,31 @@ const modules = [
 
 export default function Home() {
   const [selectedModule, setSelectedModule] = useState<string | null>(null)
+  const { t } = useTranslation()
+  const modules = getModules(t)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
+        <div className="flex justify-end mb-4">
+          <LanguageSelector />
+        </div>
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            AutoDx: ME/CFS · Long COVID · POTS
+            {t.app.title}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-            A guided, guideline-based diagnostic engine and decision support tool for clinicians 
-            treating patients with fatigue, dizziness, brain-fog, or palpitations.
+            {t.app.subtitle}
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Badge variant="secondary" className="px-3 py-1">
-              4-5 year avg diagnostic delay
+              {t.dashboard.stats.diagnosticDelay}
             </Badge>
             <Badge variant="secondary" className="px-3 py-1">
-              ≥7 doctors typically consulted
+              {t.dashboard.stats.doctorsConsulted}
             </Badge>
             <Badge variant="secondary" className="px-3 py-1">
-              94% sensitivity validated
+              {t.dashboard.stats.sensitivityValidated}
             </Badge>
           </div>
         </div>
@@ -89,18 +95,18 @@ export default function Home() {
                     <User className="h-8 w-8 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-green-900">Smart Patient Assessment</h3>
-                    <p className="text-green-700">Intelligent guided workflow with automated SOAP documentation</p>
+                    <h3 className="text-xl font-bold text-green-900">{t.dashboard.smartAssessment.title}</h3>
+                    <p className="text-green-700">{t.dashboard.smartAssessment.description}</p>
                     <div className="flex gap-2 mt-2">
-                      <Badge variant="secondary" className="text-xs">Auto-routing</Badge>
-                      <Badge variant="secondary" className="text-xs">SOAP notes</Badge>
-                      <Badge variant="secondary" className="text-xs">ICD-10 codes</Badge>
+                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.autoRouting}</Badge>
+                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.soapNotes}</Badge>
+                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.icdCodes}</Badge>
                     </div>
                   </div>
                 </div>
                 <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
                   <Link href="/new-patient">
-                    Start New Assessment
+                    {t.dashboard.smartAssessment.startNew}
                   </Link>
                 </Button>
               </div>
@@ -129,7 +135,7 @@ export default function Home() {
               <CardContent>
                 {module.sensitivity && (
                   <Badge variant="outline" className="mb-3">
-                    Sensitivity: {module.sensitivity}
+                    {t.common.sensitivity}: {module.sensitivity}
                   </Badge>
                 )}
                 <Button 
@@ -139,7 +145,7 @@ export default function Home() {
                     window.location.href = module.route
                   }}
                 >
-                  Start Assessment
+                  {t.dashboard.startAssessment}
                 </Button>
               </CardContent>
             </Card>
@@ -150,25 +156,25 @@ export default function Home() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BarChart3 className="h-5 w-5" />
-              Diagnostic Algorithm
+              {t.dashboard.algorithm.title}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-900 mb-2">ME/CFS</h4>
-                <p className="text-blue-700">CDC/NASEM 2015 + IOM criteria</p>
-                <p className="text-blue-700">3 core + 1 PEM symptom cluster</p>
+                <h4 className="font-semibold text-blue-900 mb-2">{t.dashboard.algorithm.mecfs.title}</h4>
+                <p className="text-blue-700">{t.dashboard.algorithm.mecfs.criteria}</p>
+                <p className="text-blue-700">{t.dashboard.algorithm.mecfs.description}</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-green-900 mb-2">Long COVID</h4>
-                <p className="text-green-700">WHO + NASEM 2024 criteria</p>
-                <p className="text-green-700">≥3 months post-SARS-CoV-2</p>
+                <h4 className="font-semibold text-green-900 mb-2">{t.dashboard.algorithm.longCovid.title}</h4>
+                <p className="text-green-700">{t.dashboard.algorithm.longCovid.criteria}</p>
+                <p className="text-green-700">{t.dashboard.algorithm.longCovid.description}</p>
               </div>
               <div className="bg-purple-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-purple-900 mb-2">POTS</h4>
-                <p className="text-purple-700">ESC 2018 + AAS/EFAS 2021</p>
-                <p className="text-purple-700">HR↑≥30 bpm within 10 min</p>
+                <h4 className="font-semibold text-purple-900 mb-2">{t.dashboard.algorithm.pots.title}</h4>
+                <p className="text-purple-700">{t.dashboard.algorithm.pots.criteria}</p>
+                <p className="text-purple-700">{t.dashboard.algorithm.pots.description}</p>
               </div>
             </div>
           </CardContent>
@@ -176,7 +182,7 @@ export default function Home() {
 
         <div className="text-center">
           <p className="text-gray-600 text-sm">
-            Making invisible diseases visible - with evidence, empathy and code.
+            {t.app.tagline}
           </p>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { Progress } from '@/components/ui/progress'
 import { Badge } from '@/components/ui/badge'
 import { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 const screeningQuestions = [
   {
@@ -95,6 +96,7 @@ export default function QuickScreen() {
   const [answers, setAnswers] = useState<Record<number, boolean>>({})
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [isComplete, setIsComplete] = useState(false)
+  const { t } = useTranslation()
 
   const handleAnswer = (questionId: number, answer: boolean) => {
     setAnswers(prev => ({
@@ -138,9 +140,13 @@ export default function QuickScreen() {
     return { riskLevel, riskColor, totalYes, coreSymptoms, pemPresent, covidHistory, chronicity }
   }
 
-  const progress = ((currentQuestion + 1) / screeningQuestions.length) * 100
-  const current = screeningQuestions[currentQuestion]
-  const currentAnswer = answers[current?.id]
+  const progress = ((currentQuestion + 1) / t.quickScreen.questions.length) * 100
+  const currentQuestionData = {
+    id: currentQuestion + 1,
+    question: t.quickScreen.questions[currentQuestion],
+    category: Object.keys(t.quickScreen.categories)[currentQuestion % Object.keys(t.quickScreen.categories).length]
+  }
+  const currentAnswer = answers[currentQuestionData?.id]
 
   if (isComplete) {
     const risk = calculateRisk()
@@ -232,52 +238,52 @@ export default function QuickScreen() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="mb-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
+            <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
             <ArrowLeft className="h-4 w-4" />
-            Back to Dashboard
+            {t.app.backToDashboard}
           </Link>
           
           <div className="flex items-center gap-4 mb-4">
             <Clock className="h-5 w-5 text-gray-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Quick-Screen Assessment</h1>
-              <p className="text-gray-600">16 questions · ~2 minutes · 92% sensitivity</p>
+              <h1 className="text-2xl font-bold text-gray-900">{t.quickScreen.title}</h1>
+              <p className="text-gray-600">{t.quickScreen.description}</p>
             </div>
           </div>
           
           <Progress value={progress} className="h-2" />
-          <p className="text-sm text-gray-600 mt-2">
-            Question {currentQuestion + 1} of {screeningQuestions.length}
+            <p className="text-sm text-gray-600 mt-2">
+            {t.common.question} {currentQuestion + 1} {t.common.of} {t.quickScreen.questions.length}
           </p>
         </div>
 
         <Card>
           <CardHeader>
             <CardTitle className="text-lg">
-              {current.question}
+              {currentQuestionData.question}
             </CardTitle>
             <CardDescription>
-              Category: {current.category.charAt(0).toUpperCase() + current.category.slice(1)}
+              Category: {currentQuestionData.category.charAt(0).toUpperCase() + currentQuestionData.category.slice(1)}
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               <div className="flex gap-4 justify-center">
                 <Button
-                  onClick={() => handleAnswer(current.id, true)}
+                  onClick={() => handleAnswer(currentQuestionData.id, true)}
                   variant={currentAnswer === true ? "default" : "outline"}
                   className="flex items-center gap-2 px-8"
                 >
                   {currentAnswer === true ? <CheckCircle className="h-4 w-4" /> : <Circle className="h-4 w-4" />}
-                  Yes
+                  {t.common.yes}
                 </Button>
                 <Button
-                  onClick={() => handleAnswer(current.id, false)}
+                  onClick={() => handleAnswer(currentQuestionData.id, false)}
                   variant={currentAnswer === false ? "default" : "outline"}
                   className="flex items-center gap-2 px-8"
                 >
                   {currentAnswer === false ? <CheckCircle className="h-4 w-4" /> : <Circle className="h-4 w-4" />}
-                  No
+                  {t.common.no}
                 </Button>
               </div>
 
@@ -289,7 +295,7 @@ export default function QuickScreen() {
                   className="flex items-center gap-2"
                 >
                   <ArrowLeft className="h-4 w-4" />
-                  Previous
+                  {t.common.previous}
                 </Button>
                 
                 <Button 
@@ -297,7 +303,7 @@ export default function QuickScreen() {
                   disabled={currentAnswer === undefined}
                   className="flex items-center gap-2"
                 >
-                  {currentQuestion === screeningQuestions.length - 1 ? 'Complete' : 'Next'}
+                  {currentQuestion === t.quickScreen.questions.length - 1 ? t.common.complete : t.common.next}
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </div>

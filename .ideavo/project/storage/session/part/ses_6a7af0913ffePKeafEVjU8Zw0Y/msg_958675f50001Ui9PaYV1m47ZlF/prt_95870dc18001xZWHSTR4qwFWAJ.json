@@ -1,0 +1,26 @@
+{
+  "id": "prt_95870dc18001xZWHSTR4qwFWAJ",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017roYmR3VuxcpPJMKsTckiw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "                  <div>\n                    <h3 className=\"text-xl font-bold text-green-900\">Smart Patient Assessment</h3>\n                    <p className=\"text-green-700\">Intelligent guided workflow with automated SOAP documentation</p>\n                    <div className=\"flex gap-2 mt-2\">\n                      <Badge variant=\"secondary\" className=\"text-xs\">Auto-routing</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">SOAP notes</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">ICD-10 codes</Badge>\n                    </div>\n                  </div>\n                </div>\n                <Button size=\"lg\" asChild className=\"bg-green-600 hover:bg-green-700\">\n                  <Link href=\"/new-patient\">\n                    Start New Assessment\n                  </Link>\n                </Button>",
+      "newString": "                  <div>\n                    <h3 className=\"text-xl font-bold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n                    <p className=\"text-green-700\">{t.dashboard.smartAssessment.description}</p>\n                    <div className=\"flex gap-2 mt-2\">\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.autoRouting}</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.soapNotes}</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.icdCodes}</Badge>\n                    </div>\n                  </div>\n                </div>\n                <Button size=\"lg\" asChild className=\"bg-green-600 hover:bg-green-700\">\n                  <Link href=\"/new-patient\">\n                    {t.dashboard.smartAssessment.startNew}\n                  </Link>\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -93,20 +93,20 @@\n       <div className=\"p-3 bg-green-100 rounded-full\">\n         <User className=\"h-8 w-8 text-green-600\" />\n       </div>\n       <div>\n-        <h3 className=\"text-xl font-bold text-green-900\">Smart Patient Assessment</h3>\n-        <p className=\"text-green-700\">Intelligent guided workflow with automated SOAP documentation</p>\n+        <h3 className=\"text-xl font-bold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n+        <p className=\"text-green-700\">{t.dashboard.smartAssessment.description}</p>\n         <div className=\"flex gap-2 mt-2\">\n-          <Badge variant=\"secondary\" className=\"text-xs\">Auto-routing</Badge>\n-          <Badge variant=\"secondary\" className=\"text-xs\">SOAP notes</Badge>\n-          <Badge variant=\"secondary\" className=\"text-xs\">ICD-10 codes</Badge>\n+          <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.autoRouting}</Badge>\n+          <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.soapNotes}</Badge>\n+          <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.icdCodes}</Badge>\n         </div>\n       </div>\n     </div>\n     <Button size=\"lg\" asChild className=\"bg-green-600 hover:bg-green-700\">\n       <Link href=\"/new-patient\">\n-        Start New Assessment\n+        {t.dashboard.smartAssessment.startNew}\n       </Link>\n     </Button>\n   </div>\n </CardContent>\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758125421909,
+      "end": 1758125421916
+    }
+  }
+}

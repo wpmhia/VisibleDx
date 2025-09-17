@@ -1,0 +1,24 @@
+{
+  "id": "prt_95875306e001LtNtCWyY23H0eX",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AN9m8vM6udjq3Dh7DbFcNu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "limit": 30
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { useState } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Progress } from '@/components/ui/progress'\n00007| import { Badge } from '@/components/ui/badge'\n00008| import { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from 'lucide-react'\n00009| import Link from 'next/link'\n00010| \n00011| const screeningQuestions = [\n00012|   {\n00013|     id: 1,\n00014|     question: \"Do you experience severe fatigue that is not relieved by rest?\",\n00015|     category: \"core\"\n00016|   },\n00017|   {\n00018|     id: 2,\n00019|     question: \"Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?\",\n00020|     category: \"pem\"\n00021|   },\n00022|   {\n00023|     id: 3,\n00024|     question: \"Do you have unrefreshing sleep, regardless of duration?\",\n00025|     category: \"core\"\n00026|   },\n00027|   {\n00028|     id: 4,\n00029|     question: \"Do you experience cognitive difficulties (brain fog, memory problems)?\",\n00030|     category: \"core\"\n\n(File has more lines. Use 'offset' parameter to read beyond line 30)\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { useState } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\n\nconst screeningQuestions = [\n  {\n    id: 1,\n    question: \"Do you experience severe fatigue that is not relieved by rest?\",\n    category: \"core\"\n  },\n  {\n    id: 2,\n    question: \"Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?\",\n    category: \"pem\""
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758125699836,
+      "end": 1758125699838
+    }
+  }
+}

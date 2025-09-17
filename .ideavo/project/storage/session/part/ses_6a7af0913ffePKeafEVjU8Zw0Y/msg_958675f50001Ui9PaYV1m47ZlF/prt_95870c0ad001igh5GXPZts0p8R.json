@@ -1,0 +1,26 @@
+{
+  "id": "prt_95870c0ad001igh5GXPZts0p8R",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017Wt73Y7agh3apizNJFRpme",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "          <div className=\"flex justify-center gap-4 flex-wrap\">\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              4-5 year avg diagnostic delay\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              ≥7 doctors typically consulted\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              94% sensitivity validated\n            </Badge>\n          </div>",
+      "newString": "          <div className=\"flex justify-center gap-4 flex-wrap\">\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.diagnosticDelay}\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.doctorsConsulted}\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.sensitivityValidated}\n            </Badge>\n          </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -73,15 +73,15 @@\n     {t.app.subtitle}\n   </p>\n   <div className=\"flex justify-center gap-4 flex-wrap\">\n     <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-      4-5 year avg diagnostic delay\n+      {t.dashboard.stats.diagnosticDelay}\n     </Badge>\n     <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-      ≥7 doctors typically consulted\n+      {t.dashboard.stats.doctorsConsulted}\n     </Badge>\n     <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-      94% sensitivity validated\n+      {t.dashboard.stats.sensitivityValidated}\n     </Badge>\n   </div>\n </div>\n \n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758125411904,
+      "end": 1758125411907
+    }
+  }
+}

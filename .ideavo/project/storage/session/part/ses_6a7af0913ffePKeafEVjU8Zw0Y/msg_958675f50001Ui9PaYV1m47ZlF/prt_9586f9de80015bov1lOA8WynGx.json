@@ -1,0 +1,26 @@
+{
+  "id": "prt_9586f9de80015bov1lOA8WynGx",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_016fjUWXtKiJCEczTsexbEHY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/index.ts",
+      "content": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\n// Import other languages when created\n// import { de } from './de'\n// import { sv } from './sv'\n// import { no } from './no'\n// import { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  // Add other languages when available\n  de: en, // Fallback to English for now\n  sv: en, // Fallback to English for now\n  no: en, // Fallback to English for now\n  fr: en  // Fallback to English for now\n}\n\nexport * from './types'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/lib/translations/index.ts",
+      "exists": false
+    },
+    "title": "lib/translations/index.ts",
+    "time": {
+      "start": 1758125337129,
+      "end": 1758125337146
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95875e55a001tqgy5minMVpvoN",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ToCDyBLTHaswuaUoNJywj9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "oldString": "                <Button\n                  onClick={() => handleAnswer(current.id, true)}\n                  variant={currentAnswer === true ? \"default\" : \"outline\"}\n                  className=\"flex items-center gap-2 px-8\"\n                >\n                  {currentAnswer === true ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n                  Yes\n                </Button>\n                <Button\n                  onClick={() => handleAnswer(current.id, false)}\n                  variant={currentAnswer === false ? \"default\" : \"outline\"}\n                  className=\"flex items-center gap-2 px-8\"\n                >\n                  {currentAnswer === false ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n                  No\n                </Button>",
+      "newString": "                <Button\n                  onClick={() => handleAnswer(currentQuestionData.id, true)}\n                  variant={currentAnswer === true ? \"default\" : \"outline\"}\n                  className=\"flex items-center gap-2 px-8\"\n                >\n                  {currentAnswer === true ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n                  {t.common.yes}\n                </Button>\n                <Button\n                  onClick={() => handleAnswer(currentQuestionData.id, false)}\n                  variant={currentAnswer === false ? \"default\" : \"outline\"}\n                  className=\"flex items-center gap-2 px-8\"\n                >\n                  {currentAnswer === false ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n                  {t.common.no}\n                </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -269,22 +269,22 @@\n <CardContent>\n   <div className=\"space-y-4\">\n     <div className=\"flex gap-4 justify-center\">\n       <Button\n-        onClick={() => handleAnswer(current.id, true)}\n+        onClick={() => handleAnswer(currentQuestionData.id, true)}\n         variant={currentAnswer === true ? \"default\" : \"outline\"}\n         className=\"flex items-center gap-2 px-8\"\n       >\n         {currentAnswer === true ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n-        Yes\n+        {t.common.yes}\n       </Button>\n       <Button\n-        onClick={() => handleAnswer(current.id, false)}\n+        onClick={() => handleAnswer(currentQuestionData.id, false)}\n         variant={currentAnswer === false ? \"default\" : \"outline\"}\n         className=\"flex items-center gap-2 px-8\"\n       >\n         {currentAnswer === false ? <CheckCircle className=\"h-4 w-4\" /> : <Circle className=\"h-4 w-4\" />}\n-        No\n+        {t.common.no}\n       </Button>\n     </div>\n \n     <div className=\"flex justify-between pt-6\">\n"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758125750281,
+      "end": 1758125750286
+    }
+  }
+}

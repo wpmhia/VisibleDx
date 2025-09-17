@@ -1,0 +1,97 @@
+{
+  "id": "prt_958724571001Osp2Db1o2VMRgr",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01P7rg8ZynebUFcTSMoTx3fy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Create language files for 7 languages (EN, NL, DA, DE, SV, NO, FR)",
+          "status": "completed",
+          "priority": "high",
+          "id": "16"
+        },
+        {
+          "content": "Implement language context and switching functionality",
+          "status": "completed",
+          "priority": "high",
+          "id": "17"
+        },
+        {
+          "content": "Translate all UI components and modules",
+          "status": "completed",
+          "priority": "high",
+          "id": "18"
+        },
+        {
+          "content": "Translate medical terminology and questionnaires",
+          "status": "completed",
+          "priority": "high",
+          "id": "19"
+        },
+        {
+          "content": "Add language selector to main interface",
+          "status": "completed",
+          "priority": "medium",
+          "id": "20"
+        },
+        {
+          "content": "Test all language implementations",
+          "status": "completed",
+          "priority": "medium",
+          "id": "21"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Create language files for 7 languages (EN, NL, DA, DE, SV, NO, FR)\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"16\"\n  },\n  {\n    \"content\": \"Implement language context and switching functionality\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"17\"\n  },\n  {\n    \"content\": \"Translate all UI components and modules\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"18\"\n  },\n  {\n    \"content\": \"Translate medical terminology and questionnaires\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"19\"\n  },\n  {\n    \"content\": \"Add language selector to main interface\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"20\"\n  },\n  {\n    \"content\": \"Test all language implementations\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"21\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Create language files for 7 languages (EN, NL, DA, DE, SV, NO, FR)",
+          "status": "completed",
+          "priority": "high",
+          "id": "16"
+        },
+        {
+          "content": "Implement language context and switching functionality",
+          "status": "completed",
+          "priority": "high",
+          "id": "17"
+        },
+        {
+          "content": "Translate all UI components and modules",
+          "status": "completed",
+          "priority": "high",
+          "id": "18"
+        },
+        {
+          "content": "Translate medical terminology and questionnaires",
+          "status": "completed",
+          "priority": "high",
+          "id": "19"
+        },
+        {
+          "content": "Add language selector to main interface",
+          "status": "completed",
+          "priority": "medium",
+          "id": "20"
+        },
+        {
+          "content": "Test all language implementations",
+          "status": "completed",
+          "priority": "medium",
+          "id": "21"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758125512040,
+      "end": 1758125512064
+    }
+  }
+}

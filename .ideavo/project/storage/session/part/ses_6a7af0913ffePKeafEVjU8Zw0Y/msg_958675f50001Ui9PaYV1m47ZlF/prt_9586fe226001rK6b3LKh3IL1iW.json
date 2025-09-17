@@ -1,0 +1,26 @@
+{
+  "id": "prt_9586fe226001rK6b3LKh3IL1iW",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01AdvhLoRw228w9c6u5xtdE9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/language-selector.tsx",
+      "content": "'use client'\n\nimport { useState } from 'react'\nimport { Button } from '@/components/ui/button'\nimport { Card, CardContent } from '@/components/ui/card'\nimport { Badge } from '@/components/ui/badge'\nimport { Globe, Check } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\nimport { SUPPORTED_LANGUAGES, SupportedLanguage } from '@/lib/translations/types'\n\nexport function LanguageSelector() {\n  const { language, setLanguage } = useTranslation()\n  const [isOpen, setIsOpen] = useState(false)\n\n  const currentLanguage = SUPPORTED_LANGUAGES.find(lang => lang.code === language)\n\n  return (\n    <div className=\"relative\">\n      <Button\n        variant=\"outline\"\n        onClick={() => setIsOpen(!isOpen)}\n        className=\"flex items-center gap-2\"\n      >\n        <Globe className=\"h-4 w-4\" />\n        <span className=\"text-lg\">{currentLanguage?.flag}</span>\n        <span className=\"hidden sm:inline\">{currentLanguage?.name}</span>\n      </Button>\n\n      {isOpen && (\n        <Card className=\"absolute top-full right-0 mt-2 z-50 min-w-[200px]\">\n          <CardContent className=\"p-2\">\n            <div className=\"space-y-1\">\n              {SUPPORTED_LANGUAGES.map((lang) => (\n                <Button\n                  key={lang.code}\n                  variant=\"ghost\"\n                  className=\"w-full justify-start gap-3\"\n                  onClick={() => {\n                    setLanguage(lang.code)\n                    setIsOpen(false)\n                  }}\n                >\n                  <span className=\"text-lg\">{lang.flag}</span>\n                  <span className=\"flex-1 text-left\">{lang.name}</span>\n                  {language === lang.code && (\n                    <Check className=\"h-4 w-4 text-green-600\" />\n                  )}\n                </Button>\n              ))}\n            </div>\n            <div className=\"mt-3 pt-2 border-t\">\n              <div className=\"flex flex-wrap gap-1\">\n                <Badge variant=\"secondary\" className=\"text-xs\">\n                  Multi-language\n                </Badge>\n                <Badge variant=\"secondary\" className=\"text-xs\">\n                  Medical terms\n                </Badge>\n              </div>\n            </div>\n          </CardContent>\n        </Card>\n      )}\n\n      {isOpen && (\n        <div \n          className=\"fixed inset-0 z-40\" \n          onClick={() => setIsOpen(false)}\n        />\n      )}\n    </div>\n  )\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/language-selector.tsx",
+      "exists": false
+    },
+    "title": "components/language-selector.tsx",
+    "time": {
+      "start": 1758125359394,
+      "end": 1758125359417
+    }
+  }
+}

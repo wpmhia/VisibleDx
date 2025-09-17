@@ -1,0 +1,26 @@
+{
+  "id": "prt_9586fb5c1001yXdoXHcrJExkT7",
+  "messageID": "msg_958675f50001Ui9PaYV1m47ZlF",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_019vfRrdSutikmTdTPeunoqM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/language-context.tsx",
+      "content": "'use client'\n\nimport { createContext, useContext, useState, useEffect, ReactNode } from 'react'\nimport { SupportedLanguage, Translation } from './translations/types'\nimport { translations } from './translations'\n\ninterface LanguageContextType {\n  language: SupportedLanguage\n  setLanguage: (language: SupportedLanguage) => void\n  t: Translation\n}\n\nconst LanguageContext = createContext<LanguageContextType | undefined>(undefined)\n\nexport function LanguageProvider({ children }: { children: ReactNode }) {\n  const [language, setLanguageState] = useState<SupportedLanguage>('en')\n\n  useEffect(() => {\n    // Check for saved language preference\n    const savedLanguage = localStorage.getItem('autodx-language') as SupportedLanguage\n    if (savedLanguage && translations[savedLanguage]) {\n      setLanguageState(savedLanguage)\n    } else {\n      // Detect browser language\n      const browserLang = navigator.language.toLowerCase()\n      if (browserLang.startsWith('nl')) setLanguageState('nl')\n      else if (browserLang.startsWith('da')) setLanguageState('da')\n      else if (browserLang.startsWith('de')) setLanguageState('de')\n      else if (browserLang.startsWith('sv')) setLanguageState('sv')\n      else if (browserLang.startsWith('no')) setLanguageState('no')\n      else if (browserLang.startsWith('fr')) setLanguageState('fr')\n      else setLanguageState('en')\n    }\n  }, [])\n\n  const setLanguage = (newLanguage: SupportedLanguage) => {\n    setLanguageState(newLanguage)\n    localStorage.setItem('autodx-language', newLanguage)\n  }\n\n  const t = translations[language]\n\n  return (\n    <LanguageContext.Provider value={{ language, setLanguage, t }}>\n      {children}\n    </LanguageContext.Provider>\n  )\n}\n\nexport function useTranslation() {\n  const context = useContext(LanguageContext)\n  if (context === undefined) {\n    throw new Error('useTranslation must be used within a LanguageProvider')\n  }\n  return context\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/lib/language-context.tsx",
+      "exists": false
+    },
+    "title": "lib/language-context.tsx",
+    "time": {
+      "start": 1758125345892,
+      "end": 1758125345909
+    }
+  }
+}
