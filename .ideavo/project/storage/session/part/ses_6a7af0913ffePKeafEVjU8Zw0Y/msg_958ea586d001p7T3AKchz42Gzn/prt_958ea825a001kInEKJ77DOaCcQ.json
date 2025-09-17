@@ -1,0 +1,11 @@
+{
+  "id": "prt_958ea825a001kInEKJ77DOaCcQ",
+  "messageID": "msg_958ea586d001p7T3AKchz42Gzn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "No, I haven't translated everything yet. Looking at the Dutch translation file, I can see that the medical criteria sections (lines 441-472) that are used in the Criteria Engine are still in English. These are the specific lines that need Dutch translations:\n\n**Missing Dutch translations for:**\n1. **ME/CFS criteria** (lines 441-446) - Currently showing English text\n2. **Long COVID criteria** (lines 452-456) - Currently showing English text  \n3. **POTS criteria** (lines 467-472) - Currently showing English text\n\nThe rest of the translation file appears to be completed in Dutch, but these critical medical criteria sections are what's causing the Criteria Engine to display English text when Dutch is selected.\n\nWould you like me to complete the Dutch translations for these medical criteria sections?",
+  "time": {
+    "start": 1758133392006,
+    "end": 1758133392006
+  }
+}

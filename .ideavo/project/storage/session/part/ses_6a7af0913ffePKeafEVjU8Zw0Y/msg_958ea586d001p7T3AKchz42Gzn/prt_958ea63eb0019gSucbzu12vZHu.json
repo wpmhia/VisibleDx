@@ -1,0 +1,19 @@
+{
+  "id": "prt_958ea63eb0019gSucbzu12vZHu",
+  "messageID": "msg_958ea586d001p7T3AKchz42Gzn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Fhsxmne7jzJHXADkmcmr3L",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/lib/translations/nl.ts"
+    },
+    "error": "Error: File /lib/translations/nl.ts is not in the current working directory",
+    "time": {
+      "start": 1758133380432,
+      "end": 1758133380457
+    }
+  }
+}
