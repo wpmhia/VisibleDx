@@ -1,0 +1,23 @@
+{
+  "id": "prt_95851be71001nbCgQ02am154fN",
+  "messageID": "msg_95850fa3f001iZ7xRqhPjUaxWh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013M9yMaKkccJG6C8dPcqhD7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx"
+    },
+    "output": "<file>\n00001| export default function Home() {\n00002|   return (\n00003|     <div\n00004|       style={{\n00005|         maxWidth: 1280,\n00006|         margin: '0 auto',\n00007|         padding: '2rem',\n00008|         textAlign: 'center',\n00009|       }}\n00010|     >\n00011|       Start prompting.\n00012|     </div>\n00013|   );\n00014| }\n00015| \n</file>",
+    "metadata": {
+      "preview": "export default function Home() {\n  return (\n    <div\n      style={{\n        maxWidth: 1280,\n        margin: '0 auto',\n        padding: '2rem',\n        textAlign: 'center',\n      }}\n    >\n      Start prompting.\n    </div>\n  );\n}\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758123376576,
+      "end": 1758123376587
+    }
+  }
+}

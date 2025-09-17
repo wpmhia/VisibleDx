@@ -1,0 +1,26 @@
+{
+  "id": "prt_958593661001jWxpg1XKDJC2PF",
+  "messageID": "msg_95850fa3f001iZ7xRqhPjUaxWh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01Frgg1xoLr8aZkoK3NhC89x",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Final build check to ensure all modules work correctly"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/11) ...\n   Generating static pages (2/11) \r\n   Generating static pages (5/11) \r\n   Generating static pages (8/11) \r\n ✓ Generating static pages (11/11)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                              Size     First Load JS\n┌ ○ /                                    3.23 kB        98.5 kB\n├ ○ /_not-found                          873 B            88 kB\n├ ○ /criteria-engine                     5.58 kB         117 kB\n├ ○ /env-check                           175 B            96 kB\n├ ○ /pem-quest                           8.06 kB         116 kB\n├ ○ /quick-screen                        5.41 kB         109 kB\n├ ○ /red-flag-checker                    5.3 kB          113 kB\n├ ○ /stand-test                          6.82 kB         111 kB\n└ ○ /subtype-advisor                     6.86 kB         115 kB\n+ First Load JS shared by all            87.1 kB\n  ├ chunks/117-12d3d2cda8f67d76.js       31.6 kB\n  ├ chunks/fd9d1056-9e191f0896c1d560.js  53.6 kB\n  └ other shared chunks (total)          1.89 kB\n\n\nƒ Middleware                             26.6 kB\n\n○  (Static)  prerendered as static content\n\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/11) ...\n   Generating static pages (2/11) \r\n   Generating static pages (5/11) \r\n   Generating static pages (8/11) \r\n ✓ Generating static pages (11/11)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                              Size     First Load JS\n┌ ○ /                                    3.23 kB        98.5 kB\n├ ○ /_not-found                          873 B            88 kB\n├ ○ /criteria-engine                     5.58 kB         117 kB\n├ ○ /env-check                           175 B            96 kB\n├ ○ /pem-quest                           8.06 kB         116 kB\n├ ○ /quick-screen                        5.41 kB         109 kB\n├ ○ /red-flag-checker                    5.3 kB          113 kB\n├ ○ /stand-test                          6.82 kB         111 kB\n└ ○ /subtype-advisor                     6.86 kB         115 kB\n+ First Load JS shared by all            87.1 kB\n  ├ chunks/117-12d3d2cda8f67d76.js       31.6 kB\n  ├ chunks/fd9d1056-9e191f0896c1d560.js  53.6 kB\n  └ other shared chunks (total)          1.89 kB\n\n\nƒ Middleware                             26.6 kB\n\n○  (Static)  prerendered as static content\n\n",
+      "exit": 0,
+      "description": "Final build check to ensure all modules work correctly"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758123866444,
+      "end": 1758123895209
+    }
+  }
+}

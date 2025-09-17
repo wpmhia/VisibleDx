@@ -1,0 +1,391 @@
+'use client'
+
+import { useState } from 'react'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Badge } from '@/components/ui/badge'
+import { Alert, AlertDescription } from '@/components/ui/alert'
+import { ArrowLeft, FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'
+import Link from 'next/link'
+
+const redFlagSymptoms = [
+  {
+    id: 'fever',
+    symptom: 'Persistent fever or night sweats',
+    category: 'Infectious/Inflammatory',
+    priority: 'high',
+    tests: ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray']
+  },
+  {
+    id: 'weight_loss',
+    symptom: 'Unintentional weight loss >10% in 6 months',
+    category: 'Malignancy/Metabolic',
+    priority: 'high',
+    tests: ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis']
+  },
+  {
+    id: 'chest_pain',
+    symptom: 'Chest pain with exertion or at rest',
+    category: 'Cardiovascular',
+    priority: 'high',
+    tests: ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test']
+  },
+  {
+    id: 'dyspnea',
+    symptom: 'Progressive shortness of breath',
+    category: 'Cardiopulmonary',
+    priority: 'high',
+    tests: ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer']
+  },
+  {
+    id: 'neurological',
+    symptom: 'New neurological symptoms (weakness, numbness, seizures)',
+    category: 'Neurological',
+    priority: 'high',
+    tests: ['MRI brain', 'Neurological consultation', 'EEG if seizures']
+  },
+  {
+    id: 'bleeding',
+    symptom: 'Abnormal bleeding or bruising',
+    category: 'Hematological',
+    priority: 'high',
+    tests: ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear']
+  },
+  {
+    id: 'lymphadenopathy',
+    symptom: 'Enlarged lymph nodes',
+    category: 'Infectious/Malignancy',
+    priority: 'medium',
+    tests: ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis']
+  },
+  {
+    id: 'jaundice',
+    symptom: 'Jaundice or yellowing of skin/eyes',
+    category: 'Hepatic',
+    priority: 'high',
+    tests: ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']
+  }
+]
+
+const routineLabs = [
+  {
+    category: 'Basic Metabolic',
+    tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP'],
+    indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities'
+  },
+  {
+    category: 'Endocrine',
+    tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D'],
+    indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency'
+  },
+  {
+    category: 'Nutritional',
+    tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin'],
+    indication: 'Rule out nutritional deficiencies causing fatigue'
+  },
+  {
+    category: 'Autoimmune',
+    tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies'],
+    indication: 'Screen for autoimmune conditions'
+  },
+  {
+    category: 'Cardiac',
+    tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP'],
+    indication: 'Rule out structural heart disease, heart failure'
+  },
+  {
+    category: 'Infectious',
+    tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies'],
+    indication: 'Rule out chronic infections'
+  }
+]
+
+export default function RedFlagChecker() {
+  const [selectedRedFlags, setSelectedRedFlags] = useState<string[]>([])
+  const [selectedRoutineLabs, setSelectedRoutineLabs] = useState<string[]>([])
+  const [isComplete, setIsComplete] = useState(false)
+
+  const handleRedFlagChange = (redFlagId: string, checked: boolean) => {
+    if (checked) {
+      setSelectedRedFlags(prev => [...prev, redFlagId])
+    } else {
+      setSelectedRedFlags(prev => prev.filter(id => id !== redFlagId))
+    }
+  }
+
+  const handleRoutineLabChange = (category: string, checked: boolean) => {
+    if (checked) {
+      setSelectedRoutineLabs(prev => [...prev, category])
+    } else {
+      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== category))
+    }
+  }
+
+  const generateRecommendations = () => {
+    const urgentTests = new Set<string>()
+    const routineTests = new Set<string>()
+    
+    // Add tests based on red flags
+    selectedRedFlags.forEach(flagId => {
+      const flag = redFlagSymptoms.find(f => f.id === flagId)
+      if (flag) {
+        flag.tests.forEach(test => urgentTests.add(test))
+      }
+    })
+
+    // Add routine tests
+    selectedRoutineLabs.forEach(category => {
+      const labCategory = routineLabs.find(l => l.category === category)
+      if (labCategory) {
+        labCategory.tests.forEach(test => routineTests.add(test))
+      }
+    })
+
+    const hasHighPriorityFlags = selectedRedFlags.some(flagId => 
+      redFlagSymptoms.find(f => f.id === flagId)?.priority === 'high'
+    )
+
+    return {
+      urgentTests: Array.from(urgentTests),
+      routineTests: Array.from(routineTests),
+      hasHighPriorityFlags,
+      recommendation: hasHighPriorityFlags ? 'urgent' : selectedRedFlags.length > 0 ? 'priority' : 'routine'
+    }
+  }
+
+  if (isComplete) {
+    const recommendations = generateRecommendations()
+    
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Card>
+            <CardHeader className="text-center">
+              <CardTitle className="flex items-center justify-center gap-2 text-2xl">
+                <CheckCircle className="h-6 w-6 text-green-600" />
+                Red-flag Assessment Complete
+              </CardTitle>
+              <CardDescription>
+                Laboratory and diagnostic recommendations based on clinical presentation
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              {recommendations.hasHighPriorityFlags && (
+                <Alert className="border-red-200 bg-red-50">
+                  <AlertTriangle className="h-4 w-4 text-red-600" />
+                  <AlertDescription className="text-red-800">
+                    <strong>Urgent Evaluation Required:</strong> High-priority red flags detected. 
+                    Consider immediate or expedited workup.
+                  </AlertDescription>
+                </Alert>
+              )}
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {recommendations.urgentTests.length > 0 && (
+                  <Card className="border-red-200">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-lg text-red-800 flex items-center gap-2">
+                        <Heart className="h-5 w-5" />
+                        Priority Tests (Red Flags)
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {recommendations.urgentTests.map((test, index) => (
+                          <li key={index} className="flex items-center gap-2 text-sm">
+                            <Activity className="h-3 w-3 text-red-600" />
+                            {test}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {recommendations.routineTests.length > 0 && (
+                  <Card className="border-blue-200">
+                    <CardHeader className="pb-3">
+                      <CardTitle className="text-lg text-blue-800 flex items-center gap-2">
+                        <FileText className="h-5 w-5" />
+                        Routine Screening Tests
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2">
+                        {recommendations.routineTests.map((test, index) => (
+                          <li key={index} className="flex items-center gap-2 text-sm">
+                            <Activity className="h-3 w-3 text-blue-600" />
+                            {test}
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                )}
+              </div>
+
+              {selectedRedFlags.length === 0 && selectedRoutineLabs.length === 0 && (
+                <Card className="border-green-200 bg-green-50">
+                  <CardContent className="pt-6">
+                    <div className="text-center text-green-800">
+                      <CheckCircle className="h-8 w-8 mx-auto mb-2" />
+                      <h3 className="font-semibold mb-2">No Red Flags Identified</h3>
+                      <p className="text-sm">
+                        Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.
+                        Consider basic metabolic panel if not done recently.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2 flex items-center gap-2">
+                  <Brain className="h-4 w-4" />
+                  Clinical Decision Support
+                </h4>
+                <div className="text-sm space-y-2">
+                  {recommendations.recommendation === 'urgent' && (
+                    <p className="text-red-700">
+                      • Expedite workup due to high-priority red flags
+                      • Consider same-day or next-day evaluation
+                      • Hold off on ME/CFS/POTS assessment until red flags ruled out
+                    </p>
+                  )}
+                  {recommendations.recommendation === 'priority' && (
+                    <p className="text-yellow-700">
+                      • Complete recommended tests within 1-2 weeks
+                      • Can proceed with stand-test if cardiovascular red flags absent
+                      • Re-evaluate based on test results
+                    </p>
+                  )}
+                  {recommendations.recommendation === 'routine' && (
+                    <p className="text-green-700">
+                      • Proceed with routine screening labs
+                      • Can continue with ME/CFS/Long COVID/POTS assessment
+                      • Consider 4-6 week follow-up for test results
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex gap-4 justify-center">
+                <Button onClick={() => {
+                  setSelectedRedFlags([])
+                  setSelectedRoutineLabs([])
+                  setIsComplete(false)
+                }} variant="outline">
+                  Reassess
+                </Button>
+                {recommendations.recommendation === 'routine' && (
+                  <Button asChild>
+                    <Link href="/stand-test">
+                      Continue to Stand-Test Pro
+                    </Link>
+                  </Button>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="mb-6">
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Dashboard
+          </Link>
+          
+          <div className="flex items-center gap-4 mb-4">
+            <AlertTriangle className="h-5 w-5 text-red-600" />
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">Red-flag Checker</h1>
+              <p className="text-gray-600">Identify symptoms requiring urgent evaluation and rule out explanatory diseases</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg text-red-800">Red Flag Symptoms</CardTitle>
+              <CardDescription>
+                Check any symptoms present that may require urgent evaluation
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-4">
+                {redFlagSymptoms.map((flag) => (
+                  <div key={flag.id} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
+                    <Checkbox
+                      id={flag.id}
+                      checked={selectedRedFlags.includes(flag.id)}
+                      onCheckedChange={(checked) => handleRedFlagChange(flag.id, !!checked)}
+                    />
+                    <div className="flex-1">
+                      <label htmlFor={flag.id} className="text-sm font-medium cursor-pointer">
+                        {flag.symptom}
+                      </label>
+                      <div className="flex gap-2 mt-1">
+                        <Badge 
+                          variant={flag.priority === 'high' ? 'destructive' : 'secondary'}
+                          className="text-xs"
+                        >
+                          {flag.category}
+                        </Badge>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg text-blue-800">Routine Screening Labs</CardTitle>
+              <CardDescription>
+                Select categories of tests to rule out common explanatory conditions
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-4">
+                {routineLabs.map((labCategory) => (
+                  <div key={labCategory.category} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
+                    <Checkbox
+                      id={labCategory.category}
+                      checked={selectedRoutineLabs.includes(labCategory.category)}
+                      onCheckedChange={(checked) => handleRoutineLabChange(labCategory.category, !!checked)}
+                    />
+                    <div className="flex-1">
+                      <label htmlFor={labCategory.category} className="text-sm font-medium cursor-pointer">
+                        {labCategory.category}
+                      </label>
+                      <p className="text-xs text-gray-600 mt-1">{labCategory.indication}</p>
+                      <div className="text-xs text-gray-500 mt-1">
+                        {labCategory.tests.slice(0, 3).join(', ')}
+                        {labCategory.tests.length > 3 && ` + ${labCategory.tests.length - 3} more`}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="flex justify-center">
+            <Button onClick={() => setIsComplete(true)} className="px-8">
+              Generate Recommendations
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
