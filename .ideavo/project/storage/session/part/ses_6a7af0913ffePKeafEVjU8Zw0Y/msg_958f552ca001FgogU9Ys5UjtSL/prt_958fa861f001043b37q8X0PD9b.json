@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fa861f001043b37q8X0PD9b",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_016koJtqEBpPP5z9EHJizubA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Complete Assessment|Test Results|Download Report",
+      "include": "app/**/*.tsx"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "Complete Assessment|Test Results|Download Report",
+    "time": {
+      "start": 1758134437955,
+      "end": 1758134437967
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f78ed2001nQtOjAB5RceW1h",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_011FNpbhxGqVXGbUtXomfqcs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "              <DropdownMenuLabel>Diagnostic Tools</DropdownMenuLabel>",
+      "newString": "              <DropdownMenuLabel>{t.navigation.diagnosticTools}</DropdownMenuLabel>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -149,9 +149,9 @@\n     {t.navigation.assessmentModules}\n   </Button>\n </DropdownMenuTrigger>\n <DropdownMenuContent className=\"w-80\">\n-  <DropdownMenuLabel>Diagnostic Tools</DropdownMenuLabel>\n+  <DropdownMenuLabel>{t.navigation.diagnosticTools}</DropdownMenuLabel>\n   <DropdownMenuSeparator />\n   <DropdownMenuGroup>\n     {assessmentModules.map((module) => (\n       <DropdownMenuItem key={module.href} asChild>\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758134244108,
+      "end": 1758134244111
+    }
+  }
+}

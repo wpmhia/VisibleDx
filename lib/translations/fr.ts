@@ -779,6 +779,17 @@ export const fr: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Modules d\'Évaluation',
+    guidelines: 'Directives',
+    diagnosticTools: 'Outils Diagnostiques',
+    clinicalGuidelines: 'Directives Cliniques & Références',
+    guidelinesDescription: 'Directives basées sur des preuves utilisées dans les algorithmes diagnostiques VisibleDx',
+    assessmentModulesSection: 'Modules d\'Évaluation',
+    guidelinesSection: 'Directives & Références',
+    moreGuidelines: 'plus de directives'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

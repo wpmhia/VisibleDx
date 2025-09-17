@@ -10,95 +10,53 @@ import { FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lu
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
-const redFlagSymptoms = [
-  {
-    id: 'fever',
-    symptom: 'Persistent fever or night sweats',
-    category: 'Infectious/Inflammatory',
-    priority: 'high',
-    tests: ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray']
-  },
-  {
-    id: 'weight_loss',
-    symptom: 'Unintentional weight loss >10% in 6 months',
-    category: 'Malignancy/Metabolic',
-    priority: 'high',
-    tests: ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis']
-  },
-  {
-    id: 'chest_pain',
-    symptom: 'Chest pain with exertion or at rest',
-    category: 'Cardiovascular',
-    priority: 'high',
-    tests: ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test']
-  },
-  {
-    id: 'dyspnea',
-    symptom: 'Progressive shortness of breath',
-    category: 'Cardiopulmonary',
-    priority: 'high',
-    tests: ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer']
-  },
-  {
-    id: 'neurological',
-    symptom: 'New neurological symptoms (weakness, numbness, seizures)',
-    category: 'Neurological',
-    priority: 'high',
-    tests: ['MRI brain', 'Neurological consultation', 'EEG if seizures']
-  },
-  {
-    id: 'bleeding',
-    symptom: 'Abnormal bleeding or bruising',
-    category: 'Hematological',
-    priority: 'high',
-    tests: ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear']
-  },
-  {
-    id: 'lymphadenopathy',
-    symptom: 'Enlarged lymph nodes',
-    category: 'Infectious/Malignancy',
-    priority: 'medium',
-    tests: ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis']
-  },
-  {
-    id: 'jaundice',
-    symptom: 'Jaundice or yellowing of skin/eyes',
-    category: 'Hepatic',
-    priority: 'high',
-    tests: ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']
-  }
-]
+const getRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({
+  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],
+  symptom,
+  category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],
+  priority: 'high',
+  tests: [
+    ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],
+    ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],
+    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],
+    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],
+    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],
+    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],
+    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],
+    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']
+  ][index]
+}))
 
-const routineLabs = [
+const getRoutineLabs = (t: any) => [
   {
-    category: 'Basic Metabolic',
-    tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP'],
-    indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities'
+    category: t.redFlag.routineLabs.categories.basicMetabolic.title,
+    tests: t.redFlag.routineLabs.categories.basicMetabolic.tests,
+    indication: t.redFlag.routineLabs.categories.basicMetabolic.indication
   },
   {
-    category: 'Endocrine',
-    tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D'],
-    indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency'
+    category: t.redFlag.routineLabs.categories.endocrine.title,
+    tests: t.redFlag.routineLabs.categories.endocrine.tests,
+    indication: t.redFlag.routineLabs.categories.endocrine.indication
   },
   {
-    category: 'Nutritional',
-    tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin'],
-    indication: 'Rule out nutritional deficiencies causing fatigue'
+    category: t.redFlag.routineLabs.categories.nutritional.title,
+    tests: t.redFlag.routineLabs.categories.nutritional.tests,
+    indication: t.redFlag.routineLabs.categories.nutritional.indication
   },
   {
-    category: 'Autoimmune',
-    tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies'],
-    indication: 'Screen for autoimmune conditions'
+    category: t.redFlag.routineLabs.categories.autoimmune.title,
+    tests: t.redFlag.routineLabs.categories.autoimmune.tests,
+    indication: t.redFlag.routineLabs.categories.autoimmune.indication
   },
   {
-    category: 'Cardiac',
-    tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP'],
-    indication: 'Rule out structural heart disease, heart failure'
+    category: t.redFlag.routineLabs.categories.cardiac.title,
+    tests: t.redFlag.routineLabs.categories.cardiac.tests,
+    indication: t.redFlag.routineLabs.categories.cardiac.indication
   },
   {
-    category: 'Infectious',
-    tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies'],
-    indication: 'Rule out chronic infections'
+    category: t.redFlag.routineLabs.categories.infectious.title,
+    tests: t.redFlag.routineLabs.categories.infectious.tests,
+    indication: t.redFlag.routineLabs.categories.infectious.indication
   }
 ]
 
@@ -107,6 +65,8 @@ export default function RedFlagChecker() {
   const [selectedRoutineLabs, setSelectedRoutineLabs] = useState<string[]>([])
   const [isComplete, setIsComplete] = useState(false)
   const { t } = useTranslation()
+  const redFlagSymptoms = getRedFlagSymptoms(t)
+  const routineLabs = getRoutineLabs(t)
 
   const handleRedFlagChange = (redFlagId: string, checked: boolean) => {
     if (checked) {

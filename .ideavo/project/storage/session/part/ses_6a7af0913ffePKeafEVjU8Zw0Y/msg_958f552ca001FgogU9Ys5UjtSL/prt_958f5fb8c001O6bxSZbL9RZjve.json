@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f5fb8c001O6bxSZbL9RZjve",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Dz3XtDqW266xAxtyPrEvKT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'",
+      "newString": "  navigation: {\n    assessmentModules: 'Assessment Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Diagnostic Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n    assessmentModulesSection: 'Assessment Modules',\n    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -746,8 +746,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Assessment Modules',\n+  guidelines: 'Guidelines',\n+  diagnosticTools: 'Diagnostic Tools',\n+  clinicalGuidelines: 'Clinical Guidelines & References',\n+  guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n+  assessmentModulesSection: 'Assessment Modules',\n+  guidelinesSection: 'Guidelines & References',\n+  moreGuidelines: 'more guidelines'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134144016,
+      "end": 1758134144042
+    }
+  }
+}

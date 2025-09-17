@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f77b72001Lsiy7JPf443ED0",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_014JtJkLDQQnva2Ct9PYpiXm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "              <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n                <BarChart3 className=\"h-4 w-4\" />\n                Assessment Modules\n              </Button>",
+      "newString": "              <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n                <BarChart3 className=\"h-4 w-4\" />\n                {t.navigation.assessmentModules}\n              </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -145,9 +145,9 @@\n <DropdownMenu>\n   <DropdownMenuTrigger asChild>\n     <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n       <BarChart3 className=\"h-4 w-4\" />\n-      Assessment Modules\n+      {t.navigation.assessmentModules}\n     </Button>\n   </DropdownMenuTrigger>\n   <DropdownMenuContent className=\"w-80\">\n     <DropdownMenuLabel>Diagnostic Tools</DropdownMenuLabel>\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758134239910,
+      "end": 1758134239914
+    }
+  }
+}

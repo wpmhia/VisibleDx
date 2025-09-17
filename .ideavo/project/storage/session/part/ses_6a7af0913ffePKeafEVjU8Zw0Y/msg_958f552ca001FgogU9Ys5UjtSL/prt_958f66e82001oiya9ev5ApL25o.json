@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f66e82001oiya9ev5ApL25o",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RAY6EWgE2939mSmt3zfmNq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "offset": 750,
+      "limit": 20
+    },
+    "output": "<file>\n00751|       criteria: [\n00752|         'Betydelig tretthet ≥6 måneder',\n00753|         'Post-exertional malaise',\n00754|         'Ikke-oppfriskende søvn',\n00755|         'Kognitive forstyrrelser eller ortostatisk intoleranse'\n00756|       ]\n00757|     },\n00758|     longCovid: {\n00759|       name: 'Long COVID',\n00760|       fullName: 'Post-COVID-19 Tilstand',\n00761|       icdCode: 'U09.9',\n00762|       criteria: [\n00763|         'Bekreftet eller sannsynlig SARS-CoV-2-infeksjon',\n00764|         'Symptomer ≥3 måneder fra akutt episode',\n00765|         'Multisystemsymptomer',\n00766|         'Funksjonell påvirkning'\n00767|       ]\n00768|     },\n00769|     pots: {\n00770|       name: 'POTS',\n\n(File has more lines. Use 'offset' parameter to read beyond line 770)\n</file>",
+    "metadata": {
+      "preview": "      criteria: [\n        'Betydelig tretthet ≥6 måneder',\n        'Post-exertional malaise',\n        'Ikke-oppfriskende søvn',\n        'Kognitive forstyrrelser eller ortostatisk intoleranse'\n      ]\n    },\n    longCovid: {\n      name: 'Long COVID',\n      fullName: 'Post-COVID-19 Tilstand',\n      icdCode: 'U09.9',\n      criteria: [\n        'Bekreftet eller sannsynlig SARS-CoV-2-infeksjon',\n        'Symptomer ≥3 måneder fra akutt episode',\n        'Multisystemsymptomer',\n        'Funksjonell påvirkning'\n      ]\n    },\n    pots: {\n      name: 'POTS',"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758134169923,
+      "end": 1758134169928
+    }
+  }
+}

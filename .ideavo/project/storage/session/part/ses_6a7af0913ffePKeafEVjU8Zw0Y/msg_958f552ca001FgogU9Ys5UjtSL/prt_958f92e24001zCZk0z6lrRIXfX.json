@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f92e24001zCZk0z6lrRIXfX",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HprLMFXkGmpFkhtVfRBrMd",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 20,
+      "limit": 70
+    },
+    "output": "<file>\n00021|     ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n00022|     ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n00023|     ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n00024|     ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n00025|     ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n00026|     ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n00027|   ][index]\n00028| }))\n00029| \n00030| const routineLabs = [\n00031|   {\n00032|     category: 'Basic Metabolic',\n00033|     tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP'],\n00034|     indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities'\n00035|   },\n00036|   {\n00037|     category: 'Endocrine',\n00038|     tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D'],\n00039|     indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency'\n00040|   },\n00041|   {\n00042|     category: 'Nutritional',\n00043|     tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin'],\n00044|     indication: 'Rule out nutritional deficiencies causing fatigue'\n00045|   },\n00046|   {\n00047|     category: 'Autoimmune',\n00048|     tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies'],\n00049|     indication: 'Screen for autoimmune conditions'\n00050|   },\n00051|   {\n00052|     category: 'Cardiac',\n00053|     tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP'],\n00054|     indication: 'Rule out structural heart disease, heart failure'\n00055|   },\n00056|   {\n00057|     category: 'Infectious',\n00058|     tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies'],\n00059|     indication: 'Rule out chronic infections'\n00060|   }\n00061| ]\n00062| \n00063| export default function RedFlagChecker() {\n00064|   const [selectedRedFlags, setSelectedRedFlags] = useState<string[]>([])\n00065|   const [selectedRoutineLabs, setSelectedRoutineLabs] = useState<string[]>([])\n00066|   const [isComplete, setIsComplete] = useState(false)\n00067|   const { t } = useTranslation()\n00068| \n00069|   const handleRedFlagChange = (redFlagId: string, checked: boolean) => {\n00070|     if (checked) {\n00071|       setSelectedRedFlags(prev => [...prev, redFlagId])\n00072|     } else {\n00073|       setSelectedRedFlags(prev => prev.filter(id => id !== redFlagId))\n00074|     }\n00075|   }\n00076| \n00077|   const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n00078|     if (checked) {\n00079|       setSelectedRoutineLabs(prev => [...prev, categoryKey])\n00080|     } else {\n00081|       setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n00082|     }\n00083|   }\n00084| \n00085|   const generateRecommendations = () => {\n00086|     const urgentTests = new Set<string>()\n00087|     const routineTests = new Set<string>()\n00088|     \n00089|     // Add tests based on red flags\n00090|     selectedRedFlags.forEach(flagId => {\n\n(File has more lines. Use 'offset' parameter to read beyond line 90)\n</file>",
+    "metadata": {
+      "preview": "    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n  ][index]\n}))\n\nconst routineLabs = [\n  {\n    category: 'Basic Metabolic',\n    tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP'],\n    indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities'\n  },\n  {\n    category: 'Endocrine',\n    tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D'],\n    indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency'\n  },"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758134349981,
+      "end": 1758134349983
+    }
+  }
+}

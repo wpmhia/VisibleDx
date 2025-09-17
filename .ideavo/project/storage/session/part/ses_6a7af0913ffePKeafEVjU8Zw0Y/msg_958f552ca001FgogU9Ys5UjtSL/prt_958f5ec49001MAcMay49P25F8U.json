@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f5ec49001MAcMay49P25F8U",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01EiBBVVTpNMP9dhbMfZw8Wi",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 750,
+      "limit": 20
+    },
+    "output": "<file>\n00751|     en: 'English',\n00752|     nl: 'Nederlands',\n00753|     da: 'Dansk',\n00754|     de: 'Deutsch',\n00755|     sv: 'Svenska',\n00756|     no: 'Norsk',\n00757|     fr: 'Français'\n00758|   },\n00759| \n00760|   disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'\n00761| }\n</file>",
+    "metadata": {
+      "preview": "    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'This screening tool is for clinical decision support only and does not replace professional medical judgment'\n}"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134136713,
+      "end": 1758134136718
+    }
+  }
+}

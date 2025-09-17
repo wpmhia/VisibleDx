@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f668fa0013MKzJxahtocQ6N",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QwyvX1sMQ1F9FKbXResPn3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "offset": 750,
+      "limit": 20
+    },
+    "output": "<file>\n00751|         'Keine orthostatische Hypotonie'\n00752|       ]\n00753|     }\n00754|   },\n00755| \n00756|   languages: {\n00757|     en: 'English',\n00758|     nl: 'Nederlands',\n00759|     da: 'Dansk',\n00760|     de: 'Deutsch',\n00761|     sv: 'Svenska',\n00762|     no: 'Norsk',\n00763|     fr: 'Français'\n00764|   },\n00765| \n00766|   disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'\n00767| }\n</file>",
+    "metadata": {
+      "preview": "        'Keine orthostatische Hypotonie'\n      ]\n    }\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'\n}"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758134168505,
+      "end": 1758134168510
+    }
+  }
+}

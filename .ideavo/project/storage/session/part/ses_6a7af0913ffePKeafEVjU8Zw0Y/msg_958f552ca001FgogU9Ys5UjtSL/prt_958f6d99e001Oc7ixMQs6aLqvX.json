@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f6d99e001Oc7ixMQs6aLqvX",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01EPNQUHxvFf6LR9tZiSb7NL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/sv.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Detta verktyg är endast för kliniskt beslutsstöd och ersätter inte professionell medicinsk bedömning. Konsultera alltid kvalificerade vårdpersonal för diagnos och behandling.'",
+      "newString": "  navigation: {\n    assessmentModules: 'Bedömningsmoduler',\n    guidelines: 'Riktlinjer',\n    diagnosticTools: 'Diagnostiska Verktyg',\n    clinicalGuidelines: 'Kliniska Riktlinjer & Referenser',\n    guidelinesDescription: 'Evidensbaserade riktlinjer som används i VisibleDx diagnostiska algoritmer',\n    assessmentModulesSection: 'Bedömningsmoduler',\n    guidelinesSection: 'Riktlinjer & Referenser',\n    moreGuidelines: 'fler riktlinjer'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Detta verktyg är endast för kliniskt beslutsstöd och ersätter inte professionell medicinsk bedömning. Konsultera alltid kvalificerade vårdpersonal för diagnos och behandling.'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/sv.ts\n===================================================================\n--- /home/user/project/lib/translations/sv.ts\n+++ /home/user/project/lib/translations/sv.ts\n@@ -778,8 +778,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Bedömningsmoduler',\n+  guidelines: 'Riktlinjer',\n+  diagnosticTools: 'Diagnostiska Verktyg',\n+  clinicalGuidelines: 'Kliniska Riktlinjer & Referenser',\n+  guidelinesDescription: 'Evidensbaserade riktlinjer som används i VisibleDx diagnostiska algoritmer',\n+  assessmentModulesSection: 'Bedömningsmoduler',\n+  guidelinesSection: 'Riktlinjer & Referenser',\n+  moreGuidelines: 'fler riktlinjer'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/sv.ts",
+    "time": {
+      "start": 1758134201214,
+      "end": 1758134201231
+    }
+  }
+}

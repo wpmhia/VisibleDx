@@ -1,0 +1,85 @@
+{
+  "id": "prt_958fa2f36001ydsVjXiMPWVM76",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01PHVkbJqMkgKpyHV6qhrmqr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Analyze navigation components for missing translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "analyze-navigation"
+        },
+        {
+          "content": "Fix header/footer navigation multilingual support",
+          "status": "completed",
+          "priority": "high",
+          "id": "fix-navigation-i18n"
+        },
+        {
+          "content": "Identify questionnaires with missing translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "identify-questionnaire-issues"
+        },
+        {
+          "content": "Fix questionnaire multilingual support",
+          "status": "completed",
+          "priority": "high",
+          "id": "fix-questionnaire-i18n"
+        },
+        {
+          "content": "Test all language switching functionality",
+          "status": "in_progress",
+          "priority": "medium",
+          "id": "test-language-switching"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Analyze navigation components for missing translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"analyze-navigation\"\n  },\n  {\n    \"content\": \"Fix header/footer navigation multilingual support\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"fix-navigation-i18n\"\n  },\n  {\n    \"content\": \"Identify questionnaires with missing translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"identify-questionnaire-issues\"\n  },\n  {\n    \"content\": \"Fix questionnaire multilingual support\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"fix-questionnaire-i18n\"\n  },\n  {\n    \"content\": \"Test all language switching functionality\",\n    \"status\": \"in_progress\",\n    \"priority\": \"medium\",\n    \"id\": \"test-language-switching\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Analyze navigation components for missing translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "analyze-navigation"
+        },
+        {
+          "content": "Fix header/footer navigation multilingual support",
+          "status": "completed",
+          "priority": "high",
+          "id": "fix-navigation-i18n"
+        },
+        {
+          "content": "Identify questionnaires with missing translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "identify-questionnaire-issues"
+        },
+        {
+          "content": "Fix questionnaire multilingual support",
+          "status": "completed",
+          "priority": "high",
+          "id": "fix-questionnaire-i18n"
+        },
+        {
+          "content": "Test all language switching functionality",
+          "status": "in_progress",
+          "priority": "medium",
+          "id": "test-language-switching"
+        }
+      ]
+    },
+    "title": "1 todos",
+    "time": {
+      "start": 1758134418409,
+      "end": 1758134418436
+    }
+  }
+}

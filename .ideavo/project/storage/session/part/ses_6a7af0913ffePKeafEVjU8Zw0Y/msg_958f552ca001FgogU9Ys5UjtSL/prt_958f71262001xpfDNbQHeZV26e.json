@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f71262001xpfDNbQHeZV26e",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Dw6oaXp4Fi6SdXKgN2gBuZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Cet outil est uniquement pour le support de décision clinique et ne remplace pas le jugement médical professionnel. Toujours consulter du personnel de santé qualifié pour le diagnostic et le traitement.'",
+      "newString": "  navigation: {\n    assessmentModules: 'Modules d\\'Évaluation',\n    guidelines: 'Directives',\n    diagnosticTools: 'Outils Diagnostiques',\n    clinicalGuidelines: 'Directives Cliniques & Références',\n    guidelinesDescription: 'Directives basées sur des preuves utilisées dans les algorithmes diagnostiques VisibleDx',\n    assessmentModulesSection: 'Modules d\\'Évaluation',\n    guidelinesSection: 'Directives & Références',\n    moreGuidelines: 'plus de directives'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Cet outil est uniquement pour le support de décision clinique et ne remplace pas le jugement médical professionnel. Toujours consulter du personnel de santé qualifié pour le diagnostic et le traitement.'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/fr.ts\n===================================================================\n--- /home/user/project/lib/translations/fr.ts\n+++ /home/user/project/lib/translations/fr.ts\n@@ -778,8 +778,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Modules d\\'Évaluation',\n+  guidelines: 'Directives',\n+  diagnosticTools: 'Outils Diagnostiques',\n+  clinicalGuidelines: 'Directives Cliniques & Références',\n+  guidelinesDescription: 'Directives basées sur des preuves utilisées dans les algorithmes diagnostiques VisibleDx',\n+  assessmentModulesSection: 'Modules d\\'Évaluation',\n+  guidelinesSection: 'Directives & Références',\n+  moreGuidelines: 'plus de directives'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758134215272,
+      "end": 1758134215278
+    }
+  }
+}

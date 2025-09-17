@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f7b0e1001Ic10oFx3sgBqT3",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01SRVaX85JfvtpT5FgesP1Bg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "                <SheetTitle>Clinical Guidelines & References</SheetTitle>\n                <SheetDescription>\n                  Evidence-based guidelines used in VisibleDx diagnostic algorithms\n                </SheetDescription>",
+      "newString": "                <SheetTitle>{t.navigation.clinicalGuidelines}</SheetTitle>\n                <SheetDescription>\n                  {t.navigation.guidelinesDescription}\n                </SheetDescription>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -183,11 +183,11 @@\n   </Button>\n </SheetTrigger>\n <SheetContent>\n   <SheetHeader>\n-    <SheetTitle>Clinical Guidelines & References</SheetTitle>\n+    <SheetTitle>{t.navigation.clinicalGuidelines}</SheetTitle>\n     <SheetDescription>\n-      Evidence-based guidelines used in VisibleDx diagnostic algorithms\n+      {t.navigation.guidelinesDescription}\n     </SheetDescription>\n   </SheetHeader>\n   <div className=\"mt-6 space-y-4\">\n     {guidelines.map((guideline, index) => (\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758134253828,
+      "end": 1758134253834
+    }
+  }
+}

@@ -538,6 +538,18 @@ export interface Translation {
     }
   }
 
+  // Navigation
+  navigation: {
+    assessmentModules: string
+    guidelines: string
+    diagnosticTools: string
+    clinicalGuidelines: string
+    guidelinesDescription: string
+    assessmentModulesSection: string
+    guidelinesSection: string
+    moreGuidelines: string
+  }
+
   // Languages
   languages: {
     en: string

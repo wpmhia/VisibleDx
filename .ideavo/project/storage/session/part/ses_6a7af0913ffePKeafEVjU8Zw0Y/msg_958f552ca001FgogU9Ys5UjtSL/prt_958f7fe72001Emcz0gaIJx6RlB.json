@@ -1,0 +1,11 @@
+{
+  "id": "prt_958f7fe72001Emcz0gaIJx6RlB",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to update the navigation to use translated module titles and descriptions from the dashboard translations. Let me modify the assessmentModules array to use translations:",
+  "time": {
+    "start": 1758134272868,
+    "end": 1758134272868
+  }
+}

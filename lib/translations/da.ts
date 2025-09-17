@@ -756,6 +756,17 @@ export const da: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Vurderingsmoduler',
+    guidelines: 'Retningslinjer',
+    diagnosticTools: 'Diagnostiske Værktøjer',
+    clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',
+    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',
+    assessmentModulesSection: 'Vurderingsmoduler',
+    guidelinesSection: 'Retningslinjer & Referencer',
+    moreGuidelines: 'flere retningslinjer'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

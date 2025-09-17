@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f79e14001e9mEtlB7N1gzLd",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BaMtuT61X7ZmNAkuvGJRyC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "              <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n                <BookOpen className=\"h-4 w-4\" />\n                Guidelines\n              </Button>",
+      "newString": "              <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n                <BookOpen className=\"h-4 w-4\" />\n                {t.navigation.guidelines}\n              </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -178,9 +178,9 @@\n <Sheet>\n   <SheetTrigger asChild>\n     <Button variant=\"ghost\" className=\"flex items-center gap-2\">\n       <BookOpen className=\"h-4 w-4\" />\n-      Guidelines\n+      {t.navigation.guidelines}\n     </Button>\n   </SheetTrigger>\n   <SheetContent>\n     <SheetHeader>\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758134248201,
+      "end": 1758134248207
+    }
+  }
+}

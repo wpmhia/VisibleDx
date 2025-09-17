@@ -39,54 +39,54 @@ import {
 import { useTranslation } from '@/lib/language-context'
 import { LanguageSelector } from '@/components/language-selector'
 
-const assessmentModules = [
+const getAssessmentModules = (t: any) => [
   {
     href: '/new-patient',
     icon: User,
-    title: 'New Patient Assessment',
-    description: 'Complete guided evaluation',
+    title: t.newPatient.title,
+    description: t.newPatient.description,
     badge: 'Smart'
   },
   {
     href: '/quick-screen',
     icon: Clock,
-    title: 'Quick-Screen',
-    description: '16 questions · 2 minutes',
+    title: t.dashboard.modules.quickScreen.title,
+    description: t.dashboard.modules.quickScreen.description,
     badge: null
   },
   {
     href: '/red-flag-checker',
     icon: AlertTriangle,
-    title: 'Red-flag Checker',
-    description: 'Lab recommendations',
+    title: t.dashboard.modules.redFlag.title,
+    description: t.dashboard.modules.redFlag.description,
     badge: null
   },
   {
     href: '/stand-test',
     icon: Heart,
-    title: 'Stand-Test Pro',
-    description: '10-min NASA protocol',
+    title: t.dashboard.modules.standTest.title,
+    description: t.dashboard.modules.standTest.description,
     badge: null
   },
   {
     href: '/pem-quest',
     icon: Activity,
-    title: 'PEM-Quest',
-    description: 'Post-exertional malaise',
+    title: t.dashboard.modules.pemQuest.title,
+    description: t.dashboard.modules.pemQuest.description,
     badge: null
   },
   {
     href: '/criteria-engine',
     icon: BarChart3,
-    title: 'Criteria Engine',
-    description: 'CDC, IOM, ESC, WHO',
+    title: t.dashboard.modules.criteriaEngine.title,
+    description: t.dashboard.modules.criteriaEngine.description,
     badge: null
   },
   {
     href: '/subtype-advisor',
     icon: Settings,
-    title: 'Subtype Advisor',
-    description: 'POTS treatment recommendations',
+    title: t.dashboard.modules.subtypeAdvisor.title,
+    description: t.dashboard.modules.subtypeAdvisor.description,
     badge: null
   }
 ]
@@ -127,6 +127,7 @@ const guidelines = [
 export default function Navigation() {
   const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
+  const assessmentModules = getAssessmentModules(t)
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
@@ -135,7 +136,7 @@ export default function Navigation() {
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <Stethoscope className="h-6 w-6 text-blue-600" />
           <div className="font-bold text-lg">
-            <span className="text-blue-600">Auto</span>
+            <span className="text-blue-600">Visible</span>
             <span className="text-gray-900">Dx</span>
           </div>
         </Link>
@@ -146,11 +147,11 @@ export default function Navigation() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex items-center gap-2">
                 <BarChart3 className="h-4 w-4" />
-                Assessment Modules
+                {t.navigation.assessmentModules}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-80">
-              <DropdownMenuLabel>Diagnostic Tools</DropdownMenuLabel>
+              <DropdownMenuLabel>{t.navigation.diagnosticTools}</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuGroup>
                 {assessmentModules.map((module) => (
@@ -179,14 +180,14 @@ export default function Navigation() {
             <SheetTrigger asChild>
               <Button variant="ghost" className="flex items-center gap-2">
                 <BookOpen className="h-4 w-4" />
-                Guidelines
+                {t.navigation.guidelines}
               </Button>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Clinical Guidelines & References</SheetTitle>
+                <SheetTitle>{t.navigation.clinicalGuidelines}</SheetTitle>
                 <SheetDescription>
-                  Evidence-based guidelines used in VisibleDx diagnostic algorithms
+                  {t.navigation.guidelinesDescription}
                 </SheetDescription>
               </SheetHeader>
               <div className="mt-6 space-y-4">
@@ -243,7 +244,7 @@ export default function Navigation() {
               <div className="mt-6 space-y-4">
                 <div>
                   <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-gray-500">
-                    Assessment Modules
+                    {t.navigation.assessmentModulesSection}
                   </h3>
                   <div className="space-y-2">
                     {assessmentModules.map((module) => (
@@ -272,7 +273,7 @@ export default function Navigation() {
 
                 <div className="border-t pt-4">
                   <h3 className="font-semibold mb-3 text-sm uppercase tracking-wide text-gray-500">
-                    Guidelines & References
+                    {t.navigation.guidelinesSection}
                   </h3>
                   <div className="space-y-2">
                     {guidelines.slice(0, 3).map((guideline, index) => (
@@ -293,7 +294,7 @@ export default function Navigation() {
                       </a>
                     ))}
                     <div className="text-xs text-gray-500 p-2">
-                      + {guidelines.length - 3} more guidelines
+                      + {guidelines.length - 3} {t.navigation.moreGuidelines}
                     </div>
                   </div>
                 </div>

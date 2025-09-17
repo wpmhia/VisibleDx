@@ -747,6 +747,17 @@ export const nl: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Beoordelingsmodules',
+    guidelines: 'Richtlijnen',
+    diagnosticTools: 'Diagnostische Hulpmiddelen',
+    clinicalGuidelines: 'Klinische Richtlijnen & Referenties',
+    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',
+    assessmentModulesSection: 'Beoordelingsmodules',
+    guidelinesSection: 'Richtlijnen & Referenties',
+    moreGuidelines: 'meer richtlijnen'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

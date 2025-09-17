@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f6f61d001tZTOolIvGMDxzt",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015xyppuJGA5APgjBEfPQHKR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/no.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dette verktøyet er kun for klinisk beslutningsstøtte og erstatter ikke profesjonell medisinsk vurdering. Konsulter alltid kvalifisert helsepersonell for diagnose og behandling.'",
+      "newString": "  navigation: {\n    assessmentModules: 'Vurderingsmoduler',\n    guidelines: 'Retningslinjer',\n    diagnosticTools: 'Diagnostiske Verktøy',\n    clinicalGuidelines: 'Kliniske Retningslinjer & Referanser',\n    guidelinesDescription: 'Evidensbaserte retningslinjer brukt i VisibleDx diagnostiske algoritmer',\n    assessmentModulesSection: 'Vurderingsmoduler',\n    guidelinesSection: 'Retningslinjer & Referanser',\n    moreGuidelines: 'flere retningslinjer'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dette verktøyet er kun for klinisk beslutningsstøtte og erstatter ikke profesjonell medisinsk vurdering. Konsulter alltid kvalifisert helsepersonell for diagnose og behandling.'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/no.ts\n===================================================================\n--- /home/user/project/lib/translations/no.ts\n+++ /home/user/project/lib/translations/no.ts\n@@ -778,8 +778,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Vurderingsmoduler',\n+  guidelines: 'Retningslinjer',\n+  diagnosticTools: 'Diagnostiske Verktøy',\n+  clinicalGuidelines: 'Kliniske Retningslinjer & Referanser',\n+  guidelinesDescription: 'Evidensbaserte retningslinjer brukt i VisibleDx diagnostiske algoritmer',\n+  assessmentModulesSection: 'Vurderingsmoduler',\n+  guidelinesSection: 'Retningslinjer & Referanser',\n+  moreGuidelines: 'flere retningslinjer'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/no.ts",
+    "time": {
+      "start": 1758134208305,
+      "end": 1758134208316
+    }
+  }
+}

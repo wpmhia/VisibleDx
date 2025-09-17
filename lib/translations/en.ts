@@ -747,6 +747,17 @@ export const en: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Assessment Modules',
+    guidelines: 'Guidelines',
+    diagnosticTools: 'Diagnostic Tools',
+    clinicalGuidelines: 'Clinical Guidelines & References',
+    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',
+    assessmentModulesSection: 'Assessment Modules',
+    guidelinesSection: 'Guidelines & References',
+    moreGuidelines: 'more guidelines'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

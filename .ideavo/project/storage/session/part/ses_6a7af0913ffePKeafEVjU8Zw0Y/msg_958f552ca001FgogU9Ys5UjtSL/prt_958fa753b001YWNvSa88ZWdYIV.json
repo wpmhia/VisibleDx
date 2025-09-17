@@ -1,0 +1,20 @@
+{
+  "id": "prt_958fa753b001YWNvSa88ZWdYIV",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01BvigbwddcSdsDneYzSKBqb",
+  "state": {
+    "status": "error",
+    "input": {
+      "pattern": "\\\"Complete|\\\"Completed|\\\"Results|\\\"Summary",
+      "include": "app/**/*.tsx"
+    },
+    "error": "Error: ripgrep failed: regex parse error:\n    \\\"Complete|\\\"Completed|\\\"Results|\\\"Summary\n    ^^\nerror: unrecognized escape sequence\n",
+    "time": {
+      "start": 1758134433720,
+      "end": 1758134433730
+    }
+  }
+}

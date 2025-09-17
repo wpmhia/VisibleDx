@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f6c06d0013gvpHmXxN4GUcb",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01DrsVJUsAWnhuCnmhW7MmRt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/de.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'",
+      "newString": "  navigation: {\n    assessmentModules: 'Bewertungsmodule',\n    guidelines: 'Leitlinien',\n    diagnosticTools: 'Diagnostische Werkzeuge',\n    clinicalGuidelines: 'Klinische Leitlinien & Referenzen',\n    guidelinesDescription: 'Evidenzbasierte Leitlinien in VisibleDx diagnostischen Algorithmen',\n    assessmentModulesSection: 'Bewertungsmodule',\n    guidelinesSection: 'Leitlinien & Referenzen',\n    moreGuidelines: 'weitere Leitlinien'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dieses Screening-Tool dient nur der klinischen Entscheidungsunterstützung und ersetzt nicht die professionelle medizinische Beurteilung'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/de.ts\n===================================================================\n--- /home/user/project/lib/translations/de.ts\n+++ /home/user/project/lib/translations/de.ts\n@@ -752,8 +752,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Bewertungsmodule',\n+  guidelines: 'Leitlinien',\n+  diagnosticTools: 'Diagnostische Werkzeuge',\n+  clinicalGuidelines: 'Klinische Leitlinien & Referenzen',\n+  guidelinesDescription: 'Evidenzbasierte Leitlinien in VisibleDx diagnostischen Algorithmen',\n+  assessmentModulesSection: 'Bewertungsmodule',\n+  guidelinesSection: 'Leitlinien & Referenzen',\n+  moreGuidelines: 'weitere Leitlinien'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/de.ts",
+    "time": {
+      "start": 1758134194023,
+      "end": 1758134194062
+    }
+  }
+}

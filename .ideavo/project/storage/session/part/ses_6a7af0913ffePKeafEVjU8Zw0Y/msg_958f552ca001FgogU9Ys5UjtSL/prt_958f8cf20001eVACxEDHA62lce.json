@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f8cf20001eVACxEDHA62lce",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01PHeZyJjvsKJH8zCv23SKmF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 72,
+      "limit": 30
+    },
+    "output": "<file>\n00073|       setSelectedRedFlags(prev => prev.filter(id => id !== redFlagId))\n00074|     }\n00075|   }\n00076| \n00077|   const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n00078|     if (checked) {\n00079|       setSelectedRoutineLabs(prev => [...prev, categoryKey])\n00080|     } else {\n00081|       setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n00082|     }\n00083|   }\n00084| \n00085|   const generateRecommendations = () => {\n00086|     const urgentTests = new Set<string>()\n00087|     const routineTests = new Set<string>()\n00088|     \n00089|     // Add tests based on red flags\n00090|     selectedRedFlags.forEach(flagId => {\n00091|       const flag = redFlagSymptoms.find(f => f.id === flagId)\n00092|       if (flag) {\n00093|         flag.tests.forEach(test => urgentTests.add(test))\n00094|       }\n00095|     })\n00096| \n00097|     // Add routine tests\n00098|     selectedRoutineLabs.forEach(categoryKey => {\n00099|       const category = routineLabs.find(cat => cat.category === categoryKey)\n00100|       if (category) {\n00101|         category.tests.forEach(test => routineTests.add(test))\n00102|       }\n\n(File has more lines. Use 'offset' parameter to read beyond line 102)\n</file>",
+    "metadata": {
+      "preview": "      setSelectedRedFlags(prev => prev.filter(id => id !== redFlagId))\n    }\n  }\n\n  const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n    if (checked) {\n      setSelectedRoutineLabs(prev => [...prev, categoryKey])\n    } else {\n      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n    }\n  }\n\n  const generateRecommendations = () => {\n    const urgentTests = new Set<string>()\n    const routineTests = new Set<string>()\n    \n    // Add tests based on red flags\n    selectedRedFlags.forEach(flagId => {\n      const flag = redFlagSymptoms.find(f => f.id === flagId)\n      if (flag) {"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758134326012,
+      "end": 1758134326015
+    }
+  }
+}

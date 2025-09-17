@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f64bed001rhGGHkfJU9ArML",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01DF2UgXU6at12NjfPZHkAA5",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'",
+      "newString": "  navigation: {\n    assessmentModules: 'Beoordelingsmodules',\n    guidelines: 'Richtlijnen',\n    diagnosticTools: 'Diagnostische Hulpmiddelen',\n    clinicalGuidelines: 'Klinische Richtlijnen & Referenties',\n    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n    assessmentModulesSection: 'Beoordelingsmodules',\n    guidelinesSection: 'Richtlijnen & Referenties',\n    moreGuidelines: 'meer richtlijnen'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -746,8 +746,19 @@\n     ]\n   }\n },\n \n+navigation: {\n+  assessmentModules: 'Beoordelingsmodules',\n+  guidelines: 'Richtlijnen',\n+  diagnosticTools: 'Diagnostische Hulpmiddelen',\n+  clinicalGuidelines: 'Klinische Richtlijnen & Referenties',\n+  guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n+  assessmentModulesSection: 'Beoordelingsmodules',\n+  guidelinesSection: 'Richtlijnen & Referenties',\n+  moreGuidelines: 'meer richtlijnen'\n+},\n+\n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n   da: 'Dansk',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758134163795,
+      "end": 1758134163811
+    }
+  }
+}

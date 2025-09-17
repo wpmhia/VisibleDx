@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f67146001JiKsHRKwL0ki51",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017DFeLB5aavqiPsq3eo9XLF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/fr.ts",
+      "offset": 750,
+      "limit": 20
+    },
+    "output": "<file>\n00751|       criteria: [\n00752|         'Fatigue substantielle ≥6 mois',\n00753|         'Malaise post-effort',\n00754|         'Sommeil non réparateur',\n00755|         'Troubles cognitifs ou intolérance orthostatique'\n00756|       ]\n00757|     },\n00758|     longCovid: {\n00759|       name: 'Long COVID',\n00760|       fullName: 'Condition Post-COVID-19',\n00761|       icdCode: 'U09.9',\n00762|       criteria: [\n00763|         'Infection SARS-CoV-2 confirmée ou probable',\n00764|         'Symptômes ≥3 mois depuis épisode aigu',\n00765|         'Symptômes multi-systémiques',\n00766|         'Impact fonctionnel'\n00767|       ]\n00768|     },\n00769|     pots: {\n00770|       name: 'POTS',\n\n(File has more lines. Use 'offset' parameter to read beyond line 770)\n</file>",
+    "metadata": {
+      "preview": "      criteria: [\n        'Fatigue substantielle ≥6 mois',\n        'Malaise post-effort',\n        'Sommeil non réparateur',\n        'Troubles cognitifs ou intolérance orthostatique'\n      ]\n    },\n    longCovid: {\n      name: 'Long COVID',\n      fullName: 'Condition Post-COVID-19',\n      icdCode: 'U09.9',\n      criteria: [\n        'Infection SARS-CoV-2 confirmée ou probable',\n        'Symptômes ≥3 mois depuis épisode aigu',\n        'Symptômes multi-systémiques',\n        'Impact fonctionnel'\n      ]\n    },\n    pots: {\n      name: 'POTS',"
+    },
+    "title": "lib/translations/fr.ts",
+    "time": {
+      "start": 1758134170129,
+      "end": 1758134170140
+    }
+  }
+}

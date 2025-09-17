@@ -1,0 +1,25 @@
+{
+  "id": "prt_958fa4dc1001UulnHzvQlOcmoV",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_019U7Ak3ercu4USV7qiHF8qY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Back to|Continue to|Start|Next Step",
+      "include": "app/**/*.tsx"
+    },
+    "output": "Found 2 matches\n/home/user/project/app/stand-test/page.tsx:\n  Line 156:     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`\n  Line 268:                     <p>• Continue to Subtype & Treatment Advisor for POTS management</p>",
+    "metadata": {
+      "matches": 2,
+      "truncated": false
+    },
+    "title": "Back to|Continue to|Start|Next Step",
+    "time": {
+      "start": 1758134423967,
+      "end": 1758134423982
+    }
+  }
+}

@@ -753,6 +753,17 @@ export const de: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Bewertungsmodule',
+    guidelines: 'Leitlinien',
+    diagnosticTools: 'Diagnostische Werkzeuge',
+    clinicalGuidelines: 'Klinische Leitlinien & Referenzen',
+    guidelinesDescription: 'Evidenzbasierte Leitlinien in VisibleDx diagnostischen Algorithmen',
+    assessmentModulesSection: 'Bewertungsmodule',
+    guidelinesSection: 'Leitlinien & Referenzen',
+    moreGuidelines: 'weitere Leitlinien'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

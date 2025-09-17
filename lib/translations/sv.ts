@@ -779,6 +779,17 @@ export const sv: Translation = {
     }
   },
 
+  navigation: {
+    assessmentModules: 'Bedömningsmoduler',
+    guidelines: 'Riktlinjer',
+    diagnosticTools: 'Diagnostiska Verktyg',
+    clinicalGuidelines: 'Kliniska Riktlinjer & Referenser',
+    guidelinesDescription: 'Evidensbaserade riktlinjer som används i VisibleDx diagnostiska algoritmer',
+    assessmentModulesSection: 'Bedömningsmoduler',
+    guidelinesSection: 'Riktlinjer & Referenser',
+    moreGuidelines: 'fler riktlinjer'
+  },
+
   languages: {
     en: 'English',
     nl: 'Nederlands',

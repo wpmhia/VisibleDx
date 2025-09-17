@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f5a1a9001ZT4bgK8gr24FOe",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017GVfC9bfzjm7jZMxSTonUs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 1,
+      "limit": 50
+    },
+    "output": "<file>\n00002| \n00003| import { useState, useEffect, useRef } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Input } from '@/components/ui/input'\n00007| import { Label } from '@/components/ui/label'\n00008| import { Progress } from '@/components/ui/progress'\n00009| import { Badge } from '@/components/ui/badge'\n00010| import { Alert, AlertDescription } from '@/components/ui/alert'\n00011| import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\n00012| import Link from 'next/link'\n00013| import { useTranslation } from '@/lib/language-context'\n00014| \n00015| interface HeartRateReading {\n00016|   time: number\n00017|   hr: number\n00018|   bp?: { systolic: number; diastolic: number }\n00019| }\n00020| \n00021| interface TestPhase {\n00022|   name: string\n00023|   duration: number\n00024|   position: 'lying' | 'standing'\n00025|   instructions: string\n00026| }\n00027| \n00028| // Test phases will be generated from translations\n00029| \n00030| export default function StandTest() {\n00031|   const [currentPhase, setCurrentPhase] = useState(0)\n00032|   const [timeElapsed, setTimeElapsed] = useState(0)\n00033|   const [isRunning, setIsRunning] = useState(false)\n00034|   const [isPaused, setIsPaused] = useState(false)\n00035|   const [readings, setReadings] = useState<HeartRateReading[]>([])\n00036|   const [currentHR, setCurrentHR] = useState<number | null>(null)\n00037|   const [currentBP, setCurrentBP] = useState<{ systolic: number; diastolic: number } | null>(null)\n00038|   const [isComplete, setIsComplete] = useState(false)\n00039|   const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')\n00040|   const { t } = useTranslation()\n00041|   \n00042|   const intervalRef = useRef<NodeJS.Timeout | null>(null)\n00043| \n00044|   useEffect(() => {\n00045|     if (isRunning && !isPaused) {\n00046|       intervalRef.current = setInterval(() => {\n00047|         setTimeElapsed(prev => prev + 1)\n00048|       }, 1000)\n00049|     } else {\n00050|       if (intervalRef.current) {\n00051|         clearInterval(intervalRef.current)\n\n(File has more lines. Use 'offset' parameter to read beyond line 51)\n</file>",
+    "metadata": {
+      "preview": "\nimport { useState, useEffect, useRef } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Input } from '@/components/ui/input'\nimport { Label } from '@/components/ui/label'\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface HeartRateReading {\n  time: number\n  hr: number\n  bp?: { systolic: number; diastolic: number }\n}\n\ninterface TestPhase {"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758134117693,
+      "end": 1758134117705
+    }
+  }
+}

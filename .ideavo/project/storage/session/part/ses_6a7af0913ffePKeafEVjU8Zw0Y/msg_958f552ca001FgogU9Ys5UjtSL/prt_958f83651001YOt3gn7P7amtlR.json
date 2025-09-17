@@ -1,0 +1,26 @@
+{
+  "id": "prt_958f83651001YOt3gn7P7amtlR",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HNQcEWGifgk5zpdET7f2Fb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "export default function Navigation() {\n  const { t } = useTranslation()\n  const [isOpen, setIsOpen] = useState(false)",
+      "newString": "export default function Navigation() {\n  const { t } = useTranslation()\n  const [isOpen, setIsOpen] = useState(false)\n  const assessmentModules = getAssessmentModules(t)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -126,8 +126,9 @@\n \n export default function Navigation() {\n   const { t } = useTranslation()\n   const [isOpen, setIsOpen] = useState(false)\n+  const assessmentModules = getAssessmentModules(t)\n \n   return (\n     <header className=\"sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60\">\n       <div className=\"container mx-auto px-4 h-16 flex items-center justify-between\">\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758134287415,
+      "end": 1758134287420
+    }
+  }
+}

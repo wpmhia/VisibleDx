@@ -1,0 +1,11 @@
+{
+  "id": "prt_958f919dd001pS2RFzg5o82nYh",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I notice the code is referencing both `redFlagSymptoms` and `routineLabs` but I can't find where `routineLabs` is defined. Let me search for it:",
+  "time": {
+    "start": 1758134345179,
+    "end": 1758134345179
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f63f11001SuDj20DyBmHuRk",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01BA31rPx21np2R1R7tnynjx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 750,
+      "limit": 20
+    },
+    "output": "<file>\n00751|     en: 'English',\n00752|     nl: 'Nederlands',\n00753|     da: 'Dansk',\n00754|     de: 'Deutsch',\n00755|     sv: 'Svenska',\n00756|     no: 'Norsk',\n00757|     fr: 'Français'\n00758|   },\n00759| \n00760|   disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'\n00761| }\n</file>",
+    "metadata": {
+      "preview": "    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Deze screeningstool is alleen voor klinische beslissingsondersteuning en vervangt geen professioneel medisch oordeel'\n}"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758134157740,
+      "end": 1758134157744
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f867c1001P6uHI8KCgkcvXw",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011uR8JDLkmVWGYPcWtvWEmy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 190,
+      "limit": 30
+    },
+    "output": "<file>\n00191|     description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',\n00192|     symptoms: {\n00193|       title: 'Red Flag Symptoms',\n00194|       description: 'Check any symptoms present that may require urgent evaluation',\n00195|       list: [\n00196|         'Persistent fever or night sweats',\n00197|         'Unintentional weight loss >10% in 6 months',\n00198|         'Chest pain with exertion or at rest',\n00199|         'Progressive shortness of breath',\n00200|         'New neurological symptoms (weakness, numbness, seizures)',\n00201|         'Abnormal bleeding or bruising',\n00202|         'Enlarged lymph nodes',\n00203|         'Jaundice or yellowing of skin/eyes'\n00204|       ]\n00205|     },\n00206|     routineLabs: {\n00207|       title: 'Routine Screening Labs',\n00208|       description: 'Select categories of tests to rule out common explanatory conditions',\n00209|       categories: {\n00210|         basicMetabolic: {\n00211|           title: 'Basic Metabolic',\n00212|           indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',\n00213|           tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']\n00214|         },\n00215|         endocrine: {\n00216|           title: 'Endocrine',\n00217|           indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',\n00218|           tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']\n00219|         },\n00220|         nutritional: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 220)\n</file>",
+    "metadata": {
+      "preview": "    description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',\n    symptoms: {\n      title: 'Red Flag Symptoms',\n      description: 'Check any symptoms present that may require urgent evaluation',\n      list: [\n        'Persistent fever or night sweats',\n        'Unintentional weight loss >10% in 6 months',\n        'Chest pain with exertion or at rest',\n        'Progressive shortness of breath',\n        'New neurological symptoms (weakness, numbness, seizures)',\n        'Abnormal bleeding or bruising',\n        'Enlarged lymph nodes',\n        'Jaundice or yellowing of skin/eyes'\n      ]\n    },\n    routineLabs: {\n      title: 'Routine Screening Labs',\n      description: 'Select categories of tests to rule out common explanatory conditions',\n      categories: {\n        basicMetabolic: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758134299254,
+      "end": 1758134299257
+    }
+  }
+}

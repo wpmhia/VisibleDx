@@ -1,0 +1,17 @@
+{
+  "id": "prt_958fa94a00011buWxBpBQt6K4z",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_016Qmc8tqVorH5mEUQsqMha8",
+  "state": {
+    "status": "error",
+    "error": "Tool execution aborted",
+    "time": {
+      "start": 1758134473786,
+      "end": 1758134473786
+    },
+    "input": {}
+  }
+}

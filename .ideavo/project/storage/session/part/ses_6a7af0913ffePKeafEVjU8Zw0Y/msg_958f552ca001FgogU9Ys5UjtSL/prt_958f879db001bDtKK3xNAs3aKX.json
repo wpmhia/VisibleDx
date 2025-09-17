@@ -1,0 +1,25 @@
+{
+  "id": "prt_958f879db001bDtKK3xNAs3aKX",
+  "messageID": "msg_958f552ca001FgogU9Ys5UjtSL",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01C23g4TdGuYNSYEJ2vU4Eav",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 10,
+      "limit": 80
+    },
+    "output": "<file>\n00011| import { useTranslation } from '@/lib/language-context'\n00012| \n00013| const redFlagSymptoms = [\n00014|   {\n00015|     id: 'fever',\n00016|     symptom: 'Persistent fever or night sweats',\n00017|     category: 'Infectious/Inflammatory',\n00018|     priority: 'high',\n00019|     tests: ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray']\n00020|   },\n00021|   {\n00022|     id: 'weight_loss',\n00023|     symptom: 'Unintentional weight loss >10% in 6 months',\n00024|     category: 'Malignancy/Metabolic',\n00025|     priority: 'high',\n00026|     tests: ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis']\n00027|   },\n00028|   {\n00029|     id: 'chest_pain',\n00030|     symptom: 'Chest pain with exertion or at rest',\n00031|     category: 'Cardiovascular',\n00032|     priority: 'high',\n00033|     tests: ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test']\n00034|   },\n00035|   {\n00036|     id: 'dyspnea',\n00037|     symptom: 'Progressive shortness of breath',\n00038|     category: 'Cardiopulmonary',\n00039|     priority: 'high',\n00040|     tests: ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer']\n00041|   },\n00042|   {\n00043|     id: 'neurological',\n00044|     symptom: 'New neurological symptoms (weakness, numbness, seizures)',\n00045|     category: 'Neurological',\n00046|     priority: 'high',\n00047|     tests: ['MRI brain', 'Neurological consultation', 'EEG if seizures']\n00048|   },\n00049|   {\n00050|     id: 'bleeding',\n00051|     symptom: 'Abnormal bleeding or bruising',\n00052|     category: 'Hematological',\n00053|     priority: 'high',\n00054|     tests: ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear']\n00055|   },\n00056|   {\n00057|     id: 'lymphadenopathy',\n00058|     symptom: 'Enlarged lymph nodes',\n00059|     category: 'Infectious/Malignancy',\n00060|     priority: 'medium',\n00061|     tests: ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis']\n00062|   },\n00063|   {\n00064|     id: 'jaundice',\n00065|     symptom: 'Jaundice or yellowing of skin/eyes',\n00066|     category: 'Hepatic',\n00067|     priority: 'high',\n00068|     tests: ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n00069|   }\n00070| ]\n00071| \n00072| const routineLabs = [\n00073|   {\n00074|     category: 'Basic Metabolic',\n00075|     tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP'],\n00076|     indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities'\n00077|   },\n00078|   {\n00079|     category: 'Endocrine',\n00080|     tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D'],\n00081|     indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency'\n00082|   },\n00083|   {\n00084|     category: 'Nutritional',\n00085|     tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin'],\n00086|     indication: 'Rule out nutritional deficiencies causing fatigue'\n00087|   },\n00088|   {\n00089|     category: 'Autoimmune',\n00090|     tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies'],\n\n(File has more lines. Use 'offset' parameter to read beyond line 90)\n</file>",
+    "metadata": {
+      "preview": "import { useTranslation } from '@/lib/language-context'\n\nconst redFlagSymptoms = [\n  {\n    id: 'fever',\n    symptom: 'Persistent fever or night sweats',\n    category: 'Infectious/Inflammatory',\n    priority: 'high',\n    tests: ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray']\n  },\n  {\n    id: 'weight_loss',\n    symptom: 'Unintentional weight loss >10% in 6 months',\n    category: 'Malignancy/Metabolic',\n    priority: 'high',\n    tests: ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis']\n  },\n  {\n    id: 'chest_pain',\n    symptom: 'Chest pain with exertion or at rest',"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758134304061,
+      "end": 1758134304065
+    }
+  }
+}
