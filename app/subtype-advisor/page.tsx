@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
@@ -104,6 +104,20 @@ export default function SubtypeAdvisor() {
   const [patientAge, setPatientAge] = useState<number | null>(null)
   const [comorbidities, setComorbidities] = useState<string[]>([])
   const [isComplete, setIsComplete] = useState(false)
+
+  // Update subtype translations when language changes while preserving checked states
+  useEffect(() => {
+    const newSubtypes = createSubtypes(t)
+    setSubtypeData(prev => 
+      newSubtypes.map((newSubtype, index) => ({
+        ...newSubtype,
+        criteria: newSubtype.criteria.map((newCriterion, criterionIndex) => ({
+          ...newCriterion,
+          checked: prev[index]?.criteria[criterionIndex]?.checked || false
+        }))
+      }))
+    )
+  }, [t])
 
   const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {
     setSubtypeData(prev => prev.map(subtype => 

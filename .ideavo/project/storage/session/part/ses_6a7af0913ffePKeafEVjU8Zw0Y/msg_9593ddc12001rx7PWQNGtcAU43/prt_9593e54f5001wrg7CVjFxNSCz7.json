@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593e54f5001wrg7CVjFxNSCz7",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I'll add the useEffect to update the subtype data when the language changes, while preserving the checked states:",
+  "time": {
+    "start": 1758138881915,
+    "end": 1758138881915
+  }
+}

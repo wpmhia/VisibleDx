@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593f7514001kXuMVDGoZ1Vnby",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "## ✅ POTS Subtype Content Now Fully Multilingual!\n\n**The Problem:**\nThe POTS subtype names, descriptions, and criteria were initialized once in English and never updated when users switched languages, similar to the criteria engine issue we fixed earlier.\n\n**The Solution:**\nI added a `useEffect` hook that monitors language changes and updates the subtype content dynamically while preserving user selections.\n\n### 🔧 **Technical Fix Applied:**\n1. **Added useEffect import** - `import { useState, useEffect } from 'react'`\n2. **Added dynamic update hook** - Monitors `t` (translation context) for changes\n3. **Preserves user state** - Maintains checked criteria when language switches\n4. **Updates all content** - Names, descriptions, criteria, and treatments\n\n### 🌍 **Now When Users Switch to Dutch, They'll See:**\n\n**Instead of English \"Hypovolemic POTS\":**\n- ✅ **Name**: \"Hypovolemische POTS\"\n- ✅ **Description**: \"Laag bloedvolume veroorzaakt orthostatische intolerantie\"\n- ✅ **Criteria**: \"Laag-normale bloeddruk (<110/70)\", \"Overmatige dorst\", \"Zoutverlangen\", etc.\n\n**Instead of English \"Neuropathic POTS\":**\n- ✅ **Name**: \"Neuropathische POTS\"  \n- ✅ **Description**: \"Perifere autonome neuropathie die bloedvatcontrole beïnvloedt\"\n- ✅ **Criteria**: \"Distale kleine vezel neuropathie symptomen\", \"GI disfunctie (gastroparese, constipatie)\", etc.\n\n**And similarly for Hyperadrenergic and Autoimmune subtypes!**\n\n### 🎯 **Key Features:**\n- **Instant translation** - Content updates immediately when language changes\n- **Preserved selections** - User's checked criteria remain selected during language switch\n- **Complete coverage** - Names, descriptions, criteria, treatments, and UI elements all translate\n- **Consistent experience** - Works across all 7 supported languages\n\n**The POTS Subtype & Treatment Advisor is now completely multilingual with dynamic content that updates instantly when users change their language preference!**",
+  "time": {
+    "start": 1758138966334,
+    "end": 1758138966334
+  }
+}

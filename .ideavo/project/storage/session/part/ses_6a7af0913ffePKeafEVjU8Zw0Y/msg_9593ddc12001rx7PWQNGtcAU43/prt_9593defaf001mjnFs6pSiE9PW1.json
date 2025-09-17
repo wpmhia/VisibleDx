@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593defaf001mjnFs6pSiE9PW1",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "You're absolutely right! The POTS subtype names, descriptions, and criteria are still showing in English instead of being translated. These are coming from the translation files but aren't updating when the language changes, similar to the criteria engine issue we fixed earlier.",
+  "time": {
+    "start": 1758138857115,
+    "end": 1758138857115
+  }
+}

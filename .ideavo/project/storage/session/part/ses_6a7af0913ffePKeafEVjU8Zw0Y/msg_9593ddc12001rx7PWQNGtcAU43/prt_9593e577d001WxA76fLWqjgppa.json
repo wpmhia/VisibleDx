@@ -1,0 +1,26 @@
+{
+  "id": "prt_9593e577d001WxA76fLWqjgppa",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BKFTLEo6Vy1gi992dM52oo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "  const [isComplete, setIsComplete] = useState(false)\n\n  const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {",
+      "newString": "  const [isComplete, setIsComplete] = useState(false)\n\n  // Update subtype translations when language changes while preserving checked states\n  useEffect(() => {\n    const newSubtypes = createSubtypes(t)\n    setSubtypeData(prev => \n      newSubtypes.map((newSubtype, index) => ({\n        ...newSubtype,\n        criteria: newSubtype.criteria.map((newCriterion, criterionIndex) => ({\n          ...newCriterion,\n          checked: prev[index]?.criteria[criterionIndex]?.checked || false\n        }))\n      }))\n    )\n  }, [t])\n\n  const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -104,8 +104,22 @@\n const [patientAge, setPatientAge] = useState<number | null>(null)\n const [comorbidities, setComorbidities] = useState<string[]>([])\n const [isComplete, setIsComplete] = useState(false)\n \n+// Update subtype translations when language changes while preserving checked states\n+useEffect(() => {\n+  const newSubtypes = createSubtypes(t)\n+  setSubtypeData(prev => \n+    newSubtypes.map((newSubtype, index) => ({\n+      ...newSubtype,\n+      criteria: newSubtype.criteria.map((newCriterion, criterionIndex) => ({\n+        ...newCriterion,\n+        checked: prev[index]?.criteria[criterionIndex]?.checked || false\n+      }))\n+    }))\n+  )\n+}, [t])\n+\n const handleCriteriaChange = (subtypeId: string, criteriaId: string, checked: boolean) => {\n   setSubtypeData(prev => prev.map(subtype => \n     subtype.id === subtypeId \n       ? {\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758138885179,
+      "end": 1758138885189
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "prt_9593e0b04001s6NWa6DmmXa86r",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Bhr9RAxHkzD3huJqjS2pM1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Investigate why POTS subtype content shows English instead of translations",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "pots-subtype-fix-1"
+        },
+        {
+          "content": "Add useEffect to update subtype data when language changes",
+          "status": "pending",
+          "priority": "high",
+          "id": "pots-subtype-fix-2"
+        },
+        {
+          "content": "Test and verify all POTS subtype content is multilingual",
+          "status": "pending",
+          "priority": "medium",
+          "id": "pots-subtype-fix-3"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Investigate why POTS subtype content shows English instead of translations\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"pots-subtype-fix-1\"\n  },\n  {\n    \"content\": \"Add useEffect to update subtype data when language changes\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"pots-subtype-fix-2\"\n  },\n  {\n    \"content\": \"Test and verify all POTS subtype content is multilingual\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"pots-subtype-fix-3\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Investigate why POTS subtype content shows English instead of translations",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "pots-subtype-fix-1"
+        },
+        {
+          "content": "Add useEffect to update subtype data when language changes",
+          "status": "pending",
+          "priority": "high",
+          "id": "pots-subtype-fix-2"
+        },
+        {
+          "content": "Test and verify all POTS subtype content is multilingual",
+          "status": "pending",
+          "priority": "medium",
+          "id": "pots-subtype-fix-3"
+        }
+      ]
+    },
+    "title": "3 todos",
+    "time": {
+      "start": 1758138863732,
+      "end": 1758138863774
+    }
+  }
+}

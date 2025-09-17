@@ -1,0 +1,18 @@
+{
+  "id": "prt_9593fa604001OIAVWikTDEKP3p",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(i18n): dynamically update POTS subtype translations",
+  "cost": 0.7360677,
+  "tokens": {
+    "input": 4,
+    "output": 558,
+    "reasoning": 0,
+    "cache": {
+      "write": 391,
+      "read": 88757
+    }
+  }
+}

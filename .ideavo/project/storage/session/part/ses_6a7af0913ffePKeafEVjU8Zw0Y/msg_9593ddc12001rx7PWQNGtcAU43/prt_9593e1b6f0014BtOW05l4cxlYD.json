@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593e1b6f0014BtOW05l4cxlYD",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The issue is the same as we had with the criteria engine. The subtype data is initialized once with `useState(() => createSubtypes(t))`, but when the language changes, the state doesn't update to reflect the new translations.\n\nLet me check the current implementation:",
+  "time": {
+    "start": 1758138868568,
+    "end": 1758138868568
+  }
+}

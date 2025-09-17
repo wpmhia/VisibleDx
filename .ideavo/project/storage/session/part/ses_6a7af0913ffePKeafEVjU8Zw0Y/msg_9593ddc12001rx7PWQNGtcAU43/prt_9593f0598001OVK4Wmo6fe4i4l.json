@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593f0598001OVK4Wmo6fe4i4l",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JrWcrbQUDthtrz3bfxvVH6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 517,
+      "limit": 30
+    },
+    "output": "<file>\n00518|           'Laag-normale bloeddruk (<110/70)',\n00519|           'Overmatige dorst',\n00520|           'Zoutverlangen',\n00521|           'Tekenen van volumedepletie',\n00522|           'Verhoogd renine/aldosteron (indien beschikbaar)'\n00523|         ],\n00524|         treatments: {\n00525|           nonPharmacological: [\n00526|             'Verhoog vloeistofinname tot 2,5-3L dagelijks',\n00527|             'Verhoog natriuminname tot 8-10g dagelijks',\n00528|             'Compressiekousen (30-40 mmHg)',\n00529|             'Geleidelijke oefenreconditionering'\n00530|           ],\n00531|           firstLine: [\n00532|             'Fludrocortison 0,1-0,2mg dagelijks',\n00533|             'Zouttabletten als dieetinname onvoldoende'\n00534|           ],\n00535|           secondLine: [\n00536|             'Desmopressine (DDAVP) voor ernstige gevallen',\n00537|             'Erythropoëtine bij anemie'\n00538|           ]\n00539|         }\n00540|       },\n00541|       neuropathic: {\n00542|         name: 'Neuropathische POTS',\n00543|         description: 'Perifere autonome neuropathie die bloedvatcontrole beïnvloedt',\n00544|         criteria: [\n00545|           'Distale kleine vezel neuropathie symptomen',\n00546|           'GI disfunctie (gastroparese, constipatie)',\n00547|           'Anhidrose of verminderd zweten',\n\n(File has more lines. Use 'offset' parameter to read beyond line 547)\n</file>",
+    "metadata": {
+      "preview": "          'Laag-normale bloeddruk (<110/70)',\n          'Overmatige dorst',\n          'Zoutverlangen',\n          'Tekenen van volumedepletie',\n          'Verhoogd renine/aldosteron (indien beschikbaar)'\n        ],\n        treatments: {\n          nonPharmacological: [\n            'Verhoog vloeistofinname tot 2,5-3L dagelijks',\n            'Verhoog natriuminname tot 8-10g dagelijks',\n            'Compressiekousen (30-40 mmHg)',\n            'Geleidelijke oefenreconditionering'\n          ],\n          firstLine: [\n            'Fludrocortison 0,1-0,2mg dagelijks',\n            'Zouttabletten als dieetinname onvoldoende'\n          ],\n          secondLine: [\n            'Desmopressine (DDAVP) voor ernstige gevallen',\n            'Erythropoëtine bij anemie'"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758138927363,
+      "end": 1758138927365
+    }
+  }
+}

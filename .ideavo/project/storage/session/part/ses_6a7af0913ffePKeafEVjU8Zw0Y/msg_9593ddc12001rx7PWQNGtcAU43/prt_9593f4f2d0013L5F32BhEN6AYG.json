@@ -1,0 +1,25 @@
+{
+  "id": "prt_9593f4f2d0013L5F32BhEN6AYG",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012sPboaKLvUFvsCL2wtBmyk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 513,
+      "limit": 10
+    },
+    "output": "<file>\n00514|       hypovolemic: {\n00515|         name: 'Hypovolemische POTS',\n00516|         description: 'Laag bloedvolume veroorzaakt orthostatische intolerantie',\n00517|         criteria: [\n00518|           'Laag-normale bloeddruk (<110/70)',\n00519|           'Overmatige dorst',\n00520|           'Zoutverlangen',\n00521|           'Tekenen van volumedepletie',\n00522|           'Verhoogd renine/aldosteron (indien beschikbaar)'\n00523|         ],\n\n(File has more lines. Use 'offset' parameter to read beyond line 523)\n</file>",
+    "metadata": {
+      "preview": "      hypovolemic: {\n        name: 'Hypovolemische POTS',\n        description: 'Laag bloedvolume veroorzaakt orthostatische intolerantie',\n        criteria: [\n          'Laag-normale bloeddruk (<110/70)',\n          'Overmatige dorst',\n          'Zoutverlangen',\n          'Tekenen van volumedepletie',\n          'Verhoogd renine/aldosteron (indien beschikbaar)'\n        ],"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758138945985,
+      "end": 1758138945987
+    }
+  }
+}

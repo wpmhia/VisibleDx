@@ -1,0 +1,11 @@
+{
+  "id": "prt_9593e30f5001itipsPWXfGqroe",
+  "messageID": "msg_9593ddc12001rx7PWQNGtcAU43",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Exactly! The issue is that `subtypeData` is initialized once but never updates when the language changes. I need to add a `useEffect` to update the subtype translations while preserving the checked states.\n\nFirst, let me check if useEffect is already imported:",
+  "time": {
+    "start": 1758138873193,
+    "end": 1758138873193
+  }
+}
