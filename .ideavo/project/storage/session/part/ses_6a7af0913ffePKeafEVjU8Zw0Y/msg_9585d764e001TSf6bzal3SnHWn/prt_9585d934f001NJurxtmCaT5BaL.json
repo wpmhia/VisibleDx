@@ -1,0 +1,85 @@
+{
+  "id": "prt_9585d934f001NJurxtmCaT5BaL",
+  "messageID": "msg_9585d764e001TSf6bzal3SnHWn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Xus2CFDrqwkQe5vGrShcWi",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Create smart New Patient workflow with automated assessment routing",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "11"
+        },
+        {
+          "content": "Implement intelligent decision tree logic",
+          "status": "pending",
+          "priority": "high",
+          "id": "12"
+        },
+        {
+          "content": "Build comprehensive SOAP note generation",
+          "status": "pending",
+          "priority": "high",
+          "id": "13"
+        },
+        {
+          "content": "Add patient data management and progress tracking",
+          "status": "pending",
+          "priority": "medium",
+          "id": "14"
+        },
+        {
+          "content": "Create final clinical summary with recommendations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "15"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Create smart New Patient workflow with automated assessment routing\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"11\"\n  },\n  {\n    \"content\": \"Implement intelligent decision tree logic\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"12\"\n  },\n  {\n    \"content\": \"Build comprehensive SOAP note generation\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"13\"\n  },\n  {\n    \"content\": \"Add patient data management and progress tracking\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"14\"\n  },\n  {\n    \"content\": \"Create final clinical summary with recommendations\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"15\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Create smart New Patient workflow with automated assessment routing",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "11"
+        },
+        {
+          "content": "Implement intelligent decision tree logic",
+          "status": "pending",
+          "priority": "high",
+          "id": "12"
+        },
+        {
+          "content": "Build comprehensive SOAP note generation",
+          "status": "pending",
+          "priority": "high",
+          "id": "13"
+        },
+        {
+          "content": "Add patient data management and progress tracking",
+          "status": "pending",
+          "priority": "medium",
+          "id": "14"
+        },
+        {
+          "content": "Create final clinical summary with recommendations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "15"
+        }
+      ]
+    },
+    "title": "5 todos",
+    "time": {
+      "start": 1758124153919,
+      "end": 1758124153941
+    }
+  }
+}

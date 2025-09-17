@@ -1,0 +1,26 @@
+{
+  "id": "prt_95860e6da001VD0MJiibRwyk76",
+  "messageID": "msg_9585d764e001TSf6bzal3SnHWn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_015KBx2vXv43EpgAp5KvZpmg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build the application to check for errors"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/new-patient/page.tsx:266:53\nType error: Argument of type 'string' is not assignable to parameter of type 'never'.\n\n\u001b[0m \u001b[90m 264 |\u001b[39m     soap \u001b[33m+=\u001b[39m \u001b[32m`ASSESSMENT:\\n`\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 265 |\u001b[39m     \u001b[36mconst\u001b[39m positiveDiagnoses \u001b[33m=\u001b[39m []\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 266 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mmecfs\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`ME/CFS (G93.32) - ${diagnoses.mecfs.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 267 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mlongCovid\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`Long COVID (U09.9) - ${diagnoses.longCovid.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 268 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mpots\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`POTS (I47.1) - ${diagnoses.pots.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 269 |\u001b[39m     \u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/new-patient/page.tsx:266:53\nType error: Argument of type 'string' is not assignable to parameter of type 'never'.\n\n\u001b[0m \u001b[90m 264 |\u001b[39m     soap \u001b[33m+=\u001b[39m \u001b[32m`ASSESSMENT:\\n`\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 265 |\u001b[39m     \u001b[36mconst\u001b[39m positiveDiagnoses \u001b[33m=\u001b[39m []\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 266 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mmecfs\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`ME/CFS (G93.32) - ${diagnoses.mecfs.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 267 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mlongCovid\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`Long COVID (U09.9) - ${diagnoses.longCovid.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 268 |\u001b[39m     \u001b[36mif\u001b[39m (diagnoses\u001b[33m.\u001b[39mpots\u001b[33m.\u001b[39mmet) positiveDiagnoses\u001b[33m.\u001b[39mpush(\u001b[32m`POTS (I47.1) - ${diagnoses.pots.confidence} confidence`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 269 |\u001b[39m     \u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build the application to check for errors"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758124370295,
+      "end": 1758124387668
+    }
+  }
+}

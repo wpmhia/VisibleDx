@@ -1,0 +1,18 @@
+{
+  "id": "prt_9586228a8001E3kd0L02MTEz1X",
+  "messageID": "msg_9585d764e001TSf6bzal3SnHWn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(patient-assessment): implement comprehensive smart new patient workflow",
+  "cost": 0.8598897000000001,
+  "tokens": {
+    "input": 6,
+    "output": 658,
+    "reasoning": 0,
+    "cache": {
+      "write": 455,
+      "read": 87515
+    }
+  }
+}

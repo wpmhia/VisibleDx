@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Activity, Clock, Users, FileText, BarChart3, Heart } from 'lucide-react'
+import { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'
+import Link from 'next/link'
 
 const modules = [
   {
@@ -77,6 +78,34 @@ export default function Home() {
               94% sensitivity validated
             </Badge>
           </div>
+        </div>
+
+        <div className="mb-8">
+          <Card className="border-2 border-green-500 bg-gradient-to-r from-green-50 to-blue-50">
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-green-100 rounded-full">
+                    <User className="h-8 w-8 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-green-900">Smart Patient Assessment</h3>
+                    <p className="text-green-700">Intelligent guided workflow with automated SOAP documentation</p>
+                    <div className="flex gap-2 mt-2">
+                      <Badge variant="secondary" className="text-xs">Auto-routing</Badge>
+                      <Badge variant="secondary" className="text-xs">SOAP notes</Badge>
+                      <Badge variant="secondary" className="text-xs">ICD-10 codes</Badge>
+                    </div>
+                  </div>
+                </div>
+                <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
+                  <Link href="/new-patient">
+                    Start New Assessment
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
