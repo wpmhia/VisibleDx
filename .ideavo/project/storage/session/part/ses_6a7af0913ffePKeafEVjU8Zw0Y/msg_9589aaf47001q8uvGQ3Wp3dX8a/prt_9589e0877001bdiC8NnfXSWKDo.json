@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589e0877001bdiC8NnfXSWKDo",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_014Paj7nk1As4ztanQdLLP4x",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "  const handleRoutineLabChange = (category: string, checked: boolean) => {\n    if (checked) {\n      setSelectedRoutineLabs(prev => [...prev, category])\n    } else {\n      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== category))\n    }\n  }",
+      "newString": "  const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n    if (checked) {\n      setSelectedRoutineLabs(prev => [...prev, categoryKey])\n    } else {\n      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n    }\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -115,13 +115,13 @@\n     setSelectedRedFlags(prev => prev.filter(id => id !== redFlagId))\n   }\n }\n \n-const handleRoutineLabChange = (category: string, checked: boolean) => {\n+const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {\n   if (checked) {\n-    setSelectedRoutineLabs(prev => [...prev, category])\n+    setSelectedRoutineLabs(prev => [...prev, categoryKey])\n   } else {\n-    setSelectedRoutineLabs(prev => prev.filter(cat => cat !== category))\n+    setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))\n   }\n }\n \n const generateRecommendations = () => {\n"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128377843,
+      "end": 1758128377847
+    }
+  }
+}

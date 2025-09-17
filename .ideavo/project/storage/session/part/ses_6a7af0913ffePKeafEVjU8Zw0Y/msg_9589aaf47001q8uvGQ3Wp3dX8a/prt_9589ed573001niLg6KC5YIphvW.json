@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589ed573001niLg6KC5YIphvW",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015pw175TYV5xKHTe1Hngxxs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "oldString": "                <div className=\"text-sm space-y-2\">\n                  {results.meetsPOTSCriteria ? (\n                    <>\n                      <p>• Heart rate increase suggests orthostatic intolerance consistent with POTS</p>\n                      <p>• Proceed to POTS subtyping for targeted treatment recommendations</p>\n                      <p>• Consider additional autonomic testing if clinically indicated</p>\n                      <p>• Rule out secondary causes (dehydration, medications, other conditions)</p>\n                    </>\n                  ) : (\n                    <>\n                      <p>• Normal orthostatic heart rate response</p>\n                      <p>• POTS unlikely based on current criteria</p>\n                      <p>• Consider other causes of symptoms (ME/CFS, Long COVID without POTS)</p>\n                      <p>• Repeat testing if symptoms persist or worsen</p>\n                    </>\n                  )}\n                </div>",
+      "newString": "                <div className=\"text-sm space-y-2\">\n                  {results.meetsPOTSCriteria ? \n                    t.standTest.interpretations.potsMet.map((interpretation, index) => (\n                      <p key={index}>• {interpretation}</p>\n                    )) :\n                    t.standTest.interpretations.potsNotMet.map((interpretation, index) => (\n                      <p key={index}>• {interpretation}</p>\n                    ))\n                  }\n                </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -244,23 +244,16 @@\n     <TrendingUp className=\"h-4 w-4\" />\n     {t.standTest.results.interpretation}\n   </h4>\n   <div className=\"text-sm space-y-2\">\n-    {results.meetsPOTSCriteria ? (\n-      <>\n-        <p>• Heart rate increase suggests orthostatic intolerance consistent with POTS</p>\n-        <p>• Proceed to POTS subtyping for targeted treatment recommendations</p>\n-        <p>• Consider additional autonomic testing if clinically indicated</p>\n-        <p>• Rule out secondary causes (dehydration, medications, other conditions)</p>\n-      </>\n-    ) : (\n-      <>\n-        <p>• Normal orthostatic heart rate response</p>\n-        <p>• POTS unlikely based on current criteria</p>\n-        <p>• Consider other causes of symptoms (ME/CFS, Long COVID without POTS)</p>\n-        <p>• Repeat testing if symptoms persist or worsen</p>\n-      </>\n-    )}\n+    {results.meetsPOTSCriteria ? \n+      t.standTest.interpretations.potsMet.map((interpretation, index) => (\n+        <p key={index}>• {interpretation}</p>\n+      )) :\n+      t.standTest.interpretations.potsNotMet.map((interpretation, index) => (\n+        <p key={index}>• {interpretation}</p>\n+      ))\n+    }\n   </div>\n </div>\n \n <div className=\"bg-blue-50 p-4 rounded-lg\">\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128434341,
+      "end": 1758128434347
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "prt_9589efcb7001gZgO3C56rmEkNb",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01UX3qHjXuydusMkmXDgs12c",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                  Repeat Test",
+          "newString": "                  {t.standTest.results.repeatTest}"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                      Continue to PEM-Quest",
+          "newString": "                      {t.common.continue} to PEM-Quest"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "            Back to Dashboard",
+          "newString": "            {t.app.backToDashboard}"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "              <h1 className=\"text-2xl font-bold text-gray-900\">Stand-Test Pro</h1>\n              <p className=\"text-gray-600\">NASA Lean Stand Test Protocol - 10 minute heart rate monitoring</p>",
+          "newString": "              <h1 className=\"text-2xl font-bold text-gray-900\">{t.standTest.title}</h1>\n              <p className=\"text-gray-600\">{t.standTest.description}</p>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                <CardTitle>Test Setup</CardTitle>\n                <CardDescription>\n                  Choose your preferred method for heart rate monitoring\n                </CardDescription>",
+          "newString": "                <CardTitle>{t.standTest.setup.title}</CardTitle>\n                <CardDescription>\n                  {t.standTest.setup.description}\n                </CardDescription>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -273,9 +273,9 @@\n   setReadings([])\n   setTimeElapsed(0)\n   setCurrentPhase(0)\n }} variant=\"outline\">\n-  Repeat Test\n+  {t.standTest.results.repeatTest}\n </Button>\n <Button asChild>\n   <Link href=\"/pem-quest\">\n     Continue to PEM-Quest\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -277,9 +277,9 @@\n       {t.standTest.results.repeatTest}\n     </Button>\n     <Button asChild>\n       <Link href=\"/pem-quest\">\n-        Continue to PEM-Quest\n+          {t.common.continue} to PEM-Quest\n       </Link>\n     </Button>\n   </div>\n </CardContent>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -294,9 +294,9 @@\n <div className=\"container mx-auto px-4 max-w-4xl\">\n   <div className=\"mb-6\">\n     <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n       <ArrowLeft className=\"h-4 w-4\" />\n-      Back to Dashboard\n+      {t.app.backToDashboard}\n     </Link>\n     \n     <div className=\"flex items-center gap-4 mb-4\">\n       <Heart className=\"h-5 w-5 text-red-600\" />\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -300,10 +300,10 @@\n   \n   <div className=\"flex items-center gap-4 mb-4\">\n     <Heart className=\"h-5 w-5 text-red-600\" />\n     <div>\n-      <h1 className=\"text-2xl font-bold text-gray-900\">Stand-Test Pro</h1>\n-      <p className=\"text-gray-600\">NASA Lean Stand Test Protocol - 10 minute heart rate monitoring</p>\n+      <h1 className=\"text-2xl font-bold text-gray-900\">{t.standTest.title}</h1>\n+      <p className=\"text-gray-600\">{t.standTest.description}</p>\n     </div>\n   </div>\n </div>\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -310,11 +310,11 @@\n <div className=\"space-y-6\">\n   {!isRunning && readings.length === 0 && (\n     <Card>\n       <CardHeader>\n-        <CardTitle>Test Setup</CardTitle>\n+        <CardTitle>{t.standTest.setup.title}</CardTitle>\n         <CardDescription>\n-          Choose your preferred method for heart rate monitoring\n+          {t.standTest.setup.description}\n         </CardDescription>\n       </CardHeader>\n       <CardContent className=\"space-y-4\">\n         <div className=\"grid md:grid-cols-2 gap-4\">\n"
+        }
+      ]
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128444902,
+      "end": 1758128444920
+    }
+  }
+}

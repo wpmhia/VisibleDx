@@ -1,0 +1,24 @@
+{
+  "id": "prt_9589b3a96001619rRejQdKIWA1",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Wukw1a8nrCMkdMtwgx14Cw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "limit": 100
+    },
+    "output": "<file>\n00001| import { Translation } from './types'\n00002| \n00003| export const en: Translation = {\n00004|   app: {\n00005|     title: 'AutoDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n00007|     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n00008|     backToDashboard: 'Back to Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Yes',\n00013|     no: 'No',\n00014|     next: 'Next',\n00015|     previous: 'Previous',\n00016|     continue: 'Continue',\n00017|     complete: 'Complete',\n00018|     cancel: 'Cancel',\n00019|     save: 'Save',\n00020|     download: 'Download',\n00021|     loading: 'Loading',\n00022|     processing: 'Processing',\n00023|     error: 'Error',\n00024|     success: 'Success',\n00025|     retry: 'Retry',\n00026|     close: 'Close',\n00027|     age: 'Age',\n00028|     gender: 'Gender',\n00029|     male: 'Male',\n00030|     female: 'Female',\n00031|     other: 'Other',\n00032|     question: 'Question',\n00033|     of: 'of',\n00034|     step: 'Step',\n00035|     minute: 'minute',\n00036|     minutes: 'minutes',\n00037|     bpm: 'bpm',\n00038|     criteria: 'Criteria',\n00039|     met: 'Met',\n00040|     notMet: 'Not Met',\n00041|     high: 'High',\n00042|     medium: 'Medium',\n00043|     low: 'Low',\n00044|     none: 'None',\n00045|     mild: 'Mild',\n00046|     moderate: 'Moderate',\n00047|     severe: 'Severe',\n00048|     confidence: 'Confidence',\n00049|     sensitivity: 'Sensitivity',\n00050|     score: 'Score',\n00051|     results: 'Results',\n00052|     recommendations: 'Recommendations',\n00053|     clinician: 'Clinician',\n00054|     patientId: 'Patient ID',\n00055|     required: 'Required',\n00056|     optional: 'Optional'\n00057|   },\n00058| \n00059|   dashboard: {\n00060|     smartAssessment: {\n00061|       title: 'Smart Patient Assessment',\n00062|       description: 'Intelligent guided workflow with automated SOAP documentation',\n00063|       autoRouting: 'Auto-routing',\n00064|       soapNotes: 'SOAP notes',\n00065|       icdCodes: 'ICD-10 codes',\n00066|       startNew: 'Start New Assessment'\n00067|     },\n00068|     modules: {\n00069|       quickScreen: {\n00070|         title: 'Quick-Screen',\n00071|         description: '16 yes/no questions - 2 min assessment'\n00072|       },\n00073|       redFlag: {\n00074|         title: 'Red-flag Checker',\n00075|         description: 'Lab suggestions to rule out explanatory disease'\n00076|       },\n00077|       standTest: {\n00078|         title: 'Stand-Test Pro',\n00079|         description: '10-min NASA Lean protocol with HR monitoring'\n00080|       },\n00081|       pemQuest: {\n00082|         title: 'PEM-Quest',\n00083|         description: 'Post-Exertional Malaise assessment'\n00084|       },\n00085|       criteriaEngine: {\n00086|         title: 'Criteria Engine',\n00087|         description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n00088|       },\n00089|       subtypeAdvisor: {\n00090|         title: 'Subtype & Rx Advisor',\n00091|         description: 'Personalized treatment recommendations'\n00092|       }\n00093|     },\n00094|     stats: {\n00095|       diagnosticDelay: '4-5 year avg diagnostic delay',\n00096|       doctorsConsulted: '≥7 doctors typically consulted',\n00097|       sensitivityValidated: '94% sensitivity validated'\n00098|     },\n00099|     algorithm: {\n00100|       title: 'Diagnostic Algorithm',\n\n(File has more lines. Use 'offset' parameter to read beyond line 100)\n</file>",
+    "metadata": {
+      "preview": "import { Translation } from './types'\n\nexport const en: Translation = {\n  app: {\n    title: 'AutoDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n    tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n    backToDashboard: 'Back to Dashboard'\n  },\n\n  common: {\n    yes: 'Yes',\n    no: 'No',\n    next: 'Next',\n    previous: 'Previous',\n    continue: 'Continue',\n    complete: 'Complete',\n    cancel: 'Cancel',\n    save: 'Save',\n    download: 'Download',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758128192923,
+      "end": 1758128192925
+    }
+  }
+}

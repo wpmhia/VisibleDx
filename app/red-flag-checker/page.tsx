@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { ArrowLeft, FileText, AlertTriangle, CheckCircle, Activity, Heart, Brain } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 const redFlagSymptoms = [
   {
@@ -105,6 +106,7 @@ export default function RedFlagChecker() {
   const [selectedRedFlags, setSelectedRedFlags] = useState<string[]>([])
   const [selectedRoutineLabs, setSelectedRoutineLabs] = useState<string[]>([])
   const [isComplete, setIsComplete] = useState(false)
+  const { t } = useTranslation()
 
   const handleRedFlagChange = (redFlagId: string, checked: boolean) => {
     if (checked) {
@@ -114,11 +116,11 @@ export default function RedFlagChecker() {
     }
   }
 
-  const handleRoutineLabChange = (category: string, checked: boolean) => {
+  const handleRoutineLabChange = (categoryKey: string, checked: boolean) => {
     if (checked) {
-      setSelectedRoutineLabs(prev => [...prev, category])
+      setSelectedRoutineLabs(prev => [...prev, categoryKey])
     } else {
-      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== category))
+      setSelectedRoutineLabs(prev => prev.filter(cat => cat !== categoryKey))
     }
   }
 
@@ -135,10 +137,10 @@ export default function RedFlagChecker() {
     })
 
     // Add routine tests
-    selectedRoutineLabs.forEach(category => {
-      const labCategory = routineLabs.find(l => l.category === category)
-      if (labCategory) {
-        labCategory.tests.forEach(test => routineTests.add(test))
+    selectedRoutineLabs.forEach(categoryKey => {
+      const category = t.redFlag.routineLabs.categories[categoryKey as keyof typeof t.redFlag.routineLabs.categories]
+      if (category) {
+        category.tests.forEach(test => routineTests.add(test))
       }
     })
 
@@ -164,7 +166,7 @@ export default function RedFlagChecker() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <CheckCircle className="h-6 w-6 text-green-600" />
-                Red-flag Assessment Complete
+                {t.redFlag.results.complete}
               </CardTitle>
               <CardDescription>
                 Laboratory and diagnostic recommendations based on clinical presentation
@@ -175,7 +177,7 @@ export default function RedFlagChecker() {
                 <Alert className="border-red-200 bg-red-50">
                   <AlertTriangle className="h-4 w-4 text-red-600" />
                   <AlertDescription className="text-red-800">
-                    <strong>Urgent Evaluation Required:</strong> High-priority red flags detected. 
+                    <strong>{t.redFlag.results.urgentEval}:</strong> High-priority red flags detected. 
                     Consider immediate or expedited workup.
                   </AlertDescription>
                 </Alert>
@@ -187,7 +189,7 @@ export default function RedFlagChecker() {
                     <CardHeader className="pb-3">
                       <CardTitle className="text-lg text-red-800 flex items-center gap-2">
                         <Heart className="h-5 w-5" />
-                        Priority Tests (Red Flags)
+                        {t.redFlag.results.priorityTests}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -208,7 +210,7 @@ export default function RedFlagChecker() {
                     <CardHeader className="pb-3">
                       <CardTitle className="text-lg text-blue-800 flex items-center gap-2">
                         <FileText className="h-5 w-5" />
-                        Routine Screening Tests
+                        {t.redFlag.results.routineTests}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
@@ -230,7 +232,7 @@ export default function RedFlagChecker() {
                   <CardContent className="pt-6">
                     <div className="text-center text-green-800">
                       <CheckCircle className="h-8 w-8 mx-auto mb-2" />
-                      <h3 className="font-semibold mb-2">No Red Flags Identified</h3>
+                      <h3 className="font-semibold mb-2">{t.redFlag.results.noRedFlags}</h3>
                       <p className="text-sm">
                         Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.
                         Consider basic metabolic panel if not done recently.
@@ -243,28 +245,22 @@ export default function RedFlagChecker() {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <Brain className="h-4 w-4" />
-                  Clinical Decision Support
+                  {t.redFlag.results.clinicalSupport}
                 </h4>
                 <div className="text-sm space-y-2">
                   {recommendations.recommendation === 'urgent' && (
                     <p className="text-red-700">
-                      • Expedite workup due to high-priority red flags
-                      • Consider same-day or next-day evaluation
-                      • Hold off on ME/CFS/POTS assessment until red flags ruled out
+                      {t.redFlag.results.urgent}
                     </p>
                   )}
                   {recommendations.recommendation === 'priority' && (
                     <p className="text-yellow-700">
-                      • Complete recommended tests within 1-2 weeks
-                      • Can proceed with stand-test if cardiovascular red flags absent
-                      • Re-evaluate based on test results
+                      {t.redFlag.results.priority}
                     </p>
                   )}
                   {recommendations.recommendation === 'routine' && (
                     <p className="text-green-700">
-                      • Proceed with routine screening labs
-                      • Can continue with ME/CFS/Long COVID/POTS assessment
-                      • Consider 4-6 week follow-up for test results
+                      {t.redFlag.results.routine}
                     </p>
                   )}
                 </div>
@@ -276,12 +272,12 @@ export default function RedFlagChecker() {
                   setSelectedRoutineLabs([])
                   setIsComplete(false)
                 }} variant="outline">
-                  Reassess
+                  {t.redFlag.results.reassess}
                 </Button>
                 {recommendations.recommendation === 'routine' && (
                   <Button asChild>
                     <Link href="/stand-test">
-                      Continue to Stand-Test Pro
+                      {t.common.continue} to Stand-Test Pro
                     </Link>
                   </Button>
                 )}
@@ -299,14 +295,14 @@ export default function RedFlagChecker() {
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
             <ArrowLeft className="h-4 w-4" />
-            Back to Dashboard
+            {t.app.backToDashboard}
           </Link>
           
           <div className="flex items-center gap-4 mb-4">
             <AlertTriangle className="h-5 w-5 text-red-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Red-flag Checker</h1>
-              <p className="text-gray-600">Identify symptoms requiring urgent evaluation and rule out explanatory diseases</p>
+              <h1 className="text-2xl font-bold text-gray-900">{t.redFlag.title}</h1>
+              <p className="text-gray-600">{t.redFlag.description}</p>
             </div>
           </div>
         </div>
@@ -314,14 +310,14 @@ export default function RedFlagChecker() {
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg text-red-800">Red Flag Symptoms</CardTitle>
+              <CardTitle className="text-lg text-red-800">{t.redFlag.symptoms.title}</CardTitle>
               <CardDescription>
-                Check any symptoms present that may require urgent evaluation
+                {t.redFlag.symptoms.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
-                {redFlagSymptoms.map((flag) => (
+                {redFlagSymptoms.map((flag, index) => (
                   <div key={flag.id} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
                     <Checkbox
                       id={flag.id}
@@ -330,7 +326,7 @@ export default function RedFlagChecker() {
                     />
                     <div className="flex-1">
                       <label htmlFor={flag.id} className="text-sm font-medium cursor-pointer">
-                        {flag.symptom}
+                        {t.redFlag.symptoms.list[index]}
                       </label>
                       <div className="flex gap-2 mt-1">
                         <Badge 
@@ -349,28 +345,28 @@ export default function RedFlagChecker() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg text-blue-800">Routine Screening Labs</CardTitle>
+              <CardTitle className="text-lg text-blue-800">{t.redFlag.routineLabs.title}</CardTitle>
               <CardDescription>
-                Select categories of tests to rule out common explanatory conditions
+                {t.redFlag.routineLabs.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
-                {routineLabs.map((labCategory) => (
-                  <div key={labCategory.category} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
+                {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (
+                  <div key={key} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50">
                     <Checkbox
-                      id={labCategory.category}
-                      checked={selectedRoutineLabs.includes(labCategory.category)}
-                      onCheckedChange={(checked) => handleRoutineLabChange(labCategory.category, !!checked)}
+                      id={key}
+                      checked={selectedRoutineLabs.includes(key)}
+                      onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}
                     />
                     <div className="flex-1">
-                      <label htmlFor={labCategory.category} className="text-sm font-medium cursor-pointer">
-                        {labCategory.category}
+                      <label htmlFor={key} className="text-sm font-medium cursor-pointer">
+                        {category.title}
                       </label>
-                      <p className="text-xs text-gray-600 mt-1">{labCategory.indication}</p>
+                      <p className="text-xs text-gray-600 mt-1">{category.indication}</p>
                       <div className="text-xs text-gray-500 mt-1">
-                        {labCategory.tests.slice(0, 3).join(', ')}
-                        {labCategory.tests.length > 3 && ` + ${labCategory.tests.length - 3} more`}
+                        {category.tests.slice(0, 3).join(', ')}
+                        {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}
                       </div>
                     </div>
                   </div>
@@ -381,7 +377,7 @@ export default function RedFlagChecker() {
 
           <div className="flex justify-center">
             <Button onClick={() => setIsComplete(true)} className="px-8">
-              Generate Recommendations
+              {t.redFlag.results.generateRecommendations}
             </Button>
           </div>
         </div>

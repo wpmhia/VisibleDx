@@ -1,0 +1,62 @@
+{
+  "id": "prt_958a15e850011iuQYjlfXfj9GJ",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_013Dwn5JtMPZCJMo28fhdCTX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "            Question {currentQuestion + 1} of {pemQuestions.length}",
+          "newString": "            {t.common.question} {currentQuestion + 1} {t.common.of} {pemQuestions.length}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  Previous",
+          "newString": "                  {t.common.previous}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  {currentQuestion === pemQuestions.length - 1 ? 'Complete Assessment' : 'Next Question'}",
+          "newString": "                  {currentQuestion === pemQuestions.length - 1 ? t.common.complete + ' Assessment' : t.common.next + ' Question'}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  <h4 className=\"font-semibold mb-1\">About Post-Exertional Malaise (PEM)</h4>\n                  <p>\n                    PEM is the worsening of symptoms following physical or mental activity that \n                    was previously tolerated. It's a key feature of ME/CFS and often occurs \n                    in Long COVID. Symptoms may be delayed and can last days to weeks.\n                  </p>",
+          "newString": "                  <h4 className=\"font-semibold mb-1\">{t.pem.about.title}</h4>\n                  <p>\n                    {t.pem.about.description}\n                  </p>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -293,9 +293,9 @@\n   </div>\n   \n   <Progress value={progress} className=\"h-2\" />\n   <p className=\"text-sm text-gray-600 mt-2\">\n-    Question {currentQuestion + 1} of {pemQuestions.length}\n+    {t.common.question} {currentQuestion + 1} {t.common.of} {pemQuestions.length}\n   </p>\n </div>\n \n <Card>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -340,9 +340,9 @@\n   variant=\"outline\"\n   className=\"flex items-center gap-2\"\n >\n   <ArrowLeft className=\"h-4 w-4\" />\n-  Previous\n+  {t.common.previous}\n </Button>\n \n <Button \n   onClick={nextQuestion}\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -348,9 +348,9 @@\n       onClick={nextQuestion}\n       disabled={!currentAnswer}\n       className=\"flex items-center gap-2\"\n     >\n-      {currentQuestion === pemQuestions.length - 1 ? 'Complete Assessment' : 'Next Question'}\n+      {currentQuestion === pemQuestions.length - 1 ? t.common.complete + ' Assessment' : t.common.next + ' Question'}\n       <ArrowRight className=\"h-4 w-4\" />\n     </Button>\n   </div>\n </div>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -362,13 +362,11 @@\n <CardContent className=\"pt-4\">\n   <div className=\"flex items-start gap-3\">\n     <TrendingDown className=\"h-5 w-5 text-orange-600 mt-1\" />\n     <div className=\"text-sm text-orange-800\">\n-      <h4 className=\"font-semibold mb-1\">About Post-Exertional Malaise (PEM)</h4>\n+      <h4 className=\"font-semibold mb-1\">{t.pem.about.title}</h4>\n       <p>\n-        PEM is the worsening of symptoms following physical or mental activity that \n-        was previously tolerated. It's a key feature of ME/CFS and often occurs \n-        in Long COVID. Symptoms may be delayed and can last days to weeks.\n+        {t.pem.about.description}\n       </p>\n     </div>\n   </div>\n </CardContent>\n"
+        }
+      ]
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758128600321,
+      "end": 1758128600334
+    }
+  }
+}

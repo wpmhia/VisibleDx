@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a0a9720016g9MpaMc2YZkeD",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01UPAaHmwK1HF2CJAuFrCPEr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "oldString": "    const percentage = (totalScore / maxScore) * 100\n\n    let severity = 'None'\n    let color = 'bg-green-100 text-green-800'\n    \n    if (percentage >= 75) {\n      severity = 'Severe PEM'\n      color = 'bg-red-100 text-red-800'\n    } else if (percentage >= 50) {\n      severity = 'Moderate PEM'\n      color = 'bg-orange-100 text-orange-800'\n    } else if (percentage >= 25) {\n      severity = 'Mild PEM'\n      color = 'bg-yellow-100 text-yellow-800'\n    }",
+      "newString": "    const percentage = (totalScore / maxScore) * 100\n\n    let severity = t.pem.results.severityLevels.none\n    let color = 'bg-green-100 text-green-800'\n    \n    if (percentage >= 75) {\n      severity = t.pem.results.severityLevels.severe\n      color = 'bg-red-100 text-red-800'\n    } else if (percentage >= 50) {\n      severity = t.pem.results.severityLevels.moderate\n      color = 'bg-orange-100 text-orange-800'\n    } else if (percentage >= 25) {\n      severity = t.pem.results.severityLevels.mild\n      color = 'bg-yellow-100 text-yellow-800'\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -115,19 +115,19 @@\n }, 0)\n \n const percentage = (totalScore / maxScore) * 100\n \n-let severity = 'None'\n+let severity = t.pem.results.severityLevels.none\n let color = 'bg-green-100 text-green-800'\n \n if (percentage >= 75) {\n-  severity = 'Severe PEM'\n+  severity = t.pem.results.severityLevels.severe\n   color = 'bg-red-100 text-red-800'\n } else if (percentage >= 50) {\n-  severity = 'Moderate PEM'\n+  severity = t.pem.results.severityLevels.moderate\n   color = 'bg-orange-100 text-orange-800'\n } else if (percentage >= 25) {\n-  severity = 'Mild PEM'\n+  severity = t.pem.results.severityLevels.mild\n   color = 'bg-yellow-100 text-yellow-800'\n }\n \n const isPEMPresent = percentage >= 25\n"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758128552396,
+      "end": 1758128552399
+    }
+  }
+}

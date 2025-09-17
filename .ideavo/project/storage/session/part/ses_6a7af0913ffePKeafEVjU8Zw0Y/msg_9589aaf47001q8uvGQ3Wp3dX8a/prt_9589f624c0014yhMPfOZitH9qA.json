@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589f624c0014yhMPfOZitH9qA",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01T5khWYQKU17cjRerokKnxJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "oldString": "  useEffect(() => {\n    const phase = testPhases[currentPhase]\n    if (phase && timeElapsed >= phase.duration && currentPhase < testPhases.length - 1) {\n      setCurrentPhase(prev => prev + 1)\n      setTimeElapsed(0)\n    } else if (phase && timeElapsed >= phase.duration && currentPhase === testPhases.length - 1) {\n      setIsRunning(false)\n      setIsComplete(true)\n    }\n  }, [timeElapsed, currentPhase])",
+      "newString": "  const getTestPhases = () => [\n    {\n      name: t.standTest.phases.baseline.name,\n      duration: 300, // 5 minutes\n      position: 'lying' as const,\n      instructions: t.standTest.phases.baseline.instructions\n    },\n    {\n      name: t.standTest.phases.standing.name,\n      duration: 600, // 10 minutes\n      position: 'standing' as const,\n      instructions: t.standTest.phases.standing.instructions\n    }\n  ]\n\n  useEffect(() => {\n    const testPhases = getTestPhases()\n    const phase = testPhases[currentPhase]\n    if (phase && timeElapsed >= phase.duration && currentPhase < testPhases.length - 1) {\n      setCurrentPhase(prev => prev + 1)\n      setTimeElapsed(0)\n    } else if (phase && timeElapsed >= phase.duration && currentPhase === testPhases.length - 1) {\n      setIsRunning(false)\n      setIsComplete(true)\n    }\n  }, [timeElapsed, currentPhase, t])"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -58,18 +58,34 @@\n     }\n   }\n }, [isRunning, isPaused])\n \n+const getTestPhases = () => [\n+  {\n+    name: t.standTest.phases.baseline.name,\n+    duration: 300, // 5 minutes\n+    position: 'lying' as const,\n+    instructions: t.standTest.phases.baseline.instructions\n+  },\n+  {\n+    name: t.standTest.phases.standing.name,\n+    duration: 600, // 10 minutes\n+    position: 'standing' as const,\n+    instructions: t.standTest.phases.standing.instructions\n+  }\n+]\n+\n useEffect(() => {\n+  const testPhases = getTestPhases()\n   const phase = testPhases[currentPhase]\n   if (phase && timeElapsed >= phase.duration && currentPhase < testPhases.length - 1) {\n     setCurrentPhase(prev => prev + 1)\n     setTimeElapsed(0)\n   } else if (phase && timeElapsed >= phase.duration && currentPhase === testPhases.length - 1) {\n     setIsRunning(false)\n     setIsComplete(true)\n   }\n-}, [timeElapsed, currentPhase])\n+}, [timeElapsed, currentPhase, t])\n \n const startTest = () => {\n   setIsRunning(true)\n   setIsPaused(false)\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128469654,
+      "end": 1758128469659
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589dca36001hFelBZpZPGmyAO",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01DhqEodCUQcon9vxUyhPU38",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "            <CardContent>\n              <div className=\"grid md:grid-cols-2 gap-4\">\n                {routineLabs.map((labCategory) => (\n                  <div key={labCategory.category} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={labCategory.category}\n                      checked={selectedRoutineLabs.includes(labCategory.category)}\n                      onCheckedChange={(checked) => handleRoutineLabChange(labCategory.category, !!checked)}\n                    />\n                    <div className=\"flex-1\">\n                      <label htmlFor={labCategory.category} className=\"text-sm font-medium cursor-pointer\">\n                        {labCategory.category}\n                      </label>\n                      <p className=\"text-xs text-gray-600 mt-1\">{labCategory.indication}</p>\n                      <div className=\"text-xs text-gray-500 mt-1\">\n                        {labCategory.tests.slice(0, 3).join(', ')}\n                        {labCategory.tests.length > 3 && ` + ${labCategory.tests.length - 3} more`}\n                      </div>\n                    </div>\n                  </div>\n                ))}\n              </div>\n            </CardContent>",
+      "newString": "            <CardContent>\n              <div className=\"grid md:grid-cols-2 gap-4\">\n                {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (\n                  <div key={key} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={key}\n                      checked={selectedRoutineLabs.includes(key)}\n                      onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}\n                    />\n                    <div className=\"flex-1\">\n                      <label htmlFor={key} className=\"text-sm font-medium cursor-pointer\">\n                        {category.title}\n                      </label>\n                      <p className=\"text-xs text-gray-600 mt-1\">{category.indication}</p>\n                      <div className=\"text-xs text-gray-500 mt-1\">\n                        {category.tests.slice(0, 3).join(', ')}\n                        {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}\n                      </div>\n                    </div>\n                  </div>\n                ))}\n              </div>\n            </CardContent>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -351,23 +351,23 @@\n   </CardDescription>\n </CardHeader>\n <CardContent>\n   <div className=\"grid md:grid-cols-2 gap-4\">\n-    {routineLabs.map((labCategory) => (\n-      <div key={labCategory.category} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n+    {Object.entries(t.redFlag.routineLabs.categories).map(([key, category]) => (\n+      <div key={key} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n         <Checkbox\n-          id={labCategory.category}\n-          checked={selectedRoutineLabs.includes(labCategory.category)}\n-          onCheckedChange={(checked) => handleRoutineLabChange(labCategory.category, !!checked)}\n+          id={key}\n+          checked={selectedRoutineLabs.includes(key)}\n+          onCheckedChange={(checked) => handleRoutineLabChange(key, !!checked)}\n         />\n         <div className=\"flex-1\">\n-          <label htmlFor={labCategory.category} className=\"text-sm font-medium cursor-pointer\">\n-            {labCategory.category}\n+          <label htmlFor={key} className=\"text-sm font-medium cursor-pointer\">\n+            {category.title}\n           </label>\n-          <p className=\"text-xs text-gray-600 mt-1\">{labCategory.indication}</p>\n+          <p className=\"text-xs text-gray-600 mt-1\">{category.indication}</p>\n           <div className=\"text-xs text-gray-500 mt-1\">\n-            {labCategory.tests.slice(0, 3).join(', ')}\n-            {labCategory.tests.length > 3 && ` + ${labCategory.tests.length - 3} more`}\n+            {category.tests.slice(0, 3).join(', ')}\n+            {category.tests.length > 3 && ` + ${category.tests.length - 3} more`}\n           </div>\n         </div>\n       </div>\n     ))}\n"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128366444,
+      "end": 1758128366453
+    }
+  }
+}

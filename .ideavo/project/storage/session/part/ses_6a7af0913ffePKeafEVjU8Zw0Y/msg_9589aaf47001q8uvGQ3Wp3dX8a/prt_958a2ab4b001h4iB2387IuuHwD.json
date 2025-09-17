@@ -1,0 +1,71 @@
+{
+  "id": "prt_958a2ab4b001h4iB2387IuuHwD",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01VsBXW9MdgxFTH77zGV81Nh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                  Reassess Criteria",
+          "newString": "                  {t.criteria.results.reassess}"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                  Download Report",
+          "newString": "                  {t.criteria.results.downloadReport}"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                      POTS Subtype Analysis",
+          "newString": "                      {t.criteria.results.potsSubtype}"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "            Back to Dashboard",
+          "newString": "            {t.app.backToDashboard}"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "              <h1 className=\"text-2xl font-bold text-gray-900\">Criteria Engine</h1>\n              <p className=\"text-gray-600\">Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination</p>",
+          "newString": "              <h1 className=\"text-2xl font-bold text-gray-900\">{t.criteria.title}</h1>\n              <p className=\"text-gray-600\">{t.criteria.description}</p>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -274,9 +274,9 @@\n   setLongCovidChecked(longCovidCriteria.map(c => ({ ...c })))\n   setPotsChecked(potsCriteria.map(c => ({ ...c })))\n   setIsComplete(false)\n }} variant=\"outline\">\n-  Reassess Criteria\n+  {t.criteria.results.reassess}\n </Button>\n <Button onClick={() => {\n   const report = generateReport()\n   const blob = new Blob([report], { type: 'text/plain' })\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -287,9 +287,9 @@\n   a.click()\n   URL.revokeObjectURL(url)\n }} className=\"flex items-center gap-2\">\n   <Download className=\"h-4 w-4\" />\n-  Download Report\n+  {t.criteria.results.downloadReport}\n </Button>\n {positives.some(d => d.id === 'pots') && (\n   <Button asChild>\n     <Link href=\"/subtype-advisor\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -292,9 +292,9 @@\n   </Button>\n   {positives.some(d => d.id === 'pots') && (\n     <Button asChild>\n       <Link href=\"/subtype-advisor\">\n-        POTS Subtype Analysis\n+        {t.criteria.results.potsSubtype}\n       </Link>\n     </Button>\n   )}\n </div>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -310,9 +310,9 @@\n <div className=\"container mx-auto px-4 max-w-4xl\">\n   <div className=\"mb-6\">\n     <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n       <ArrowLeft className=\"h-4 w-4\" />\n-      Back to Dashboard\n+      {t.app.backToDashboard}\n     </Link>\n     \n     <div className=\"flex items-center gap-4 mb-4\">\n       <BarChart3 className=\"h-5 w-5 text-blue-600\" />\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -316,10 +316,10 @@\n   \n   <div className=\"flex items-center gap-4 mb-4\">\n     <BarChart3 className=\"h-5 w-5 text-blue-600\" />\n     <div>\n-      <h1 className=\"text-2xl font-bold text-gray-900\">Criteria Engine</h1>\n-      <p className=\"text-gray-600\">Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination</p>\n+      <h1 className=\"text-2xl font-bold text-gray-900\">{t.criteria.title}</h1>\n+      <p className=\"text-gray-600\">{t.criteria.description}</p>\n     </div>\n   </div>\n </div>\n \n"
+        }
+      ]
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128684859,
+      "end": 1758128684891
+    }
+  }
+}

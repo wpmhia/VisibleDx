@@ -1,0 +1,71 @@
+{
+  "id": "prt_9589f99cb001rq0wLngVM38J5g",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Q76VCoqNo49LhtmdNjRjjE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                <CardTitle>Record Heart Rate</CardTitle>\n                <CardDescription>\n                  Enter current heart rate reading (record every 1-2 minutes)\n                </CardDescription>",
+          "newString": "                <CardTitle>{t.standTest.recording.title}</CardTitle>\n                <CardDescription>\n                  {t.standTest.recording.description}\n                </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                      <Label htmlFor=\"hr\">Heart Rate (bpm)</Label>",
+          "newString": "                      <Label htmlFor=\"hr\">Heart Rate ({t.common.bpm})</Label>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                      <Label htmlFor=\"systolic\">Systolic BP (optional)</Label>",
+          "newString": "                      <Label htmlFor=\"systolic\">{t.standTest.recording.systolicBP}</Label>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                      <Label htmlFor=\"diastolic\">Diastolic BP (optional)</Label>",
+          "newString": "                      <Label htmlFor=\"diastolic\">{t.standTest.recording.diastolicBP}</Label>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    Record Reading at {formatTime(timeElapsed)}",
+          "newString": "                    {t.standTest.recording.recordReading} at {formatTime(timeElapsed)}"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -399,12 +399,12 @@\n </Card>\n \n <Card>\n   <CardHeader>\n-    <CardTitle>Record Heart Rate</CardTitle>\n-    <CardDescription>\n-      Enter current heart rate reading (record every 1-2 minutes)\n-    </CardDescription>\n+  <CardTitle>{t.standTest.recording.title}</CardTitle>\n+  <CardDescription>\n+    {t.standTest.recording.description}\n+  </CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-4\">\n     <div className=\"grid md:grid-cols-3 gap-4\">\n       <div>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -407,9 +407,9 @@\n </CardHeader>\n <CardContent className=\"space-y-4\">\n   <div className=\"grid md:grid-cols-3 gap-4\">\n     <div>\n-      <Label htmlFor=\"hr\">Heart Rate (bpm)</Label>\n+      <Label htmlFor=\"hr\">Heart Rate ({t.common.bpm})</Label>\n       <Input\n         id=\"hr\"\n         type=\"number\"\n         placeholder=\"75\"\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -417,9 +417,9 @@\n     onChange={(e) => setCurrentHR(parseInt(e.target.value) || null)}\n   />\n </div>\n <div>\n-  <Label htmlFor=\"systolic\">Systolic BP (optional)</Label>\n+  <Label htmlFor=\"systolic\">{t.standTest.recording.systolicBP}</Label>\n   <Input\n     id=\"systolic\"\n     type=\"number\"\n     placeholder=\"120\"\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -431,9 +431,9 @@\n     }))}\n   />\n </div>\n <div>\n-  <Label htmlFor=\"diastolic\">Diastolic BP (optional)</Label>\n+  <Label htmlFor=\"diastolic\">{t.standTest.recording.diastolicBP}</Label>\n   <Input\n     id=\"diastolic\"\n     type=\"number\"\n     placeholder=\"80\"\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -447,9 +447,9 @@\n   </div>\n </div>\n \n <Button onClick={addReading} disabled={!currentHR} className=\"w-full\">\n-  Record Reading at {formatTime(timeElapsed)}\n+  {t.standTest.recording.recordReading} at {formatTime(timeElapsed)}\n </Button>\n \n {readings.length > 0 && (\n   <div className=\"bg-gray-50 p-4 rounded-lg\">\n"
+        }
+      ]
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128484468,
+      "end": 1758128484481
+    }
+  }
+}

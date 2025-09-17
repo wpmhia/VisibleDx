@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a1e00c0017yy28p1EIkrp7q",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RjWueCbZebN8nZeYeoNTVk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "const mecfsCriteria = [\n  { id: 'fatigue', description: 'Substantial reduction or impairment in activity levels that persists for ≥6 months', met: false },\n  { id: 'pem', description: 'Post-exertional malaise (PEM) present', met: false },\n  { id: 'sleep', description: 'Unrefreshing sleep', met: false },\n  { id: 'cognitive', description: 'Cognitive impairment (brain fog)', met: false },\n  { id: 'orthostatic', description: 'Orthostatic intolerance OR autonomic dysfunction', met: false }\n]\n\nconst longCovidCriteria = [\n  { id: 'covid_history', description: 'Confirmed or probable SARS-CoV-2 infection', met: false },\n  { id: 'duration', description: 'Symptoms persist ≥3 months from acute illness', met: false },\n  { id: 'multisystem', description: 'Multi-system symptoms affecting daily functioning', met: false },\n  { id: 'unexplained', description: 'Symptoms not explained by alternative diagnosis', met: false }\n]\n\nconst potsCriteria = [\n  { id: 'hr_increase', description: 'Heart rate increase ≥30 bpm within 10 minutes of standing', met: false },\n  { id: 'sustained', description: 'Sustained heart rate ≥120 bpm while standing', met: false },\n  { id: 'symptoms', description: 'Orthostatic symptoms (dizziness, palpitations, fatigue)', met: false },\n  { id: 'duration_pots', description: 'Symptoms present for ≥3 months', met: false },\n  { id: 'no_oh', description: 'Absence of orthostatic hypotension', met: false }\n]",
+      "newString": "// Criteria will be generated from translations"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -20,31 +20,10 @@\n   icdCode: string\n   confidence: 'high' | 'medium' | 'low'\n }\n \n-const mecfsCriteria = [\n-  { id: 'fatigue', description: 'Substantial reduction or impairment in activity levels that persists for ≥6 months', met: false },\n-  { id: 'pem', description: 'Post-exertional malaise (PEM) present', met: false },\n-  { id: 'sleep', description: 'Unrefreshing sleep', met: false },\n-  { id: 'cognitive', description: 'Cognitive impairment (brain fog)', met: false },\n-  { id: 'orthostatic', description: 'Orthostatic intolerance OR autonomic dysfunction', met: false }\n-]\n+// Criteria will be generated from translations\n \n-const longCovidCriteria = [\n-  { id: 'covid_history', description: 'Confirmed or probable SARS-CoV-2 infection', met: false },\n-  { id: 'duration', description: 'Symptoms persist ≥3 months from acute illness', met: false },\n-  { id: 'multisystem', description: 'Multi-system symptoms affecting daily functioning', met: false },\n-  { id: 'unexplained', description: 'Symptoms not explained by alternative diagnosis', met: false }\n-]\n-\n-const potsCriteria = [\n-  { id: 'hr_increase', description: 'Heart rate increase ≥30 bpm within 10 minutes of standing', met: false },\n-  { id: 'sustained', description: 'Sustained heart rate ≥120 bpm while standing', met: false },\n-  { id: 'symptoms', description: 'Orthostatic symptoms (dizziness, palpitations, fatigue)', met: false },\n-  { id: 'duration_pots', description: 'Symptoms present for ≥3 months', met: false },\n-  { id: 'no_oh', description: 'Absence of orthostatic hypotension', met: false }\n-]\n-\n export default function CriteriaEngine() {\n   const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))\n   const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n   const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128635086,
+      "end": 1758128635103
+    }
+  }
+}

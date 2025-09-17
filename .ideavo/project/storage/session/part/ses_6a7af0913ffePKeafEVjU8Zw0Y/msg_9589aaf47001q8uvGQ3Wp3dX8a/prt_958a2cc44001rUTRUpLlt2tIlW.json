@@ -1,0 +1,53 @@
+{
+  "id": "prt_958a2cc44001rUTRUpLlt2tIlW",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_015jNdneNUcfyeUrWeZJ7FNC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "              <CardTitle className=\"text-lg text-blue-800\">ME/CFS Criteria (CDC/NASEM 2015)</CardTitle>\n              <CardDescription>\n                Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"text-lg text-blue-800\">{t.criteria.mecfs.title}</CardTitle>\n              <CardDescription>\n                {t.criteria.mecfs.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "              <CardTitle className=\"text-lg text-green-800\">Long COVID Criteria (WHO/NASEM 2024)</CardTitle>\n              <CardDescription>\n                Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"text-lg text-green-800\">{t.criteria.longCovid.title}</CardTitle>\n              <CardDescription>\n                {t.criteria.longCovid.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "              <CardTitle className=\"text-lg text-purple-800\">POTS Criteria (ESC 2018/AAS-EFAS 2021)</CardTitle>\n              <CardDescription>\n                Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"text-lg text-purple-800\">{t.criteria.pots.title}</CardTitle>\n              <CardDescription>\n                {t.criteria.pots.description}\n              </CardDescription>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -325,11 +325,11 @@\n \n <div className=\"space-y-6\">\n   <Card>\n     <CardHeader>\n-      <CardTitle className=\"text-lg text-blue-800\">ME/CFS Criteria (CDC/NASEM 2015)</CardTitle>\n+      <CardTitle className=\"text-lg text-blue-800\">{t.criteria.mecfs.title}</CardTitle>\n       <CardDescription>\n-        Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance\n+        {t.criteria.mecfs.description}\n       </CardDescription>\n     </CardHeader>\n     <CardContent>\n       <div className=\"space-y-3\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -350,11 +350,11 @@\n </Card>\n \n <Card>\n   <CardHeader>\n-    <CardTitle className=\"text-lg text-green-800\">Long COVID Criteria (WHO/NASEM 2024)</CardTitle>\n+    <CardTitle className=\"text-lg text-green-800\">{t.criteria.longCovid.title}</CardTitle>\n     <CardDescription>\n-      Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms\n+      {t.criteria.longCovid.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent>\n     <div className=\"space-y-3\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -395,11 +395,11 @@\n </Card>\n \n <Card>\n   <CardHeader>\n-    <CardTitle className=\"text-lg text-purple-800\">POTS Criteria (ESC 2018/AAS-EFAS 2021)</CardTitle>\n+    <CardTitle className=\"text-lg text-purple-800\">{t.criteria.pots.title}</CardTitle>\n     <CardDescription>\n-      Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension\n+      {t.criteria.pots.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent>\n     <div className=\"space-y-3\">\n"
+        }
+      ]
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128694980,
+      "end": 1758128694993
+    }
+  }
+}

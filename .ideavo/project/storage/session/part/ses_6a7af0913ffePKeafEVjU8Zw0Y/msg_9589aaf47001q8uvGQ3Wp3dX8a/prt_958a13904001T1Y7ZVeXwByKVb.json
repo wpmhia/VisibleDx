@@ -1,0 +1,71 @@
+{
+  "id": "prt_958a13904001T1Y7ZVeXwByKVb",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01UcXQiV3wRXcDM9tKJ2kQVr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                    <strong>Important:</strong> PEM is the hallmark symptom of ME/CFS. If present, \n                    avoid activities that consistently trigger symptom worsening. Energy management \n                    and pacing are key treatment strategies.",
+          "newString": "                    {t.pem.results.important}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  Retake Assessment",
+          "newString": "                  {t.pem.results.retake}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                      Continue to Criteria Engine",
+          "newString": "                      {t.common.continue} to Criteria Engine"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "            Back to Dashboard",
+          "newString": "            {t.app.backToDashboard}"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "              <h1 className=\"text-2xl font-bold text-gray-900\">PEM-Quest Assessment</h1>\n              <p className=\"text-gray-600\">Post-Exertional Malaise evaluation - 5 validated questions</p>",
+          "newString": "              <h1 className=\"text-2xl font-bold text-gray-900\">{t.pem.title}</h1>\n              <p className=\"text-gray-600\">{t.pem.description}</p>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -249,11 +249,9 @@\n \n <Alert>\n   <Activity className=\"h-4 w-4\" />\n   <AlertDescription>\n-    <strong>Important:</strong> PEM is the hallmark symptom of ME/CFS. If present, \n-    avoid activities that consistently trigger symptom worsening. Energy management \n-    and pacing are key treatment strategies.\n+      {t.pem.results.important}\n   </AlertDescription>\n </Alert>\n \n <div className=\"flex gap-4 justify-center\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -259,9 +259,9 @@\n   setAnswers({})\n   setCurrentQuestion(0)\n   setIsComplete(false)\n }} variant=\"outline\">\n-  Retake Assessment\n+  {t.pem.results.retake}\n </Button>\n <Button asChild>\n   <Link href=\"/criteria-engine\">\n     Continue to Criteria Engine\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -263,9 +263,9 @@\n       {t.pem.results.retake}\n     </Button>\n     <Button asChild>\n       <Link href=\"/criteria-engine\">\n-        Continue to Criteria Engine\n+          {t.common.continue} to Criteria Engine\n       </Link>\n     </Button>\n   </div>\n </CardContent>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -280,9 +280,9 @@\n <div className=\"container mx-auto px-4 max-w-3xl\">\n   <div className=\"mb-6\">\n     <Link href=\"/\" className=\"inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4\">\n       <ArrowLeft className=\"h-4 w-4\" />\n-      Back to Dashboard\n+      {t.app.backToDashboard}\n     </Link>\n     \n     <div className=\"flex items-center gap-4 mb-4\">\n       <Activity className=\"h-5 w-5 text-orange-600\" />\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -286,10 +286,10 @@\n \n <div className=\"flex items-center gap-4 mb-4\">\n   <Activity className=\"h-5 w-5 text-orange-600\" />\n   <div>\n-    <h1 className=\"text-2xl font-bold text-gray-900\">PEM-Quest Assessment</h1>\n-    <p className=\"text-gray-600\">Post-Exertional Malaise evaluation - 5 validated questions</p>\n+    <h1 className=\"text-2xl font-bold text-gray-900\">{t.pem.title}</h1>\n+    <p className=\"text-gray-600\">{t.pem.description}</p>\n   </div>\n </div>\n \n <Progress value={progress} className=\"h-2\" />\n"
+        }
+      ]
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758128591526,
+      "end": 1758128591541
+    }
+  }
+}

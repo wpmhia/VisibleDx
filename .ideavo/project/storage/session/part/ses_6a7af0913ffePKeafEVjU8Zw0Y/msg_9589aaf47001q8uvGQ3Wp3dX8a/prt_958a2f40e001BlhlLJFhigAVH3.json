@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a2f40e001BlhlLJFhigAVH3",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017kenY9RXtvyaKHhuiBaLmX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "                  <RadioGroup value={covidTiming} onValueChange={setCovidTiming} className=\"mt-2\">\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"confirmed\" id=\"confirmed\" />\n                      <Label htmlFor=\"confirmed\" className=\"text-sm\">Confirmed by test</Label>\n                    </div>\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"probable\" id=\"probable\" />\n                      <Label htmlFor=\"probable\" className=\"text-sm\">Probable based on symptoms/exposure</Label>\n                    </div>\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"suspected\" id=\"suspected\" />\n                      <Label htmlFor=\"suspected\" className=\"text-sm\">Suspected based on timing</Label>\n                    </div>\n                  </RadioGroup>",
+      "newString": "                  <RadioGroup value={covidTiming} onValueChange={setCovidTiming} className=\"mt-2\">\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"confirmed\" id=\"confirmed\" />\n                      <Label htmlFor=\"confirmed\" className=\"text-sm\">{t.criteria.longCovid.timing.confirmed}</Label>\n                    </div>\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"probable\" id=\"probable\" />\n                      <Label htmlFor=\"probable\" className=\"text-sm\">{t.criteria.longCovid.timing.probable}</Label>\n                    </div>\n                    <div className=\"flex items-center space-x-2\">\n                      <RadioGroupItem value=\"suspected\" id=\"suspected\" />\n                      <Label htmlFor=\"suspected\" className=\"text-sm\">{t.criteria.longCovid.timing.suspected}</Label>\n                    </div>\n                  </RadioGroup>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -377,17 +377,17 @@\n     <Label className=\"text-sm font-medium\">COVID-19 infection timing:</Label>\n     <RadioGroup value={covidTiming} onValueChange={setCovidTiming} className=\"mt-2\">\n       <div className=\"flex items-center space-x-2\">\n         <RadioGroupItem value=\"confirmed\" id=\"confirmed\" />\n-        <Label htmlFor=\"confirmed\" className=\"text-sm\">Confirmed by test</Label>\n+        <Label htmlFor=\"confirmed\" className=\"text-sm\">{t.criteria.longCovid.timing.confirmed}</Label>\n       </div>\n       <div className=\"flex items-center space-x-2\">\n         <RadioGroupItem value=\"probable\" id=\"probable\" />\n-        <Label htmlFor=\"probable\" className=\"text-sm\">Probable based on symptoms/exposure</Label>\n+        <Label htmlFor=\"probable\" className=\"text-sm\">{t.criteria.longCovid.timing.probable}</Label>\n       </div>\n       <div className=\"flex items-center space-x-2\">\n         <RadioGroupItem value=\"suspected\" id=\"suspected\" />\n-        <Label htmlFor=\"suspected\" className=\"text-sm\">Suspected based on timing</Label>\n+        <Label htmlFor=\"suspected\" className=\"text-sm\">{t.criteria.longCovid.timing.suspected}</Label>\n       </div>\n     </RadioGroup>\n   </div>\n )}\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128703371,
+      "end": 1758128703380
+    }
+  }
+}

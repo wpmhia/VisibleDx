@@ -1,0 +1,62 @@
+{
+  "id": "prt_9589c4d62001Sgh0PGpLjegvYc",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01NsCU3KCyFygxM3Q2chyuat",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "                <div className=\"bg-blue-50 p-4 rounded-lg\">\n                  <h4 className=\"font-semibold mb-2 text-blue-900\">Next Steps</h4>\n                  <ul className=\"text-sm space-y-1 text-blue-800\">\n                    {risk.riskLevel === 'High' && (\n                      <>\n                        <li>• Proceed to Red-flag Checker</li>\n                        <li>• Complete Stand-Test Pro</li>\n                        <li>• Consider PEM-Quest assessment</li>\n                      </>\n                    )}\n                    {risk.riskLevel === 'Medium' && (\n                      <>\n                        <li>• Consider Red-flag Checker</li>\n                        <li>• Monitor symptoms closely</li>\n                        <li>• Follow-up in 4-6 weeks</li>\n                      </>\n                    )}\n                    {risk.riskLevel === 'Low' && (\n                      <>\n                        <li>• Routine clinical assessment</li>\n                        <li>• Consider other diagnoses</li>\n                        <li>• Reassess if symptoms worsen</li>\n                      </>\n                    )}\n                  </ul>\n                </div>",
+          "newString": "                <div className=\"bg-blue-50 p-4 rounded-lg\">\n                  <h4 className=\"font-semibold mb-2 text-blue-900\">{t.quickScreen.results.nextSteps}</h4>\n                  <ul className=\"text-sm space-y-1 text-blue-800\">\n                    {risk.riskLevel === 'High' && \n                      t.quickScreen.nextStepsRecommendations.high.map((step, index) => (\n                        <li key={index}>• {step}</li>\n                      ))\n                    }\n                    {risk.riskLevel === 'Medium' && \n                      t.quickScreen.nextStepsRecommendations.medium.map((step, index) => (\n                        <li key={index}>• {step}</li>\n                      ))\n                    }\n                    {risk.riskLevel === 'Low' && \n                      t.quickScreen.nextStepsRecommendations.low.map((step, index) => (\n                        <li key={index}>• {step}</li>\n                      ))\n                    }\n                  </ul>\n                </div>"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "                  Retake Screening",
+          "newString": "                  {t.quickScreen.results.retake}"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "                      Continue to Red-flag Checker",
+          "newString": "                      {t.common.continue} to Red-flag Checker"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "            <CardTitle className=\"text-lg\">\n              {currentQuestionData.question}\n            </CardTitle>\n            <CardDescription>\n              Category: {currentQuestionData.category.charAt(0).toUpperCase() + currentQuestionData.category.slice(1)}\n            </CardDescription>",
+          "newString": "            <CardTitle className=\"text-lg\">\n              {currentQuestionData.question}\n            </CardTitle>\n            <CardDescription>\n              Category: {t.quickScreen.categories[currentQuestionData.category as keyof typeof t.quickScreen.categories]}\n            </CardDescription>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -108,31 +108,25 @@\n     </ul>\n   </div>\n \n   <div className=\"bg-blue-50 p-4 rounded-lg\">\n-    <h4 className=\"font-semibold mb-2 text-blue-900\">Next Steps</h4>\n+    <h4 className=\"font-semibold mb-2 text-blue-900\">{t.quickScreen.results.nextSteps}</h4>\n     <ul className=\"text-sm space-y-1 text-blue-800\">\n-      {risk.riskLevel === 'High' && (\n-        <>\n-          <li>• Proceed to Red-flag Checker</li>\n-          <li>• Complete Stand-Test Pro</li>\n-          <li>• Consider PEM-Quest assessment</li>\n-        </>\n-      )}\n-      {risk.riskLevel === 'Medium' && (\n-        <>\n-          <li>• Consider Red-flag Checker</li>\n-          <li>• Monitor symptoms closely</li>\n-          <li>• Follow-up in 4-6 weeks</li>\n-        </>\n-      )}\n-      {risk.riskLevel === 'Low' && (\n-        <>\n-          <li>• Routine clinical assessment</li>\n-          <li>• Consider other diagnoses</li>\n-          <li>• Reassess if symptoms worsen</li>\n-        </>\n-      )}\n+      {risk.riskLevel === 'High' && \n+        t.quickScreen.nextStepsRecommendations.high.map((step, index) => (\n+          <li key={index}>• {step}</li>\n+        ))\n+      }\n+      {risk.riskLevel === 'Medium' && \n+        t.quickScreen.nextStepsRecommendations.medium.map((step, index) => (\n+          <li key={index}>• {step}</li>\n+        ))\n+      }\n+      {risk.riskLevel === 'Low' && \n+        t.quickScreen.nextStepsRecommendations.low.map((step, index) => (\n+          <li key={index}>• {step}</li>\n+        ))\n+      }\n     </ul>\n   </div>\n </div>\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -135,9 +135,9 @@\n   setAnswers({})\n   setCurrentQuestion(0)\n   setIsComplete(false)\n }} variant=\"outline\">\n-  Retake Screening\n+  {t.quickScreen.results.retake}\n </Button>\n {risk.riskLevel !== 'Low' && (\n   <Button asChild>\n     <Link href=\"/red-flag-checker\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -140,9 +140,9 @@\n   </Button>\n   {risk.riskLevel !== 'Low' && (\n     <Button asChild>\n       <Link href=\"/red-flag-checker\">\n-        Continue to Red-flag Checker\n+        {t.common.continue} to Red-flag Checker\n       </Link>\n     </Button>\n   )}\n </div>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -181,9 +181,9 @@\n   <CardTitle className=\"text-lg\">\n     {currentQuestionData.question}\n   </CardTitle>\n   <CardDescription>\n-    Category: {currentQuestionData.category.charAt(0).toUpperCase() + currentQuestionData.category.slice(1)}\n+    Category: {t.quickScreen.categories[currentQuestionData.category as keyof typeof t.quickScreen.categories]}\n   </CardDescription>\n </CardHeader>\n <CardContent>\n   <div className=\"space-y-4\">\n"
+        }
+      ]
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758128273387,
+      "end": 1758128273404
+    }
+  }
+}

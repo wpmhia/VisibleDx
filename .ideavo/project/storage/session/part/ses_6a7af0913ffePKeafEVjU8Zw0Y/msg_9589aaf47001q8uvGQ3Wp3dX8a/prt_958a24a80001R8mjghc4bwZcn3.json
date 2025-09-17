@@ -1,0 +1,62 @@
+{
+  "id": "prt_958a24a80001R8mjghc4bwZcn3",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01GHgdQ1me1iKxuMrwbY1JE3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                Diagnostic Criteria Assessment Complete\n              </CardTitle>\n              <CardDescription>\n                Based on CDC, NASEM, ESC, WHO guidelines\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                {t.criteria.results.complete}\n              </CardTitle>\n              <CardDescription>\n                {t.criteria.results.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                  <h3 className=\"text-lg font-semibold text-center mb-4\">Diagnoses Meeting Criteria</h3>",
+          "newString": "                  <h3 className=\"text-lg font-semibold text-center mb-4\">{t.criteria.results.diagnosesMet}</h3>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                          <Badge className=\"bg-green-100 text-green-800\">\n                            CRITERIA MET\n                          </Badge>",
+          "newString": "                          <Badge className=\"bg-green-100 text-green-800\">\n                            {t.criteria.results.criteriaMet}\n                          </Badge>"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">Clinical Recommendations</h4>",
+          "newString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">{t.criteria.results.clinicalRecommendations}</h4>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -155,12 +155,12 @@\n <Card>\n   <CardHeader className=\"text-center\">\n     <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n       <CheckCircle className=\"h-6 w-6 text-green-600\" />\n-      Diagnostic Criteria Assessment Complete\n+      {t.criteria.results.complete}\n     </CardTitle>\n     <CardDescription>\n-      Based on CDC, NASEM, ESC, WHO guidelines\n+      {t.criteria.results.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-6\">\n     {positives.length > 0 ? (\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -164,9 +164,9 @@\n </CardHeader>\n <CardContent className=\"space-y-6\">\n   {positives.length > 0 ? (\n     <div className=\"space-y-4\">\n-      <h3 className=\"text-lg font-semibold text-center mb-4\">Diagnoses Meeting Criteria</h3>\n+      <h3 className=\"text-lg font-semibold text-center mb-4\">{t.criteria.results.diagnosesMet}</h3>\n       {positives.map((diagnosis) => (\n         <Alert key={diagnosis.id} className=\"border-green-200 bg-green-50\">\n           <CheckCircle className=\"h-4 w-4 text-green-600\" />\n           <AlertDescription>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -177,9 +177,9 @@\n           ICD-10 Code: {diagnosis.icdCode} | Confidence: {diagnosis.confidence}\n         </p>\n       </div>\n       <Badge className=\"bg-green-100 text-green-800\">\n-        CRITERIA MET\n+        {t.criteria.results.criteriaMet}\n       </Badge>\n     </div>\n   </AlertDescription>\n </Alert>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -232,9 +232,9 @@\n   ))}\n </div>\n \n <div className=\"bg-blue-50 p-4 rounded-lg\">\n-  <h4 className=\"font-semibold mb-2 text-blue-900\">Clinical Recommendations</h4>\n+  <h4 className=\"font-semibold mb-2 text-blue-900\">{t.criteria.results.clinicalRecommendations}</h4>\n   <div className=\"text-blue-800 text-sm space-y-2\">\n     {positives.some(d => d.id === 'mecfs') && (\n       <div>\n         <strong>ME/CFS Management:</strong>\n"
+        }
+      ]
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128661557,
+      "end": 1758128661569
+    }
+  }
+}

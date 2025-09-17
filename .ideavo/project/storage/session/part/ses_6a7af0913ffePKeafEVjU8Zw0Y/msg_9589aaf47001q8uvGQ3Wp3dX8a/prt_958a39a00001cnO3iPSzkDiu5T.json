@@ -1,0 +1,18 @@
+{
+  "id": "prt_958a39a00001cnO3iPSzkDiu5T",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(translations): integrate multilingual support across 5 medical modules",
+  "cost": 2.6775192,
+  "tokens": {
+    "input": 1,
+    "output": 314,
+    "reasoning": 0,
+    "cache": {
+      "write": 921,
+      "read": 117495
+    }
+  }
+}

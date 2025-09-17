@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a20f8b001qejBbrZMueoURT",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_011Ed22BBGmECu45iTDETpGT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "export default function CriteriaEngine() {\n  const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))\n  const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n  const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)\n  const { t } = useTranslation()",
+      "newString": "export default function CriteriaEngine() {\n  const { t } = useTranslation()\n  \n  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n    description: desc,\n    met: false\n  }))\n  \n  const getLongCovidCriteria = () => t.criteria.longCovid.criteria.map((desc, index) => ({\n    id: ['covid_history', 'duration', 'multisystem', 'unexplained'][index],\n    description: desc,\n    met: false\n  }))\n  \n  const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({\n    id: ['hr_increase', 'sustained', 'symptoms', 'duration_pots', 'no_oh'][index],\n    description: desc,\n    met: false\n  }))\n\n  const [mecfsChecked, setMecfsChecked] = useState(() => getMECFSCriteria())\n  const [longCovidChecked, setLongCovidChecked] = useState(() => getLongCovidCriteria())\n  const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())\n  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -23,14 +23,33 @@\n \n // Criteria will be generated from translations\n \n export default function CriteriaEngine() {\n-  const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))\n-  const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n-  const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n+  const { t } = useTranslation()\n+  \n+  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n+    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n+    description: desc,\n+    met: false\n+  }))\n+  \n+  const getLongCovidCriteria = () => t.criteria.longCovid.criteria.map((desc, index) => ({\n+    id: ['covid_history', 'duration', 'multisystem', 'unexplained'][index],\n+    description: desc,\n+    met: false\n+  }))\n+  \n+  const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({\n+    id: ['hr_increase', 'sustained', 'symptoms', 'duration_pots', 'no_oh'][index],\n+    description: desc,\n+    met: false\n+  }))\n+\n+  const [mecfsChecked, setMecfsChecked] = useState(() => getMECFSCriteria())\n+  const [longCovidChecked, setLongCovidChecked] = useState(() => getLongCovidCriteria())\n+  const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())\n   const [covidTiming, setCovidTiming] = useState<string>('')\n   const [isComplete, setIsComplete] = useState(false)\n-  const { t } = useTranslation()\n \n   const handleMECFSChange = (id: string, checked: boolean) => {\n     setMecfsChecked(prev => prev.map(item => \n       item.id === id ? { ...item, met: checked } : item\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128645338,
+      "end": 1758128645345
+    }
+  }
+}

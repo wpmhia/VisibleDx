@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
 import { ArrowLeft, BarChart3, CheckCircle, AlertTriangle, FileText, Download } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 interface DiagnosticCriteria {
   id: string
@@ -20,33 +21,32 @@ interface DiagnosticCriteria {
   confidence: 'high' | 'medium' | 'low'
 }
 
-const mecfsCriteria = [
-  { id: 'fatigue', description: 'Substantial reduction or impairment in activity levels that persists for ≥6 months', met: false },
-  { id: 'pem', description: 'Post-exertional malaise (PEM) present', met: false },
-  { id: 'sleep', description: 'Unrefreshing sleep', met: false },
-  { id: 'cognitive', description: 'Cognitive impairment (brain fog)', met: false },
-  { id: 'orthostatic', description: 'Orthostatic intolerance OR autonomic dysfunction', met: false }
-]
-
-const longCovidCriteria = [
-  { id: 'covid_history', description: 'Confirmed or probable SARS-CoV-2 infection', met: false },
-  { id: 'duration', description: 'Symptoms persist ≥3 months from acute illness', met: false },
-  { id: 'multisystem', description: 'Multi-system symptoms affecting daily functioning', met: false },
-  { id: 'unexplained', description: 'Symptoms not explained by alternative diagnosis', met: false }
-]
-
-const potsCriteria = [
-  { id: 'hr_increase', description: 'Heart rate increase ≥30 bpm within 10 minutes of standing', met: false },
-  { id: 'sustained', description: 'Sustained heart rate ≥120 bpm while standing', met: false },
-  { id: 'symptoms', description: 'Orthostatic symptoms (dizziness, palpitations, fatigue)', met: false },
-  { id: 'duration_pots', description: 'Symptoms present for ≥3 months', met: false },
-  { id: 'no_oh', description: 'Absence of orthostatic hypotension', met: false }
-]
+// Criteria will be generated from translations
 
 export default function CriteriaEngine() {
-  const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))
-  const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))
-  const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))
+  const { t } = useTranslation()
+  
+  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({
+    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],
+    description: desc,
+    met: false
+  }))
+  
+  const getLongCovidCriteria = () => t.criteria.longCovid.criteria.map((desc, index) => ({
+    id: ['covid_history', 'duration', 'multisystem', 'unexplained'][index],
+    description: desc,
+    met: false
+  }))
+  
+  const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({
+    id: ['hr_increase', 'sustained', 'symptoms', 'duration_pots', 'no_oh'][index],
+    description: desc,
+    met: false
+  }))
+
+  const [mecfsChecked, setMecfsChecked] = useState(() => getMECFSCriteria())
+  const [longCovidChecked, setLongCovidChecked] = useState(() => getLongCovidCriteria())
+  const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())
   const [covidTiming, setCovidTiming] = useState<string>('')
   const [isComplete, setIsComplete] = useState(false)
 
@@ -156,16 +156,16 @@ export default function CriteriaEngine() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <CheckCircle className="h-6 w-6 text-green-600" />
-                Diagnostic Criteria Assessment Complete
+                {t.criteria.results.complete}
               </CardTitle>
               <CardDescription>
-                Based on CDC, NASEM, ESC, WHO guidelines
+                {t.criteria.results.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               {positives.length > 0 ? (
                 <div className="space-y-4">
-                  <h3 className="text-lg font-semibold text-center mb-4">Diagnoses Meeting Criteria</h3>
+                  <h3 className="text-lg font-semibold text-center mb-4">{t.criteria.results.diagnosesMet}</h3>
                   {positives.map((diagnosis) => (
                     <Alert key={diagnosis.id} className="border-green-200 bg-green-50">
                       <CheckCircle className="h-4 w-4 text-green-600" />
@@ -178,7 +178,7 @@ export default function CriteriaEngine() {
                             </p>
                           </div>
                           <Badge className="bg-green-100 text-green-800">
-                            CRITERIA MET
+                            {t.criteria.results.criteriaMet}
                           </Badge>
                         </div>
                       </AlertDescription>
@@ -233,16 +233,15 @@ export default function CriteriaEngine() {
               </div>
 
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2 text-blue-900">Clinical Recommendations</h4>
+                <h4 className="font-semibold mb-2 text-blue-900">{t.criteria.results.clinicalRecommendations}</h4>
                 <div className="text-blue-800 text-sm space-y-2">
                   {positives.some(d => d.id === 'mecfs') && (
                     <div>
                       <strong>ME/CFS Management:</strong>
                       <ul className="ml-4 list-disc space-y-1 mt-1">
-                        <li>Implement activity pacing and energy management</li>
-                        <li>Avoid graded exercise therapy (GET)</li>
-                        <li>Consider symptom-directed treatments</li>
-                        <li>Specialist ME/CFS clinic referral if available</li>
+                        {t.criteria.results.mecfsManagement.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
                       </ul>
                     </div>
                   )}
@@ -250,10 +249,9 @@ export default function CriteriaEngine() {
                     <div>
                       <strong>Long COVID Management:</strong>
                       <ul className="ml-4 list-disc space-y-1 mt-1">
-                        <li>Multidisciplinary approach to symptom management</li>
-                        <li>Long COVID clinic referral if available</li>
-                        <li>Monitor for improvement over time</li>
-                        <li>Address individual symptoms (fatigue, cognitive, respiratory)</li>
+                        {t.criteria.results.longCovidManagement.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
                       </ul>
                     </div>
                   )}
@@ -261,10 +259,9 @@ export default function CriteriaEngine() {
                     <div>
                       <strong>POTS Management:</strong>
                       <ul className="ml-4 list-disc space-y-1 mt-1">
-                        <li>Proceed to subtype determination for targeted therapy</li>
-                        <li>Non-pharmacological: salt, fluids, compression garments</li>
-                        <li>Consider cardiology or autonomic specialist referral</li>
-                        <li>Gradual exercise reconditioning when appropriate</li>
+                        {t.criteria.results.potsManagement.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
                       </ul>
                     </div>
                   )}
@@ -273,12 +270,12 @@ export default function CriteriaEngine() {
 
               <div className="flex gap-4 justify-center">
                 <Button onClick={() => {
-                  setMecfsChecked(mecfsCriteria.map(c => ({ ...c })))
-                  setLongCovidChecked(longCovidCriteria.map(c => ({ ...c })))
-                  setPotsChecked(potsCriteria.map(c => ({ ...c })))
+                  setMecfsChecked(getMECFSCriteria())
+                  setLongCovidChecked(getLongCovidCriteria())
+                  setPotsChecked(getPOTSCriteria())
                   setIsComplete(false)
                 }} variant="outline">
-                  Reassess Criteria
+                  {t.criteria.results.reassess}
                 </Button>
                 <Button onClick={() => {
                   const report = generateReport()
@@ -291,12 +288,12 @@ export default function CriteriaEngine() {
                   URL.revokeObjectURL(url)
                 }} className="flex items-center gap-2">
                   <Download className="h-4 w-4" />
-                  Download Report
+                  {t.criteria.results.downloadReport}
                 </Button>
                 {positives.some(d => d.id === 'pots') && (
                   <Button asChild>
                     <Link href="/subtype-advisor">
-                      POTS Subtype Analysis
+                      {t.criteria.results.potsSubtype}
                     </Link>
                   </Button>
                 )}
@@ -314,14 +311,14 @@ export default function CriteriaEngine() {
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
             <ArrowLeft className="h-4 w-4" />
-            Back to Dashboard
+            {t.app.backToDashboard}
           </Link>
           
           <div className="flex items-center gap-4 mb-4">
             <BarChart3 className="h-5 w-5 text-blue-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Criteria Engine</h1>
-              <p className="text-gray-600">Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination</p>
+              <h1 className="text-2xl font-bold text-gray-900">{t.criteria.title}</h1>
+              <p className="text-gray-600">{t.criteria.description}</p>
             </div>
           </div>
         </div>
@@ -329,9 +326,9 @@ export default function CriteriaEngine() {
         <div className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg text-blue-800">ME/CFS Criteria (CDC/NASEM 2015)</CardTitle>
+              <CardTitle className="text-lg text-blue-800">{t.criteria.mecfs.title}</CardTitle>
               <CardDescription>
-                Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance
+                {t.criteria.mecfs.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -354,9 +351,9 @@ export default function CriteriaEngine() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg text-green-800">Long COVID Criteria (WHO/NASEM 2024)</CardTitle>
+              <CardTitle className="text-lg text-green-800">{t.criteria.longCovid.title}</CardTitle>
               <CardDescription>
-                Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms
+                {t.criteria.longCovid.description}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -381,15 +378,15 @@ export default function CriteriaEngine() {
                   <RadioGroup value={covidTiming} onValueChange={setCovidTiming} className="mt-2">
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="confirmed" id="confirmed" />
-                      <Label htmlFor="confirmed" className="text-sm">Confirmed by test</Label>
+                      <Label htmlFor="confirmed" className="text-sm">{t.criteria.longCovid.timing.confirmed}</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="probable" id="probable" />
-                      <Label htmlFor="probable" className="text-sm">Probable based on symptoms/exposure</Label>
+                      <Label htmlFor="probable" className="text-sm">{t.criteria.longCovid.timing.probable}</Label>
                     </div>
                     <div className="flex items-center space-x-2">
                       <RadioGroupItem value="suspected" id="suspected" />
-                      <Label htmlFor="suspected" className="text-sm">Suspected based on timing</Label>
+                      <Label htmlFor="suspected" className="text-sm">{t.criteria.longCovid.timing.suspected}</Label>
                     </div>
                   </RadioGroup>
                 </div>
@@ -399,9 +396,9 @@ export default function CriteriaEngine() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg text-purple-800">POTS Criteria (ESC 2018/AAS-EFAS 2021)</CardTitle>
+              <CardTitle className="text-lg text-purple-800">{t.criteria.pots.title}</CardTitle>
               <CardDescription>
-                Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension
+                {t.criteria.pots.description}
               </CardDescription>
             </CardHeader>
             <CardContent>

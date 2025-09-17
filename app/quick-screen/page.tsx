@@ -9,87 +9,10 @@ import { CheckCircle, Circle, ArrowLeft, ArrowRight, Clock, AlertTriangle } from
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
-const screeningQuestions = [
-  {
-    id: 1,
-    question: "Do you experience severe fatigue that is not relieved by rest?",
-    category: "core"
-  },
-  {
-    id: 2,
-    question: "Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?",
-    category: "pem"
-  },
-  {
-    id: 3,
-    question: "Do you have unrefreshing sleep, regardless of duration?",
-    category: "core"
-  },
-  {
-    id: 4,
-    question: "Do you experience cognitive difficulties (brain fog, memory problems)?",
-    category: "core"
-  },
-  {
-    id: 5,
-    question: "Do you have palpitations or rapid heart rate, especially when standing?",
-    category: "cardiovascular"
-  },
-  {
-    id: 6,
-    question: "Do you experience dizziness or lightheadedness when standing up?",
-    category: "orthostatic"
-  },
-  {
-    id: 7,
-    question: "Have you had COVID-19 or suspected COVID-19 infection?",
-    category: "history"
-  },
-  {
-    id: 8,
-    question: "Have your symptoms persisted for 3 months or longer?",
-    category: "duration"
-  },
-  {
-    id: 9,
-    question: "Do you experience muscle pain or joint pain without swelling?",
-    category: "pain"
-  },
-  {
-    id: 10,
-    question: "Do you have frequent headaches or changes in headache patterns?",
-    category: "neurological"
-  },
-  {
-    id: 11,
-    question: "Do you experience temperature dysregulation (feeling too hot/cold)?",
-    category: "autonomic"
-  },
-  {
-    id: 12,
-    question: "Do you have gastrointestinal symptoms (nausea, bloating, changes in bowel habits)?",
-    category: "gi"
-  },
-  {
-    id: 13,
-    question: "Do you experience shortness of breath or breathing difficulties?",
-    category: "respiratory"
-  },
-  {
-    id: 14,
-    question: "Have you noticed decreased exercise tolerance or physical capacity?",
-    category: "functional"
-  },
-  {
-    id: 15,
-    question: "Do you experience sensitivity to light, sound, or touch?",
-    category: "sensory"
-  },
-  {
-    id: 16,
-    question: "Have you been unable to maintain your previous level of activity?",
-    category: "functional"
-  }
+const questionCategories = [
+  "core", "pem", "core", "core", "cardiovascular", "orthostatic", "history", 
+  "duration", "pain", "neurological", "autonomic", "gi", "respiratory", 
+  "functional", "sensory", "functional"
 ]
 
 export default function QuickScreen() {
@@ -144,7 +67,7 @@ export default function QuickScreen() {
   const currentQuestionData = {
     id: currentQuestion + 1,
     question: t.quickScreen.questions[currentQuestion],
-    category: Object.keys(t.quickScreen.categories)[currentQuestion % Object.keys(t.quickScreen.categories).length]
+    category: questionCategories[currentQuestion]
   }
   const currentAnswer = answers[currentQuestionData?.id]
 
@@ -158,55 +81,51 @@ export default function QuickScreen() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <CheckCircle className="h-6 w-6 text-green-600" />
-                Screening Complete
+                {t.quickScreen.results.complete}
               </CardTitle>
               <CardDescription>
-                Based on your responses, here's your risk assessment
+                {t.quickScreen.results.riskAssessment}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center">
                 <Badge className={`px-4 py-2 text-lg ${risk.riskColor}`}>
-                  {risk.riskLevel} Risk for ME/CFS, Long COVID, or POTS
+                  {risk.riskLevel === 'High' ? t.quickScreen.results.highRisk : 
+                   risk.riskLevel === 'Medium' ? t.quickScreen.results.mediumRisk : 
+                   t.quickScreen.results.lowRisk}
                 </Badge>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Assessment Results</h4>
+                  <h4 className="font-semibold mb-2">{t.common.results}</h4>
                   <ul className="text-sm space-y-1">
-                    <li>Total positive responses: {risk.totalYes}/16</li>
-                    <li>Core symptoms present: {risk.coreSymptoms}/3</li>
-                    <li>Post-exertional malaise: {risk.pemPresent ? 'Yes' : 'No'}</li>
-                    <li>COVID history: {risk.covidHistory ? 'Yes' : 'No'}</li>
-                    <li>Chronic symptoms (≥3 months): {risk.chronicity ? 'Yes' : 'No'}</li>
+                    <li>{t.quickScreen.results.totalResponses}: {risk.totalYes}/16</li>
+                    <li>{t.quickScreen.results.coreSymptoms}: {risk.coreSymptoms}/3</li>
+                    <li>{t.quickScreen.results.pemPresent}: {risk.pemPresent ? t.common.yes : t.common.no}</li>
+                    <li>{t.quickScreen.results.covidHistory}: {risk.covidHistory ? t.common.yes : t.common.no}</li>
+                    <li>{t.quickScreen.results.chronicSymptoms}: {risk.chronicity ? t.common.yes : t.common.no}</li>
                   </ul>
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-blue-900">Next Steps</h4>
+                  <h4 className="font-semibold mb-2 text-blue-900">{t.quickScreen.results.nextSteps}</h4>
                   <ul className="text-sm space-y-1 text-blue-800">
-                    {risk.riskLevel === 'High' && (
-                      <>
-                        <li>• Proceed to Red-flag Checker</li>
-                        <li>• Complete Stand-Test Pro</li>
-                        <li>• Consider PEM-Quest assessment</li>
-                      </>
-                    )}
-                    {risk.riskLevel === 'Medium' && (
-                      <>
-                        <li>• Consider Red-flag Checker</li>
-                        <li>• Monitor symptoms closely</li>
-                        <li>• Follow-up in 4-6 weeks</li>
-                      </>
-                    )}
-                    {risk.riskLevel === 'Low' && (
-                      <>
-                        <li>• Routine clinical assessment</li>
-                        <li>• Consider other diagnoses</li>
-                        <li>• Reassess if symptoms worsen</li>
-                      </>
-                    )}
+                    {risk.riskLevel === 'High' && 
+                      t.quickScreen.nextStepsRecommendations.high.map((step, index) => (
+                        <li key={index}>• {step}</li>
+                      ))
+                    }
+                    {risk.riskLevel === 'Medium' && 
+                      t.quickScreen.nextStepsRecommendations.medium.map((step, index) => (
+                        <li key={index}>• {step}</li>
+                      ))
+                    }
+                    {risk.riskLevel === 'Low' && 
+                      t.quickScreen.nextStepsRecommendations.low.map((step, index) => (
+                        <li key={index}>• {step}</li>
+                      ))
+                    }
                   </ul>
                 </div>
               </div>
@@ -217,12 +136,12 @@ export default function QuickScreen() {
                   setCurrentQuestion(0)
                   setIsComplete(false)
                 }} variant="outline">
-                  Retake Screening
+                  {t.quickScreen.results.retake}
                 </Button>
                 {risk.riskLevel !== 'Low' && (
                   <Button asChild>
                     <Link href="/red-flag-checker">
-                      Continue to Red-flag Checker
+                      {t.common.continue} to Red-flag Checker
                     </Link>
                   </Button>
                 )}
@@ -263,7 +182,7 @@ export default function QuickScreen() {
               {currentQuestionData.question}
             </CardTitle>
             <CardDescription>
-              Category: {currentQuestionData.category.charAt(0).toUpperCase() + currentQuestionData.category.slice(1)}
+              Category: {t.quickScreen.categories[currentQuestionData.category as keyof typeof t.quickScreen.categories]}
             </CardDescription>
           </CardHeader>
           <CardContent>

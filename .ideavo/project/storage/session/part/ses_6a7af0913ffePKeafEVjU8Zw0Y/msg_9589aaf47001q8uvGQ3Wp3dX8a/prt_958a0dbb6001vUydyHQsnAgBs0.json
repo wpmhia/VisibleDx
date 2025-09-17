@@ -1,0 +1,62 @@
+{
+  "id": "prt_958a0dbb6001vUydyHQsnAgBs0",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Xy94EiQs4Kk9eFZaVzUsmy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                PEM Assessment Complete\n              </CardTitle>\n              <CardDescription>\n                Post-Exertional Malaise evaluation based on DePaul criteria\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                {t.pem.results.complete}\n              </CardTitle>\n              <CardDescription>\n                {t.pem.results.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  <h3 className=\"font-semibold text-lg\">Assessment Results</h3>",
+          "newString": "                  <h3 className=\"font-semibold text-lg\">{t.common.results}</h3>"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                    <h4 className=\"font-semibold mb-2 text-blue-900\">PEM Status</h4>\n                    <p className=\"text-blue-800 text-sm mb-2\">\n                      {pemScore.isPEMPresent \n                        ? 'Post-Exertional Malaise is likely present'\n                        : 'Post-Exertional Malaise is unlikely'\n                      }\n                    </p>",
+          "newString": "                    <h4 className=\"font-semibold mb-2 text-blue-900\">{t.pem.results.status}</h4>\n                    <p className=\"text-blue-800 text-sm mb-2\">\n                      {pemScore.isPEMPresent \n                        ? t.pem.results.present\n                        : t.pem.results.absent\n                      }\n                    </p>"
+        },
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "                  <h3 className=\"font-semibold text-lg\">Clinical Interpretation</h3>",
+          "newString": "                  <h3 className=\"font-semibold text-lg\">{t.pem.results.clinicalInterpretation}</h3>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -156,12 +156,12 @@\n <Card>\n   <CardHeader className=\"text-center\">\n     <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n       <CheckCircle className=\"h-6 w-6 text-green-600\" />\n-      PEM Assessment Complete\n+      {t.pem.results.complete}\n     </CardTitle>\n     <CardDescription>\n-      Post-Exertional Malaise evaluation based on DePaul criteria\n+      {t.pem.results.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-6\">\n     <div className=\"text-center\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -174,9 +174,9 @@\n </div>\n \n <div className=\"grid md:grid-cols-2 gap-6\">\n   <div className=\"space-y-4\">\n-    <h3 className=\"font-semibold text-lg\">Assessment Results</h3>\n+    <h3 className=\"font-semibold text-lg\">{t.common.results}</h3>\n     \n     <div className=\"bg-gray-50 p-4 rounded-lg space-y-3\">\n       {pemQuestions.map((question) => {\n         const answer = answers[question.id]\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -201,13 +201,13 @@\n <div className=\"space-y-4\">\n   <h3 className=\"font-semibold text-lg\">Clinical Interpretation</h3>\n   \n   <div className=\"bg-blue-50 p-4 rounded-lg\">\n-    <h4 className=\"font-semibold mb-2 text-blue-900\">PEM Status</h4>\n+    <h4 className=\"font-semibold mb-2 text-blue-900\">{t.pem.results.status}</h4>\n     <p className=\"text-blue-800 text-sm mb-2\">\n       {pemScore.isPEMPresent \n-        ? 'Post-Exertional Malaise is likely present'\n-        : 'Post-Exertional Malaise is unlikely'\n+        ? t.pem.results.present\n+        : t.pem.results.absent\n       }\n     </p>\n     \n     {pemScore.isPEMPresent && (\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -198,9 +198,9 @@\n   </div>\n </div>\n \n <div className=\"space-y-4\">\n-  <h3 className=\"font-semibold text-lg\">Clinical Interpretation</h3>\n+  <h3 className=\"font-semibold text-lg\">{t.pem.results.clinicalInterpretation}</h3>\n   \n   <div className=\"bg-blue-50 p-4 rounded-lg\">\n     <h4 className=\"font-semibold mb-2 text-blue-900\">{t.pem.results.status}</h4>\n     <p className=\"text-blue-800 text-sm mb-2\">\n"
+        }
+      ]
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758128569628,
+      "end": 1758128569639
+    }
+  }
+}

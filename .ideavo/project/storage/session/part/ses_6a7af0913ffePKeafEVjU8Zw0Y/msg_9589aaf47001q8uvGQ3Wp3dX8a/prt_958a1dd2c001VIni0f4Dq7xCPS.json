@@ -1,0 +1,11 @@
+{
+  "id": "prt_958a1dd2c001VIni0f4Dq7xCPS",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to replace the hardcoded criteria arrays with translation-based ones. Let me update the arrays:",
+  "time": {
+    "start": 1758128627723,
+    "end": 1758128627723
+  }
+}

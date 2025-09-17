@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589d8526001LJIal1GtsxZ7qB",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01XQVc4T9bya6XjArjNuXezr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "            <CardContent>\n              <div className=\"grid md:grid-cols-2 gap-4\">\n                {redFlagSymptoms.map((flag) => (\n                  <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={flag.id}\n                      checked={selectedRedFlags.includes(flag.id)}\n                      onCheckedChange={(checked) => handleRedFlagChange(flag.id, !!checked)}\n                    />\n                    <div className=\"flex-1\">\n                      <label htmlFor={flag.id} className=\"text-sm font-medium cursor-pointer\">\n                        {flag.symptom}\n                      </label>\n                      <div className=\"flex gap-2 mt-1\">\n                        <Badge \n                          variant={flag.priority === 'high' ? 'destructive' : 'secondary'}\n                          className=\"text-xs\"\n                        >\n                          {flag.category}\n                        </Badge>\n                      </div>\n                    </div>\n                  </div>\n                ))}\n              </div>\n            </CardContent>",
+      "newString": "            <CardContent>\n              <div className=\"grid md:grid-cols-2 gap-4\">\n                {redFlagSymptoms.map((flag, index) => (\n                  <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                    <Checkbox\n                      id={flag.id}\n                      checked={selectedRedFlags.includes(flag.id)}\n                      onCheckedChange={(checked) => handleRedFlagChange(flag.id, !!checked)}\n                    />\n                    <div className=\"flex-1\">\n                      <label htmlFor={flag.id} className=\"text-sm font-medium cursor-pointer\">\n                        {t.redFlag.symptoms.list[index]}\n                      </label>\n                      <div className=\"flex gap-2 mt-1\">\n                        <Badge \n                          variant={flag.priority === 'high' ? 'destructive' : 'secondary'}\n                          className=\"text-xs\"\n                        >\n                          {flag.category}\n                        </Badge>\n                      </div>\n                    </div>\n                  </div>\n                ))}\n              </div>\n            </CardContent>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -316,18 +316,18 @@\n   </CardDescription>\n </CardHeader>\n <CardContent>\n   <div className=\"grid md:grid-cols-2 gap-4\">\n-    {redFlagSymptoms.map((flag) => (\n+    {redFlagSymptoms.map((flag, index) => (\n       <div key={flag.id} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n         <Checkbox\n           id={flag.id}\n           checked={selectedRedFlags.includes(flag.id)}\n           onCheckedChange={(checked) => handleRedFlagChange(flag.id, !!checked)}\n         />\n         <div className=\"flex-1\">\n           <label htmlFor={flag.id} className=\"text-sm font-medium cursor-pointer\">\n-            {flag.symptom}\n+            {t.redFlag.symptoms.list[index]}\n           </label>\n           <div className=\"flex gap-2 mt-1\">\n             <Badge \n               variant={flag.priority === 'high' ? 'destructive' : 'secondary'}\n"
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128348661,
+      "end": 1758128348665
+    }
+  }
+}

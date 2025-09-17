@@ -1,0 +1,44 @@
+{
+  "id": "prt_9589daf65001KPVxPTja41awKk",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01DMTBJDmanx71oPkuZ5LgnD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "              <CardTitle className=\"text-lg text-blue-800\">Routine Screening Labs</CardTitle>\n              <CardDescription>\n                Select categories of tests to rule out common explanatory conditions\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"text-lg text-blue-800\">{t.redFlag.routineLabs.title}</CardTitle>\n              <CardDescription>\n                {t.redFlag.routineLabs.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "              Generate Recommendations",
+          "newString": "              {t.redFlag.results.generateRecommendations}"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -344,11 +344,11 @@\n </Card>\n \n <Card>\n   <CardHeader>\n-    <CardTitle className=\"text-lg text-blue-800\">Routine Screening Labs</CardTitle>\n+    <CardTitle className=\"text-lg text-blue-800\">{t.redFlag.routineLabs.title}</CardTitle>\n     <CardDescription>\n-      Select categories of tests to rule out common explanatory conditions\n+      {t.redFlag.routineLabs.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent>\n     <div className=\"grid md:grid-cols-2 gap-4\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -376,9 +376,9 @@\n     </Card>\n \n     <div className=\"flex justify-center\">\n       <Button onClick={() => setIsComplete(true)} className=\"px-8\">\n-        Generate Recommendations\n+        {t.redFlag.results.generateRecommendations}\n       </Button>\n     </div>\n   </div>\n </div>\n"
+        }
+      ]
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128355970,
+      "end": 1758128355980
+    }
+  }
+}

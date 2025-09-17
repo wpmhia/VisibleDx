@@ -1,0 +1,71 @@
+{
+  "id": "prt_9589d2a7f001zrOe8cE0aR3nO5",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_0149tgYMCUPLDTFy9LM5uRwg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                      <h3 className=\"font-semibold mb-2\">No Red Flags Identified</h3>\n                      <p className=\"text-sm\">\n                        Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.\n                        Consider basic metabolic panel if not done recently.\n                      </p>",
+          "newString": "                      <h3 className=\"font-semibold mb-2\">{t.redFlag.results.noRedFlags}</h3>\n                      <p className=\"text-sm\">\n                        Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.\n                        Consider basic metabolic panel if not done recently.\n                      </p>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n                  <Brain className=\"h-4 w-4\" />\n                  Clinical Decision Support\n                </h4>",
+          "newString": "                <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n                  <Brain className=\"h-4 w-4\" />\n                  {t.redFlag.results.clinicalSupport}\n                </h4>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                    <p className=\"text-red-700\">\n                      • Expedite workup due to high-priority red flags\n                      • Consider same-day or next-day evaluation\n                      • Hold off on ME/CFS/POTS assessment until red flags ruled out\n                    </p>",
+          "newString": "                    <p className=\"text-red-700\">\n                      {t.redFlag.results.urgent}\n                    </p>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                    <p className=\"text-yellow-700\">\n                      • Complete recommended tests within 1-2 weeks\n                      • Can proceed with stand-test if cardiovascular red flags absent\n                      • Re-evaluate based on test results\n                    </p>",
+          "newString": "                    <p className=\"text-yellow-700\">\n                      {t.redFlag.results.priority}\n                    </p>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                    <p className=\"text-green-700\">\n                      • Proceed with routine screening labs\n                      • Can continue with ME/CFS/Long COVID/POTS assessment\n                      • Consider 4-6 week follow-up for test results\n                    </p>",
+          "newString": "                    <p className=\"text-green-700\">\n                      {t.redFlag.results.routine}\n                    </p>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -231,9 +231,9 @@\n <Card className=\"border-green-200 bg-green-50\">\n   <CardContent className=\"pt-6\">\n     <div className=\"text-center text-green-800\">\n       <CheckCircle className=\"h-8 w-8 mx-auto mb-2\" />\n-      <h3 className=\"font-semibold mb-2\">No Red Flags Identified</h3>\n+      <h3 className=\"font-semibold mb-2\">{t.redFlag.results.noRedFlags}</h3>\n       <p className=\"text-sm\">\n         Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.\n         Consider basic metabolic panel if not done recently.\n       </p>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -244,9 +244,9 @@\n \n <div className=\"bg-gray-50 p-4 rounded-lg\">\n   <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n     <Brain className=\"h-4 w-4\" />\n-    Clinical Decision Support\n+    {t.redFlag.results.clinicalSupport}\n   </h4>\n   <div className=\"text-sm space-y-2\">\n     {recommendations.recommendation === 'urgent' && (\n       <p className=\"text-red-700\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -249,11 +249,9 @@\n </h4>\n <div className=\"text-sm space-y-2\">\n   {recommendations.recommendation === 'urgent' && (\n     <p className=\"text-red-700\">\n-      • Expedite workup due to high-priority red flags\n-      • Consider same-day or next-day evaluation\n-      • Hold off on ME/CFS/POTS assessment until red flags ruled out\n+      {t.redFlag.results.urgent}\n     </p>\n   )}\n   {recommendations.recommendation === 'priority' && (\n     <p className=\"text-yellow-700\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -254,11 +254,9 @@\n   </p>\n )}\n {recommendations.recommendation === 'priority' && (\n   <p className=\"text-yellow-700\">\n-    • Complete recommended tests within 1-2 weeks\n-    • Can proceed with stand-test if cardiovascular red flags absent\n-    • Re-evaluate based on test results\n+    {t.redFlag.results.priority}\n   </p>\n )}\n {recommendations.recommendation === 'routine' && (\n   <p className=\"text-green-700\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -259,11 +259,9 @@\n       </p>\n     )}\n     {recommendations.recommendation === 'routine' && (\n       <p className=\"text-green-700\">\n-        • Proceed with routine screening labs\n-        • Can continue with ME/CFS/Long COVID/POTS assessment\n-        • Consider 4-6 week follow-up for test results\n+        {t.redFlag.results.routine}\n       </p>\n     )}\n   </div>\n </div>\n"
+        }
+      ]
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128329458,
+      "end": 1758128329472
+    }
+  }
+}

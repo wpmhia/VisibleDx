@@ -1,0 +1,71 @@
+{
+  "id": "prt_9589eb3ca001104OVjwISYG9MP",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01YVw7DaG8xURNhJNxJTuetD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <p className=\"text-sm text-orange-700\">Maximum heart rate</p>",
+          "newString": "                    <p className=\"text-sm text-orange-700\">{t.standTest.results.maxHR}</p>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <CardTitle className=\"text-lg text-purple-800\">Sustained Standing</CardTitle>",
+          "newString": "                    <CardTitle className=\"text-lg text-purple-800\">{t.standTest.results.sustainedStanding}</CardTitle>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <p className=\"text-sm text-purple-700\">Average standing HR</p>",
+          "newString": "                    <p className=\"text-sm text-purple-700\">{t.standTest.results.averageHR}</p>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n                  <TrendingUp className=\"h-4 w-4\" />\n                  Clinical Interpretation\n                </h4>",
+          "newString": "                <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n                  <TrendingUp className=\"h-4 w-4\" />\n                  {t.standTest.results.interpretation}\n                </h4>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">Next Steps</h4>",
+          "newString": "                <h4 className=\"font-semibold mb-2 text-blue-900\">{t.standTest.results.nextSteps}</h4>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -204,9 +204,9 @@\n <CardContent>\n   <div className=\"text-2xl font-bold text-orange-900\">\n     {results.maxStandingHR} bpm\n   </div>\n-  <p className=\"text-sm text-orange-700\">Maximum heart rate</p>\n+  <p className=\"text-sm text-orange-700\">{t.standTest.results.maxHR}</p>\n   <Badge variant=\"outline\" className=\"mt-1\">\n     +{results.hrIncrease} bpm\n   </Badge>\n </CardContent>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -213,9 +213,9 @@\n </Card>\n \n <Card className=\"border-purple-200\">\n   <CardHeader className=\"pb-3\">\n-    <CardTitle className=\"text-lg text-purple-800\">Sustained Standing</CardTitle>\n+    <CardTitle className=\"text-lg text-purple-800\">{t.standTest.results.sustainedStanding}</CardTitle>\n   </CardHeader>\n   <CardContent>\n     <div className=\"text-2xl font-bold text-purple-900\">\n       {results.sustainedStandingHR} bpm\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -219,9 +219,9 @@\n <CardContent>\n   <div className=\"text-2xl font-bold text-purple-900\">\n     {results.sustainedStandingHR} bpm\n   </div>\n-  <p className=\"text-sm text-purple-700\">Average standing HR</p>\n+  <p className=\"text-sm text-purple-700\">{t.standTest.results.averageHR}</p>\n   <Badge variant=\"outline\" className=\"mt-1\">\n     +{results.sustainedHRIncrease} bpm\n   </Badge>\n </CardContent>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -241,9 +241,9 @@\n \n <div className=\"bg-gray-50 p-4 rounded-lg\">\n   <h4 className=\"font-semibold mb-2 flex items-center gap-2\">\n     <TrendingUp className=\"h-4 w-4\" />\n-    Clinical Interpretation\n+    {t.standTest.results.interpretation}\n   </h4>\n   <div className=\"text-sm space-y-2\">\n     {results.meetsPOTSCriteria ? (\n       <>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -263,9 +263,9 @@\n   </div>\n </div>\n \n <div className=\"bg-blue-50 p-4 rounded-lg\">\n-  <h4 className=\"font-semibold mb-2 text-blue-900\">Next Steps</h4>\n+  <h4 className=\"font-semibold mb-2 text-blue-900\">{t.standTest.results.nextSteps}</h4>\n   <div className=\"text-sm text-blue-800 space-y-1\">\n     <p>• Complete PEM-Quest assessment</p>\n     <p>• Proceed to Criteria Engine for comprehensive diagnosis</p>\n     {results.meetsPOTSCriteria && (\n"
+        }
+      ]
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128424852,
+      "end": 1758128424869
+    }
+  }
+}

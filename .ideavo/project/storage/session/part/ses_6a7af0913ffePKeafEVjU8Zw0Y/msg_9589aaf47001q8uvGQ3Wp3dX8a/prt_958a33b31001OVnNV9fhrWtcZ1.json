@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a33b31001OVnNV9fhrWtcZ1",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01FFiqLSeGhf2RPzhQv9YYk1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "                <Button onClick={() => {\n                  setMecfsChecked(mecfsCriteria.map(c => ({ ...c })))\n                  setLongCovidChecked(longCovidCriteria.map(c => ({ ...c })))\n                  setPotsChecked(potsCriteria.map(c => ({ ...c })))\n                  setIsComplete(false)\n                }} variant=\"outline\">",
+      "newString": "                <Button onClick={() => {\n                  setMecfsChecked(getMECFSCriteria())\n                  setLongCovidChecked(getLongCovidCriteria())\n                  setPotsChecked(getPOTSCriteria())\n                  setIsComplete(false)\n                }} variant=\"outline\">"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -269,11 +269,11 @@\n </div>\n \n <div className=\"flex gap-4 justify-center\">\n   <Button onClick={() => {\n-    setMecfsChecked(mecfsCriteria.map(c => ({ ...c })))\n-    setLongCovidChecked(longCovidCriteria.map(c => ({ ...c })))\n-    setPotsChecked(potsCriteria.map(c => ({ ...c })))\n+    setMecfsChecked(getMECFSCriteria())\n+    setLongCovidChecked(getLongCovidCriteria())\n+    setPotsChecked(getPOTSCriteria())\n     setIsComplete(false)\n   }} variant=\"outline\">\n     {t.criteria.results.reassess}\n   </Button>\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128719939,
+      "end": 1758128719943
+    }
+  }
+}

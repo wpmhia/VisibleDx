@@ -1,0 +1,71 @@
+{
+  "id": "prt_9589e8ca0001yrGvvp0zJhTHFI",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01TUX4jnWTZxbKy6LyEvpswv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <Heart className=\"h-6 w-6 text-red-600\" />\n                Stand-Test Results\n              </CardTitle>\n              <CardDescription>\n                NASA Lean Stand Test Results - 10 minute protocol\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <Heart className=\"h-6 w-6 text-red-600\" />\n                {t.standTest.results.title}\n              </CardTitle>\n              <CardDescription>\n                {t.standTest.results.description}\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                  {results.meetsPOTSCriteria ? 'POTS Criteria Met' : 'POTS Criteria Not Met'}",
+          "newString": "                  {results.meetsPOTSCriteria ? t.standTest.results.potsMet : t.standTest.results.potsNotMet}"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <CardTitle className=\"text-lg text-blue-800\">Baseline (Lying)</CardTitle>",
+          "newString": "                    <CardTitle className=\"text-lg text-blue-800\">{t.standTest.results.baseline}</CardTitle>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <p className=\"text-sm text-blue-700\">Average heart rate</p>",
+          "newString": "                    <p className=\"text-sm text-blue-700\">{t.standTest.results.averageHR}</p>"
+        },
+        {
+          "filePath": "/home/user/project/app/stand-test/page.tsx",
+          "oldString": "                    <CardTitle className=\"text-lg text-orange-800\">Peak Standing</CardTitle>",
+          "newString": "                    <CardTitle className=\"text-lg text-orange-800\">{t.standTest.results.peakStanding}</CardTitle>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -164,12 +164,12 @@\n <Card>\n   <CardHeader className=\"text-center\">\n     <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n       <Heart className=\"h-6 w-6 text-red-600\" />\n-      Stand-Test Results\n+      {t.standTest.results.title}\n     </CardTitle>\n     <CardDescription>\n-      NASA Lean Stand Test Results - 10 minute protocol\n+      {t.standTest.results.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-6\">\n     <div className=\"text-center\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -179,9 +179,9 @@\n         ? 'bg-red-100 text-red-800' \n         : 'bg-green-100 text-green-800'\n     }`}\n   >\n-    {results.meetsPOTSCriteria ? 'POTS Criteria Met' : 'POTS Criteria Not Met'}\n+    {results.meetsPOTSCriteria ? t.standTest.results.potsMet : t.standTest.results.potsNotMet}\n   </Badge>\n </div>\n \n <div className=\"grid md:grid-cols-3 gap-4\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -186,9 +186,9 @@\n \n <div className=\"grid md:grid-cols-3 gap-4\">\n   <Card className=\"border-blue-200\">\n     <CardHeader className=\"pb-3\">\n-      <CardTitle className=\"text-lg text-blue-800\">Baseline (Lying)</CardTitle>\n+      <CardTitle className=\"text-lg text-blue-800\">{t.standTest.results.baseline}</CardTitle>\n     </CardHeader>\n     <CardContent>\n       <div className=\"text-2xl font-bold text-blue-900\">\n         {results.baselineHR} bpm\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -192,9 +192,9 @@\n   <CardContent>\n     <div className=\"text-2xl font-bold text-blue-900\">\n       {results.baselineHR} bpm\n     </div>\n-    <p className=\"text-sm text-blue-700\">Average heart rate</p>\n+    <p className=\"text-sm text-blue-700\">{t.standTest.results.averageHR}</p>\n   </CardContent>\n </Card>\n \n <Card className=\"border-orange-200\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -198,9 +198,9 @@\n </Card>\n \n <Card className=\"border-orange-200\">\n   <CardHeader className=\"pb-3\">\n-    <CardTitle className=\"text-lg text-orange-800\">Peak Standing</CardTitle>\n+    <CardTitle className=\"text-lg text-orange-800\">{t.standTest.results.peakStanding}</CardTitle>\n   </CardHeader>\n   <CardContent>\n     <div className=\"text-2xl font-bold text-orange-900\">\n       {results.maxStandingHR} bpm\n"
+        }
+      ]
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128416932,
+      "end": 1758128416962
+    }
+  }
+}

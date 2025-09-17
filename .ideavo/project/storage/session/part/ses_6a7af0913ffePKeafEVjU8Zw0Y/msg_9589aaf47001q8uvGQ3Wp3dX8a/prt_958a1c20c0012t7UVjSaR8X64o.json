@@ -1,0 +1,26 @@
+{
+  "id": "prt_958a1c20c0012t7UVjSaR8X64o",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01E2H8xbw7TZxi4TtebLWvix",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "export default function CriteriaEngine() {\n  const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))\n  const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n  const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)",
+      "newString": "export default function CriteriaEngine() {\n  const [mecfsChecked, setMecfsChecked] = useState(mecfsCriteria.map(c => ({ ...c })))\n  const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n  const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n  const [covidTiming, setCovidTiming] = useState<string>('')\n  const [isComplete, setIsComplete] = useState(false)\n  const { t } = useTranslation()"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -49,8 +49,9 @@\n const [longCovidChecked, setLongCovidChecked] = useState(longCovidCriteria.map(c => ({ ...c })))\n const [potsChecked, setPotsChecked] = useState(potsCriteria.map(c => ({ ...c })))\n const [covidTiming, setCovidTiming] = useState<string>('')\n const [isComplete, setIsComplete] = useState(false)\n+const { t } = useTranslation()\n \n const handleMECFSChange = (id: string, checked: boolean) => {\n   setMecfsChecked(prev => prev.map(item => \n     item.id === id ? { ...item, met: checked } : item\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758128624059,
+      "end": 1758128624063
+    }
+  }
+}

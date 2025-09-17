@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { ArrowLeft, Heart, Play, Pause, Square, Timer, TrendingUp, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/language-context'
 
 interface HeartRateReading {
   time: number
@@ -24,20 +25,7 @@ interface TestPhase {
   instructions: string
 }
 
-const testPhases: TestPhase[] = [
-  {
-    name: 'Baseline Lying',
-    duration: 300, // 5 minutes
-    position: 'lying',
-    instructions: 'Lie down comfortably and remain still. Breathe normally and relax.'
-  },
-  {
-    name: 'Standing Phase',
-    duration: 600, // 10 minutes
-    position: 'standing',
-    instructions: 'Stand up quickly and remain standing. Do not lean against walls or move around.'
-  }
-]
+// Test phases will be generated from translations
 
 export default function StandTest() {
   const [currentPhase, setCurrentPhase] = useState(0)
@@ -49,6 +37,7 @@ export default function StandTest() {
   const [currentBP, setCurrentBP] = useState<{ systolic: number; diastolic: number } | null>(null)
   const [isComplete, setIsComplete] = useState(false)
   const [testMethod, setTestMethod] = useState<'manual' | 'camera'>('manual')
+  const { t } = useTranslation()
   
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -70,7 +59,23 @@ export default function StandTest() {
     }
   }, [isRunning, isPaused])
 
+  const getTestPhases = () => [
+    {
+      name: t.standTest.phases.baseline.name,
+      duration: 300, // 5 minutes
+      position: 'lying' as const,
+      instructions: t.standTest.phases.baseline.instructions
+    },
+    {
+      name: t.standTest.phases.standing.name,
+      duration: 600, // 10 minutes
+      position: 'standing' as const,
+      instructions: t.standTest.phases.standing.instructions
+    }
+  ]
+
   useEffect(() => {
+    const testPhases = getTestPhases()
     const phase = testPhases[currentPhase]
     if (phase && timeElapsed >= phase.duration && currentPhase < testPhases.length - 1) {
       setCurrentPhase(prev => prev + 1)
@@ -79,7 +84,7 @@ export default function StandTest() {
       setIsRunning(false)
       setIsComplete(true)
     }
-  }, [timeElapsed, currentPhase])
+  }, [timeElapsed, currentPhase, t])
 
   const startTest = () => {
     setIsRunning(true)
@@ -151,7 +156,7 @@ export default function StandTest() {
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
   }
 
-  const currentPhaseData = testPhases[currentPhase]
+  const currentPhaseData = getTestPhases()[currentPhase]
   const progress = currentPhaseData ? (timeElapsed / currentPhaseData.duration) * 100 : 0
   const results = calculateResults()
 
@@ -163,10 +168,10 @@ export default function StandTest() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <Heart className="h-6 w-6 text-red-600" />
-                Stand-Test Results
+                {t.standTest.results.title}
               </CardTitle>
               <CardDescription>
-                NASA Lean Stand Test Results - 10 minute protocol
+                {t.standTest.results.description}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -178,32 +183,32 @@ export default function StandTest() {
                       : 'bg-green-100 text-green-800'
                   }`}
                 >
-                  {results.meetsPOTSCriteria ? 'POTS Criteria Met' : 'POTS Criteria Not Met'}
+                  {results.meetsPOTSCriteria ? t.standTest.results.potsMet : t.standTest.results.potsNotMet}
                 </Badge>
               </div>
 
               <div className="grid md:grid-cols-3 gap-4">
                 <Card className="border-blue-200">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-blue-800">Baseline (Lying)</CardTitle>
+                    <CardTitle className="text-lg text-blue-800">{t.standTest.results.baseline}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-blue-900">
                       {results.baselineHR} bpm
                     </div>
-                    <p className="text-sm text-blue-700">Average heart rate</p>
+                    <p className="text-sm text-blue-700">{t.standTest.results.averageHR}</p>
                   </CardContent>
                 </Card>
 
                 <Card className="border-orange-200">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-orange-800">Peak Standing</CardTitle>
+                    <CardTitle className="text-lg text-orange-800">{t.standTest.results.peakStanding}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-orange-900">
                       {results.maxStandingHR} bpm
                     </div>
-                    <p className="text-sm text-orange-700">Maximum heart rate</p>
+                    <p className="text-sm text-orange-700">{t.standTest.results.maxHR}</p>
                     <Badge variant="outline" className="mt-1">
                       +{results.hrIncrease} bpm
                     </Badge>
@@ -212,13 +217,13 @@ export default function StandTest() {
 
                 <Card className="border-purple-200">
                   <CardHeader className="pb-3">
-                    <CardTitle className="text-lg text-purple-800">Sustained Standing</CardTitle>
+                    <CardTitle className="text-lg text-purple-800">{t.standTest.results.sustainedStanding}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-purple-900">
                       {results.sustainedStandingHR} bpm
                     </div>
-                    <p className="text-sm text-purple-700">Average standing HR</p>
+                    <p className="text-sm text-purple-700">{t.standTest.results.averageHR}</p>
                     <Badge variant="outline" className="mt-1">
                       +{results.sustainedHRIncrease} bpm
                     </Badge>
@@ -240,29 +245,22 @@ export default function StandTest() {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h4 className="font-semibold mb-2 flex items-center gap-2">
                   <TrendingUp className="h-4 w-4" />
-                  Clinical Interpretation
+                  {t.standTest.results.interpretation}
                 </h4>
                 <div className="text-sm space-y-2">
-                  {results.meetsPOTSCriteria ? (
-                    <>
-                      <p>• Heart rate increase suggests orthostatic intolerance consistent with POTS</p>
-                      <p>• Proceed to POTS subtyping for targeted treatment recommendations</p>
-                      <p>• Consider additional autonomic testing if clinically indicated</p>
-                      <p>• Rule out secondary causes (dehydration, medications, other conditions)</p>
-                    </>
-                  ) : (
-                    <>
-                      <p>• Normal orthostatic heart rate response</p>
-                      <p>• POTS unlikely based on current criteria</p>
-                      <p>• Consider other causes of symptoms (ME/CFS, Long COVID without POTS)</p>
-                      <p>• Repeat testing if symptoms persist or worsen</p>
-                    </>
-                  )}
+                  {results.meetsPOTSCriteria ? 
+                    t.standTest.interpretations.potsMet.map((interpretation, index) => (
+                      <p key={index}>• {interpretation}</p>
+                    )) :
+                    t.standTest.interpretations.potsNotMet.map((interpretation, index) => (
+                      <p key={index}>• {interpretation}</p>
+                    ))
+                  }
                 </div>
               </div>
 
               <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2 text-blue-900">Next Steps</h4>
+                <h4 className="font-semibold mb-2 text-blue-900">{t.standTest.results.nextSteps}</h4>
                 <div className="text-sm text-blue-800 space-y-1">
                   <p>• Complete PEM-Quest assessment</p>
                   <p>• Proceed to Criteria Engine for comprehensive diagnosis</p>
@@ -279,11 +277,11 @@ export default function StandTest() {
                   setTimeElapsed(0)
                   setCurrentPhase(0)
                 }} variant="outline">
-                  Repeat Test
+                  {t.standTest.results.repeatTest}
                 </Button>
                 <Button asChild>
                   <Link href="/pem-quest">
-                    Continue to PEM-Quest
+                      {t.common.continue} to PEM-Quest
                   </Link>
                 </Button>
               </div>
@@ -300,14 +298,14 @@ export default function StandTest() {
         <div className="mb-6">
           <Link href="/" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-4">
             <ArrowLeft className="h-4 w-4" />
-            Back to Dashboard
+            {t.app.backToDashboard}
           </Link>
           
           <div className="flex items-center gap-4 mb-4">
             <Heart className="h-5 w-5 text-red-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Stand-Test Pro</h1>
-              <p className="text-gray-600">NASA Lean Stand Test Protocol - 10 minute heart rate monitoring</p>
+              <h1 className="text-2xl font-bold text-gray-900">{t.standTest.title}</h1>
+              <p className="text-gray-600">{t.standTest.description}</p>
             </div>
           </div>
         </div>
@@ -316,9 +314,9 @@ export default function StandTest() {
           {!isRunning && readings.length === 0 && (
             <Card>
               <CardHeader>
-                <CardTitle>Test Setup</CardTitle>
+                <CardTitle>{t.standTest.setup.title}</CardTitle>
                 <CardDescription>
-                  Choose your preferred method for heart rate monitoring
+                  {t.standTest.setup.description}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -330,11 +328,11 @@ export default function StandTest() {
                     onClick={() => setTestMethod('manual')}
                   >
                     <CardContent className="pt-6">
-                      <h3 className="font-semibold mb-2">Manual Entry</h3>
+                      <h3 className="font-semibold mb-2">{t.standTest.setup.manual.title}</h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        Use pulse oximeter, fitness tracker, or manual pulse counting
+                        {t.standTest.setup.manual.description}
                       </p>
-                      <Badge variant="outline">Recommended</Badge>
+                      <Badge variant="outline">{t.standTest.setup.manual.recommended}</Badge>
                     </CardContent>
                   </Card>
                   
@@ -345,11 +343,11 @@ export default function StandTest() {
                     onClick={() => setTestMethod('camera')}
                   >
                     <CardContent className="pt-6">
-                      <h3 className="font-semibold mb-2">Camera PPG</h3>
+                      <h3 className="font-semibold mb-2">{t.standTest.setup.camera.title}</h3>
                       <p className="text-sm text-gray-600 mb-4">
-                        Use device camera for photoplethysmography (experimental)
+                        {t.standTest.setup.camera.description}
                       </p>
-                      <Badge variant="secondary">Beta Feature</Badge>
+                      <Badge variant="secondary">{t.standTest.setup.camera.beta}</Badge>
                     </CardContent>
                   </Card>
                 </div>
@@ -357,14 +355,13 @@ export default function StandTest() {
                 <Alert>
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>Safety Note:</strong> Stop the test immediately if you experience chest pain, 
-                    severe dizziness, or feel faint. Have a chair nearby for safety.
+                    {t.standTest.setup.safety}
                   </AlertDescription>
                 </Alert>
 
                 <Button onClick={startTest} className="w-full" size="lg">
                   <Play className="h-4 w-4 mr-2" />
-                  Start Stand Test
+                  {t.standTest.setup.startTest}
                 </Button>
               </CardContent>
             </Card>
@@ -391,11 +388,11 @@ export default function StandTest() {
                   <div className="flex gap-4 justify-center mb-4">
                     <Button onClick={pauseTest} variant="outline">
                       {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
-                      {isPaused ? 'Resume' : 'Pause'}
+                      {isPaused ? t.standTest.controls.resume : t.standTest.controls.pause}
                     </Button>
                     <Button onClick={stopTest} variant="destructive">
                       <Square className="h-4 w-4 mr-2" />
-                      Stop Test
+                      {t.standTest.controls.stop}
                     </Button>
                   </div>
                 </CardContent>
@@ -403,15 +400,15 @@ export default function StandTest() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Record Heart Rate</CardTitle>
-                  <CardDescription>
-                    Enter current heart rate reading (record every 1-2 minutes)
-                  </CardDescription>
+                <CardTitle>{t.standTest.recording.title}</CardTitle>
+                <CardDescription>
+                  {t.standTest.recording.description}
+                </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="grid md:grid-cols-3 gap-4">
                     <div>
-                      <Label htmlFor="hr">Heart Rate (bpm)</Label>
+                      <Label htmlFor="hr">Heart Rate ({t.common.bpm})</Label>
                       <Input
                         id="hr"
                         type="number"
@@ -421,7 +418,7 @@ export default function StandTest() {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="systolic">Systolic BP (optional)</Label>
+                      <Label htmlFor="systolic">{t.standTest.recording.systolicBP}</Label>
                       <Input
                         id="systolic"
                         type="number"
@@ -435,7 +432,7 @@ export default function StandTest() {
                       />
                     </div>
                     <div>
-                      <Label htmlFor="diastolic">Diastolic BP (optional)</Label>
+                      <Label htmlFor="diastolic">{t.standTest.recording.diastolicBP}</Label>
                       <Input
                         id="diastolic"
                         type="number"
@@ -451,17 +448,17 @@ export default function StandTest() {
                   </div>
                   
                   <Button onClick={addReading} disabled={!currentHR} className="w-full">
-                    Record Reading at {formatTime(timeElapsed)}
+                    {t.standTest.recording.recordReading} at {formatTime(timeElapsed)}
                   </Button>
                   
                   {readings.length > 0 && (
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold mb-2">Recent Readings</h4>
+                      <h4 className="font-semibold mb-2">{t.standTest.recording.recentReadings}</h4>
                       <div className="text-sm space-y-1">
                         {readings.slice(-5).map((reading, index) => (
                           <div key={index} className="flex justify-between">
                             <span>{formatTime(reading.time)}</span>
-                            <span>{reading.hr} bpm</span>
+                            <span>{reading.hr} {t.common.bpm}</span>
                           </div>
                         ))}
                       </div>

@@ -1,0 +1,11 @@
+{
+  "id": "prt_9589b3336001TqzAEjei8Uj0NZ",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I notice that the Quick-Screen module already has `useTranslation()` imported and is trying to use `t.quickScreen.questions` but the questions are still hardcoded in the array. Let me check the current translation structure and complete the Quick-Screen translation first:",
+  "time": {
+    "start": 1758128192149,
+    "end": 1758128192149
+  }
+}

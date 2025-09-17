@@ -1,0 +1,62 @@
+{
+  "id": "prt_9589cfd1a001aZyrMtOK7Z0MBo",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01UFmtD8JCaiLLLRpBKdGCQU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                Red-flag Assessment Complete\n              </CardTitle>\n              <CardDescription>\n                Laboratory and diagnostic recommendations based on clinical presentation\n              </CardDescription>",
+          "newString": "              <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <CheckCircle className=\"h-6 w-6 text-green-600\" />\n                {t.redFlag.results.complete}\n              </CardTitle>\n              <CardDescription>\n                Laboratory and diagnostic recommendations based on clinical presentation\n              </CardDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                  <AlertDescription className=\"text-red-800\">\n                    <strong>Urgent Evaluation Required:</strong> High-priority red flags detected. \n                    Consider immediate or expedited workup.\n                  </AlertDescription>",
+          "newString": "                  <AlertDescription className=\"text-red-800\">\n                    <strong>{t.redFlag.results.urgentEval}:</strong> High-priority red flags detected. \n                    Consider immediate or expedited workup.\n                  </AlertDescription>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                      <CardTitle className=\"text-lg text-red-800 flex items-center gap-2\">\n                        <Heart className=\"h-5 w-5\" />\n                        Priority Tests (Red Flags)\n                      </CardTitle>",
+          "newString": "                      <CardTitle className=\"text-lg text-red-800 flex items-center gap-2\">\n                        <Heart className=\"h-5 w-5\" />\n                        {t.redFlag.results.priorityTests}\n                      </CardTitle>"
+        },
+        {
+          "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+          "oldString": "                      <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n                        <FileText className=\"h-5 w-5\" />\n                        Routine Screening Tests\n                      </CardTitle>",
+          "newString": "                      <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n                        <FileText className=\"h-5 w-5\" />\n                        {t.redFlag.results.routineTests}\n                      </CardTitle>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -165,9 +165,9 @@\n <Card>\n   <CardHeader className=\"text-center\">\n     <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n       <CheckCircle className=\"h-6 w-6 text-green-600\" />\n-      Red-flag Assessment Complete\n+      {t.redFlag.results.complete}\n     </CardTitle>\n     <CardDescription>\n       Laboratory and diagnostic recommendations based on clinical presentation\n     </CardDescription>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -176,9 +176,9 @@\n {recommendations.hasHighPriorityFlags && (\n   <Alert className=\"border-red-200 bg-red-50\">\n     <AlertTriangle className=\"h-4 w-4 text-red-600\" />\n     <AlertDescription className=\"text-red-800\">\n-      <strong>Urgent Evaluation Required:</strong> High-priority red flags detected. \n+      <strong>{t.redFlag.results.urgentEval}:</strong> High-priority red flags detected. \n       Consider immediate or expedited workup.\n     </AlertDescription>\n   </Alert>\n )}\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -188,9 +188,9 @@\n <Card className=\"border-red-200\">\n   <CardHeader className=\"pb-3\">\n     <CardTitle className=\"text-lg text-red-800 flex items-center gap-2\">\n       <Heart className=\"h-5 w-5\" />\n-      Priority Tests (Red Flags)\n+      {t.redFlag.results.priorityTests}\n     </CardTitle>\n   </CardHeader>\n   <CardContent>\n     <ul className=\"space-y-2\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/red-flag-checker/page.tsx\n===================================================================\n--- /home/user/project/app/red-flag-checker/page.tsx\n+++ /home/user/project/app/red-flag-checker/page.tsx\n@@ -209,9 +209,9 @@\n <Card className=\"border-blue-200\">\n   <CardHeader className=\"pb-3\">\n     <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n       <FileText className=\"h-5 w-5\" />\n-      Routine Screening Tests\n+      {t.redFlag.results.routineTests}\n     </CardTitle>\n   </CardHeader>\n   <CardContent>\n     <ul className=\"space-y-2\">\n"
+        }
+      ]
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758128316468,
+      "end": 1758128316481
+    }
+  }
+}

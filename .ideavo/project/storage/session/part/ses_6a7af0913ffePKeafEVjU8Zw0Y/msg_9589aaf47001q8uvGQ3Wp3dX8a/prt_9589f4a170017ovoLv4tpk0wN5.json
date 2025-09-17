@@ -1,0 +1,26 @@
+{
+  "id": "prt_9589f4a170017ovoLv4tpk0wN5",
+  "messageID": "msg_9589aaf47001q8uvGQ3Wp3dX8a",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01DSssjkWAtiFNbTPRewy5G7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "oldString": "const testPhases: TestPhase[] = [\n  {\n    name: 'Baseline Lying',\n    duration: 300, // 5 minutes\n    position: 'lying',\n    instructions: 'Lie down comfortably and remain still. Breathe normally and relax.'\n  },\n  {\n    name: 'Standing Phase',\n    duration: 600, // 10 minutes\n    position: 'standing',\n    instructions: 'Stand up quickly and remain standing. Do not lean against walls or move around.'\n  }\n]",
+      "newString": "// Test phases will be generated from translations"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/stand-test/page.tsx\n===================================================================\n--- /home/user/project/app/stand-test/page.tsx\n+++ /home/user/project/app/stand-test/page.tsx\n@@ -24,22 +24,9 @@\n   position: 'lying' | 'standing'\n   instructions: string\n }\n \n-const testPhases: TestPhase[] = [\n-  {\n-    name: 'Baseline Lying',\n-    duration: 300, // 5 minutes\n-    position: 'lying',\n-    instructions: 'Lie down comfortably and remain still. Breathe normally and relax.'\n-  },\n-  {\n-    name: 'Standing Phase',\n-    duration: 600, // 10 minutes\n-    position: 'standing',\n-    instructions: 'Stand up quickly and remain standing. Do not lean against walls or move around.'\n-  }\n-]\n+// Test phases will be generated from translations\n \n export default function StandTest() {\n   const [currentPhase, setCurrentPhase] = useState(0)\n   const [timeElapsed, setTimeElapsed] = useState(0)\n"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758128461551,
+      "end": 1758128461558
+    }
+  }
+}
