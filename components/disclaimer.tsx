@@ -10,49 +10,38 @@ export default function Disclaimer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="bg-gray-50 border-t py-8 mt-12">
-      <div className="container mx-auto px-4 max-w-6xl">
-        {/* Main Disclaimer */}
-        <Alert className="mb-6 border-red-200 bg-red-50">
-          <AlertTriangle className="h-4 w-4 text-red-600" />
-          <AlertDescription className="text-red-800">
-            <strong>EDUCATIONAL TOOL ONLY - NOT FOR MEDICAL USE:</strong> {t.disclaimer}
-          </AlertDescription>
-        </Alert>
-
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* About VisibleDx */}
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Stethoscope className="h-4 w-4 text-blue-600" />
-              <h3 className="font-semibold text-gray-900">{t.footer.about.title}</h3>
-            </div>
-            <p className="text-sm text-gray-600 mb-3">
-              {t.footer.about.description}
-            </p>
-            <div className="flex flex-wrap gap-1">
-              <Badge variant="outline" className="text-xs">{t.footer.about.badges.evidenceBased}</Badge>
-              <Badge variant="outline" className="text-xs">{t.footer.about.badges.openSource}</Badge>
+    <footer className="bg-white border-t border-gray-200 py-12 mt-16">
+      <div className="container mx-auto px-6 max-w-4xl">
+        
+        {/* Critical Disclaimer - First */}
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-8">
+          <div className="flex items-start gap-3">
+            <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5 flex-shrink-0" />
+            <div>
+              <h3 className="font-semibold text-red-800 mb-2">Educational Tool Only</h3>
+              <p className="text-red-700 text-sm leading-relaxed">
+                This is an educational tool for healthcare learning. NOT a medical device. 
+                Never use for patient care or diagnosis. Always consult medical professionals.
+              </p>
             </div>
           </div>
+        </div>
 
-          {/* Creator & License */}
+        {/* Main Content - Clean Hierarchy */}
+        <div className="grid md:grid-cols-2 gap-12 mb-8">
+          
+          {/* Left: Creator & Source */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <User className="h-4 w-4 text-purple-600" />
-              <h3 className="font-semibold text-gray-900">{t.footer.creator.title}</h3>
-            </div>
-            <div className="text-sm text-gray-600 space-y-2">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Created by</h3>
+            <div className="space-y-3">
               <div>
-                <strong>{t.footer.creator.createdBy}</strong><br />
                 <a 
                   href="https://www.linkedin.com/in/willem-gielen/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
                 >
-                  {t.footer.creator.name}
-                  <ExternalLink className="h-3 w-3" />
+                  Willem Gielen MD
                 </a>
               </div>
               <div>
@@ -60,78 +49,70 @@ export default function Disclaimer() {
                   href="https://www.nordjyskklinik.dk/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1"
+                  className="text-blue-600 hover:text-blue-700"
                 >
-                  {t.footer.creator.organization}
-                  <ExternalLink className="h-3 w-3" />
+                  Nordjysk Speciallaegeklinik
                 </a>
               </div>
-              <div className="space-y-1">
-                <Badge variant="secondary" className="text-xs">
-                  {t.footer.creator.license}
-                </Badge>
-                <div>
-                  <a 
-                    href="https://github.com/wpmhia/VisibleDx" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1 text-xs"
-                  >
-                    <Github className="h-3 w-3" />
-                    {t.footer.creator.githubRepository}
-                  </a>
-                </div>
+              <div className="pt-2">
+                <a 
+                  href="https://github.com/wpmhia/VisibleDx" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm"
+                >
+                  <Github className="h-4 w-4" />
+                  View Source Code
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Guidelines Used */}
+          {/* Right: Medical Guidelines */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <BookOpen className="h-4 w-4 text-green-600" />
-              <h3 className="font-semibold text-gray-900">{t.footer.evidence.title}</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Based on Medical Guidelines</h3>
+            <div className="space-y-2">
+              <a 
+                href="https://www.cdc.gov/me-cfs/about/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-blue-600 hover:text-blue-700 text-sm"
+              >
+                CDC ME/CFS Guidelines
+              </a>
+              <a 
+                href="https://www.who.int/publications/i/item/9789240025035" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-blue-600 hover:text-blue-700 text-sm"
+              >
+                WHO Long COVID Definition
+              </a>
+              <a 
+                href="https://academic.oup.com/europace/article/20/6/921/4824690" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-blue-600 hover:text-blue-700 text-sm"
+              >
+                ESC POTS Guidelines
+              </a>
             </div>
-            <ul className="text-sm text-gray-600 space-y-1">
-              {t.footer.evidence.guidelines.map((guideline, index) => (
-                <li key={index}>
-                  • <a 
-                      href={guideline.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
-                    >
-                      {guideline.title}
-                    </a>
-                </li>
-              ))}
-            </ul>
           </div>
-
 
         </div>
 
-        <Separator className="mb-6" />
-
-        {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <div className="flex items-center gap-2">
-            <Stethoscope className="h-4 w-4" />
-            <span>{t.footer.bottom.version}</span>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            <span>{t.footer.bottom.copyright}</span>
-            <span>•</span>
-            <span>{t.footer.bottom.audienceLabel}</span>
+        {/* Bottom Bar - Simple */}
+        <div className="pt-6 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+            <div>
+              <span className="font-medium">VisibleDx</span> • Educational Tool • v1.0
+            </div>
+            <div>
+              © 2025 Willem Gielen MD • MIT License
+            </div>
           </div>
         </div>
 
-        {/* Technical Info */}
-        <div className="mt-4 pt-4 border-t text-xs text-gray-400 text-center">
-          <p>
-            Educational tool for healthcare learning only - NOT validated for clinical use
-          </p>
-        </div>
       </div>
     </footer>
   )
