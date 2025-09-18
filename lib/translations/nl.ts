@@ -69,9 +69,9 @@ export const nl: Translation = {
   dashboard: {
     smartAssessment: {
       title: 'Slimme Patiënt Beoordeling',
-      description: 'Intelligente begeleide workflow met geautomatiseerde SOAP documentatie',
+      description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',
       autoRouting: 'Auto-routing',
-      soapNotes: 'SOAP notities',
+      soapNotes: 'SOEP notities',
       icdCodes: 'ICD-10 codes',
       startNew: 'Nieuwe Beoordeling Starten'
     },
@@ -720,7 +720,7 @@ export const nl: Translation = {
     },
     results: {
       title: 'Patiënt Beoordeling Voltooid',
-      description: 'Uitgebreide klinische evaluatie met SOAP documentatie',
+      description: 'Uitgebreide klinische evaluatie met SOEP documentatie',
       primary: 'Primair',
       noDefinitiveDiagnoses: 'Geen Definitieve Diagnoses: Overweeg alternatieve diagnoses, subklinische presentaties, of lopende symptoommonitoring. Sommige patiënten kunnen baat hebben bij symptomatische behandeling tijdens monitoring voor progressie.',
       keyResults: 'Belangrijke Beoordeling Resultaten',
@@ -731,7 +731,7 @@ export const nl: Translation = {
       redFlags: 'Alarmsignalen',
       priority: 'Prioriteit',
       newAssessment: 'Nieuwe Beoordeling',
-      downloadSOAP: 'SOAP Notitie Downloaden'
+      downloadSOAP: 'SOEP Notitie Downloaden'
     }
   },
 

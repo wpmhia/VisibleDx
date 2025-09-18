@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bca2df6001hYvL6Aju05Z1MK",
+  "messageID": "msg_95bc9c6fb001MYFaSR9z6xybMl",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I have successfully updated all instances of 'SOAP' to 'SOEP' in the Dutch translation file.\n\n## ✅ **Dutch Translation Updated Successfully**\n\n### **Changes Made:**\n\n1. **Smart Assessment Description**: \n   - `'Intelligente begeleide workflow met geautomatiseerde SOAP documentatie'`\n   - → `'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie'`\n\n2. **SOAP Notes**: \n   - `'SOAP notities'` \n   - → `'SOEP notities'`\n\n3. **New Patient Results Description**: \n   - `'Uitgebreide klinische evaluatie met SOAP documentatie'`\n   - → `'Uitgebreide klinische evaluatie met SOEP documentatie'`\n\n4. **Download SOAP Button**: \n   - `'SOAP Notitie Downloaden'`\n   - → `'SOEP Notitie Downloaden'`\n\n### **Why This Change:**\nSOEP is the Dutch equivalent of SOAP notes in medical documentation:\n- **S**ubjectief (Subjective)\n- **O**bjectief (Objective) \n- **E**valuatie (Evaluation)\n- **P**lan (Plan)\n\nThis makes the Dutch version more authentic and appropriate for Dutch-speaking healthcare professionals using the VisibleDx educational tool.",
+  "time": {
+    "start": 1758181606661,
+    "end": 1758181606661
+  }
+}

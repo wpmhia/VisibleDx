@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bc9e124001qYC10gLDLurU1N",
+  "messageID": "msg_95bc9c6fb001MYFaSR9z6xybMl",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I'll update the Dutch translation to change 'SOAP' to 'SOEP' to match Dutch medical terminology.",
+  "time": {
+    "start": 1758181581757,
+    "end": 1758181581757
+  }
+}

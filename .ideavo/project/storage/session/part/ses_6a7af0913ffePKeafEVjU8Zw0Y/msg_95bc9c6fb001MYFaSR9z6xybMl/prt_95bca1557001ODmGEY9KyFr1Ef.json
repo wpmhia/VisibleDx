@@ -1,0 +1,62 @@
+{
+  "id": "prt_95bca1557001ODmGEY9KyFr1Ef",
+  "messageID": "msg_95bc9c6fb001MYFaSR9z6xybMl",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01FX6jJKU6CqvJ7AWttaH3bS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      description: 'Intelligente begeleide workflow met geautomatiseerde SOAP documentatie',",
+          "newString": "      description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      soapNotes: 'SOAP notities',",
+          "newString": "      soapNotes: 'SOEP notities',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      description: 'Uitgebreide klinische evaluatie met SOAP documentatie',",
+          "newString": "      description: 'Uitgebreide klinische evaluatie met SOEP documentatie',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      downloadSOAP: 'SOAP Notitie Downloaden'",
+          "newString": "      downloadSOAP: 'SOEP Notitie Downloaden'"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -68,9 +68,9 @@\n \n dashboard: {\n   smartAssessment: {\n     title: 'Slimme Patiënt Beoordeling',\n-    description: 'Intelligente begeleide workflow met geautomatiseerde SOAP documentatie',\n+    description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',\n     autoRouting: 'Auto-routing',\n     soapNotes: 'SOAP notities',\n     icdCodes: 'ICD-10 codes',\n     startNew: 'Nieuwe Beoordeling Starten'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -70,9 +70,9 @@\n smartAssessment: {\n   title: 'Slimme Patiënt Beoordeling',\n   description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',\n   autoRouting: 'Auto-routing',\n-  soapNotes: 'SOAP notities',\n+  soapNotes: 'SOEP notities',\n   icdCodes: 'ICD-10 codes',\n   startNew: 'Nieuwe Beoordeling Starten'\n },\n modules: {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -719,9 +719,9 @@\n   description: 'Analyseren van antwoorden tegen CDC, NASEM, ESC, en WHO richtlijnen'\n },\n results: {\n   title: 'Patiënt Beoordeling Voltooid',\n-  description: 'Uitgebreide klinische evaluatie met SOAP documentatie',\n+  description: 'Uitgebreide klinische evaluatie met SOEP documentatie',\n   primary: 'Primair',\n   noDefinitiveDiagnoses: 'Geen Definitieve Diagnoses: Overweeg alternatieve diagnoses, subklinische presentaties, of lopende symptoommonitoring. Sommige patiënten kunnen baat hebben bij symptomatische behandeling tijdens monitoring voor progressie.',\n   keyResults: 'Belangrijke Beoordeling Resultaten',\n   riskLevel: 'Risiconiveau',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -730,9 +730,9 @@\n     potsCriteria: 'POTS Criteria',\n     redFlags: 'Alarmsignalen',\n     priority: 'Prioriteit',\n     newAssessment: 'Nieuwe Beoordeling',\n-    downloadSOAP: 'SOAP Notitie Downloaden'\n+    downloadSOAP: 'SOEP Notitie Downloaden'\n   }\n },\n \n conditions: {\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758181597396,
+      "end": 1758181597457
+    }
+  }
+}

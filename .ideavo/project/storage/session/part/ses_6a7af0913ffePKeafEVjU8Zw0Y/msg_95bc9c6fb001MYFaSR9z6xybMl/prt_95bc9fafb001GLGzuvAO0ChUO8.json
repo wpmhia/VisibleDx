@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bc9fafb001GLGzuvAO0ChUO8",
+  "messageID": "msg_95bc9c6fb001MYFaSR9z6xybMl",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01XWSch4qTLu7555tWAEH1FG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "SOAP",
+      "path": "/home/user/project/lib/translations/nl.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "SOAP",
+    "time": {
+      "start": 1758181588174,
+      "end": 1758181588183
+    }
+  }
+}
