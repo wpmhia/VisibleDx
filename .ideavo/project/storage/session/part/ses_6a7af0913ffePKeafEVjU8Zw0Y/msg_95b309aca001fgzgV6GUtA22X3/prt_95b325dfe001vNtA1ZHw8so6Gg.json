@@ -1,0 +1,18 @@
+{
+  "id": "prt_95b325dfe001vNtA1ZHw8so6Gg",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "refactor(i18n): reduce supported languages to English, Dutch, and Danish",
+  "cost": 0.677127,
+  "tokens": {
+    "input": 0,
+    "output": 517,
+    "reasoning": 0,
+    "cache": {
+      "write": 625,
+      "read": 76495
+    }
+  }
+}

@@ -765,11 +765,7 @@ export const nl: Translation = {
   languages: {
     en: 'English',
     nl: 'Nederlands',
-    da: 'Dansk',
-    de: 'Deutsch',
-    sv: 'Svenska',
-    no: 'Norsk',
-    fr: 'Français'
+    da: 'Dansk'
   },
 
   disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie',

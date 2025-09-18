@@ -774,11 +774,7 @@ export const da: Translation = {
   languages: {
     en: 'English',
     nl: 'Nederlands',
-    da: 'Dansk',
-    de: 'Deutsch',
-    sv: 'Svenska',
-    no: 'Norsk',
-    fr: 'Français'
+    da: 'Dansk'
   },
 
   disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',

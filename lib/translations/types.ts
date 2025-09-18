@@ -559,10 +559,6 @@ export interface Translation {
     en: string
     nl: string
     da: string
-    de: string
-    sv: string
-    no: string
-    fr: string
   }
 
   // Disclaimer
@@ -597,14 +593,10 @@ export interface Translation {
   }
 }
 
-export type SupportedLanguage = 'en' | 'nl' | 'da' | 'de' | 'sv' | 'no' | 'fr'
+export type SupportedLanguage = 'en' | 'nl' | 'da'
 
 export const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
-  { code: 'da', name: 'Dansk', flag: '🇩🇰' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'sv', name: 'Svenska', flag: '🇸🇪' },
-  { code: 'no', name: 'Norsk', flag: '🇳🇴' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' }
+  { code: 'da', name: 'Dansk', flag: '🇩🇰' }
 ]

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b317e42001neSRLUUX92jE7R",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01C21pqWJwMevVm2Gh1MYmqx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 774,
+      "limit": 15
+    },
+    "output": "<file>\n00775|     en: 'English',\n00776|     nl: 'Nederlands',\n00777|     da: 'Dansk',\n00778|     de: 'Deutsch',\n00779|     sv: 'Svenska',\n00780|     no: 'Norsk',\n00781|     fr: 'Français'\n00782|   },\n00783| \n00784|   disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',\n00785| \n00786|   footer: {\n00787|     about: {\n00788|       title: 'Om VisibleDx',\n00789|       description: 'VisibleDx er et evidensbaseret diagnostisk beslutningsstøtteværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at hjælpe klinikere med systematisk evaluering.',\n\n(File has more lines. Use 'offset' parameter to read beyond line 789)\n</file>",
+    "metadata": {
+      "preview": "    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',\n\n  footer: {\n    about: {\n      title: 'Om VisibleDx',\n      description: 'VisibleDx er et evidensbaseret diagnostisk beslutningsstøtteværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at hjælpe klinikere med systematisk evaluering.',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171594880,
+      "end": 1758171594882
+    }
+  }
+}

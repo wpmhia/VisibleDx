@@ -1,0 +1,23 @@
+{
+  "id": "prt_95b30ae600015wAEmtU46gjea5",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_015oJXodA8EGCkVPcsfktjCS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/index.ts"
+    },
+    "output": "<file>\n00001| import { en } from './en'\n00002| import { nl } from './nl'\n00003| import { da } from './da'\n00004| import { de } from './de'\n00005| import { sv } from './sv'\n00006| import { no } from './no'\n00007| import { fr } from './fr'\n00008| \n00009| export const translations = {\n00010|   en,\n00011|   nl,\n00012|   da,\n00013|   de,\n00014|   sv,\n00015|   no,\n00016|   fr\n00017| }\n00018| \n00019| export * from './types'\n</file>",
+    "metadata": {
+      "preview": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\nimport { de } from './de'\nimport { sv } from './sv'\nimport { no } from './no'\nimport { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  de,\n  sv,\n  no,\n  fr\n}\n\nexport * from './types'"
+    },
+    "title": "lib/translations/index.ts",
+    "time": {
+      "start": 1758171541649,
+      "end": 1758171541661
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b310ba0001tcJAaKtocpyUHW",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01G9J8yWk32YkVKiWZbgKBxo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "export type SupportedLanguage = 'en' | 'nl' | 'da' | 'de' | 'sv' | 'no' | 'fr'\n\nexport const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [\n  { code: 'en', name: 'English', flag: '🇺🇸' },\n  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },\n  { code: 'da', name: 'Dansk', flag: '🇩🇰' },\n  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },\n  { code: 'sv', name: 'Svenska', flag: '🇸🇪' },\n  { code: 'no', name: 'Norsk', flag: '🇳🇴' },\n  { code: 'fr', name: 'Français', flag: '🇫🇷' }\n]",
+      "newString": "export type SupportedLanguage = 'en' | 'nl' | 'da'\n\nexport const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [\n  { code: 'en', name: 'English', flag: '🇺🇸' },\n  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },\n  { code: 'da', name: 'Dansk', flag: '🇩🇰' }\n]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -592,15 +592,11 @@\n     technical: string\n   }\n }\n \n-export type SupportedLanguage = 'en' | 'nl' | 'da' | 'de' | 'sv' | 'no' | 'fr'\n+export type SupportedLanguage = 'en' | 'nl' | 'da'\n \n export const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [\n   { code: 'en', name: 'English', flag: '🇺🇸' },\n   { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },\n-  { code: 'da', name: 'Dansk', flag: '🇩🇰' },\n-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },\n-  { code: 'sv', name: 'Svenska', flag: '🇸🇪' },\n-  { code: 'no', name: 'Norsk', flag: '🇳🇴' },\n-  { code: 'fr', name: 'Français', flag: '🇫🇷' }\n+  { code: 'da', name: 'Dansk', flag: '🇩🇰' }\n ]\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171568581,
+      "end": 1758171568586
+    }
+  }
+}

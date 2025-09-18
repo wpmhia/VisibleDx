@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b30bb4d001DlyuYrX4s7tLA9",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01TTkjdji2C1z1DxuJhNnS4v",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/index.ts",
+      "oldString": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\nimport { de } from './de'\nimport { sv } from './sv'\nimport { no } from './no'\nimport { fr } from './fr'\n\nexport const translations = {\n  en,\n  nl,\n  da,\n  de,\n  sv,\n  no,\n  fr\n}",
+      "newString": "import { en } from './en'\nimport { nl } from './nl'\nimport { da } from './da'\n\nexport const translations = {\n  en,\n  nl,\n  da\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/index.ts\n===================================================================\n--- /home/user/project/lib/translations/index.ts\n+++ /home/user/project/lib/translations/index.ts\n@@ -1,19 +1,11 @@\n import { en } from './en'\n import { nl } from './nl'\n import { da } from './da'\n-import { de } from './de'\n-import { sv } from './sv'\n-import { no } from './no'\n-import { fr } from './fr'\n \n export const translations = {\n   en,\n   nl,\n-  da,\n-  de,\n-  sv,\n-  no,\n-  fr\n+  da\n }\n \n export * from './types'\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/index.ts",
+    "time": {
+      "start": 1758171546175,
+      "end": 1758171546182
+    }
+  }
+}

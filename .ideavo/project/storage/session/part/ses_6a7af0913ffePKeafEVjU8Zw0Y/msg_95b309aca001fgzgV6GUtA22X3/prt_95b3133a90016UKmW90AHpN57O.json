@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3133a90016UKmW90AHpN57O",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_0139Q8UGUGtaXJzaEQjjMzkK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "languages:",
+      "path": "/home/user/project/lib/translations",
+      "include": "*.ts"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/types.ts:\n  Line 558:   languages: {\n\n/home/user/project/lib/translations/fr.ts:\n  Line 797:   languages: {\n\n/home/user/project/lib/translations/no.ts:\n  Line 797:   languages: {\n\n/home/user/project/lib/translations/sv.ts:\n  Line 797:   languages: {\n\n/home/user/project/lib/translations/de.ts:\n  Line 771:   languages: {\n\n/home/user/project/lib/translations/da.ts:\n  Line 774:   languages: {\n\n/home/user/project/lib/translations/nl.ts:\n  Line 765:   languages: {\n\n/home/user/project/lib/translations/en.ts:\n  Line 765:   languages: {",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "languages:",
+    "time": {
+      "start": 1758171575879,
+      "end": 1758171575895
+    }
+  }
+}

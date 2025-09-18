@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b30da00001hbTvkRH2nD7QQ5",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017tnfotPiFbiY9mBbV41W9B",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/language-context.tsx",
+      "oldString": "      // Detect browser language\n      const browserLang = navigator.language.toLowerCase()\n      if (browserLang.startsWith('nl')) setLanguageState('nl')\n      else if (browserLang.startsWith('da')) setLanguageState('da')\n      else if (browserLang.startsWith('de')) setLanguageState('de')\n      else if (browserLang.startsWith('sv')) setLanguageState('sv')\n      else if (browserLang.startsWith('no')) setLanguageState('no')\n      else if (browserLang.startsWith('fr')) setLanguageState('fr')\n      else setLanguageState('en')",
+      "newString": "      // Detect browser language\n      const browserLang = navigator.language.toLowerCase()\n      if (browserLang.startsWith('nl')) setLanguageState('nl')\n      else if (browserLang.startsWith('da')) setLanguageState('da')\n      else setLanguageState('en')"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/language-context.tsx\n===================================================================\n--- /home/user/project/lib/language-context.tsx\n+++ /home/user/project/lib/language-context.tsx\n@@ -24,12 +24,8 @@\n     // Detect browser language\n     const browserLang = navigator.language.toLowerCase()\n     if (browserLang.startsWith('nl')) setLanguageState('nl')\n     else if (browserLang.startsWith('da')) setLanguageState('da')\n-    else if (browserLang.startsWith('de')) setLanguageState('de')\n-    else if (browserLang.startsWith('sv')) setLanguageState('sv')\n-    else if (browserLang.startsWith('no')) setLanguageState('no')\n-    else if (browserLang.startsWith('fr')) setLanguageState('fr')\n     else setLanguageState('en')\n   }\n }, [])\n \n"
+    },
+    "title": "lib/language-context.tsx",
+    "time": {
+      "start": 1758171554735,
+      "end": 1758171554746
+    }
+  }
+}

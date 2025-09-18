@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b316fdb001INd9JHxVvJsJ8h",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01K5WUWHmCgfwVKCSvkHUQhG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },",
+      "newString": "  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk'\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -764,13 +764,9 @@\n \n languages: {\n   en: 'English',\n   nl: 'Nederlands',\n-  da: 'Dansk',\n-  de: 'Deutsch',\n-  sv: 'Svenska',\n-  no: 'Norsk',\n-  fr: 'Français'\n+  da: 'Dansk'\n },\n \n disclaimer: 'Deze tool is alleen voor educatieve doeleinden en vervangt geen professioneel medisch oordeel of klinische evaluatie',\n \n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758171591964,
+      "end": 1758171591970
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b3122f9001A6ZrUZ9DgX3WIO",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to update the translation files to remove the unsupported language keys. Let me check one of the language files to see the structure:",
+  "time": {
+    "start": 1758171571849,
+    "end": 1758171571849
+  }
+}

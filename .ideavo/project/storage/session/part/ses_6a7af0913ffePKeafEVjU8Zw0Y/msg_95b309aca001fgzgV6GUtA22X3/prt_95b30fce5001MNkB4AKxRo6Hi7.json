@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b30fce5001MNkB4AKxRo6Hi7",
+  "messageID": "msg_95b309aca001fgzgV6GUtA22X3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01XRpMsGndL487w1vbWXCudn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "  // Languages\n  languages: {\n    en: string\n    nl: string\n    da: string\n    de: string\n    sv: string\n    no: string\n    fr: string\n  }",
+      "newString": "  // Languages\n  languages: {\n    en: string\n    nl: string\n    da: string\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -558,12 +558,8 @@\n languages: {\n   en: string\n   nl: string\n   da: string\n-  de: string\n-  sv: string\n-  no: string\n-  fr: string\n }\n \n // Disclaimer\n disclaimer: string\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171562080,
+      "end": 1758171562085
+    }
+  }
+}

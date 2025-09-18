@@ -25,10 +25,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       const browserLang = navigator.language.toLowerCase()
       if (browserLang.startsWith('nl')) setLanguageState('nl')
       else if (browserLang.startsWith('da')) setLanguageState('da')
-      else if (browserLang.startsWith('de')) setLanguageState('de')
-      else if (browserLang.startsWith('sv')) setLanguageState('sv')
-      else if (browserLang.startsWith('no')) setLanguageState('no')
-      else if (browserLang.startsWith('fr')) setLanguageState('fr')
       else setLanguageState('en')
     }
   }, [])
