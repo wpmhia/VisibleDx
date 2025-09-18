@@ -593,7 +593,6 @@ export interface Translation {
       createdBy: string
       name: string
       organization: string
-      location: string
       license: string
       linkedinProfile: string
       organizationWebsite: string

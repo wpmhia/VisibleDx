@@ -807,7 +807,6 @@ export const nl: Translation = {
       createdBy: 'Gemaakt door',
       name: 'Willem Gielen MD',
       organization: 'Nordjysk Speciallaegeklinik',
-      location: 'Hjørring, Denemarken',
       license: 'Open source onder MIT Licentie',
       linkedinProfile: 'LinkedIn Profiel',
       organizationWebsite: 'Organisatie Website',

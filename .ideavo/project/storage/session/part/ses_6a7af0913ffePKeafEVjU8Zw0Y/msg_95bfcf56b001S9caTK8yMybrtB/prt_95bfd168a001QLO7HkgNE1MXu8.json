@@ -1,0 +1,22 @@
+{
+  "id": "prt_95bfd168a001QLO7HkgNE1MXu8",
+  "messageID": "msg_95bfcf56b001S9caTK8yMybrtB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "invalid",
+  "callID": "toolu_018XU8DnFcb8GRttyYp81gcm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "tool": "multiedit",
+      "error": "Invalid input for tool multiedit: Type validation failed: Value: {\"filePath\":\"/home/user/project/lib/translations/en.ts\",\"edits\":[{\"oldString\":\"      organization: 'Nordjysk Speciallaegeklinik',\\n      location: 'Hjørring, Denmark',\",\"newString\":\"      organization: 'Nordjysk Speciallaegeklinik',\"}]}.\nError message: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"edits\",\n      0,\n      \"filePath\"\n    ],\n    \"message\": \"Required\"\n  }\n]"
+    },
+    "output": "The arguments provided to the tool are invalid: Invalid input for tool multiedit: Type validation failed: Value: {\"filePath\":\"/home/user/project/lib/translations/en.ts\",\"edits\":[{\"oldString\":\"      organization: 'Nordjysk Speciallaegeklinik',\\n      location: 'Hjørring, Denmark',\",\"newString\":\"      organization: 'Nordjysk Speciallaegeklinik',\"}]}.\nError message: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"edits\",\n      0,\n      \"filePath\"\n    ],\n    \"message\": \"Required\"\n  }\n]",
+    "metadata": {},
+    "title": "Invalid Tool",
+    "time": {
+      "start": 1758184938794,
+      "end": 1758184938833
+    }
+  }
+}

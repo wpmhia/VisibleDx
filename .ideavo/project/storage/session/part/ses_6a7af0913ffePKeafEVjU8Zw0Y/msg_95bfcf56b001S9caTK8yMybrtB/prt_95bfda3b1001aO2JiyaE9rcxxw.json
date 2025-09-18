@@ -1,0 +1,27 @@
+{
+  "id": "prt_95bfda3b1001aO2JiyaE9rcxxw",
+  "messageID": "msg_95bfcf56b001S9caTK8yMybrtB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01KqDDntAivG1dxYEDoJFBng",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+      "timeout": 30000,
+      "description": "Rebuild and restart server with changes"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Rebuild and restart server with changes"
+    },
+    "title": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+    "time": {
+      "start": 1758184973881,
+      "end": 1758184974086
+    }
+  }
+}

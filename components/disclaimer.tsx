@@ -65,8 +65,7 @@ export default function Disclaimer() {
                 >
                   {t.footer.creator.organization}
                   <ExternalLink className="h-3 w-3" />
-                </a><br />
-                <span className="text-gray-500">{t.footer.creator.location}</span>
+                </a>
               </div>
               <div className="space-y-1">
                 <Badge variant="secondary" className="text-xs">

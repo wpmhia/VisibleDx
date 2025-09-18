@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bfd7f2a0019oVJcI1Ok9uU0w",
+  "messageID": "msg_95bfcf56b001S9caTK8yMybrtB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012VZRueixrWt4P7SoisWFVq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 50,
+      "limit": 20
+    },
+    "output": "<file>\n00051|                   target=\"_blank\" \n00052|                   rel=\"noopener noreferrer\"\n00053|                   className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1\"\n00054|                 >\n00055|                   {t.footer.creator.name}\n00056|                   <ExternalLink className=\"h-3 w-3\" />\n00057|                 </a>\n00058|               </div>\n00059|               <div>\n00060|                 <a \n00061|                   href=\"https://www.nordjyskklinik.dk/\" \n00062|                   target=\"_blank\" \n00063|                   rel=\"noopener noreferrer\"\n00064|                   className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1\"\n00065|                 >\n00066|                   {t.footer.creator.organization}\n00067|                   <ExternalLink className=\"h-3 w-3\" />\n00068|                 </a><br />\n00069|                 <span className=\"text-gray-500\">{t.footer.creator.location}</span>\n00070|               </div>\n\n(File has more lines. Use 'offset' parameter to read beyond line 70)\n</file>",
+    "metadata": {
+      "preview": "                  target=\"_blank\" \n                  rel=\"noopener noreferrer\"\n                  className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1\"\n                >\n                  {t.footer.creator.name}\n                  <ExternalLink className=\"h-3 w-3\" />\n                </a>\n              </div>\n              <div>\n                <a \n                  href=\"https://www.nordjyskklinik.dk/\" \n                  target=\"_blank\" \n                  rel=\"noopener noreferrer\"\n                  className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1\"\n                >\n                  {t.footer.creator.organization}\n                  <ExternalLink className=\"h-3 w-3\" />\n                </a><br />\n                <span className=\"text-gray-500\">{t.footer.creator.location}</span>\n              </div>"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758184964314,
+      "end": 1758184964318
+    }
+  }
+}

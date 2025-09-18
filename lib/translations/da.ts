@@ -816,7 +816,6 @@ export const da: Translation = {
       createdBy: 'Skabt af:',
       name: 'Willem Gielen MD',
       organization: 'Nordjysk Speciallaegeklinik',
-      location: 'Hjørring, Danmark',
       license: 'Open source under MIT Licens',
       linkedinProfile: 'LinkedIn Profil',
       organizationWebsite: 'Organisations Hjemmeside',

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bfd3ef2001OhAEyCMlpjmvkw",
+  "messageID": "msg_95bfcf56b001S9caTK8yMybrtB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01PMAaeV2KwEohVNkgTrp6ht",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 800,
+      "limit": 20
+    },
+    "output": "<file>\n00801|         evidenceBased: 'Evidence-Based',\n00802|         openSource: 'Open Source'\n00803|       }\n00804|     },\n00805|     creator: {\n00806|       title: 'Maker & Licentie',\n00807|       createdBy: 'Gemaakt door',\n00808|       name: 'Willem Gielen MD',\n00809|       organization: 'Nordjysk Speciallaegeklinik',\n00810|       location: 'Hjørring, Denemarken',\n00811|       license: 'Open source onder MIT Licentie',\n00812|       linkedinProfile: 'LinkedIn Profiel',\n00813|       organizationWebsite: 'Organisatie Website',\n00814|       githubRepository: 'GitHub Repository'\n00815|     },\n00816|     evidence: {\n00817|       title: 'Wetenschappelijke Basis',\n00818|       guidelines: [\n00819|         {\n00820|           title: 'CDC ME/CVS Diagnose (2024)',\n\n(File has more lines. Use 'offset' parameter to read beyond line 820)\n</file>",
+    "metadata": {
+      "preview": "        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },\n    creator: {\n      title: 'Maker & Licentie',\n      createdBy: 'Gemaakt door',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denemarken',\n      license: 'Open source onder MIT Licentie',\n      linkedinProfile: 'LinkedIn Profiel',\n      organizationWebsite: 'Organisatie Website',\n      githubRepository: 'GitHub Repository'\n    },\n    evidence: {\n      title: 'Wetenschappelijke Basis',\n      guidelines: [\n        {\n          title: 'CDC ME/CVS Diagnose (2024)',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758184948087,
+      "end": 1758184948091
+    }
+  }
+}
