@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b8eba56001WN54NWqnbbxk8R",
+  "messageID": "msg_95b8eabd9001oXo8HsC18vXrML",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_015pSoNgDwQ5Gd1B9ifPkzfk",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "        {\n          title: 'CDC ME/CFS Case Definition (2015)',\n          url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },",
+          "newString": "        {\n          title: 'CDC Diagnosing ME/CFS (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758177706840,
+      "end": 1758177706861
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b8f0c2e0016bxc86TP4Gj6BZ",
+  "messageID": "msg_95b8eabd9001oXo8HsC18vXrML",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01L2FP99nDjxuJnz5WLvJ2yy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "        {\n          title: 'CDC ME/CFS Casedefinition (2015)',\n          url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },",
+      "newString": "        {\n          title: 'CDC ME/CFS Diagnose (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -803,10 +803,10 @@\n evidence: {\n   title: 'Evidensbase',\n   guidelines: [\n     {\n-      title: 'CDC ME/CFS Casedefinition (2015)',\n-      url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n+      title: 'CDC ME/CFS Diagnose (2024)',\n+      url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n     },\n     {\n       title: 'NASEM ME/CFS Rapport (2015)',\n       url: 'https://nap.nationalacademies.org/read/19012'\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758177727121,
+      "end": 1758177727127
+    }
+  }
+}

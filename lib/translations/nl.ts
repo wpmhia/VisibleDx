@@ -795,8 +795,8 @@ export const nl: Translation = {
       title: 'Wetenschappelijke Basis',
       guidelines: [
         {
-          title: 'CDC ME/CVS Casedefinitie (2015)',
-          url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'
+          title: 'CDC ME/CVS Diagnose (2024)',
+          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'
         },
         {
           title: 'NASEM ME/CVS Rapport (2015)',
