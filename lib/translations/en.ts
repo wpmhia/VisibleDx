@@ -203,6 +203,16 @@ export const en: Translation = {
         'Jaundice or yellowing of skin/eyes'
       ]
     },
+    urgentCategories: [
+      'Infectious/Inflammatory',
+      'Malignancy/Metabolic', 
+      'Cardiovascular',
+      'Cardiopulmonary',
+      'Neurological',
+      'Hematological',
+      'Infectious/Malignancy',
+      'Hepatic'
+    ],
     routineLabs: {
       title: 'Routine Screening Labs',
       description: 'Select categories of tests to rule out common explanatory conditions',
@@ -759,7 +769,8 @@ export const en: Translation = {
     guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',
     assessmentModulesSection: 'Assessment Modules',
     guidelinesSection: 'Guidelines & References',
-    moreGuidelines: 'more guidelines'
+    moreGuidelines: 'more guidelines',
+    smartBadge: 'Smart'
   },
 
   languages: {
@@ -809,5 +820,52 @@ export const en: Translation = {
       badge: 'Research & Education Use'
     },
     technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'
+  },
+
+  ppgCamera: {
+    title: 'Camera PPG Heart Rate',
+    description: 'Place your fingertip gently over the camera lens with flashlight on',
+    fingerDetected: 'Finger Detected',
+    placeFingerPrompt: 'Place Finger',
+    signalQuality: {
+      poor: 'poor',
+      fair: 'fair',
+      good: 'good'
+    },
+    status: {
+      stopped: 'stopped',
+      starting: 'starting',
+      detecting: 'detecting',
+      measuring: 'measuring'
+    },
+    recordReading: 'Record Reading',
+    instructions: {
+      flashlight: 'Turn on your device\'s flashlight',
+      placement: 'Gently place fingertip over camera lens',
+      stillness: 'Stay still and breathe normally',
+      wait: 'Wait for stable reading (10+ seconds)'
+    },
+    errors: {
+      cameraAccess: 'Camera access denied',
+      noCamera: 'No camera available'
+    }
+  },
+
+  soapNotes: {
+    clinician: 'Clinician',
+    patientId: 'Patient ID',
+    age: 'Age',
+    gender: 'Gender',
+    notSpecified: 'Not specified',
+    notRecorded: 'Not recorded',
+    pemPresent: 'Present',
+    notPresent: 'Not present',
+    baselineHR: 'Baseline HR',
+    peakStandingHR: 'Peak Standing HR',
+    hrIncrease: 'HR Increase',
+    cannotCalculate: 'Cannot calculate',
+    potsCriteriaMet: 'MET (≥30 bpm increase)',
+    potsNotMet: 'Not met',
+    severity: 'severity'
   }
 }

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b382f710019tXuMarJeP2cSi",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0156oj64tt1Qcwu1aosfdCni",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "      ]\n    },\n    routineLabs: {",
+      "newString": "      ]\n    },\n    urgentCategories: [\n      'Infektiøs/Inflammatorisk',\n      'Malignitet/Metabolisk', \n      'Kardiovaskulær',\n      'Kardiopulmonær',\n      'Neurologisk',\n      'Hæmatologisk',\n      'Infektiøs/Malignitet',\n      'Hepatisk'\n    ],\n    routineLabs: {"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -205,8 +205,18 @@\n     'Forstørrede lymfeknuder',\n     'Gulsot eller gulning af hud/øjne'\n   ]\n },\n+urgentCategories: [\n+  'Infektiøs/Inflammatorisk',\n+  'Malignitet/Metabolisk', \n+  'Kardiovaskulær',\n+  'Kardiopulmonær',\n+  'Neurologisk',\n+  'Hæmatologisk',\n+  'Infektiøs/Malignitet',\n+  'Hepatisk'\n+],\n routineLabs: {\n   title: 'Rutine Screening Laboratorier',\n   description: 'Vælg kategorier af tests for at udelukke almindelige forklarende tilstande',\n   categories: {\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758172034654,
+      "end": 1758172034659
+    }
+  }
+}

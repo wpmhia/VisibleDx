@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b38a53e001NZbpHq1Dy6tFoU",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_016f8ZLLYd9fJ2e15g5E4pgy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build to test complete translation coverage"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\nFailed to compile.\n\n./lib/translations/en.ts\nError: \n  \u001b[31mx\u001b[0m Unexpected eof\n     ,-[\u001b[36;1;4m/home/user/project/lib/translations/en.ts\u001b[0m:885:1]\n \u001b[2m885\u001b[0m |     potsNotMet: 'Not met',\n \u001b[2m886\u001b[0m |     severity: 'severity'\n \u001b[2m887\u001b[0m |   }\n \u001b[2m888\u001b[0m | }\n     `----\n\nCaused by:\n    Syntax Error\n\nImport trace for requested module:\n./lib/translations/en.ts\n./lib/translations/index.ts\n./lib/language-context.tsx\n\n\n> Build failed because of webpack errors\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\nFailed to compile.\n\n./lib/translations/en.ts\nError: \n  \u001b[31mx\u001b[0m Unexpected eof\n     ,-[\u001b[36;1;4m/home/user/project/lib/translations/en.ts\u001b[0m:885:1]\n \u001b[2m885\u001b[0m |     potsNotMet: 'Not met',\n \u001b[2m886\u001b[0m |     severity: 'severity'\n \u001b[2m887\u001b[0m |   }\n \u001b[2m888\u001b[0m | }\n     `----\n\nCaused by:\n    Syntax Error\n\nImport trace for requested module:\n./lib/translations/en.ts\n./lib/translations/index.ts\n./lib/language-context.tsx\n\n\n> Build failed because of webpack errors\n",
+      "exit": 1,
+      "description": "Build to test complete translation coverage"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758172063865,
+      "end": 1758172069269
+    }
+  }
+}

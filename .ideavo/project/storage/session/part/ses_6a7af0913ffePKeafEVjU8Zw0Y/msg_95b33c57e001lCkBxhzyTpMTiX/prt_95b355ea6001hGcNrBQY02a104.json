@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b355ea6001hGcNrBQY02a104",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01JArrQm3Rwvat9L4FoFtynq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChange }: PPGCameraProps) {\n  const videoRef = useRef<HTMLVideoElement>(null)\n  const canvasRef = useRef<HTMLCanvasElement>(null)\n  const streamRef = useRef<MediaStream | null>(null)\n  const animationRef = useRef<number | null>(null)\n  const samplesRef = useRef<PPGSample[]>([])\n  const lastHeartRateRef = useRef<number>(0)\n  const measurementStartRef = useRef<number>(0)\n\n  const [isStarted, setIsStarted] = useState(false)\n  const [currentHeartRate, setCurrentHeartRate] = useState<number | null>(null)\n  const [fingerDetected, setFingerDetected] = useState(false)\n  const [error, setError] = useState<string | null>(null)\n  const [signalQuality, setSignalQuality] = useState<'poor' | 'fair' | 'good' | null>(null)",
+      "newString": "export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChange }: PPGCameraProps) {\n  const { t } = useTranslation()\n  const videoRef = useRef<HTMLVideoElement>(null)\n  const canvasRef = useRef<HTMLCanvasElement>(null)\n  const streamRef = useRef<MediaStream | null>(null)\n  const animationRef = useRef<number | null>(null)\n  const samplesRef = useRef<PPGSample[]>([])\n  const lastHeartRateRef = useRef<number>(0)\n  const measurementStartRef = useRef<number>(0)\n\n  const [isStarted, setIsStarted] = useState(false)\n  const [currentHeartRate, setCurrentHeartRate] = useState<number | null>(null)\n  const [fingerDetected, setFingerDetected] = useState(false)\n  const [error, setError] = useState<string | null>(null)\n  const [signalQuality, setSignalQuality] = useState<'poor' | 'fair' | 'good' | null>(null)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -19,8 +19,9 @@\n   value: number\n }\n \n export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChange }: PPGCameraProps) {\n+  const { t } = useTranslation()\n   const videoRef = useRef<HTMLVideoElement>(null)\n   const canvasRef = useRef<HTMLCanvasElement>(null)\n   const streamRef = useRef<MediaStream | null>(null)\n   const animationRef = useRef<number | null>(null)\n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171853082,
+      "end": 1758171853093
+    }
+  }
+}

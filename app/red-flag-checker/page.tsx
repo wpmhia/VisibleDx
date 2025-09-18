@@ -13,7 +13,7 @@ import { useTranslation } from '@/lib/language-context'
 const getRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({
   id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],
   symptom,
-  category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],
+  category: t.redFlag.urgentCategories[index] || t.redFlag.urgentCategories[0],
   priority: 'high',
   tests: [
     ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],

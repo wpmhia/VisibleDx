@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b35bb28001QwzP5atbpLAlG7",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017zTKnrXN4o9aZSWtDCKsqW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "        <CardTitle className=\"flex items-center gap-2\">\n          <Camera className=\"h-5 w-5\" />\n          Camera PPG Heart Rate\n        </CardTitle>\n        <CardDescription>\n          Place your fingertip gently over the camera lens with flashlight on\n        </CardDescription>",
+      "newString": "        <CardTitle className=\"flex items-center gap-2\">\n          <Camera className=\"h-5 w-5\" />\n          {t.ppgCamera.title}\n        </CardTitle>\n        <CardDescription>\n          {t.ppgCamera.description}\n        </CardDescription>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -278,12 +278,12 @@\n <Card className=\"w-full\">\n   <CardHeader>\n     <CardTitle className=\"flex items-center gap-2\">\n       <Camera className=\"h-5 w-5\" />\n-      Camera PPG Heart Rate\n+      {t.ppgCamera.title}\n     </CardTitle>\n     <CardDescription>\n-      Place your fingertip gently over the camera lens with flashlight on\n+      {t.ppgCamera.description}\n     </CardDescription>\n   </CardHeader>\n   <CardContent className=\"space-y-4\">\n     {error && (\n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171873855,
+      "end": 1758171873859
+    }
+  }
+}

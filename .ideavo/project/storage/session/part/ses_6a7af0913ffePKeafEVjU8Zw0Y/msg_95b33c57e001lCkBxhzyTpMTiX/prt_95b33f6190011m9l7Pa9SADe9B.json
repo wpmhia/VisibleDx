@@ -1,0 +1,21 @@
+{
+  "id": "prt_95b33f6190011m9l7Pa9SADe9B",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01DKpvTXR3Vwwvw5gcaUeRfo",
+  "state": {
+    "status": "error",
+    "input": {
+      "pattern": "[\\\"'][A-Z][a-zA-Z\\s]{3,}[\\\"']",
+      "path": "/home/user/project",
+      "include": "*.tsx"
+    },
+    "error": "Error: ripgrep failed: regex parse error:\n    [\\\"'][A-Z][a-zA-Z\\s]{3,}[\\\"']\n     ^^\nerror: unrecognized escape sequence\n",
+    "time": {
+      "start": 1758171757301,
+      "end": 1758171757311
+    }
+  }
+}

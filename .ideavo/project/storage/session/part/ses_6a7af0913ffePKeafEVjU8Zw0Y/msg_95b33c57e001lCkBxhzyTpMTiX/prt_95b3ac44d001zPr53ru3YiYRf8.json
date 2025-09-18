@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3ac44d001zPr53ru3YiYRf8",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01AGFA55e9DbFW3X1Ucru78T",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Test if original version builds"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:189:3\nType error: Property 'urgentCategories' is missing in type '{ title: string; description: string; symptoms: { title: string; description: string; list: string[]; }; routineLabs: { title: string; description: string; categories: { basicMetabolic: { title: string; indication: string; tests: string[]; }; ... 4 more ...; infectious: { ...; }; }; }; results: { ...; }; }' but required in type '{ title: string; description: string; symptoms: { title: string; description: string; list: string[]; }; urgentCategories: string[]; routineLabs: { title: string; description: string; categories: { basicMetabolic: { ...; }; ... 4 more ...; infectious: { ...; }; }; }; results: { ...; }; }'.\n\n\u001b[0m \u001b[90m 187 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 188 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 189 |\u001b[39m   redFlag\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 190 |\u001b[39m     title\u001b[33m:\u001b[39m \u001b[32m'Red-flag Checker'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 191 |\u001b[39m     description\u001b[33m:\u001b[39m \u001b[32m'Identify symptoms requiring urgent evaluation and rule out explanatory diseases'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 192 |\u001b[39m     symptoms\u001b[33m:\u001b[39m {\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:189:3\nType error: Property 'urgentCategories' is missing in type '{ title: string; description: string; symptoms: { title: string; description: string; list: string[]; }; routineLabs: { title: string; description: string; categories: { basicMetabolic: { title: string; indication: string; tests: string[]; }; ... 4 more ...; infectious: { ...; }; }; }; results: { ...; }; }' but required in type '{ title: string; description: string; symptoms: { title: string; description: string; list: string[]; }; urgentCategories: string[]; routineLabs: { title: string; description: string; categories: { basicMetabolic: { ...; }; ... 4 more ...; infectious: { ...; }; }; }; results: { ...; }; }'.\n\n\u001b[0m \u001b[90m 187 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 188 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 189 |\u001b[39m   redFlag\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 190 |\u001b[39m     title\u001b[33m:\u001b[39m \u001b[32m'Red-flag Checker'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 191 |\u001b[39m     description\u001b[33m:\u001b[39m \u001b[32m'Identify symptoms requiring urgent evaluation and rule out explanatory diseases'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 192 |\u001b[39m     symptoms\u001b[33m:\u001b[39m {\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Test if original version builds"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758172202666,
+      "end": 1758172222923
+    }
+  }
+}

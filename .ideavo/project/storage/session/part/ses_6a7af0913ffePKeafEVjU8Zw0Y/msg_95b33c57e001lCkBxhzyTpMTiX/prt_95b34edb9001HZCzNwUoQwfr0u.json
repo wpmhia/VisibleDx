@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b34edb9001HZCzNwUoQwfr0u",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RaFVP13QYei4AKiSH8We5w",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 814,
+      "limit": 10
+    },
+    "output": "<file>\n00815|       version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n00816|       copyright: '© 2024 VisibleDx',\n00817|       audienceLabel: 'For Sundhedsprofessionelle',\n00818|       badge: 'Forskning & Uddannelse'\n00819|     },\n00820|     technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n00821|   }\n00822| }\n</file>",
+    "metadata": {
+      "preview": "      version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'For Sundhedsprofessionelle',\n      badge: 'Forskning & Uddannelse'\n    },\n    technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n  }\n}"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171820085,
+      "end": 1758171820087
+    }
+  }
+}

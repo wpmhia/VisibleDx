@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b373d04001Ocd4TZ8khdUrJF",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01QTgrGQxZiVuix1bNMn1Lmv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "    moreGuidelines: 'flere retningslinjer'",
+      "newString": "    moreGuidelines: 'flere retningslinjer',\n    smartBadge: 'Smart'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -767,9 +767,10 @@\n   clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',\n   guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',\n   assessmentModulesSection: 'Vurderingsmoduler',\n   guidelinesSection: 'Retningslinjer & Referencer',\n-  moreGuidelines: 'flere retningslinjer'\n+  moreGuidelines: 'flere retningslinjer',\n+  smartBadge: 'Smart'\n },\n \n languages: {\n   en: 'English',\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171971757,
+      "end": 1758171971775
+    }
+  }
+}

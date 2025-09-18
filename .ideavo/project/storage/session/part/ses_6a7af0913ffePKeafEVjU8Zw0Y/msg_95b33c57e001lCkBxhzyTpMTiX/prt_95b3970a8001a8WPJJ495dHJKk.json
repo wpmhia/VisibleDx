@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3970a8001a8WPJJ495dHJKk",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011vuLNnTzmArQFmUAuhmJpA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 840,
+      "limit": 50
+    },
+    "output": "<file>\n00841| \n00842|   ppgCamera: {\n00843|     title: 'Camera PPG Heart Rate',\n00844|     description: 'Place your fingertip gently over the camera lens with flashlight on',\n00845|     fingerDetected: 'Finger Detected',\n00846|     placeFingerPrompt: 'Place Finger',\n00847|     signalQuality: {\n00848|       poor: 'poor',\n00849|       fair: 'fair',\n00850|       good: 'good'\n00851|     },\n00852|     status: {\n00853|       stopped: 'stopped',\n00854|       starting: 'starting',\n00855|       detecting: 'detecting',\n00856|       measuring: 'measuring'\n00857|     },\n00858|     recordReading: 'Record Reading',\n00859|     instructions: {\n00860|       flashlight: 'Turn on your device\\'s flashlight',\n00861|       placement: 'Gently place fingertip over camera lens',\n00862|       stillness: 'Stay still and breathe normally',\n00863|       wait: 'Wait for stable reading (10+ seconds)'\n00864|     },\n00865|     errors: {\n00866|       cameraAccess: 'Camera access denied',\n00867|       noCamera: 'No camera available'\n00868|     }\n00869|   },\n00870| \n00871|   soapNotes: {\n00872|     clinician: 'Clinician',\n00873|     patientId: 'Patient ID',\n00874|     age: 'Age',\n00875|     gender: 'Gender',\n00876|     notSpecified: 'Not specified',\n00877|     notRecorded: 'Not recorded',\n00878|     pemPresent: 'Present',\n00879|     notPresent: 'Not present',\n00880|     baselineHR: 'Baseline HR',\n00881|     peakStandingHR: 'Peak Standing HR',\n00882|     hrIncrease: 'HR Increase',\n00883|     cannotCalculate: 'Cannot calculate',\n00884|     potsCriteriaMet: 'MET (≥30 bpm increase)',\n00885|     potsNotMet: 'Not met',\n00886|     severity: 'severity'\n00887|   }\n00888| }\n</file>",
+    "metadata": {
+      "preview": "\n  ppgCamera: {\n    title: 'Camera PPG Heart Rate',\n    description: 'Place your fingertip gently over the camera lens with flashlight on',\n    fingerDetected: 'Finger Detected',\n    placeFingerPrompt: 'Place Finger',\n    signalQuality: {\n      poor: 'poor',\n      fair: 'fair',\n      good: 'good'\n    },\n    status: {\n      stopped: 'stopped',\n      starting: 'starting',\n      detecting: 'detecting',\n      measuring: 'measuring'\n    },\n    recordReading: 'Record Reading',\n    instructions: {\n      flashlight: 'Turn on your device\\'s flashlight',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172115850,
+      "end": 1758172115852
+    }
+  }
+}

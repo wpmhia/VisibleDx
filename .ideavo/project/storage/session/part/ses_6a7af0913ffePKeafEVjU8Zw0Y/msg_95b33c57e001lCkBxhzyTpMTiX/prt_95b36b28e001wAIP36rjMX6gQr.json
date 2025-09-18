@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b36b28e001wAIP36rjMX6gQr",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01FhxJsWH6JcNoANRgihB3rt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "  // Navigation\n  navigation: {\n    assessmentModules: string\n    guidelines: string\n    diagnosticTools: string\n    clinicalGuidelines: string\n    guidelinesDescription: string\n    assessmentModulesSection: string\n    guidelinesSection: string\n    moreGuidelines: string\n  }",
+      "newString": "  // Navigation\n  navigation: {\n    assessmentModules: string\n    guidelines: string\n    diagnosticTools: string\n    clinicalGuidelines: string\n    guidelinesDescription: string\n    assessmentModulesSection: string\n    guidelinesSection: string\n    moreGuidelines: string\n    smartBadge: string\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -551,8 +551,9 @@\n   guidelinesDescription: string\n   assessmentModulesSection: string\n   guidelinesSection: string\n   moreGuidelines: string\n+  smartBadge: string\n }\n \n // Languages\n languages: {\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171938099,
+      "end": 1758171938106
+    }
+  }
+}

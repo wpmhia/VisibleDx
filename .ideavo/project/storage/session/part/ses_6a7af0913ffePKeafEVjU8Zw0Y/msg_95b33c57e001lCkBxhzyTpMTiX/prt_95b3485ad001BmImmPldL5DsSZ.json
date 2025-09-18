@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3485ad001BmImmPldL5DsSZ",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BYRJdHEzWaUGYUpey246Dh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    },\n    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n  }\n}",
+      "newString": "    },\n    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n  },\n\n  ppgCamera: {\n    title: 'Camera PPG Heart Rate',\n    description: 'Place your fingertip gently over the camera lens with flashlight on',\n    fingerDetected: 'Finger Detected',\n    placeFingerPrompt: 'Place Finger',\n    signalQuality: {\n      poor: 'poor',\n      fair: 'fair',\n      good: 'good'\n    },\n    status: {\n      stopped: 'stopped',\n      starting: 'starting',\n      detecting: 'detecting',\n      measuring: 'measuring'\n    },\n    recordReading: 'Record Reading',\n    instructions: {\n      flashlight: 'Turn on your device\\'s flashlight',\n      placement: 'Gently place fingertip over camera lens',\n      stillness: 'Stay still and breathe normally',\n      wait: 'Wait for stable reading (10+ seconds)'\n    },\n    errors: {\n      cameraAccess: 'Camera access denied',\n      noCamera: 'No camera available'\n    }\n  },\n\n  soapNotes: {\n    clinician: 'Clinician',\n    patientId: 'Patient ID',\n    age: 'Age',\n    gender: 'Gender',\n    notSpecified: 'Not specified',\n    notRecorded: 'Not recorded',\n    pemPresent: 'Present',\n    notPresent: 'Not present',\n    baselineHR: 'Baseline HR',\n    peakStandingHR: 'Peak Standing HR',\n    hrIncrease: 'HR Increase',\n    cannotCalculate: 'Cannot calculate',\n    potsCriteriaMet: 'MET (≥30 bpm increase)',\n    potsNotMet: 'Not met',\n    severity: 'severity'\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -808,6 +808,53 @@\n       audienceLabel: 'For Healthcare Professionals',\n       badge: 'Research & Education Use'\n     },\n     technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n+  },\n+\n+  ppgCamera: {\n+    title: 'Camera PPG Heart Rate',\n+    description: 'Place your fingertip gently over the camera lens with flashlight on',\n+    fingerDetected: 'Finger Detected',\n+    placeFingerPrompt: 'Place Finger',\n+    signalQuality: {\n+      poor: 'poor',\n+      fair: 'fair',\n+      good: 'good'\n+    },\n+    status: {\n+      stopped: 'stopped',\n+      starting: 'starting',\n+      detecting: 'detecting',\n+      measuring: 'measuring'\n+    },\n+    recordReading: 'Record Reading',\n+    instructions: {\n+      flashlight: 'Turn on your device\\'s flashlight',\n+      placement: 'Gently place fingertip over camera lens',\n+      stillness: 'Stay still and breathe normally',\n+      wait: 'Wait for stable reading (10+ seconds)'\n+    },\n+    errors: {\n+      cameraAccess: 'Camera access denied',\n+      noCamera: 'No camera available'\n+    }\n+  },\n+\n+  soapNotes: {\n+    clinician: 'Clinician',\n+    patientId: 'Patient ID',\n+    age: 'Age',\n+    gender: 'Gender',\n+    notSpecified: 'Not specified',\n+    notRecorded: 'Not recorded',\n+    pemPresent: 'Present',\n+    notPresent: 'Not present',\n+    baselineHR: 'Baseline HR',\n+    peakStandingHR: 'Peak Standing HR',\n+    hrIncrease: 'HR Increase',\n+    cannotCalculate: 'Cannot calculate',\n+    potsCriteriaMet: 'MET (≥30 bpm increase)',\n+    potsNotMet: 'Not met',\n+    severity: 'severity'\n   }\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758171799412,
+      "end": 1758171799419
+    }
+  }
+}

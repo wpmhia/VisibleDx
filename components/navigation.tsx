@@ -45,7 +45,7 @@ const getAssessmentModules = (t: any) => [
     icon: User,
     title: t.newPatient.title,
     description: t.newPatient.description,
-    badge: 'Smart'
+    badge: t.navigation.smartBadge
   },
   {
     href: '/quick-screen',

@@ -219,9 +219,9 @@ export default function NewPatientWorkflow() {
     let soap = `CLINICAL ASSESSMENT - VisibleDx Report\n`
     soap += `=========================================\n\n`
     soap += `Date: ${currentDate}\n`
-    soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\n`
-    soap += `Patient ID: ${demographics.patientId || 'Not specified'}\n`
-    soap += `Age: ${demographics.age || 'Not specified'} | Gender: ${demographics.gender || 'Not specified'}\n\n`
+    soap += `${t.soapNotes.clinician}: ${demographics.clinicianName || t.soapNotes.notSpecified}\n`
+    soap += `${t.soapNotes.patientId}: ${demographics.patientId || t.soapNotes.notSpecified}\n`
+    soap += `${t.soapNotes.age}: ${demographics.age || t.soapNotes.notSpecified} | ${t.soapNotes.gender}: ${demographics.gender || t.soapNotes.notSpecified}\n\n`
 
     soap += `SUBJECTIVE:\n`
     soap += `Chief Complaint: Chronic fatigue, post-exertional symptoms, and orthostatic intolerance\n`
@@ -233,16 +233,16 @@ export default function NewPatientWorkflow() {
       soap += `Red Flag Symptoms: None identified\n`
     }
     
-    soap += `Post-Exertional Malaise: ${pemQuest.present ? `Present (${pemQuest.severity} severity)` : 'Not present'}\n`
+    soap += `Post-Exertional Malaise: ${pemQuest.present ? `${t.soapNotes.pemPresent} (${pemQuest.severity} ${t.soapNotes.severity})` : t.soapNotes.notPresent}\n`
     soap += `Symptom Duration: ${patientData.quickScreen.answers[8] ? '≥3 months' : '<3 months or unclear'}\n\n`
 
     soap += `OBJECTIVE:\n`
     if (standTest.performed) {
       soap += `Orthostatic Vital Signs (10-min stand test):\n`
-      soap += `  - Baseline HR: ${standTest.baselineHR || 'Not recorded'} bpm\n`
-      soap += `  - Peak Standing HR: ${standTest.peakHR || 'Not recorded'} bpm\n`
-      soap += `  - HR Increase: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : 'Cannot calculate'} bpm\n`
-      soap += `  - POTS Criteria: ${standTest.meetsPOTS ? 'MET (≥30 bpm increase)' : 'Not met'}\n`
+      soap += `  - ${t.soapNotes.baselineHR}: ${standTest.baselineHR || t.soapNotes.notRecorded} bpm\n`
+      soap += `  - ${t.soapNotes.peakStandingHR}: ${standTest.peakHR || t.soapNotes.notRecorded} bpm\n`
+      soap += `  - ${t.soapNotes.hrIncrease}: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : t.soapNotes.cannotCalculate} bpm\n`
+      soap += `  - POTS Criteria: ${standTest.meetsPOTS ? t.soapNotes.potsCriteriaMet : t.soapNotes.potsNotMet}\n`
     } else {
       soap += `Orthostatic Testing: Not performed\n`
     }

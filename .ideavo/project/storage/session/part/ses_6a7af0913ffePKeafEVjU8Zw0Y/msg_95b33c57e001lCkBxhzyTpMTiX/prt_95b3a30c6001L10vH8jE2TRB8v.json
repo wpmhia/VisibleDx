@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3a30c6001L10vH8jE2TRB8v",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013EeBXRHUhJD3KFRU4yR5Fk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 870,
+      "limit": 20
+    },
+    "output": "<file>\n00871|   soapNotes: {\n00872|     clinician: 'Clinician',\n00873|     patientId: 'Patient ID',\n00874|     age: 'Age',\n00875|     gender: 'Gender',\n00876|     notSpecified: 'Not specified',\n00877|     notRecorded: 'Not recorded',\n00878|     pemPresent: 'Present',\n00879|     notPresent: 'Not present',\n00880|     baselineHR: 'Baseline HR',\n00881|     peakStandingHR: 'Peak Standing HR',\n00882|     hrIncrease: 'HR Increase',\n00883|     cannotCalculate: 'Cannot calculate',\n00884|     potsCriteriaMet: 'MET (≥30 bpm increase)',\n00885|     potsNotMet: 'Not met',\n00886|     severity: 'severity'\n00887|   }\n00888| }\n00889| \n</file>",
+    "metadata": {
+      "preview": "  soapNotes: {\n    clinician: 'Clinician',\n    patientId: 'Patient ID',\n    age: 'Age',\n    gender: 'Gender',\n    notSpecified: 'Not specified',\n    notRecorded: 'Not recorded',\n    pemPresent: 'Present',\n    notPresent: 'Not present',\n    baselineHR: 'Baseline HR',\n    peakStandingHR: 'Peak Standing HR',\n    hrIncrease: 'HR Increase',\n    cannotCalculate: 'Cannot calculate',\n    potsCriteriaMet: 'MET (≥30 bpm increase)',\n    potsNotMet: 'Not met',\n    severity: 'severity'\n  }\n}\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172164930,
+      "end": 1758172164932
+    }
+  }
+}

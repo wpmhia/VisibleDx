@@ -203,6 +203,16 @@ export const nl: Translation = {
         'Geelzucht of geel worden van huid/ogen'
       ]
     },
+    urgentCategories: [
+      'Infectieus/Inflammatoir',
+      'Maligniteit/Metabool', 
+      'Cardiovasculair',
+      'Cardiopulmonaal',
+      'Neurologisch',
+      'Hematologisch',
+      'Infectieus/Maligniteit',
+      'Hepatisch'
+    ],
     routineLabs: {
       title: 'Routine Screening Labs',
       description: 'Selecteer categorieën van tests om veel voorkomende verklarende aandoeningen uit te sluiten',
@@ -759,7 +769,8 @@ export const nl: Translation = {
     guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',
     assessmentModulesSection: 'Beoordelingsmodules',
     guidelinesSection: 'Richtlijnen & Referenties',
-    moreGuidelines: 'meer richtlijnen'
+    moreGuidelines: 'meer richtlijnen',
+    smartBadge: 'Slim'
   },
 
   languages: {
@@ -809,5 +820,52 @@ export const nl: Translation = {
       badge: 'Onderzoek & Onderwijs'
     },
     technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'
+  },
+
+  ppgCamera: {
+    title: 'Camera PPG Hartslag',
+    description: 'Plaats je vingertop voorzichtig over de cameralens met flitslicht aan',
+    fingerDetected: 'Vinger Gedetecteerd',
+    placeFingerPrompt: 'Plaats Vinger',
+    signalQuality: {
+      poor: 'slecht',
+      fair: 'redelijk',
+      good: 'goed'
+    },
+    status: {
+      stopped: 'gestopt',
+      starting: 'starten',
+      detecting: 'detecteren',
+      measuring: 'meten'
+    },
+    recordReading: 'Meting Opslaan',
+    instructions: {
+      flashlight: 'Zet de flitslicht van je apparaat aan',
+      placement: 'Plaats vingertop voorzichtig over cameralens',
+      stillness: 'Blijf stil en adem normaal',
+      wait: 'Wacht op stabiele meting (10+ seconden)'
+    },
+    errors: {
+      cameraAccess: 'Camera toegang geweigerd',
+      noCamera: 'Geen camera beschikbaar'
+    }
+  },
+
+  soapNotes: {
+    clinician: 'Clinicus',
+    patientId: 'Patiënt ID',
+    age: 'Leeftijd',
+    gender: 'Geslacht',
+    notSpecified: 'Niet gespecificeerd',
+    notRecorded: 'Niet opgenomen',
+    pemPresent: 'Aanwezig',
+    notPresent: 'Niet aanwezig',
+    baselineHR: 'Baseline HS',
+    peakStandingHR: 'Piek Staande HS',
+    hrIncrease: 'HS Toename',
+    cannotCalculate: 'Kan niet berekenen',
+    potsCriteriaMet: 'VOLDAAN (≥30 spm toename)',
+    potsNotMet: 'Niet voldaan',
+    severity: 'ernst'
   }
 }

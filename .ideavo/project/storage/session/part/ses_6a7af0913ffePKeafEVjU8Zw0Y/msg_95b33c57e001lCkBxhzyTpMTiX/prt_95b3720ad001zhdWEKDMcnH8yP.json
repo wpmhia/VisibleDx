@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3720ad001zhdWEKDMcnH8yP",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Q8du17wV3mRMnAM96AgFxv",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 754,
+      "limit": 15
+    },
+    "output": "<file>\n00755|         'HR stigning ≥30 slag/min ved at stå',\n00756|         'Ortostatiske symptomer',\n00757|         'Kronisk varighed ≥3 måneder',\n00758|         'Ingen ortostatisk hypotension'\n00759|       ]\n00760|     }\n00761|   },\n00762| \n00763|   navigation: {\n00764|     assessmentModules: 'Vurderingsmoduler',\n00765|     guidelines: 'Retningslinjer',\n00766|     diagnosticTools: 'Diagnostiske Værktøjer',\n00767|     clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',\n00768|     guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',\n00769|     assessmentModulesSection: 'Vurderingsmoduler',\n\n(File has more lines. Use 'offset' parameter to read beyond line 769)\n</file>",
+    "metadata": {
+      "preview": "        'HR stigning ≥30 slag/min ved at stå',\n        'Ortostatiske symptomer',\n        'Kronisk varighed ≥3 måneder',\n        'Ingen ortostatisk hypotension'\n      ]\n    }\n  },\n\n  navigation: {\n    assessmentModules: 'Vurderingsmoduler',\n    guidelines: 'Retningslinjer',\n    diagnosticTools: 'Diagnostiske Værktøjer',\n    clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',\n    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',\n    assessmentModulesSection: 'Vurderingsmoduler',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171964107,
+      "end": 1758171964114
+    }
+  }
+}

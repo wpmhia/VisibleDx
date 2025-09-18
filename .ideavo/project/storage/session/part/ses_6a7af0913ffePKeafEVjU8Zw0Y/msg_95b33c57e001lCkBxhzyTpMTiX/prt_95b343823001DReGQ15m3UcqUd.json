@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b343823001DReGQ15m3UcqUd",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016ErB7fcPckg7Ph1VqVvJib",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 595,
+      "limit": 10
+    },
+    "output": "<file>\n00596| export type SupportedLanguage = 'en' | 'nl' | 'da'\n00597| \n00598| export const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [\n00599|   { code: 'en', name: 'English', flag: '🇺🇸' },\n00600|   { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },\n00601|   { code: 'da', name: 'Dansk', flag: '🇩🇰' }\n00602| ]\n</file>",
+    "metadata": {
+      "preview": "export type SupportedLanguage = 'en' | 'nl' | 'da'\n\nexport const SUPPORTED_LANGUAGES: { code: SupportedLanguage; name: string; flag: string }[] = [\n  { code: 'en', name: 'English', flag: '🇺🇸' },\n  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },\n  { code: 'da', name: 'Dansk', flag: '🇩🇰' }\n]"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171773896,
+      "end": 1758171773900
+    }
+  }
+}

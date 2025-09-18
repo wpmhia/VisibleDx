@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b36749a001qq2n7NgumiKG5x",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WRLsoFYRwciTkD8tRFrXid",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "    soap += `Post-Exertional Malaise: ${pemQuest.present ? `Present (${pemQuest.severity} severity)` : 'Not present'}\\n`",
+      "newString": "    soap += `Post-Exertional Malaise: ${pemQuest.present ? `${t.soapNotes.pemPresent} (${pemQuest.severity} ${t.soapNotes.severity})` : t.soapNotes.notPresent}\\n`"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -232,9 +232,9 @@\n } else {\n   soap += `Red Flag Symptoms: None identified\\n`\n }\n \n-soap += `Post-Exertional Malaise: ${pemQuest.present ? `Present (${pemQuest.severity} severity)` : 'Not present'}\\n`\n+soap += `Post-Exertional Malaise: ${pemQuest.present ? `${t.soapNotes.pemPresent} (${pemQuest.severity} ${t.soapNotes.severity})` : t.soapNotes.notPresent}\\n`\n soap += `Symptom Duration: ${patientData.quickScreen.answers[8] ? '≥3 months' : '<3 months or unclear'}\\n\\n`\n \n soap += `OBJECTIVE:\\n`\n if (standTest.performed) {\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758171920913,
+      "end": 1758171920920
+    }
+  }
+}

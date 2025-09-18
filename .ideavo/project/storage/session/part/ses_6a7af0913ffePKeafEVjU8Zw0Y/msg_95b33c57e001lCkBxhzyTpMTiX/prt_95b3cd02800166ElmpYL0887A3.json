@@ -1,0 +1,97 @@
+{
+  "id": "prt_95b3cd02800166ElmpYL0887A3",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01M1YcMdiAfzhM366s4MuNXx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Audit all pages for untranslated content",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-1"
+        },
+        {
+          "content": "Fix PPG camera component translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-2"
+        },
+        {
+          "content": "Fix Red Flag Checker hardcoded lab tests",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-3"
+        },
+        {
+          "content": "Fix New Patient SOAP notes translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-4"
+        },
+        {
+          "content": "Fix Navigation hardcoded text",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-5"
+        },
+        {
+          "content": "Fix TypeScript syntax error in translation files",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-6"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Audit all pages for untranslated content\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-1\"\n  },\n  {\n    \"content\": \"Fix PPG camera component translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-2\"\n  },\n  {\n    \"content\": \"Fix Red Flag Checker hardcoded lab tests\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-3\"\n  },\n  {\n    \"content\": \"Fix New Patient SOAP notes translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-4\"\n  },\n  {\n    \"content\": \"Fix Navigation hardcoded text\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-5\"\n  },\n  {\n    \"content\": \"Fix TypeScript syntax error in translation files\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"translate-6\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Audit all pages for untranslated content",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-1"
+        },
+        {
+          "content": "Fix PPG camera component translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-2"
+        },
+        {
+          "content": "Fix Red Flag Checker hardcoded lab tests",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-3"
+        },
+        {
+          "content": "Fix New Patient SOAP notes translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-4"
+        },
+        {
+          "content": "Fix Navigation hardcoded text",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-5"
+        },
+        {
+          "content": "Fix TypeScript syntax error in translation files",
+          "status": "completed",
+          "priority": "high",
+          "id": "translate-6"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758172339881,
+      "end": 1758172339897
+    }
+  }
+}

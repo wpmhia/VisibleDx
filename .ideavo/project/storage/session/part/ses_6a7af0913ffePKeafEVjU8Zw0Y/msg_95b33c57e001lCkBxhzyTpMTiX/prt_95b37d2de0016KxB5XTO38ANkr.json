@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b37d2de0016KxB5XTO38ANkr",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_019P6o8vatzUianUmMkj8zqw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "  redFlag: {\n    title: 'Red-flag Checker',\n    description: 'Screen for symptoms requiring urgent evaluation',\n    symptoms: {\n      title: 'Red Flag Symptoms',\n      description: 'Select any symptoms present that require immediate evaluation',\n      list: [\n        'Fever >38.5°C (101.3°F)',\n        'Weight loss >10% in 6 months',\n        'Night sweats',\n        'New neurological deficits',\n        'Severe headache with vision changes',\n        'Chest pain or shortness of breath',\n        'Syncope or presyncope',\n        'Blood in stool or urine',\n        'Lymphadenopathy',\n        'New skin lesions or rash',\n        'Severe abdominal pain',\n        'Jaundice'\n      ]\n    },",
+      "newString": "  redFlag: {\n    title: 'Red-flag Checker',\n    description: 'Screen for symptoms requiring urgent evaluation',\n    symptoms: {\n      title: 'Red Flag Symptoms',\n      description: 'Select any symptoms present that require immediate evaluation',\n      list: [\n        'Fever >38.5°C (101.3°F)',\n        'Weight loss >10% in 6 months',\n        'Night sweats',\n        'New neurological deficits',\n        'Severe headache with vision changes',\n        'Chest pain or shortness of breath',\n        'Syncope or presyncope',\n        'Blood in stool or urine',\n        'Lymphadenopathy',\n        'New skin lesions or rash',\n        'Severe abdominal pain',\n        'Jaundice'\n      ]\n    },\n    urgentCategories: [\n      'Infectious/Inflammatory',\n      'Malignancy/Metabolic', \n      'Cardiovascular',\n      'Cardiopulmonary',\n      'Neurological',\n      'Hematological',\n      'Infectious/Malignancy',\n      'Hepatic'\n    ],"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -69,12 +69,39 @@\n     quickScreen: {\n       title: 'Quick-Screen',\n       description: '16 yes/no questions - 2 min assessment'\n     },\n-    redFlag: {\n-      title: 'Red-flag Checker',\n-      description: 'Lab suggestions to rule out explanatory disease'\n-    },\n+redFlag: {\n+  title: 'Red-flag Checker',\n+  description: 'Screen for symptoms requiring urgent evaluation',\n+  symptoms: {\n+    title: 'Red Flag Symptoms',\n+    description: 'Select any symptoms present that require immediate evaluation',\n+    list: [\n+      'Fever >38.5°C (101.3°F)',\n+      'Weight loss >10% in 6 months',\n+      'Night sweats',\n+      'New neurological deficits',\n+      'Severe headache with vision changes',\n+      'Chest pain or shortness of breath',\n+      'Syncope or presyncope',\n+      'Blood in stool or urine',\n+      'Lymphadenopathy',\n+      'New skin lesions or rash',\n+      'Severe abdominal pain',\n+      'Jaundice'\n+    ]\n+  },\n+  urgentCategories: [\n+    'Infectious/Inflammatory',\n+    'Malignancy/Metabolic', \n+    'Cardiovascular',\n+    'Cardiopulmonary',\n+    'Neurological',\n+    'Hematological',\n+    'Infectious/Malignancy',\n+    'Hepatic'\n+  ],\n     standTest: {\n       title: 'Stand-Test Pro',\n       description: '10-min NASA Lean protocol with HR monitoring'\n     },\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172015817,
+      "end": 1758172015835
+    }
+  }
+}

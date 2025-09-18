@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b35a09f001Lx3UjW2HPYI300",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Wxgt8EWhHAokQwv7pbehFe",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "offset": 250,
+      "limit": 20
+    },
+    "output": "<file>\n00251|       animationRef.current = requestAnimationFrame(process)\n00252|     }\n00253|     process()\n00254|   }, [processFrame])\n00255| \n00256|   useEffect(() => {\n00257|     if (isActive && !isStarted) {\n00258|       startCamera()\n00259|     } else if (!isActive && isStarted) {\n00260|       stopCamera()\n00261|     }\n00262|   }, [isActive, isStarted, startCamera, stopCamera])\n00263| \n00264|   useEffect(() => {\n00265|     return () => {\n00266|       stopCamera()\n00267|     }\n00268|   }, [stopCamera])\n00269| \n00270|   const manualRecord = () => {\n\n(File has more lines. Use 'offset' parameter to read beyond line 270)\n</file>",
+    "metadata": {
+      "preview": "      animationRef.current = requestAnimationFrame(process)\n    }\n    process()\n  }, [processFrame])\n\n  useEffect(() => {\n    if (isActive && !isStarted) {\n      startCamera()\n    } else if (!isActive && isStarted) {\n      stopCamera()\n    }\n  }, [isActive, isStarted, startCamera, stopCamera])\n\n  useEffect(() => {\n    return () => {\n      stopCamera()\n    }\n  }, [stopCamera])\n\n  const manualRecord = () => {"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171865881,
+      "end": 1758171865882
+    }
+  }
+}

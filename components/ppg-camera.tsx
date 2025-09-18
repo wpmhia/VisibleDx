@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Camera, Heart, Pause, Play, AlertTriangle, CheckCircle } from 'lucide-react'
+import { useTranslation } from '@/lib/language-context'
 
 interface PPGCameraProps {
   onHeartRateDetected: (heartRate: number) => void
@@ -19,6 +20,7 @@ interface PPGSample {
 }
 
 export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChange }: PPGCameraProps) {
+  const { t } = useTranslation()
   const videoRef = useRef<HTMLVideoElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const streamRef = useRef<MediaStream | null>(null)
@@ -67,7 +69,7 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
         }
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Camera access denied')
+      setError(err instanceof Error ? err.message : t.ppgCamera.errors.cameraAccess)
       onStatusChange?.('stopped')
     }
   }, [onStatusChange])
@@ -277,10 +279,10 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Camera className="h-5 w-5" />
-          Camera PPG Heart Rate
+          {t.ppgCamera.title}
         </CardTitle>
         <CardDescription>
-          Place your fingertip gently over the camera lens with flashlight on
+          {t.ppgCamera.description}
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -317,10 +319,10 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
               {fingerDetected ? (
                 <>
                   <CheckCircle className="h-3 w-3 mr-1" />
-                  Finger Detected
+                  {t.ppgCamera.fingerDetected}
                 </>
               ) : (
-                "Place Finger"
+                t.ppgCamera.placeFingerPrompt
               )}
             </Badge>
           </div>
@@ -331,7 +333,7 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
                 variant={signalQuality === 'good' ? 'default' : signalQuality === 'fair' ? 'secondary' : 'destructive'}
                 className="mb-2"
               >
-                Signal: {signalQuality}
+                Signal: {t.ppgCamera.signalQuality[signalQuality]}
               </Badge>
             )}
           </div>
@@ -350,7 +352,7 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
               disabled={!fingerDetected || signalQuality === 'poor'}
               size="sm"
             >
-              Record Reading
+              {t.ppgCamera.recordReading}
             </Button>
           </div>
         )}
@@ -359,10 +361,10 @@ export default function PPGCamera({ onHeartRateDetected, isActive, onStatusChang
           <AlertTriangle className="h-4 w-4" />
           <AlertDescription className="text-sm">
             <strong>Instructions:</strong>
-            <br />• Turn on your device's flashlight
-            <br />• Gently place fingertip over camera lens
-            <br />• Stay still and breathe normally
-            <br />• Wait for stable reading (10+ seconds)
+            <br />• {t.ppgCamera.instructions.flashlight}
+            <br />• {t.ppgCamera.instructions.placement}
+            <br />• {t.ppgCamera.instructions.stillness}
+            <br />• {t.ppgCamera.instructions.wait}
           </AlertDescription>
         </Alert>
       </CardContent>

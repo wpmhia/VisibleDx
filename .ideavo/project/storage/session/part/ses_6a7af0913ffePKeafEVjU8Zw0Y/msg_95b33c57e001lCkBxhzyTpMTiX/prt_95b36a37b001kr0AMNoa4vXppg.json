@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b36a37b001kr0AMNoa4vXppg",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013rQnwQE2LrANZW3F2Ribnp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 45,
+      "limit": 10
+    },
+    "output": "<file>\n00046|     title: t.newPatient.title,\n00047|     description: t.newPatient.description,\n00048|     badge: 'Smart'\n00049|   },\n00050|   {\n00051|     href: '/quick-screen',\n00052|     icon: Clock,\n00053|     title: t.dashboard.modules.quickScreen.title,\n00054|     description: t.dashboard.modules.quickScreen.description,\n00055|     badge: null\n\n(File has more lines. Use 'offset' parameter to read beyond line 55)\n</file>",
+    "metadata": {
+      "preview": "    title: t.newPatient.title,\n    description: t.newPatient.description,\n    badge: 'Smart'\n  },\n  {\n    href: '/quick-screen',\n    icon: Clock,\n    title: t.dashboard.modules.quickScreen.title,\n    description: t.dashboard.modules.quickScreen.description,\n    badge: null"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758171932171,
+      "end": 1758171932173
+    }
+  }
+}

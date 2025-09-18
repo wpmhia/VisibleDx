@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3ab6ba001YboqUw6XfKse4m",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_016TwBj1Eo8fs5j3j1H68FKn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && git checkout HEAD~1 -- lib/translations/en.ts",
+      "description": "Restore previous working version"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 0,
+      "description": "Restore previous working version"
+    },
+    "title": "cd /home/user/project && git checkout HEAD~1 -- lib/translations/en.ts",
+    "time": {
+      "start": 1758172199237,
+      "end": 1758172199256
+    }
+  }
+}

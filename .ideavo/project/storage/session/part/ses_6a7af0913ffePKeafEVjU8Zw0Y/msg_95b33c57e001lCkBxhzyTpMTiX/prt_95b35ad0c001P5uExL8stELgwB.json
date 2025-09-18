@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b35ad0c001P5uExL8stELgwB",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018YwneTc1co39is6ujGGFgF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "offset": 275,
+      "limit": 30
+    },
+    "output": "<file>\n00276| \n00277|   return (\n00278|     <Card className=\"w-full\">\n00279|       <CardHeader>\n00280|         <CardTitle className=\"flex items-center gap-2\">\n00281|           <Camera className=\"h-5 w-5\" />\n00282|           Camera PPG Heart Rate\n00283|         </CardTitle>\n00284|         <CardDescription>\n00285|           Place your fingertip gently over the camera lens with flashlight on\n00286|         </CardDescription>\n00287|       </CardHeader>\n00288|       <CardContent className=\"space-y-4\">\n00289|         {error && (\n00290|           <Alert variant=\"destructive\">\n00291|             <AlertTriangle className=\"h-4 w-4\" />\n00292|             <AlertDescription>{error}</AlertDescription>\n00293|           </Alert>\n00294|         )}\n00295| \n00296|         <div className=\"relative\">\n00297|           <video\n00298|             ref={videoRef}\n00299|             className=\"w-full max-w-md mx-auto rounded-lg border\"\n00300|             style={{ transform: 'scaleX(-1)' }} // Mirror the video\n00301|             playsInline\n00302|             muted\n00303|           />\n00304|           <canvas\n00305|             ref={canvasRef}\n\n(File has more lines. Use 'offset' parameter to read beyond line 305)\n</file>",
+    "metadata": {
+      "preview": "\n  return (\n    <Card className=\"w-full\">\n      <CardHeader>\n        <CardTitle className=\"flex items-center gap-2\">\n          <Camera className=\"h-5 w-5\" />\n          Camera PPG Heart Rate\n        </CardTitle>\n        <CardDescription>\n          Place your fingertip gently over the camera lens with flashlight on\n        </CardDescription>\n      </CardHeader>\n      <CardContent className=\"space-y-4\">\n        {error && (\n          <Alert variant=\"destructive\">\n            <AlertTriangle className=\"h-4 w-4\" />\n            <AlertDescription>{error}</AlertDescription>\n          </Alert>\n        )}\n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171869060,
+      "end": 1758171869062
+    }
+  }
+}

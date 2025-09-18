@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3448cd0016iUB34ZUFMYAOg",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017UqYQrEwMquQZUABmmgfXu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "  // Footer\n  footer: {\n    about: {\n      title: string\n      description: string\n      badges: {\n        sensitivity: string\n        evidenceBased: string\n        openSource: string\n      }\n    }\n    evidence: {\n      title: string\n      guidelines: string[]\n    }\n    notes: {\n      title: string\n      items: string[]\n    }\n    bottom: {\n      version: string\n      copyright: string\n      audienceLabel: string\n      badge: string\n    }\n    technical: string\n  }",
+      "newString": "  // Footer\n  footer: {\n    about: {\n      title: string\n      description: string\n      badges: {\n        sensitivity: string\n        evidenceBased: string\n        openSource: string\n      }\n    }\n    evidence: {\n      title: string\n      guidelines: string[]\n    }\n    notes: {\n      title: string\n      items: string[]\n    }\n    bottom: {\n      version: string\n      copyright: string\n      audienceLabel: string\n      badge: string\n    }\n    technical: string\n  }\n\n  // PPG Camera\n  ppgCamera: {\n    title: string\n    description: string\n    fingerDetected: string\n    placeFingerPrompt: string\n    signalQuality: {\n      poor: string\n      fair: string\n      good: string\n    }\n    status: {\n      stopped: string\n      starting: string\n      detecting: string\n      measuring: string\n    }\n    recordReading: string\n    instructions: {\n      flashlight: string\n      placement: string\n      stillness: string\n      wait: string\n    }\n    errors: {\n      cameraAccess: string\n      noCamera: string\n    }\n  }\n\n  // SOAP Notes\n  soapNotes: {\n    clinician: string\n    patientId: string\n    age: string\n    gender: string\n    notSpecified: string\n    notRecorded: string\n    pemPresent: string\n    notPresent: string\n    baselineHR: string\n    peakStandingHR: string\n    hrIncrease: string\n    cannotCalculate: string\n    potsCriteriaMet: string\n    potsNotMet: string\n    severity: string\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -590,8 +590,57 @@\n       badge: string\n     }\n     technical: string\n   }\n+\n+  // PPG Camera\n+  ppgCamera: {\n+    title: string\n+    description: string\n+    fingerDetected: string\n+    placeFingerPrompt: string\n+    signalQuality: {\n+      poor: string\n+      fair: string\n+      good: string\n+    }\n+    status: {\n+      stopped: string\n+      starting: string\n+      detecting: string\n+      measuring: string\n+    }\n+    recordReading: string\n+    instructions: {\n+      flashlight: string\n+      placement: string\n+      stillness: string\n+      wait: string\n+    }\n+    errors: {\n+      cameraAccess: string\n+      noCamera: string\n+    }\n+  }\n+\n+  // SOAP Notes\n+  soapNotes: {\n+    clinician: string\n+    patientId: string\n+    age: string\n+    gender: string\n+    notSpecified: string\n+    notRecorded: string\n+    pemPresent: string\n+    notPresent: string\n+    baselineHR: string\n+    peakStandingHR: string\n+    hrIncrease: string\n+    cannotCalculate: string\n+    potsCriteriaMet: string\n+    potsNotMet: string\n+    severity: string\n+  }\n }\n \n export type SupportedLanguage = 'en' | 'nl' | 'da'\n \n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171786071,
+      "end": 1758171786090
+    }
+  }
+}

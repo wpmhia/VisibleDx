@@ -1,0 +1,18 @@
+{
+  "id": "prt_95b3d3d8e001eJq63lSR4s7VMc",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(translations): complete multi-language coverage for all components",
+  "cost": 3.4787623500000007,
+  "tokens": {
+    "input": 0,
+    "output": 901,
+    "reasoning": 0,
+    "cache": {
+      "write": 585,
+      "read": 114994
+    }
+  }
+}

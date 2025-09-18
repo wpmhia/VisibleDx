@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b37741b001vHw4PY0LLaW17G",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01CEJnhWMQacp6ucUfatqRwo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 15,
+      "limit": 15
+    },
+    "output": "<file>\n00016|   category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],\n00017|   priority: 'high',\n00018|   tests: [\n00019|     ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n00020|     ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n00021|     ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n00022|     ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n00023|     ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n00024|     ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n00025|     ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n00026|     ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n00027|   ][index]\n00028| }))\n00029| \n00030| const getRoutineLabs = (t: any) => [\n\n(File has more lines. Use 'offset' parameter to read beyond line 30)\n</file>",
+    "metadata": {
+      "preview": "  category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],\n  priority: 'high',\n  tests: [\n    ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n    ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n  ][index]\n}))\n\nconst getRoutineLabs = (t: any) => ["
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758171985550,
+      "end": 1758171985553
+    }
+  }
+}

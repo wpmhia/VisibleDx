@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b375f2c001lCYOXRV5Ul4M01",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01B41aFjY6Xr1WMJvTXUDAik",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 100,
+      "limit": 30
+    },
+    "output": "<file>\n00101|     title: 'ME/CFS - NASEM Report (2015)',\n00102|     url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n00103|     organization: 'NASEM'\n00104|   },\n00105|   {\n00106|     title: 'Long COVID - WHO Clinical Case Definition (2021)',\n00107|     url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n00108|     organization: 'WHO'\n00109|   },\n00110|   {\n00111|     title: 'POTS - ESC Guidelines (2018)',\n00112|     url: 'https://academic.oup.com/eurheartj/article/39/21/1840/4939241',\n00113|     organization: 'ESC'\n00114|   },\n00115|   {\n00116|     title: 'POTS - AAS/EFAS Consensus (2021)',\n00117|     url: 'https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.120.050854',\n00118|     organization: 'AAS/EFAS'\n00119|   },\n00120|   {\n00121|     title: 'Long COVID - NASEM Framework (2024)',\n00122|     url: 'https://www.nationalacademies.org/our-work/a-framework-for-measuring-progress-in-addressing-long-covid',\n00123|     organization: 'NASEM'\n00124|   }\n00125| ]\n00126| \n00127| export default function Navigation() {\n00128|   const { t } = useTranslation()\n00129|   const [isOpen, setIsOpen] = useState(false)\n00130|   const assessmentModules = getAssessmentModules(t)\n\n(File has more lines. Use 'offset' parameter to read beyond line 130)\n</file>",
+    "metadata": {
+      "preview": "    title: 'ME/CFS - NASEM Report (2015)',\n    url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n    organization: 'NASEM'\n  },\n  {\n    title: 'Long COVID - WHO Clinical Case Definition (2021)',\n    url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n    organization: 'WHO'\n  },\n  {\n    title: 'POTS - ESC Guidelines (2018)',\n    url: 'https://academic.oup.com/eurheartj/article/39/21/1840/4939241',\n    organization: 'ESC'\n  },\n  {\n    title: 'POTS - AAS/EFAS Consensus (2021)',\n    url: 'https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.120.050854',\n    organization: 'AAS/EFAS'\n  },\n  {"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758171980210,
+      "end": 1758171980212
+    }
+  }
+}

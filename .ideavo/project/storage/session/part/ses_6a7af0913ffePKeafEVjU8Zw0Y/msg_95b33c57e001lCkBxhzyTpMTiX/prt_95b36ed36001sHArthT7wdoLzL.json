@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b36ed36001sHArthT7wdoLzL",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01B8wjnJ1s2vvukKnjsctBdT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    assessmentModules: 'Assessment Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Diagnostic Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n    assessmentModulesSection: 'Assessment Modules',\n    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines'",
+      "newString": "    assessmentModules: 'Assessment Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Diagnostic Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n    assessmentModulesSection: 'Assessment Modules',\n    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines',\n    smartBadge: 'Smart'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -758,9 +758,10 @@\n   clinicalGuidelines: 'Clinical Guidelines & References',\n   guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n   assessmentModulesSection: 'Assessment Modules',\n   guidelinesSection: 'Guidelines & References',\n-  moreGuidelines: 'more guidelines'\n+  moreGuidelines: 'more guidelines',\n+  smartBadge: 'Smart'\n },\n \n languages: {\n   en: 'English',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758171952809,
+      "end": 1758171952817
+    }
+  }
+}

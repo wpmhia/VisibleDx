@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b37b2fb001QLtlcuSiGA0S5i",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018avpu9rou2SR2vuP6oou39",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 210,
+      "limit": 20
+    },
+    "output": "<file>\n00211|           title: 'Basic Metabolic',\n00212|           indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',\n00213|           tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']\n00214|         },\n00215|         endocrine: {\n00216|           title: 'Endocrine',\n00217|           indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',\n00218|           tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']\n00219|         },\n00220|         nutritional: {\n00221|           title: 'Nutritional',\n00222|           indication: 'Rule out nutritional deficiencies causing fatigue',\n00223|           tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin']\n00224|         },\n00225|         autoimmune: {\n00226|           title: 'Autoimmune',\n00227|           indication: 'Screen for autoimmune conditions',\n00228|           tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies']\n00229|         },\n00230|         cardiac: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 230)\n</file>",
+    "metadata": {
+      "preview": "          title: 'Basic Metabolic',\n          indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',\n          tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']\n        },\n        endocrine: {\n          title: 'Endocrine',\n          indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',\n          tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']\n        },\n        nutritional: {\n          title: 'Nutritional',\n          indication: 'Rule out nutritional deficiencies causing fatigue',\n          tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin']\n        },\n        autoimmune: {\n          title: 'Autoimmune',\n          indication: 'Screen for autoimmune conditions',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies']\n        },\n        cardiac: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172001741,
+      "end": 1758172001744
+    }
+  }
+}

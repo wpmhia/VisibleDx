@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b34fcf6001q18neFEvA01LXz",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01S8W3AfyTf3ZYjY6G7qikkm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "    },\n    technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n  }\n}",
+      "newString": "    },\n    technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n  },\n\n  ppgCamera: {\n    title: 'Kamera PPG Puls',\n    description: 'Placer din fingerspids forsigtigt over kameralinsen med blitz tændt',\n    fingerDetected: 'Finger Detekteret',\n    placeFingerPrompt: 'Placer Finger',\n    signalQuality: {\n      poor: 'dårlig',\n      fair: 'rimelig',\n      good: 'god'\n    },\n    status: {\n      stopped: 'stoppet',\n      starting: 'starter',\n      detecting: 'detekterer',\n      measuring: 'måler'\n    },\n    recordReading: 'Gem Måling',\n    instructions: {\n      flashlight: 'Tænd din enheds blitzlys',\n      placement: 'Placer fingerspids forsigtigt over kameralinsen',\n      stillness: 'Hold dig i ro og træk vejret normalt',\n      wait: 'Vent på stabil måling (10+ sekunder)'\n    },\n    errors: {\n      cameraAccess: 'Kamera adgang nægtet',\n      noCamera: 'Ingen kamera tilgængelig'\n    }\n  },\n\n  soapNotes: {\n    clinician: 'Kliniker',\n    patientId: 'Patient ID',\n    age: 'Alder',\n    gender: 'Køn',\n    notSpecified: 'Ikke specificeret',\n    notRecorded: 'Ikke registreret',\n    pemPresent: 'Til stede',\n    notPresent: 'Ikke til stede',\n    baselineHR: 'Baseline HR',\n    peakStandingHR: 'Peak Stående HR',\n    hrIncrease: 'HR Stigning',\n    cannotCalculate: 'Kan ikke beregne',\n    potsCriteriaMet: 'OPFYLDT (≥30 slag/min stigning)',\n    potsNotMet: 'Ikke opfyldt',\n    severity: 'sværhedsgrad'\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -817,6 +817,53 @@\n       audienceLabel: 'For Sundhedsprofessionelle',\n       badge: 'Forskning & Uddannelse'\n     },\n     technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n+  },\n+\n+  ppgCamera: {\n+    title: 'Kamera PPG Puls',\n+    description: 'Placer din fingerspids forsigtigt over kameralinsen med blitz tændt',\n+    fingerDetected: 'Finger Detekteret',\n+    placeFingerPrompt: 'Placer Finger',\n+    signalQuality: {\n+      poor: 'dårlig',\n+      fair: 'rimelig',\n+      good: 'god'\n+    },\n+    status: {\n+      stopped: 'stoppet',\n+      starting: 'starter',\n+      detecting: 'detekterer',\n+      measuring: 'måler'\n+    },\n+    recordReading: 'Gem Måling',\n+    instructions: {\n+      flashlight: 'Tænd din enheds blitzlys',\n+      placement: 'Placer fingerspids forsigtigt over kameralinsen',\n+      stillness: 'Hold dig i ro og træk vejret normalt',\n+      wait: 'Vent på stabil måling (10+ sekunder)'\n+    },\n+    errors: {\n+      cameraAccess: 'Kamera adgang nægtet',\n+      noCamera: 'Ingen kamera tilgængelig'\n+    }\n+  },\n+\n+  soapNotes: {\n+    clinician: 'Kliniker',\n+    patientId: 'Patient ID',\n+    age: 'Alder',\n+    gender: 'Køn',\n+    notSpecified: 'Ikke specificeret',\n+    notRecorded: 'Ikke registreret',\n+    pemPresent: 'Til stede',\n+    notPresent: 'Ikke til stede',\n+    baselineHR: 'Baseline HR',\n+    peakStandingHR: 'Peak Stående HR',\n+    hrIncrease: 'HR Stigning',\n+    cannotCalculate: 'Kan ikke beregne',\n+    potsCriteriaMet: 'OPFYLDT (≥30 slag/min stigning)',\n+    potsNotMet: 'Ikke opfyldt',\n+    severity: 'sværhedsgrad'\n   }\n }\n\\ No newline at end of file\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171833096,
+      "end": 1758171833102
+    }
+  }
+}

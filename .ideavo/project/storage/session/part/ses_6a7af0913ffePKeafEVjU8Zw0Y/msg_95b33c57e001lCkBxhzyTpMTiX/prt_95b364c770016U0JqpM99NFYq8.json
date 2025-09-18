@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b364c770016U0JqpM99NFYq8",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_015jttUgVpMK7rtkcBk5MdM9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 220,
+      "limit": 30
+    },
+    "output": "<file>\n00221|     soap += `Date: ${currentDate}\\n`\n00222|     soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\\n`\n00223|     soap += `Patient ID: ${demographics.patientId || 'Not specified'}\\n`\n00224|     soap += `Age: ${demographics.age || 'Not specified'} | Gender: ${demographics.gender || 'Not specified'}\\n\\n`\n00225| \n00226|     soap += `SUBJECTIVE:\\n`\n00227|     soap += `Chief Complaint: Chronic fatigue, post-exertional symptoms, and orthostatic intolerance\\n`\n00228|     soap += `Quick-Screen Risk Assessment: ${quickScreen.riskLevel.toUpperCase()} (${quickScreen.score}/16 positive responses)\\n`\n00229|     \n00230|     if (redFlags.symptoms.length > 0) {\n00231|       soap += `Red Flag Symptoms: ${redFlags.symptoms.join(', ')}\\n`\n00232|     } else {\n00233|       soap += `Red Flag Symptoms: None identified\\n`\n00234|     }\n00235|     \n00236|     soap += `Post-Exertional Malaise: ${pemQuest.present ? `Present (${pemQuest.severity} severity)` : 'Not present'}\\n`\n00237|     soap += `Symptom Duration: ${patientData.quickScreen.answers[8] ? '≥3 months' : '<3 months or unclear'}\\n\\n`\n00238| \n00239|     soap += `OBJECTIVE:\\n`\n00240|     if (standTest.performed) {\n00241|       soap += `Orthostatic Vital Signs (10-min stand test):\\n`\n00242|       soap += `  - Baseline HR: ${standTest.baselineHR || 'Not recorded'} bpm\\n`\n00243|       soap += `  - Peak Standing HR: ${standTest.peakHR || 'Not recorded'} bpm\\n`\n00244|       soap += `  - HR Increase: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : 'Cannot calculate'} bpm\\n`\n00245|       soap += `  - POTS Criteria: ${standTest.meetsPOTS ? 'MET (≥30 bpm increase)' : 'Not met'}\\n`\n00246|     } else {\n00247|       soap += `Orthostatic Testing: Not performed\\n`\n00248|     }\n00249|     \n00250|     if (redFlags.labsRecommended.length > 0) {\n\n(File has more lines. Use 'offset' parameter to read beyond line 250)\n</file>",
+    "metadata": {
+      "preview": "    soap += `Date: ${currentDate}\\n`\n    soap += `Clinician: ${demographics.clinicianName || 'Not specified'}\\n`\n    soap += `Patient ID: ${demographics.patientId || 'Not specified'}\\n`\n    soap += `Age: ${demographics.age || 'Not specified'} | Gender: ${demographics.gender || 'Not specified'}\\n\\n`\n\n    soap += `SUBJECTIVE:\\n`\n    soap += `Chief Complaint: Chronic fatigue, post-exertional symptoms, and orthostatic intolerance\\n`\n    soap += `Quick-Screen Risk Assessment: ${quickScreen.riskLevel.toUpperCase()} (${quickScreen.score}/16 positive responses)\\n`\n    \n    if (redFlags.symptoms.length > 0) {\n      soap += `Red Flag Symptoms: ${redFlags.symptoms.join(', ')}\\n`\n    } else {\n      soap += `Red Flag Symptoms: None identified\\n`\n    }\n    \n    soap += `Post-Exertional Malaise: ${pemQuest.present ? `Present (${pemQuest.severity} severity)` : 'Not present'}\\n`\n    soap += `Symptom Duration: ${patientData.quickScreen.answers[8] ? '≥3 months' : '<3 months or unclear'}\\n\\n`\n\n    soap += `OBJECTIVE:\\n`\n    if (standTest.performed) {"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758171910102,
+      "end": 1758171910104
+    }
+  }
+}

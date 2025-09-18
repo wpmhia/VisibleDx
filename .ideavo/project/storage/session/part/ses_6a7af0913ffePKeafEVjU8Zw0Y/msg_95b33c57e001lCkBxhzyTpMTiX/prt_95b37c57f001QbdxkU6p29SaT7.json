@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b37c57f001QbdxkU6p29SaT7",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014WG3evVcfvoahrds59JMU7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 170,
+      "limit": 20
+    },
+    "output": "<file>\n00171|       high: [\n00172|         'Proceed to Red-flag Checker',\n00173|         'Complete Stand-Test Pro',\n00174|         'Consider PEM-Quest assessment'\n00175|       ],\n00176|       medium: [\n00177|         'Consider Red-flag Checker',\n00178|         'Monitor symptoms closely',\n00179|         'Follow-up in 4-6 weeks'\n00180|       ],\n00181|       low: [\n00182|         'Routine clinical assessment',\n00183|         'Consider other diagnoses',\n00184|         'Reassess if symptoms worsen'\n00185|       ]\n00186|     }\n00187|   },\n00188| \n00189|   redFlag: {\n00190|     title: 'Red-flag Checker',\n\n(File has more lines. Use 'offset' parameter to read beyond line 190)\n</file>",
+    "metadata": {
+      "preview": "      high: [\n        'Proceed to Red-flag Checker',\n        'Complete Stand-Test Pro',\n        'Consider PEM-Quest assessment'\n      ],\n      medium: [\n        'Consider Red-flag Checker',\n        'Monitor symptoms closely',\n        'Follow-up in 4-6 weeks'\n      ],\n      low: [\n        'Routine clinical assessment',\n        'Consider other diagnoses',\n        'Reassess if symptoms worsen'\n      ]\n    }\n  },\n\n  redFlag: {\n    title: 'Red-flag Checker',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172006323,
+      "end": 1758172006326
+    }
+  }
+}

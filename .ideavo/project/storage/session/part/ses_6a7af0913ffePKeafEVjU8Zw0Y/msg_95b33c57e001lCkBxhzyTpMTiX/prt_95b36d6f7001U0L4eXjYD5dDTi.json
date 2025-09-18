@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b36d6f7001U0L4eXjYD5dDTi",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01185FWNyyCf4sy4kogg4nAN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 754,
+      "limit": 15
+    },
+    "output": "<file>\n00755|     assessmentModules: 'Assessment Modules',\n00756|     guidelines: 'Guidelines',\n00757|     diagnosticTools: 'Diagnostic Tools',\n00758|     clinicalGuidelines: 'Clinical Guidelines & References',\n00759|     guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n00760|     assessmentModulesSection: 'Assessment Modules',\n00761|     guidelinesSection: 'Guidelines & References',\n00762|     moreGuidelines: 'more guidelines'\n00763|   },\n00764| \n00765|   languages: {\n00766|     en: 'English',\n00767|     nl: 'Nederlands',\n00768|     da: 'Dansk'\n00769|   },\n\n(File has more lines. Use 'offset' parameter to read beyond line 769)\n</file>",
+    "metadata": {
+      "preview": "    assessmentModules: 'Assessment Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Diagnostic Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n    assessmentModulesSection: 'Assessment Modules',\n    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk'\n  },"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758171945278,
+      "end": 1758171945280
+    }
+  }
+}

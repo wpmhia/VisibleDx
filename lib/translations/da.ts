@@ -206,6 +206,16 @@ export const da: Translation = {
         'Gulsot eller gulning af hud/øjne'
       ]
     },
+    urgentCategories: [
+      'Infektiøs/Inflammatorisk',
+      'Malignitet/Metabolisk', 
+      'Kardiovaskulær',
+      'Kardiopulmonær',
+      'Neurologisk',
+      'Hæmatologisk',
+      'Infektiøs/Malignitet',
+      'Hepatisk'
+    ],
     routineLabs: {
       title: 'Rutine Screening Laboratorier',
       description: 'Vælg kategorier af tests for at udelukke almindelige forklarende tilstande',
@@ -768,7 +778,8 @@ export const da: Translation = {
     guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',
     assessmentModulesSection: 'Vurderingsmoduler',
     guidelinesSection: 'Retningslinjer & Referencer',
-    moreGuidelines: 'flere retningslinjer'
+    moreGuidelines: 'flere retningslinjer',
+    smartBadge: 'Smart'
   },
 
   languages: {
@@ -818,5 +829,52 @@ export const da: Translation = {
       badge: 'Forskning & Uddannelse'
     },
     technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'
+  },
+
+  ppgCamera: {
+    title: 'Kamera PPG Puls',
+    description: 'Placer din fingerspids forsigtigt over kameralinsen med blitz tændt',
+    fingerDetected: 'Finger Detekteret',
+    placeFingerPrompt: 'Placer Finger',
+    signalQuality: {
+      poor: 'dårlig',
+      fair: 'rimelig',
+      good: 'god'
+    },
+    status: {
+      stopped: 'stoppet',
+      starting: 'starter',
+      detecting: 'detekterer',
+      measuring: 'måler'
+    },
+    recordReading: 'Gem Måling',
+    instructions: {
+      flashlight: 'Tænd din enheds blitzlys',
+      placement: 'Placer fingerspids forsigtigt over kameralinsen',
+      stillness: 'Hold dig i ro og træk vejret normalt',
+      wait: 'Vent på stabil måling (10+ sekunder)'
+    },
+    errors: {
+      cameraAccess: 'Kamera adgang nægtet',
+      noCamera: 'Ingen kamera tilgængelig'
+    }
+  },
+
+  soapNotes: {
+    clinician: 'Kliniker',
+    patientId: 'Patient ID',
+    age: 'Alder',
+    gender: 'Køn',
+    notSpecified: 'Ikke specificeret',
+    notRecorded: 'Ikke registreret',
+    pemPresent: 'Til stede',
+    notPresent: 'Ikke til stede',
+    baselineHR: 'Baseline HR',
+    peakStandingHR: 'Peak Stående HR',
+    hrIncrease: 'HR Stigning',
+    cannotCalculate: 'Kan ikke beregne',
+    potsCriteriaMet: 'OPFYLDT (≥30 slag/min stigning)',
+    potsNotMet: 'Ikke opfyldt',
+    severity: 'sværhedsgrad'
   }
 }

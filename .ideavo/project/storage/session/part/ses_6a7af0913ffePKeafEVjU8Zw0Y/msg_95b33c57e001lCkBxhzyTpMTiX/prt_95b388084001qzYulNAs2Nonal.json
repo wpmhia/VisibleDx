@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b388084001qzYulNAs2Nonal",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0183zV8f82VGd3yfYcVPoUp1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "offset": 10,
+      "limit": 25
+    },
+    "output": "<file>\n00011| import { useTranslation } from '@/lib/language-context'\n00012| \n00013| const getRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n00014|   id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],\n00015|   symptom,\n00016|   category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],\n00017|   priority: 'high',\n00018|   tests: [\n00019|     ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n00020|     ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n00021|     ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n00022|     ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n00023|     ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n00024|     ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n00025|     ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n00026|     ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n00027|   ][index]\n00028| }))\n00029| \n00030| const getRoutineLabs = (t: any) => [\n00031|   {\n00032|     category: t.redFlag.routineLabs.categories.basicMetabolic.title,\n00033|     tests: t.redFlag.routineLabs.categories.basicMetabolic.tests,\n00034|     indication: t.redFlag.routineLabs.categories.basicMetabolic.indication\n00035|   },\n\n(File has more lines. Use 'offset' parameter to read beyond line 35)\n</file>",
+    "metadata": {
+      "preview": "import { useTranslation } from '@/lib/language-context'\n\nconst getRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: string, index: number) => ({\n  id: ['fever', 'weight_loss', 'chest_pain', 'dyspnea', 'neurological', 'bleeding', 'lymphadenopathy', 'jaundice'][index],\n  symptom,\n  category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],\n  priority: 'high',\n  tests: [\n    ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n    ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n  ][index]\n}))\n\nconst getRoutineLabs = (t: any) => ["
+    },
+    "title": "app/red-flag-checker/page.tsx",
+    "time": {
+      "start": 1758172054459,
+      "end": 1758172054461
+    }
+  }
+}

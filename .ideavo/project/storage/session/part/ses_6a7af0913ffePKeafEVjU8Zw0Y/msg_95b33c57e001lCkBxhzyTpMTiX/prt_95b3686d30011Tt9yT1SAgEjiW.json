@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3686d30011Tt9yT1SAgEjiW",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013QCnyJN9ZNAcAdAqHBCq12",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "      soap += `  - Baseline HR: ${standTest.baselineHR || 'Not recorded'} bpm\\n`\n      soap += `  - Peak Standing HR: ${standTest.peakHR || 'Not recorded'} bpm\\n`\n      soap += `  - HR Increase: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : 'Cannot calculate'} bpm\\n`\n      soap += `  - POTS Criteria: ${standTest.meetsPOTS ? 'MET (≥30 bpm increase)' : 'Not met'}\\n`",
+      "newString": "      soap += `  - ${t.soapNotes.baselineHR}: ${standTest.baselineHR || t.soapNotes.notRecorded} bpm\\n`\n      soap += `  - ${t.soapNotes.peakStandingHR}: ${standTest.peakHR || t.soapNotes.notRecorded} bpm\\n`\n      soap += `  - ${t.soapNotes.hrIncrease}: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : t.soapNotes.cannotCalculate} bpm\\n`\n      soap += `  - POTS Criteria: ${standTest.meetsPOTS ? t.soapNotes.potsCriteriaMet : t.soapNotes.potsNotMet}\\n`"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -238,12 +238,12 @@\n \n soap += `OBJECTIVE:\\n`\n if (standTest.performed) {\n   soap += `Orthostatic Vital Signs (10-min stand test):\\n`\n-  soap += `  - Baseline HR: ${standTest.baselineHR || 'Not recorded'} bpm\\n`\n-  soap += `  - Peak Standing HR: ${standTest.peakHR || 'Not recorded'} bpm\\n`\n-  soap += `  - HR Increase: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : 'Cannot calculate'} bpm\\n`\n-  soap += `  - POTS Criteria: ${standTest.meetsPOTS ? 'MET (≥30 bpm increase)' : 'Not met'}\\n`\n+  soap += `  - ${t.soapNotes.baselineHR}: ${standTest.baselineHR || t.soapNotes.notRecorded} bpm\\n`\n+  soap += `  - ${t.soapNotes.peakStandingHR}: ${standTest.peakHR || t.soapNotes.notRecorded} bpm\\n`\n+  soap += `  - ${t.soapNotes.hrIncrease}: ${standTest.peakHR && standTest.baselineHR ? standTest.peakHR - standTest.baselineHR : t.soapNotes.cannotCalculate} bpm\\n`\n+  soap += `  - POTS Criteria: ${standTest.meetsPOTS ? t.soapNotes.potsCriteriaMet : t.soapNotes.potsNotMet}\\n`\n } else {\n   soap += `Orthostatic Testing: Not performed\\n`\n }\n \n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758171928061,
+      "end": 1758171928069
+    }
+  }
+}

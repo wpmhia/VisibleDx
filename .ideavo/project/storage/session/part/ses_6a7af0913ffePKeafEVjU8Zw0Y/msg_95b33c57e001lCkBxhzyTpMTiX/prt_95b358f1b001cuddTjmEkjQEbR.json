@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b358f1b001cuddTjmEkjQEbR",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WDVr4Yq7FakFTZGWofyGdd",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "      setError(err instanceof Error ? err.message : 'Camera access denied')",
+      "newString": "      setError(err instanceof Error ? err.message : t.ppgCamera.errors.cameraAccess)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -68,9 +68,9 @@\n         startProcessing()\n       }\n     }\n   } catch (err) {\n-    setError(err instanceof Error ? err.message : 'Camera access denied')\n+    setError(err instanceof Error ? err.message : t.ppgCamera.errors.cameraAccess)\n     onStatusChange?.('stopped')\n   }\n }, [onStatusChange])\n \n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171862091,
+      "end": 1758171862097
+    }
+  }
+}

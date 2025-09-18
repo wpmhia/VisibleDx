@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3b5564001JhotOfAmMYoqsz",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KNYExshmAtkzyXxhnVnFCb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 770,
+      "limit": 20
+    },
+    "output": "<file>\n00771|     guidelinesSection: 'Guidelines & References',\n00772|     moreGuidelines: 'more guidelines'\n00773|   },\n00774| \n00775|   languages: {\n00776|     en: 'English',\n00777|     nl: 'Nederlands',\n00778|     da: 'Dansk',\n00779|     de: 'Deutsch',\n00780|     sv: 'Svenska',\n00781|     no: 'Norsk',\n00782|     fr: 'Français'\n00783|   },\n00784| \n00785|   disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation',\n00786| \n00787|   footer: {\n00788|     about: {\n00789|       title: 'About VisibleDx',\n00790|       description: 'VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to assist clinicians in systematic evaluation.',\n\n(File has more lines. Use 'offset' parameter to read beyond line 790)\n</file>",
+    "metadata": {
+      "preview": "    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk',\n    de: 'Deutsch',\n    sv: 'Svenska',\n    no: 'Norsk',\n    fr: 'Français'\n  },\n\n  disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation',\n\n  footer: {\n    about: {\n      title: 'About VisibleDx',\n      description: 'VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to assist clinicians in systematic evaluation.',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172239845,
+      "end": 1758172239846
+    }
+  }
+}

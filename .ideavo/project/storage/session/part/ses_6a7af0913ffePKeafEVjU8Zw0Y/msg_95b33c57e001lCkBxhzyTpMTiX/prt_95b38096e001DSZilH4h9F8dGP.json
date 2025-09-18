@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b38096e001DSZilH4h9F8dGP",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HGvY3m4PdjVSmzn88TFK53",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      ]\n    },\n    routineLabs: {",
+      "newString": "      ]\n    },\n    urgentCategories: [\n      'Infectieus/Inflammatoir',\n      'Maligniteit/Metabool', \n      'Cardiovasculair',\n      'Cardiopulmonaal',\n      'Neurologisch',\n      'Hematologisch',\n      'Infectieus/Maligniteit',\n      'Hepatisch'\n    ],\n    routineLabs: {"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -202,8 +202,18 @@\n     'Vergrote lymfeklieren',\n     'Geelzucht of geel worden van huid/ogen'\n   ]\n },\n+urgentCategories: [\n+  'Infectieus/Inflammatoir',\n+  'Maligniteit/Metabool', \n+  'Cardiovasculair',\n+  'Cardiopulmonaal',\n+  'Neurologisch',\n+  'Hematologisch',\n+  'Infectieus/Maligniteit',\n+  'Hepatisch'\n+],\n routineLabs: {\n   title: 'Routine Screening Labs',\n   description: 'Selecteer categorieën van tests om veel voorkomende verklarende aandoeningen uit te sluiten',\n   categories: {\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758172025080,
+      "end": 1758172025088
+    }
+  }
+}

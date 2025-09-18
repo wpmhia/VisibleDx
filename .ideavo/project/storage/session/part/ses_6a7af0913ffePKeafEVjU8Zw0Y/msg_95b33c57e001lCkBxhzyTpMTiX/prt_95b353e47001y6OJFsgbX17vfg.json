@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b353e47001y6OJFsgbX17vfg",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0145oqC9EHDpmUq3toC1QYiz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "import { Camera, Heart, Pause, Play, AlertTriangle, CheckCircle } from 'lucide-react'",
+      "newString": "import { Camera, Heart, Pause, Play, AlertTriangle, CheckCircle } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -5,8 +5,9 @@\n import { Button } from '@/components/ui/button'\n import { Badge } from '@/components/ui/badge'\n import { Alert, AlertDescription } from '@/components/ui/alert'\n import { Camera, Heart, Pause, Play, AlertTriangle, CheckCircle } from 'lucide-react'\n+import { useTranslation } from '@/lib/language-context'\n \n interface PPGCameraProps {\n   onHeartRateDetected: (heartRate: number) => void\n   isActive: boolean\n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171841705,
+      "end": 1758171841709
+    }
+  }
+}

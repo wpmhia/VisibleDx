@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b3b2145001RleBqtr4VbmlnG",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Ah! The issue is that I added the `urgentCategories` property to the TypeScript interface but the actual translation files are missing it. Let me add it properly to all files. First, let me add it to the English file:",
+  "time": {
+    "start": 1758172227255,
+    "end": 1758172227255
+  }
+}

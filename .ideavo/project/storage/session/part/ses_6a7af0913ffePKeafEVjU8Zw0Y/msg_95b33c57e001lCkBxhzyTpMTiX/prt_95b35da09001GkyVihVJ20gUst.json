@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b35da09001GkyVihVJ20gUst",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015FH9CnXdfEvyu5Q7XktQ2z",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "            <Badge variant={fingerDetected ? \"default\" : \"secondary\"} className=\"mb-2\">\n              {fingerDetected ? (\n                <>\n                  <CheckCircle className=\"h-3 w-3 mr-1\" />\n                  Finger Detected\n                </>\n              ) : (\n                \"Place Finger\"\n              )}\n            </Badge>",
+      "newString": "            <Badge variant={fingerDetected ? \"default\" : \"secondary\"} className=\"mb-2\">\n              {fingerDetected ? (\n                <>\n                  <CheckCircle className=\"h-3 w-3 mr-1\" />\n                  {t.ppgCamera.fingerDetected}\n                </>\n              ) : (\n                t.ppgCamera.placeFingerPrompt\n              )}\n            </Badge>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -318,12 +318,12 @@\n   <Badge variant={fingerDetected ? \"default\" : \"secondary\"} className=\"mb-2\">\n     {fingerDetected ? (\n       <>\n         <CheckCircle className=\"h-3 w-3 mr-1\" />\n-        Finger Detected\n+        {t.ppgCamera.fingerDetected}\n       </>\n     ) : (\n-      \"Place Finger\"\n+      t.ppgCamera.placeFingerPrompt\n     )}\n   </Badge>\n </div>\n \n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171882063,
+      "end": 1758171882067
+    }
+  }
+}

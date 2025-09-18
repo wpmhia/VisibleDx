@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b372e19001o7WE6K4IPxpl8m",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01G2a9CdpsFkWjuCyKqrwAKB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 770,
+      "limit": 10
+    },
+    "output": "<file>\n00771|     moreGuidelines: 'flere retningslinjer'\n00772|   },\n00773| \n00774|   languages: {\n00775|     en: 'English',\n00776|     nl: 'Nederlands',\n00777|     da: 'Dansk'\n00778|   },\n00779| \n00780|   disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',\n\n(File has more lines. Use 'offset' parameter to read beyond line 780)\n</file>",
+    "metadata": {
+      "preview": "    moreGuidelines: 'flere retningslinjer'\n  },\n\n  languages: {\n    en: 'English',\n    nl: 'Nederlands',\n    da: 'Dansk'\n  },\n\n  disclaimer: 'Dette værktøj er kun til uddannelsesmæssige formål og erstatter ikke professionel medicinsk vurdering eller klinisk evaluering',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758171967634,
+      "end": 1758171967636
+    }
+  }
+}

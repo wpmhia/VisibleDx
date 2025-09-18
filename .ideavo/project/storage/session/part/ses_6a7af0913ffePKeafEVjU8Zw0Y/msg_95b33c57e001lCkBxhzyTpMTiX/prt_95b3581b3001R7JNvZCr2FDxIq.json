@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3581b3001R7JNvZCr2FDxIq",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01ShtWr3YWvcLhvXsynmcrKU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "offset": 70,
+      "limit": 5
+    },
+    "output": "<file>\n00071|     } catch (err) {\n00072|       setError(err instanceof Error ? err.message : 'Camera access denied')\n00073|       onStatusChange?.('stopped')\n00074|     }\n00075|   }, [onStatusChange])\n\n(File has more lines. Use 'offset' parameter to read beyond line 75)\n</file>",
+    "metadata": {
+      "preview": "    } catch (err) {\n      setError(err instanceof Error ? err.message : 'Camera access denied')\n      onStatusChange?.('stopped')\n    }\n  }, [onStatusChange])"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171858025,
+      "end": 1758171858026
+    }
+  }
+}

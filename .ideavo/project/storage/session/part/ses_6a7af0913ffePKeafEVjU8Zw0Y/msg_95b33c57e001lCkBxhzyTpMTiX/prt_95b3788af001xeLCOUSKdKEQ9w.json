@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b3788af001xeLCOUSKdKEQ9w",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01F4C4SjjUR1kK9FFz9wrVhy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "  // Red Flag Checker\n  redFlag: {\n    title: string\n    description: string\n    symptoms: {\n      title: string\n      description: string\n      list: string[]\n    }\n    routineLabs: {\n      title: string\n      description: string\n      categories: {\n        basicMetabolic: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        endocrine: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        nutritional: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        autoimmune: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        cardiac: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        infectious: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n      }\n    }\n    results: {\n      complete: string\n      urgentEval: string\n      priorityTests: string\n      routineTests: string\n      noRedFlags: string\n      clinicalSupport: string\n      urgent: string\n      priority: string\n      routine: string\n      reassess: string\n      generateRecommendations: string\n    }\n  }",
+      "newString": "  // Red Flag Checker\n  redFlag: {\n    title: string\n    description: string\n    symptoms: {\n      title: string\n      description: string\n      list: string[]\n    }\n    urgentCategories: string[]\n    routineLabs: {\n      title: string\n      description: string\n      categories: {\n        basicMetabolic: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        endocrine: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        nutritional: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        autoimmune: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        cardiac: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        infectious: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n      }\n    }\n    results: {\n      complete: string\n      urgentEval: string\n      priorityTests: string\n      routineTests: string\n      noRedFlags: string\n      clinicalSupport: string\n      urgent: string\n      priority: string\n      routine: string\n      reassess: string\n      generateRecommendations: string\n    }\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -167,8 +167,9 @@\n   title: string\n   description: string\n   list: string[]\n }\n+urgentCategories: string[]\n routineLabs: {\n   title: string\n   description: string\n   categories: {\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758171997861,
+      "end": 1758171997894
+    }
+  }
+}

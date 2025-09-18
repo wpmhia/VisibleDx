@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3820ef00168D0sWAOpxeSXA",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_019Pg3psdKjsgWEnPzwMDCRp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 188,
+      "limit": 25
+    },
+    "output": "<file>\n00189|     }\n00190|   },\n00191| \n00192|   redFlag: {\n00193|     title: 'Rødt Flag Checker',\n00194|     description: 'Identificer symptomer, der kræver akut evaluering og udeluk forklarende sygdomme',\n00195|     symptoms: {\n00196|       title: 'Rødt Flag Symptomer',\n00197|       description: 'Markér alle tilstedeværende symptomer, der kan kræve akut evaluering',\n00198|       list: [\n00199|         'Vedvarende feber eller natlig svedtendens',\n00200|         'Utilsigtet vægttab >10% på 6 måneder',\n00201|         'Brystsmerter ved anstrengelse eller i hvile',\n00202|         'Progressiv åndenød',\n00203|         'Nye neurologiske symptomer (svaghed, følelsesløshed, kramper)',\n00204|         'Abnorm blødning eller blå mærker',\n00205|         'Forstørrede lymfeknuder',\n00206|         'Gulsot eller gulning af hud/øjne'\n00207|       ]\n00208|     },\n00209|     routineLabs: {\n00210|       title: 'Rutine Screening Laboratorier',\n00211|       description: 'Vælg kategorier af tests for at udelukke almindelige forklarende tilstande',\n00212|       categories: {\n00213|         basicMetabolic: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 213)\n</file>",
+    "metadata": {
+      "preview": "    }\n  },\n\n  redFlag: {\n    title: 'Rødt Flag Checker',\n    description: 'Identificer symptomer, der kræver akut evaluering og udeluk forklarende sygdomme',\n    symptoms: {\n      title: 'Rødt Flag Symptomer',\n      description: 'Markér alle tilstedeværende symptomer, der kan kræve akut evaluering',\n      list: [\n        'Vedvarende feber eller natlig svedtendens',\n        'Utilsigtet vægttab >10% på 6 måneder',\n        'Brystsmerter ved anstrengelse eller i hvile',\n        'Progressiv åndenød',\n        'Nye neurologiske symptomer (svaghed, følelsesløshed, kramper)',\n        'Abnorm blødning eller blå mærker',\n        'Forstørrede lymfeknuder',\n        'Gulsot eller gulning af hud/øjne'\n      ]\n    },"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758172029678,
+      "end": 1758172029680
+    }
+  }
+}

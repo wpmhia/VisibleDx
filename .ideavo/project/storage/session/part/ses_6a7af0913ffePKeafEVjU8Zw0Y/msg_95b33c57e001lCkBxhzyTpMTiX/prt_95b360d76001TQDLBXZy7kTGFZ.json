@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b360d76001TQDLBXZy7kTGFZ",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GANmjaQYBZTSMrTGTnNGXw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "            >\n              Record Reading\n            </Button>",
+      "newString": "            >\n              {t.ppgCamera.recordReading}\n            </Button>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -351,9 +351,9 @@\n       onClick={manualRecord}\n       disabled={!fingerDetected || signalQuality === 'poor'}\n       size=\"sm\"\n     >\n-      Record Reading\n+      {t.ppgCamera.recordReading}\n     </Button>\n   </div>\n )}\n \n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171894040,
+      "end": 1758171894044
+    }
+  }
+}

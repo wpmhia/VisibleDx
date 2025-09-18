@@ -168,6 +168,7 @@ export interface Translation {
       description: string
       list: string[]
     }
+    urgentCategories: string[]
     routineLabs: {
       title: string
       description: string
@@ -552,6 +553,7 @@ export interface Translation {
     assessmentModulesSection: string
     guidelinesSection: string
     moreGuidelines: string
+    smartBadge: string
   }
 
   // Languages
@@ -590,6 +592,55 @@ export interface Translation {
       badge: string
     }
     technical: string
+  }
+
+  // PPG Camera
+  ppgCamera: {
+    title: string
+    description: string
+    fingerDetected: string
+    placeFingerPrompt: string
+    signalQuality: {
+      poor: string
+      fair: string
+      good: string
+    }
+    status: {
+      stopped: string
+      starting: string
+      detecting: string
+      measuring: string
+    }
+    recordReading: string
+    instructions: {
+      flashlight: string
+      placement: string
+      stillness: string
+      wait: string
+    }
+    errors: {
+      cameraAccess: string
+      noCamera: string
+    }
+  }
+
+  // SOAP Notes
+  soapNotes: {
+    clinician: string
+    patientId: string
+    age: string
+    gender: string
+    notSpecified: string
+    notRecorded: string
+    pemPresent: string
+    notPresent: string
+    baselineHR: string
+    peakStandingHR: string
+    hrIncrease: string
+    cannotCalculate: string
+    potsCriteriaMet: string
+    potsNotMet: string
+    severity: string
   }
 }
 

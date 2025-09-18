@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b3b26b9001JXfPpNhX4y8b0T",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HB2SCZJJ8UeCYM8p5dEbdJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 189,
+      "limit": 15
+    },
+    "output": "<file>\n00190|     title: 'Red-flag Checker',\n00191|     description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',\n00192|     symptoms: {\n00193|       title: 'Red Flag Symptoms',\n00194|       description: 'Check any symptoms present that may require urgent evaluation',\n00195|       list: [\n00196|         'Persistent fever or night sweats',\n00197|         'Unintentional weight loss >10% in 6 months',\n00198|         'Chest pain with exertion or at rest',\n00199|         'Progressive shortness of breath',\n00200|         'New neurological symptoms (weakness, numbness, seizures)',\n00201|         'Abnormal bleeding or bruising',\n00202|         'Enlarged lymph nodes',\n00203|         'Jaundice or yellowing of skin/eyes'\n00204|       ]\n\n(File has more lines. Use 'offset' parameter to read beyond line 204)\n</file>",
+    "metadata": {
+      "preview": "    title: 'Red-flag Checker',\n    description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',\n    symptoms: {\n      title: 'Red Flag Symptoms',\n      description: 'Check any symptoms present that may require urgent evaluation',\n      list: [\n        'Persistent fever or night sweats',\n        'Unintentional weight loss >10% in 6 months',\n        'Chest pain with exertion or at rest',\n        'Progressive shortness of breath',\n        'New neurological symptoms (weakness, numbness, seizures)',\n        'Abnormal bleeding or bruising',\n        'Enlarged lymph nodes',\n        'Jaundice or yellowing of skin/eyes'\n      ]"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172227957,
+      "end": 1758172227959
+    }
+  }
+}

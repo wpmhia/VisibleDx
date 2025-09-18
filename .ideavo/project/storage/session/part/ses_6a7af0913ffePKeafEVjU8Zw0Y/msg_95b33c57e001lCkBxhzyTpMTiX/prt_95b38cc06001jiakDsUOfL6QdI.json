@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b38cc06001jiakDsUOfL6QdI",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01A2gb88RisBXB6jUfyo9ucF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 880,
+      "limit": 10
+    },
+    "output": "<file>\n00881|     peakStandingHR: 'Peak Standing HR',\n00882|     hrIncrease: 'HR Increase',\n00883|     cannotCalculate: 'Cannot calculate',\n00884|     potsCriteriaMet: 'MET (≥30 bpm increase)',\n00885|     potsNotMet: 'Not met',\n00886|     severity: 'severity'\n00887|   }\n00888| }\n</file>",
+    "metadata": {
+      "preview": "    peakStandingHR: 'Peak Standing HR',\n    hrIncrease: 'HR Increase',\n    cannotCalculate: 'Cannot calculate',\n    potsCriteriaMet: 'MET (≥30 bpm increase)',\n    potsNotMet: 'Not met',\n    severity: 'severity'\n  }\n}"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172073601,
+      "end": 1758172073604
+    }
+  }
+}

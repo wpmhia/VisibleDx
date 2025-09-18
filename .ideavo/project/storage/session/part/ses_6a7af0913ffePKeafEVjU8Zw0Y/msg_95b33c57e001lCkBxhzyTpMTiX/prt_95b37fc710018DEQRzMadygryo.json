@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b37fc710018DEQRzMadygryo",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QYMUsFfJQp4yeo5bVuZEUD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 188,
+      "limit": 25
+    },
+    "output": "<file>\n00189|   redFlag: {\n00190|     title: 'Alarmsignaal Checker',\n00191|     description: 'Identificeer symptomen die urgente evaluatie vereisen en sluit verklarende ziekten uit',\n00192|     symptoms: {\n00193|       title: 'Alarmsignaal Symptomen',\n00194|       description: 'Vink alle aanwezige symptomen aan die mogelijk urgente evaluatie vereisen',\n00195|       list: [\n00196|         'Aanhoudende koorts of nachtzweten',\n00197|         'Onbedoeld gewichtsverlies >10% in 6 maanden',\n00198|         'Pijn op de borst bij inspanning of in rust',\n00199|         'Progressieve kortademigheid',\n00200|         'Nieuwe neurologische symptomen (zwakte, gevoelloosheid, toevallen)',\n00201|         'Abnormale bloedingen of blauwe plekken',\n00202|         'Vergrote lymfeklieren',\n00203|         'Geelzucht of geel worden van huid/ogen'\n00204|       ]\n00205|     },\n00206|     routineLabs: {\n00207|       title: 'Routine Screening Labs',\n00208|       description: 'Selecteer categorieën van tests om veel voorkomende verklarende aandoeningen uit te sluiten',\n00209|       categories: {\n00210|         basicMetabolic: {\n00211|           title: 'Basis Metabolisme',\n00212|           indication: 'Sluit anemie, infectie, ontsteking, elektrolytafwijkingen uit',\n00213|           tests: ['Volledige bloedtelling met differentiatie', 'Uitgebreid metabolisme panel', 'BSE', 'CRP']\n\n(File has more lines. Use 'offset' parameter to read beyond line 213)\n</file>",
+    "metadata": {
+      "preview": "  redFlag: {\n    title: 'Alarmsignaal Checker',\n    description: 'Identificeer symptomen die urgente evaluatie vereisen en sluit verklarende ziekten uit',\n    symptoms: {\n      title: 'Alarmsignaal Symptomen',\n      description: 'Vink alle aanwezige symptomen aan die mogelijk urgente evaluatie vereisen',\n      list: [\n        'Aanhoudende koorts of nachtzweten',\n        'Onbedoeld gewichtsverlies >10% in 6 maanden',\n        'Pijn op de borst bij inspanning of in rust',\n        'Progressieve kortademigheid',\n        'Nieuwe neurologische symptomen (zwakte, gevoelloosheid, toevallen)',\n        'Abnormale bloedingen of blauwe plekken',\n        'Vergrote lymfeklieren',\n        'Geelzucht of geel worden van huid/ogen'\n      ]\n    },\n    routineLabs: {\n      title: 'Routine Screening Labs',\n      description: 'Selecteer categorieën van tests om veel voorkomende verklarende aandoeningen uit te sluiten',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758172020459,
+      "end": 1758172020462
+    }
+  }
+}

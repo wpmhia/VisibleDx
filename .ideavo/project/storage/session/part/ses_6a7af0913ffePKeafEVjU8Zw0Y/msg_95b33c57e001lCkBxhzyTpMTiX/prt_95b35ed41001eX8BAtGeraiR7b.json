@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b35ed41001eX8BAtGeraiR7b",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MxLzGUWEK83xZ674jtKpTe",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/ppg-camera.tsx",
+      "oldString": "                Signal: {signalQuality}",
+      "newString": "                Signal: {t.ppgCamera.signalQuality[signalQuality]}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/ppg-camera.tsx\n===================================================================\n--- /home/user/project/components/ppg-camera.tsx\n+++ /home/user/project/components/ppg-camera.tsx\n@@ -332,9 +332,9 @@\n       <Badge \n         variant={signalQuality === 'good' ? 'default' : signalQuality === 'fair' ? 'secondary' : 'destructive'}\n         className=\"mb-2\"\n       >\n-        Signal: {signalQuality}\n+        Signal: {t.ppgCamera.signalQuality[signalQuality]}\n       </Badge>\n     )}\n   </div>\n </div>\n"
+    },
+    "title": "components/ppg-camera.tsx",
+    "time": {
+      "start": 1758171885839,
+      "end": 1758171885845
+    }
+  }
+}

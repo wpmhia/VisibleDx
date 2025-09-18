@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b38fc1e001VKb4yAo2YaREQa",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01CqKp1ZJmo37muFxBHL1UDD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && node -c lib/translations/en.ts",
+      "description": "Check JavaScript syntax"
+    },
+    "output": "node:internal/modules/esm/get_format:189\n  throw new ERR_UNKNOWN_FILE_EXTENSION(ext, filepath);\n        ^\n\nTypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension \".ts\" for /home/user/project/lib/translations/en.ts\n    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:189:9)\n    at defaultGetFormat (node:internal/modules/esm/get_format:232:36)\n    at checkSyntax (node:internal/main/check_syntax:69:20) {\n  code: 'ERR_UNKNOWN_FILE_EXTENSION'\n}\n\nNode.js v20.19.5\n",
+    "metadata": {
+      "output": "node:internal/modules/esm/get_format:189\n  throw new ERR_UNKNOWN_FILE_EXTENSION(ext, filepath);\n        ^\n\nTypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension \".ts\" for /home/user/project/lib/translations/en.ts\n    at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:189:9)\n    at defaultGetFormat (node:internal/modules/esm/get_format:232:36)\n    at checkSyntax (node:internal/main/check_syntax:69:20) {\n  code: 'ERR_UNKNOWN_FILE_EXTENSION'\n}\n\nNode.js v20.19.5\n",
+      "exit": 1,
+      "description": "Check JavaScript syntax"
+    },
+    "title": "cd /home/user/project && node -c lib/translations/en.ts",
+    "time": {
+      "start": 1758172085804,
+      "end": 1758172085866
+    }
+  }
+}

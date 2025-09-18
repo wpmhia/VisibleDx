@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b38dd42001reV1HY6yEMol1f",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Fq4M4Qxstwtx85uKvEJcyX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 875,
+      "limit": 15
+    },
+    "output": "<file>\n00876|     notSpecified: 'Not specified',\n00877|     notRecorded: 'Not recorded',\n00878|     pemPresent: 'Present',\n00879|     notPresent: 'Not present',\n00880|     baselineHR: 'Baseline HR',\n00881|     peakStandingHR: 'Peak Standing HR',\n00882|     hrIncrease: 'HR Increase',\n00883|     cannotCalculate: 'Cannot calculate',\n00884|     potsCriteriaMet: 'MET (≥30 bpm increase)',\n00885|     potsNotMet: 'Not met',\n00886|     severity: 'severity'\n00887|   }\n00888| }\n</file>",
+    "metadata": {
+      "preview": "    notSpecified: 'Not specified',\n    notRecorded: 'Not recorded',\n    pemPresent: 'Present',\n    notPresent: 'Not present',\n    baselineHR: 'Baseline HR',\n    peakStandingHR: 'Peak Standing HR',\n    hrIncrease: 'HR Increase',\n    cannotCalculate: 'Cannot calculate',\n    potsCriteriaMet: 'MET (≥30 bpm increase)',\n    potsNotMet: 'Not met',\n    severity: 'severity'\n  }\n}"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758172078013,
+      "end": 1758172078015
+    }
+  }
+}

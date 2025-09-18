@@ -1,0 +1,21 @@
+{
+  "id": "prt_95b384397001m9t5dDfQ96EV87",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01LJrWiXvvjfb5kn5iov4hLd",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/red-flag-checker/page.tsx",
+      "oldString": "const getUrgentLabs = () => URGENT_SYMPTOMS.map((symptom, index) => ({\n  symptom,\n  category: ['Infectious/Inflammatory', 'Malignancy/Metabolic', 'Cardiovascular', 'Cardiopulmonary', 'Neurological', 'Hematological', 'Infectious/Malignancy', 'Hepatic'][index],\n  priority: 'high',\n  tests: [\n    ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n    ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n  ][index]\n}))",
+      "newString": "const getUrgentLabs = (t: any) => URGENT_SYMPTOMS.map((symptom, index) => ({\n  symptom,\n  category: t.redFlag.urgentCategories[index] || t.redFlag.urgentCategories[0],\n  priority: 'high',\n  tests: [\n    ['CBC with differential', 'ESR', 'CRP', 'Blood cultures', 'Chest X-ray'],\n    ['CBC', 'Comprehensive metabolic panel', 'TSH', 'HbA1c', 'CT chest/abdomen/pelvis'],\n    ['ECG', 'Troponin', 'Chest X-ray', 'Echocardiogram', 'Stress test'],\n    ['Chest X-ray', 'ECG', 'Echocardiogram', 'Pulmonary function tests', 'D-dimer'],\n    ['MRI brain', 'Neurological consultation', 'EEG if seizures'],\n    ['CBC with platelet count', 'PT/PTT', 'Peripheral blood smear'],\n    ['CBC with differential', 'LDH', 'CT chest/abdomen/pelvis'],\n    ['Liver function tests', 'Hepatitis panel', 'Abdominal ultrasound']\n  ][index]\n}))"
+    },
+    "error": "Error: oldString not found in content or was found multiple times",
+    "time": {
+      "start": 1758172046430,
+      "end": 1758172046459
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b371102001pyI0rtGzMDQhlT",
+  "messageID": "msg_95b33c57e001lCkBxhzyTpMTiX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BziuzDyCSaHoTohFCgTg46",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "    moreGuidelines: 'meer richtlijnen'",
+      "newString": "    moreGuidelines: 'meer richtlijnen',\n    smartBadge: 'Slim'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -758,9 +758,10 @@\n   clinicalGuidelines: 'Klinische Richtlijnen & Referenties',\n   guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n   assessmentModulesSection: 'Beoordelingsmodules',\n   guidelinesSection: 'Richtlijnen & Referenties',\n-  moreGuidelines: 'meer richtlijnen'\n+  moreGuidelines: 'meer richtlijnen',\n+  smartBadge: 'Slim'\n },\n \n languages: {\n   en: 'English',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758171960493,
+      "end": 1758171960498
+    }
+  }
+}
