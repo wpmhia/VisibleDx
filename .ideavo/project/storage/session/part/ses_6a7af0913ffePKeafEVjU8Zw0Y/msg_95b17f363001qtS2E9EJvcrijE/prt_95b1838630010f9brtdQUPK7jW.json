@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b1838630010f9brtdQUPK7jW",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01XzpB5W73hUREJq3ia94uua",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx",
+      "oldString": "        <LanguageProvider>\n          <div className=\"min-h-screen flex flex-col\">\n            <Navigation />\n            <main className=\"flex-1\">\n              {children}\n            </main>\n            <Disclaimer />\n          </div>\n        </LanguageProvider>",
+      "newString": "        <LanguageProvider>\n          <ScrollRestoration />\n          <div className=\"min-h-screen flex flex-col\">\n            <Navigation />\n            <main className=\"flex-1\">\n              {children}\n            </main>\n            <Disclaimer />\n          </div>\n        </LanguageProvider>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/layout.tsx\n===================================================================\n--- /home/user/project/app/layout.tsx\n+++ /home/user/project/app/layout.tsx\n@@ -21,8 +21,9 @@\n return (\n   <html lang=\"en\">\n     <body className={inter.className}>\n       <LanguageProvider>\n+        <ScrollRestoration />\n         <div className=\"min-h-screen flex flex-col\">\n           <Navigation />\n           <main className=\"flex-1\">\n             {children}\n"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758169939648,
+      "end": 1758169939652
+    }
+  }
+}

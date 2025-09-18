@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b18a54f001cyYmRCFzTNSiZF",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01VcmTepeRyTJnFshtyJUU9f",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "              // Immediate scroll to top\n              setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50)",
+      "newString": "              // Immediate scroll to top\n              setTimeout(() => window.scrollTo({ top: 0, behavior: 'auto' }), 50)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -468,9 +468,9 @@\n <div className=\"flex justify-center\">\n   <Button onClick={() => {\n     setIsComplete(true)\n     // Immediate scroll to top\n-    setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50)\n+    setTimeout(() => window.scrollTo({ top: 0, behavior: 'auto' }), 50)\n   }} size=\"lg\" className=\"px-8\">\n     <Pill className=\"h-4 w-4 mr-2\" />\n     {t.common.recommendations}\n   </Button>\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758169967056,
+      "end": 1758169967061
+    }
+  }
+}

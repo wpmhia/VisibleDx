@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b18547b0013QIdfeFkWjVCrb",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01An7YELHsq6GDGM94pEivQD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/globals.css",
+      "oldString": "@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}",
+      "newString": "@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n  \n  /* Disable scroll anchoring globally */\n  html, body, * {\n    overflow-anchor: none !important;\n  }\n  \n  /* Ensure smooth scrolling is disabled by default */\n  html {\n    scroll-behavior: auto !important;\n  }\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/globals.css\n===================================================================\n--- /home/user/project/app/globals.css\n+++ /home/user/project/app/globals.css\n@@ -78,5 +78,15 @@\n   }\n   body {\n     @apply bg-background text-foreground;\n   }\n+  \n+  /* Disable scroll anchoring globally */\n+  html, body, * {\n+    overflow-anchor: none !important;\n+  }\n+  \n+  /* Ensure smooth scrolling is disabled by default */\n+  html {\n+    scroll-behavior: auto !important;\n+  }\n }\n"
+    },
+    "title": "app/globals.css",
+    "time": {
+      "start": 1758169947609,
+      "end": 1758169947614
+    }
+  }
+}

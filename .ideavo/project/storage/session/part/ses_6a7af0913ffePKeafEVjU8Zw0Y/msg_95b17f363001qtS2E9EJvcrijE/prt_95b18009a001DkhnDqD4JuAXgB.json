@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b18009a001DkhnDqD4JuAXgB",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I'll disable scroll anchoring by adding scroll position reset after route changes. Let me implement this in the Next.js App Router setup.",
+  "time": {
+    "start": 1758169924600,
+    "end": 1758169924600
+  }
+}

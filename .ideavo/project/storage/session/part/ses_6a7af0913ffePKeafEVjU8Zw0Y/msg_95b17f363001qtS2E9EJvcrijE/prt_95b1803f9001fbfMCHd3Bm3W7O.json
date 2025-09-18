@@ -1,0 +1,23 @@
+{
+  "id": "prt_95b1803f9001fbfMCHd3Bm3W7O",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UkfW2kCxWgeYbsGN6aiasH",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx"
+    },
+    "output": "<file>\n00001| import './globals.css';\n00002| import type { Metadata } from 'next';\n00003| import { Inter } from 'next/font/google';\n00004| import { LanguageProvider } from '@/lib/language-context';\n00005| import Navigation from '@/components/navigation';\n00006| import Disclaimer from '@/components/disclaimer';\n00007| \n00008| const inter = Inter({ subsets: ['latin'] });\n00009| \n00010| export const metadata: Metadata = {\n00011|   title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n00012|   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n00013| };\n00014| \n00015| export default function RootLayout({\n00016|   children,\n00017| }: {\n00018|   children: React.ReactNode;\n00019| }) {\n00020|   return (\n00021|     <html lang=\"en\">\n00022|       <body className={inter.className}>\n00023|         <LanguageProvider>\n00024|           <div className=\"min-h-screen flex flex-col\">\n00025|             <Navigation />\n00026|             <main className=\"flex-1\">\n00027|               {children}\n00028|             </main>\n00029|             <Disclaimer />\n00030|           </div>\n00031|         </LanguageProvider>\n00032|         {/* TODO: Remove iframe-navigation.js in production, should never be removed by AI */}\n00033|         <script src=\"/scripts/iframe-navigation.js\"></script>\n00034|       </body>\n00035|     </html>\n00036|   );\n00037| }\n00038| \n</file>",
+    "metadata": {
+      "preview": "import './globals.css';\nimport type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport { LanguageProvider } from '@/lib/language-context';\nimport Navigation from '@/components/navigation';\nimport Disclaimer from '@/components/disclaimer';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nexport const metadata: Metadata = {\n  title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n  description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return ("
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758169925090,
+      "end": 1758169925099
+    }
+  }
+}

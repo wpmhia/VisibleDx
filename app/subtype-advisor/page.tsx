@@ -124,7 +124,7 @@ export default function SubtypeAdvisor() {
     if (isComplete) {
       // Use setTimeout to ensure DOM is fully rendered before scrolling
       setTimeout(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        window.scrollTo({ top: 0, behavior: 'auto' })
       }, 100)
     }
   }, [isComplete])
@@ -469,7 +469,7 @@ export default function SubtypeAdvisor() {
             <Button onClick={() => {
               setIsComplete(true)
               // Immediate scroll to top
-              setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50)
+              setTimeout(() => window.scrollTo({ top: 0, behavior: 'auto' }), 50)
             }} size="lg" className="px-8">
               <Pill className="h-4 w-4 mr-2" />
               {t.common.recommendations}

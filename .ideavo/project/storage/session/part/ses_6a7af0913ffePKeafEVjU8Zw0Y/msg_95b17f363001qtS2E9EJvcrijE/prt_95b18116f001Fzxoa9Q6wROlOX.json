@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b18116f001Fzxoa9Q6wROlOX",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_011qh29VwqSQg24SLQhMaBsx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/scroll-restoration.tsx",
+      "content": "'use client'\n\nimport { useEffect } from 'react'\nimport { usePathname } from 'next/navigation'\n\nexport default function ScrollRestoration() {\n  const pathname = usePathname()\n\n  useEffect(() => {\n    // Reset scroll position on route change\n    window.scrollTo(0, 0)\n    \n    // Also disable scroll anchoring globally\n    if (typeof window !== 'undefined' && document.documentElement) {\n      document.documentElement.style.scrollBehavior = 'auto'\n      // Reset scroll anchoring\n      document.documentElement.style.setProperty('overflow-anchor', 'none')\n    }\n  }, [pathname])\n\n  useEffect(() => {\n    // Disable scroll anchoring on mount\n    if (typeof window !== 'undefined' && document.documentElement) {\n      document.documentElement.style.setProperty('overflow-anchor', 'none')\n    }\n  }, [])\n\n  return null\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/scroll-restoration.tsx",
+      "exists": false
+    },
+    "title": "components/scroll-restoration.tsx",
+    "time": {
+      "start": 1758169931264,
+      "end": 1758169931278
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "prt_95b1960c4001sm58dDAFgDafmF",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(scroll): disable scroll anchoring across application",
+  "cost": 0.42987840000000005,
+  "tokens": {
+    "input": 3,
+    "output": 433,
+    "reasoning": 0,
+    "cache": {
+      "write": 626,
+      "read": 58120
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b193837001xVf9VzfyHdn0k5",
+  "messageID": "msg_95b17f363001qtS2E9EJvcrijE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I've successfully disabled scroll anchoring across the entire application. Here's what I implemented:\n\n## ✅ Scroll Anchoring Disabled\n\n### **1. Global CSS Solution**\nAdded to `app/globals.css`:\n```css\n/* Disable scroll anchoring globally */\nhtml, body, * {\n  overflow-anchor: none !important;\n}\n\n/* Ensure smooth scrolling is disabled by default */\nhtml {\n  scroll-behavior: auto !important;\n}\n```\n\n### **2. React Component for Route Changes**\nCreated `components/scroll-restoration.tsx`:\n- **Automatic Reset**: `window.scrollTo(0, 0)` on every route change\n- **Uses Next.js**: `usePathname()` hook to detect navigation\n- **Global Override**: Sets `overflow-anchor: none` programmatically\n- **Immediate Effect**: Resets scroll behavior to `auto`\n\n### **3. Layout Integration**\nAdded `<ScrollRestoration />` to root layout:\n- **Client-side Only**: Uses `'use client'` directive\n- **Global Scope**: Applied at application root level\n- **Automatic**: No manual intervention required\n\n### **4. Updated Existing Scroll Behavior**\nModified subtype advisor:\n- **Changed**: `behavior: 'smooth'` → `behavior: 'auto'`\n- **Immediate**: Instant scroll to top without animation\n- **Consistent**: Matches global scroll anchoring disabled state\n\n## **Result:**\n- **No More Scroll Anchoring**: Pages will always open at the top\n- **Instant Navigation**: No smooth scrolling delays\n- **Consistent Behavior**: Same across all routes and components\n- **Browser Override**: Works even if browser has scroll anchoring enabled\n\nThe POTS Subtype results page (and all other pages) will now consistently open at the top position without any scroll anchoring interference!",
+  "time": {
+    "start": 1758170012751,
+    "end": 1758170012751
+  }
+}

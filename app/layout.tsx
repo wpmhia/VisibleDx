@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { LanguageProvider } from '@/lib/language-context';
 import Navigation from '@/components/navigation';
 import Disclaimer from '@/components/disclaimer';
+import ScrollRestoration from '@/components/scroll-restoration';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LanguageProvider>
+          <ScrollRestoration />
           <div className="min-h-screen flex flex-col">
             <Navigation />
             <main className="flex-1">

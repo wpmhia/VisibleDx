@@ -79,4 +79,14 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Disable scroll anchoring globally */
+  html, body, * {
+    overflow-anchor: none !important;
+  }
+  
+  /* Ensure smooth scrolling is disabled by default */
+  html {
+    scroll-behavior: auto !important;
+  }
 }
