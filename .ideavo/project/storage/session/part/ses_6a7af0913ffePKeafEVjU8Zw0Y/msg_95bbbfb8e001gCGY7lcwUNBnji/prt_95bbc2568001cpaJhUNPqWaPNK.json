@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bbc2568001cpaJhUNPqWaPNK",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01GyqKC3wJPmmcU72NxSJSVp",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/types.ts",
+          "oldString": "    creator: {\n      title: string\n      createdBy: string\n      name: string\n      organization: string\n      location: string\n      license: string\n      linkedinProfile: string\n      organizationWebsite: string\n    }",
+          "newString": "    creator: {\n      title: string\n      createdBy: string\n      name: string\n      organization: string\n      location: string\n      license: string\n      linkedinProfile: string\n      organizationWebsite: string\n      githubRepository: string\n    }"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/types.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758180683915,
+      "end": 1758180683934
+    }
+  }
+}

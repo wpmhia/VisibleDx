@@ -1,0 +1,23 @@
+{
+  "id": "prt_95bbd6033001YFKXC7saCR0JQH",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018aydqEc8ihGf6rXCzCgM4o",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/LICENSE"
+    },
+    "output": "<file>\n00001| MIT License\n00002| \n00003| Copyright (c) 2024 Willem Gielen MD\n00004| \n00005| Permission is hereby granted, free of charge, to any person obtaining a copy\n00006| of this software and associated documentation files (the \"Software\"), to deal\n00007| in the Software without restriction, including without limitation the rights\n00008| to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n00009| copies of the Software, and to permit persons to whom the Software is\n00010| furnished to do so, subject to the following conditions:\n00011| \n00012| The above copyright notice and this permission notice shall be included in all\n00013| copies or substantial portions of the Software.\n00014| \n00015| THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n00016| IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n00017| FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n00018| AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n00019| LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n00020| OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n00021| SOFTWARE.\n00022| \n00023| ---\n00024| \n00025| EDUCATIONAL DISCLAIMER:\n00026| This software is designed exclusively for healthcare education and training \n00027| purposes. It is NOT a medical device and must NOT be used for patient care, \n00028| diagnosis, or treatment decisions. Always consult qualified medical \n00029| professionals for patient care.\n00030| \n00031| CREATOR INFORMATION:\n00032| Created by: Willem Gielen MD\n00033| LinkedIn: https://www.linkedin.com/in/willem-gielen/\n00034| Organization: Nordjysk Speciallaegeklinik\n00035| Location: Hjørring, Denmark\n00036| Website: https://www.nordjyskklinik.dk/\n</file>",
+    "metadata": {
+      "preview": "MIT License\n\nCopyright (c) 2024 Willem Gielen MD\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE"
+    },
+    "title": "LICENSE",
+    "time": {
+      "start": 1758180761876,
+      "end": 1758180761879
+    }
+  }
+}

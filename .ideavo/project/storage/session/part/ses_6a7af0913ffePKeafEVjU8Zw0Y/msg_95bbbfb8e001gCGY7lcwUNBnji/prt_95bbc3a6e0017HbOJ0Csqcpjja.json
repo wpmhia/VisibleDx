@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbc3a6e0017HbOJ0Csqcpjja",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01MBSgqZa6k1bwadgZMLoqnQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 580,
+      "limit": 50
+    },
+    "output": "<file>\n00581|     about: {\n00582|       title: string\n00583|       description: string\n00584|       badges: {\n00585|         sensitivity: string\n00586|         evidenceBased: string\n00587|         openSource: string\n00588|       }\n00589|     }\n00590|     creator: {\n00591|       title: string\n00592|       createdBy: string\n00593|       name: string\n00594|       organization: string\n00595|       location: string\n00596|       license: string\n00597|       linkedinProfile: string\n00598|       organizationWebsite: string\n00599|     }\n00600|     evidence: {\n00601|       title: string\n00602|       guidelines: {\n00603|         title: string\n00604|         url: string\n00605|       }[]\n00606|     }\n00607|     notes: {\n00608|       title: string\n00609|       items: string[]\n00610|     }\n00611|     bottom: {\n00612|       version: string\n00613|       copyright: string\n00614|       audienceLabel: string\n00615|       badge: string\n00616|     }\n00617|     technical: string\n00618|   }\n00619| \n00620|   // PPG Camera\n00621|   ppgCamera: {\n00622|     title: string\n00623|     description: string\n00624|     fingerDetected: string\n00625|     placeFingerPrompt: string\n00626|     signalQuality: {\n00627|       poor: string\n00628|       fair: string\n00629|       good: string\n00630|     }\n\n(File has more lines. Use 'offset' parameter to read beyond line 630)\n</file>",
+    "metadata": {
+      "preview": "    about: {\n      title: string\n      description: string\n      badges: {\n        sensitivity: string\n        evidenceBased: string\n        openSource: string\n      }\n    }\n    creator: {\n      title: string\n      createdBy: string\n      name: string\n      organization: string\n      location: string\n      license: string\n      linkedinProfile: string\n      organizationWebsite: string\n    }\n    evidence: {"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758180687128,
+      "end": 1758180687133
+    }
+  }
+}

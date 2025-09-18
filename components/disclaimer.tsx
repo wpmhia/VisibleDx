@@ -3,7 +3,7 @@
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink } from 'lucide-react'
+import { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'
 import { useTranslation } from '@/lib/language-context'
 
 export default function Disclaimer() {
@@ -68,10 +68,21 @@ export default function Disclaimer() {
                 </a><br />
                 <span className="text-gray-500">{t.footer.creator.location}</span>
               </div>
-              <div>
+              <div className="space-y-1">
                 <Badge variant="secondary" className="text-xs">
                   {t.footer.creator.license}
                 </Badge>
+                <div>
+                  <a 
+                    href="https://github.com/wpmhia/VisibleDx" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1 text-xs"
+                  >
+                    <Github className="h-3 w-3" />
+                    {t.footer.creator.githubRepository}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

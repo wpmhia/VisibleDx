@@ -818,7 +818,8 @@ export const da: Translation = {
       location: 'Hjørring, Danmark',
       license: 'Open source under MIT Licens',
       linkedinProfile: 'LinkedIn Profil',
-      organizationWebsite: 'Organisations Hjemmeside'
+      organizationWebsite: 'Organisations Hjemmeside',
+      githubRepository: 'GitHub Repository'
     },
     evidence: {
       title: 'Evidensbase',

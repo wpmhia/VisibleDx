@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bbc75a9001pnOKm4F8n2grIC",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_012B7yE6Em5Wjyvf6QVPnZyL",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    creator: {\n      title: 'Creator & License',\n      createdBy: 'Created by',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denmark',\n      license: 'Open source under MIT License',\n      linkedinProfile: 'LinkedIn Profile',\n      organizationWebsite: 'Organization Website'\n    },",
+          "newString": "    creator: {\n      title: 'Creator & License',\n      createdBy: 'Created by',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denmark',\n      license: 'Open source under MIT License',\n      linkedinProfile: 'LinkedIn Profile',\n      organizationWebsite: 'Organization Website',\n      githubRepository: 'GitHub Repository'\n    },"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758180706019,
+      "end": 1758180706036
+    }
+  }
+}

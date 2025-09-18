@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbd1545001uuWlf5qcPq768w",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_019XoxUqd8GyQksp1KgNco8a",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 1,
+      "limit": 10
+    },
+    "output": "<file>\n00002| \n00003| import { Alert, AlertDescription } from '@/components/ui/alert'\n00004| import { Badge } from '@/components/ui/badge'\n00005| import { Separator } from '@/components/ui/separator'\n00006| import { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink } from 'lucide-react'\n00007| import { useTranslation } from '@/lib/language-context'\n00008| \n00009| export default function Disclaimer() {\n00010|   const { t } = useTranslation()\n00011| \n\n(File has more lines. Use 'offset' parameter to read beyond line 11)\n</file>",
+    "metadata": {
+      "preview": "\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { Badge } from '@/components/ui/badge'\nimport { Separator } from '@/components/ui/separator'\nimport { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\n\nexport default function Disclaimer() {\n  const { t } = useTranslation()\n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758180743217,
+      "end": 1758180743226
+    }
+  }
+}

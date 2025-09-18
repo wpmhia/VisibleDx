@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbcdc5b001UQCb7sI07TncV5",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Cg5HDnFauJc8DakG3dJbh5",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 812,
+      "limit": 20
+    },
+    "output": "<file>\n00813|     creator: {\n00814|       title: 'Skaber & Licens',\n00815|       createdBy: 'Skabt af',\n00816|       name: 'Willem Gielen MD',\n00817|       organization: 'Nordjysk Speciallaegeklinik',\n00818|       location: 'Hjørring, Danmark',\n00819|       license: 'Open source under MIT Licens',\n00820|       linkedinProfile: 'LinkedIn Profil',\n00821|       organizationWebsite: 'Organisations Hjemmeside'\n00822|     },\n00823|     evidence: {\n00824|       title: 'Evidensbase',\n00825|       guidelines: [\n00826|         {\n00827|           title: 'CDC ME/CFS Diagnose (2024)',\n00828|           url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n00829|         },\n00830|         {\n00831|           title: 'NASEM ME/CFS Rapport (2015)',\n00832|           url: 'https://nap.nationalacademies.org/read/19012'\n\n(File has more lines. Use 'offset' parameter to read beyond line 832)\n</file>",
+    "metadata": {
+      "preview": "    creator: {\n      title: 'Skaber & Licens',\n      createdBy: 'Skabt af',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Danmark',\n      license: 'Open source under MIT Licens',\n      linkedinProfile: 'LinkedIn Profil',\n      organizationWebsite: 'Organisations Hjemmeside'\n    },\n    evidence: {\n      title: 'Evidensbase',\n      guidelines: [\n        {\n          title: 'CDC ME/CFS Diagnose (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },\n        {\n          title: 'NASEM ME/CFS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758180728532,
+      "end": 1758180728543
+    }
+  }
+}

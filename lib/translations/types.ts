@@ -596,6 +596,7 @@ export interface Translation {
       license: string
       linkedinProfile: string
       organizationWebsite: string
+      githubRepository: string
     }
     evidence: {
       title: string

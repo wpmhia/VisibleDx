@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bbdbc550013BGctEEH4e4aD5",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(attribution): add GitHub repository link across languages",
+  "cost": 0.8319180000000002,
+  "tokens": {
+    "input": 0,
+    "output": 338,
+    "reasoning": 0,
+    "cache": {
+      "write": 292,
+      "read": 84308
+    }
+  }
+}

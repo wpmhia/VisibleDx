@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbc9336001qYc1j6NxJVD9sl",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AKsMyX65RJZcwqPfdwZAfx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 794,
+      "limit": 30
+    },
+    "output": "<file>\n00795|     about: {\n00796|       title: 'About VisibleDx',\n00797|       description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n00798|       badges: {\n00799|         sensitivity: '94% Sensitivity',\n00800|         evidenceBased: 'Evidence-Based',\n00801|         openSource: 'Open Source'\n00802|       }\n00803|     },\n00804|     creator: {\n00805|       title: 'Creator & License',\n00806|       createdBy: 'Created by',\n00807|       name: 'Willem Gielen MD',\n00808|       organization: 'Nordjysk Speciallaegeklinik',\n00809|       location: 'Hjørring, Denmark',\n00810|       license: 'Open source under MIT License',\n00811|       linkedinProfile: 'LinkedIn Profile',\n00812|       organizationWebsite: 'Organization Website'\n00813|     },\n00814|     evidence: {\n00815|       title: 'Evidence Base',\n00816|       guidelines: [\n00817|         {\n00818|           title: 'CDC Diagnosing ME/CFS (2024)',\n00819|           url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n00820|         },\n00821|         {\n00822|           title: 'NASEM ME/CFS Report (2015)',\n00823|           url: 'https://nap.nationalacademies.org/read/19012'\n00824|         },\n\n(File has more lines. Use 'offset' parameter to read beyond line 824)\n</file>",
+    "metadata": {
+      "preview": "    about: {\n      title: 'About VisibleDx',\n      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n      badges: {\n        sensitivity: '94% Sensitivity',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },\n    creator: {\n      title: 'Creator & License',\n      createdBy: 'Created by',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denmark',\n      license: 'Open source under MIT License',\n      linkedinProfile: 'LinkedIn Profile',\n      organizationWebsite: 'Organization Website'\n    },\n    evidence: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758180709400,
+      "end": 1758180709402
+    }
+  }
+}

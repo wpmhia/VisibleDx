@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbcb6c0001ijoUndWLgsztkr",
+  "messageID": "msg_95bbbfb8e001gCGY7lcwUNBnji",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018fN8xBZCUot7tJJV2sDqi4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 803,
+      "limit": 20
+    },
+    "output": "<file>\n00804|     creator: {\n00805|       title: 'Maker & Licentie',\n00806|       createdBy: 'Gemaakt door',\n00807|       name: 'Willem Gielen MD',\n00808|       organization: 'Nordjysk Speciallaegeklinik',\n00809|       location: 'Hjørring, Denemarken',\n00810|       license: 'Open source onder MIT Licentie',\n00811|       linkedinProfile: 'LinkedIn Profiel',\n00812|       organizationWebsite: 'Organisatie Website'\n00813|     },\n00814|     evidence: {\n00815|       title: 'Wetenschappelijke Basis',\n00816|       guidelines: [\n00817|         {\n00818|           title: 'CDC ME/CVS Diagnose (2024)',\n00819|           url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n00820|         },\n00821|         {\n00822|           title: 'NASEM ME/CVS Rapport (2015)',\n00823|           url: 'https://nap.nationalacademies.org/read/19012'\n\n(File has more lines. Use 'offset' parameter to read beyond line 823)\n</file>",
+    "metadata": {
+      "preview": "    creator: {\n      title: 'Maker & Licentie',\n      createdBy: 'Gemaakt door',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denemarken',\n      license: 'Open source onder MIT Licentie',\n      linkedinProfile: 'LinkedIn Profiel',\n      organizationWebsite: 'Organisatie Website'\n    },\n    evidence: {\n      title: 'Wetenschappelijke Basis',\n      guidelines: [\n        {\n          title: 'CDC ME/CVS Diagnose (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },\n        {\n          title: 'NASEM ME/CVS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758180718908,
+      "end": 1758180718910
+    }
+  }
+}
