@@ -784,7 +784,7 @@ export const nl: Translation = {
   footer: {
     about: {
       title: 'Over VisibleDx',
-      description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',
+      description: 'VisibleDx is een evidence-based educatief instrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om zorgprofessionals te onderwijzen in systematische evaluatie.',
       badges: {
         sensitivity: '94% Sensitiviteit',
         evidenceBased: 'Evidence-Based',

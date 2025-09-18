@@ -784,7 +784,7 @@ export const en: Translation = {
   footer: {
     about: {
       title: 'About VisibleDx',
-      description: 'VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to assist clinicians in systematic evaluation.',
+      description: 'VisibleDx is an evidence-based educational tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to educate healthcare professionals in systematic evaluation.',
       badges: {
         sensitivity: '94% Sensitivity',
         evidenceBased: 'Evidence-Based',

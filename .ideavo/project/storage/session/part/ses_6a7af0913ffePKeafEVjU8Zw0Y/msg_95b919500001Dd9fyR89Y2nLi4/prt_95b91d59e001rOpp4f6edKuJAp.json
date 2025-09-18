@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b91d59e001rOpp4f6edKuJAp",
+  "messageID": "msg_95b919500001Dd9fyR89Y2nLi4",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MhM9eh3pQVajpejJHMwZiw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',",
+      "newString": "      description: 'VisibleDx is een evidence-based educatief instrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om zorgprofessionals te onderwijzen in systematische evaluatie.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -783,9 +783,9 @@\n \n footer: {\n   about: {\n     title: 'Over VisibleDx',\n-    description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',\n+    description: 'VisibleDx is een evidence-based educatief instrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om zorgprofessionals te onderwijzen in systematische evaluatie.',\n     badges: {\n       sensitivity: '94% Sensitiviteit',\n       evidenceBased: 'Evidence-Based',\n       openSource: 'Open Source'\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758177910086,
+      "end": 1758177910093
+    }
+  }
+}

@@ -793,7 +793,7 @@ export const da: Translation = {
   footer: {
     about: {
       title: 'Om VisibleDx',
-      description: 'VisibleDx er et evidensbaseret diagnostisk beslutningsstøtteværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at hjælpe klinikere med systematisk evaluering.',
+      description: 'VisibleDx er et evidensbaseret uddannelsesværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at uddanne sundhedsprofessionelle i systematisk evaluering.',
       badges: {
         sensitivity: '94% Sensitivitet',
         evidenceBased: 'Evidensbaseret',

@@ -1,0 +1,22 @@
+{
+  "id": "prt_95b91f572001k4ej1GUYyw93Nx",
+  "messageID": "msg_95b919500001Dd9fyR89Y2nLi4",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "invalid",
+  "callID": "toolu_01SqHRRNEV4earDistQ88xT3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "tool": "read",
+      "error": "Invalid input for tool read: Type validation failed: Value: {\"filePath\":\"/home/user/project/lib/translations/da.ts\",\"offset\":\"/home/user/project/lib/translations/da.ts\",\"limit\":15}.\nError message: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"nan\",\n    \"path\": [\n      \"offset\"\n    ],\n    \"message\": \"Expected number, received nan\"\n  }\n]"
+    },
+    "output": "The arguments provided to the tool are invalid: Invalid input for tool read: Type validation failed: Value: {\"filePath\":\"/home/user/project/lib/translations/da.ts\",\"offset\":\"/home/user/project/lib/translations/da.ts\",\"limit\":15}.\nError message: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"nan\",\n    \"path\": [\n      \"offset\"\n    ],\n    \"message\": \"Expected number, received nan\"\n  }\n]",
+    "metadata": {},
+    "title": "Invalid Tool",
+    "time": {
+      "start": 1758177917214,
+      "end": 1758177917215
+    }
+  }
+}
