@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c311c9a001zcou1hxW8627Zb",
+  "messageID": "msg_95c30f562001sJ3Bow22BjEUSn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01LuU6k4B1jrBFoyynq5bkNK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000",
+      "description": "Check if server responds locally"
+    },
+    "output": "000",
+    "metadata": {
+      "output": "000",
+      "exit": 7,
+      "description": "Check if server responds locally"
+    },
+    "title": "curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000",
+    "time": {
+      "start": 1758188347200,
+      "end": 1758188347439
+    }
+  }
+}

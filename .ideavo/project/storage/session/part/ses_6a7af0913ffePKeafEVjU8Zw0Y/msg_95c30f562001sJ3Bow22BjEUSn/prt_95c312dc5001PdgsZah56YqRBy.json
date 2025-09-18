@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c312dc5001PdgsZah56YqRBy",
+  "messageID": "msg_95c30f562001sJ3Bow22BjEUSn",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01LWMNVwPTtvydg4tPKQVyc3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "ps aux | grep next",
+      "description": "Check running Next.js processes"
+    },
+    "output": "user        2160  0.0  0.0   2580   880 ?        S    09:39   0:00 /bin/sh -c ps aux | grep next\nuser        2162  0.0  0.0   3328  1544 ?        S    09:39   0:00 grep next\n",
+    "metadata": {
+      "output": "user        2160  0.0  0.0   2580   880 ?        S    09:39   0:00 /bin/sh -c ps aux | grep next\nuser        2162  0.0  0.0   3328  1544 ?        S    09:39   0:00 grep next\n",
+      "exit": 0,
+      "description": "Check running Next.js processes"
+    },
+    "title": "ps aux | grep next",
+    "time": {
+      "start": 1758188351496,
+      "end": 1758188351524
+    }
+  }
+}
