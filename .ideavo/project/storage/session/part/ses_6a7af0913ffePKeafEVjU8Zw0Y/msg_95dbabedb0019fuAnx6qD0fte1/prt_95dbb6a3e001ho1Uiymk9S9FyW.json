@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dbb6a3e001ho1Uiymk9S9FyW",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01R38XWbTLv4mt2XpqCzX765",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 825,
+      "limit": 10
+    },
+    "output": "<file>\n00826|       guidelines: [\n00827|         {\n00828|           title: 'CDC ME/CFS Diagnose (2024)',\n00829|           url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n00830|         },\n00831|         {\n00832|           title: 'NASEM ME/CFS Rapport (2015)',\n00833|           url: 'https://nap.nationalacademies.org/read/19012'\n00834|         },\n00835|         {\n\n(File has more lines. Use 'offset' parameter to read beyond line 835)\n</file>",
+    "metadata": {
+      "preview": "      guidelines: [\n        {\n          title: 'CDC ME/CFS Diagnose (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },\n        {\n          title: 'NASEM ME/CFS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },\n        {"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758214188168,
+      "end": 1758214188170
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dbb5c57001UE8AoR64oOZ2NJ",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RgPpYyHWXJCGXKwxDtB84R",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 817,
+      "limit": 10
+    },
+    "output": "<file>\n00818|       organization: 'Nordjysk Speciallaegeklinik',\n00819|       license: 'Open source under MIT Licens',\n00820|       linkedinProfile: 'LinkedIn Profil',\n00821|       organizationWebsite: 'Organisations Hjemmeside',\n00822|       githubRepository: 'GitHub Repository'\n00823|     },\n00824|     evidence: {\n00825|       title: 'Evidensbase',\n00826|       guidelines: [\n00827|         {\n\n(File has more lines. Use 'offset' parameter to read beyond line 827)\n</file>",
+    "metadata": {
+      "preview": "      organization: 'Nordjysk Speciallaegeklinik',\n      license: 'Open source under MIT Licens',\n      linkedinProfile: 'LinkedIn Profil',\n      organizationWebsite: 'Organisations Hjemmeside',\n      githubRepository: 'GitHub Repository'\n    },\n    evidence: {\n      title: 'Evidensbase',\n      guidelines: [\n        {"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758214184570,
+      "end": 1758214184572
+    }
+  }
+}

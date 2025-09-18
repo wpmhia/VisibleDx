@@ -1,0 +1,35 @@
+{
+  "id": "prt_95dbb2961001cYVqssa3qKb2S2",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Q9u1RdFDHRBg9jr44bRij1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "        {\n          title: 'CDC Diagnosing ME/CFS (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },",
+          "newString": "        {\n          title: 'ME/CFS Basics - CDC (2024)',\n          url: 'https://www.cdc.gov/me-cfs/about/'\n        },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -815,10 +815,10 @@\n evidence: {\n   title: 'Evidence Base',\n   guidelines: [\n     {\n-      title: 'CDC Diagnosing ME/CFS (2024)',\n-      url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n+      title: 'ME/CFS Basics - CDC (2024)',\n+      url: 'https://www.cdc.gov/me-cfs/about/'\n     },\n     {\n       title: 'NASEM ME/CFS Report (2015)',\n       url: 'https://nap.nationalacademies.org/read/19012'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758214173020,
+      "end": 1758214173034
+    }
+  }
+}

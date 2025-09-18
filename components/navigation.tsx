@@ -93,8 +93,8 @@ const getAssessmentModules = (t: any) => [
 
 const guidelines = [
   {
-    title: 'ME/CFS - CDC Case Definition (2015)',
-    url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/clinical-criteria.html',
+    title: 'ME/CFS Basics - CDC (2024)',
+    url: 'https://www.cdc.gov/me-cfs/about/',
     organization: 'CDC'
   },
   {

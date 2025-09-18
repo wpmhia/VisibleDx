@@ -1,0 +1,24 @@
+{
+  "id": "prt_95dbad9aa001bLXexShu5MOAlr",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01QQSETvupCpZ1rTf5u8Th4h",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "CDC.*2015|Case Definition"
+    },
+    "output": "Found 8 matches\n/home/user/project/lib/translations/en.ts:\n  Line 114:         criteria: 'CDC/NASEM 2015 + IOM criteria',\n  Line 459:       title: 'ME/CFS Criteria (CDC/NASEM 2015)',\n\n/home/user/project/lib/translations/da.ts:\n  Line 114:         criteria: 'CDC/NASEM 2015 + IOM kriterier',\n  Line 467:       title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 114:         criteria: 'CDC/NASEM 2015 + IOM criteria',\n  Line 459:       title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n\n/home/user/project/components/navigation.tsx:\n  Line 96:     title: 'ME/CFS - CDC Case Definition (2015)',\n  Line 106:     title: 'Long COVID - WHO Clinical Case Definition (2021)',",
+    "metadata": {
+      "matches": 8,
+      "truncated": false
+    },
+    "title": "CDC.*2015|Case Definition",
+    "time": {
+      "start": 1758214151178,
+      "end": 1758214151192
+    }
+  }
+}

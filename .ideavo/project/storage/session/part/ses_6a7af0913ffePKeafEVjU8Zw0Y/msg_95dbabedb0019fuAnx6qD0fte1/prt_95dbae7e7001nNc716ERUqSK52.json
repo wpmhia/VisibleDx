@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dbae7e7001nNc716ERUqSK52",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_015vY11vdexby56CLNs2mzHe",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 90,
+      "limit": 20
+    },
+    "output": "<file>\n00091|   }\n00092| ]\n00093| \n00094| const guidelines = [\n00095|   {\n00096|     title: 'ME/CFS - CDC Case Definition (2015)',\n00097|     url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/clinical-criteria.html',\n00098|     organization: 'CDC'\n00099|   },\n00100|   {\n00101|     title: 'ME/CFS - NASEM Report (2015)',\n00102|     url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n00103|     organization: 'NASEM'\n00104|   },\n00105|   {\n00106|     title: 'Long COVID - WHO Clinical Case Definition (2021)',\n00107|     url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n00108|     organization: 'WHO'\n00109|   },\n00110|   {\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "  }\n]\n\nconst guidelines = [\n  {\n    title: 'ME/CFS - CDC Case Definition (2015)',\n    url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/clinical-criteria.html',\n    organization: 'CDC'\n  },\n  {\n    title: 'ME/CFS - NASEM Report (2015)',\n    url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n    organization: 'NASEM'\n  },\n  {\n    title: 'Long COVID - WHO Clinical Case Definition (2021)',\n    url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n    organization: 'WHO'\n  },\n  {"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758214154910,
+      "end": 1758214154915
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dbb4a5a001aDdYBgz8HlAmNn",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01JbQvKgeyLoGzoWbeiBcE4W",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "        {\n          title: 'CDC ME/CVS Diagnose (2024)',\n          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },",
+      "newString": "        {\n          title: 'ME/CVS Basis - CDC (2024)',\n          url: 'https://www.cdc.gov/me-cfs/about/'\n        },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -815,10 +815,10 @@\n evidence: {\n   title: 'Wetenschappelijke Basis',\n   guidelines: [\n     {\n-      title: 'CDC ME/CVS Diagnose (2024)',\n-      url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n+      title: 'ME/CVS Basis - CDC (2024)',\n+      url: 'https://www.cdc.gov/me-cfs/about/'\n     },\n     {\n       title: 'NASEM ME/CVS Rapport (2015)',\n       url: 'https://nap.nationalacademies.org/read/19012'\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758214181067,
+      "end": 1758214181075
+    }
+  }
+}

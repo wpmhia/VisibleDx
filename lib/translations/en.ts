@@ -816,8 +816,8 @@ export const en: Translation = {
       title: 'Evidence Base',
       guidelines: [
         {
-          title: 'CDC Diagnosing ME/CFS (2024)',
-          url: 'https://www.cdc.gov/me-cfs/hcp/diagnosis/?CDC_AAref_Val=https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'
+          title: 'ME/CFS Basics - CDC (2024)',
+          url: 'https://www.cdc.gov/me-cfs/about/'
         },
         {
           title: 'NASEM ME/CFS Report (2015)',

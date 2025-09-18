@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dbaf55d001coidEJFznk671m",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0148Z8jjcwTr3rxLauTWVYJK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "  {\n    title: 'ME/CFS - CDC Case Definition (2015)',\n    url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/clinical-criteria.html',\n    organization: 'CDC'\n  },",
+      "newString": "  {\n    title: 'ME/CFS Basics - CDC (2024)',\n    url: 'https://www.cdc.gov/me-cfs/about/',\n    organization: 'CDC'\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -92,10 +92,10 @@\n ]\n \n const guidelines = [\n   {\n-    title: 'ME/CFS - CDC Case Definition (2015)',\n-    url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/clinical-criteria.html',\n+    title: 'ME/CFS Basics - CDC (2024)',\n+    url: 'https://www.cdc.gov/me-cfs/about/',\n     organization: 'CDC'\n   },\n   {\n     title: 'ME/CFS - NASEM Report (2015)',\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758214159354,
+      "end": 1758214159364
+    }
+  }
+}

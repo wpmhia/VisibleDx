@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dbbce87001QhaXKqPAXLG5Wn",
+  "messageID": "msg_95dbabedb0019fuAnx6qD0fte1",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01UcoT1VzyNhp1Q6iKzsrFnM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "oldString": "          {/* Important Disclaimers */}\n          <div>\n            <div className=\"flex items-center gap-2 mb-3\">\n              <Shield className=\"h-4 w-4 text-red-600\" />\n              <h3 className=\"font-semibold text-gray-900\">{t.footer.notes.title}</h3>\n            </div>\n            <ul className=\"text-sm text-gray-600 space-y-1\">\n              {t.footer.notes.items.map((note, index) => (\n                <li key={index}>• {note}</li>\n              ))}\n            </ul>\n          </div>",
+      "newString": ""
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -107,20 +107,9 @@\n       ))}\n     </ul>\n   </div>\n \n-  {/* Important Disclaimers */}\n-  <div>\n-    <div className=\"flex items-center gap-2 mb-3\">\n-      <Shield className=\"h-4 w-4 text-red-600\" />\n-      <h3 className=\"font-semibold text-gray-900\">{t.footer.notes.title}</h3>\n-    </div>\n-    <ul className=\"text-sm text-gray-600 space-y-1\">\n-      {t.footer.notes.items.map((note, index) => (\n-        <li key={index}>• {note}</li>\n-      ))}\n-    </ul>\n-  </div>\n+\n </div>\n \n <Separator className=\"mb-6\" />\n \n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758214215061,
+      "end": 1758214215066
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "msg_95c5fc15c001HL1uJm5ALB4JAI",
+  "role": "assistant",
+  "mode": "build",
+  "path": {
+    "cwd": "/home/user/project",
+    "root": "/home/user/project"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "reasoning": 0,
+    "cache": {
+      "read": 0,
+      "write": 0
+    }
+  },
+  "time": {
+    "created": 1758191403356,
+    "completed": 1758191406340
+  },
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "error": {
+    "name": "UnknownError",
+    "data": {
+      "message": "AI_APICallError: Bad Request"
+    }
+  }
+}

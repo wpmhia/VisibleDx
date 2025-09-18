@@ -16,11 +16,11 @@ export default function Disclaimer() {
         <Alert className="mb-6 border-red-200 bg-red-50">
           <AlertTriangle className="h-4 w-4 text-red-600" />
           <AlertDescription className="text-red-800">
-            <strong>TRAINING TOOL ONLY - NOT FOR MEDICAL USE:</strong> {t.disclaimer}
+            <strong>EDUCATIONAL TOOL ONLY - NOT FOR MEDICAL USE:</strong> {t.disclaimer}
           </AlertDescription>
         </Alert>
 
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* About VisibleDx */}
           <div>
             <div className="flex items-center gap-2 mb-3">
@@ -31,7 +31,6 @@ export default function Disclaimer() {
               {t.footer.about.description}
             </p>
             <div className="flex flex-wrap gap-1">
-              <Badge variant="outline" className="text-xs">{t.footer.about.badges.sensitivity}</Badge>
               <Badge variant="outline" className="text-xs">{t.footer.about.badges.evidenceBased}</Badge>
               <Badge variant="outline" className="text-xs">{t.footer.about.badges.openSource}</Badge>
             </div>
@@ -108,18 +107,7 @@ export default function Disclaimer() {
             </ul>
           </div>
 
-          {/* Important Disclaimers */}
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Shield className="h-4 w-4 text-red-600" />
-              <h3 className="font-semibold text-gray-900">{t.footer.notes.title}</h3>
-            </div>
-            <ul className="text-sm text-gray-600 space-y-1">
-              {t.footer.notes.items.map((note, index) => (
-                <li key={index}>• {note}</li>
-              ))}
-            </ul>
-          </div>
+
         </div>
 
         <Separator className="mb-6" />
@@ -141,7 +129,7 @@ export default function Disclaimer() {
         {/* Technical Info */}
         <div className="mt-4 pt-4 border-t text-xs text-gray-400 text-center">
           <p>
-            {t.footer.technical}
+            Educational tool for healthcare learning only - NOT validated for clinical use
           </p>
         </div>
       </div>
