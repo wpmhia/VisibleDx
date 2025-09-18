@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be1ae05001ZCqxIT1LETDPWO",
+  "messageID": "msg_95be1a0a3001HJICo0ynUCl0kX",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01W5ySVN5yqCJg9g9DNHj7eS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\" || true",
+      "description": "Stop current Next.js process"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Stop current Next.js process"
+    },
+    "title": "pkill -f \"next\" || true",
+    "time": {
+      "start": 1758183141508,
+      "end": 1758183141532
+    }
+  }
+}
