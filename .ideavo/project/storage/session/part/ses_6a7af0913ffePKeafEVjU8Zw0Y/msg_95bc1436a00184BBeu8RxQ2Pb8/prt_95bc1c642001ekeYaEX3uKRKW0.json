@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bc1c642001ekeYaEX3uKRKW0",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01XriKsAEAfTcyPqvSeydQ34",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      copyright: '© 2024 Willem Gielen MD - MIT Licentie',",
+      "newString": "      copyright: '© 2025 Willem Gielen MD - MIT Licentie',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -853,9 +853,9 @@\n   ]\n },\n bottom: {\n   version: 'VisibleDx v1.0 - Educatief Instrument',\n-  copyright: '© 2024 Willem Gielen MD - MIT Licentie',\n+  copyright: '© 2025 Willem Gielen MD - MIT Licentie',\n   audienceLabel: 'Voor Zorgverleners',\n   badge: 'Onderzoek & Onderwijs'\n },\n technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758181050801,
+      "end": 1758181050812
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "prt_95bc15a40001yBBOOQnGe3a6WF",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01NJ8UxKeTF5iAyDMBapX3o9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update copyright year to 2025 in English translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update copyright year to 2025 in Dutch translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update copyright year to 2025 in Danish translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update copyright year to 2025 in LICENSE file",
+          "status": "pending",
+          "priority": "high",
+          "id": "4"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update copyright year to 2025 in English translation\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in Dutch translation\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in Danish translation\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in LICENSE file\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"4\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update copyright year to 2025 in English translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update copyright year to 2025 in Dutch translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update copyright year to 2025 in Danish translation",
+          "status": "pending",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update copyright year to 2025 in LICENSE file",
+          "status": "pending",
+          "priority": "high",
+          "id": "4"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758181024298,
+      "end": 1758181024327
+    }
+  }
+}

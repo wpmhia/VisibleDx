@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bc26cc3001tGt4NKfaaFrj4Q",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(copyright): update year to 2025 in translations and license",
+  "cost": 0.7179703500000001,
+  "tokens": {
+    "input": 3,
+    "output": 260,
+    "reasoning": 0,
+    "cache": {
+      "write": 399,
+      "read": 90788
+    }
+  }
+}

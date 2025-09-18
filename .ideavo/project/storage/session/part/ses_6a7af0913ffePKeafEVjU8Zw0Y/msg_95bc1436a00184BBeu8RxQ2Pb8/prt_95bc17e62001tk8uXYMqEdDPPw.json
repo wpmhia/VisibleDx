@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bc17e62001tk8uXYMqEdDPPw",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018QNoRvzsHTVY2cejGKzV8o",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 843,
+      "limit": 15
+    },
+    "output": "<file>\n00844|     notes: {\n00845|       title: 'Important Notes',\n00846|       items: [\n00847|         'Training tool only - NOT for patient care',\n00848|         'Educational simulation - NOT real diagnosis',\n00849|         'Open-source software for learning purposes',\n00850|         'Must NOT replace medical professional judgment',\n00851|         'For healthcare education and research only',\n00852|         'Contact medical professionals for patient care'\n00853|       ]\n00854|     },\n00855|     bottom: {\n00856|       version: 'VisibleDx v1.0 - Educational Tool',\n00857|       copyright: '© 2024 Willem Gielen MD - MIT License',\n00858|       audienceLabel: 'For Healthcare Education Only',\n\n(File has more lines. Use 'offset' parameter to read beyond line 858)\n</file>",
+    "metadata": {
+      "preview": "    notes: {\n      title: 'Important Notes',\n      items: [\n        'Training tool only - NOT for patient care',\n        'Educational simulation - NOT real diagnosis',\n        'Open-source software for learning purposes',\n        'Must NOT replace medical professional judgment',\n        'For healthcare education and research only',\n        'Contact medical professionals for patient care'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Educational Tool',\n      copyright: '© 2024 Willem Gielen MD - MIT License',\n      audienceLabel: 'For Healthcare Education Only',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758181032202,
+      "end": 1758181032209
+    }
+  }
+}

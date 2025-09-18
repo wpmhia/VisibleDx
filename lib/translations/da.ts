@@ -863,7 +863,7 @@ export const da: Translation = {
     },
     bottom: {
       version: 'VisibleDx v1.0 - Uddannelsesværktøj',
-      copyright: '© 2024 Willem Gielen MD - MIT Licens',
+      copyright: '© 2025 Willem Gielen MD - MIT Licens',
       audienceLabel: 'For Sundhedsprofessionelle',
       badge: 'Forskning & Uddannelse'
     },

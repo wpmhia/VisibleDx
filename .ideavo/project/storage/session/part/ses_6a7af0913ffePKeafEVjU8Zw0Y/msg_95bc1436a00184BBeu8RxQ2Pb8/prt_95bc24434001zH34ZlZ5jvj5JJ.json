@@ -1,0 +1,73 @@
+{
+  "id": "prt_95bc24434001zH34ZlZ5jvj5JJ",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Pw6GtqqmWfSppA4GuSQ7cs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update copyright year to 2025 in English translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update copyright year to 2025 in Dutch translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update copyright year to 2025 in Danish translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update copyright year to 2025 in LICENSE file",
+          "status": "completed",
+          "priority": "high",
+          "id": "4"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update copyright year to 2025 in English translation\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in Dutch translation\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in Danish translation\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Update copyright year to 2025 in LICENSE file\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"4\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update copyright year to 2025 in English translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update copyright year to 2025 in Dutch translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update copyright year to 2025 in Danish translation",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update copyright year to 2025 in LICENSE file",
+          "status": "completed",
+          "priority": "high",
+          "id": "4"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758181083515,
+      "end": 1758181083545
+    }
+  }
+}

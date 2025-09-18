@@ -854,7 +854,7 @@ export const nl: Translation = {
     },
     bottom: {
       version: 'VisibleDx v1.0 - Educatief Instrument',
-      copyright: '© 2024 Willem Gielen MD - MIT Licentie',
+      copyright: '© 2025 Willem Gielen MD - MIT Licentie',
       audienceLabel: 'Voor Zorgverleners',
       badge: 'Onderzoek & Onderwijs'
     },

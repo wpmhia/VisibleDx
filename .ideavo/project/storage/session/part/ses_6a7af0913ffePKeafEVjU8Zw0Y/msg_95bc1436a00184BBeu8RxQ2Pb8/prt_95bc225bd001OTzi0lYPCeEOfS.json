@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bc225bd001OTzi0lYPCeEOfS",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Nu61JLeWKRzDvFg55iWM6u",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/LICENSE",
+      "offset": 1,
+      "limit": 10
+    },
+    "output": "<file>\n00002| \n00003| Copyright (c) 2024 Willem Gielen MD\n00004| \n00005| Permission is hereby granted, free of charge, to any person obtaining a copy\n00006| of this software and associated documentation files (the \"Software\"), to deal\n00007| in the Software without restriction, including without limitation the rights\n00008| to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n00009| copies of the Software, and to permit persons to whom the Software is\n00010| furnished to do so, subject to the following conditions:\n00011| \n\n(File has more lines. Use 'offset' parameter to read beyond line 11)\n</file>",
+    "metadata": {
+      "preview": "\nCopyright (c) 2024 Willem Gielen MD\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n"
+    },
+    "title": "LICENSE",
+    "time": {
+      "start": 1758181074887,
+      "end": 1758181074889
+    }
+  }
+}

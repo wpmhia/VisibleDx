@@ -1,0 +1,21 @@
+{
+  "id": "prt_95bc16d2a0017vCbMq2nrBsOYC",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01K5BZugwVcsEcZa4pgEm13W",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      copyright: '© 2024 Willem Gielen MD - MIT License',",
+      "newString": "      copyright: '© 2025 Willem Gielen MD - MIT License',"
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758181028216,
+      "end": 1758181028238
+    }
+  }
+}

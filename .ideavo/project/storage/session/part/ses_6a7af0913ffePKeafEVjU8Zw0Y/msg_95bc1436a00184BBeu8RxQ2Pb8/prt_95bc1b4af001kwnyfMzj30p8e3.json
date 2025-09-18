@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bc1b4af001kwnyfMzj30p8e3",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018NnzQ8p9yJKviRL7zZNito",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 845,
+      "limit": 15
+    },
+    "output": "<file>\n00846|       items: [\n00847|         'Geen vervanging voor klinische beoordeling',\n00848|         'Vereist bevestiging met lichamelijk onderzoek',\n00849|         'Houd rekening met patiëntgeschiedenis en context',\n00850|         'Sluit rode vlaggen uit voor diagnose',\n00851|         'Raadpleeg specialisten bij complexe gevallen',\n00852|         'Monitor patiëntrespons op behandeling'\n00853|       ]\n00854|     },\n00855|     bottom: {\n00856|       version: 'VisibleDx v1.0 - Educatief Instrument',\n00857|       copyright: '© 2024 Willem Gielen MD - MIT Licentie',\n00858|       audienceLabel: 'Voor Zorgverleners',\n00859|       badge: 'Onderzoek & Onderwijs'\n00860|     },\n\n(File has more lines. Use 'offset' parameter to read beyond line 860)\n</file>",
+    "metadata": {
+      "preview": "      items: [\n        'Geen vervanging voor klinische beoordeling',\n        'Vereist bevestiging met lichamelijk onderzoek',\n        'Houd rekening met patiëntgeschiedenis en context',\n        'Sluit rode vlaggen uit voor diagnose',\n        'Raadpleeg specialisten bij complexe gevallen',\n        'Monitor patiëntrespons op behandeling'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Educatief Instrument',\n      copyright: '© 2024 Willem Gielen MD - MIT Licentie',\n      audienceLabel: 'Voor Zorgverleners',\n      badge: 'Onderzoek & Onderwijs'\n    },"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758181046010,
+      "end": 1758181046012
+    }
+  }
+}

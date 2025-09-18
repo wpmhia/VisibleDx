@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bc1e82a0013IwoxbAAdObpNZ",
+  "messageID": "msg_95bc1436a00184BBeu8RxQ2Pb8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DrimrMU4dUrgqhH9LGBFbS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 864,
+      "limit": 15
+    },
+    "output": "<file>\n00865|       version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n00866|       copyright: '© 2024 Willem Gielen MD - MIT Licens',\n00867|       audienceLabel: 'For Sundhedsprofessionelle',\n00868|       badge: 'Forskning & Uddannelse'\n00869|     },\n00870|     technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n00871|   },\n00872| \n00873|   ppgCamera: {\n00874|     title: 'Kamera PPG Puls',\n00875|     description: 'Placer din fingerspids forsigtigt over kameralinsen med blitz tændt',\n00876|     fingerDetected: 'Finger Detekteret',\n00877|     placeFingerPrompt: 'Placer Finger',\n00878|     signalQuality: {\n00879|       poor: 'dårlig',\n\n(File has more lines. Use 'offset' parameter to read beyond line 879)\n</file>",
+    "metadata": {
+      "preview": "      version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n      copyright: '© 2024 Willem Gielen MD - MIT Licens',\n      audienceLabel: 'For Sundhedsprofessionelle',\n      badge: 'Forskning & Uddannelse'\n    },\n    technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n  },\n\n  ppgCamera: {\n    title: 'Kamera PPG Puls',\n    description: 'Placer din fingerspids forsigtigt over kameralinsen med blitz tændt',\n    fingerDetected: 'Finger Detekteret',\n    placeFingerPrompt: 'Placer Finger',\n    signalQuality: {\n      poor: 'dårlig',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758181059147,
+      "end": 1758181059149
+    }
+  }
+}
