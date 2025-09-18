@@ -63,7 +63,8 @@ export const nl: Translation = {
     clinician: 'Clinicus',
     patientId: 'Patiënt ID',
     required: 'Verplicht',
-    optional: 'Optioneel'
+    optional: 'Optioneel',
+    category: 'Categorie'
   },
 
   dashboard: {

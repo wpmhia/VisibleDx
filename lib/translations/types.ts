@@ -64,6 +64,7 @@ export interface Translation {
     patientId: string
     required: string
     optional: string
+    category: string
   }
 
   // Dashboard

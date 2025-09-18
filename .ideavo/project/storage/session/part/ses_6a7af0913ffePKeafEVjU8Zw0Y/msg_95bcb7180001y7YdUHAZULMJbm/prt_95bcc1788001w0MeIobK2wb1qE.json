@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bcc1788001w0MeIobK2wb1qE",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QcMtwiMU6A3Bu2fmDuGkXt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 64,
+      "limit": 8
+    },
+    "output": "<file>\n00065|     required: 'Påkrævet',\n00066|     optional: 'Valgfri'\n00067|   },\n00068| \n00069|   dashboard: {\n00070|     smartAssessment: {\n00071|       title: 'Smart Patient Vurdering',\n00072|       description: 'Intelligent guidet arbejdsgang med automatiseret SOAP dokumentation',\n\n(File has more lines. Use 'offset' parameter to read beyond line 72)\n</file>",
+    "metadata": {
+      "preview": "    required: 'Påkrævet',\n    optional: 'Valgfri'\n  },\n\n  dashboard: {\n    smartAssessment: {\n      title: 'Smart Patient Vurdering',\n      description: 'Intelligent guidet arbejdsgang med automatiseret SOAP dokumentation',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758181726647,
+      "end": 1758181726649
+    }
+  }
+}

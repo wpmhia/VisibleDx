@@ -63,7 +63,8 @@ export const da: Translation = {
     clinician: 'Kliniker',
     patientId: 'Patient ID',
     required: 'Påkrævet',
-    optional: 'Valgfri'
+    optional: 'Valgfri',
+    category: 'Kategori'
   },
 
   dashboard: {

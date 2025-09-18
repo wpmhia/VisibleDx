@@ -63,7 +63,8 @@ export const en: Translation = {
     clinician: 'Clinician',
     patientId: 'Patient ID',
     required: 'Required',
-    optional: 'Optional'
+    optional: 'Optional',
+    category: 'Category'
   },
 
   dashboard: {

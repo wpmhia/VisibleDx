@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bcc607c0013Sdcl8xR61hmiB",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01JSHEX1oPMh86QdmLAkNqCp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "              <CardDescription>Category: {currentQuestion.category}</CardDescription>",
+      "newString": "              <CardDescription>{t.common.category}: {currentQuestion.category}</CardDescription>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -647,9 +647,9 @@\n \n <Card>\n   <CardHeader>\n     <CardTitle className=\"text-lg\">{currentQuestion.question}</CardTitle>\n-    <CardDescription>Category: {currentQuestion.category}</CardDescription>\n+    <CardDescription>{t.common.category}: {currentQuestion.category}</CardDescription>\n   </CardHeader>\n   <CardContent>\n     <div className=\"space-y-4\">\n       <div className=\"flex gap-4 justify-center\">\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758181746061,
+      "end": 1758181746071
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bcbd53f001G4rvBWnUBd2GLy",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011Se9JsK5hXpeBJFGx18534",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 64,
+      "limit": 8
+    },
+    "output": "<file>\n00065|     required: 'Required',\n00066|     optional: 'Optional'\n00067|   },\n00068| \n00069|   dashboard: {\n00070|     smartAssessment: {\n00071|       title: 'Educational Training Simulation',\n00072|       description: 'Interactive learning workflow with educational documentation examples',\n\n(File has more lines. Use 'offset' parameter to read beyond line 72)\n</file>",
+    "metadata": {
+      "preview": "    required: 'Required',\n    optional: 'Optional'\n  },\n\n  dashboard: {\n    smartAssessment: {\n      title: 'Educational Training Simulation',\n      description: 'Interactive learning workflow with educational documentation examples',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758181709758,
+      "end": 1758181709760
+    }
+  }
+}

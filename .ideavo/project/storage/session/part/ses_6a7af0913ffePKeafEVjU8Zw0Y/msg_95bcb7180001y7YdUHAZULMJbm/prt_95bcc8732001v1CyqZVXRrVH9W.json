@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bcc8732001v1CyqZVXRrVH9W",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(translations): add multilingual support for category label",
+  "cost": 0.7440500999999999,
+  "tokens": {
+    "input": 2,
+    "output": 283,
+    "reasoning": 0,
+    "cache": {
+      "write": 176,
+      "read": 98024
+    }
+  }
+}

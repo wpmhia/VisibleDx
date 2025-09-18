@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bcc70420014JaDm8gK61FoO3",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I have successfully translated the \"Category:\" label in the Dutch version and other languages.\n\n## ✅ **Category Translation Added Successfully**\n\n### **Changes Made:**\n\n1. **Translation Types** (`lib/translations/types.ts`):\n   - Added `category: string` to the common section\n\n2. **English Translation** (`lib/translations/en.ts`):\n   - Added `category: 'Category'`\n\n3. **Dutch Translation** (`lib/translations/nl.ts`):\n   - Added `category: 'Categorie'`\n\n4. **Danish Translation** (`lib/translations/da.ts`):\n   - Added `category: 'Kategori'`\n\n5. **New Patient Page** (`app/new-patient/page.tsx`):\n   - Changed hardcoded `\"Category:\"` to `{t.common.category}:`\n\n### **Result:**\nNow when users view the new patient assessment in different languages, they will see:\n- **English**: \"Category: core\"\n- **Dutch**: \"Categorie: core\" \n- **Danish**: \"Kategori: core\"\n\nThe \"Category:\" label is now properly translated and will display in the user's selected language throughout the application.",
+  "time": {
+    "start": 1758181753530,
+    "end": 1758181753530
+  }
+}

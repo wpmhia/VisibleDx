@@ -648,7 +648,7 @@ export default function NewPatientWorkflow() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">{currentQuestion.question}</CardTitle>
-              <CardDescription>Category: {currentQuestion.category}</CardDescription>
+              <CardDescription>{t.common.category}: {currentQuestion.category}</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bcb9eff0018LAf3QK2ZzTKgi",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014WzNn2n5kBQNZDLSfKMGBJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 1,
+      "limit": 50
+    },
+    "output": "<file>\n00002| \n00003| import { useState, useEffect } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Input } from '@/components/ui/input'\n00007| import { Label } from '@/components/ui/label'\n00008| import { Progress } from '@/components/ui/progress'\n00009| import { Badge } from '@/components/ui/badge'\n00010| import { Alert, AlertDescription } from '@/components/ui/alert'\n00011| import { Checkbox } from '@/components/ui/checkbox'\n00012| import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'\n00013| import { ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'\n00014| import Link from 'next/link'\n00015| import { useTranslation } from '@/lib/language-context'\n00016| \n00017| interface PatientData {\n00018|   demographics: {\n00019|     age: number | null\n00020|     gender: string\n00021|     clinicianName: string\n00022|     patientId: string\n00023|   }\n00024|   quickScreen: {\n00025|     answers: Record<number, boolean>\n00026|     score: number\n00027|     riskLevel: string\n00028|   }\n00029|   redFlags: {\n00030|     symptoms: string[]\n00031|     labsRecommended: string[]\n00032|     priority: string\n00033|   }\n00034|   standTest: {\n00035|     performed: boolean\n00036|     baselineHR: number | null\n00037|     peakHR: number | null\n00038|     sustainedHR: number | null\n00039|     meetsPOTS: boolean\n00040|   }\n00041|   pemQuest: {\n00042|     answers: Record<string, string>\n00043|     score: number\n00044|     severity: string\n00045|     present: boolean\n00046|   }\n00047|   diagnoses: {\n00048|     mecfs: { met: boolean; confidence: string }\n00049|     longCovid: { met: boolean; confidence: string }\n00050|     pots: { met: boolean; confidence: string; subtype?: string }\n00051|   }\n\n(File has more lines. Use 'offset' parameter to read beyond line 51)\n</file>",
+    "metadata": {
+      "preview": "\nimport { useState, useEffect } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Input } from '@/components/ui/input'\nimport { Label } from '@/components/ui/label'\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { Checkbox } from '@/components/ui/checkbox'\nimport { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'\nimport { ArrowRight, User, ClipboardList, FileText, Download, CheckCircle, AlertTriangle, Activity, Heart, Clock, BarChart3 } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface PatientData {\n  demographics: {\n    age: number | null\n    gender: string\n    clinicianName: string"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758181695929,
+      "end": 1758181695935
+    }
+  }
+}

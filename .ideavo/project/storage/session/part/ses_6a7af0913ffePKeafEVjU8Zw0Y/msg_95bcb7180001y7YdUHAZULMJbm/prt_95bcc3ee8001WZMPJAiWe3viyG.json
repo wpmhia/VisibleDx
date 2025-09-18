@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bcc3ee8001WZMPJAiWe3viyG",
+  "messageID": "msg_95bcb7180001y7YdUHAZULMJbm",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FQxkhUDTKp6wS3AbWbWGYY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 64,
+      "limit": 8
+    },
+    "output": "<file>\n00065|     required: string\n00066|     optional: string\n00067|   }\n00068| \n00069|   // Dashboard\n00070|   dashboard: {\n00071|     smartAssessment: {\n00072|       title: string\n\n(File has more lines. Use 'offset' parameter to read beyond line 72)\n</file>",
+    "metadata": {
+      "preview": "    required: string\n    optional: string\n  }\n\n  // Dashboard\n  dashboard: {\n    smartAssessment: {\n      title: string"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758181736793,
+      "end": 1758181736801
+    }
+  }
+}
