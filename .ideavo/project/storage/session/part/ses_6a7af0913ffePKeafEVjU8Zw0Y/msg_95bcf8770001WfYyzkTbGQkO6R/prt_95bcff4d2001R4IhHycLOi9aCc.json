@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bcff4d2001R4IhHycLOi9aCc",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to update the English and Danish translations to include the colon since they should keep it, and leave Dutch without the colon:",
+  "time": {
+    "start": 1758181980486,
+    "end": 1758181980486
+  }
+}

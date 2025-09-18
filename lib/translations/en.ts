@@ -804,7 +804,7 @@ export const en: Translation = {
     },
     creator: {
       title: 'Creator & License',
-      createdBy: 'Created by',
+      createdBy: 'Created by:',
       name: 'Willem Gielen MD',
       organization: 'Nordjysk Speciallaegeklinik',
       location: 'Hjørring, Denmark',

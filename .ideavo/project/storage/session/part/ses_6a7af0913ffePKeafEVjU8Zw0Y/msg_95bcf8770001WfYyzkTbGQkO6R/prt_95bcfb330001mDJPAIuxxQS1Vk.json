@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bcfb330001mDJPAIuxxQS1Vk",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see that the Dutch translation already has `createdBy: 'Gemaakt door'` without a colon. Let me check how this is displayed in the footer component to see if there's a colon being added there:",
+  "time": {
+    "start": 1758181963838,
+    "end": 1758181963838
+  }
+}

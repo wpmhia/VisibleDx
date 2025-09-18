@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bcfa215001wZA508o3kFgNXH",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I'll update the Dutch translation to change \"Gemaakt door:\" to \"Gemaakt door\" (removing the colon).",
+  "time": {
+    "start": 1758181958860,
+    "end": 1758181958860
+  }
+}

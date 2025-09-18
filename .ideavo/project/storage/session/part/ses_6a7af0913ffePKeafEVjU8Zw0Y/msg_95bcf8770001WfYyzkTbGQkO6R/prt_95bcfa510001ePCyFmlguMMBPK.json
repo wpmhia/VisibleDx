@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bcfa510001ePCyFmlguMMBPK",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QzXoFdKHTM8nFaLTEuVSDY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 804,
+      "limit": 15
+    },
+    "output": "<file>\n00805|     creator: {\n00806|       title: 'Maker & Licentie',\n00807|       createdBy: 'Gemaakt door',\n00808|       name: 'Willem Gielen MD',\n00809|       organization: 'Nordjysk Speciallaegeklinik',\n00810|       location: 'Hjørring, Denemarken',\n00811|       license: 'Open source onder MIT Licentie',\n00812|       linkedinProfile: 'LinkedIn Profiel',\n00813|       organizationWebsite: 'Organisatie Website',\n00814|       githubRepository: 'GitHub Repository'\n00815|     },\n00816|     evidence: {\n00817|       title: 'Wetenschappelijke Basis',\n00818|       guidelines: [\n00819|         {\n\n(File has more lines. Use 'offset' parameter to read beyond line 819)\n</file>",
+    "metadata": {
+      "preview": "    creator: {\n      title: 'Maker & Licentie',\n      createdBy: 'Gemaakt door',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denemarken',\n      license: 'Open source onder MIT Licentie',\n      linkedinProfile: 'LinkedIn Profiel',\n      organizationWebsite: 'Organisatie Website',\n      githubRepository: 'GitHub Repository'\n    },\n    evidence: {\n      title: 'Wetenschappelijke Basis',\n      guidelines: [\n        {"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758181959445,
+      "end": 1758181959450
+    }
+  }
+}

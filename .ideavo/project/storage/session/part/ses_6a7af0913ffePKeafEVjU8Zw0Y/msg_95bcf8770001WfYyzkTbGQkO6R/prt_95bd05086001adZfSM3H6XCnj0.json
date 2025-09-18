@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bd05086001adZfSM3H6XCnj0",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I have successfully updated the creator attribution to remove the colon specifically for the Dutch version.\n\n## ✅ **Dutch Creator Attribution Updated Successfully**\n\n### **Changes Made:**\n\n1. **Footer Component** (`components/disclaimer.tsx`):\n   - Removed automatic colon addition: `{t.footer.creator.createdBy}:` → `{t.footer.creator.createdBy}`\n\n2. **English Translation** (`lib/translations/en.ts`):\n   - Added colon to maintain current format: `'Created by'` → `'Created by:'`\n\n3. **Danish Translation** (`lib/translations/da.ts`):\n   - Added colon to maintain current format: `'Skabt af'` → `'Skabt af:'`\n\n4. **Dutch Translation** (`lib/translations/nl.ts`):\n   - Kept without colon: `'Gemaakt door'` (unchanged)\n\n### **Result:**\nNow the footer displays differently per language:\n\n- **English**: \"Created by: Willem Gielen MD\"\n- **Dutch**: \"Gemaakt door Willem Gielen MD\" (no colon)\n- **Danish**: \"Skabt af: Willem Gielen MD\"\n\nThe Dutch version now shows the cleaner format you requested while maintaining the colon for other languages.",
+  "time": {
+    "start": 1758182008253,
+    "end": 1758182008253
+  }
+}

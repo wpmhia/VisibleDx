@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bd06a7b001eMJ2bHk1rkUjTL",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(translations): update creator attribution display for Dutch",
+  "cost": 0.64629525,
+  "tokens": {
+    "input": 4,
+    "output": 308,
+    "reasoning": 0,
+    "cache": {
+      "write": 151,
+      "read": 101884
+    }
+  }
+}

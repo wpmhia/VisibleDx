@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bcfc6520015YA24W4BWoZ5Cx",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I can see the issue! The colon is being added in the component itself with `{t.footer.creator.createdBy}:`. To change this for Dutch only, I need to modify the Dutch translation to include what we want to display, or modify the component to handle this differently.\n\nThe cleanest approach is to update the Dutch translation to include the exact text we want:",
+  "time": {
+    "start": 1758181969876,
+    "end": 1758181969876
+  }
+}

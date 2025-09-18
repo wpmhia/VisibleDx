@@ -813,7 +813,7 @@ export const da: Translation = {
     },
     creator: {
       title: 'Skaber & Licens',
-      createdBy: 'Skabt af',
+      createdBy: 'Skabt af:',
       name: 'Willem Gielen MD',
       organization: 'Nordjysk Speciallaegeklinik',
       location: 'Hjørring, Danmark',

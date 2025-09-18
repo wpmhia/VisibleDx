@@ -45,7 +45,7 @@ export default function Disclaimer() {
             </div>
             <div className="text-sm text-gray-600 space-y-2">
               <div>
-                <strong>{t.footer.creator.createdBy}:</strong><br />
+                <strong>{t.footer.creator.createdBy}</strong><br />
                 <a 
                   href="https://www.linkedin.com/in/willem-gielen/" 
                   target="_blank" 

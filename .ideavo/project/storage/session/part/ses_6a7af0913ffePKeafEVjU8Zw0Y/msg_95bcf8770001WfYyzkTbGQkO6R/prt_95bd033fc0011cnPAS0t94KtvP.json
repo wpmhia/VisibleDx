@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bd033fc0011cnPAS0t94KtvP",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QVBWbsxJaDabuhDQ2a2r8y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 814,
+      "limit": 10
+    },
+    "output": "<file>\n00815|       title: 'Skaber & Licens',\n00816|       createdBy: 'Skabt af',\n00817|       name: 'Willem Gielen MD',\n00818|       organization: 'Nordjysk Speciallaegeklinik',\n00819|       location: 'Hjørring, Danmark',\n00820|       license: 'Open source under MIT Licens',\n00821|       linkedinProfile: 'LinkedIn Profil',\n00822|       organizationWebsite: 'Organisations Hjemmeside',\n00823|       githubRepository: 'GitHub Repository'\n00824|     },\n\n(File has more lines. Use 'offset' parameter to read beyond line 824)\n</file>",
+    "metadata": {
+      "preview": "      title: 'Skaber & Licens',\n      createdBy: 'Skabt af',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Danmark',\n      license: 'Open source under MIT Licens',\n      linkedinProfile: 'LinkedIn Profil',\n      organizationWebsite: 'Organisations Hjemmeside',\n      githubRepository: 'GitHub Repository'\n    },"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758181996151,
+      "end": 1758181996158
+    }
+  }
+}

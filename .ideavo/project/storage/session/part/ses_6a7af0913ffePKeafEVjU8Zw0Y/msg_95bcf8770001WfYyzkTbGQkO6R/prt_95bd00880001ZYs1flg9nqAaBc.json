@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bd00880001ZYs1flg9nqAaBc",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RYtiA97aBJNpPJQQPwF26Y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 804,
+      "limit": 15
+    },
+    "output": "<file>\n00805|     creator: {\n00806|       title: 'Creator & License',\n00807|       createdBy: 'Created by',\n00808|       name: 'Willem Gielen MD',\n00809|       organization: 'Nordjysk Speciallaegeklinik',\n00810|       location: 'Hjørring, Denmark',\n00811|       license: 'Open source under MIT License',\n00812|       linkedinProfile: 'LinkedIn Profile',\n00813|       organizationWebsite: 'Organization Website',\n00814|       githubRepository: 'GitHub Repository'\n00815|     },\n00816|     evidence: {\n00817|       title: 'Evidence Base',\n00818|       guidelines: [\n00819|         {\n\n(File has more lines. Use 'offset' parameter to read beyond line 819)\n</file>",
+    "metadata": {
+      "preview": "    creator: {\n      title: 'Creator & License',\n      createdBy: 'Created by',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denmark',\n      license: 'Open source under MIT License',\n      linkedinProfile: 'LinkedIn Profile',\n      organizationWebsite: 'Organization Website',\n      githubRepository: 'GitHub Repository'\n    },\n    evidence: {\n      title: 'Evidence Base',\n      guidelines: [\n        {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758181984971,
+      "end": 1758181984974
+    }
+  }
+}

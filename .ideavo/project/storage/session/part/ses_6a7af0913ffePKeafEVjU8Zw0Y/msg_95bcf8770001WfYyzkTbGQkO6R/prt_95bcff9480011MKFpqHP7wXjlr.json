@@ -1,0 +1,21 @@
+{
+  "id": "prt_95bcff9480011MKFpqHP7wXjlr",
+  "messageID": "msg_95bcf8770001WfYyzkTbGQkO6R",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01F9ZnctzwLEYq6XbGUx35h6",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      createdBy: 'Created by',",
+      "newString": "      createdBy: 'Created by:',"
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758181981252,
+      "end": 1758181981253
+    }
+  }
+}
