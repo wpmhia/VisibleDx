@@ -1,0 +1,44 @@
+{
+  "id": "prt_95bba0d61001Tyvf88KcdIs5f0",
+  "messageID": "msg_95bb8eea00015VPcC5p9K9K2k2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Kj6HZ3cqUZ1AAyGtkAtrRB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "  footer: {\n    about: {\n      title: 'Om VisibleDx',\n      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n      badges: {\n        sensitivity: '94% Sensitivitet',\n        evidenceBased: 'Evidensbaseret',\n        openSource: 'Open Source'\n      }\n    },",
+          "newString": "  footer: {\n    about: {\n      title: 'Om VisibleDx',\n      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n      badges: {\n        sensitivity: '94% Sensitivitet',\n        evidenceBased: 'Evidensbaseret',\n        openSource: 'Open Source'\n      }\n    },\n    creator: {\n      title: 'Skaber & Licens',\n      createdBy: 'Skabt af',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Danmark',\n      license: 'Open source under MIT Licens',\n      linkedinProfile: 'LinkedIn Profil',\n      organizationWebsite: 'Organisations Hjemmeside'\n    },"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "    bottom: {\n      version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'For Sundhedsprofessionelle',\n      badge: 'Forskning & Uddannelse'\n    },",
+          "newString": "    bottom: {\n      version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n      copyright: '© 2024 Willem Gielen MD - MIT Licens',\n      audienceLabel: 'For Sundhedsprofessionelle',\n      badge: 'Forskning & Uddannelse'\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -809,8 +809,18 @@\n     evidenceBased: 'Evidensbaseret',\n     openSource: 'Open Source'\n   }\n },\n+creator: {\n+  title: 'Skaber & Licens',\n+  createdBy: 'Skabt af',\n+  name: 'Willem Gielen MD',\n+  organization: 'Nordjysk Speciallaegeklinik',\n+  location: 'Hjørring, Danmark',\n+  license: 'Open source under MIT Licens',\n+  linkedinProfile: 'LinkedIn Profil',\n+  organizationWebsite: 'Organisations Hjemmeside'\n+},\n evidence: {\n   title: 'Evidensbase',\n   guidelines: [\n     {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -861,9 +861,9 @@\n   ]\n },\n bottom: {\n   version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n-  copyright: '© 2024 VisibleDx',\n+  copyright: '© 2024 Willem Gielen MD - MIT Licens',\n   audienceLabel: 'For Sundhedsprofessionelle',\n   badge: 'Forskning & Uddannelse'\n },\n technical: 'Baseret på peer-reviewed litteratur og validerede diagnostiske kriterier. Sensitivitetsdata fra kliniske valideringsstudier. Konsulter altid aktuelle retningslinjer og specialistanbefalinger for komplekse tilfælde.'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758180553956,
+      "end": 1758180553982
+    }
+  }
+}

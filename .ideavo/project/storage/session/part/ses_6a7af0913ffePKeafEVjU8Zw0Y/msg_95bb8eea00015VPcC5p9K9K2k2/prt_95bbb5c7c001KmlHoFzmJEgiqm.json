@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bbb5c7c001KmlHoFzmJEgiqm",
+  "messageID": "msg_95bb8eea00015VPcC5p9K9K2k2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(attribution): add creator details and MIT license info",
+  "cost": 0.682698,
+  "tokens": {
+    "input": 1,
+    "output": 384,
+    "reasoning": 0,
+    "cache": {
+      "write": 389,
+      "read": 76181
+    }
+  }
+}

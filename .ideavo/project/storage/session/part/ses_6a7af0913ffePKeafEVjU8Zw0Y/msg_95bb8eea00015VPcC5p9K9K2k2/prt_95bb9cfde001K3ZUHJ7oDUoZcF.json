@@ -1,0 +1,44 @@
+{
+  "id": "prt_95bb9cfde001K3ZUHJ7oDUoZcF",
+  "messageID": "msg_95bb8eea00015VPcC5p9K9K2k2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Cf4y19FJVcKb1wneDUHxjs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "  footer: {\n    about: {\n      title: 'Over VisibleDx',\n      description: 'VisibleDx is een open-source educatief trainingsinstrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs, training en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n      badges: {\n        sensitivity: '94% Sensitiviteit',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },",
+          "newString": "  footer: {\n    about: {\n      title: 'Over VisibleDx',\n      description: 'VisibleDx is een open-source educatief trainingsinstrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs, training en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n      badges: {\n        sensitivity: '94% Sensitiviteit',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },\n    creator: {\n      title: 'Maker & Licentie',\n      createdBy: 'Gemaakt door',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denemarken',\n      license: 'Open source onder MIT Licentie',\n      linkedinProfile: 'LinkedIn Profiel',\n      organizationWebsite: 'Organisatie Website'\n    },"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "    bottom: {\n      version: 'VisibleDx v1.0 - Educatief Instrument',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'Voor Zorgverleners',\n      badge: 'Onderzoek & Onderwijs'\n    },",
+          "newString": "    bottom: {\n      version: 'VisibleDx v1.0 - Educatief Instrument',\n      copyright: '© 2024 Willem Gielen MD - MIT Licentie',\n      audienceLabel: 'Voor Zorgverleners',\n      badge: 'Onderzoek & Onderwijs'\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -800,8 +800,18 @@\n     evidenceBased: 'Evidence-Based',\n     openSource: 'Open Source'\n   }\n },\n+creator: {\n+  title: 'Maker & Licentie',\n+  createdBy: 'Gemaakt door',\n+  name: 'Willem Gielen MD',\n+  organization: 'Nordjysk Speciallaegeklinik',\n+  location: 'Hjørring, Denemarken',\n+  license: 'Open source onder MIT Licentie',\n+  linkedinProfile: 'LinkedIn Profiel',\n+  organizationWebsite: 'Organisatie Website'\n+},\n evidence: {\n   title: 'Wetenschappelijke Basis',\n   guidelines: [\n     {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -852,9 +852,9 @@\n   ]\n },\n bottom: {\n   version: 'VisibleDx v1.0 - Educatief Instrument',\n-  copyright: '© 2024 VisibleDx',\n+  copyright: '© 2024 Willem Gielen MD - MIT Licentie',\n   audienceLabel: 'Voor Zorgverleners',\n   badge: 'Onderzoek & Onderwijs'\n },\n technical: 'Gebaseerd op peer-reviewed literatuur en gevalideerde diagnostische criteria. Sensitiviteitsgegevens uit klinische validatiestudies. Raadpleeg altijd actuele richtlijnen en specialistenadvies bij complexe gevallen.'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758180538400,
+      "end": 1758180538418
+    }
+  }
+}

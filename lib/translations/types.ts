@@ -587,6 +587,16 @@ export interface Translation {
         openSource: string
       }
     }
+    creator: {
+      title: string
+      createdBy: string
+      name: string
+      organization: string
+      location: string
+      license: string
+      linkedinProfile: string
+      organizationWebsite: string
+    }
     evidence: {
       title: string
       guidelines: {

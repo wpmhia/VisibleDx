@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bbb08b1001Si1DQaho2KDE60",
+  "messageID": "msg_95bb8eea00015VPcC5p9K9K2k2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01Q4pMhrrYLnmLmaDoDs5AVr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/LICENSE",
+      "content": "MIT License\n\nCopyright (c) 2024 Willem Gielen MD\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n---\n\nEDUCATIONAL DISCLAIMER:\nThis software is designed exclusively for healthcare education and training \npurposes. It is NOT a medical device and must NOT be used for patient care, \ndiagnosis, or treatment decisions. Always consult qualified medical \nprofessionals for patient care.\n\nCREATOR INFORMATION:\nCreated by: Willem Gielen MD\nLinkedIn: https://www.linkedin.com/in/willem-gielen/\nOrganization: Nordjysk Speciallaegeklinik\nLocation: Hjørring, Denmark\nWebsite: https://www.nordjyskklinik.dk/"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/LICENSE",
+      "exists": false
+    },
+    "title": "LICENSE",
+    "time": {
+      "start": 1758180613092,
+      "end": 1758180613100
+    }
+  }
+}

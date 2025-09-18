@@ -1,0 +1,44 @@
+{
+  "id": "prt_95bb954b6001Ji59ceqyVsvCub",
+  "messageID": "msg_95bb8eea00015VPcC5p9K9K2k2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01LqCJcTvjzc3Hno43dtzDng",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "  footer: {\n    about: {\n      title: 'About VisibleDx',\n      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n      badges: {\n        sensitivity: '94% Sensitivity',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },",
+          "newString": "  footer: {\n    about: {\n      title: 'About VisibleDx',\n      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n      badges: {\n        sensitivity: '94% Sensitivity',\n        evidenceBased: 'Evidence-Based',\n        openSource: 'Open Source'\n      }\n    },\n    creator: {\n      title: 'Creator & License',\n      createdBy: 'Created by',\n      name: 'Willem Gielen MD',\n      organization: 'Nordjysk Speciallaegeklinik',\n      location: 'Hjørring, Denmark',\n      license: 'Open source under MIT License',\n      linkedinProfile: 'LinkedIn Profile',\n      organizationWebsite: 'Organization Website'\n    },"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    bottom: {\n      version: 'VisibleDx v1.0 - Educational Tool',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'For Healthcare Education Only',\n      badge: 'Research & Education Use'\n    },",
+          "newString": "    bottom: {\n      version: 'VisibleDx v1.0 - Educational Tool',\n      copyright: '© 2024 Willem Gielen MD - MIT License',\n      audienceLabel: 'For Healthcare Education Only',\n      badge: 'Research & Education Use'\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -800,8 +800,18 @@\n     evidenceBased: 'Evidence-Based',\n     openSource: 'Open Source'\n   }\n },\n+creator: {\n+  title: 'Creator & License',\n+  createdBy: 'Created by',\n+  name: 'Willem Gielen MD',\n+  organization: 'Nordjysk Speciallaegeklinik',\n+  location: 'Hjørring, Denmark',\n+  license: 'Open source under MIT License',\n+  linkedinProfile: 'LinkedIn Profile',\n+  organizationWebsite: 'Organization Website'\n+},\n evidence: {\n   title: 'Evidence Base',\n   guidelines: [\n     {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -852,9 +852,9 @@\n   ]\n },\n bottom: {\n   version: 'VisibleDx v1.0 - Educational Tool',\n-  copyright: '© 2024 VisibleDx',\n+  copyright: '© 2024 Willem Gielen MD - MIT License',\n   audienceLabel: 'For Healthcare Education Only',\n   badge: 'Research & Education Use'\n },\n technical: 'Educational simulation based on peer-reviewed literature. Training data for educational purposes only. This tool is NOT validated for clinical use and must NOT be used for patient care or medical decisions.'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758180505953,
+      "end": 1758180505977
+    }
+  }
+}

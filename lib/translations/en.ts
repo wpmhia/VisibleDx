@@ -801,6 +801,16 @@ export const en: Translation = {
         openSource: 'Open Source'
       }
     },
+    creator: {
+      title: 'Creator & License',
+      createdBy: 'Created by',
+      name: 'Willem Gielen MD',
+      organization: 'Nordjysk Speciallaegeklinik',
+      location: 'Hjørring, Denmark',
+      license: 'Open source under MIT License',
+      linkedinProfile: 'LinkedIn Profile',
+      organizationWebsite: 'Organization Website'
+    },
     evidence: {
       title: 'Evidence Base',
       guidelines: [
@@ -843,7 +853,7 @@ export const en: Translation = {
     },
     bottom: {
       version: 'VisibleDx v1.0 - Educational Tool',
-      copyright: '© 2024 VisibleDx',
+      copyright: '© 2024 Willem Gielen MD - MIT License',
       audienceLabel: 'For Healthcare Education Only',
       badge: 'Research & Education Use'
     },

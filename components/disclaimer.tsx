@@ -3,7 +3,7 @@
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Info, Stethoscope, Shield, BookOpen, AlertTriangle } from 'lucide-react'
+import { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink } from 'lucide-react'
 import { useTranslation } from '@/lib/language-context'
 
 export default function Disclaimer() {
@@ -20,7 +20,7 @@ export default function Disclaimer() {
           </AlertDescription>
         </Alert>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* About VisibleDx */}
           <div>
             <div className="flex items-center gap-2 mb-3">
@@ -34,6 +34,45 @@ export default function Disclaimer() {
               <Badge variant="outline" className="text-xs">{t.footer.about.badges.sensitivity}</Badge>
               <Badge variant="outline" className="text-xs">{t.footer.about.badges.evidenceBased}</Badge>
               <Badge variant="outline" className="text-xs">{t.footer.about.badges.openSource}</Badge>
+            </div>
+          </div>
+
+          {/* Creator & License */}
+          <div>
+            <div className="flex items-center gap-2 mb-3">
+              <User className="h-4 w-4 text-purple-600" />
+              <h3 className="font-semibold text-gray-900">{t.footer.creator.title}</h3>
+            </div>
+            <div className="text-sm text-gray-600 space-y-2">
+              <div>
+                <strong>{t.footer.creator.createdBy}:</strong><br />
+                <a 
+                  href="https://www.linkedin.com/in/willem-gielen/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1"
+                >
+                  {t.footer.creator.name}
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
+              <div>
+                <a 
+                  href="https://www.nordjyskklinik.dk/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 hover:underline transition-colors inline-flex items-center gap-1"
+                >
+                  {t.footer.creator.organization}
+                  <ExternalLink className="h-3 w-3" />
+                </a><br />
+                <span className="text-gray-500">{t.footer.creator.location}</span>
+              </div>
+              <div>
+                <Badge variant="secondary" className="text-xs">
+                  {t.footer.creator.license}
+                </Badge>
+              </div>
             </div>
           </div>
 
