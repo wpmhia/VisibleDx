@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bce5185001UKB92tblInKO13",
+  "messageID": "msg_95bce3d330010Qv0PxxPYA3aNv",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TLkM3KadUf3KVf4aJaJq5V",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 150,
+      "limit": 20
+    },
+    "output": "<file>\n00151|     ],\n00152|     categories: {\n00153|       core: 'Kern',\n00154|       pem: 'PEM',\n00155|       cardiovascular: 'Cardiovasculair',\n00156|       orthostatic: 'Orthostatisch',\n00157|       history: 'Geschiedenis',\n00158|       duration: 'Duur',\n00159|       pain: 'Pijn',\n00160|       neurological: 'Neurologisch',\n00161|       autonomic: 'Autonoom',\n00162|       gi: 'GI',\n00163|       respiratory: 'Ademhaling',\n00164|       functional: 'Functioneel',\n00165|       sensory: 'Sensorisch'\n00166|     },\n00167|     results: {\n00168|       complete: 'Screening Voltooid',\n00169|       riskAssessment: 'Gebaseerd op uw antwoorden, hier is uw risicobeoordeling',\n00170|       lowRisk: 'Laag Risico voor ME/CVS, Long COVID, of POTS',\n\n(File has more lines. Use 'offset' parameter to read beyond line 170)\n</file>",
+    "metadata": {
+      "preview": "    ],\n    categories: {\n      core: 'Kern',\n      pem: 'PEM',\n      cardiovascular: 'Cardiovasculair',\n      orthostatic: 'Orthostatisch',\n      history: 'Geschiedenis',\n      duration: 'Duur',\n      pain: 'Pijn',\n      neurological: 'Neurologisch',\n      autonomic: 'Autonoom',\n      gi: 'GI',\n      respiratory: 'Ademhaling',\n      functional: 'Functioneel',\n      sensory: 'Sensorisch'\n    },\n    results: {\n      complete: 'Screening Voltooid',\n      riskAssessment: 'Gebaseerd op uw antwoorden, hier is uw risicobeoordeling',\n      lowRisk: 'Laag Risico voor ME/CVS, Long COVID, of POTS',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758181872672,
+      "end": 1758181872687
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bce658d001kUpjifiuQCTzaC",
+  "messageID": "msg_95bce3d330010Qv0PxxPYA3aNv",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013yHF2ki7Rr5gwVjA1ARQpw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 150,
+      "limit": 20
+    },
+    "output": "<file>\n00151|       'Har du bemærket nedsat træningstoleranse eller fysisk kapacitet?',\n00152|       'Oplever du følsomhed over for lys, lyd eller berøring?',\n00153|       'Har du været ude af stand til at opretholde dit tidligere aktivitetsniveau?'\n00154|     ],\n00155|     categories: {\n00156|       core: 'Kerne',\n00157|       pem: 'PEM',\n00158|       cardiovascular: 'Kardiovaskulær',\n00159|       orthostatic: 'Ortostatisk',\n00160|       history: 'Historie',\n00161|       duration: 'Varighed',\n00162|       pain: 'Smerte',\n00163|       neurological: 'Neurologisk',\n00164|       autonomic: 'Autonom',\n00165|       gi: 'GI',\n00166|       respiratory: 'Respiratorisk',\n00167|       functional: 'Funktionel',\n00168|       sensory: 'Sensorisk'\n00169|     },\n00170|     results: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 170)\n</file>",
+    "metadata": {
+      "preview": "      'Har du bemærket nedsat træningstoleranse eller fysisk kapacitet?',\n      'Oplever du følsomhed over for lys, lyd eller berøring?',\n      'Har du været ude af stand til at opretholde dit tidligere aktivitetsniveau?'\n    ],\n    categories: {\n      core: 'Kerne',\n      pem: 'PEM',\n      cardiovascular: 'Kardiovaskulær',\n      orthostatic: 'Ortostatisk',\n      history: 'Historie',\n      duration: 'Varighed',\n      pain: 'Smerte',\n      neurological: 'Neurologisk',\n      autonomic: 'Autonom',\n      gi: 'GI',\n      respiratory: 'Respiratorisk',\n      functional: 'Funktionel',\n      sensory: 'Sensorisk'\n    },\n    results: {"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758181877637,
+      "end": 1758181877640
+    }
+  }
+}
