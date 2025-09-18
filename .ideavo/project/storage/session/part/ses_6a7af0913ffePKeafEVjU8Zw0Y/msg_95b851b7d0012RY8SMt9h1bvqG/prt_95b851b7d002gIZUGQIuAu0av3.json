@@ -1,0 +1,7 @@
+{
+  "id": "prt_95b851b7d002gIZUGQIuAu0av3",
+  "type": "text",
+  "text": "To release your project under the MIT open-source license, you must meet only two hard criteria:\n\n1. Include the **full MIT license text** (all 172 words) in every distribution of the software.  \n2. Keep the **original copyright notice** intact (and, if you modify the code, you may add your own copyright line).\n\nThat’s it—no source-code publication requirement, no copyleft “share-alike” clause, no patent grant language.  \nYou are free to:\n\n* use the code in closed-source commercial products  \n* modify it and keep the changes private  \n* redistribute or sell binaries or source, as long as the two items above accompany them\n\nTypical placement: put a file named `LICENSE` (or `LICENSE.txt`) in the repository root and paste the MIT template, replacing the `<copyright holders>` line with your name/year.  \nIf you distribute via package managers, embed the same text in the package metadata.\n\nNo registration, no CLA, no OSI approval process is required—merely attaching the license text makes the code MIT-licensed.",
+  "messageID": "msg_95b851b7d0012RY8SMt9h1bvqG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}
