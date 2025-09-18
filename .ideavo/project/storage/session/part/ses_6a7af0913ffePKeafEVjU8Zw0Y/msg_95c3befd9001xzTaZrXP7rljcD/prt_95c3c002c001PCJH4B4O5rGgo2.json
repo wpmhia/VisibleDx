@@ -1,0 +1,24 @@
+{
+  "id": "prt_95c3c002c001PCJH4B4O5rGgo2",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01Q8dTcGqDSp1qyepUF3URpt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Sensitivity.*0\\.92|sensitivity.*92"
+    },
+    "output": "Found 1 matches\n/home/user/project/app/page.tsx:\n  Line 17:     sensitivity: '0.92',",
+    "metadata": {
+      "matches": 1,
+      "truncated": false
+    },
+    "title": "Sensitivity.*0\\.92|sensitivity.*92",
+    "time": {
+      "start": 1758189060366,
+      "end": 1758189060378
+    }
+  }
+}

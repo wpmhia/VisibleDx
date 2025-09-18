@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c3cc5c8001B9aeY2aUAee8ci",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013FJ3oQFAqnydwMwwa66bGs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "              <CardContent className=\"flex flex-col flex-grow pt-0\">\n                <div className=\"flex-grow\">\n                  {module.sensitivity && (\n                    <Badge variant=\"outline\" className=\"mb-3 text-xs\">\n                      {t.common.sensitivity}: {module.sensitivity}\n                    </Badge>\n                  )}\n                </div>",
+      "newString": "              <CardContent className=\"flex flex-col flex-grow pt-0\">\n                <div className=\"flex-grow\">\n                </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -109,13 +109,8 @@\n   </CardDescription>\n </CardHeader>\n <CardContent className=\"flex flex-col flex-grow pt-0\">\n   <div className=\"flex-grow\">\n-    {module.sensitivity && (\n-      <Badge variant=\"outline\" className=\"mb-3 text-xs\">\n-        {t.common.sensitivity}: {module.sensitivity}\n-      </Badge>\n-    )}\n   </div>\n   <Button \n     className=\"w-full\" \n     variant=\"outline\"\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758189112107,
+      "end": 1758189112117
+    }
+  }
+}

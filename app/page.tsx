@@ -14,7 +14,6 @@ const getModules = (t: any) => [
     title: t.dashboard.modules.quickScreen.title,
     description: t.dashboard.modules.quickScreen.description,
     icon: Clock,
-    sensitivity: '0.92',
     route: '/quick-screen'
   },
   {
@@ -111,11 +110,6 @@ export default function Home() {
               </CardHeader>
               <CardContent className="flex flex-col flex-grow pt-0">
                 <div className="flex-grow">
-                  {module.sensitivity && (
-                    <Badge variant="outline" className="mb-3 text-xs">
-                      {t.common.sensitivity}: {module.sensitivity}
-                    </Badge>
-                  )}
                 </div>
                 <Button 
                   className="w-full" 

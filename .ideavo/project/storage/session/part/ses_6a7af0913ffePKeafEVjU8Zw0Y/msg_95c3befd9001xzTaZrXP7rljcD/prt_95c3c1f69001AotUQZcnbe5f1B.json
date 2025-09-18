@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c3c1f69001AotUQZcnbe5f1B",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HnSZZDHrj37KeH5ytgqvnn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 80,
+      "limit": 40
+    },
+    "output": "<file>\n00081|                   </div>\n00082|                   <div>\n00083|                     <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n00084|                     <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n00085|                   </div>\n00086|                 </div>\n00087|                 <Button asChild className=\"bg-green-600 hover:bg-green-700\">\n00088|                   <Link href=\"/new-patient\">\n00089|                     {t.dashboard.smartAssessment.startNew}\n00090|                   </Link>\n00091|                 </Button>\n00092|               </div>\n00093|             </CardContent>\n00094|           </Card>\n00095|         </div>\n00096| \n00097|         <div className=\"grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8\">\n00098|           {modules.map((module) => (\n00099|             <Card \n00100|               key={module.id} \n00101|               className=\"hover:shadow-md transition-shadow duration-200 flex flex-col h-full\"\n00102|             >\n00103|               <CardHeader className=\"pb-3\">\n00104|                 <div className=\"flex items-center gap-3\">\n00105|                   <module.icon className=\"h-5 w-5 text-blue-600\" />\n00106|                   <CardTitle className=\"text-base\">{module.title}</CardTitle>\n00107|                 </div>\n00108|                 <CardDescription className=\"text-sm\">\n00109|                   {module.description}\n00110|                 </CardDescription>\n00111|               </CardHeader>\n00112|               <CardContent className=\"flex flex-col flex-grow pt-0\">\n00113|                 <div className=\"flex-grow\">\n00114|                   {module.sensitivity && (\n00115|                     <Badge variant=\"outline\" className=\"mb-3 text-xs\">\n00116|                       {t.common.sensitivity}: {module.sensitivity}\n00117|                     </Badge>\n00118|                   )}\n00119|                 </div>\n00120|                 <Button \n\n(File has more lines. Use 'offset' parameter to read beyond line 120)\n</file>",
+    "metadata": {
+      "preview": "                  </div>\n                  <div>\n                    <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n                    <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n                  </div>\n                </div>\n                <Button asChild className=\"bg-green-600 hover:bg-green-700\">\n                  <Link href=\"/new-patient\">\n                    {t.dashboard.smartAssessment.startNew}\n                  </Link>\n                </Button>\n              </div>\n            </CardContent>\n          </Card>\n        </div>\n\n        <div className=\"grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8\">\n          {modules.map((module) => (\n            <Card \n              key={module.id} "
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758189068669,
+      "end": 1758189068671
+    }
+  }
+}

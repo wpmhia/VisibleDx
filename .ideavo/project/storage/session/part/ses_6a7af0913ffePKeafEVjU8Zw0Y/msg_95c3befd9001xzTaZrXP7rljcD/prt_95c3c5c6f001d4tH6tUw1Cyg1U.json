@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c3c5c6f001d4tH6tUw1Cyg1U",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01UbvYUk5epZYeoUvYJQ6eSJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "npm run build",
+      "description": "Build application"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/page.tsx:113:27\nType error: Property 'sensitivity' does not exist on type '{ id: string; title: any; description: any; icon: ForwardRefExoticComponent<Omit<LucideProps, \"ref\"> & RefAttributes<SVGSVGElement>>; route: string; }'.\n\n\u001b[0m \u001b[90m 111 |\u001b[39m               \u001b[33m<\u001b[39m\u001b[33mCardContent\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"flex flex-col flex-grow pt-0\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 112 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"flex-grow\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m                   {module\u001b[33m.\u001b[39msensitivity \u001b[33m&&\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 114 |\u001b[39m                     \u001b[33m<\u001b[39m\u001b[33mBadge\u001b[39m variant\u001b[33m=\u001b[39m\u001b[32m\"outline\"\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"mb-3 text-xs\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 115 |\u001b[39m                       {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39msensitivity}\u001b[33m:\u001b[39m {module\u001b[33m.\u001b[39msensitivity}\u001b[0m\n\u001b[0m \u001b[90m 116 |\u001b[39m                     \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mBadge\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/page.tsx:113:27\nType error: Property 'sensitivity' does not exist on type '{ id: string; title: any; description: any; icon: ForwardRefExoticComponent<Omit<LucideProps, \"ref\"> & RefAttributes<SVGSVGElement>>; route: string; }'.\n\n\u001b[0m \u001b[90m 111 |\u001b[39m               \u001b[33m<\u001b[39m\u001b[33mCardContent\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"flex flex-col flex-grow pt-0\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 112 |\u001b[39m                 \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"flex-grow\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 113 |\u001b[39m                   {module\u001b[33m.\u001b[39msensitivity \u001b[33m&&\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 114 |\u001b[39m                     \u001b[33m<\u001b[39m\u001b[33mBadge\u001b[39m variant\u001b[33m=\u001b[39m\u001b[32m\"outline\"\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"mb-3 text-xs\"\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 115 |\u001b[39m                       {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39msensitivity}\u001b[33m:\u001b[39m {module\u001b[33m.\u001b[39msensitivity}\u001b[0m\n\u001b[0m \u001b[90m 116 |\u001b[39m                     \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mBadge\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build application"
+    },
+    "title": "npm run build",
+    "time": {
+      "start": 1758189084123,
+      "end": 1758189098131
+    }
+  }
+}

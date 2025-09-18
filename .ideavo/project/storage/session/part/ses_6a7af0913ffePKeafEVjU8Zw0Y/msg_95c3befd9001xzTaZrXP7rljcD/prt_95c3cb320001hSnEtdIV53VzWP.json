@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c3cb320001hSnEtdIV53VzWP",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01M2nk8VbcnMFAx4g8bcQ7qf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 110,
+      "limit": 15
+    },
+    "output": "<file>\n00111|               <CardContent className=\"flex flex-col flex-grow pt-0\">\n00112|                 <div className=\"flex-grow\">\n00113|                   {module.sensitivity && (\n00114|                     <Badge variant=\"outline\" className=\"mb-3 text-xs\">\n00115|                       {t.common.sensitivity}: {module.sensitivity}\n00116|                     </Badge>\n00117|                   )}\n00118|                 </div>\n00119|                 <Button \n00120|                   className=\"w-full\" \n00121|                   variant=\"outline\"\n00122|                   onClick={() => window.location.href = module.route}\n00123|                 >\n00124|                   {t.dashboard.startAssessment}\n00125|                 </Button>\n\n(File has more lines. Use 'offset' parameter to read beyond line 125)\n</file>",
+    "metadata": {
+      "preview": "              <CardContent className=\"flex flex-col flex-grow pt-0\">\n                <div className=\"flex-grow\">\n                  {module.sensitivity && (\n                    <Badge variant=\"outline\" className=\"mb-3 text-xs\">\n                      {t.common.sensitivity}: {module.sensitivity}\n                    </Badge>\n                  )}\n                </div>\n                <Button \n                  className=\"w-full\" \n                  variant=\"outline\"\n                  onClick={() => window.location.href = module.route}\n                >\n                  {t.dashboard.startAssessment}\n                </Button>"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758189106486,
+      "end": 1758189106488
+    }
+  }
+}

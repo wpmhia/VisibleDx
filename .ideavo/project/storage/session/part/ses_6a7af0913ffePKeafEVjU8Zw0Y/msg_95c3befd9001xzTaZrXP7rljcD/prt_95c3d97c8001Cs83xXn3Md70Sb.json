@@ -1,0 +1,18 @@
+{
+  "id": "prt_95c3d97c8001Cs83xXn3Md70Sb",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(ui): remove sensitivity badge from initial screening card",
+  "cost": 0.5694385500000001,
+  "tokens": {
+    "input": 3,
+    "output": 128,
+    "reasoning": 0,
+    "cache": {
+      "write": 176,
+      "read": 83055
+    }
+  }
+}

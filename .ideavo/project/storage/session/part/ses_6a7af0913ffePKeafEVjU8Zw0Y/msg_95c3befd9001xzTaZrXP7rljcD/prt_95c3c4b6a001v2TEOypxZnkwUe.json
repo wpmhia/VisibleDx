@@ -1,0 +1,27 @@
+{
+  "id": "prt_95c3c4b6a001v2TEOypxZnkwUe",
+  "messageID": "msg_95c3befd9001xzTaZrXP7rljcD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_017p9gsCNZvhgaXKi1vo865g",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+      "timeout": 30000,
+      "description": "Rebuild and restart server without sensitivity badge"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Rebuild and restart server without sensitivity badge"
+    },
+    "title": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+    "time": {
+      "start": 1758189080357,
+      "end": 1758189080380
+    }
+  }
+}
