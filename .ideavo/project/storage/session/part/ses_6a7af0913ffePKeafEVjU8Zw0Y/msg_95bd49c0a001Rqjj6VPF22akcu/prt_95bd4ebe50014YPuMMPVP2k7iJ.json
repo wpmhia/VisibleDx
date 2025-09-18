@@ -1,0 +1,11 @@
+{
+  "id": "prt_95bd4ebe50014YPuMMPVP2k7iJ",
+  "messageID": "msg_95bd49c0a001Rqjj6VPF22akcu",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! Your VisibleDx application is now running on port 4000. You should be able to access it at:\n\n**https://4000-icj08nothwwaachyqlffm.e2b.app/**\n\nThe server is now properly configured and running on the correct port that matches your external URL. Your educational dermatology training tool should be accessible now!",
+  "time": {
+    "start": 1758182306399,
+    "end": 1758182306399
+  }
+}
