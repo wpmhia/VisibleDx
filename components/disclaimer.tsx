@@ -81,6 +81,14 @@ export default function Disclaimer() {
                 CDC ME/CFS Guidelines
               </a>
               <a 
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-blue-600 hover:text-blue-700 text-sm"
+              >
+                D-A-CH ME/CFS Consensus (2024)
+              </a>
+              <a 
                 href="https://www.who.int/publications/i/item/9789240025035" 
                 target="_blank" 
                 rel="noopener noreferrer"

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dd81194001adjhmCUZ1IXq4L",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01NDXgfFYKsPvAoNHDDszYjo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "oldString": "            <div className=\"space-y-2\">\n              <a \n                href=\"https://www.cdc.gov/me-cfs/about/\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                CDC ME/CFS Guidelines\n              </a>\n              <a \n                href=\"https://www.who.int/publications/i/item/9789240025035\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                WHO Long COVID Definition\n              </a>\n              <a \n                href=\"https://academic.oup.com/europace/article/20/6/921/4824690\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                ESC POTS Guidelines\n              </a>\n            </div>",
+      "newString": "            <div className=\"space-y-2\">\n              <a \n                href=\"https://www.cdc.gov/me-cfs/about/\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                CDC ME/CFS Guidelines\n              </a>\n              <a \n                href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                D-A-CH ME/CFS Consensus (2024)\n              </a>\n              <a \n                href=\"https://www.who.int/publications/i/item/9789240025035\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                WHO Long COVID Definition\n              </a>\n              <a \n                href=\"https://academic.oup.com/europace/article/20/6/921/4824690\" \n                target=\"_blank\" \n                rel=\"noopener noreferrer\"\n                className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n              >\n                ESC POTS Guidelines\n              </a>\n            </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -80,8 +80,16 @@\n >\n   CDC ME/CFS Guidelines\n </a>\n <a \n+  href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/\" \n+  target=\"_blank\" \n+  rel=\"noopener noreferrer\"\n+  className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n+>\n+  D-A-CH ME/CFS Consensus (2024)\n+</a>\n+<a \n   href=\"https://www.who.int/publications/i/item/9789240025035\" \n   target=\"_blank\" \n   rel=\"noopener noreferrer\"\n   className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758216072089,
+      "end": 1758216072098
+    }
+  }
+}

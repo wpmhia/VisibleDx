@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dd8b44a00138X72B7tmormA7",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KYxTvSD99a8VgfAhjh1jT1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 830,
+      "limit": 10
+    },
+    "output": "<file>\n00831|         {\n00832|           title: 'NASEM ME/CFS Rapport (2015)',\n00833|           url: 'https://nap.nationalacademies.org/read/19012'\n00834|         },\n00835|         {\n00836|           title: 'WHO Long COVID Definition (2021)',\n00837|           url: 'https://www.who.int/publications/i/item/9789240025035'\n00838|         },\n00839|         {\n00840|           title: 'ESC POTS Retningslinjer (2018)',\n\n(File has more lines. Use 'offset' parameter to read beyond line 840)\n</file>",
+    "metadata": {
+      "preview": "        {\n          title: 'NASEM ME/CFS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },\n        {\n          title: 'WHO Long COVID Definition (2021)',\n          url: 'https://www.who.int/publications/i/item/9789240025035'\n        },\n        {\n          title: 'ESC POTS Retningslinjer (2018)',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758216107640,
+      "end": 1758216107643
+    }
+  }
+}

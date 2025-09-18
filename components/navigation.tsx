@@ -103,6 +103,11 @@ const guidelines = [
     organization: 'NASEM'
   },
   {
+    title: 'D-A-CH ME/CFS Consensus Statement (2024)',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/',
+    organization: 'D-A-CH'
+  },
+  {
     title: 'Long COVID - WHO Clinical Case Definition (2021)',
     url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',
     organization: 'WHO'

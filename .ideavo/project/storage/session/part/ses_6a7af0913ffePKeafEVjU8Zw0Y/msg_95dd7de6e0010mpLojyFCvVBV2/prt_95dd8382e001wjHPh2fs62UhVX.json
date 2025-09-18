@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dd8382e001wjHPh2fs62UhVX",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012SvUcyWrfVYK5ZcBsjom5J",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 94,
+      "limit": 30
+    },
+    "output": "<file>\n00095|   {\n00096|     title: 'ME/CFS Basics - CDC (2024)',\n00097|     url: 'https://www.cdc.gov/me-cfs/about/',\n00098|     organization: 'CDC'\n00099|   },\n00100|   {\n00101|     title: 'ME/CFS - NASEM Report (2015)',\n00102|     url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n00103|     organization: 'NASEM'\n00104|   },\n00105|   {\n00106|     title: 'Long COVID - WHO Clinical Case Definition (2021)',\n00107|     url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n00108|     organization: 'WHO'\n00109|   },\n00110|   {\n00111|     title: 'POTS - ESC Guidelines (2018)',\n00112|     url: 'https://academic.oup.com/eurheartj/article/39/21/1840/4939241',\n00113|     organization: 'ESC'\n00114|   },\n00115|   {\n00116|     title: 'POTS - AAS/EFAS Consensus (2021)',\n00117|     url: 'https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.120.050854',\n00118|     organization: 'AAS/EFAS'\n00119|   },\n00120|   {\n00121|     title: 'Long COVID - NASEM Framework (2024)',\n00122|     url: 'https://www.nationalacademies.org/our-work/a-framework-for-measuring-progress-in-addressing-long-covid',\n00123|     organization: 'NASEM'\n00124|   }\n\n(File has more lines. Use 'offset' parameter to read beyond line 124)\n</file>",
+    "metadata": {
+      "preview": "  {\n    title: 'ME/CFS Basics - CDC (2024)',\n    url: 'https://www.cdc.gov/me-cfs/about/',\n    organization: 'CDC'\n  },\n  {\n    title: 'ME/CFS - NASEM Report (2015)',\n    url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n    organization: 'NASEM'\n  },\n  {\n    title: 'Long COVID - WHO Clinical Case Definition (2021)',\n    url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n    organization: 'WHO'\n  },\n  {\n    title: 'POTS - ESC Guidelines (2018)',\n    url: 'https://academic.oup.com/eurheartj/article/39/21/1840/4939241',\n    organization: 'ESC'\n  },"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758216075956,
+      "end": 1758216075958
+    }
+  }
+}

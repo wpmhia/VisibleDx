@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dd8617c001vYxyBr9GiJ5K6f",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01NZ8zzZNb39K6jbYR3xMiMC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 815,
+      "limit": 15
+    },
+    "output": "<file>\n00816|       title: 'Evidence Base',\n00817|       guidelines: [\n00818|         {\n00819|           title: 'ME/CFS Basics - CDC (2024)',\n00820|           url: 'https://www.cdc.gov/me-cfs/about/'\n00821|         },\n00822|         {\n00823|           title: 'NASEM ME/CFS Report (2015)',\n00824|           url: 'https://nap.nationalacademies.org/read/19012'\n00825|         },\n00826|         {\n00827|           title: 'WHO Long COVID Definition (2021)',\n00828|           url: 'https://www.who.int/publications/i/item/9789240025035'\n00829|         },\n00830|         {\n\n(File has more lines. Use 'offset' parameter to read beyond line 830)\n</file>",
+    "metadata": {
+      "preview": "      title: 'Evidence Base',\n      guidelines: [\n        {\n          title: 'ME/CFS Basics - CDC (2024)',\n          url: 'https://www.cdc.gov/me-cfs/about/'\n        },\n        {\n          title: 'NASEM ME/CFS Report (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },\n        {\n          title: 'WHO Long COVID Definition (2021)',\n          url: 'https://www.who.int/publications/i/item/9789240025035'\n        },\n        {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758216086578,
+      "end": 1758216086580
+    }
+  }
+}

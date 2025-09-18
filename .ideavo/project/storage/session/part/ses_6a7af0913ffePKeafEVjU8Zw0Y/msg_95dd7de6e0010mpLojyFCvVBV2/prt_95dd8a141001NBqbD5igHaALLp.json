@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dd8a141001NBqbD5igHaALLp",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01VXhh7hKd2M8kHB6US7o6yC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "        {\n          title: 'NASEM ME/CVS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },",
+      "newString": "        {\n          title: 'NASEM ME/CVS Rapport (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },\n        {\n          title: 'D-A-CH ME/CVS Consensus (2024)',\n          url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/'\n        },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -823,8 +823,12 @@\n   title: 'NASEM ME/CVS Rapport (2015)',\n   url: 'https://nap.nationalacademies.org/read/19012'\n },\n {\n+  title: 'D-A-CH ME/CVS Consensus (2024)',\n+  url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/'\n+},\n+{\n   title: 'WHO Long COVID Definitie (2021)',\n   url: 'https://www.who.int/publications/i/item/9789240025035'\n },\n {\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758216103917,
+      "end": 1758216103923
+    }
+  }
+}

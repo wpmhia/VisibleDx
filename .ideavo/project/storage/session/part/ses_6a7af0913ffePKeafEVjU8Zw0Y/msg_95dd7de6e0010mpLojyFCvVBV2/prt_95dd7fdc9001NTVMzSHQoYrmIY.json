@@ -1,0 +1,25 @@
+{
+  "id": "prt_95dd7fdc9001NTVMzSHQoYrmIY",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0128sCA2VGayvs8draVHVMFT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 55,
+      "limit": 25
+    },
+    "output": "<file>\n00056|               </div>\n00057|               <div className=\"pt-2\">\n00058|                 <a \n00059|                   href=\"https://github.com/wpmhia/VisibleDx\" \n00060|                   target=\"_blank\" \n00061|                   rel=\"noopener noreferrer\"\n00062|                   className=\"inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm\"\n00063|                 >\n00064|                   <Github className=\"h-4 w-4\" />\n00065|                   View Source Code\n00066|                 </a>\n00067|               </div>\n00068|             </div>\n00069|           </div>\n00070| \n00071|           {/* Right: Medical Guidelines */}\n00072|           <div>\n00073|             <h3 className=\"text-lg font-semibold text-gray-900 mb-4\">Based on Medical Guidelines</h3>\n00074|             <div className=\"space-y-2\">\n00075|               <a \n00076|                 href=\"https://www.cdc.gov/me-cfs/about/\" \n00077|                 target=\"_blank\" \n00078|                 rel=\"noopener noreferrer\"\n00079|                 className=\"block text-blue-600 hover:text-blue-700 text-sm\"\n00080|               >\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "              </div>\n              <div className=\"pt-2\">\n                <a \n                  href=\"https://github.com/wpmhia/VisibleDx\" \n                  target=\"_blank\" \n                  rel=\"noopener noreferrer\"\n                  className=\"inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm\"\n                >\n                  <Github className=\"h-4 w-4\" />\n                  View Source Code\n                </a>\n              </div>\n            </div>\n          </div>\n\n          {/* Right: Medical Guidelines */}\n          <div>\n            <h3 className=\"text-lg font-semibold text-gray-900 mb-4\">Based on Medical Guidelines</h3>\n            <div className=\"space-y-2\">\n              <a "
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758216061276,
+      "end": 1758216061281
+    }
+  }
+}

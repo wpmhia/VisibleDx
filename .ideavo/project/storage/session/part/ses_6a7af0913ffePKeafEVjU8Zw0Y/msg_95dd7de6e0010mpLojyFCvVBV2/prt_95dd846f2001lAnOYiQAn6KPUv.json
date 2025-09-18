@@ -1,0 +1,26 @@
+{
+  "id": "prt_95dd846f2001lAnOYiQAn6KPUv",
+  "messageID": "msg_95dd7de6e0010mpLojyFCvVBV2",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Ev3ePdc9Fg1HwJDWS9VJVK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "  {\n    title: 'ME/CFS - NASEM Report (2015)',\n    url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n    organization: 'NASEM'\n  },",
+      "newString": "  {\n    title: 'ME/CFS - NASEM Report (2015)',\n    url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n    organization: 'NASEM'\n  },\n  {\n    title: 'D-A-CH ME/CFS Consensus Statement (2024)',\n    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/',\n    organization: 'D-A-CH'\n  },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -102,8 +102,13 @@\n   url: 'https://www.nationalacademies.org/our-work/a-review-of-the-continuing-challenges-in-the-diagnosis-and-treatment-of-myalgic-encephalomyelitis-chronic-fatigue-syndrome-me-cfs',\n   organization: 'NASEM'\n },\n {\n+  title: 'D-A-CH ME/CFS Consensus Statement (2024)',\n+  url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/',\n+  organization: 'D-A-CH'\n+},\n+{\n   title: 'Long COVID - WHO Clinical Case Definition (2021)',\n   url: 'https://www.who.int/publications/i/item/WHO-2019-nCoV-Post_COVID-19_condition-Clinical_case_definition-2021.1',\n   organization: 'WHO'\n },\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758216081870,
+      "end": 1758216081875
+    }
+  }
+}

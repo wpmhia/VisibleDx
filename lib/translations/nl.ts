@@ -824,6 +824,10 @@ export const nl: Translation = {
           url: 'https://nap.nationalacademies.org/read/19012'
         },
         {
+          title: 'D-A-CH ME/CVS Consensus (2024)',
+          url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11093804/'
+        },
+        {
           title: 'WHO Long COVID Definitie (2021)',
           url: 'https://www.who.int/publications/i/item/9789240025035'
         },
