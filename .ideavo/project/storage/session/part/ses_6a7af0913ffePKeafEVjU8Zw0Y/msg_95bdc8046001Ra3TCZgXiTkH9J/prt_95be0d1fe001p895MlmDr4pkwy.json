@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be0d1fe001p895MlmDr4pkwy",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01V3Q3qmGZVAiHTjFHjc1XF6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "timeout 5 curl -s http://localhost:3000 | head -5",
+      "description": "Test with timeout"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 0,
+      "description": "Test with timeout"
+    },
+    "title": "timeout 5 curl -s http://localhost:3000 | head -5",
+    "time": {
+      "start": 1758183085363,
+      "end": 1758183090374
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "prt_95be08b90001dbRd8BFHqVLm6r",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01PnuAf7MKfBHwYeZXsMQKEs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "npm run dev",
+      "timeout": 15000,
+      "description": "Try Next.js with modified config"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 1946ms\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 1946ms\n",
+      "exit": null,
+      "description": "Try Next.js with modified config"
+    },
+    "title": "npm run dev",
+    "time": {
+      "start": 1758183067405,
+      "end": 1758183082410
+    }
+  }
+}

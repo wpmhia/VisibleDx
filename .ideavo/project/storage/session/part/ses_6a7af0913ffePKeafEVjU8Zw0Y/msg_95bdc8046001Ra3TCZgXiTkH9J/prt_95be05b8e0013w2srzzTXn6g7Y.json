@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be05b8e0013w2srzzTXn6g7Y",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01ArdcXK8cwYCnriJtdTp1j7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "curl -s http://localhost:3000",
+      "description": "Test simple server"
+    },
+    "output": "Test server working",
+    "metadata": {
+      "output": "Test server working",
+      "exit": 0,
+      "description": "Test simple server"
+    },
+    "title": "curl -s http://localhost:3000",
+    "time": {
+      "start": 1758183054681,
+      "end": 1758183054702
+    }
+  }
+}

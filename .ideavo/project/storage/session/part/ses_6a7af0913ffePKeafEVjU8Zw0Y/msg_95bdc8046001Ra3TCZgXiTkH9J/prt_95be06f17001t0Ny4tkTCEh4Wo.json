@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be06f17001t0Ny4tkTCEh4Wo",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01TNAUs4t46dgyavWs3gXB3Y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"node -e\" && sleep 1",
+      "description": "Stop test server"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Stop test server"
+    },
+    "title": "pkill -f \"node -e\" && sleep 1",
+    "time": {
+      "start": 1758183059755,
+      "end": 1758183059772
+    }
+  }
+}

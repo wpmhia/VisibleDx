@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bde2eb2001HIY9MiJbOrX23Z",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01Lwr43ZsZQTsFLnb6vSdYpY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "timeout 10 telnet localhost 3000 || echo \"Connection failed\"",
+      "description": "Test TCP connection to port 3000"
+    },
+    "output": "timeout: failed to run command 'telnet': No such file or directory\nConnection failed\n",
+    "metadata": {
+      "output": "timeout: failed to run command 'telnet': No such file or directory\nConnection failed\n",
+      "exit": 0,
+      "description": "Test TCP connection to port 3000"
+    },
+    "title": "timeout 10 telnet localhost 3000 || echo \"Connection failed\"",
+    "time": {
+      "start": 1758182912269,
+      "end": 1758182912298
+    }
+  }
+}

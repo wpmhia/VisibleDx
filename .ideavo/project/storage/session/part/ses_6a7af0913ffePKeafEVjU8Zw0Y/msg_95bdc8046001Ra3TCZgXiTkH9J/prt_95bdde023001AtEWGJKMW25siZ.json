@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bdde023001AtEWGJKMW25siZ",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_011MJNbxEjBSW1pBeEvCe7i1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "ps aux | grep next",
+      "description": "Check Next.js processes"
+    },
+    "output": "user       25540  0.0  0.0   2580   896 ?        S    08:06   0:00 sh -c next dev\nuser       25541  0.8  1.6 11526944 67044 ?      Sl   08:06   0:00 node /home/user/project/node_modules/.bin/next dev\nuser       25552  107 40.0 56466984 1615356 ?    Rl   08:06   1:27 next-server (v14.2.31)\nuser       25593  0.0  0.0   2580   880 ?        S    08:08   0:00 /bin/sh -c ps aux | grep next\nuser       25595  0.0  0.0   3328  1396 ?        S    08:08   0:00 grep next\n",
+    "metadata": {
+      "output": "user       25540  0.0  0.0   2580   896 ?        S    08:06   0:00 sh -c next dev\nuser       25541  0.8  1.6 11526944 67044 ?      Sl   08:06   0:00 node /home/user/project/node_modules/.bin/next dev\nuser       25552  107 40.0 56466984 1615356 ?    Rl   08:06   1:27 next-server (v14.2.31)\nuser       25593  0.0  0.0   2580   880 ?        S    08:08   0:00 /bin/sh -c ps aux | grep next\nuser       25595  0.0  0.0   3328  1396 ?        S    08:08   0:00 grep next\n",
+      "exit": 0,
+      "description": "Check Next.js processes"
+    },
+    "title": "ps aux | grep next",
+    "time": {
+      "start": 1758182892112,
+      "end": 1758182892135
+    }
+  }
+}

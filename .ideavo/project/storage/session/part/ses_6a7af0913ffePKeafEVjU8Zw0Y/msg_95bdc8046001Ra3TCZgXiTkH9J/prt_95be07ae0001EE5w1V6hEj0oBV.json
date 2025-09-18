@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be07ae0001EE5w1V6hEj0oBV",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WihDCFx6rPMYe1SRXmzPSY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/next.config.js",
+      "oldString": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  images: { unoptimized: true }\n};\n\nmodule.exports = nextConfig;",
+      "newString": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  images: { unoptimized: true },\n  experimental: {\n    serverComponentsExternalPackages: []\n  },\n  webpack: (config) => {\n    config.watchOptions = {\n      poll: 1000,\n      aggregateTimeout: 300\n    };\n    return config;\n  }\n};\n\nmodule.exports = nextConfig;"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/next.config.js\n===================================================================\n--- /home/user/project/next.config.js\n+++ /home/user/project/next.config.js\n@@ -1,6 +1,16 @@\n /** @type {import('next').NextConfig} */\n const nextConfig = {\n-  images: { unoptimized: true }\n+  images: { unoptimized: true },\n+  experimental: {\n+    serverComponentsExternalPackages: []\n+  },\n+  webpack: (config) => {\n+    config.watchOptions = {\n+      poll: 1000,\n+      aggregateTimeout: 300\n+    };\n+    return config;\n+  }\n };\n \n module.exports = nextConfig;\n"
+    },
+    "title": "next.config.js",
+    "time": {
+      "start": 1758183064526,
+      "end": 1758183064534
+    }
+  }
+}

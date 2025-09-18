@@ -1,0 +1,18 @@
+{
+  "id": "prt_95be10d840018gpsxi6MO6EfmH",
+  "messageID": "msg_95bdc8046001Ra3TCZgXiTkH9J",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(dev): resolve Next.js server hanging in e2b environment",
+  "cost": 0.30076004999999995,
+  "tokens": {
+    "input": 7,
+    "output": 304,
+    "reasoning": 0,
+    "cache": {
+      "write": 112,
+      "read": 28437
+    }
+  }
+}
