@@ -1,0 +1,26 @@
+{
+  "id": "prt_95be3797b001NGcLb9p82G5h9N",
+  "messageID": "msg_95be362aa001gprMta5JpbGDp8",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01WsKTBq8noCh6aADuR12g71",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\" || true",
+      "description": "Stop current server"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Stop current server"
+    },
+    "title": "pkill -f \"next\" || true",
+    "time": {
+      "start": 1758183259361,
+      "end": 1758183259386
+    }
+  }
+}
