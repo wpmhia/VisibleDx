@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9cab70001EJfOKSQld0mZMh",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Jsv6AyLrjV3eVLmbxgBT4v",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Advisor',\n        description: 'Educational treatment examples'\n      }",
+      "newString": "      subtypeAdvisor: {\n        title: 'Clinical Management',\n        description: 'Condition subtyping & treatment planning examples'\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -91,10 +91,10 @@\n     title: 'Diagnostic Criteria',\n     description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'\n   },\n   subtypeAdvisor: {\n-    title: 'Subtype & Rx Advisor',\n-    description: 'Educational treatment examples'\n+    title: 'Clinical Management',\n+    description: 'Condition subtyping & treatment planning examples'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 year avg diagnostic delay',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178619609,
+      "end": 1758178619616
+    }
+  }
+}

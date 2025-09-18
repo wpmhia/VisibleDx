@@ -24,14 +24,24 @@ export interface Translation {
     success: string
     retry: string
     close: string
+    step: string
+    of: string
+    progress: string
+    completing: string
+    saving: string
+    back: string
+    goBack: string
+    exit: string
+    restart: string
+    reset: string
+    confirm: string
+    areYouSure: string
     age: string
     gender: string
     male: string
     female: string
     other: string
     question: string
-    of: string
-    step: string
     minute: string
     minutes: string
     bpm: string

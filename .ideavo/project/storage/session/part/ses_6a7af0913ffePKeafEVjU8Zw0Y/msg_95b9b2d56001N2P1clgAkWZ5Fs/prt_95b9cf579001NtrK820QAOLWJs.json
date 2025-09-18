@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9cf579001NtrK820QAOLWJs",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_019LEhjWRwSYE1L16oGyiRHE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation-controls.tsx",
+      "content": "'use client'\n\nimport { Button } from '@/components/ui/button'\nimport { ArrowLeft, ArrowRight, Home, RotateCcw, X } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n  AlertDialogTrigger,\n} from '@/components/ui/alert-dialog'\n\ninterface NavigationControlsProps {\n  onBack?: () => void\n  onNext?: () => void\n  onHome?: () => void\n  onRestart?: () => void\n  onExit?: () => void\n  canGoBack?: boolean\n  canGoNext?: boolean\n  nextLabel?: string\n  backLabel?: string\n  showHome?: boolean\n  showRestart?: boolean\n  showExit?: boolean\n  isNextLoading?: boolean\n  exitConfirmation?: boolean\n  className?: string\n}\n\nexport default function NavigationControls({\n  onBack,\n  onNext,\n  onHome,\n  onRestart,\n  onExit,\n  canGoBack = true,\n  canGoNext = true,\n  nextLabel,\n  backLabel,\n  showHome = true,\n  showRestart = false,\n  showExit = true,\n  isNextLoading = false,\n  exitConfirmation = true,\n  className = ''\n}: NavigationControlsProps) {\n  const { t } = useTranslation()\n\n  const ExitButton = () => (\n    <Button\n      variant=\"outline\"\n      onClick={onExit}\n      className=\"flex items-center gap-2\"\n    >\n      <X className=\"h-4 w-4\" />\n      {t.common.exit}\n    </Button>\n  )\n\n  const ExitWithConfirmation = () => (\n    <AlertDialog>\n      <AlertDialogTrigger asChild>\n        <Button variant=\"outline\" className=\"flex items-center gap-2\">\n          <X className=\"h-4 w-4\" />\n          {t.common.exit}\n        </Button>\n      </AlertDialogTrigger>\n      <AlertDialogContent>\n        <AlertDialogHeader>\n          <AlertDialogTitle>{t.common.areYouSure}</AlertDialogTitle>\n          <AlertDialogDescription>\n            Your progress will be lost if you exit this training module. You can always restart from the beginning.\n          </AlertDialogDescription>\n        </AlertDialogHeader>\n        <AlertDialogFooter>\n          <AlertDialogCancel>{t.common.cancel}</AlertDialogCancel>\n          <AlertDialogAction onClick={onExit}>\n            {t.common.exit}\n          </AlertDialogAction>\n        </AlertDialogFooter>\n      </AlertDialogContent>\n    </AlertDialog>\n  )\n\n  return (\n    <div className={`flex items-center justify-between w-full ${className}`}>\n      {/* Left Side Controls */}\n      <div className=\"flex items-center gap-2\">\n        {showHome && onHome && (\n          <Button\n            variant=\"ghost\"\n            onClick={onHome}\n            className=\"flex items-center gap-2\"\n          >\n            <Home className=\"h-4 w-4\" />\n            Home\n          </Button>\n        )}\n        \n        {onBack && (\n          <Button\n            variant=\"outline\"\n            onClick={onBack}\n            disabled={!canGoBack}\n            className=\"flex items-center gap-2\"\n          >\n            <ArrowLeft className=\"h-4 w-4\" />\n            {backLabel || t.common.back}\n          </Button>\n        )}\n      </div>\n\n      {/* Center Controls */}\n      <div className=\"flex items-center gap-2\">\n        {showRestart && onRestart && (\n          <Button\n            variant=\"ghost\"\n            onClick={onRestart}\n            className=\"flex items-center gap-2\"\n          >\n            <RotateCcw className=\"h-4 w-4\" />\n            {t.common.restart}\n          </Button>\n        )}\n      </div>\n\n      {/* Right Side Controls */}\n      <div className=\"flex items-center gap-2\">\n        {onNext && (\n          <Button\n            onClick={onNext}\n            disabled={!canGoNext || isNextLoading}\n            className=\"flex items-center gap-2\"\n          >\n            {nextLabel || t.common.next}\n            <ArrowRight className=\"h-4 w-4\" />\n          </Button>\n        )}\n\n        {showExit && onExit && (\n          exitConfirmation ? <ExitWithConfirmation /> : <ExitButton />\n        )}\n      </div>\n    </div>\n  )\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/navigation-controls.tsx",
+      "exists": false
+    },
+    "title": "components/navigation-controls.tsx",
+    "time": {
+      "start": 1758178649826,
+      "end": 1758178649850
+    }
+  }
+}

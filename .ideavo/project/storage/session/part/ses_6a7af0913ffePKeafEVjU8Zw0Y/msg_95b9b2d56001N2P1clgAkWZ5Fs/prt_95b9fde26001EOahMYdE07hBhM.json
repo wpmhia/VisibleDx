@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9fde26001EOahMYdE07hBhM",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HzgetUaop4Mq8YLZZyMMfU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "        <div className=\"mb-8\">\n          <Card className=\"border-2 border-green-500 bg-gradient-to-r from-green-50 to-blue-50\">\n            <CardContent className=\"pt-6\">\n              <div className=\"flex items-center justify-between\">\n                <div className=\"flex items-center gap-4\">\n                  <div className=\"p-3 bg-green-100 rounded-full\">\n                    <User className=\"h-8 w-8 text-green-600\" />\n                  </div>\n                  <div>\n                    <h3 className=\"text-xl font-bold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n                    <p className=\"text-green-700\">{t.dashboard.smartAssessment.description}</p>\n                    <div className=\"flex gap-2 mt-2\">\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.autoRouting}</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.soapNotes}</Badge>\n                      <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.icdCodes}</Badge>\n                    </div>\n                  </div>\n                </div>\n                <Button size=\"lg\" asChild className=\"bg-green-600 hover:bg-green-700\">\n                  <Link href=\"/new-patient\">\n                    {t.dashboard.smartAssessment.startNew}\n                  </Link>\n                </Button>\n              </div>\n            </CardContent>\n          </Card>\n        </div>",
+      "newString": "        <div className=\"mb-8\">\n          <Card className=\"border border-green-200 bg-green-50\">\n            <CardContent className=\"p-6\">\n              <div className=\"flex items-center justify-between\">\n                <div className=\"flex items-center gap-4\">\n                  <div className=\"p-2 bg-green-100 rounded-lg\">\n                    <User className=\"h-6 w-6 text-green-600\" />\n                  </div>\n                  <div>\n                    <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n                    <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n                  </div>\n                </div>\n                <Button asChild className=\"bg-green-600 hover:bg-green-700\">\n                  <Link href=\"/new-patient\">\n                    {t.dashboard.smartAssessment.startNew}\n                  </Link>\n                </Button>\n              </div>\n            </CardContent>\n          </Card>\n        </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -71,26 +71,21 @@\n   </p>\n </div>\n \n <div className=\"mb-8\">\n-  <Card className=\"border-2 border-green-500 bg-gradient-to-r from-green-50 to-blue-50\">\n-    <CardContent className=\"pt-6\">\n+  <Card className=\"border border-green-200 bg-green-50\">\n+    <CardContent className=\"p-6\">\n       <div className=\"flex items-center justify-between\">\n         <div className=\"flex items-center gap-4\">\n-          <div className=\"p-3 bg-green-100 rounded-full\">\n-            <User className=\"h-8 w-8 text-green-600\" />\n+          <div className=\"p-2 bg-green-100 rounded-lg\">\n+            <User className=\"h-6 w-6 text-green-600\" />\n           </div>\n           <div>\n-            <h3 className=\"text-xl font-bold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n-            <p className=\"text-green-700\">{t.dashboard.smartAssessment.description}</p>\n-            <div className=\"flex gap-2 mt-2\">\n-              <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.autoRouting}</Badge>\n-              <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.soapNotes}</Badge>\n-              <Badge variant=\"secondary\" className=\"text-xs\">{t.dashboard.smartAssessment.icdCodes}</Badge>\n-            </div>\n+            <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n+            <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n           </div>\n         </div>\n-        <Button size=\"lg\" asChild className=\"bg-green-600 hover:bg-green-700\">\n+        <Button asChild className=\"bg-green-600 hover:bg-green-700\">\n           <Link href=\"/new-patient\">\n             {t.dashboard.smartAssessment.startNew}\n           </Link>\n         </Button>\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758178835504,
+      "end": 1758178835508
+    }
+  }
+}

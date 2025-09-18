@@ -1,0 +1,26 @@
+{
+  "id": "prt_95ba3416d001BM6tDoZgELjWmR",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01E7td8aSLFgTCg51J3iLjhD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "    close: 'Luk',\n    age: 'Alder',",
+      "newString": "    close: 'Luk',\n    step: 'Trin',\n    of: 'af',\n    progress: 'Fremgang',\n    completing: 'Færdiggør',\n    saving: 'Gemmer',\n    back: 'Tilbage',\n    goBack: 'Gå Tilbage',\n    exit: 'Afslut',\n    restart: 'Genstart',\n    reset: 'Nulstil',\n    confirm: 'Bekræft',\n    areYouSure: 'Er du sikker?',\n    age: 'Alder',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -23,8 +23,20 @@\n error: 'Fejl',\n success: 'Succes',\n retry: 'Prøv igen',\n close: 'Luk',\n+step: 'Trin',\n+of: 'af',\n+progress: 'Fremgang',\n+completing: 'Færdiggør',\n+saving: 'Gemmer',\n+back: 'Tilbage',\n+goBack: 'Gå Tilbage',\n+exit: 'Afslut',\n+restart: 'Genstart',\n+reset: 'Nulstil',\n+confirm: 'Bekræft',\n+areYouSure: 'Er du sikker?',\n age: 'Alder',\n gender: 'Køn',\n male: 'Mand',\n female: 'Kvinde',\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758179051983,
+      "end": 1758179051993
+    }
+  }
+}

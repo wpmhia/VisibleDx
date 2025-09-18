@@ -1,0 +1,26 @@
+{
+  "id": "prt_95ba1fdbd001wkJN4AsuMs0CZz",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01RTp2oE6zEuxM9DyzKKGYqF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build project to verify all Nielsen's heuristic improvements"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./components/navigation-controls.tsx:62:17\nType error: Property 'exit' does not exist on type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 31 more ...; optional: string; }'.\n\n\u001b[0m \u001b[90m 60 |\u001b[39m     \u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mX\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"h-4 w-4\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39mexit}\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 63 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mButton\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 64 |\u001b[39m   )\u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./components/navigation-controls.tsx:62:17\nType error: Property 'exit' does not exist on type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 31 more ...; optional: string; }'.\n\n\u001b[0m \u001b[90m 60 |\u001b[39m     \u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mX\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"h-4 w-4\"\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m       {t\u001b[33m.\u001b[39mcommon\u001b[33m.\u001b[39mexit}\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 63 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mButton\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 64 |\u001b[39m   )\u001b[0m\n\u001b[0m \u001b[90m 65 |\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build project to verify all Nielsen's heuristic improvements"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758178967870,
+      "end": 1758178986226
+    }
+  }
+}

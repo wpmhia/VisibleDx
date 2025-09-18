@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9c9b280016K9SZa7Vf0bwX2",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Wnj2yTmNRz6ZhntZFYyWAz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      criteriaEngine: {\n        title: 'Criteria Engine',\n        description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n      },",
+      "newString": "      criteriaEngine: {\n        title: 'Diagnostic Criteria',\n        description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'\n      },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -87,10 +87,10 @@\n   title: 'PEM Assessment',\n   description: 'Post-exertional malaise symptom evaluation'\n },\n criteriaEngine: {\n-  title: 'Criteria Engine',\n-  description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n+  title: 'Diagnostic Criteria',\n+  description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'\n },\n subtypeAdvisor: {\n   title: 'Subtype & Rx Advisor',\n   description: 'Educational treatment examples'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178615241,
+      "end": 1758178615248
+    }
+  }
+}

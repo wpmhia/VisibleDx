@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9dc9d7001ggFcuaySGmNTgR",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01XurbsZUQtsAmuWhAWgyZqS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/status-indicator.tsx",
+      "content": "'use client'\n\nimport { Badge } from '@/components/ui/badge'\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { \n  CheckCircle, \n  AlertCircle, \n  AlertTriangle, \n  Info, \n  Clock,\n  XCircle \n} from 'lucide-react'\nimport { colors } from '@/lib/design-system'\n\nexport type StatusType = 'success' | 'warning' | 'error' | 'info' | 'pending' | 'neutral'\n\ninterface StatusIndicatorProps {\n  type: StatusType\n  title?: string\n  message: string\n  variant?: 'badge' | 'alert' | 'inline'\n  size?: 'sm' | 'md' | 'lg'\n  className?: string\n}\n\nconst statusConfig = {\n  success: {\n    icon: CheckCircle,\n    colors: {\n      badge: 'bg-green-100 text-green-800 border-green-200',\n      alert: 'border-green-200 bg-green-50',\n      text: 'text-green-800',\n      icon: 'text-green-600',\n    },\n  },\n  warning: {\n    icon: AlertTriangle,\n    colors: {\n      badge: 'bg-amber-100 text-amber-800 border-amber-200',\n      alert: 'border-amber-200 bg-amber-50',\n      text: 'text-amber-800',\n      icon: 'text-amber-600',\n    },\n  },\n  error: {\n    icon: XCircle,\n    colors: {\n      badge: 'bg-red-100 text-red-800 border-red-200',\n      alert: 'border-red-200 bg-red-50',\n      text: 'text-red-800',\n      icon: 'text-red-600',\n    },\n  },\n  info: {\n    icon: Info,\n    colors: {\n      badge: 'bg-blue-100 text-blue-800 border-blue-200',\n      alert: 'border-blue-200 bg-blue-50',\n      text: 'text-blue-800',\n      icon: 'text-blue-600',\n    },\n  },\n  pending: {\n    icon: Clock,\n    colors: {\n      badge: 'bg-gray-100 text-gray-800 border-gray-200',\n      alert: 'border-gray-200 bg-gray-50',\n      text: 'text-gray-800',\n      icon: 'text-gray-600',\n    },\n  },\n  neutral: {\n    icon: AlertCircle,\n    colors: {\n      badge: 'bg-gray-100 text-gray-800 border-gray-200',\n      alert: 'border-gray-200 bg-gray-50',\n      text: 'text-gray-800',\n      icon: 'text-gray-600',\n    },\n  },\n}\n\nconst sizeClasses = {\n  sm: {\n    icon: 'h-3 w-3',\n    text: 'text-xs',\n    badge: 'text-xs px-2 py-1',\n  },\n  md: {\n    icon: 'h-4 w-4',\n    text: 'text-sm',\n    badge: 'text-sm px-3 py-1',\n  },\n  lg: {\n    icon: 'h-5 w-5',\n    text: 'text-base',\n    badge: 'text-base px-4 py-2',\n  },\n}\n\nexport default function StatusIndicator({\n  type,\n  title,\n  message,\n  variant = 'alert',\n  size = 'md',\n  className = ''\n}: StatusIndicatorProps) {\n  const config = statusConfig[type]\n  const Icon = config.icon\n  const sizeClass = sizeClasses[size]\n\n  if (variant === 'badge') {\n    return (\n      <Badge \n        variant=\"outline\" \n        className={`${config.colors.badge} ${sizeClass.badge} flex items-center gap-1 ${className}`}\n      >\n        <Icon className={sizeClass.icon} />\n        {message}\n      </Badge>\n    )\n  }\n\n  if (variant === 'inline') {\n    return (\n      <div className={`flex items-center gap-2 ${className}`}>\n        <Icon className={`${sizeClass.icon} ${config.colors.icon}`} />\n        <span className={`${sizeClass.text} ${config.colors.text}`}>\n          {message}\n        </span>\n      </div>\n    )\n  }\n\n  return (\n    <Alert className={`${config.colors.alert} ${className}`}>\n      <Icon className={`${sizeClass.icon} ${config.colors.icon}`} />\n      {title && (\n        <div className={`font-semibold ${config.colors.text} mb-1`}>\n          {title}\n        </div>\n      )}\n      <AlertDescription className={config.colors.text}>\n        {message}\n      </AlertDescription>\n    </Alert>\n  )\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/status-indicator.tsx",
+      "exists": false
+    },
+    "title": "components/status-indicator.tsx",
+    "time": {
+      "start": 1758178704843,
+      "end": 1758178704866
+    }
+  }
+}

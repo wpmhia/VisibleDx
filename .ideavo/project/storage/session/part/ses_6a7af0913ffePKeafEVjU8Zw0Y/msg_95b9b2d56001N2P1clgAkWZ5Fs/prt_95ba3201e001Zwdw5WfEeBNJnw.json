@@ -1,0 +1,26 @@
+{
+  "id": "prt_95ba3201e001Zwdw5WfEeBNJnw",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Nj4tV7RLHPDnfNeaAchVpf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "    other: 'Anders',\n    question: 'Vraag',\n    of: 'van',\n    step: 'Stap',",
+      "newString": "    other: 'Anders',\n    question: 'Vraag',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -41,10 +41,8 @@\n male: 'Man',\n female: 'Vrouw',\n other: 'Anders',\n question: 'Vraag',\n-of: 'van',\n-step: 'Stap',\n minute: 'minuut',\n minutes: 'minuten',\n bpm: 'spm',\n criteria: 'Criteria',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758179042301,
+      "end": 1758179042311
+    }
+  }
+}

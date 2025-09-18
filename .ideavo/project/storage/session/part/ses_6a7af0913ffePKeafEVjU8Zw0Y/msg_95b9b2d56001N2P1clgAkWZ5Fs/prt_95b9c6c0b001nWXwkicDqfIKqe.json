@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b9c6c0b001nWXwkicDqfIKqe",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Twg83fKESNAd83L75JxZcU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 82,
+      "limit": 15
+    },
+    "output": "<file>\n00083|         title: 'Stand-Test Pro',\n00084|         description: '10-min NASA Lean protocol with HR monitoring'\n00085|       },\n00086|       pemQuest: {\n00087|         title: 'PEM-Quest',\n00088|         description: 'Post-Exertional Malaise assessment'\n00089|       },\n00090|       criteriaEngine: {\n00091|         title: 'Criteria Engine',\n00092|         description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n00093|       },\n00094|       subtypeAdvisor: {\n00095|         title: 'Subtype & Rx Advisor',\n00096|         description: 'Educational treatment examples'\n00097|       }\n\n(File has more lines. Use 'offset' parameter to read beyond line 97)\n</file>",
+    "metadata": {
+      "preview": "        title: 'Stand-Test Pro',\n        description: '10-min NASA Lean protocol with HR monitoring'\n      },\n      pemQuest: {\n        title: 'PEM-Quest',\n        description: 'Post-Exertional Malaise assessment'\n      },\n      criteriaEngine: {\n        title: 'Criteria Engine',\n        description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n      },\n      subtypeAdvisor: {\n        title: 'Subtype & Rx Advisor',\n        description: 'Educational treatment examples'\n      }"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178602582,
+      "end": 1758178602584
+    }
+  }
+}

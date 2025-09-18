@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9c7877001vWV860HY30X2Nu",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01VFLsYFAV5CcAujTRPHrvdQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      standTest: {\n        title: 'Stand-Test Pro',\n        description: '10-min NASA Lean protocol with HR monitoring'\n      },",
+      "newString": "      standTest: {\n        title: 'Orthostatic Vitals',\n        description: 'Standing test with heart rate monitoring (NASA protocol)'\n      },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -79,10 +79,10 @@\n   title: 'Differential Diagnosis',\n   description: 'Rule out alternative diagnoses & red flag symptoms'\n },\n standTest: {\n-  title: 'Stand-Test Pro',\n-  description: '10-min NASA Lean protocol with HR monitoring'\n+  title: 'Orthostatic Vitals',\n+  description: 'Standing test with heart rate monitoring (NASA protocol)'\n },\n pemQuest: {\n   title: 'PEM-Quest',\n   description: 'Post-Exertional Malaise assessment'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178606695,
+      "end": 1758178606703
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9c8930001HCjpNwItqyBbq9",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01TP9i2Vn1kg7bLAqoqB5Hb7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      pemQuest: {\n        title: 'PEM-Quest',\n        description: 'Post-Exertional Malaise assessment'\n      },",
+      "newString": "      pemQuest: {\n        title: 'PEM Assessment',\n        description: 'Post-exertional malaise symptom evaluation'\n      },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -83,10 +83,10 @@\n   title: 'Orthostatic Vitals',\n   description: 'Standing test with heart rate monitoring (NASA protocol)'\n },\n pemQuest: {\n-  title: 'PEM-Quest',\n-  description: 'Post-Exertional Malaise assessment'\n+  title: 'PEM Assessment',\n+  description: 'Post-exertional malaise symptom evaluation'\n },\n criteriaEngine: {\n   title: 'Criteria Engine',\n   description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178610767,
+      "end": 1758178610774
+    }
+  }
+}

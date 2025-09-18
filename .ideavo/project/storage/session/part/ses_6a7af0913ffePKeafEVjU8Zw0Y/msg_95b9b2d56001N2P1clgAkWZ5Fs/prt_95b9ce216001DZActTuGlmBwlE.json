@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9ce216001DZActTuGlmBwlE",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01XMyUAet87xYVXacW8rH8AT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    saving: 'Saving',",
+      "newString": "    saving: 'Saving',\n    back: 'Back',\n    goBack: 'Go Back',\n    exit: 'Exit',\n    restart: 'Restart',\n    reset: 'Reset',\n    confirm: 'Confirm',\n    areYouSure: 'Are you sure?',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -28,8 +28,15 @@\n of: 'of',\n progress: 'Progress',\n completing: 'Completing',\n saving: 'Saving',\n+back: 'Back',\n+goBack: 'Go Back',\n+exit: 'Exit',\n+restart: 'Restart',\n+reset: 'Reset',\n+confirm: 'Confirm',\n+areYouSure: 'Are you sure?',\n age: 'Age',\n gender: 'Gender',\n male: 'Male',\n female: 'Female',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178634076,
+      "end": 1758178634083
+    }
+  }
+}

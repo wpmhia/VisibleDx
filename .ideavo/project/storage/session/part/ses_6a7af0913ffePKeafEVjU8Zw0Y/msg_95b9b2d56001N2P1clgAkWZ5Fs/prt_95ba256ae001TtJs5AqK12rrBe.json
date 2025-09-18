@@ -1,0 +1,25 @@
+{
+  "id": "prt_95ba256ae001TtJs5AqK12rrBe",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01X9WCkkqrp6AAKgTqpZXobG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 28,
+      "limit": 10
+    },
+    "output": "<file>\n00029|     progress: 'Progress',\n00030|     completing: 'Completing',\n00031|     saving: 'Saving',\n00032|     back: 'Back',\n00033|     goBack: 'Go Back',\n00034|     exit: 'Exit',\n00035|     restart: 'Restart',\n00036|     reset: 'Reset',\n00037|     confirm: 'Confirm',\n00038|     areYouSure: 'Are you sure?',\n\n(File has more lines. Use 'offset' parameter to read beyond line 38)\n</file>",
+    "metadata": {
+      "preview": "    progress: 'Progress',\n    completing: 'Completing',\n    saving: 'Saving',\n    back: 'Back',\n    goBack: 'Go Back',\n    exit: 'Exit',\n    restart: 'Restart',\n    reset: 'Reset',\n    confirm: 'Confirm',\n    areYouSure: 'Are you sure?',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178990461,
+      "end": 1758178990464
+    }
+  }
+}

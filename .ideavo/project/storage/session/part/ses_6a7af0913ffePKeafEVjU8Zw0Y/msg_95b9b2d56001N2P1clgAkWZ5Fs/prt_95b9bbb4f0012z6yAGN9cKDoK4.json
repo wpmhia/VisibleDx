@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9bbb4f0012z6yAGN9cKDoK4",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01QZ7rd7nV52migmyoXyCFaj",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/progress-indicator.tsx",
+      "content": "'use client'\n\nimport { Progress } from '@/components/ui/progress'\nimport { Badge } from '@/components/ui/badge'\nimport { CheckCircle, Circle, Loader2 } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface Step {\n  id: string\n  title: string\n  status: 'pending' | 'current' | 'completed'\n}\n\ninterface ProgressIndicatorProps {\n  steps: Step[]\n  currentStep: number\n  totalSteps: number\n  isLoading?: boolean\n  className?: string\n}\n\nexport default function ProgressIndicator({ \n  steps, \n  currentStep, \n  totalSteps, \n  isLoading = false,\n  className = '' \n}: ProgressIndicatorProps) {\n  const { t } = useTranslation()\n  const progressPercentage = (currentStep / totalSteps) * 100\n\n  return (\n    <div className={`w-full ${className}`}>\n      {/* Progress Bar */}\n      <div className=\"mb-4\">\n        <div className=\"flex justify-between items-center mb-2\">\n          <span className=\"text-sm font-medium text-gray-700\">\n            {t.common.progress}\n          </span>\n          <span className=\"text-sm text-gray-500\">\n            {t.common.step} {currentStep} {t.common.of} {totalSteps}\n          </span>\n        </div>\n        <Progress value={progressPercentage} className=\"h-2\" />\n      </div>\n\n      {/* Step Indicators */}\n      <div className=\"flex items-center justify-between\">\n        {steps.map((step, index) => (\n          <div key={step.id} className=\"flex flex-col items-center flex-1\">\n            <div className=\"flex items-center w-full\">\n              {/* Step Circle */}\n              <div className=\"flex items-center justify-center w-8 h-8 rounded-full border-2 relative\">\n                {step.status === 'completed' ? (\n                  <CheckCircle className=\"w-8 h-8 text-green-600\" />\n                ) : step.status === 'current' ? (\n                  isLoading ? (\n                    <Loader2 className=\"w-5 h-5 text-blue-600 animate-spin\" />\n                  ) : (\n                    <div className=\"w-4 h-4 bg-blue-600 rounded-full\" />\n                  )\n                ) : (\n                  <Circle className=\"w-8 h-8 text-gray-300\" />\n                )}\n              </div>\n              \n              {/* Connecting Line */}\n              {index < steps.length - 1 && (\n                <div className={`flex-1 h-0.5 mx-2 ${\n                  step.status === 'completed' ? 'bg-green-600' : 'bg-gray-200'\n                }`} />\n              )}\n            </div>\n\n            {/* Step Label */}\n            <div className=\"mt-2 text-center\">\n              <p className={`text-xs font-medium ${\n                step.status === 'current' \n                  ? 'text-blue-600' \n                  : step.status === 'completed'\n                  ? 'text-green-600'\n                  : 'text-gray-500'\n              }`}>\n                {step.title}\n              </p>\n              {step.status === 'current' && (\n                <Badge variant=\"outline\" className=\"mt-1 text-xs\">\n                  {isLoading ? t.common.processing : 'Current'}\n                </Badge>\n              )}\n            </div>\n          </div>\n        ))}\n      </div>\n    </div>\n  )\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/progress-indicator.tsx",
+      "exists": false
+    },
+    "title": "components/progress-indicator.tsx",
+    "time": {
+      "start": 1758178567562,
+      "end": 1758178567587
+    }
+  }
+}

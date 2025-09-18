@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9c5b1e001ZYPMk5dZx7smrJ",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01SutXJweHS3edF9jvcU5Aqh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      redFlag: {\n        title: 'Red-flag Checker',\n        description: 'Lab suggestions to rule out explanatory disease'\n      },",
+      "newString": "      redFlag: {\n        title: 'Differential Diagnosis',\n        description: 'Rule out alternative diagnoses & red flag symptoms'\n      },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -75,10 +75,10 @@\n   title: 'Initial Screening',\n   description: 'Chief complaint & symptom review (16 questions, ~2 min)'\n },\n redFlag: {\n-  title: 'Red-flag Checker',\n-  description: 'Lab suggestions to rule out explanatory disease'\n+  title: 'Differential Diagnosis',\n+  description: 'Rule out alternative diagnoses & red flag symptoms'\n },\n standTest: {\n   title: 'Stand-Test Pro',\n   description: '10-min NASA Lean protocol with HR monitoring'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178599098,
+      "end": 1758178599107
+    }
+  }
+}

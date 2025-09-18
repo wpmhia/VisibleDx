@@ -1,0 +1,25 @@
+{
+  "id": "prt_95ba2f818001VFqsI5qd6pGDkp",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Fdz4yNc6fHMyqfqn8DVUSt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 20,
+      "limit": 15
+    },
+    "output": "<file>\n00021|     loading: 'Laden',\n00022|     processing: 'Verwerken',\n00023|     error: 'Fout',\n00024|     success: 'Succes',\n00025|     retry: 'Opnieuw',\n00026|     close: 'Sluiten',\n00027|     age: 'Leeftijd',\n00028|     gender: 'Geslacht',\n00029|     male: 'Man',\n00030|     female: 'Vrouw',\n00031|     other: 'Anders',\n00032|     question: 'Vraag',\n00033|     of: 'van',\n00034|     step: 'Stap',\n00035|     minute: 'minuut',\n\n(File has more lines. Use 'offset' parameter to read beyond line 35)\n</file>",
+    "metadata": {
+      "preview": "    loading: 'Laden',\n    processing: 'Verwerken',\n    error: 'Fout',\n    success: 'Succes',\n    retry: 'Opnieuw',\n    close: 'Sluiten',\n    age: 'Leeftijd',\n    gender: 'Geslacht',\n    male: 'Man',\n    female: 'Vrouw',\n    other: 'Anders',\n    question: 'Vraag',\n    of: 'van',\n    step: 'Stap',\n    minute: 'minuut',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758179031757,
+      "end": 1758179031760
+    }
+  }
+}

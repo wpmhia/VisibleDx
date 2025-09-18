@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9fbf16001JRMYzOOCeaYq6N",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Y966brz3DCKS2PFdGWMVXb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "oldString": "        <div className=\"text-center mb-12\">\n          <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n            {t.app.title}\n          </h1>\n          <p className=\"text-xl text-gray-600 max-w-3xl mx-auto mb-6\">\n            {t.app.subtitle}\n          </p>\n          <div className=\"flex justify-center gap-4 flex-wrap\">\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.diagnosticDelay}\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.doctorsConsulted}\n            </Badge>\n            <Badge variant=\"secondary\" className=\"px-3 py-1\">\n              {t.dashboard.stats.sensitivityValidated}\n            </Badge>\n          </div>\n        </div>",
+      "newString": "        <div className=\"text-center mb-8\">\n          <h1 className=\"text-3xl font-bold text-gray-900 mb-3\">\n            {t.app.title}\n          </h1>\n          <p className=\"text-lg text-gray-600 max-w-2xl mx-auto\">\n            {t.app.subtitle}\n          </p>\n        </div>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/page.tsx\n===================================================================\n--- /home/user/project/app/page.tsx\n+++ /home/user/project/app/page.tsx\n@@ -61,26 +61,15 @@\n \n return (\n   <div className=\"bg-gradient-to-br from-blue-50 to-indigo-100\">\n     <div className=\"container mx-auto px-4 py-8\">\n-      <div className=\"text-center mb-12\">\n-        <h1 className=\"text-4xl font-bold text-gray-900 mb-4\">\n+      <div className=\"text-center mb-8\">\n+        <h1 className=\"text-3xl font-bold text-gray-900 mb-3\">\n           {t.app.title}\n         </h1>\n-        <p className=\"text-xl text-gray-600 max-w-3xl mx-auto mb-6\">\n+        <p className=\"text-lg text-gray-600 max-w-2xl mx-auto\">\n           {t.app.subtitle}\n         </p>\n-        <div className=\"flex justify-center gap-4 flex-wrap\">\n-          <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-            {t.dashboard.stats.diagnosticDelay}\n-          </Badge>\n-          <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-            {t.dashboard.stats.doctorsConsulted}\n-          </Badge>\n-          <Badge variant=\"secondary\" className=\"px-3 py-1\">\n-            {t.dashboard.stats.sensitivityValidated}\n-          </Badge>\n-        </div>\n       </div>\n \n       <div className=\"mb-8\">\n         <Card className=\"border-2 border-green-500 bg-gradient-to-r from-green-50 to-blue-50\">\n"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758178824689,
+      "end": 1758178824694
+    }
+  }
+}

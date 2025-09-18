@@ -62,45 +62,29 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-3">
             {t.app.title}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t.app.subtitle}
           </p>
-          <div className="flex justify-center gap-4 flex-wrap">
-            <Badge variant="secondary" className="px-3 py-1">
-              {t.dashboard.stats.diagnosticDelay}
-            </Badge>
-            <Badge variant="secondary" className="px-3 py-1">
-              {t.dashboard.stats.doctorsConsulted}
-            </Badge>
-            <Badge variant="secondary" className="px-3 py-1">
-              {t.dashboard.stats.sensitivityValidated}
-            </Badge>
-          </div>
         </div>
 
         <div className="mb-8">
-          <Card className="border-2 border-green-500 bg-gradient-to-r from-green-50 to-blue-50">
-            <CardContent className="pt-6">
+          <Card className="border border-green-200 bg-green-50">
+            <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-green-100 rounded-full">
-                    <User className="h-8 w-8 text-green-600" />
+                  <div className="p-2 bg-green-100 rounded-lg">
+                    <User className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-green-900">{t.dashboard.smartAssessment.title}</h3>
-                    <p className="text-green-700">{t.dashboard.smartAssessment.description}</p>
-                    <div className="flex gap-2 mt-2">
-                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.autoRouting}</Badge>
-                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.soapNotes}</Badge>
-                      <Badge variant="secondary" className="text-xs">{t.dashboard.smartAssessment.icdCodes}</Badge>
-                    </div>
+                    <h3 className="text-lg font-semibold text-green-900">{t.dashboard.smartAssessment.title}</h3>
+                    <p className="text-sm text-green-700">{t.dashboard.smartAssessment.description}</p>
                   </div>
                 </div>
-                <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
+                <Button asChild className="bg-green-600 hover:bg-green-700">
                   <Link href="/new-patient">
                     {t.dashboard.smartAssessment.startNew}
                   </Link>
@@ -110,38 +94,33 @@ export default function Home() {
           </Card>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {modules.map((module) => (
             <Card 
               key={module.id} 
-              className={`cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-105 flex flex-col h-full ${
-                selectedModule === module.id ? 'ring-2 ring-blue-500' : ''
-              }`}
-              onClick={() => setSelectedModule(module.id)}
+              className="hover:shadow-md transition-shadow duration-200 flex flex-col h-full"
             >
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <module.icon className="h-6 w-6 text-blue-600" />
-                  <CardTitle className="text-lg">{module.title}</CardTitle>
+                  <module.icon className="h-5 w-5 text-blue-600" />
+                  <CardTitle className="text-base">{module.title}</CardTitle>
                 </div>
                 <CardDescription className="text-sm">
                   {module.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-col flex-grow">
+              <CardContent className="flex flex-col flex-grow pt-0">
                 <div className="flex-grow">
                   {module.sensitivity && (
-                    <Badge variant="outline" className="mb-3">
+                    <Badge variant="outline" className="mb-3 text-xs">
                       {t.common.sensitivity}: {module.sensitivity}
                     </Badge>
                   )}
                 </div>
                 <Button 
-                  className="w-full mt-auto" 
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    window.location.href = module.route
-                  }}
+                  className="w-full" 
+                  variant="outline"
+                  onClick={() => window.location.href = module.route}
                 >
                   {t.dashboard.startAssessment}
                 </Button>
@@ -150,29 +129,26 @@ export default function Home() {
           ))}
         </div>
 
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+        <Card className="mb-6">
+          <CardHeader className="pb-4">
+            <CardTitle className="flex items-center gap-2 text-lg">
               <BarChart3 className="h-5 w-5" />
               {t.dashboard.algorithm.title}
             </CardTitle>
           </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-3 gap-4 text-sm">
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-900 mb-2">{t.dashboard.algorithm.mecfs.title}</h4>
-                <p className="text-blue-700">{t.dashboard.algorithm.mecfs.criteria}</p>
-                <p className="text-blue-700">{t.dashboard.algorithm.mecfs.description}</p>
+          <CardContent className="pt-0">
+            <div className="grid md:grid-cols-3 gap-3 text-sm">
+              <div className="border border-blue-200 bg-blue-50 p-3 rounded-md">
+                <h4 className="font-medium text-blue-900 mb-1">{t.dashboard.algorithm.mecfs.title}</h4>
+                <p className="text-blue-700 text-xs">{t.dashboard.algorithm.mecfs.criteria}</p>
               </div>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-green-900 mb-2">{t.dashboard.algorithm.longCovid.title}</h4>
-                <p className="text-green-700">{t.dashboard.algorithm.longCovid.criteria}</p>
-                <p className="text-green-700">{t.dashboard.algorithm.longCovid.description}</p>
+              <div className="border border-green-200 bg-green-50 p-3 rounded-md">
+                <h4 className="font-medium text-green-900 mb-1">{t.dashboard.algorithm.longCovid.title}</h4>
+                <p className="text-green-700 text-xs">{t.dashboard.algorithm.longCovid.criteria}</p>
               </div>
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-purple-900 mb-2">{t.dashboard.algorithm.pots.title}</h4>
-                <p className="text-purple-700">{t.dashboard.algorithm.pots.criteria}</p>
-                <p className="text-purple-700">{t.dashboard.algorithm.pots.description}</p>
+              <div className="border border-purple-200 bg-purple-50 p-3 rounded-md">
+                <h4 className="font-medium text-purple-900 mb-1">{t.dashboard.algorithm.pots.title}</h4>
+                <p className="text-purple-700 text-xs">{t.dashboard.algorithm.pots.criteria}</p>
               </div>
             </div>
           </CardContent>

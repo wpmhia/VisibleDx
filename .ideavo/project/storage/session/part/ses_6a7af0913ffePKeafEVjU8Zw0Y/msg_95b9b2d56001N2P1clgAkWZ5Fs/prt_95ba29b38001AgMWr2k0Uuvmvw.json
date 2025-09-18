@@ -1,0 +1,26 @@
+{
+  "id": "prt_95ba29b38001AgMWr2k0Uuvmvw",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01BDtMn71x3TpmcuSZFg2Cfd",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build project after fixing TypeScript types"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/da.ts:11:3\nType error: Type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 31 more ...; optional: string; }' is missing the following properties from type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 41 more ...; optional: string; }': progress, completing, saving, back, and 6 more.\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   common\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     yes\u001b[33m:\u001b[39m \u001b[32m'Ja'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     no\u001b[33m:\u001b[39m \u001b[32m'Nej'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     next\u001b[33m:\u001b[39m \u001b[32m'Næste'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/da.ts:11:3\nType error: Type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 31 more ...; optional: string; }' is missing the following properties from type '{ yes: string; no: string; next: string; previous: string; continue: string; complete: string; cancel: string; save: string; download: string; loading: string; processing: string; error: string; success: string; ... 41 more ...; optional: string; }': progress, completing, saving, back, and 6 more.\n\n\u001b[0m \u001b[90m  9 |\u001b[39m   }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   common\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     yes\u001b[33m:\u001b[39m \u001b[32m'Ja'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     no\u001b[33m:\u001b[39m \u001b[32m'Nej'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     next\u001b[33m:\u001b[39m \u001b[32m'Næste'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build project after fixing TypeScript types"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758179007843,
+      "end": 1758179027469
+    }
+  }
+}

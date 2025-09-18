@@ -1,0 +1,26 @@
+{
+  "id": "prt_95ba37011001GhbytXY2t9SQTm",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_018E8iCYPkDJpJLyvszszfJi",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Final build test after completing Nielsen's heuristics"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:45:5\nType error: An object literal cannot have multiple properties with the same name.\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     other\u001b[33m:\u001b[39m \u001b[32m'Other'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m     question\u001b[33m:\u001b[39m \u001b[32m'Question'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mof\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'of'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m     step\u001b[33m:\u001b[39m \u001b[32m'Step'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     minute\u001b[33m:\u001b[39m \u001b[32m'minute'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     minutes\u001b[33m:\u001b[39m \u001b[32m'minutes'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:45:5\nType error: An object literal cannot have multiple properties with the same name.\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     other\u001b[33m:\u001b[39m \u001b[32m'Other'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m     question\u001b[33m:\u001b[39m \u001b[32m'Question'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mof\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'of'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m     step\u001b[33m:\u001b[39m \u001b[32m'Step'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     minute\u001b[33m:\u001b[39m \u001b[32m'minute'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     minutes\u001b[33m:\u001b[39m \u001b[32m'minutes'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Final build test after completing Nielsen's heuristics"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758179062608,
+      "end": 1758179082932
+    }
+  }
+}

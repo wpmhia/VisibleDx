@@ -1,0 +1,25 @@
+{
+  "id": "prt_95ba33193001gsAnX30iOY4N0U",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JrrBjH6LaFGDetx63Cy9m4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 20,
+      "limit": 15
+    },
+    "output": "<file>\n00021|     loading: 'Indlæser',\n00022|     processing: 'Behandler',\n00023|     error: 'Fejl',\n00024|     success: 'Succes',\n00025|     retry: 'Prøv igen',\n00026|     close: 'Luk',\n00027|     age: 'Alder',\n00028|     gender: 'Køn',\n00029|     male: 'Mand',\n00030|     female: 'Kvinde',\n00031|     other: 'Anden',\n00032|     question: 'Spørgsmål',\n00033|     of: 'af',\n00034|     step: 'Trin',\n00035|     minute: 'minut',\n\n(File has more lines. Use 'offset' parameter to read beyond line 35)\n</file>",
+    "metadata": {
+      "preview": "    loading: 'Indlæser',\n    processing: 'Behandler',\n    error: 'Fejl',\n    success: 'Succes',\n    retry: 'Prøv igen',\n    close: 'Luk',\n    age: 'Alder',\n    gender: 'Køn',\n    male: 'Mand',\n    female: 'Kvinde',\n    other: 'Anden',\n    question: 'Spørgsmål',\n    of: 'af',\n    step: 'Trin',\n    minute: 'minut',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758179046328,
+      "end": 1758179046330
+    }
+  }
+}

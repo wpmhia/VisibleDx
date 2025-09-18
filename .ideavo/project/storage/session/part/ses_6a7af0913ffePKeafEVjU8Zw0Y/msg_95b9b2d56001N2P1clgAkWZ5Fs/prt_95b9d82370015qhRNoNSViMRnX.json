@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9d82370015qhRNoNSViMRnX",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01CYUQ1aD3mZARxcGj46oXMm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/design-system.ts",
+      "content": "// Design System Constants for Consistency\n\n// Spacing Scale (following Tailwind conventions)\nexport const spacing = {\n  xs: 'p-2',     // 8px\n  sm: 'p-3',     // 12px\n  md: 'p-4',     // 16px\n  lg: 'p-6',     // 24px\n  xl: 'p-8',     // 32px\n  '2xl': 'p-12', // 48px\n} as const\n\nexport const marginBottom = {\n  xs: 'mb-2',\n  sm: 'mb-3',\n  md: 'mb-4',\n  lg: 'mb-6',\n  xl: 'mb-8',\n  '2xl': 'mb-12',\n} as const\n\nexport const gaps = {\n  xs: 'gap-2',\n  sm: 'gap-3',\n  md: 'gap-4',\n  lg: 'gap-6',\n  xl: 'gap-8',\n} as const\n\n// Color System\nexport const colors = {\n  primary: {\n    bg: 'bg-blue-600',\n    bgHover: 'hover:bg-blue-700',\n    text: 'text-blue-600',\n    border: 'border-blue-600',\n  },\n  secondary: {\n    bg: 'bg-gray-100',\n    bgHover: 'hover:bg-gray-200',\n    text: 'text-gray-600',\n    border: 'border-gray-300',\n  },\n  success: {\n    bg: 'bg-green-600',\n    bgHover: 'hover:bg-green-700',\n    text: 'text-green-600',\n    border: 'border-green-600',\n  },\n  warning: {\n    bg: 'bg-amber-500',\n    bgHover: 'hover:bg-amber-600',\n    text: 'text-amber-600',\n    border: 'border-amber-500',\n  },\n  danger: {\n    bg: 'bg-red-600',\n    bgHover: 'hover:bg-red-700',\n    text: 'text-red-600',\n    border: 'border-red-600',\n  },\n} as const\n\n// Typography Scale\nexport const typography = {\n  h1: 'text-4xl font-bold',\n  h2: 'text-3xl font-bold',\n  h3: 'text-2xl font-bold',\n  h4: 'text-xl font-semibold',\n  h5: 'text-lg font-semibold',\n  h6: 'text-base font-semibold',\n  body: 'text-base',\n  small: 'text-sm',\n  caption: 'text-xs',\n} as const\n\n// Component Variants\nexport const cardVariants = {\n  default: 'bg-white border border-gray-200 rounded-lg shadow-sm',\n  elevated: 'bg-white border border-gray-200 rounded-lg shadow-md',\n  primary: 'bg-blue-50 border border-blue-200 rounded-lg',\n  success: 'bg-green-50 border border-green-200 rounded-lg',\n  warning: 'bg-amber-50 border border-amber-200 rounded-lg',\n  danger: 'bg-red-50 border border-red-200 rounded-lg',\n} as const\n\nexport const buttonVariants = {\n  primary: `${colors.primary.bg} ${colors.primary.bgHover} text-white font-medium px-4 py-2 rounded-md transition-colors`,\n  secondary: `${colors.secondary.bg} ${colors.secondary.bgHover} text-gray-900 font-medium px-4 py-2 rounded-md border transition-colors`,\n  outline: `border ${colors.primary.border} ${colors.primary.text} hover:bg-blue-50 font-medium px-4 py-2 rounded-md transition-colors`,\n  ghost: 'hover:bg-gray-100 text-gray-700 font-medium px-4 py-2 rounded-md transition-colors',\n} as const\n\n// Layout Patterns\nexport const layouts = {\n  container: 'container mx-auto px-4',\n  section: 'py-8',\n  card: `${cardVariants.default} ${spacing.lg}`,\n  grid: 'grid gap-6',\n  flex: 'flex items-center gap-4',\n  stack: 'space-y-4',\n} as const\n\n// Animation Classes\nexport const animations = {\n  fadeIn: 'animate-in fade-in duration-200',\n  slideIn: 'animate-in slide-in-from-bottom-4 duration-200',\n  scaleIn: 'animate-in zoom-in-95 duration-200',\n  hover: 'transition-all duration-200 hover:scale-105',\n} as const\n\n// Focus States\nexport const focus = {\n  ring: 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',\n  visible: 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',\n} as const"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/lib/design-system.ts",
+      "exists": false
+    },
+    "title": "lib/design-system.ts",
+    "time": {
+      "start": 1758178688294,
+      "end": 1758178688316
+    }
+  }
+}

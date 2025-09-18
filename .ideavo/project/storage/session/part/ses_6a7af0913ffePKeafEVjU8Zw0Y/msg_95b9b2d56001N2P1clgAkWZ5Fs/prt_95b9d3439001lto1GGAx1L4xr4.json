@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9d3439001lto1GGAx1L4xr4",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01HTZ5DqU9e5W9s15CzsFFui",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/hooks/use-keyboard-shortcuts.ts",
+      "content": "'use client'\n\nimport { useEffect } from 'react'\n\ninterface KeyboardShortcut {\n  key: string\n  ctrlKey?: boolean\n  altKey?: boolean\n  shiftKey?: boolean\n  callback: () => void\n  description?: string\n}\n\ninterface UseKeyboardShortcutsProps {\n  shortcuts: KeyboardShortcut[]\n  enabled?: boolean\n}\n\nexport function useKeyboardShortcuts({ shortcuts, enabled = true }: UseKeyboardShortcutsProps) {\n  useEffect(() => {\n    if (!enabled) return\n\n    const handleKeyDown = (event: KeyboardEvent) => {\n      const matchingShortcut = shortcuts.find(shortcut => {\n        return (\n          event.key.toLowerCase() === shortcut.key.toLowerCase() &&\n          !!event.ctrlKey === !!shortcut.ctrlKey &&\n          !!event.altKey === !!shortcut.altKey &&\n          !!event.shiftKey === !!shortcut.shiftKey\n        )\n      })\n\n      if (matchingShortcut) {\n        event.preventDefault()\n        matchingShortcut.callback()\n      }\n    }\n\n    document.addEventListener('keydown', handleKeyDown)\n    return () => document.removeEventListener('keydown', handleKeyDown)\n  }, [shortcuts, enabled])\n}\n\n// Common keyboard shortcuts\nexport const createNavigationShortcuts = (\n  onBack?: () => void,\n  onNext?: () => void,\n  onHome?: () => void,\n  onExit?: () => void\n): KeyboardShortcut[] => [\n  ...(onBack ? [{ key: 'ArrowLeft', altKey: true, callback: onBack, description: 'Alt + ← to go back' }] : []),\n  ...(onNext ? [{ key: 'ArrowRight', altKey: true, callback: onNext, description: 'Alt + → to go next' }] : []),\n  ...(onHome ? [{ key: 'h', altKey: true, callback: onHome, description: 'Alt + H to go home' }] : []),\n  ...(onExit ? [{ key: 'Escape', callback: onExit, description: 'Esc to exit' }] : []),\n]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/hooks/use-keyboard-shortcuts.ts",
+      "exists": false
+    },
+    "title": "hooks/use-keyboard-shortcuts.ts",
+    "time": {
+      "start": 1758178660181,
+      "end": 1758178660199
+    }
+  }
+}

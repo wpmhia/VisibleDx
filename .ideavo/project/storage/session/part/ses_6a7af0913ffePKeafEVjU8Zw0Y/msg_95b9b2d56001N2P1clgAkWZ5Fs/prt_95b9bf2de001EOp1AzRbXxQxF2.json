@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9bf2de001EOp1AzRbXxQxF2",
+  "messageID": "msg_95b9b2d56001N2P1clgAkWZ5Fs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01F5zi4MB7BSWXHhtFx7pS7j",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/breadcrumb-nav.tsx",
+      "content": "'use client'\n\nimport Link from 'next/link'\nimport { ChevronRight, Home } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface BreadcrumbItem {\n  label: string\n  href: string\n  current?: boolean\n}\n\ninterface BreadcrumbNavProps {\n  items: BreadcrumbItem[]\n  className?: string\n}\n\nexport default function BreadcrumbNav({ items, className = '' }: BreadcrumbNavProps) {\n  const { t } = useTranslation()\n\n  return (\n    <nav aria-label=\"Breadcrumb\" className={`flex items-center space-x-1 text-sm ${className}`}>\n      {/* Home Link */}\n      <Link \n        href=\"/\" \n        className=\"text-gray-500 hover:text-gray-700 transition-colors flex items-center\"\n        aria-label=\"Go to homepage\"\n      >\n        <Home className=\"h-4 w-4\" />\n      </Link>\n      \n      {items.length > 0 && <ChevronRight className=\"h-4 w-4 text-gray-400\" />}\n      \n      {/* Breadcrumb Items */}\n      {items.map((item, index) => (\n        <div key={item.href} className=\"flex items-center\">\n          {item.current ? (\n            <span \n              className=\"text-gray-900 font-medium\"\n              aria-current=\"page\"\n            >\n              {item.label}\n            </span>\n          ) : (\n            <Link \n              href={item.href}\n              className=\"text-gray-500 hover:text-gray-700 transition-colors\"\n            >\n              {item.label}\n            </Link>\n          )}\n          \n          {index < items.length - 1 && (\n            <ChevronRight className=\"h-4 w-4 text-gray-400 mx-1\" />\n          )}\n        </div>\n      ))}\n    </nav>\n  )\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/breadcrumb-nav.tsx",
+      "exists": false
+    },
+    "title": "components/breadcrumb-nav.tsx",
+    "time": {
+      "start": 1758178576961,
+      "end": 1758178576980
+    }
+  }
+}

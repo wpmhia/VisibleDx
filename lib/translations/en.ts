@@ -24,14 +24,24 @@ export const en: Translation = {
     success: 'Success',
     retry: 'Retry',
     close: 'Close',
+    step: 'Step',
+    of: 'of',
+    progress: 'Progress',
+    completing: 'Completing',
+    saving: 'Saving',
+    back: 'Back',
+    goBack: 'Go Back',
+    exit: 'Exit',
+    restart: 'Restart',
+    reset: 'Reset',
+    confirm: 'Confirm',
+    areYouSure: 'Are you sure?',
     age: 'Age',
     gender: 'Gender',
     male: 'Male',
     female: 'Female',
     other: 'Other',
     question: 'Question',
-    of: 'of',
-    step: 'Step',
     minute: 'minute',
     minutes: 'minutes',
     bpm: 'bpm',
@@ -67,28 +77,28 @@ export const en: Translation = {
     },
     modules: {
       quickScreen: {
-        title: 'Quick-Screen',
-        description: '16 yes/no questions - 2 min assessment'
+        title: 'Initial Screening',
+        description: 'Chief complaint & symptom review (16 questions, ~2 min)'
       },
       redFlag: {
-        title: 'Red-flag Checker',
-        description: 'Lab suggestions to rule out explanatory disease'
+        title: 'Differential Diagnosis',
+        description: 'Rule out alternative diagnoses & red flag symptoms'
       },
       standTest: {
-        title: 'Stand-Test Pro',
-        description: '10-min NASA Lean protocol with HR monitoring'
+        title: 'Orthostatic Vitals',
+        description: 'Standing test with heart rate monitoring (NASA protocol)'
       },
       pemQuest: {
-        title: 'PEM-Quest',
-        description: 'Post-Exertional Malaise assessment'
+        title: 'PEM Assessment',
+        description: 'Post-exertional malaise symptom evaluation'
       },
       criteriaEngine: {
-        title: 'Criteria Engine',
-        description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'
+        title: 'Diagnostic Criteria',
+        description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'
       },
       subtypeAdvisor: {
-        title: 'Subtype & Rx Advisor',
-        description: 'Educational treatment examples'
+        title: 'Clinical Management',
+        description: 'Condition subtyping & treatment planning examples'
       }
     },
     stats: {
