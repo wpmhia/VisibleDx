@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbf96a8001qZaXGbSKndSDIV",
+  "messageID": "msg_95bbf5bc7001UZnuJlnygUTPMz",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01YR5UWwFcawY2c9NpNxmtRt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 140,
+      "limit": 15
+    },
+    "output": "<file>\n00141|               {t.footer.bottom.badge}\n00142|             </Badge>\n00143|           </div>\n00144|         </div>\n00145| \n00146|         {/* Technical Info */}\n00147|         <div className=\"mt-4 pt-4 border-t text-xs text-gray-400 text-center\">\n00148|           <p>\n00149|             {t.footer.technical}\n00150|           </p>\n00151|         </div>\n00152|       </div>\n00153|     </footer>\n00154|   )\n00155| }\n</file>",
+    "metadata": {
+      "preview": "              {t.footer.bottom.badge}\n            </Badge>\n          </div>\n        </div>\n\n        {/* Technical Info */}\n        <div className=\"mt-4 pt-4 border-t text-xs text-gray-400 text-center\">\n          <p>\n            {t.footer.technical}\n          </p>\n        </div>\n      </div>\n    </footer>\n  )\n}"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758180907133,
+      "end": 1758180907135
+    }
+  }
+}

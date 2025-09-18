@@ -136,10 +136,6 @@ export default function Disclaimer() {
             <span>{t.footer.bottom.copyright}</span>
             <span>•</span>
             <span>{t.footer.bottom.audienceLabel}</span>
-            <span>•</span>
-            <Badge variant="secondary" className="text-xs">
-              {t.footer.bottom.badge}
-            </Badge>
           </div>
         </div>
 

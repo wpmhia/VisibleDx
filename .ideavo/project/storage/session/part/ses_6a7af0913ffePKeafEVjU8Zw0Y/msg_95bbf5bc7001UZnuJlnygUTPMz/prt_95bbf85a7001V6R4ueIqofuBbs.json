@@ -1,0 +1,25 @@
+{
+  "id": "prt_95bbf85a7001V6R4ueIqofuBbs",
+  "messageID": "msg_95bbf5bc7001UZnuJlnygUTPMz",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01YEkz9swcHoSGKVFAjFjxYL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 110,
+      "limit": 30
+    },
+    "output": "<file>\n00111| \n00112|           {/* Important Disclaimers */}\n00113|           <div>\n00114|             <div className=\"flex items-center gap-2 mb-3\">\n00115|               <Shield className=\"h-4 w-4 text-red-600\" />\n00116|               <h3 className=\"font-semibold text-gray-900\">{t.footer.notes.title}</h3>\n00117|             </div>\n00118|             <ul className=\"text-sm text-gray-600 space-y-1\">\n00119|               {t.footer.notes.items.map((note, index) => (\n00120|                 <li key={index}>• {note}</li>\n00121|               ))}\n00122|             </ul>\n00123|           </div>\n00124|         </div>\n00125| \n00126|         <Separator className=\"mb-6\" />\n00127| \n00128|         {/* Bottom Footer */}\n00129|         <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n00130|           <div className=\"flex items-center gap-2\">\n00131|             <Stethoscope className=\"h-4 w-4\" />\n00132|             <span>{t.footer.bottom.version}</span>\n00133|           </div>\n00134|           \n00135|           <div className=\"flex items-center gap-4\">\n00136|             <span>{t.footer.bottom.copyright}</span>\n00137|             <span>•</span>\n00138|             <span>{t.footer.bottom.audienceLabel}</span>\n00139|             <span>•</span>\n00140|             <Badge variant=\"secondary\" className=\"text-xs\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 140)\n</file>",
+    "metadata": {
+      "preview": "\n          {/* Important Disclaimers */}\n          <div>\n            <div className=\"flex items-center gap-2 mb-3\">\n              <Shield className=\"h-4 w-4 text-red-600\" />\n              <h3 className=\"font-semibold text-gray-900\">{t.footer.notes.title}</h3>\n            </div>\n            <ul className=\"text-sm text-gray-600 space-y-1\">\n              {t.footer.notes.items.map((note, index) => (\n                <li key={index}>• {note}</li>\n              ))}\n            </ul>\n          </div>\n        </div>\n\n        <Separator className=\"mb-6\" />\n\n        {/* Bottom Footer */}\n        <div className=\"flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n          <div className=\"flex items-center gap-2\">"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758180902926,
+      "end": 1758180902930
+    }
+  }
+}

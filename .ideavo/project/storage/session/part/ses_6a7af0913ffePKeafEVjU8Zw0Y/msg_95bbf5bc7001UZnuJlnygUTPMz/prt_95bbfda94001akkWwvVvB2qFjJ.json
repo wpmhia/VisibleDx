@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bbfda94001akkWwvVvB2qFjJ",
+  "messageID": "msg_95bbf5bc7001UZnuJlnygUTPMz",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(footer): remove redundant research badge from disclaimer",
+  "cost": 0.4077861,
+  "tokens": {
+    "input": 5,
+    "output": 200,
+    "reasoning": 0,
+    "cache": {
+      "write": 304,
+      "read": 86404
+    }
+  }
+}
