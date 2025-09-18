@@ -1,0 +1,7 @@
+{
+  "id": "prt_95bc58dfc0020IzzA1PLdU42XS",
+  "type": "text",
+  "text": "Import and use the <Analytics/> React component into your app's layout.: import { Analytics } from \"@vercel/analytics/next\"",
+  "messageID": "msg_95bc58dfc001iTRbBvODD5HTSz",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "prt_95bc60be0001JHO7FP2Zx9qsv6",
+  "messageID": "msg_95bc59397001lRF53l8l3Ze6y7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(analytics): integrate Vercel Analytics into app layout",
+  "cost": 0.41229584999999996,
+  "tokens": {
+    "input": 7,
+    "output": 289,
+    "reasoning": 0,
+    "cache": {
+      "write": 248,
+      "read": 92671
+    }
+  }
+}

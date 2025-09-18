@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bc5bac7001bCbwMVzDnYp5wm",
+  "messageID": "msg_95bc59397001lRF53l8l3Ze6y7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01FVpjBVvJnZncQmq8UviHeN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx",
+      "oldString": "import './globals.css';\nimport type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport { LanguageProvider } from '@/lib/language-context';\nimport Navigation from '@/components/navigation';\nimport Disclaimer from '@/components/disclaimer';\nimport ScrollRestoration from '@/components/scroll-restoration';",
+      "newString": "import './globals.css';\nimport type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport { Analytics } from '@vercel/analytics/next';\nimport { LanguageProvider } from '@/lib/language-context';\nimport Navigation from '@/components/navigation';\nimport Disclaimer from '@/components/disclaimer';\nimport ScrollRestoration from '@/components/scroll-restoration';"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/layout.tsx\n===================================================================\n--- /home/user/project/app/layout.tsx\n+++ /home/user/project/app/layout.tsx\n@@ -1,7 +1,8 @@\n import './globals.css';\n import type { Metadata } from 'next';\n import { Inter } from 'next/font/google';\n+import { Analytics } from '@vercel/analytics/next';\n import { LanguageProvider } from '@/lib/language-context';\n import Navigation from '@/components/navigation';\n import Disclaimer from '@/components/disclaimer';\n import ScrollRestoration from '@/components/scroll-restoration';\n"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758181311242,
+      "end": 1758181311258
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { LanguageProvider } from '@/lib/language-context';
 import Navigation from '@/components/navigation';
 import Disclaimer from '@/components/disclaimer';
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Disclaimer />
           </div>
         </LanguageProvider>
+        <Analytics />
         {/* TODO: Remove iframe-navigation.js in production, should never be removed by AI */}
         <script src="/scripts/iframe-navigation.js"></script>
       </body>
