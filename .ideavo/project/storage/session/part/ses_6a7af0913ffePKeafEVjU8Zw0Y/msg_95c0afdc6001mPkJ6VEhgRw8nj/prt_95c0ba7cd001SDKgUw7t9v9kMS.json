@@ -1,0 +1,53 @@
+{
+  "id": "prt_95c0ba7cd001SDKgUw7t9v9kMS",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_018Q4TSp5NGmpviLXCmjcnGq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "    subtitle: 'Een educatief trainingsinstrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en training.',",
+          "newString": "    subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "  disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source trainingsinstrument is ontworpen voor zorgverlening onderwijs en training alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',",
+          "newString": "  disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source educatief instrument is ontworpen voor zorgverlening onderwijs en leren alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      description: 'VisibleDx is een open-source educatief trainingsinstrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs, training en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',",
+          "newString": "      description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -2,9 +2,9 @@\n \n export const nl: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n-    subtitle: 'Een educatief trainingsinstrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en training.',\n+    subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',\n     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n     backToDashboard: 'Terug naar Dashboard'\n   },\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -789,9 +789,9 @@\n   nl: 'Nederlands',\n   da: 'Dansk'\n },\n \n-disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source trainingsinstrument is ontworpen voor zorgverlening onderwijs en training alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',\n+disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source educatief instrument is ontworpen voor zorgverlening onderwijs en leren alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',\n \n footer: {\n   about: {\n     title: 'Over VisibleDx',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -794,9 +794,9 @@\n \n footer: {\n   about: {\n     title: 'Over VisibleDx',\n-    description: 'VisibleDx is een open-source educatief trainingsinstrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs, training en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n+    description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n     badges: {\n       sensitivity: '94% Sensitiviteit',\n       evidenceBased: 'Evidence-Based',\n       openSource: 'Open Source'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758185896406,
+      "end": 1758185896432
+    }
+  }
+}

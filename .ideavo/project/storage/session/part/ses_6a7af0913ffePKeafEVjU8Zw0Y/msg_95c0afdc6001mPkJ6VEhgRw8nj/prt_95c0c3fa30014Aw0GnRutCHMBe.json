@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0c3fa30014Aw0GnRutCHMBe",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_015yGCpcLyDcDCdK1bCjj8S3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "grep -n \"Training\\|training\" /home/user/project/lib/translations/nl.ts",
+      "description": "Find training references in Dutch"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 1,
+      "description": "Find training references in Dutch"
+    },
+    "title": "grep -n \"Training\\|training\" /home/user/project/lib/translations/nl.ts",
+    "time": {
+      "start": 1758185931279,
+      "end": 1758185931284
+    }
+  }
+}

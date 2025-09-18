@@ -279,7 +279,7 @@ export function KeyboardShortcutsHelp() {
     { key: 'Ctrl + K', description: 'Open quick actions' },
     { key: '/', description: 'Open search' },
     { key: 'Alt + H', description: 'Go to home' },
-    { key: 'Alt + N', description: 'Start new training session' },
+    { key: 'Alt + N', description: 'Start new assessment session' },
     { key: 'Alt + Q', description: 'Quick screen module' },
     { key: 'Alt + R', description: 'Red flag checker' },
     { key: 'Alt + S', description: 'Stand test module' },

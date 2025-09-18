@@ -68,7 +68,7 @@ URL: ${window.location.href}
           <Alert className="border-red-200 bg-red-50">
             <AlertTriangle className="h-4 w-4 text-red-600" />
             <AlertDescription className="text-red-800">
-              An unexpected error occurred in the training module. Your progress has been saved where possible.
+              An unexpected error occurred in the educational module. Your progress has been saved where possible.
             </AlertDescription>
           </Alert>
 

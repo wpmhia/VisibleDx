@@ -1,0 +1,44 @@
+{
+  "id": "prt_95c0d7263001Ha4FrdXaFvNjkW",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01W7aEXszVHuXn2Aeq8cJrTn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    assessmentModules: 'Training Modules',",
+          "newString": "    assessmentModules: 'Assessment Modules',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    assessmentModulesSection: 'Training Modules',",
+          "newString": "    assessmentModulesSection: 'Assessment Modules',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -772,9 +772,9 @@\n   }\n },\n \n navigation: {\n-  assessmentModules: 'Training Modules',\n+  assessmentModules: 'Assessment Modules',\n   guidelines: 'Guidelines',\n   diagnosticTools: 'Educational Tools',\n   clinicalGuidelines: 'Clinical Guidelines & References',\n   guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -777,9 +777,9 @@\n   guidelines: 'Guidelines',\n   diagnosticTools: 'Educational Tools',\n   clinicalGuidelines: 'Clinical Guidelines & References',\n   guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n-  assessmentModulesSection: 'Training Modules',\n+  assessmentModulesSection: 'Assessment Modules',\n   guidelinesSection: 'Guidelines & References',\n   moreGuidelines: 'more guidelines',\n   smartBadge: 'Smart'\n },\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758186010749,
+      "end": 1758186010765
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0d1095001SxAODjy19nvQC9",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Qzc25tpTf336b8CMFjrjzk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/error-boundary.tsx",
+      "oldString": "              An unexpected error occurred in the training module. Your progress has been saved where possible.",
+      "newString": "              An unexpected error occurred in the educational module. Your progress has been saved where possible."
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/error-boundary.tsx\n===================================================================\n--- /home/user/project/components/error-boundary.tsx\n+++ /home/user/project/components/error-boundary.tsx\n@@ -67,9 +67,9 @@\n <CardContent className=\"space-y-4\">\n   <Alert className=\"border-red-200 bg-red-50\">\n     <AlertTriangle className=\"h-4 w-4 text-red-600\" />\n     <AlertDescription className=\"text-red-800\">\n-      An unexpected error occurred in the training module. Your progress has been saved where possible.\n+      An unexpected error occurred in the educational module. Your progress has been saved where possible.\n     </AlertDescription>\n   </Alert>\n \n   <div className=\"flex flex-col gap-3\">\n"
+    },
+    "title": "components/error-boundary.tsx",
+    "time": {
+      "start": 1758185985141,
+      "end": 1758185985147
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0d631e0016ZDagyfMNMOjT9",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01CZ1gQH8c8kHBuz2YU6c6Xp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 775,
+      "limit": 10
+    },
+    "output": "<file>\n00776|     assessmentModules: 'Training Modules',\n00777|     guidelines: 'Guidelines',\n00778|     diagnosticTools: 'Educational Tools',\n00779|     clinicalGuidelines: 'Clinical Guidelines & References',\n00780|     guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n00781|     assessmentModulesSection: 'Training Modules',\n00782|     guidelinesSection: 'Guidelines & References',\n00783|     moreGuidelines: 'more guidelines',\n00784|     smartBadge: 'Smart'\n00785|   },\n\n(File has more lines. Use 'offset' parameter to read beyond line 785)\n</file>",
+    "metadata": {
+      "preview": "    assessmentModules: 'Training Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Educational Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n    assessmentModulesSection: 'Training Modules',\n    guidelinesSection: 'Guidelines & References',\n    moreGuidelines: 'more guidelines',\n    smartBadge: 'Smart'\n  },"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758186005794,
+      "end": 1758186005807
+    }
+  }
+}

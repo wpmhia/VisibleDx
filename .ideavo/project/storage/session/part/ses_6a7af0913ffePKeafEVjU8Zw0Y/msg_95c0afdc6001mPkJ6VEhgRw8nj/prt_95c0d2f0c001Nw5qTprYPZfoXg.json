@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0d2f0c001Nw5qTprYPZfoXg",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01DbPqgLEdy8SySN8ySZV2P7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/quick-actions.tsx",
+      "oldString": "    { key: 'Alt + N', description: 'Start new training session' },",
+      "newString": "    { key: 'Alt + N', description: 'Start new assessment session' },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/quick-actions.tsx\n===================================================================\n--- /home/user/project/components/quick-actions.tsx\n+++ /home/user/project/components/quick-actions.tsx\n@@ -278,9 +278,9 @@\n const shortcuts = [\n   { key: 'Ctrl + K', description: 'Open quick actions' },\n   { key: '/', description: 'Open search' },\n   { key: 'Alt + H', description: 'Go to home' },\n-  { key: 'Alt + N', description: 'Start new training session' },\n+  { key: 'Alt + N', description: 'Start new assessment session' },\n   { key: 'Alt + Q', description: 'Quick screen module' },\n   { key: 'Alt + R', description: 'Red flag checker' },\n   { key: 'Alt + S', description: 'Stand test module' },\n   { key: 'Alt + P', description: 'PEM assessment' },\n"
+    },
+    "title": "components/quick-actions.tsx",
+    "time": {
+      "start": 1758185992961,
+      "end": 1758185992965
+    }
+  }
+}

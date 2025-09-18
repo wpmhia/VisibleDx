@@ -75,7 +75,7 @@ export default function NavigationControls({
         <AlertDialogHeader>
           <AlertDialogTitle>{t.common.areYouSure}</AlertDialogTitle>
           <AlertDialogDescription>
-            Your progress will be lost if you exit this training module. You can always restart from the beginning.
+            Your progress will be lost if you exit this assessment module. You can always restart from the beginning.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

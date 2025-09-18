@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0c6647001eavbJX3HlIHFEi",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_019dH7hCeEBpHoJo3E6u9sKq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 70,
+      "limit": 10
+    },
+    "output": "<file>\n00071|     smartAssessment: {\n00072|       title: 'Slimme Patiënt Beoordeling',\n00073|       description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',\n00074|       autoRouting: 'Auto-routing',\n00075|       soapNotes: 'SOEP notities',\n00076|       icdCodes: 'ICD-10 codes',\n00077|       startNew: 'Nieuwe Beoordeling Starten'\n00078|     },\n00079|     modules: {\n00080|       quickScreen: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "    smartAssessment: {\n      title: 'Slimme Patiënt Beoordeling',\n      description: 'Intelligente begeleide workflow met geautomatiseerde SOEP documentatie',\n      autoRouting: 'Auto-routing',\n      soapNotes: 'SOEP notities',\n      icdCodes: 'ICD-10 codes',\n      startNew: 'Nieuwe Beoordeling Starten'\n    },\n    modules: {\n      quickScreen: {"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758185941062,
+      "end": 1758185941065
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0c94dd001Pz5OnGaa0mwz7Y",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017SGDbMB5LspTVBTmdWh5uc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    title: 'Quick-Screen Training',",
+      "newString": "    title: 'Quick-Screen Assessment',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -128,9 +128,9 @@\n   startAssessment: 'Start Assessment'\n },\n \n quickScreen: {\n-  title: 'Quick-Screen Training',\n+  title: 'Quick-Screen Assessment',\n   description: '16 questions · ~2 minutes · 92% sensitivity',\n   questions: [\n     'Do you experience severe fatigue that is not relieved by rest?',\n     'Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185953455,
+      "end": 1758185953469
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "prt_95c0cd984001JX9JYPeHPsfqqz",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_0122U6nwYDDjSw5MmpiZ4sSV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/help-system.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "      content: `VisibleDx is an educational training tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n\nStart with the \"Educational Training Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n\nRemember: This is a training tool only - NOT for actual patient care.`,",
+          "newString": "      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n\nStart with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n\nRemember: This is an educational tool only - NOT for actual patient care.`,"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "1. Review the 16 training questions",
+          "newString": "1. Review the 16 assessment questions"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "Always use simulated scenarios and training cases only.`,",
+          "newString": "Always use simulated scenarios and educational cases only.`,"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "      keywords: ['privacy', 'data', 'training', 'local', 'patient'],",
+          "newString": "      keywords: ['privacy', 'data', 'educational', 'local', 'patient'],"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "            Find answers and learn how to use VisibleDx educational training modules",
+          "newString": "            Find answers and learn how to use VisibleDx educational modules"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -53,13 +53,13 @@\n   const helpItems: HelpItem[] = [\n     {\n       id: 'getting-started',\n       title: 'Getting Started with VisibleDx',\n-      content: `VisibleDx is an educational training tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n+      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n \n-Start with the \"Educational Training Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n+Start with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n \n-Remember: This is a training tool only - NOT for actual patient care.`,\n+Remember: This is an educational tool only - NOT for actual patient care.`,\n       category: 'getting-started',\n       keywords: ['start', 'begin', 'intro', 'first', 'how to'],\n       relatedLinks: [\n         { title: 'CDC ME/CFS Guidelines', url: 'https://www.cdc.gov/me-cfs/' },\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -70,9 +70,9 @@\n       id: 'initial-screening',\n       title: 'Using the Initial Screening Module',\n       content: `The Initial Screening module simulates a chief complaint and symptom review process:\n \n-1. Review the 16 training questions\n+1. Review the 16 assessment questions\n 2. Select responses as if you were a patient\n 3. Review the educational risk assessment\n 4. Follow suggested next steps\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -147,9 +147,9 @@\n • Training data stays in your browser locally\n • No data is transmitted to external servers\n • This tool is for education only, not patient care\n \n-Always use simulated scenarios and training cases only.`,\n+Always use simulated scenarios and educational cases only.`,\n       category: 'getting-started',\n       keywords: ['privacy', 'data', 'training', 'local', 'patient'],\n     }\n   ]\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -149,9 +149,9 @@\n • This tool is for education only, not patient care\n \n Always use simulated scenarios and educational cases only.`,\n       category: 'getting-started',\n-      keywords: ['privacy', 'data', 'training', 'local', 'patient'],\n+      keywords: ['privacy', 'data', 'educational', 'local', 'patient'],\n     }\n   ]\n \n   const categories = [\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -190,9 +190,9 @@\n     <BookOpen className=\"h-5 w-5\" />\n     Help & Documentation\n   </DialogTitle>\n   <DialogDescription>\n-    Find answers and learn how to use VisibleDx educational training modules\n+    Find answers and learn how to use VisibleDx educational modules\n   </DialogDescription>\n </DialogHeader>\n \n <div className=\"flex-1 overflow-hidden\">\n"
+        }
+      ]
+    },
+    "title": "components/help-system.tsx",
+    "time": {
+      "start": 1758185976377,
+      "end": 1758185976397
+    }
+  }
+}

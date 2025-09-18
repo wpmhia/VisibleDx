@@ -1,0 +1,71 @@
+{
+  "id": "prt_95c0b746e001e987bu2XXZX7m9",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_013b5z2D19x3vheq3HimHi7k",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',",
+          "newString": "    subtitle: 'An educational tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and research purposes only.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      riskAssessment: 'Educational simulation - Based on your responses, here\\'s the training scenario',",
+          "newString": "      riskAssessment: 'Educational simulation - Based on your responses, here\\'s the learning scenario',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational training modules',",
+          "newString": "    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "  disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source training tool is designed for healthcare education and training purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',",
+          "newString": "  disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source educational tool is designed for healthcare education and learning purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',",
+          "newString": "      description: 'VisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -2,9 +2,9 @@\n \n export const en: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n-    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',\n+    subtitle: 'An educational tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and research purposes only.',\n     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n     backToDashboard: 'Back to Dashboard'\n   },\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -165,9 +165,9 @@\n   sensory: 'Sensory'\n },\n results: {\n   complete: 'Screening Complete',\n-  riskAssessment: 'Educational simulation - Based on your responses, here\\'s the training scenario',\n+  riskAssessment: 'Educational simulation - Based on your responses, here\\'s the learning scenario',\n   lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',\n   mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',\n   highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',\n   totalResponses: 'Total positive responses',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -776,9 +776,9 @@\n assessmentModules: 'Training Modules',\n guidelines: 'Guidelines',\n diagnosticTools: 'Educational Tools',\n clinicalGuidelines: 'Clinical Guidelines & References',\n-guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational training modules',\n+guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n assessmentModulesSection: 'Training Modules',\n guidelinesSection: 'Guidelines & References',\n moreGuidelines: 'more guidelines',\n smartBadge: 'Smart'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -789,9 +789,9 @@\n   nl: 'Nederlands',\n   da: 'Dansk'\n },\n \n-disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source training tool is designed for healthcare education and training purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',\n+disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source educational tool is designed for healthcare education and learning purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',\n \n footer: {\n   about: {\n     title: 'About VisibleDx',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -794,9 +794,9 @@\n \n footer: {\n   about: {\n     title: 'About VisibleDx',\n-    description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n+    description: 'VisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',\n     badges: {\n       sensitivity: '94% Sensitivity',\n       evidenceBased: 'Evidence-Based',\n       openSource: 'Open Source'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185883460,
+      "end": 1758185883527
+    }
+  }
+}

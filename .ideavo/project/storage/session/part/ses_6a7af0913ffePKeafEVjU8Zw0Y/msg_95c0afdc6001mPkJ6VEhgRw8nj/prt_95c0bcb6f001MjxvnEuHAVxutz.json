@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0bcb6f001MjxvnEuHAVxutz",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01T8KvJiKQHDQLAZ7u4uGuYn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "træning|training",
+      "path": "/home/user/project/lib/translations/da.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "træning|training",
+    "time": {
+      "start": 1758185901329,
+      "end": 1758185901337
+    }
+  }
+}

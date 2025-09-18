@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0d1fff001T2F5t0toseomtU",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01A7r7NyjWXxWdjVTWTn2Rk4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/quick-actions.tsx",
+      "offset": 280,
+      "limit": 5
+    },
+    "output": "<file>\n00281|     { key: 'Alt + H', description: 'Go to home' },\n00282|     { key: 'Alt + N', description: 'Start new training session' },\n00283|     { key: 'Alt + Q', description: 'Quick screen module' },\n00284|     { key: 'Alt + R', description: 'Red flag checker' },\n00285|     { key: 'Alt + S', description: 'Stand test module' },\n\n(File has more lines. Use 'offset' parameter to read beyond line 285)\n</file>",
+    "metadata": {
+      "preview": "    { key: 'Alt + H', description: 'Go to home' },\n    { key: 'Alt + N', description: 'Start new training session' },\n    { key: 'Alt + Q', description: 'Quick screen module' },\n    { key: 'Alt + R', description: 'Red flag checker' },\n    { key: 'Alt + S', description: 'Stand test module' },"
+    },
+    "title": "components/quick-actions.tsx",
+    "time": {
+      "start": 1758185988743,
+      "end": 1758185988745
+    }
+  }
+}

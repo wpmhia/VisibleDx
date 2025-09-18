@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0d508a001Zdzsktx0W8biGj",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017UNfny92aWeVV8orrvCmBG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation-controls.tsx",
+      "oldString": "            Your progress will be lost if you exit this training module. You can always restart from the beginning.",
+      "newString": "            Your progress will be lost if you exit this assessment module. You can always restart from the beginning."
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation-controls.tsx\n===================================================================\n--- /home/user/project/components/navigation-controls.tsx\n+++ /home/user/project/components/navigation-controls.tsx\n@@ -74,9 +74,9 @@\n <AlertDialogContent>\n   <AlertDialogHeader>\n     <AlertDialogTitle>{t.common.areYouSure}</AlertDialogTitle>\n     <AlertDialogDescription>\n-      Your progress will be lost if you exit this training module. You can always restart from the beginning.\n+      Your progress will be lost if you exit this assessment module. You can always restart from the beginning.\n     </AlertDialogDescription>\n   </AlertDialogHeader>\n   <AlertDialogFooter>\n     <AlertDialogCancel>{t.common.cancel}</AlertDialogCancel>\n"
+    },
+    "title": "components/navigation-controls.tsx",
+    "time": {
+      "start": 1758186001388,
+      "end": 1758186001396
+    }
+  }
+}

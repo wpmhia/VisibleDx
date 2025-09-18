@@ -1,0 +1,11 @@
+{
+  "id": "prt_95c0e4e880011xhGLfxT1l7I50",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! I've successfully removed the excessive \"training\" references throughout your VisibleDx application while maintaining its educational context. Here's what was updated:\n\n## **Changes Made:**\n\n### **English (EN):**\n- ✅ \"educational training tool\" → \"educational tool\"\n- ✅ \"training purposes\" → \"research purposes\"  \n- ✅ \"training scenario\" → \"learning scenario\"\n- ✅ \"Training Modules\" → \"Assessment Modules\"\n- ✅ \"Start Training\" → \"Start Assessment\"\n- ✅ \"training session\" → \"assessment session\"\n\n### **Dutch (NL):**\n- ✅ \"trainingsinstrument\" → \"instrument\" \n- ✅ \"training\" → \"leren\" (learning)\n\n### **Danish (DA):**\n- ✅ \"træningsværktøj\" → \"værktøj\"\n- ✅ \"træning\" → \"læring\" (learning)\n\n### **Components Updated:**\n- ✅ Help system content\n- ✅ Error boundary messages  \n- ✅ Quick actions descriptions\n- ✅ Navigation controls\n\n## **Result:**\nYour VisibleDx application now has a more natural, professional tone while still being clearly educational and avoiding medical/diagnostic implications. The language is now more appropriate for a healthcare education tool without being overly cautious or repetitive with \"training\" terminology.\n\nThe server is running on port 4000 and ready for use! 🚀",
+  "time": {
+    "start": 1758186072317,
+    "end": 1758186072317
+  }
+}

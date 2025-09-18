@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0ca740001G4Uj7vAnNkvKhY",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01F46NXMyUahyWHDtQeZm9Ab",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 680,
+      "limit": 10
+    },
+    "output": "<file>\n00681|       age: 'Patient Age',\n00682|       gender: 'Gender',\n00683|       clinicianName: 'Clinician Name',\n00684|       patientId: 'Patient ID/MRN',\n00685|     startAssessment: 'Start Training'\n00686|     },\n00687|     progress: {\n00688|       step1: 'Demographics',\n00689|       step2: 'Quick Screen',\n00690|       step3: 'Red Flags',\n\n(File has more lines. Use 'offset' parameter to read beyond line 690)\n</file>",
+    "metadata": {
+      "preview": "      age: 'Patient Age',\n      gender: 'Gender',\n      clinicianName: 'Clinician Name',\n      patientId: 'Patient ID/MRN',\n    startAssessment: 'Start Training'\n    },\n    progress: {\n      step1: 'Demographics',\n      step2: 'Quick Screen',\n      step3: 'Red Flags',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185957759,
+      "end": 1758185957761
+    }
+  }
+}

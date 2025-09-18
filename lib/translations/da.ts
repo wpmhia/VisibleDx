@@ -3,7 +3,7 @@ import { Translation } from './types'
 export const da: Translation = {
   app: {
     title: 'VisibleDx: ME/CFS · Long COVID · POTS',
-    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',
+    subtitle: 'Et uddannelsesmæssigt værktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og forskning.',
     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',
     backToDashboard: 'Tilbage til Dashboard'
   },
@@ -799,12 +799,12 @@ export const da: Translation = {
     da: 'Dansk'
   },
 
-  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source træningsværktøj er designet til sundhedsuddannelse og træning kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',
+  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source uddannelsesværktøj er designet til sundhedsuddannelse og læring kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',
 
   footer: {
     about: {
       title: 'Om VisibleDx',
-      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',
+      description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',
       badges: {
         sensitivity: '94% Sensitivitet',
         evidenceBased: 'Evidensbaseret',

@@ -54,11 +54,11 @@ export default function HelpSystem({ context }: HelpSystemProps) {
     {
       id: 'getting-started',
       title: 'Getting Started with VisibleDx',
-      content: `VisibleDx is an educational training tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. 
+      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. 
 
-Start with the "Educational Training Simulation" for a guided experience, or choose individual modules to focus on specific skills.
+Start with the "Educational Simulation" for a guided experience, or choose individual modules to focus on specific skills.
 
-Remember: This is a training tool only - NOT for actual patient care.`,
+Remember: This is an educational tool only - NOT for actual patient care.`,
       category: 'getting-started',
       keywords: ['start', 'begin', 'intro', 'first', 'how to'],
       relatedLinks: [
@@ -71,7 +71,7 @@ Remember: This is a training tool only - NOT for actual patient care.`,
       title: 'Using the Initial Screening Module',
       content: `The Initial Screening module simulates a chief complaint and symptom review process:
 
-1. Review the 16 training questions
+1. Review the 16 assessment questions
 2. Select responses as if you were a patient
 3. Review the educational risk assessment
 4. Follow suggested next steps
@@ -148,9 +148,9 @@ Most issues are resolved by checking camera permissions and lighting.`,
 • No data is transmitted to external servers
 • This tool is for education only, not patient care
 
-Always use simulated scenarios and training cases only.`,
+Always use simulated scenarios and educational cases only.`,
       category: 'getting-started',
-      keywords: ['privacy', 'data', 'training', 'local', 'patient'],
+      keywords: ['privacy', 'data', 'educational', 'local', 'patient'],
     }
   ]
 
@@ -191,7 +191,7 @@ Always use simulated scenarios and training cases only.`,
             Help & Documentation
           </DialogTitle>
           <DialogDescription>
-            Find answers and learn how to use VisibleDx educational training modules
+            Find answers and learn how to use VisibleDx educational modules
           </DialogDescription>
         </DialogHeader>
 

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0c1a90001deRNy5aCrErhMq",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01CoCkKB3RFfZkfxUpwA1RGG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 70,
+      "limit": 10
+    },
+    "output": "<file>\n00071|     smartAssessment: {\n00072|       title: 'Educational Training Simulation',\n00073|       description: 'Interactive learning workflow with educational documentation examples',\n00074|       autoRouting: 'Auto-routing',\n00075|       soapNotes: 'SOAP notes',\n00076|       icdCodes: 'ICD-10 codes',\n00077|       startNew: 'Start Training Session'\n00078|     },\n00079|     modules: {\n00080|       quickScreen: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "    smartAssessment: {\n      title: 'Educational Training Simulation',\n      description: 'Interactive learning workflow with educational documentation examples',\n      autoRouting: 'Auto-routing',\n      soapNotes: 'SOAP notes',\n      icdCodes: 'ICD-10 codes',\n      startNew: 'Start Training Session'\n    },\n    modules: {\n      quickScreen: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185921711,
+      "end": 1758185921714
+    }
+  }
+}

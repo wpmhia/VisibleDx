@@ -1,0 +1,18 @@
+{
+  "id": "prt_95c0e6e3e001w4kZhxs5I2UZli",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(translations): remove \"training\" references across locales",
+  "cost": 1.0924040999999998,
+  "tokens": {
+    "input": 0,
+    "output": 355,
+    "reasoning": 0,
+    "cache": {
+      "write": 176,
+      "read": 76732
+    }
+  }
+}

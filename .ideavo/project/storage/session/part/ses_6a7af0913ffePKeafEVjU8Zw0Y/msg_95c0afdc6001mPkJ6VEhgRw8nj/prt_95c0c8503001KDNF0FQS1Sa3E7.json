@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0c8503001KDNF0FQS1Sa3E7",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01N4Wy1AWwsLS8RjsjvxvQ1S",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 130,
+      "limit": 5
+    },
+    "output": "<file>\n00131|   quickScreen: {\n00132|     title: 'Quick-Screen Training',\n00133|     description: '16 questions · ~2 minutes · 92% sensitivity',\n00134|     questions: [\n00135|       'Do you experience severe fatigue that is not relieved by rest?',\n\n(File has more lines. Use 'offset' parameter to read beyond line 135)\n</file>",
+    "metadata": {
+      "preview": "  quickScreen: {\n    title: 'Quick-Screen Training',\n    description: '16 questions · ~2 minutes · 92% sensitivity',\n    questions: [\n      'Do you experience severe fatigue that is not relieved by rest?',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185948965,
+      "end": 1758185948967
+    }
+  }
+}

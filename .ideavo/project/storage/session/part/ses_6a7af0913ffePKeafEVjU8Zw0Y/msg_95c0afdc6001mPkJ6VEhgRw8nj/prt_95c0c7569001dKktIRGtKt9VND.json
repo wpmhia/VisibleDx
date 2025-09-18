@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0c7569001dKktIRGtKt9VND",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01PYZE5sMRVNN4SMoU3Ah46q",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 70,
+      "limit": 10
+    },
+    "output": "<file>\n00071|     smartAssessment: {\n00072|       title: 'Smart Patient Vurdering',\n00073|       description: 'Intelligent guidet arbejdsgang med automatiseret SOAP dokumentation',\n00074|       autoRouting: 'Auto-routing',\n00075|       soapNotes: 'SOAP noter',\n00076|       icdCodes: 'ICD-10 koder',\n00077|       startNew: 'Start Ny Vurdering'\n00078|     },\n00079|     modules: {\n00080|       quickScreen: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "    smartAssessment: {\n      title: 'Smart Patient Vurdering',\n      description: 'Intelligent guidet arbejdsgang med automatiseret SOAP dokumentation',\n      autoRouting: 'Auto-routing',\n      soapNotes: 'SOAP noter',\n      icdCodes: 'ICD-10 koder',\n      startNew: 'Start Ny Vurdering'\n    },\n    modules: {\n      quickScreen: {"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758185944987,
+      "end": 1758185944989
+    }
+  }
+}

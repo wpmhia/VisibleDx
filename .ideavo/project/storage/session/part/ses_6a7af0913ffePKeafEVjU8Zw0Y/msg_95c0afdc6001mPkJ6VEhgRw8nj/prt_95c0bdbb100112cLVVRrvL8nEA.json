@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0bdbb100112cLVVRrvL8nEA",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01JMoDbEtk3PoRvka3prFS4D",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "grep -n \"træning\\|training\" /home/user/project/lib/translations/da.ts",
+      "description": "Search for training references in Danish"
+    },
+    "output": "6:    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',\n151:      'Har du bemærket nedsat træningstoleranse eller fysisk kapacitet?',\n511:        'Undgå gradueret træningsterapi (GET)',\n525:        'Gradvis træningsrekonditionering når passende'\n559:            'Gradvis træningsrekonditionering'\n614:            'Mild træning'\n802:  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source træningsværktøj er designet til sundhedsuddannelse og træning kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',\n807:      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n",
+    "metadata": {
+      "output": "6:    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',\n151:      'Har du bemærket nedsat træningstoleranse eller fysisk kapacitet?',\n511:        'Undgå gradueret træningsterapi (GET)',\n525:        'Gradvis træningsrekonditionering når passende'\n559:            'Gradvis træningsrekonditionering'\n614:            'Mild træning'\n802:  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source træningsværktøj er designet til sundhedsuddannelse og træning kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',\n807:      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n",
+      "exit": 0,
+      "description": "Search for training references in Danish"
+    },
+    "title": "grep -n \"træning\\|training\" /home/user/project/lib/translations/da.ts",
+    "time": {
+      "start": 1758185906367,
+      "end": 1758185906381
+    }
+  }
+}

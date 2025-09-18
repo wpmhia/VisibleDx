@@ -3,7 +3,7 @@ import { Translation } from './types'
 export const nl: Translation = {
   app: {
     title: 'VisibleDx: ME/CVS · Long COVID · POTS',
-    subtitle: 'Een educatief trainingsinstrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en training.',
+    subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',
     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',
     backToDashboard: 'Terug naar Dashboard'
   },
@@ -790,12 +790,12 @@ export const nl: Translation = {
     da: 'Dansk'
   },
 
-  disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source trainingsinstrument is ontworpen voor zorgverlening onderwijs en training alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',
+  disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source educatief instrument is ontworpen voor zorgverlening onderwijs en leren alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',
 
   footer: {
     about: {
       title: 'Over VisibleDx',
-      description: 'VisibleDx is een open-source educatief trainingsinstrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs, training en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',
+      description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',
       badges: {
         sensitivity: '94% Sensitiviteit',
         evidenceBased: 'Evidence-Based',

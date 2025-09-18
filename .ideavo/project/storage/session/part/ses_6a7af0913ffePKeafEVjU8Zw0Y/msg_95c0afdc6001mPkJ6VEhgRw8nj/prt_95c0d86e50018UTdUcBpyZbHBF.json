@@ -1,0 +1,27 @@
+{
+  "id": "prt_95c0d86e50018UTdUcBpyZbHBF",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01UebYjZe5a4HA9B3D14BqmU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+      "timeout": 30000,
+      "description": "Rebuild and restart with training references removed"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Rebuild and restart with training references removed"
+    },
+    "title": "pkill -f \"next\" && npm run build && PORT=4000 npm start",
+    "time": {
+      "start": 1758186015516,
+      "end": 1758186015530
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0d4075001ZLE69zu0mkrtYt",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HYvMGqKhdKyAZyrWRwwcut",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation-controls.tsx",
+      "offset": 75,
+      "limit": 5
+    },
+    "output": "<file>\n00076|           <AlertDialogTitle>{t.common.areYouSure}</AlertDialogTitle>\n00077|           <AlertDialogDescription>\n00078|             Your progress will be lost if you exit this training module. You can always restart from the beginning.\n00079|           </AlertDialogDescription>\n00080|         </AlertDialogHeader>\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "          <AlertDialogTitle>{t.common.areYouSure}</AlertDialogTitle>\n          <AlertDialogDescription>\n            Your progress will be lost if you exit this training module. You can always restart from the beginning.\n          </AlertDialogDescription>\n        </AlertDialogHeader>"
+    },
+    "title": "components/navigation-controls.tsx",
+    "time": {
+      "start": 1758185997050,
+      "end": 1758185997053
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95c0c549e001kTZJtyLBbgw1Km",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01VzDJfRqFSoM4LXxiquVdra",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "grep -n -i \"simulatie\\|sessie\" /home/user/project/lib/translations/nl.ts",
+      "description": "Find simulation references in Dutch"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 1,
+      "description": "Find simulation references in Dutch"
+    },
+    "title": "grep -n -i \"simulatie\\|sessie\" /home/user/project/lib/translations/nl.ts",
+    "time": {
+      "start": 1758185937100,
+      "end": 1758185937105
+    }
+  }
+}

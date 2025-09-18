@@ -3,7 +3,7 @@ import { Translation } from './types'
 export const en: Translation = {
   app: {
     title: 'VisibleDx: ME/CFS · Long COVID · POTS',
-    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',
+    subtitle: 'An educational tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and research purposes only.',
     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',
     backToDashboard: 'Back to Dashboard'
   },
@@ -69,12 +69,12 @@ export const en: Translation = {
 
   dashboard: {
     smartAssessment: {
-      title: 'Educational Training Simulation',
+      title: 'Educational Simulation',
       description: 'Interactive learning workflow with educational documentation examples',
       autoRouting: 'Auto-routing',
       soapNotes: 'SOAP notes',
       icdCodes: 'ICD-10 codes',
-      startNew: 'Start Training Session'
+      startNew: 'Start Learning Session'
     },
     modules: {
       quickScreen: {
@@ -129,7 +129,7 @@ export const en: Translation = {
   },
 
   quickScreen: {
-    title: 'Quick-Screen Training',
+    title: 'Quick-Screen Assessment',
     description: '16 questions · ~2 minutes · 92% sensitivity',
     questions: [
       'Do you experience severe fatigue that is not relieved by rest?',
@@ -166,7 +166,7 @@ export const en: Translation = {
     },
     results: {
       complete: 'Screening Complete',
-      riskAssessment: 'Educational simulation - Based on your responses, here\'s the training scenario',
+      riskAssessment: 'Educational simulation - Based on your responses, here\'s the learning scenario',
       lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',
       mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',
       highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',
@@ -682,7 +682,7 @@ export const en: Translation = {
       gender: 'Gender',
       clinicianName: 'Clinician Name',
       patientId: 'Patient ID/MRN',
-    startAssessment: 'Start Training'
+    startAssessment: 'Start Assessment'
     },
     progress: {
       step1: 'Demographics',
@@ -773,12 +773,12 @@ export const en: Translation = {
   },
 
   navigation: {
-    assessmentModules: 'Training Modules',
+    assessmentModules: 'Assessment Modules',
     guidelines: 'Guidelines',
     diagnosticTools: 'Educational Tools',
     clinicalGuidelines: 'Clinical Guidelines & References',
-    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational training modules',
-    assessmentModulesSection: 'Training Modules',
+    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',
+    assessmentModulesSection: 'Assessment Modules',
     guidelinesSection: 'Guidelines & References',
     moreGuidelines: 'more guidelines',
     smartBadge: 'Smart'
@@ -790,12 +790,12 @@ export const en: Translation = {
     da: 'Dansk'
   },
 
-  disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source training tool is designed for healthcare education and training purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',
+  disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source educational tool is designed for healthcare education and learning purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',
 
   footer: {
     about: {
       title: 'About VisibleDx',
-      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',
+      description: 'VisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',
       badges: {
         sensitivity: '94% Sensitivity',
         evidenceBased: 'Evidence-Based',

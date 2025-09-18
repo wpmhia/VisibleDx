@@ -1,0 +1,27 @@
+{
+  "id": "prt_95c0e19b6001kVqUZ0L2FSnfGo",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01L7mpavGRzirH4vdRYeUDdj",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "PORT=4000 npm start",
+      "timeout": 10000,
+      "description": "Start server on port 4000"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:4000\n\n ✓ Starting...\n ✓ Ready in 431ms\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:4000\n\n ✓ Starting...\n ✓ Ready in 431ms\n",
+      "exit": null,
+      "description": "Start server on port 4000"
+    },
+    "title": "PORT=4000 npm start",
+    "time": {
+      "start": 1758186052470,
+      "end": 1758186062477
+    }
+  }
+}

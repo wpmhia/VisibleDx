@@ -1,0 +1,24 @@
+{
+  "id": "prt_95c0b636b001NHEi8m7X4x7lQV",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Cdg8PkDqcJFqrnsAk7G2ax",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "limit": 10
+    },
+    "output": "<file>\n00001| import { Translation } from './types'\n00002| \n00003| export const en: Translation = {\n00004|   app: {\n00005|     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',\n00007|     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n00008|     backToDashboard: 'Back to Dashboard'\n00009|   },\n00010| \n\n(File has more lines. Use 'offset' parameter to read beyond line 10)\n</file>",
+    "metadata": {
+      "preview": "import { Translation } from './types'\n\nexport const en: Translation = {\n  app: {\n    title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',\n    tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n    backToDashboard: 'Back to Dashboard'\n  },\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185874385,
+      "end": 1758185874391
+    }
+  }
+}

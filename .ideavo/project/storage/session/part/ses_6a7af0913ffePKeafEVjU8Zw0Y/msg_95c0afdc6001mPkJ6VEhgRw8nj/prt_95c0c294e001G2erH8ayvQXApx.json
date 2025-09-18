@@ -1,0 +1,44 @@
+{
+  "id": "prt_95c0c294e001G2erH8ayvQXApx",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01EhgBECispxcWZvtqxYnukd",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      title: 'Educational Training Simulation',",
+          "newString": "      title: 'Educational Simulation',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      startNew: 'Start Training Session'",
+          "newString": "      startNew: 'Start Learning Session'"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -68,9 +68,9 @@\n },\n \n dashboard: {\n   smartAssessment: {\n-    title: 'Educational Training Simulation',\n+    title: 'Educational Simulation',\n     description: 'Interactive learning workflow with educational documentation examples',\n     autoRouting: 'Auto-routing',\n     soapNotes: 'SOAP notes',\n     icdCodes: 'ICD-10 codes',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -73,9 +73,9 @@\n   description: 'Interactive learning workflow with educational documentation examples',\n   autoRouting: 'Auto-routing',\n   soapNotes: 'SOAP notes',\n   icdCodes: 'ICD-10 codes',\n-  startNew: 'Start Training Session'\n+  startNew: 'Start Learning Session'\n },\n modules: {\n   quickScreen: {\n     title: 'Initial Screening',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758185926337,
+      "end": 1758185926349
+    }
+  }
+}

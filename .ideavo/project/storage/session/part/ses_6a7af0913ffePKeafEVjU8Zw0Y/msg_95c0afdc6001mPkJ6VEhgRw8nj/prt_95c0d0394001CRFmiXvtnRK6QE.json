@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0d0394001CRFmiXvtnRK6QE",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01NifKNpk5QyQ3cjrohTiBEB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/error-boundary.tsx",
+      "offset": 70,
+      "limit": 3
+    },
+    "output": "<file>\n00071|               An unexpected error occurred in the training module. Your progress has been saved where possible.\n00072|             </AlertDescription>\n00073|           </Alert>\n\n(File has more lines. Use 'offset' parameter to read beyond line 73)\n</file>",
+    "metadata": {
+      "preview": "              An unexpected error occurred in the training module. Your progress has been saved where possible.\n            </AlertDescription>\n          </Alert>"
+    },
+    "title": "components/error-boundary.tsx",
+    "time": {
+      "start": 1758185981246,
+      "end": 1758185981247
+    }
+  }
+}

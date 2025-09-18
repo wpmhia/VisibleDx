@@ -1,0 +1,25 @@
+{
+  "id": "prt_95c0b1d2b001oRQz43nw0DvB9n",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01UPbPbrxjSGNsymfzV2mvLJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "training|Training|TRAINING",
+      "include": "*.ts,*.tsx"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "training|Training|TRAINING",
+    "time": {
+      "start": 1758185856807,
+      "end": 1758185856820
+    }
+  }
+}

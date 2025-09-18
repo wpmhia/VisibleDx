@@ -1,0 +1,53 @@
+{
+  "id": "prt_95c0bf9070013cgT1sH7PLjDaP",
+  "messageID": "msg_95c0afdc6001mPkJ6VEhgRw8nj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01U7hSDmYtgvxFTde6S7nrMZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',",
+          "newString": "    subtitle: 'Et uddannelsesmæssigt værktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og forskning.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source træningsværktøj er designet til sundhedsuddannelse og træning kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',",
+          "newString": "  disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source uddannelsesværktøj er designet til sundhedsuddannelse og læring kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',",
+          "newString": "      description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -2,9 +2,9 @@\n \n export const da: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n-    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',\n+    subtitle: 'Et uddannelsesmæssigt værktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og forskning.',\n     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',\n     backToDashboard: 'Tilbage til Dashboard'\n   },\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -798,9 +798,9 @@\n   nl: 'Nederlands',\n   da: 'Dansk'\n },\n \n-disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source træningsværktøj er designet til sundhedsuddannelse og træning kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',\n+disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source uddannelsesværktøj er designet til sundhedsuddannelse og læring kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',\n \n footer: {\n   about: {\n     title: 'Om VisibleDx',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -803,9 +803,9 @@\n \n footer: {\n   about: {\n     title: 'Om VisibleDx',\n-    description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n+    description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',\n     badges: {\n       sensitivity: '94% Sensitivitet',\n       evidenceBased: 'Evidensbaseret',\n       openSource: 'Open Source'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758185917679,
+      "end": 1758185917697
+    }
+  }
+}
