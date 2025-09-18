@@ -1,0 +1,25 @@
+{
+  "id": "prt_95de0265d001E5eAAOS56waU37",
+  "messageID": "msg_95de007c1001270TWUQQhJFaW7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TSvpt9mNJvj8gfuTsnt8ow",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 80,
+      "limit": 50
+    },
+    "output": "<file>\n00081|         title: 'Initial Screening',\n00082|         description: 'Chief complaint & symptom review (16 questions, ~2 min)'\n00083|       },\n00084|       redFlag: {\n00085|         title: 'Differential Diagnosis',\n00086|         description: 'Rule out alternative diagnoses & red flag symptoms'\n00087|       },\n00088|       standTest: {\n00089|         title: 'Orthostatic Vitals',\n00090|         description: 'Standing test with heart rate monitoring (NASA protocol)'\n00091|       },\n00092|       pemQuest: {\n00093|         title: 'PEM Assessment',\n00094|         description: 'Post-exertional malaise symptom evaluation'\n00095|       },\n00096|       criteriaEngine: {\n00097|         title: 'Diagnostic Criteria',\n00098|         description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'\n00099|       },\n00100|       subtypeAdvisor: {\n00101|         title: 'Clinical Management',\n00102|         description: 'Condition subtyping & treatment planning examples'\n00103|       }\n00104|     },\n00105|     stats: {\n00106|       diagnosticDelay: '4-5 year avg diagnostic delay',\n00107|       doctorsConsulted: '≥7 doctors typically consulted',\n00108|       sensitivityValidated: '94% sensitivity validated'\n00109|     },\n00110|     algorithm: {\n00111|       title: 'Educational Algorithm',\n00112|       mecfs: {\n00113|         title: 'ME/CFS',\n00114|         criteria: 'CDC/NASEM 2015 + IOM criteria',\n00115|         description: '3 core + 1 PEM symptom cluster'\n00116|       },\n00117|       longCovid: {\n00118|         title: 'Long COVID',\n00119|         criteria: 'WHO + NASEM 2024 criteria',\n00120|         description: '≥3 months post-SARS-CoV-2'\n00121|       },\n00122|       pots: {\n00123|         title: 'POTS',\n00124|         criteria: 'ESC 2018 + AAS/EFAS 2021',\n00125|         description: 'HR↑≥30 bpm within 10 min'\n00126|       }\n00127|     },\n00128|     startAssessment: 'Start Assessment'\n00129|   },\n00130| \n\n(File has more lines. Use 'offset' parameter to read beyond line 130)\n</file>",
+    "metadata": {
+      "preview": "        title: 'Initial Screening',\n        description: 'Chief complaint & symptom review (16 questions, ~2 min)'\n      },\n      redFlag: {\n        title: 'Differential Diagnosis',\n        description: 'Rule out alternative diagnoses & red flag symptoms'\n      },\n      standTest: {\n        title: 'Orthostatic Vitals',\n        description: 'Standing test with heart rate monitoring (NASA protocol)'\n      },\n      pemQuest: {\n        title: 'PEM Assessment',\n        description: 'Post-exertional malaise symptom evaluation'\n      },\n      criteriaEngine: {\n        title: 'Diagnostic Criteria',\n        description: 'Apply clinical criteria (CDC, WHO, ESC guidelines)'\n      },\n      subtypeAdvisor: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758216595799,
+      "end": 1758216595800
+    }
+  }
+}

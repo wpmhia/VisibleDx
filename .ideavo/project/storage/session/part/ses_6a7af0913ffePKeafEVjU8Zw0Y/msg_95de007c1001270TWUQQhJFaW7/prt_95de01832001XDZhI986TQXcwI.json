@@ -1,0 +1,24 @@
+{
+  "id": "prt_95de01832001XDZhI986TQXcwI",
+  "messageID": "msg_95de007c1001270TWUQQhJFaW7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "glob",
+  "callID": "toolu_01GUk6Z743BbVCAPBTGsrwdg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "app/*/page.tsx"
+    },
+    "output": "/home/user/project/app/new-patient/page.tsx\n/home/user/project/app/red-flag-checker/page.tsx\n/home/user/project/app/subtype-advisor/page.tsx\n/home/user/project/app/stand-test/page.tsx\n/home/user/project/app/criteria-engine/page.tsx\n/home/user/project/app/pem-quest/page.tsx\n/home/user/project/app/quick-screen/page.tsx\n/home/user/project/app/env-check/page.tsx",
+    "metadata": {
+      "count": 8,
+      "truncated": false
+    },
+    "title": "",
+    "time": {
+      "start": 1758216591761,
+      "end": 1758216591786
+    }
+  }
+}
