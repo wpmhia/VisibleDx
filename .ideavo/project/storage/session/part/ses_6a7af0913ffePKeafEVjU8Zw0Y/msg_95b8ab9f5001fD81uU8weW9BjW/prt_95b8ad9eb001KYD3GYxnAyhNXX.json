@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b8ad9eb001KYD3GYxnAyhNXX",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01XzLhBkPfwVeoMEKKbcuZ6u",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "Evidence|evidence",
+      "path": "/home/user/project/lib/translations",
+      "include": "*.ts"
+    },
+    "output": "Found 14 matches\n/home/user/project/lib/translations/en.ts:\n  Line 7:     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n  Line 769:     guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n  Line 787:       description: 'VisibleDx is an evidence-based diagnostic decision support tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to assist clinicians in systematic evaluation.',\n  Line 790:         evidenceBased: 'Evidence-Based',\n  Line 794:     evidence: {\n  Line 795:       title: 'Evidence Base',\n\n/home/user/project/lib/translations/da.ts:\n  Line 799:         evidenceBased: 'Evidensbaseret',\n  Line 803:     evidence: {\n\n/home/user/project/lib/translations/nl.ts:\n  Line 769:     guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n  Line 787:       description: 'VisibleDx is een evidence-based diagnostisch ondersteuningsinstrument voor ME/CVS, Long COVID en POTS. Het implementeert gevalideerde criteria van toonaangevende medische organisaties om clinici te helpen bij systematische evaluatie.',\n  Line 790:         evidenceBased: 'Evidence-Based',\n  Line 794:     evidence: {\n\n/home/user/project/lib/translations/types.ts:\n  Line 576:         evidenceBased: string\n  Line 580:     evidence: {",
+    "metadata": {
+      "matches": 14,
+      "truncated": false
+    },
+    "title": "Evidence|evidence",
+    "time": {
+      "start": 1758177451351,
+      "end": 1758177451361
+    }
+  }
+}

@@ -47,7 +47,16 @@ export default function Disclaimer() {
             </div>
             <ul className="text-sm text-gray-600 space-y-1">
               {t.footer.evidence.guidelines.map((guideline, index) => (
-                <li key={index}>• {guideline}</li>
+                <li key={index}>
+                  • <a 
+                      href={guideline.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                    >
+                      {guideline.title}
+                    </a>
+                </li>
               ))}
             </ul>
           </div>

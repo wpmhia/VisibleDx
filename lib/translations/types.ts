@@ -579,7 +579,10 @@ export interface Translation {
     }
     evidence: {
       title: string
-      guidelines: string[]
+      guidelines: {
+        title: string
+        url: string
+      }[]
     }
     notes: {
       title: string

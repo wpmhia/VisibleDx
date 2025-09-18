@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b8b3ebe0010KpkxZiqBxStRb",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01YSmg2uaJCL9fypDf4rxQjp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 790,
+      "limit": 20
+    },
+    "output": "<file>\n00791|         openSource: 'Open Source'\n00792|       }\n00793|     },\n00794|     evidence: {\n00795|       title: 'Wetenschappelijke Basis',\n00796|       guidelines: [\n00797|         'CDC ME/CVS Casedefinitie (2015)',\n00798|         'NASEM ME/CVS Rapport (2015)',\n00799|         'WHO Long COVID Definitie (2021)',\n00800|         'ESC POTS Richtlijnen (2018)',\n00801|         'AAS/EFAS POTS Consensus (2021)',\n00802|         'NASA Lean Stand Test Protocol'\n00803|       ]\n00804|     },\n00805|     notes: {\n00806|       title: 'Belangrijke Opmerkingen',\n00807|       items: [\n00808|         'Geen vervanging voor klinische beoordeling',\n00809|         'Vereist bevestiging met lichamelijk onderzoek',\n00810|         'Houd rekening met patiëntgeschiedenis en context',\n\n(File has more lines. Use 'offset' parameter to read beyond line 810)\n</file>",
+    "metadata": {
+      "preview": "        openSource: 'Open Source'\n      }\n    },\n    evidence: {\n      title: 'Wetenschappelijke Basis',\n      guidelines: [\n        'CDC ME/CVS Casedefinitie (2015)',\n        'NASEM ME/CVS Rapport (2015)',\n        'WHO Long COVID Definitie (2021)',\n        'ESC POTS Richtlijnen (2018)',\n        'AAS/EFAS POTS Consensus (2021)',\n        'NASA Lean Stand Test Protocol'\n      ]\n    },\n    notes: {\n      title: 'Belangrijke Opmerkingen',\n      items: [\n        'Geen vervanging voor klinische beoordeling',\n        'Vereist bevestiging met lichamelijk onderzoek',\n        'Houd rekening met patiëntgeschiedenis en context',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758177476878,
+      "end": 1758177476880
+    }
+  }
+}

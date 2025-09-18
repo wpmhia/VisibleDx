@@ -794,12 +794,30 @@ export const nl: Translation = {
     evidence: {
       title: 'Wetenschappelijke Basis',
       guidelines: [
-        'CDC ME/CVS Casedefinitie (2015)',
-        'NASEM ME/CVS Rapport (2015)',
-        'WHO Long COVID Definitie (2021)',
-        'ESC POTS Richtlijnen (2018)',
-        'AAS/EFAS POTS Consensus (2021)',
-        'NASA Lean Stand Test Protocol'
+        {
+          title: 'CDC ME/CVS Casedefinitie (2015)',
+          url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'
+        },
+        {
+          title: 'NASEM ME/CVS Rapport (2015)',
+          url: 'https://nap.nationalacademies.org/read/19012'
+        },
+        {
+          title: 'WHO Long COVID Definitie (2021)',
+          url: 'https://www.who.int/publications/i/item/9789240025035'
+        },
+        {
+          title: 'ESC POTS Richtlijnen (2018)',
+          url: 'https://academic.oup.com/europace/article/20/6/921/4824690'
+        },
+        {
+          title: 'AAS/EFAS POTS Consensus (2021)',
+          url: 'https://link.springer.com/article/10.1007/s10286-021-00822-5'
+        },
+        {
+          title: 'NASA Lean Stand Test Protocol',
+          url: 'https://ntrs.nasa.gov/citations/20150021566'
+        }
       ]
     },
     notes: {

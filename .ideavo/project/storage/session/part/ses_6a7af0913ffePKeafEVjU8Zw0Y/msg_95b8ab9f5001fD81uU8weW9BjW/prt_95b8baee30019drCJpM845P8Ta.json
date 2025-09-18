@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b8baee30019drCJpM845P8Ta",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01EGeoL53RswPyakigSGYrvu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "oldString": "            <ul className=\"text-sm text-gray-600 space-y-1\">\n              {t.footer.evidence.guidelines.map((guideline, index) => (\n                <li key={index}>• {guideline}</li>\n              ))}\n            </ul>",
+      "newString": "            <ul className=\"text-sm text-gray-600 space-y-1\">\n              {t.footer.evidence.guidelines.map((guideline, index) => (\n                <li key={index}>\n                  • <a \n                      href={guideline.url} \n                      target=\"_blank\" \n                      rel=\"noopener noreferrer\"\n                      className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors\"\n                    >\n                      {guideline.title}\n                    </a>\n                </li>\n              ))}\n            </ul>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -46,9 +46,18 @@\n     <h3 className=\"font-semibold text-gray-900\">{t.footer.evidence.title}</h3>\n   </div>\n   <ul className=\"text-sm text-gray-600 space-y-1\">\n     {t.footer.evidence.guidelines.map((guideline, index) => (\n-      <li key={index}>• {guideline}</li>\n+      <li key={index}>\n+        • <a \n+            href={guideline.url} \n+            target=\"_blank\" \n+            rel=\"noopener noreferrer\"\n+            className=\"text-blue-600 hover:text-blue-800 hover:underline transition-colors\"\n+          >\n+            {guideline.title}\n+          </a>\n+      </li>\n     ))}\n   </ul>\n </div>\n \n"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758177507955,
+      "end": 1758177507964
+    }
+  }
+}

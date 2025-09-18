@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b8ae91c001X39PK2szJxUk5y",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012eUFC5arUb4ZW9YtUgnHNk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 790,
+      "limit": 50
+    },
+    "output": "<file>\n00791|         openSource: 'Open Source'\n00792|       }\n00793|     },\n00794|     evidence: {\n00795|       title: 'Evidence Base',\n00796|       guidelines: [\n00797|         'CDC ME/CFS Case Definition (2015)',\n00798|         'NASEM ME/CFS Report (2015)',\n00799|         'WHO Long COVID Definition (2021)',\n00800|         'ESC POTS Guidelines (2018)',\n00801|         'AAS/EFAS POTS Consensus (2021)',\n00802|         'NASA Lean Stand Test Protocol'\n00803|       ]\n00804|     },\n00805|     notes: {\n00806|       title: 'Important Notes',\n00807|       items: [\n00808|         'Not a substitute for clinical assessment',\n00809|         'Requires confirmation with physical exam',\n00810|         'Consider patient history and context',\n00811|         'Rule out red flags before diagnosis',\n00812|         'Consult specialists for complex cases',\n00813|         'Monitor patient response to treatment'\n00814|       ]\n00815|     },\n00816|     bottom: {\n00817|       version: 'VisibleDx v1.0 - Educational Tool',\n00818|       copyright: '© 2024 VisibleDx',\n00819|       audienceLabel: 'For Healthcare Professionals',\n00820|       badge: 'Research & Education Use'\n00821|     },\n00822|     technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n00823|   },\n00824| \n00825|   ppgCamera: {\n00826|     title: 'Camera PPG Heart Rate',\n00827|     description: 'Place your fingertip gently over the camera lens with flashlight on',\n00828|     fingerDetected: 'Finger Detected',\n00829|     placeFingerPrompt: 'Place Finger',\n00830|     signalQuality: {\n00831|       poor: 'poor',\n00832|       fair: 'fair',\n00833|       good: 'good'\n00834|     },\n00835|     status: {\n00836|       stopped: 'stopped',\n00837|       starting: 'starting',\n00838|       detecting: 'detecting',\n00839|       measuring: 'measuring'\n00840|     },\n\n(File has more lines. Use 'offset' parameter to read beyond line 840)\n</file>",
+    "metadata": {
+      "preview": "        openSource: 'Open Source'\n      }\n    },\n    evidence: {\n      title: 'Evidence Base',\n      guidelines: [\n        'CDC ME/CFS Case Definition (2015)',\n        'NASEM ME/CFS Report (2015)',\n        'WHO Long COVID Definition (2021)',\n        'ESC POTS Guidelines (2018)',\n        'AAS/EFAS POTS Consensus (2021)',\n        'NASA Lean Stand Test Protocol'\n      ]\n    },\n    notes: {\n      title: 'Important Notes',\n      items: [\n        'Not a substitute for clinical assessment',\n        'Requires confirmation with physical exam',\n        'Consider patient history and context',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758177455074,
+      "end": 1758177455076
+    }
+  }
+}

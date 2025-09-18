@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b8c90ca001TPL4kiB7HYITyr",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The Evidence Base bullet list is now clickable! Here's what I implemented:\n\n## ✅ **Changes Made**\n\n### **1. Updated Translation Structure**\n- **All 3 language files** (`en.ts`, `nl.ts`, `da.ts`) - Changed `guidelines` from string arrays to objects with `title` and `url` properties\n- **TypeScript types** (`types.ts`) - Updated interface to match new structure\n\n### **2. Added Authoritative URLs**\nEach evidence item now links to the official source:\n- **CDC ME/CFS** → CDC healthcare providers diagnosis page\n- **NASEM Report** → National Academies Press publication\n- **WHO Long COVID** → WHO ICD-10 guidelines document  \n- **ESC POTS** → European Society of Cardiology journal article\n- **AAS/EFAS POTS** → Clinical Autonomic Research journal\n- **NASA Stand Test** → NASA technical reports database\n\n### **3. Enhanced Disclaimer Component**\n- **Clickable links** with `target=\"_blank\"` (opens in new window)\n- **Security attributes** (`rel=\"noopener noreferrer\"`)\n- **Visual styling** - Blue links with hover effects and underlines\n- **Accessibility** - Proper link semantics\n\n### **4. Cross-Language Support**\nAll three languages maintain their localized titles while sharing the same authoritative English URLs (standard practice for international medical references).\n\nThe links now open in new windows as requested, maintaining the user's current session while providing direct access to the peer-reviewed medical literature that backs the diagnostic algorithms.",
+  "time": {
+    "start": 1758177571961,
+    "end": 1758177571961
+  }
+}

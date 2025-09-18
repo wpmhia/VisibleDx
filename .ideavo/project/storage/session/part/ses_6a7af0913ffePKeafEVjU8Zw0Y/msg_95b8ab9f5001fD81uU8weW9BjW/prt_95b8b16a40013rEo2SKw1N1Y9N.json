@@ -1,0 +1,35 @@
+{
+  "id": "prt_95b8b16a40013rEo2SKw1N1Y9N",
+  "messageID": "msg_95b8ab9f5001fD81uU8weW9BjW",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_012kt7FMHCK6b9CcAirBYSyA",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    evidence: {\n      title: 'Evidence Base',\n      guidelines: [\n        'CDC ME/CFS Case Definition (2015)',\n        'NASEM ME/CFS Report (2015)',\n        'WHO Long COVID Definition (2021)',\n        'ESC POTS Guidelines (2018)',\n        'AAS/EFAS POTS Consensus (2021)',\n        'NASA Lean Stand Test Protocol'\n      ]\n    },",
+          "newString": "    evidence: {\n      title: 'Evidence Base',\n      guidelines: [\n        {\n          title: 'CDC ME/CFS Case Definition (2015)',\n          url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n        },\n        {\n          title: 'NASEM ME/CFS Report (2015)',\n          url: 'https://nap.nationalacademies.org/read/19012'\n        },\n        {\n          title: 'WHO Long COVID Definition (2021)',\n          url: 'https://www.who.int/publications/i/item/9789240025035'\n        },\n        {\n          title: 'ESC POTS Guidelines (2018)',\n          url: 'https://academic.oup.com/europace/article/20/6/921/4824690'\n        },\n        {\n          title: 'AAS/EFAS POTS Consensus (2021)',\n          url: 'https://link.springer.com/article/10.1007/s10286-021-00822-5'\n        },\n        {\n          title: 'NASA Lean Stand Test Protocol',\n          url: 'https://ntrs.nasa.gov/citations/20150021566'\n        }\n      ]\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -793,14 +793,32 @@\n },\n evidence: {\n   title: 'Evidence Base',\n   guidelines: [\n-    'CDC ME/CFS Case Definition (2015)',\n-    'NASEM ME/CFS Report (2015)',\n-    'WHO Long COVID Definition (2021)',\n-    'ESC POTS Guidelines (2018)',\n-    'AAS/EFAS POTS Consensus (2021)',\n-    'NASA Lean Stand Test Protocol'\n+    {\n+      title: 'CDC ME/CFS Case Definition (2015)',\n+      url: 'https://www.cdc.gov/me-cfs/healthcare-providers/diagnosis/index.html'\n+    },\n+    {\n+      title: 'NASEM ME/CFS Report (2015)',\n+      url: 'https://nap.nationalacademies.org/read/19012'\n+    },\n+    {\n+      title: 'WHO Long COVID Definition (2021)',\n+      url: 'https://www.who.int/publications/i/item/9789240025035'\n+    },\n+    {\n+      title: 'ESC POTS Guidelines (2018)',\n+      url: 'https://academic.oup.com/europace/article/20/6/921/4824690'\n+    },\n+    {\n+      title: 'AAS/EFAS POTS Consensus (2021)',\n+      url: 'https://link.springer.com/article/10.1007/s10286-021-00822-5'\n+    },\n+    {\n+      title: 'NASA Lean Stand Test Protocol',\n+      url: 'https://ntrs.nasa.gov/citations/20150021566'\n+    }\n   ]\n },\n notes: {\n   title: 'Important Notes',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758177473866,
+      "end": 1758177473883
+    }
+  }
+}
