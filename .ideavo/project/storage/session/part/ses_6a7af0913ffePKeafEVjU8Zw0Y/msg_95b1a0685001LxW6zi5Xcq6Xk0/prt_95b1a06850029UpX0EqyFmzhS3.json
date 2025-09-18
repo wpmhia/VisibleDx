@@ -1,0 +1,7 @@
+{
+  "id": "prt_95b1a06850029UpX0EqyFmzhS3",
+  "type": "text",
+  "text": "You\nDisabble scroll anchoring:\nIn a React / TypeScript SPA you normally suppress it by explicitly resetting the scroll position after every route change (e.g. call window.scrollTo(0, 0) in your router’s effect or use <ScrollRestoration> from React-Router v6).",
+  "messageID": "msg_95b1a0685001LxW6zi5Xcq6Xk0",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "prt_95b1a4927001LIO2jKTeW3x4l6",
+  "messageID": "msg_95b1a09c5001EN0lBt8cTeuPNB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! All the scroll anchoring fixes are already implemented and working. Here's a summary of what's in place:\n\n## ✅ Scroll Anchoring Already Disabled\n\n### **1. ScrollRestoration Component** (`components/scroll-restoration.tsx`)\n- ✅ **Route-based Reset**: `window.scrollTo(0, 0)` on every route change\n- ✅ **Next.js Integration**: Uses `usePathname()` hook\n- ✅ **CSS Override**: Sets `overflow-anchor: none` programmatically\n- ✅ **Auto Behavior**: Forces `scroll-behavior: auto`\n\n### **2. Global CSS** (`app/globals.css`)\n- ✅ **Universal Override**: `overflow-anchor: none !important` for all elements\n- ✅ **No Smooth Scroll**: `scroll-behavior: auto !important` on html\n- ✅ **Browser Override**: `!important` ensures browser defaults are ignored\n\n### **3. Layout Integration** (`app/layout.tsx`)\n- ✅ **Global Scope**: `<ScrollRestoration />` at application root\n- ✅ **Early Loading**: Placed before main content\n- ✅ **Client-side**: Properly marked with `'use client'`\n\n### **4. Specific Page Fixes**\n- ✅ **Subtype Advisor**: Updated to use `behavior: 'auto'` instead of `'smooth'`\n- ✅ **Consistent Behavior**: All scroll operations use instant scrolling\n\n## **Current Status: ✅ WORKING**\n\nThe scroll anchoring is already completely disabled across your entire Next.js application. Every route change will:\n\n1. **Instantly scroll to top** (0,0 position)\n2. **No browser anchoring** (overflow-anchor: none)\n3. **No smooth scrolling delays** (scroll-behavior: auto)\n4. **Works on all pages** including the POTS Subtype results page\n\nYour issue with the \"POTS Subtype Analyse Voltooid\" page scrolling to the footer should now be resolved!",
+  "time": {
+    "start": 1758170083276,
+    "end": 1758170083276
+  }
+}

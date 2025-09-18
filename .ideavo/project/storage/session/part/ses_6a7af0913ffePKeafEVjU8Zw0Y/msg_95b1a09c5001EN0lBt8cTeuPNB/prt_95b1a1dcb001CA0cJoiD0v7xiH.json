@@ -1,0 +1,23 @@
+{
+  "id": "prt_95b1a1dcb001CA0cJoiD0v7xiH",
+  "messageID": "msg_95b1a09c5001EN0lBt8cTeuPNB",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01PE6dCcqC6tmoqudCxn3Kov",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/scroll-restoration.tsx"
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { useEffect } from 'react'\n00004| import { usePathname } from 'next/navigation'\n00005| \n00006| export default function ScrollRestoration() {\n00007|   const pathname = usePathname()\n00008| \n00009|   useEffect(() => {\n00010|     // Reset scroll position on route change\n00011|     window.scrollTo(0, 0)\n00012|     \n00013|     // Also disable scroll anchoring globally\n00014|     if (typeof window !== 'undefined' && document.documentElement) {\n00015|       document.documentElement.style.scrollBehavior = 'auto'\n00016|       // Reset scroll anchoring\n00017|       document.documentElement.style.setProperty('overflow-anchor', 'none')\n00018|     }\n00019|   }, [pathname])\n00020| \n00021|   useEffect(() => {\n00022|     // Disable scroll anchoring on mount\n00023|     if (typeof window !== 'undefined' && document.documentElement) {\n00024|       document.documentElement.style.setProperty('overflow-anchor', 'none')\n00025|     }\n00026|   }, [])\n00027| \n00028|   return null\n00029| }\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { useEffect } from 'react'\nimport { usePathname } from 'next/navigation'\n\nexport default function ScrollRestoration() {\n  const pathname = usePathname()\n\n  useEffect(() => {\n    // Reset scroll position on route change\n    window.scrollTo(0, 0)\n    \n    // Also disable scroll anchoring globally\n    if (typeof window !== 'undefined' && document.documentElement) {\n      document.documentElement.style.scrollBehavior = 'auto'\n      // Reset scroll anchoring\n      document.documentElement.style.setProperty('overflow-anchor', 'none')\n    }\n  }, [pathname])\n"
+    },
+    "title": "components/scroll-restoration.tsx",
+    "time": {
+      "start": 1758170062897,
+      "end": 1758170062908
+    }
+  }
+}
