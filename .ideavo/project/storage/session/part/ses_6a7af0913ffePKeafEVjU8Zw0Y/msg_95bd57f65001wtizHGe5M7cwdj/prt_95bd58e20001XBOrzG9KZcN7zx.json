@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bd58e20001XBOrzG9KZcN7zx",
+  "messageID": "msg_95bd57f65001wtizHGe5M7cwdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01AQBMcGaDBxN487LKBPuF7r",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "curl -I http://localhost:4000",
+      "description": "Check if server responds locally"
+    },
+    "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 4000 after 1 ms: Couldn't connect to server\n",
+    "metadata": {
+      "output": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 4000 after 1 ms: Couldn't connect to server\n",
+      "exit": 7,
+      "description": "Check if server responds locally"
+    },
+    "title": "curl -I http://localhost:4000",
+    "time": {
+      "start": 1758182346579,
+      "end": 1758182346613
+    }
+  }
+}

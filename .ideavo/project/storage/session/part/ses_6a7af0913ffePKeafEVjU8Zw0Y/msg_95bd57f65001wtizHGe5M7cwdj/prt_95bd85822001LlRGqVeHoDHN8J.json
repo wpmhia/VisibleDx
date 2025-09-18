@@ -1,0 +1,26 @@
+{
+  "id": "prt_95bd85822001LlRGqVeHoDHN8J",
+  "messageID": "msg_95bd57f65001wtizHGe5M7cwdj",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01GfgLZc7MUeSWTkWzGcGEmm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000",
+      "description": "Check HTTP status code"
+    },
+    "output": "200",
+    "metadata": {
+      "output": "200",
+      "exit": 0,
+      "description": "Check HTTP status code"
+    },
+    "title": "curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4000",
+    "time": {
+      "start": 1758182529724,
+      "end": 1758182530013
+    }
+  }
+}
