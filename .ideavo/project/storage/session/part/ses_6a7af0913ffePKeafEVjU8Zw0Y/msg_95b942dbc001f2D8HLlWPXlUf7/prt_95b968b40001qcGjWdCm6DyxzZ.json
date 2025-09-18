@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b968b40001qcGjWdCm6DyxzZ",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01V5CE5JS86eq36KWbDxefDS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    startAssessment: 'Start Assessment'",
+      "newString": "    startAssessment: 'Start Training'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -670,9 +670,9 @@\n   age: 'Patient Age',\n   gender: 'Gender',\n   clinicianName: 'Clinician Name',\n   patientId: 'Patient ID/MRN',\n-  startAssessment: 'Start Assessment'\n+startAssessment: 'Start Training'\n },\n progress: {\n   step1: 'Demographics',\n   step2: 'Quick Screen',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178217712,
+      "end": 1758178217723
+    }
+  }
+}

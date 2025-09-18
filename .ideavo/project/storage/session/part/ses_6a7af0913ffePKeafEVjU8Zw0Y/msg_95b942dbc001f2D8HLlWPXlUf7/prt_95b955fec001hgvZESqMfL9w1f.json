@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b955fec001hgvZESqMfL9w1f",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WzWa4sjMvK5zPre9SrZnk3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'",
+      "newString": "    technical: 'Educational simulation based on peer-reviewed literature. Training data for educational purposes only. This tool is NOT validated for clinical use and must NOT be used for patient care or medical decisions.'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -836,9 +836,9 @@\n     copyright: '© 2024 VisibleDx',\n     audienceLabel: 'For Healthcare Education Only',\n     badge: 'Research & Education Use'\n   },\n-  technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n+  technical: 'Educational simulation based on peer-reviewed literature. Training data for educational purposes only. This tool is NOT validated for clinical use and must NOT be used for patient care or medical decisions.'\n },\n \n ppgCamera: {\n   title: 'Camera PPG Heart Rate',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178142182,
+      "end": 1758178142188
+    }
+  }
+}

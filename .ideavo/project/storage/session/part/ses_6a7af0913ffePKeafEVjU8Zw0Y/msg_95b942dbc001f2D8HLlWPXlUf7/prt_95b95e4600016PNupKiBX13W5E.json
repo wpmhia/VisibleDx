@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b95e4600016PNupKiBX13W5E",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018zwPYcCRG8Ve195N4zBLdU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 745,
+      "limit": 20
+    },
+    "output": "<file>\n00746|         'Symptoms ≥3 months duration',\n00747|         'Multi-system involvement',\n00748|         'Functional impairment'\n00749|       ]\n00750|     },\n00751|     pots: {\n00752|       name: 'POTS',\n00753|       fullName: 'Postural Orthostatic Tachycardia Syndrome',\n00754|       icdCode: 'I47.1',\n00755|       criteria: [\n00756|         'HR increase ≥30 bpm on standing',\n00757|         'Orthostatic symptoms',\n00758|         'Chronic duration ≥3 months',\n00759|         'No orthostatic hypotension'\n00760|       ]\n00761|     }\n00762|   },\n00763| \n00764|   navigation: {\n00765|     assessmentModules: 'Assessment Modules',\n\n(File has more lines. Use 'offset' parameter to read beyond line 765)\n</file>",
+    "metadata": {
+      "preview": "        'Symptoms ≥3 months duration',\n        'Multi-system involvement',\n        'Functional impairment'\n      ]\n    },\n    pots: {\n      name: 'POTS',\n      fullName: 'Postural Orthostatic Tachycardia Syndrome',\n      icdCode: 'I47.1',\n      criteria: [\n        'HR increase ≥30 bpm on standing',\n        'Orthostatic symptoms',\n        'Chronic duration ≥3 months',\n        'No orthostatic hypotension'\n      ]\n    }\n  },\n\n  navigation: {\n    assessmentModules: 'Assessment Modules',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178174758,
+      "end": 1758178174760
+    }
+  }
+}

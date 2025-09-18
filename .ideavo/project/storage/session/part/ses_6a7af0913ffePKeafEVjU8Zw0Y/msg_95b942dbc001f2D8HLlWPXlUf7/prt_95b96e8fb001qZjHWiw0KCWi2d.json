@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b96e8fb001qZjHWiw0KCWi2d",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013ag9gHxZAacgpBbHkMYirT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "    subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',",
+      "newString": "    subtitle: 'Een educatief trainingsinstrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en training.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -2,9 +2,9 @@\n \n export const nl: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n-    subtitle: 'Een begeleide, richtlijn-gebaseerde diagnostische tool en beslissingsondersteuning voor clinici die patiënten behandelen met vermoeidheid, duizeligheid, brain fog of hartkloppingen.',\n+    subtitle: 'Een educatief trainingsinstrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en training.',\n     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n     backToDashboard: 'Terug naar Dashboard'\n   },\n \n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758178243138,
+      "end": 1758178243146
+    }
+  }
+}

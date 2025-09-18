@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b974390001loagJw81r37poZ",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GHXoC53x6hXY5AxaFbXiZo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "    subtitle: 'Et guidet, retningslinje-baseret diagnostisk værktøj og beslutningsstøtte til klinikere, der behandler patienter med træthed, svimmelhed, hjernetåge eller hjertebanken.',",
+      "newString": "    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -2,9 +2,9 @@\n \n export const da: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n-    subtitle: 'Et guidet, retningslinje-baseret diagnostisk værktøj og beslutningsstøtte til klinikere, der behandler patienter med træthed, svimmelhed, hjernetåge eller hjertebanken.',\n+    subtitle: 'Et uddannelsesmæssigt træningsværktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og træning.',\n     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',\n     backToDashboard: 'Tilbage til Dashboard'\n   },\n \n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758178266172,
+      "end": 1758178266182
+    }
+  }
+}

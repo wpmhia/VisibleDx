@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b94ddf2001ANGCtVM9xQm0E3",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01X4CGSsf8KAraLHBJhYfdZ3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',",
+      "newString": "    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -2,9 +2,9 @@\n \n export const en: Translation = {\n   app: {\n     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n-    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n+    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',\n     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n     backToDashboard: 'Back to Dashboard'\n   },\n \n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178108203,
+      "end": 1758178108214
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b954cac001uhoMs71nhDB7o4",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_017RgshMniybVMPT7i7wmHBK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      audienceLabel: 'For Healthcare Professionals',",
+      "newString": "      audienceLabel: 'For Healthcare Education Only',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -833,9 +833,9 @@\n   },\n   bottom: {\n     version: 'VisibleDx v1.0 - Educational Tool',\n     copyright: '© 2024 VisibleDx',\n-    audienceLabel: 'For Healthcare Professionals',\n+    audienceLabel: 'For Healthcare Education Only',\n     badge: 'Research & Education Use'\n   },\n   technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n },\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178136106,
+      "end": 1758178136111
+    }
+  }
+}

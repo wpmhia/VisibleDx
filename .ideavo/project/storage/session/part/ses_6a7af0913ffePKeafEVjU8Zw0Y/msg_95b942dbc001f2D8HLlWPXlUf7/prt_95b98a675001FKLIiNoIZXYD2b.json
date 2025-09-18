@@ -1,0 +1,18 @@
+{
+  "id": "prt_95b98a675001FKLIiNoIZXYD2b",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(translations): update language to emphasize educational purpose",
+  "cost": 0.9061771500000001,
+  "tokens": {
+    "input": 0,
+    "output": 484,
+    "reasoning": 0,
+    "cache": {
+      "write": 390,
+      "read": 50483
+    }
+  }
+}

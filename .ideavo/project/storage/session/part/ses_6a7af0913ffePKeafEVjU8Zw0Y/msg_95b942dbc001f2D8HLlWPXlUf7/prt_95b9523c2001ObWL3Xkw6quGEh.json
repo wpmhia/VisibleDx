@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b9523c2001ObWL3Xkw6quGEh",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014M82sKJK8nEFHxMbpcfq1d",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 825,
+      "limit": 20
+    },
+    "output": "<file>\n00826|         'Not a substitute for clinical assessment',\n00827|         'Requires confirmation with physical exam',\n00828|         'Consider patient history and context',\n00829|         'Rule out red flags before diagnosis',\n00830|         'Consult specialists for complex cases',\n00831|         'Monitor patient response to treatment'\n00832|       ]\n00833|     },\n00834|     bottom: {\n00835|       version: 'VisibleDx v1.0 - Educational Tool',\n00836|       copyright: '© 2024 VisibleDx',\n00837|       audienceLabel: 'For Healthcare Professionals',\n00838|       badge: 'Research & Education Use'\n00839|     },\n00840|     technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n00841|   },\n00842| \n00843|   ppgCamera: {\n00844|     title: 'Camera PPG Heart Rate',\n00845|     description: 'Place your fingertip gently over the camera lens with flashlight on',\n\n(File has more lines. Use 'offset' parameter to read beyond line 845)\n</file>",
+    "metadata": {
+      "preview": "        'Not a substitute for clinical assessment',\n        'Requires confirmation with physical exam',\n        'Consider patient history and context',\n        'Rule out red flags before diagnosis',\n        'Consult specialists for complex cases',\n        'Monitor patient response to treatment'\n      ]\n    },\n    bottom: {\n      version: 'VisibleDx v1.0 - Educational Tool',\n      copyright: '© 2024 VisibleDx',\n      audienceLabel: 'For Healthcare Professionals',\n      badge: 'Research & Education Use'\n    },\n    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'\n  },\n\n  ppgCamera: {\n    title: 'Camera PPG Heart Rate',\n    description: 'Place your fingertip gently over the camera lens with flashlight on',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178125317,
+      "end": 1758178125319
+    }
+  }
+}

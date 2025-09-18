@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b967e63001J1lC09VhoiD5fe",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_019RcN8BeDHokFrDevQ5RcLy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 115,
+      "limit": 10
+    },
+    "output": "<file>\n00116|     },\n00117|     startAssessment: 'Start Assessment'\n00118|   },\n00119| \n00120|   quickScreen: {\n00121|     title: 'Quick-Screen Assessment',\n00122|     description: '16 questions · ~2 minutes · 92% sensitivity',\n00123|     questions: [\n00124|       'Do you experience severe fatigue that is not relieved by rest?',\n00125|       'Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?',\n\n(File has more lines. Use 'offset' parameter to read beyond line 125)\n</file>",
+    "metadata": {
+      "preview": "    },\n    startAssessment: 'Start Assessment'\n  },\n\n  quickScreen: {\n    title: 'Quick-Screen Assessment',\n    description: '16 questions · ~2 minutes · 92% sensitivity',\n    questions: [\n      'Do you experience severe fatigue that is not relieved by rest?',\n      'Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178214106,
+      "end": 1758178214109
+    }
+  }
+}

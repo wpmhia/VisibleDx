@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b964c6a001OUhpVjw7AWYQs2",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01JCV534BdRMGMskwUnhBwKz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 50,
+      "limit": 20
+    },
+    "output": "<file>\n00051|     results: 'Results',\n00052|     recommendations: 'Recommendations',\n00053|     clinician: 'Clinician',\n00054|     patientId: 'Patient ID',\n00055|     required: 'Required',\n00056|     optional: 'Optional'\n00057|   },\n00058| \n00059|   dashboard: {\n00060|     smartAssessment: {\n00061|       title: 'Smart Patient Assessment',\n00062|       description: 'Intelligent guided workflow with automated SOAP documentation',\n00063|       autoRouting: 'Auto-routing',\n00064|       soapNotes: 'SOAP notes',\n00065|       icdCodes: 'ICD-10 codes',\n00066|       startNew: 'Start New Assessment'\n00067|     },\n00068|     modules: {\n00069|       quickScreen: {\n00070|         title: 'Quick-Screen',\n\n(File has more lines. Use 'offset' parameter to read beyond line 70)\n</file>",
+    "metadata": {
+      "preview": "    results: 'Results',\n    recommendations: 'Recommendations',\n    clinician: 'Clinician',\n    patientId: 'Patient ID',\n    required: 'Required',\n    optional: 'Optional'\n  },\n\n  dashboard: {\n    smartAssessment: {\n      title: 'Smart Patient Assessment',\n      description: 'Intelligent guided workflow with automated SOAP documentation',\n      autoRouting: 'Auto-routing',\n      soapNotes: 'SOAP notes',\n      icdCodes: 'ICD-10 codes',\n      startNew: 'Start New Assessment'\n    },\n    modules: {\n      quickScreen: {\n        title: 'Quick-Screen',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178201000,
+      "end": 1758178201003
+    }
+  }
+}

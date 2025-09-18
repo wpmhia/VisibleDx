@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b95ff3e001zTLHkj1I6kjpmp",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01AyBUTmx4gfqQNbzzxicaCk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    assessmentModules: 'Assessment Modules',",
+      "newString": "    assessmentModules: 'Training Modules',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -761,9 +761,9 @@\n   }\n },\n \n navigation: {\n-  assessmentModules: 'Assessment Modules',\n+  assessmentModules: 'Training Modules',\n   guidelines: 'Guidelines',\n   diagnosticTools: 'Diagnostic Tools',\n   clinicalGuidelines: 'Clinical Guidelines & References',\n   guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178181901,
+      "end": 1758178181907
+    }
+  }
+}

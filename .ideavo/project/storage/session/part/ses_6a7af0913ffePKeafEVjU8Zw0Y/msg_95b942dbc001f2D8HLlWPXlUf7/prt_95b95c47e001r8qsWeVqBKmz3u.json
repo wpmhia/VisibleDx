@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b95c47e001r8qsWeVqBKmz3u",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KASKxwnUCFVbTVzJGiJghN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 155,
+      "limit": 15
+    },
+    "output": "<file>\n00156|     results: {\n00157|       complete: 'Screening Complete',\n00158|       riskAssessment: 'Based on your responses, here\\'s your risk assessment',\n00159|       lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',\n00160|       mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',\n00161|       highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',\n00162|       totalResponses: 'Total positive responses',\n00163|       coreSymptoms: 'Core symptoms present',\n00164|       pemPresent: 'Post-exertional malaise',\n00165|       covidHistory: 'COVID history',\n00166|       chronicSymptoms: 'Chronic symptoms (≥3 months)',\n00167|       nextSteps: 'Next Steps',\n00168|       retake: 'Retake Screening'\n00169|     },\n00170|     nextStepsRecommendations: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 170)\n</file>",
+    "metadata": {
+      "preview": "    results: {\n      complete: 'Screening Complete',\n      riskAssessment: 'Based on your responses, here\\'s your risk assessment',\n      lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',\n      mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',\n      highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',\n      totalResponses: 'Total positive responses',\n      coreSymptoms: 'Core symptoms present',\n      pemPresent: 'Post-exertional malaise',\n      covidHistory: 'COVID history',\n      chronicSymptoms: 'Chronic symptoms (≥3 months)',\n      nextSteps: 'Next Steps',\n      retake: 'Retake Screening'\n    },\n    nextStepsRecommendations: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178166557,
+      "end": 1758178166558
+    }
+  }
+}

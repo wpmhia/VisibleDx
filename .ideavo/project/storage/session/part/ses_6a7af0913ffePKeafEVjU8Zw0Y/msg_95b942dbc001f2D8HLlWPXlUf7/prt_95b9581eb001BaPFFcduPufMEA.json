@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b9581eb001BaPFFcduPufMEA",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01FepkyzTKLBQWkZv6jddc4U",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "        description: 'Personalized treatment recommendations'",
+      "newString": "        description: 'Educational treatment examples'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -87,9 +87,9 @@\n     description: 'CDC, IOM, ESC, WHO guidelines with ICD-10 codes'\n   },\n   subtypeAdvisor: {\n     title: 'Subtype & Rx Advisor',\n-    description: 'Personalized treatment recommendations'\n+    description: 'Educational treatment examples'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 year avg diagnostic delay',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178149410,
+      "end": 1758178149417
+    }
+  }
+}

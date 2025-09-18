@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b97846a001SMG3CrcxHl5xda",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01HKsRLvPRhjratyFBuYf2Xy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "      description: 'VisibleDx er et evidensbaseret uddannelsesværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at uddanne sundhedsprofessionelle i systematisk evaluering.',",
+      "newString": "      description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -792,9 +792,9 @@\n \n footer: {\n   about: {\n     title: 'Om VisibleDx',\n-    description: 'VisibleDx er et evidensbaseret uddannelsesværktøj til ME/CFS, Long COVID og POTS. Det implementerer validerede kriterier fra førende medicinske organisationer for at uddanne sundhedsprofessionelle i systematisk evaluering.',\n+    description: 'VisibleDx er et open-source uddannelses træningsværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse, træning og forskning - IKKE til patientbehandling eller medicinsk brug.',\n     badges: {\n       sensitivity: '94% Sensitivitet',\n       evidenceBased: 'Evidensbaseret',\n       openSource: 'Open Source'\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758178282981,
+      "end": 1758178282987
+    }
+  }
+}

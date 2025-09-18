@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b94d279001hrYqtGpwT95AtR",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FZynCJANG8qQPXUnQMTEjL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 1,
+      "limit": 30
+    },
+    "output": "<file>\n00002| \n00003| export const en: Translation = {\n00004|   app: {\n00005|     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n00006|     subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n00007|     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n00008|     backToDashboard: 'Back to Dashboard'\n00009|   },\n00010| \n00011|   common: {\n00012|     yes: 'Yes',\n00013|     no: 'No',\n00014|     next: 'Next',\n00015|     previous: 'Previous',\n00016|     continue: 'Continue',\n00017|     complete: 'Complete',\n00018|     cancel: 'Cancel',\n00019|     save: 'Save',\n00020|     download: 'Download',\n00021|     loading: 'Loading',\n00022|     processing: 'Processing',\n00023|     error: 'Error',\n00024|     success: 'Success',\n00025|     retry: 'Retry',\n00026|     close: 'Close',\n00027|     age: 'Age',\n00028|     gender: 'Gender',\n00029|     male: 'Male',\n00030|     female: 'Female',\n00031|     other: 'Other',\n\n(File has more lines. Use 'offset' parameter to read beyond line 31)\n</file>",
+    "metadata": {
+      "preview": "\nexport const en: Translation = {\n  app: {\n    title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',\n    tagline: 'Making invisible diseases visible - with evidence, empathy and code.',\n    backToDashboard: 'Back to Dashboard'\n  },\n\n  common: {\n    yes: 'Yes',\n    no: 'No',\n    next: 'Next',\n    previous: 'Previous',\n    continue: 'Continue',\n    complete: 'Complete',\n    cancel: 'Cancel',\n    save: 'Save',\n    download: 'Download',\n    loading: 'Loading',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178104575,
+      "end": 1758178104583
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b958ebe001L02ZfWQlYoLgY4",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01KHGA4Tonx3cJwjHAQH27ot",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      title: 'Diagnostic Algorithm',",
+      "newString": "      title: 'Educational Algorithm',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -96,9 +96,9 @@\n   doctorsConsulted: '≥7 doctors typically consulted',\n   sensitivityValidated: '94% sensitivity validated'\n },\n algorithm: {\n-  title: 'Diagnostic Algorithm',\n+  title: 'Educational Algorithm',\n   mecfs: {\n     title: 'ME/CFS',\n     criteria: 'CDC/NASEM 2015 + IOM criteria',\n     description: '3 core + 1 PEM symptom cluster'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178152496,
+      "end": 1758178152504
+    }
+  }
+}

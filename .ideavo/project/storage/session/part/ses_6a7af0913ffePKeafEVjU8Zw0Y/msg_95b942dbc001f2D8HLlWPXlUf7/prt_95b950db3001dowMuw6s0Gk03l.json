@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b950db3001dowMuw6s0Gk03l",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_019ac19bKR6cLWDapMfMTUPF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      description: 'VisibleDx is an evidence-based educational tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to educate healthcare professionals in systematic evaluation.',",
+      "newString": "      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -783,9 +783,9 @@\n \n footer: {\n   about: {\n     title: 'About VisibleDx',\n-    description: 'VisibleDx is an evidence-based educational tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to educate healthcare professionals in systematic evaluation.',\n+    description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',\n     badges: {\n       sensitivity: '94% Sensitivity',\n       evidenceBased: 'Evidence-Based',\n       openSource: 'Open Source'\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178121148,
+      "end": 1758178121153
+    }
+  }
+}

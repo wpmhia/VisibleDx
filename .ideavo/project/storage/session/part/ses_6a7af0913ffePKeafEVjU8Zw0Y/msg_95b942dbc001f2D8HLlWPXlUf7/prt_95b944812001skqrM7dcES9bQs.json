@@ -1,0 +1,73 @@
+{
+  "id": "prt_95b944812001skqrM7dcES9bQs",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01YS7R3Bxrqmb5N9q8WwVR3k",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Review all text for medical device implications",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "review-medical-language"
+        },
+        {
+          "content": "Strengthen educational-only disclaimers",
+          "status": "pending",
+          "priority": "high",
+          "id": "update-disclaimers"
+        },
+        {
+          "content": "Change assessment language to educational language",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update-descriptions"
+        },
+        {
+          "content": "Build and verify all changes work correctly",
+          "status": "pending",
+          "priority": "low",
+          "id": "verify-build"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Review all text for medical device implications\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"review-medical-language\"\n  },\n  {\n    \"content\": \"Strengthen educational-only disclaimers\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"update-disclaimers\"\n  },\n  {\n    \"content\": \"Change assessment language to educational language\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"update-descriptions\"\n  },\n  {\n    \"content\": \"Build and verify all changes work correctly\",\n    \"status\": \"pending\",\n    \"priority\": \"low\",\n    \"id\": \"verify-build\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Review all text for medical device implications",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "review-medical-language"
+        },
+        {
+          "content": "Strengthen educational-only disclaimers",
+          "status": "pending",
+          "priority": "high",
+          "id": "update-disclaimers"
+        },
+        {
+          "content": "Change assessment language to educational language",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update-descriptions"
+        },
+        {
+          "content": "Build and verify all changes work correctly",
+          "status": "pending",
+          "priority": "low",
+          "id": "verify-build"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758178071297,
+      "end": 1758178071328
+    }
+  }
+}

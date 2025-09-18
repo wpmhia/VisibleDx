@@ -1,0 +1,26 @@
+{
+  "id": "prt_95b95d2e6001LzGSSe7ciwO4RA",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Q13U6C6Luug8iYWGzkeG2i",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      riskAssessment: 'Based on your responses, here\\'s your risk assessment',",
+      "newString": "      riskAssessment: 'Educational simulation - Based on your responses, here\\'s the training scenario',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -154,9 +154,9 @@\n   sensory: 'Sensory'\n },\n results: {\n   complete: 'Screening Complete',\n-  riskAssessment: 'Based on your responses, here\\'s your risk assessment',\n+  riskAssessment: 'Educational simulation - Based on your responses, here\\'s the training scenario',\n   lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',\n   mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',\n   highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',\n   totalResponses: 'Total positive responses',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178170939,
+      "end": 1758178170945
+    }
+  }
+}

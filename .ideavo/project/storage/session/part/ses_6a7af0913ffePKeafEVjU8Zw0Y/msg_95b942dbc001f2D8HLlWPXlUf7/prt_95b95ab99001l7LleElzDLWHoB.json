@@ -1,0 +1,25 @@
+{
+  "id": "prt_95b95ab99001l7LleElzDLWHoB",
+  "messageID": "msg_95b942dbc001f2D8HLlWPXlUf7",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DU458Kyi9SdejWNXL3XLZU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 135,
+      "limit": 15
+    },
+    "output": "<file>\n00136|       'Do you experience shortness of breath or breathing difficulties?',\n00137|       'Have you noticed decreased exercise tolerance or physical capacity?',\n00138|       'Do you experience sensitivity to light, sound, or touch?',\n00139|       'Have you been unable to maintain your previous level of activity?'\n00140|     ],\n00141|     categories: {\n00142|       core: 'Core',\n00143|       pem: 'PEM',\n00144|       cardiovascular: 'Cardiovascular',\n00145|       orthostatic: 'Orthostatic',\n00146|       history: 'History',\n00147|       duration: 'Duration',\n00148|       pain: 'Pain',\n00149|       neurological: 'Neurological',\n00150|       autonomic: 'Autonomic',\n\n(File has more lines. Use 'offset' parameter to read beyond line 150)\n</file>",
+    "metadata": {
+      "preview": "      'Do you experience shortness of breath or breathing difficulties?',\n      'Have you noticed decreased exercise tolerance or physical capacity?',\n      'Do you experience sensitivity to light, sound, or touch?',\n      'Have you been unable to maintain your previous level of activity?'\n    ],\n    categories: {\n      core: 'Core',\n      pem: 'PEM',\n      cardiovascular: 'Cardiovascular',\n      orthostatic: 'Orthostatic',\n      history: 'History',\n      duration: 'Duration',\n      pain: 'Pain',\n      neurological: 'Neurological',\n      autonomic: 'Autonomic',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758178160088,
+      "end": 1758178160090
+    }
+  }
+}

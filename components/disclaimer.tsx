@@ -13,12 +13,10 @@ export default function Disclaimer() {
     <footer className="bg-gray-50 border-t py-8 mt-12">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Main Disclaimer */}
-        <Alert className="mb-6 border-amber-200 bg-amber-50">
-          <AlertTriangle className="h-4 w-4 text-amber-600" />
-          <AlertDescription className="text-amber-800">
-            <strong>Educational Tool:</strong> {t.disclaimer}. 
-            This tool provides evidence-based educational content but does not replace clinical judgment, 
-            physical examination, or comprehensive patient evaluation.
+        <Alert className="mb-6 border-red-200 bg-red-50">
+          <AlertTriangle className="h-4 w-4 text-red-600" />
+          <AlertDescription className="text-red-800">
+            <strong>TRAINING TOOL ONLY - NOT FOR MEDICAL USE:</strong> {t.disclaimer}
           </AlertDescription>
         </Alert>
 

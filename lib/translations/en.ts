@@ -3,7 +3,7 @@ import { Translation } from './types'
 export const en: Translation = {
   app: {
     title: 'VisibleDx: ME/CFS · Long COVID · POTS',
-    subtitle: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians treating patients with fatigue, dizziness, brain-fog, or palpitations.',
+    subtitle: 'An educational training tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and training purposes only.',
     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',
     backToDashboard: 'Back to Dashboard'
   },
@@ -58,12 +58,12 @@ export const en: Translation = {
 
   dashboard: {
     smartAssessment: {
-      title: 'Smart Patient Assessment',
-      description: 'Intelligent guided workflow with automated SOAP documentation',
+      title: 'Educational Training Simulation',
+      description: 'Interactive learning workflow with educational documentation examples',
       autoRouting: 'Auto-routing',
       soapNotes: 'SOAP notes',
       icdCodes: 'ICD-10 codes',
-      startNew: 'Start New Assessment'
+      startNew: 'Start Training Session'
     },
     modules: {
       quickScreen: {
@@ -88,7 +88,7 @@ export const en: Translation = {
       },
       subtypeAdvisor: {
         title: 'Subtype & Rx Advisor',
-        description: 'Personalized treatment recommendations'
+        description: 'Educational treatment examples'
       }
     },
     stats: {
@@ -97,7 +97,7 @@ export const en: Translation = {
       sensitivityValidated: '94% sensitivity validated'
     },
     algorithm: {
-      title: 'Diagnostic Algorithm',
+      title: 'Educational Algorithm',
       mecfs: {
         title: 'ME/CFS',
         criteria: 'CDC/NASEM 2015 + IOM criteria',
@@ -118,7 +118,7 @@ export const en: Translation = {
   },
 
   quickScreen: {
-    title: 'Quick-Screen Assessment',
+    title: 'Quick-Screen Training',
     description: '16 questions · ~2 minutes · 92% sensitivity',
     questions: [
       'Do you experience severe fatigue that is not relieved by rest?',
@@ -155,7 +155,7 @@ export const en: Translation = {
     },
     results: {
       complete: 'Screening Complete',
-      riskAssessment: 'Based on your responses, here\'s your risk assessment',
+      riskAssessment: 'Educational simulation - Based on your responses, here\'s the training scenario',
       lowRisk: 'Low Risk for ME/CFS, Long COVID, or POTS',
       mediumRisk: 'Medium Risk for ME/CFS, Long COVID, or POTS',
       highRisk: 'High Risk for ME/CFS, Long COVID, or POTS',
@@ -671,7 +671,7 @@ export const en: Translation = {
       gender: 'Gender',
       clinicianName: 'Clinician Name',
       patientId: 'Patient ID/MRN',
-      startAssessment: 'Start Assessment'
+    startAssessment: 'Start Training'
     },
     progress: {
       step1: 'Demographics',
@@ -762,12 +762,12 @@ export const en: Translation = {
   },
 
   navigation: {
-    assessmentModules: 'Assessment Modules',
+    assessmentModules: 'Training Modules',
     guidelines: 'Guidelines',
-    diagnosticTools: 'Diagnostic Tools',
+    diagnosticTools: 'Educational Tools',
     clinicalGuidelines: 'Clinical Guidelines & References',
-    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx diagnostic algorithms',
-    assessmentModulesSection: 'Assessment Modules',
+    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational training modules',
+    assessmentModulesSection: 'Training Modules',
     guidelinesSection: 'Guidelines & References',
     moreGuidelines: 'more guidelines',
     smartBadge: 'Smart'
@@ -779,12 +779,12 @@ export const en: Translation = {
     da: 'Dansk'
   },
 
-  disclaimer: 'This tool is for educational purposes only and does not replace professional medical judgment or clinical evaluation',
+  disclaimer: 'EDUCATIONAL TOOL ONLY - This open-source training tool is designed for healthcare education and training purposes only. It is NOT a medical device and must NOT be used for patient care, diagnosis, or treatment decisions. Always consult qualified medical professionals for patient care.',
 
   footer: {
     about: {
       title: 'About VisibleDx',
-      description: 'VisibleDx is an evidence-based educational tool for ME/CFS, Long COVID, and POTS. It implements validated criteria from leading medical organizations to educate healthcare professionals in systematic evaluation.',
+      description: 'VisibleDx is an open-source educational training tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education, training, and research purposes - NOT for patient care or medical use.',
       badges: {
         sensitivity: '94% Sensitivity',
         evidenceBased: 'Evidence-Based',
@@ -823,21 +823,21 @@ export const en: Translation = {
     notes: {
       title: 'Important Notes',
       items: [
-        'Not a substitute for clinical assessment',
-        'Requires confirmation with physical exam',
-        'Consider patient history and context',
-        'Rule out red flags before diagnosis',
-        'Consult specialists for complex cases',
-        'Monitor patient response to treatment'
+        'Training tool only - NOT for patient care',
+        'Educational simulation - NOT real diagnosis',
+        'Open-source software for learning purposes',
+        'Must NOT replace medical professional judgment',
+        'For healthcare education and research only',
+        'Contact medical professionals for patient care'
       ]
     },
     bottom: {
       version: 'VisibleDx v1.0 - Educational Tool',
       copyright: '© 2024 VisibleDx',
-      audienceLabel: 'For Healthcare Professionals',
+      audienceLabel: 'For Healthcare Education Only',
       badge: 'Research & Education Use'
     },
-    technical: 'Based on peer-reviewed literature and validated diagnostic criteria. Sensitivity data from clinical validation studies. Always consult current guidelines and specialist recommendations for complex cases.'
+    technical: 'Educational simulation based on peer-reviewed literature. Training data for educational purposes only. This tool is NOT validated for clinical use and must NOT be used for patient care or medical decisions.'
   },
 
   ppgCamera: {
