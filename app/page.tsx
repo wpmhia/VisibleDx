@@ -114,7 +114,7 @@ export default function Home() {
           {modules.map((module) => (
             <Card 
               key={module.id} 
-              className={`cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-105 ${
+              className={`cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-105 flex flex-col h-full ${
                 selectedModule === module.id ? 'ring-2 ring-blue-500' : ''
               }`}
               onClick={() => setSelectedModule(module.id)}
@@ -128,14 +128,16 @@ export default function Home() {
                   {module.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                {module.sensitivity && (
-                  <Badge variant="outline" className="mb-3">
-                    {t.common.sensitivity}: {module.sensitivity}
-                  </Badge>
-                )}
+              <CardContent className="flex flex-col flex-grow">
+                <div className="flex-grow">
+                  {module.sensitivity && (
+                    <Badge variant="outline" className="mb-3">
+                      {t.common.sensitivity}: {module.sensitivity}
+                    </Badge>
+                  )}
+                </div>
                 <Button 
-                  className="w-full" 
+                  className="w-full mt-auto" 
                   onClick={(e) => {
                     e.stopPropagation()
                     window.location.href = module.route
