@@ -1,0 +1,26 @@
+{
+  "id": "prt_960f3e3640011IcwR52pgup4V3",
+  "messageID": "msg_960f3c3e7001autprwb5K54l7f",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01CbD6ycG4KEcU63u88SXMSZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && pkill -f \"next start\" || true",
+      "description": "Stop the current server on port 3000"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Stop the current server on port 3000"
+    },
+    "title": "cd /home/user/project && pkill -f \"next start\" || true",
+    "time": {
+      "start": 1758268221113,
+      "end": 1758268221148
+    }
+  }
+}

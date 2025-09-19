@@ -1,0 +1,11 @@
+{
+  "id": "prt_960f486a8001KLmHCyppeojyyY",
+  "messageID": "msg_960f3c3e7001autprwb5K54l7f",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! **InvisibleDx is now running on port 4000** as expected.\n\n## **✅ Server Status:**\n- **URL**: http://localhost:4000\n- **Status**: ✅ Active and ready\n- **Port**: 4000 (matching your e2b environment)\n\n## **🔄 Enhanced POTS Flowchart Features Now Available:**\n\n### **1. Test the Complete POTS Flowchart:**\n- Navigate to **\"Educational Simulation\"** for the full guided assessment\n- Or use **\"Orthostatic Vitals\"** for standalone stand test with enhanced POTS logic\n\n### **2. Enhanced POTS Features to Test:**\n- **Age-specific thresholds**: HR ≥30 bpm (adults) or ≥40 bpm (teens 12-19)\n- **Comprehensive symptoms**: Dizziness, palpitations, fatigue, brain fog, syncope\n- **Sustained tachycardia**: ≥120 bpm evaluation\n- **Confidence scoring**: High/Medium/Low based on complete criteria\n- **Subtype detection**: Hyperadrenergic, neuropathic, hypovolemic patterns\n\n### **3. POTS Diagnostic Modules:**\n- **`/new-patient`**: Complete guided POTS assessment\n- **`/stand-test`**: Enhanced orthostatic testing protocol  \n- **`/criteria-engine`**: Step-by-step POTS criteria evaluation\n- **`/subtype-advisor`**: POTS subtype determination and management\n\nThe enhanced POTS flowchart implementation following ESC 2018/AAS-EFAS 2021 guidelines is now fully active and accessible at **https://4000-iq50iou8uj9ip0qsxpds5.e2b.app/**",
+  "time": {
+    "start": 1758268272760,
+    "end": 1758268272760
+  }
+}
