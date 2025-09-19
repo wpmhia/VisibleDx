@@ -1,0 +1,85 @@
+{
+  "id": "prt_962fc4fd7001cvXv1DXUlsWtI2",
+  "messageID": "msg_962fba899001VkzocRY6Po1psD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Eqck5HMaE2pYq8G9auiXfL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Search app for bugs and loading issues",
+          "status": "completed",
+          "priority": "high",
+          "id": "search-bugs"
+        },
+        {
+          "content": "Examine all page components for loading issues",
+          "status": "completed",
+          "priority": "high",
+          "id": "check-pages"
+        },
+        {
+          "content": "Look for problematic async operations",
+          "status": "completed",
+          "priority": "medium",
+          "id": "check-async-operations"
+        },
+        {
+          "content": "Review error handling and loading states",
+          "status": "completed",
+          "priority": "medium",
+          "id": "check-error-handling"
+        },
+        {
+          "content": "Fix navigation bug in main page",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "fix-navigation-bug"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Search app for bugs and loading issues\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"search-bugs\"\n  },\n  {\n    \"content\": \"Examine all page components for loading issues\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"check-pages\"\n  },\n  {\n    \"content\": \"Look for problematic async operations\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"check-async-operations\"\n  },\n  {\n    \"content\": \"Review error handling and loading states\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"check-error-handling\"\n  },\n  {\n    \"content\": \"Fix navigation bug in main page\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"fix-navigation-bug\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Search app for bugs and loading issues",
+          "status": "completed",
+          "priority": "high",
+          "id": "search-bugs"
+        },
+        {
+          "content": "Examine all page components for loading issues",
+          "status": "completed",
+          "priority": "high",
+          "id": "check-pages"
+        },
+        {
+          "content": "Look for problematic async operations",
+          "status": "completed",
+          "priority": "medium",
+          "id": "check-async-operations"
+        },
+        {
+          "content": "Review error handling and loading states",
+          "status": "completed",
+          "priority": "medium",
+          "id": "check-error-handling"
+        },
+        {
+          "content": "Fix navigation bug in main page",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "fix-navigation-bug"
+        }
+      ]
+    },
+    "title": "1 todos",
+    "time": {
+      "start": 1758302329999,
+      "end": 1758302330018
+    }
+  }
+}

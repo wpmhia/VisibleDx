@@ -1,0 +1,73 @@
+{
+  "id": "prt_962fbb878001cOlVdDeQ0Dsorm",
+  "messageID": "msg_962fba899001VkzocRY6Po1psD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01SqXhFoB1CES9z9iTw8USza",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Search app for bugs and loading issues",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "search-bugs"
+        },
+        {
+          "content": "Examine all page components for loading issues",
+          "status": "pending",
+          "priority": "high",
+          "id": "check-pages"
+        },
+        {
+          "content": "Look for problematic async operations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "check-async-operations"
+        },
+        {
+          "content": "Review error handling and loading states",
+          "status": "pending",
+          "priority": "medium",
+          "id": "check-error-handling"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Search app for bugs and loading issues\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"search-bugs\"\n  },\n  {\n    \"content\": \"Examine all page components for loading issues\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"check-pages\"\n  },\n  {\n    \"content\": \"Look for problematic async operations\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"check-async-operations\"\n  },\n  {\n    \"content\": \"Review error handling and loading states\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"check-error-handling\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Search app for bugs and loading issues",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "search-bugs"
+        },
+        {
+          "content": "Examine all page components for loading issues",
+          "status": "pending",
+          "priority": "high",
+          "id": "check-pages"
+        },
+        {
+          "content": "Look for problematic async operations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "check-async-operations"
+        },
+        {
+          "content": "Review error handling and loading states",
+          "status": "pending",
+          "priority": "medium",
+          "id": "check-error-handling"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758302290239,
+      "end": 1758302290257
+    }
+  }
+}

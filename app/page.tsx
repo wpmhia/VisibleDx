@@ -114,9 +114,11 @@ export default function Home() {
                 <Button 
                   className="w-full" 
                   variant="outline"
-                  onClick={() => window.location.href = module.route}
+                  asChild
                 >
-                  {t.dashboard.startAssessment}
+                  <Link href={module.route}>
+                    {t.dashboard.startAssessment}
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

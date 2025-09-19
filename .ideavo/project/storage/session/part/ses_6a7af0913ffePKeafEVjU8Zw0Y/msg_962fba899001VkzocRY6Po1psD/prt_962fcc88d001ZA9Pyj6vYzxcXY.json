@@ -1,0 +1,18 @@
+{
+  "id": "prt_962fcc88d001ZA9Pyj6vYzxcXY",
+  "messageID": "msg_962fba899001VkzocRY6Po1psD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(nav): replace window.location with Next.js Link navigation",
+  "cost": 0.6359853,
+  "tokens": {
+    "input": 7,
+    "output": 402,
+    "reasoning": 0,
+    "cache": {
+      "write": 470,
+      "read": 107678
+    }
+  }
+}

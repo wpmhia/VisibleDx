@@ -1,0 +1,23 @@
+{
+  "id": "prt_962fc3a6d0019Mx3pJ3lwS5cSS",
+  "messageID": "msg_962fba899001VkzocRY6Po1psD",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01XRakMMS1hfPbzmP9Lkk2nn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/language-context.tsx"
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { createContext, useContext, useState, useEffect, ReactNode } from 'react'\n00004| import { SupportedLanguage, Translation } from './translations/types'\n00005| import { translations } from './translations'\n00006| \n00007| interface LanguageContextType {\n00008|   language: SupportedLanguage\n00009|   setLanguage: (language: SupportedLanguage) => void\n00010|   t: Translation\n00011| }\n00012| \n00013| const LanguageContext = createContext<LanguageContextType | undefined>(undefined)\n00014| \n00015| export function LanguageProvider({ children }: { children: ReactNode }) {\n00016|   const [language, setLanguageState] = useState<SupportedLanguage>('en')\n00017| \n00018|   useEffect(() => {\n00019|     // Check for saved language preference\n00020|     const savedLanguage = localStorage.getItem('autodx-language') as SupportedLanguage\n00021|     if (savedLanguage && translations[savedLanguage]) {\n00022|       setLanguageState(savedLanguage)\n00023|     } else {\n00024|       // Detect browser language\n00025|       const browserLang = navigator.language.toLowerCase()\n00026|       if (browserLang.startsWith('nl')) setLanguageState('nl')\n00027|       else if (browserLang.startsWith('da')) setLanguageState('da')\n00028|       else setLanguageState('en')\n00029|     }\n00030|   }, [])\n00031| \n00032|   const setLanguage = (newLanguage: SupportedLanguage) => {\n00033|     setLanguageState(newLanguage)\n00034|     localStorage.setItem('autodx-language', newLanguage)\n00035|   }\n00036| \n00037|   const t = translations[language]\n00038| \n00039|   return (\n00040|     <LanguageContext.Provider value={{ language, setLanguage, t }}>\n00041|       {children}\n00042|     </LanguageContext.Provider>\n00043|   )\n00044| }\n00045| \n00046| export function useTranslation() {\n00047|   const context = useContext(LanguageContext)\n00048|   if (context === undefined) {\n00049|     throw new Error('useTranslation must be used within a LanguageProvider')\n00050|   }\n00051|   return context\n00052| }\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { createContext, useContext, useState, useEffect, ReactNode } from 'react'\nimport { SupportedLanguage, Translation } from './translations/types'\nimport { translations } from './translations'\n\ninterface LanguageContextType {\n  language: SupportedLanguage\n  setLanguage: (language: SupportedLanguage) => void\n  t: Translation\n}\n\nconst LanguageContext = createContext<LanguageContextType | undefined>(undefined)\n\nexport function LanguageProvider({ children }: { children: ReactNode }) {\n  const [language, setLanguageState] = useState<SupportedLanguage>('en')\n\n  useEffect(() => {\n    // Check for saved language preference\n    const savedLanguage = localStorage.getItem('autodx-language') as SupportedLanguage"
+    },
+    "title": "lib/language-context.tsx",
+    "time": {
+      "start": 1758302322111,
+      "end": 1758302322114
+    }
+  }
+}
