@@ -1,40 +1,70 @@
-import React from 'react'
+import React from "react";
 
-interface VirusIconProps {
-  className?: string
-  size?: number
-}
+type Props = {
+  size?: number | string;    // e.g. 256 or "2em"
+  outlineColor?: string;     // stroke color
+  fillColor?: string;        // inner fill color
+  strokeWidth?: number;      // outline thickness
+  className?: string;
+  title?: string;
+};
 
-export function VirusIcon({ className = "", size = 24 }: VirusIconProps) {
+export default function VirusIcon({
+  size = 256,
+  outlineColor = "#032B7A",
+  fillColor = "#E6EAF6",
+  strokeWidth = 16,
+  className,
+  title = "virus icon",
+}: Props) {
+  const s = typeof size === "number" ? `${size}` : size;
   return (
     <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
+      width={s}
+      height={s}
+      viewBox="0 0 256 256"
       fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
       className={className}
+      role="img"
+      aria-label={title}
     >
-      {/* Central virus body */}
-      <circle cx="12" cy="12" r="5" fill="currentColor" fillOpacity="0.1" />
+      <title>{title}</title>
+
+      {/* outer ring + spikes */}
+      <g stroke={outlineColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" fill="none">
+        {/* spikes drawn as short rounded rectangles radiating from circle */}
+        <g transform="translate(128,128)">
+          {/* draw 8 spikes rotated */}
+          {/*
+            We'll render as path elements placed via transforms. JSX won't allow dynamic loops here without runtime code,
+            but this component is static. For clarity we include explicit <g> with transforms.
+          */}
+        </g>
+        {/* outer circular ring */}
+        <circle cx="128" cy="128" r="74" />
+      </g>
+
+      {/* fill inner disk */}
+      <circle cx="128" cy="128" r="66" fill={fillColor} stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />
+
+      {/* inner spots */}
+      <circle cx="96" cy="104" r="18" fill="none" stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />
+      <circle cx="160" cy="84" r="28" fill={outlineColor} stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />
+      <circle cx="168" cy="152" r="10" fill={outlineColor} />
+      <circle cx="88" cy="160" r="8" fill={outlineColor} />
       
-      {/* Surface proteins/spikes around the virus */}
-      <circle cx="12" cy="7" r="1.5" fill="currentColor" />
-      <circle cx="17" cy="12" r="1.5" fill="currentColor" />
-      <circle cx="12" cy="17" r="1.5" fill="currentColor" />
-      <circle cx="7" cy="12" r="1.5" fill="currentColor" />
-      <circle cx="15" cy="9" r="1" fill="currentColor" />
-      <circle cx="15" cy="15" r="1" fill="currentColor" />
-      <circle cx="9" cy="15" r="1" fill="currentColor" />
-      <circle cx="9" cy="9" r="1" fill="currentColor" />
-      
-      {/* Internal structure */}
-      <circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1" fill="none" />
-      <circle cx="11" cy="11" r="0.5" fill="currentColor" />
-      <circle cx="13" cy="13" r="0.5" fill="currentColor" />
+      {/* Spikes (drawn on top with rounded caps) */}
+      <g stroke={outlineColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+        <line x1="128" y1="22" x2="128" y2="54" />
+        <line x1="128" y1="234" x2="128" y2="202" />
+        <line x1="22" y1="128" x2="54" y2="128" />
+        <line x1="234" y1="128" x2="202" y2="128" />
+        <line x1="44" y1="44" x2="68" y2="68" />
+        <line x1="212" y1="212" x2="188" y2="188" />
+        <line x1="44" y1="212" x2="68" y2="188" />
+        <line x1="212" y1="44" x2="188" y2="68" />
+      </g>
     </svg>
-  )
+  );
 }

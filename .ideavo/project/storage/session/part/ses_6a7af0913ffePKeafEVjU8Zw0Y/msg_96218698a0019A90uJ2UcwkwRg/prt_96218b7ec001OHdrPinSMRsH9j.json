@@ -1,0 +1,23 @@
+{
+  "id": "prt_96218b7ec001OHdrPinSMRsH9j",
+  "messageID": "msg_96218698a0019A90uJ2UcwkwRg",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LbNQUsxjaLha3t6G6hFG8f",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/virus-icon.tsx"
+    },
+    "output": "<file>\n00001| import React from 'react'\n00002| \n00003| interface VirusIconProps {\n00004|   className?: string\n00005|   size?: number\n00006| }\n00007| \n00008| export function VirusIcon({ className = \"\", size = 24 }: VirusIconProps) {\n00009|   return (\n00010|     <svg\n00011|       width={size}\n00012|       height={size}\n00013|       viewBox=\"0 0 24 24\"\n00014|       fill=\"none\"\n00015|       stroke=\"currentColor\"\n00016|       strokeWidth=\"2\"\n00017|       strokeLinecap=\"round\"\n00018|       strokeLinejoin=\"round\"\n00019|       className={className}\n00020|     >\n00021|       {/* Central virus body */}\n00022|       <circle cx=\"12\" cy=\"12\" r=\"5\" fill=\"currentColor\" fillOpacity=\"0.1\" />\n00023|       \n00024|       {/* Surface proteins/spikes around the virus */}\n00025|       <circle cx=\"12\" cy=\"7\" r=\"1.5\" fill=\"currentColor\" />\n00026|       <circle cx=\"17\" cy=\"12\" r=\"1.5\" fill=\"currentColor\" />\n00027|       <circle cx=\"12\" cy=\"17\" r=\"1.5\" fill=\"currentColor\" />\n00028|       <circle cx=\"7\" cy=\"12\" r=\"1.5\" fill=\"currentColor\" />\n00029|       <circle cx=\"15\" cy=\"9\" r=\"1\" fill=\"currentColor\" />\n00030|       <circle cx=\"15\" cy=\"15\" r=\"1\" fill=\"currentColor\" />\n00031|       <circle cx=\"9\" cy=\"15\" r=\"1\" fill=\"currentColor\" />\n00032|       <circle cx=\"9\" cy=\"9\" r=\"1\" fill=\"currentColor\" />\n00033|       \n00034|       {/* Internal structure */}\n00035|       <circle cx=\"12\" cy=\"12\" r=\"2\" stroke=\"currentColor\" strokeWidth=\"1\" fill=\"none\" />\n00036|       <circle cx=\"11\" cy=\"11\" r=\"0.5\" fill=\"currentColor\" />\n00037|       <circle cx=\"13\" cy=\"13\" r=\"0.5\" fill=\"currentColor\" />\n00038|     </svg>\n00039|   )\n00040| }\n</file>",
+    "metadata": {
+      "preview": "import React from 'react'\n\ninterface VirusIconProps {\n  className?: string\n  size?: number\n}\n\nexport function VirusIcon({ className = \"\", size = 24 }: VirusIconProps) {\n  return (\n    <svg\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth=\"2\"\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      className={className}\n    >"
+    },
+    "title": "components/virus-icon.tsx",
+    "time": {
+      "start": 1758287411458,
+      "end": 1758287411468
+    }
+  }
+}

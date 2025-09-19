@@ -1,0 +1,21 @@
+{
+  "id": "prt_96219008a0011D6nY5h4h0Ez1H",
+  "messageID": "msg_96218698a0019A90uJ2UcwkwRg",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01ASQ9W8xxtZN5jHC46FfsRw",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "} from 'lucide-react'\nimport { VirusIcon } from '@/components/virus-icon'\nimport { useTranslation } from '@/lib/language-context'",
+      "newString": "} from 'lucide-react'\nimport VirusIcon from '@/components/virus-icon'\nimport { useTranslation } from '@/lib/language-context'"
+    },
+    "error": "Error: You must read the file /home/user/project/components/navigation.tsx before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758287431772,
+      "end": 1758287431784
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_96218c35e001yWZmAgixfYQXQL",
+  "messageID": "msg_96218698a0019A90uJ2UcwkwRg",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "write",
+  "callID": "toolu_01C9e3FSNtLA5jsbf2c4RPhG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/virus-icon.tsx",
+      "content": "import React from \"react\";\n\ntype Props = {\n  size?: number | string;    // e.g. 256 or \"2em\"\n  outlineColor?: string;     // stroke color\n  fillColor?: string;        // inner fill color\n  strokeWidth?: number;      // outline thickness\n  className?: string;\n  title?: string;\n};\n\nexport default function VirusIcon({\n  size = 256,\n  outlineColor = \"#032B7A\",\n  fillColor = \"#E6EAF6\",\n  strokeWidth = 16,\n  className,\n  title = \"virus icon\",\n}: Props) {\n  const s = typeof size === \"number\" ? `${size}` : size;\n  return (\n    <svg\n      width={s}\n      height={s}\n      viewBox=\"0 0 256 256\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      className={className}\n      role=\"img\"\n      aria-label={title}\n    >\n      <title>{title}</title>\n\n      {/* outer ring + spikes */}\n      <g stroke={outlineColor} strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" fill=\"none\">\n        {/* spikes drawn as short rounded rectangles radiating from circle */}\n        <g transform=\"translate(128,128)\">\n          {/* draw 8 spikes rotated */}\n          {/*\n            We'll render as path elements placed via transforms. JSX won't allow dynamic loops here without runtime code,\n            but this component is static. For clarity we include explicit <g> with transforms.\n          */}\n        </g>\n        {/* outer circular ring */}\n        <circle cx=\"128\" cy=\"128\" r=\"74\" />\n      </g>\n\n      {/* fill inner disk */}\n      <circle cx=\"128\" cy=\"128\" r=\"66\" fill={fillColor} stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />\n\n      {/* inner spots */}\n      <circle cx=\"96\" cy=\"104\" r=\"18\" fill=\"none\" stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />\n      <circle cx=\"160\" cy=\"84\" r=\"28\" fill={outlineColor} stroke={outlineColor} strokeWidth={strokeWidth * 0.6} />\n      <circle cx=\"168\" cy=\"152\" r=\"10\" fill={outlineColor} />\n      <circle cx=\"88\" cy=\"160\" r=\"8\" fill={outlineColor} />\n      \n      {/* Spikes (drawn on top with rounded caps) */}\n      <g stroke={outlineColor} strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\">\n        <line x1=\"128\" y1=\"22\" x2=\"128\" y2=\"54\" />\n        <line x1=\"128\" y1=\"234\" x2=\"128\" y2=\"202\" />\n        <line x1=\"22\" y1=\"128\" x2=\"54\" y2=\"128\" />\n        <line x1=\"234\" y1=\"128\" x2=\"202\" y2=\"128\" />\n        <line x1=\"44\" y1=\"44\" x2=\"68\" y2=\"68\" />\n        <line x1=\"212\" y1=\"212\" x2=\"188\" y2=\"188\" />\n        <line x1=\"44\" y1=\"212\" x2=\"68\" y2=\"188\" />\n        <line x1=\"212\" y1=\"44\" x2=\"188\" y2=\"68\" />\n      </g>\n    </svg>\n  );\n}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "filepath": "/home/user/project/components/virus-icon.tsx",
+      "exists": true
+    },
+    "title": "components/virus-icon.tsx",
+    "time": {
+      "start": 1758287426548,
+      "end": 1758287426570
+    }
+  }
+}

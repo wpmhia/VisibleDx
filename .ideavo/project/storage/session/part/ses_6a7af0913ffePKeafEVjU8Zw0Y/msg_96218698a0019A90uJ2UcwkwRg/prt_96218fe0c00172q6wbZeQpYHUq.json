@@ -1,0 +1,11 @@
+{
+  "id": "prt_96218fe0c00172q6wbZeQpYHUq",
+  "messageID": "msg_96218698a0019A90uJ2UcwkwRg",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to update the navigation component to use the new import name and pass the appropriate props:",
+  "time": {
+    "start": 1758287429768,
+    "end": 1758287429768
+  }
+}
