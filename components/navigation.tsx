@@ -34,9 +34,9 @@ import {
   BookOpen,
   ExternalLink,
   Info,
-  User,
-  Bug
+  User
 } from 'lucide-react'
+import { VirusIcon } from '@/components/virus-icon'
 import { useTranslation } from '@/lib/language-context'
 import { LanguageSelector } from '@/components/language-selector'
 
@@ -140,7 +140,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo and Home Link */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <Bug className="h-6 w-6 text-blue-600" />
+          <VirusIcon className="h-6 w-6 text-blue-600" size={24} />
           <div className="font-bold text-lg">
             <span className="text-blue-600">Invisible</span>
             <span className="text-gray-900">Dx</span>
@@ -243,7 +243,7 @@ export default function Navigation() {
             <SheetContent side="right">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <Bug className="h-5 w-5 text-blue-600" />
+                  <VirusIcon className="h-5 w-5 text-blue-600" size={20} />
                    InvisibleDx Menu
                 </SheetTitle>
               </SheetHeader>

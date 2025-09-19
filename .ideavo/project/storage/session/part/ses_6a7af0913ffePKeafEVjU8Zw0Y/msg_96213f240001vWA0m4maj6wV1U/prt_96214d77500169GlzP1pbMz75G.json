@@ -1,0 +1,18 @@
+{
+  "id": "prt_96214d77500169GlzP1pbMz75G",
+  "messageID": "msg_96213f240001vWA0m4maj6wV1U",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(ui): add custom virus icon to navigation",
+  "cost": 0.1497549,
+  "tokens": {
+    "input": 6,
+    "output": 264,
+    "reasoning": 0,
+    "cache": {
+      "write": 863,
+      "read": 33255
+    }
+  }
+}

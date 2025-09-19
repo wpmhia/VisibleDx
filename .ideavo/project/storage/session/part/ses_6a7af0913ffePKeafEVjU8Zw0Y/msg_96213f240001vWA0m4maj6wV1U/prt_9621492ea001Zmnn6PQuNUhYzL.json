@@ -1,0 +1,62 @@
+{
+  "id": "prt_9621492ea001Zmnn6PQuNUhYzL",
+  "messageID": "msg_96213f240001vWA0m4maj6wV1U",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_0139SRoFQZnKRzbKqDfS1gNX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User,\n  Bug\n} from 'lucide-react'",
+          "newString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User\n} from 'lucide-react'"
+        },
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "} from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'",
+          "newString": "} from 'lucide-react'\nimport { VirusIcon } from '@/components/virus-icon'\nimport { useTranslation } from '@/lib/language-context'"
+        },
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "        <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n          <Bug className=\"h-6 w-6 text-blue-600\" />\n          <div className=\"font-bold text-lg\">\n            <span className=\"text-blue-600\">Invisible</span>\n            <span className=\"text-gray-900\">Dx</span>\n          </div>\n        </Link>",
+          "newString": "        <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n          <VirusIcon className=\"h-6 w-6 text-blue-600\" size={24} />\n          <div className=\"font-bold text-lg\">\n            <span className=\"text-blue-600\">Invisible</span>\n            <span className=\"text-gray-900\">Dx</span>\n          </div>\n        </Link>"
+        },
+        {
+          "filePath": "/home/user/project/components/navigation.tsx",
+          "oldString": "              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <Bug className=\"h-5 w-5 text-blue-600\" />\n                   InvisibleDx Menu\n                </SheetTitle>\n              </SheetHeader>",
+          "newString": "              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <VirusIcon className=\"h-5 w-5 text-blue-600\" size={20} />\n                   InvisibleDx Menu\n                </SheetTitle>\n              </SheetHeader>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -33,10 +33,9 @@\n   Settings,\n   BookOpen,\n   ExternalLink,\n   Info,\n-  User,\n-  Bug\n+  User\n } from 'lucide-react'\n import { useTranslation } from '@/lib/language-context'\n import { LanguageSelector } from '@/components/language-selector'\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -35,8 +35,9 @@\n   ExternalLink,\n   Info,\n   User\n } from 'lucide-react'\n+import { VirusIcon } from '@/components/virus-icon'\n import { useTranslation } from '@/lib/language-context'\n import { LanguageSelector } from '@/components/language-selector'\n \n const getAssessmentModules = (t: any) => [\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -139,9 +139,9 @@\n <header className=\"sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60\">\n   <div className=\"container mx-auto px-4 h-16 flex items-center justify-between\">\n     {/* Logo and Home Link */}\n     <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n-      <Bug className=\"h-6 w-6 text-blue-600\" />\n+      <VirusIcon className=\"h-6 w-6 text-blue-600\" size={24} />\n       <div className=\"font-bold text-lg\">\n         <span className=\"text-blue-600\">Invisible</span>\n         <span className=\"text-gray-900\">Dx</span>\n       </div>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -242,9 +242,9 @@\n </SheetTrigger>\n <SheetContent side=\"right\">\n   <SheetHeader>\n     <SheetTitle className=\"flex items-center gap-2\">\n-      <Bug className=\"h-5 w-5 text-blue-600\" />\n+      <VirusIcon className=\"h-5 w-5 text-blue-600\" size={20} />\n        InvisibleDx Menu\n     </SheetTitle>\n   </SheetHeader>\n   <div className=\"mt-6 space-y-4\">\n"
+        }
+      ]
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758287148770,
+      "end": 1758287148795
+    }
+  }
+}
