@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605fd559001TWWxXDyIxsCiNa",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011E9TfQow8tTRTtFp242yWB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 145,
+      "limit": 10
+    },
+    "output": "<file>\n00146|   const generateReport = () => {\n00147|     const diagnoses = calculateDiagnoses()\n00148|     const positives = diagnoses.filter(d => d.met)\n00149|     \n00150|     let report = \"VisibleDx Clinical Decision Support Report\\n\"\n00151|     report += \"=====================================\\n\\n\"\n00152|     \n00153|     report += \"DIAGNOSTIC SUMMARY:\\n\"\n00154|     if (positives.length === 0) {\n00155|       report += \"• No criteria met for ME/CFS, Long COVID, or POTS\\n\"\n\n(File has more lines. Use 'offset' parameter to read beyond line 155)\n</file>",
+    "metadata": {
+      "preview": "  const generateReport = () => {\n    const diagnoses = calculateDiagnoses()\n    const positives = diagnoses.filter(d => d.met)\n    \n    let report = \"VisibleDx Clinical Decision Support Report\\n\"\n    report += \"=====================================\\n\\n\"\n    \n    report += \"DIAGNOSTIC SUMMARY:\\n\"\n    if (positives.length === 0) {\n      report += \"• No criteria met for ME/CFS, Long COVID, or POTS\\n\""
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758258518021,
+      "end": 1758258518024
+    }
+  }
+}

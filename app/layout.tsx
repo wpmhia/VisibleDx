@@ -10,7 +10,7 @@ import ScrollRestoration from '@/components/scroll-restoration';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'VisibleDx: ME/CFS · Long COVID · POTS',
+  title: 'InvisibleDx: ME/CFS · Long COVID · POTS',
   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',
 };
 

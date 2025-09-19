@@ -1,0 +1,71 @@
+{
+  "id": "prt_9605e5042001qu8XOscQ9GxdXt",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_018Bn6wswbP6E1L9gS9oFm7j",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "    title: 'VisibleDx: ME/CVS · Long COVID · POTS',",
+          "newString": "    title: 'InvisibleDx: ME/CVS · Long COVID · POTS',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',",
+          "newString": "    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in InvisibleDx diagnostische algoritmen',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      title: 'Over VisibleDx',",
+          "newString": "      title: 'Over InvisibleDx',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',",
+          "newString": "      description: 'InvisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      version: 'VisibleDx v1.0 - Educatief Instrument',",
+          "newString": "      version: 'InvisibleDx v1.0 - Educatief Instrument',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const nl: Translation = {\n   app: {\n-    title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n+    title: 'InvisibleDx: ME/CVS · Long COVID · POTS',\n     subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',\n     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n     backToDashboard: 'Terug naar Dashboard'\n   },\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -776,9 +776,9 @@\n assessmentModules: 'Beoordelingsmodules',\n guidelines: 'Richtlijnen',\n diagnosticTools: 'Diagnostische Hulpmiddelen',\n clinicalGuidelines: 'Klinische Richtlijnen & Referenties',\n-guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n+guidelinesDescription: 'Evidence-based richtlijnen gebruikt in InvisibleDx diagnostische algoritmen',\n assessmentModulesSection: 'Beoordelingsmodules',\n guidelinesSection: 'Richtlijnen & Referenties',\n moreGuidelines: 'meer richtlijnen',\n smartBadge: 'Slim'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -793,9 +793,9 @@\n disclaimer: 'ALLEEN EDUCATIEF INSTRUMENT - Dit open-source educatief instrument is ontworpen voor zorgverlening onderwijs en leren alleen. Het is GEEN medisch hulpmiddel en mag NIET gebruikt worden voor patiëntenzorg, diagnose of behandelingsbeslissingen. Raadpleeg altijd gekwalificeerde medische professionals voor patiëntenzorg.',\n \n footer: {\n   about: {\n-    title: 'Over VisibleDx',\n+    title: 'Over InvisibleDx',\n     description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n     badges: {\n       sensitivity: '94% Sensitiviteit',\n       evidenceBased: 'Evidence-Based',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -794,9 +794,9 @@\n \n footer: {\n   about: {\n     title: 'Over InvisibleDx',\n-    description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n+    description: 'InvisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n     badges: {\n       sensitivity: '94% Sensitiviteit',\n       evidenceBased: 'Evidence-Based',\n       openSource: 'Open Source'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -856,9 +856,9 @@\n     'Monitor patiëntrespons op behandeling'\n   ]\n },\n bottom: {\n-  version: 'VisibleDx v1.0 - Educatief Instrument',\n+  version: 'InvisibleDx v1.0 - Educatief Instrument',\n   copyright: '© 2025 Willem Gielen MD - MIT Licentie',\n   audienceLabel: 'Voor Zorgverleners',\n   badge: 'Onderzoek & Onderwijs'\n },\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758258422471,
+      "end": 1758258422499
+    }
+  }
+}

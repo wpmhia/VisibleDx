@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605eaca2001PXA8rKhkvgL4Um",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01XNJyXwh7DXhoaMpjYrMm1w",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 240,
+      "limit": 10
+    },
+    "output": "<file>\n00241|             </SheetTrigger>\n00242|             <SheetContent side=\"right\">\n00243|               <SheetHeader>\n00244|                 <SheetTitle className=\"flex items-center gap-2\">\n00245|                   <Stethoscope className=\"h-5 w-5 text-blue-600\" />\n00246|                    VisibleDx Menu\n00247|                 </SheetTitle>\n00248|               </SheetHeader>\n00249|               <div className=\"mt-6 space-y-4\">\n00250|                 <div>\n\n(File has more lines. Use 'offset' parameter to read beyond line 250)\n</file>",
+    "metadata": {
+      "preview": "            </SheetTrigger>\n            <SheetContent side=\"right\">\n              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <Stethoscope className=\"h-5 w-5 text-blue-600\" />\n                   VisibleDx Menu\n                </SheetTitle>\n              </SheetHeader>\n              <div className=\"mt-6 space-y-4\">\n                <div>"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758258442281,
+      "end": 1758258442282
+    }
+  }
+}

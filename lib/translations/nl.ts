@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const nl: Translation = {
   app: {
-    title: 'VisibleDx: ME/CVS · Long COVID · POTS',
+    title: 'InvisibleDx: ME/CVS · Long COVID · POTS',
     subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',
     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',
     backToDashboard: 'Terug naar Dashboard'
@@ -777,7 +777,7 @@ export const nl: Translation = {
     guidelines: 'Richtlijnen',
     diagnosticTools: 'Diagnostische Hulpmiddelen',
     clinicalGuidelines: 'Klinische Richtlijnen & Referenties',
-    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',
+    guidelinesDescription: 'Evidence-based richtlijnen gebruikt in InvisibleDx diagnostische algoritmen',
     assessmentModulesSection: 'Beoordelingsmodules',
     guidelinesSection: 'Richtlijnen & Referenties',
     moreGuidelines: 'meer richtlijnen',
@@ -794,8 +794,8 @@ export const nl: Translation = {
 
   footer: {
     about: {
-      title: 'Over VisibleDx',
-      description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',
+      title: 'Over InvisibleDx',
+      description: 'InvisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',
       badges: {
         sensitivity: '94% Sensitiviteit',
         evidenceBased: 'Evidence-Based',
@@ -857,7 +857,7 @@ export const nl: Translation = {
       ]
     },
     bottom: {
-      version: 'VisibleDx v1.0 - Educatief Instrument',
+      version: 'InvisibleDx v1.0 - Educatief Instrument',
       copyright: '© 2025 Willem Gielen MD - MIT Licentie',
       audienceLabel: 'Voor Zorgverleners',
       badge: 'Onderzoek & Onderwijs'

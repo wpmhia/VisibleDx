@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605f7710001ITYKyM187MTZR9",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01X3dmhCATzkKApxZeahX1pC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 215,
+      "limit": 10
+    },
+    "output": "<file>\n00216|     const { demographics, quickScreen, redFlags, standTest, pemQuest, diagnoses } = patientData\n00217|     const currentDate = new Date().toLocaleDateString()\n00218|     \n00219|     let soap = `CLINICAL ASSESSMENT - VisibleDx Report\\n`\n00220|     soap += `=========================================\\n\\n`\n00221|     soap += `Date: ${currentDate}\\n`\n00222|     soap += `${t.soapNotes.clinician}: ${demographics.clinicianName || t.soapNotes.notSpecified}\\n`\n00223|     soap += `${t.soapNotes.patientId}: ${demographics.patientId || t.soapNotes.notSpecified}\\n`\n00224|     soap += `${t.soapNotes.age}: ${demographics.age || t.soapNotes.notSpecified} | ${t.soapNotes.gender}: ${demographics.gender || t.soapNotes.notSpecified}\\n\\n`\n00225| \n\n(File has more lines. Use 'offset' parameter to read beyond line 225)\n</file>",
+    "metadata": {
+      "preview": "    const { demographics, quickScreen, redFlags, standTest, pemQuest, diagnoses } = patientData\n    const currentDate = new Date().toLocaleDateString()\n    \n    let soap = `CLINICAL ASSESSMENT - VisibleDx Report\\n`\n    soap += `=========================================\\n\\n`\n    soap += `Date: ${currentDate}\\n`\n    soap += `${t.soapNotes.clinician}: ${demographics.clinicianName || t.soapNotes.notSpecified}\\n`\n    soap += `${t.soapNotes.patientId}: ${demographics.patientId || t.soapNotes.notSpecified}\\n`\n    soap += `${t.soapNotes.age}: ${demographics.age || t.soapNotes.notSpecified} | ${t.soapNotes.gender}: ${demographics.gender || t.soapNotes.notSpecified}\\n\\n`\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758258494074,
+      "end": 1758258494076
+    }
+  }
+}

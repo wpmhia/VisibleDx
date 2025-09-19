@@ -147,7 +147,7 @@ export default function CriteriaEngine() {
     const diagnoses = calculateDiagnoses()
     const positives = diagnoses.filter(d => d.met)
     
-    let report = "VisibleDx Clinical Decision Support Report\n"
+    let report = "InvisibleDx Clinical Decision Support Report\n"
     report += "=====================================\n\n"
     
     report += "DIAGNOSTIC SUMMARY:\n"

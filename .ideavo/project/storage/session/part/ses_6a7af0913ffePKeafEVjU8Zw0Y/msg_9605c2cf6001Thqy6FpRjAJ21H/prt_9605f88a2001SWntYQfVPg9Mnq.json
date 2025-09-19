@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605f88a2001SWntYQfVPg9Mnq",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UZKVHZLa8NkjEPHhNZWtCa",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 305,
+      "limit": 10
+    },
+    "output": "<file>\n00306|     soap += `  • Repeat stand test if POTS suspected but initial test inconclusive\\n`\n00307|     soap += `  • Review laboratory results and adjust treatment accordingly\\n`\n00308|     soap += `  • Patient education materials provided\\n\\n`\n00309|     \n00310|     soap += `Clinical Decision Support provided by VisibleDx v1.0\\n`\n00311|     soap += `This assessment is for clinical decision support only and does not replace physician judgment.\\n`\n00312| \n00313|     return soap\n00314|   }\n00315| \n\n(File has more lines. Use 'offset' parameter to read beyond line 315)\n</file>",
+    "metadata": {
+      "preview": "    soap += `  • Repeat stand test if POTS suspected but initial test inconclusive\\n`\n    soap += `  • Review laboratory results and adjust treatment accordingly\\n`\n    soap += `  • Patient education materials provided\\n\\n`\n    \n    soap += `Clinical Decision Support provided by VisibleDx v1.0\\n`\n    soap += `This assessment is for clinical decision support only and does not replace physician judgment.\\n`\n\n    return soap\n  }\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758258497935,
+      "end": 1758258497937
+    }
+  }
+}

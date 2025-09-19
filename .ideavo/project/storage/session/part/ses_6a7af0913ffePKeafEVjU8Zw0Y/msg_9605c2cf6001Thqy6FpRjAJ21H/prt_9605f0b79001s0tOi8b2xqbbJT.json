@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605f0b79001s0tOi8b2xqbbJT",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01PTgGkb6o5fmVrEEhWgbzGE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/help-system.tsx",
+      "offset": 140,
+      "limit": 15
+    },
+    "output": "<file>\n00141|     {\n00142|       id: 'data-privacy',\n00143|       title: 'Data Privacy and Training Use',\n00144|       content: `VisibleDx prioritizes educational privacy:\n00145| \n00146| • No real patient data should ever be entered\n00147| • Training data stays in your browser locally\n00148| • No data is transmitted to external servers\n00149| • This tool is for education only, not patient care\n00150| \n00151| Always use simulated scenarios and educational cases only.`,\n00152|       category: 'getting-started',\n00153|       keywords: ['privacy', 'data', 'educational', 'local', 'patient'],\n00154|     }\n00155|   ]\n\n(File has more lines. Use 'offset' parameter to read beyond line 155)\n</file>",
+    "metadata": {
+      "preview": "    {\n      id: 'data-privacy',\n      title: 'Data Privacy and Training Use',\n      content: `VisibleDx prioritizes educational privacy:\n\n• No real patient data should ever be entered\n• Training data stays in your browser locally\n• No data is transmitted to external servers\n• This tool is for education only, not patient care\n\nAlways use simulated scenarios and educational cases only.`,\n      category: 'getting-started',\n      keywords: ['privacy', 'data', 'educational', 'local', 'patient'],\n    }\n  ]"
+    },
+    "title": "components/help-system.tsx",
+    "time": {
+      "start": 1758258466241,
+      "end": 1758258466244
+    }
+  }
+}

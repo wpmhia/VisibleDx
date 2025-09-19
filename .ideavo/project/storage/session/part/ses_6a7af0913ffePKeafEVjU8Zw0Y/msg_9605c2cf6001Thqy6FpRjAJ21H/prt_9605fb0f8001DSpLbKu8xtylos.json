@@ -1,0 +1,26 @@
+{
+  "id": "prt_9605fb0f8001DSpLbKu8xtylos",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Utdq8sn9AsYdzCWKCKBGJQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx",
+      "oldString": "  title: 'VisibleDx: ME/CFS · Long COVID · POTS',",
+      "newString": "  title: 'InvisibleDx: ME/CFS · Long COVID · POTS',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/layout.tsx\n===================================================================\n--- /home/user/project/app/layout.tsx\n+++ /home/user/project/app/layout.tsx\n@@ -9,9 +9,9 @@\n \n const inter = Inter({ subsets: ['latin'] });\n \n export const metadata: Metadata = {\n-  title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n+  title: 'InvisibleDx: ME/CFS · Long COVID · POTS',\n   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n };\n \n export default function RootLayout({\n"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758258509037,
+      "end": 1758258509040
+    }
+  }
+}

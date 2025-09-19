@@ -1,0 +1,71 @@
+{
+  "id": "prt_9605e77cc001yVIxMmm4JRW6Jw",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_0111FXWHxjzsfxpvZvVqWUMU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "    title: 'VisibleDx: ME/CFS · Long COVID · POTS',",
+          "newString": "    title: 'InvisibleDx: ME/CFS · Long COVID · POTS',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',",
+          "newString": "    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i InvisibleDx diagnostiske algoritmer',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      title: 'Om VisibleDx',",
+          "newString": "      title: 'Om InvisibleDx',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',",
+          "newString": "      description: 'InvisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      version: 'VisibleDx v1.0 - Uddannelsesværktøj',",
+          "newString": "      version: 'InvisibleDx v1.0 - Uddannelsesværktøj',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -1,9 +1,9 @@\n import { Translation } from './types'\n \n export const da: Translation = {\n   app: {\n-    title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n+    title: 'InvisibleDx: ME/CFS · Long COVID · POTS',\n     subtitle: 'Et uddannelsesmæssigt værktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og forskning.',\n     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',\n     backToDashboard: 'Tilbage til Dashboard'\n   },\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -785,9 +785,9 @@\n assessmentModules: 'Vurderingsmoduler',\n guidelines: 'Retningslinjer',\n diagnosticTools: 'Diagnostiske Værktøjer',\n clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',\n-guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',\n+guidelinesDescription: 'Evidensbaserede retningslinjer brugt i InvisibleDx diagnostiske algoritmer',\n assessmentModulesSection: 'Vurderingsmoduler',\n guidelinesSection: 'Retningslinjer & Referencer',\n moreGuidelines: 'flere retningslinjer',\n smartBadge: 'Smart'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -802,9 +802,9 @@\n disclaimer: 'KUN UDDANNELSESVÆRKTØJ - Dette open-source uddannelsesværktøj er designet til sundhedsuddannelse og læring kun. Det er IKKE et medicinsk udstyr og må IKKE bruges til patientbehandling, diagnose eller behandlingsbeslutninger. Konsulter altid kvalificerede medicinske fagfolk for patientbehandling.',\n \n footer: {\n   about: {\n-    title: 'Om VisibleDx',\n+    title: 'Om InvisibleDx',\n     description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',\n     badges: {\n       sensitivity: '94% Sensitivitet',\n       evidenceBased: 'Evidensbaseret',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -803,9 +803,9 @@\n \n footer: {\n   about: {\n     title: 'Om InvisibleDx',\n-    description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',\n+    description: 'InvisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',\n     badges: {\n       sensitivity: '94% Sensitivitet',\n       evidenceBased: 'Evidensbaseret',\n       openSource: 'Open Source'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -865,9 +865,9 @@\n     'Overvåg patientrespons på behandling'\n   ]\n },\n bottom: {\n-  version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n+  version: 'InvisibleDx v1.0 - Uddannelsesværktøj',\n   copyright: '© 2025 Willem Gielen MD - MIT Licens',\n   audienceLabel: 'For Sundhedsprofessionelle',\n   badge: 'Forskning & Uddannelse'\n },\n"
+        }
+      ]
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758258433100,
+      "end": 1758258433123
+    }
+  }
+}

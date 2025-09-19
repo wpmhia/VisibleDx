@@ -1,0 +1,62 @@
+{
+  "id": "prt_960601e3f001SFF2kQWu11Chz0",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01F2H6ji8xnR52YngzY3yXof",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/MULTILINGUAL_README.md",
+      "edits": [
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "# VisibleDx Multilingual Implementation",
+          "newString": "# InvisibleDx Multilingual Implementation"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "VisibleDx now supports 7 languages with full medical terminology translation:",
+          "newString": "InvisibleDx now supports 7 languages with full medical terminology translation:"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "        title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',",
+          "newString": "        title: 'InvisibleDx: ME/CFS · Långvarig COVID · POTS',"
+        },
+        {
+          "filePath": "/home/user/project/MULTILINGUAL_README.md",
+          "oldString": "The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.",
+          "newString": "The multilingual implementation ensures InvisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity."
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -1,5 +1,5 @@\n-# VisibleDx Multilingual Implementation\n+# InvisibleDx Multilingual Implementation\n \n ## 🌍 **Supported Languages**\n \n VisibleDx now supports 7 languages with full medical terminology translation:\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -1,9 +1,9 @@\n # InvisibleDx Multilingual Implementation\n \n ## 🌍 **Supported Languages**\n \n-VisibleDx now supports 7 languages with full medical terminology translation:\n+InvisibleDx now supports 7 languages with full medical terminology translation:\n \n - 🇺🇸 **English** (en) - Complete\n - 🇳🇱 **Dutch** (nl) - Complete  \n - 🇩🇰 **Danish** (da) - Complete\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -128,9 +128,9 @@\n import { Translation } from './types'\n \n export const sv: Translation = {\n   app: {\n-     title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',\n+     title: 'InvisibleDx: ME/CFS · Långvarig COVID · POTS',\n     subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',\n     // ... continue translation\n   }\n   // ... complete all sections\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/MULTILINGUAL_README.md\n===================================================================\n--- /home/user/project/MULTILINGUAL_README.md\n+++ /home/user/project/MULTILINGUAL_README.md\n@@ -193,5 +193,5 @@\n - Patient portal language selection\n - Automated language detection from patient records\n - Multi-language clinical report generation\n \n-The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\\ No newline at end of file\n+The multilingual implementation ensures InvisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.\n\\ No newline at end of file\n"
+        }
+      ]
+    },
+    "title": "MULTILINGUAL_README.md",
+    "time": {
+      "start": 1758258539457,
+      "end": 1758258539469
+    }
+  }
+}

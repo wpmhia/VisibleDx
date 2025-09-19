@@ -53,8 +53,8 @@ export default function HelpSystem({ context }: HelpSystemProps) {
   const helpItems: HelpItem[] = [
     {
       id: 'getting-started',
-      title: 'Getting Started with VisibleDx',
-      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. 
+      title: 'Getting Started with InvisibleDx',
+      content: `InvisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. 
 
 Start with the "Educational Simulation" for a guided experience, or choose individual modules to focus on specific skills.
 
@@ -141,7 +141,7 @@ Most issues are resolved by checking camera permissions and lighting.`,
     {
       id: 'data-privacy',
       title: 'Data Privacy and Training Use',
-      content: `VisibleDx prioritizes educational privacy:
+      content: `InvisibleDx prioritizes educational privacy:
 
 • No real patient data should ever be entered
 • Training data stays in your browser locally
@@ -191,7 +191,7 @@ Always use simulated scenarios and educational cases only.`,
             Help & Documentation
           </DialogTitle>
           <DialogDescription>
-            Find answers and learn how to use VisibleDx educational modules
+            Find answers and learn how to use InvisibleDx educational modules
           </DialogDescription>
         </DialogHeader>
 

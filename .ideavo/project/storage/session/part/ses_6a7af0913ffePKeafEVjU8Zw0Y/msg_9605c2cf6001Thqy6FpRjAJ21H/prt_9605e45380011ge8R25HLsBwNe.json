@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605e45380011ge8R25HLsBwNe",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TxApiDfQ7rkwueR8BHktvF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 0,
+      "limit": 10
+    },
+    "output": "<file>\n00001| import { Translation } from './types'\n00002| \n00003| export const nl: Translation = {\n00004|   app: {\n00005|     title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n00006|     subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',\n00007|     tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n00008|     backToDashboard: 'Terug naar Dashboard'\n00009|   },\n00010| \n\n(File has more lines. Use 'offset' parameter to read beyond line 10)\n</file>",
+    "metadata": {
+      "preview": "import { Translation } from './types'\n\nexport const nl: Translation = {\n  app: {\n    title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n    subtitle: 'Een educatief instrument voor het leren van evidence-based criteria voor ME/CVS, Long COVID en POTS. Alleen voor zorgverlening onderwijs en onderzoek.',\n    tagline: 'Onzichtbare ziekten zichtbaar maken - met bewijs, empathie en code.',\n    backToDashboard: 'Terug naar Dashboard'\n  },\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758258415382,
+      "end": 1758258415387
+    }
+  }
+}

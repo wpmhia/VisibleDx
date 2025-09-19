@@ -1,0 +1,44 @@
+{
+  "id": "prt_9605ede22001DOHZV028TDVXQA",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01S3PGyRhWZoQNiJEKJTmaRX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "                  href=\"https://github.com/wpmhia/VisibleDx\"",
+          "newString": "                  href=\"https://github.com/wpmhia/InvisibleDx\""
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "              <span className=\"font-medium\">VisibleDx</span> • Educational Tool • v1.0",
+          "newString": "              <span className=\"font-medium\">InvisibleDx</span> • Educational Tool • v1.0"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -55,9 +55,9 @@\n   </a>\n </div>\n <div className=\"pt-2\">\n   <a \n-    href=\"https://github.com/wpmhia/VisibleDx\" \n+    href=\"https://github.com/wpmhia/InvisibleDx\" \n     target=\"_blank\" \n     rel=\"noopener noreferrer\"\n     className=\"inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm\"\n   >\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -112,9 +112,9 @@\n {/* Bottom Bar - Simple */}\n <div className=\"pt-6 border-t border-gray-200\">\n   <div className=\"flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500\">\n     <div>\n-      <span className=\"font-medium\">VisibleDx</span> • Educational Tool • v1.0\n+      <span className=\"font-medium\">InvisibleDx</span> • Educational Tool • v1.0\n     </div>\n     <div>\n       © 2025 Willem Gielen MD • MIT License\n     </div>\n"
+        }
+      ]
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758258456250,
+      "end": 1758258456256
+    }
+  }
+}

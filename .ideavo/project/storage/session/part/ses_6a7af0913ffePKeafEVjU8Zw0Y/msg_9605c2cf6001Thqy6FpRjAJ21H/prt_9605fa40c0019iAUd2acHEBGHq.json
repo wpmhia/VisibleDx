@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605fa40c0019iAUd2acHEBGHq",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HDK2fdRPKahTP4TMBPAKv1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx",
+      "offset": 10,
+      "limit": 10
+    },
+    "output": "<file>\n00011| \n00012| export const metadata: Metadata = {\n00013|   title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n00014|   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n00015| };\n00016| \n00017| export default function RootLayout({\n00018|   children,\n00019| }: {\n00020|   children: React.ReactNode;\n\n(File has more lines. Use 'offset' parameter to read beyond line 20)\n</file>",
+    "metadata": {
+      "preview": "\nexport const metadata: Metadata = {\n  title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n  description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758258505447,
+      "end": 1758258505449
+    }
+  }
+}

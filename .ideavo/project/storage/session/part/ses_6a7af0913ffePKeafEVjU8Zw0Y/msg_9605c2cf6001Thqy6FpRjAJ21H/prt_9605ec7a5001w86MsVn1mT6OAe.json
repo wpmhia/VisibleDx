@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605ec7a5001w86MsVn1mT6OAe",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01MhcHcALrhXS5uxvcpgvi81",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 55,
+      "limit": 10
+    },
+    "output": "<file>\n00056|               </div>\n00057|               <div className=\"pt-2\">\n00058|                 <a \n00059|                   href=\"https://github.com/wpmhia/VisibleDx\" \n00060|                   target=\"_blank\" \n00061|                   rel=\"noopener noreferrer\"\n00062|                   className=\"inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm\"\n00063|                 >\n00064|                   <Github className=\"h-4 w-4\" />\n00065|                   View Source Code\n\n(File has more lines. Use 'offset' parameter to read beyond line 65)\n</file>",
+    "metadata": {
+      "preview": "              </div>\n              <div className=\"pt-2\">\n                <a \n                  href=\"https://github.com/wpmhia/VisibleDx\" \n                  target=\"_blank\" \n                  rel=\"noopener noreferrer\"\n                  className=\"inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm\"\n                >\n                  <Github className=\"h-4 w-4\" />\n                  View Source Code"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758258448854,
+      "end": 1758258448856
+    }
+  }
+}

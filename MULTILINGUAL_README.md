@@ -1,8 +1,8 @@
-# VisibleDx Multilingual Implementation
+# InvisibleDx Multilingual Implementation
 
 ## 🌍 **Supported Languages**
 
-VisibleDx now supports 7 languages with full medical terminology translation:
+InvisibleDx now supports 7 languages with full medical terminology translation:
 
 - 🇺🇸 **English** (en) - Complete
 - 🇳🇱 **Dutch** (nl) - Complete  
@@ -129,7 +129,7 @@ To add a new language:
    
    export const sv: Translation = {
      app: {
-        title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',
+        title: 'InvisibleDx: ME/CFS · Långvarig COVID · POTS',
        subtitle: 'Ett guidat, riktlinjebaserat diagnostiskt verktyg...',
        // ... continue translation
      }
@@ -194,4 +194,4 @@ To add a new language:
 - Automated language detection from patient records
 - Multi-language clinical report generation
 
-The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.
+The multilingual implementation ensures InvisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.

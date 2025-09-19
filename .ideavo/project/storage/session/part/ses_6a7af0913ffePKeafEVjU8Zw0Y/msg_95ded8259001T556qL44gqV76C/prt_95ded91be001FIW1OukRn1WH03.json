@@ -1,0 +1,20 @@
+{
+  "id": "prt_95ded91be001FIW1OukRn1WH03",
+  "messageID": "msg_95ded8259001T556qL44gqV76C",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "webfetch",
+  "callID": "toolu_011gkYq3iu5SfDmDv9ny5uay",
+  "state": {
+    "status": "error",
+    "input": {
+      "url": "https://visibledx.org",
+      "format": "markdown"
+    },
+    "error": "Error: unknown certificate verification error",
+    "time": {
+      "start": 1758217475179,
+      "end": 1758217475998
+    }
+  }
+}

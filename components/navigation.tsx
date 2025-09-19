@@ -243,7 +243,7 @@ export default function Navigation() {
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
                   <Stethoscope className="h-5 w-5 text-blue-600" />
-                   VisibleDx Menu
+                   InvisibleDx Menu
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-6 space-y-4">

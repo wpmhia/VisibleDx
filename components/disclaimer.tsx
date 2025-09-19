@@ -56,7 +56,7 @@ export default function Disclaimer() {
               </div>
               <div className="pt-2">
                 <a 
-                  href="https://github.com/wpmhia/VisibleDx" 
+                  href="https://github.com/wpmhia/InvisibleDx" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-800 text-sm"
@@ -113,7 +113,7 @@ export default function Disclaimer() {
         <div className="pt-6 border-t border-gray-200">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
             <div>
-              <span className="font-medium">VisibleDx</span> • Educational Tool • v1.0
+              <span className="font-medium">InvisibleDx</span> • Educational Tool • v1.0
             </div>
             <div>
               © 2025 Willem Gielen MD • MIT License

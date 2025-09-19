@@ -1,0 +1,24 @@
+{
+  "id": "prt_9605cdc240013zGokP3gXPZN1U",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_016bJYwoiPRoCPZf5Rej1CUS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "VisibleDx"
+    },
+    "output": "Found 31 matches\n/home/user/project/lib/translations/da.ts:\n  Line 5:     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n  Line 789:     guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',\n  Line 806:       title: 'Om VisibleDx',\n  Line 807:       description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',\n  Line 869:       version: 'VisibleDx v1.0 - Uddannelsesværktøj',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 5:     title: 'VisibleDx: ME/CVS · Long COVID · POTS',\n  Line 780:     guidelinesDescription: 'Evidence-based richtlijnen gebruikt in VisibleDx diagnostische algoritmen',\n  Line 797:       title: 'Over VisibleDx',\n  Line 798:       description: 'VisibleDx is een open-source educatief instrument voor het leren over ME/CVS, Long COVID en POTS criteria. Exclusief ontworpen voor zorgverlening onderwijs en onderzoek - NIET voor patiëntenzorg of medisch gebruik.',\n  Line 860:       version: 'VisibleDx v1.0 - Educatief Instrument',\n\n/home/user/project/lib/translations/en.ts:\n  Line 5:     title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n  Line 780:     guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',\n  Line 797:       title: 'About VisibleDx',\n  Line 798:       description: 'VisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',\n  Line 860:       version: 'VisibleDx v1.0 - Educational Tool',\n\n/home/user/project/components/navigation.tsx:\n  Line 246:                    VisibleDx Menu\n\n/home/user/project/components/disclaimer.tsx:\n  Line 59:                   href=\"https://github.com/wpmhia/VisibleDx\" \n  Line 116:               <span className=\"font-medium\">VisibleDx</span> • Educational Tool • v1.0\n\n/home/user/project/components/help-system.tsx:\n  Line 56:       title: 'Getting Started with VisibleDx',\n  Line 57:       content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n  Line 144:       content: `VisibleDx prioritizes educational privacy:\n  Line 194:             Find answers and learn how to use VisibleDx educational modules\n\n/home/user/project/app/new-patient/page.tsx:\n  Line 219:     let soap = `CLINICAL ASSESSMENT - VisibleDx Report\\n`\n  Line 310:     soap += `Clinical Decision Support provided by VisibleDx v1.0\\n`\n\n/home/user/project/app/layout.tsx:\n  Line 13:   title: 'VisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/LICENSE:\n  Line 37: GitHub Repository: https://github.com/wpmhia/VisibleDx\n\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 150:     let report = \"VisibleDx Clinical Decision Support Report\\n\"\n\n/home/user/project/MULTILINGUAL_README.md:\n  Line 1: # VisibleDx Multilingual Implementation\n  Line 5: VisibleDx now supports 7 languages with full medical terminology translation:\n  Line 132:         title: 'VisibleDx: ME/CFS · Långvarig COVID · POTS',\n  Line 197: The multilingual implementation ensures VisibleDx can serve healthcare providers and patients worldwide while maintaining the highest standards of medical accuracy and cultural sensitivity.",
+    "metadata": {
+      "matches": 31,
+      "truncated": false
+    },
+    "title": "VisibleDx",
+    "time": {
+      "start": 1758258322698,
+      "end": 1758258322714
+    }
+  }
+}

@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const en: Translation = {
   app: {
-    title: 'VisibleDx: ME/CFS · Long COVID · POTS',
+    title: 'InvisibleDx: ME/CFS · Long COVID · POTS',
     subtitle: 'An educational tool for learning evidence-based criteria for ME/CFS, Long COVID, and POTS. For healthcare education and research purposes only.',
     tagline: 'Making invisible diseases visible - with evidence, empathy and code.',
     backToDashboard: 'Back to Dashboard'
@@ -777,7 +777,7 @@ export const en: Translation = {
     guidelines: 'Guidelines',
     diagnosticTools: 'Educational Tools',
     clinicalGuidelines: 'Clinical Guidelines & References',
-    guidelinesDescription: 'Evidence-based guidelines used in VisibleDx educational modules',
+    guidelinesDescription: 'Evidence-based guidelines used in InvisibleDx educational modules',
     assessmentModulesSection: 'Assessment Modules',
     guidelinesSection: 'Guidelines & References',
     moreGuidelines: 'more guidelines',
@@ -794,8 +794,8 @@ export const en: Translation = {
 
   footer: {
     about: {
-      title: 'About VisibleDx',
-      description: 'VisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',
+      title: 'About InvisibleDx',
+      description: 'InvisibleDx is an open-source educational tool for learning about ME/CFS, Long COVID, and POTS criteria. Designed exclusively for healthcare education and research purposes - NOT for patient care or medical use.',
       badges: {
         sensitivity: '94% Sensitivity',
         evidenceBased: 'Evidence-Based',
@@ -857,7 +857,7 @@ export const en: Translation = {
       ]
     },
     bottom: {
-      version: 'VisibleDx v1.0 - Educational Tool',
+      version: 'InvisibleDx v1.0 - Educational Tool',
       copyright: '© 2025 Willem Gielen MD - MIT License',
       audienceLabel: 'For Healthcare Education Only',
       badge: 'Research & Education Use'

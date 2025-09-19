@@ -1,0 +1,62 @@
+{
+  "id": "prt_9605f2e97001cJAG9QWhcoEfVU",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01BAtZe5RbtHQh5SBxyuZ9Jp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/help-system.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "      title: 'Getting Started with VisibleDx',",
+          "newString": "      title: 'Getting Started with InvisibleDx',"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria.",
+          "newString": "      content: `InvisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria."
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "      content: `VisibleDx prioritizes educational privacy:",
+          "newString": "      content: `InvisibleDx prioritizes educational privacy:"
+        },
+        {
+          "filePath": "/home/user/project/components/help-system.tsx",
+          "oldString": "            Find answers and learn how to use VisibleDx educational modules",
+          "newString": "            Find answers and learn how to use InvisibleDx educational modules"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -52,9 +52,9 @@\n \n   const helpItems: HelpItem[] = [\n     {\n       id: 'getting-started',\n-      title: 'Getting Started with VisibleDx',\n+      title: 'Getting Started with InvisibleDx',\n       content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n \n Start with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -53,9 +53,9 @@\n   const helpItems: HelpItem[] = [\n     {\n       id: 'getting-started',\n       title: 'Getting Started with InvisibleDx',\n-      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n+      content: `InvisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n \n Start with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n \n Remember: This is an educational tool only - NOT for actual patient care.`,\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -140,9 +140,9 @@\n     },\n     {\n       id: 'data-privacy',\n       title: 'Data Privacy and Training Use',\n-      content: `VisibleDx prioritizes educational privacy:\n+      content: `InvisibleDx prioritizes educational privacy:\n \n • No real patient data should ever be entered\n • Training data stays in your browser locally\n • No data is transmitted to external servers\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/help-system.tsx\n===================================================================\n--- /home/user/project/components/help-system.tsx\n+++ /home/user/project/components/help-system.tsx\n@@ -190,9 +190,9 @@\n     <BookOpen className=\"h-5 w-5\" />\n     Help & Documentation\n   </DialogTitle>\n   <DialogDescription>\n-    Find answers and learn how to use VisibleDx educational modules\n+    Find answers and learn how to use InvisibleDx educational modules\n   </DialogDescription>\n </DialogHeader>\n \n <div className=\"flex-1 overflow-hidden\">\n"
+        }
+      ]
+    },
+    "title": "components/help-system.tsx",
+    "time": {
+      "start": 1758258478026,
+      "end": 1758258478042
+    }
+  }
+}

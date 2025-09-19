@@ -1,0 +1,21 @@
+{
+  "id": "prt_9605d806900119NL3oomh2rYXu",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01H69ekCoPkbPxbhNZ9iHiwW",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "    title: 'VisibleDx: ME/CFS · Long COVID · POTS',",
+      "newString": "    title: 'InvisibleDx: ME/CFS · Long COVID · POTS',"
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758258365266,
+      "end": 1758258365286
+    }
+  }
+}

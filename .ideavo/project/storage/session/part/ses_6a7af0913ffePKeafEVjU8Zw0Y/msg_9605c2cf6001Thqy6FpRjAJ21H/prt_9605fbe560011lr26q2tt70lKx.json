@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605fbe560011lr26q2tt70lKx",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LovMpdL8QJXGxoxwyaed9z",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/LICENSE",
+      "offset": 35,
+      "limit": 5
+    },
+    "output": "<file>\n00036| Website: https://www.nordjyskklinik.dk/\n00037| GitHub Repository: https://github.com/wpmhia/VisibleDx\n</file>",
+    "metadata": {
+      "preview": "Website: https://www.nordjyskklinik.dk/\nGitHub Repository: https://github.com/wpmhia/VisibleDx"
+    },
+    "title": "LICENSE",
+    "time": {
+      "start": 1758258512076,
+      "end": 1758258512078
+    }
+  }
+}

@@ -2,7 +2,7 @@ import { Translation } from './types'
 
 export const da: Translation = {
   app: {
-    title: 'VisibleDx: ME/CFS · Long COVID · POTS',
+    title: 'InvisibleDx: ME/CFS · Long COVID · POTS',
     subtitle: 'Et uddannelsesmæssigt værktøj til at lære evidensbaserede kriterier for ME/CFS, Long COVID og POTS. Kun til sundhedsuddannelse og forskning.',
     tagline: 'Gør usynlige sygdomme synlige - med evidens, empati og kode.',
     backToDashboard: 'Tilbage til Dashboard'
@@ -786,7 +786,7 @@ export const da: Translation = {
     guidelines: 'Retningslinjer',
     diagnosticTools: 'Diagnostiske Værktøjer',
     clinicalGuidelines: 'Kliniske Retningslinjer & Referencer',
-    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i VisibleDx diagnostiske algoritmer',
+    guidelinesDescription: 'Evidensbaserede retningslinjer brugt i InvisibleDx diagnostiske algoritmer',
     assessmentModulesSection: 'Vurderingsmoduler',
     guidelinesSection: 'Retningslinjer & Referencer',
     moreGuidelines: 'flere retningslinjer',
@@ -803,8 +803,8 @@ export const da: Translation = {
 
   footer: {
     about: {
-      title: 'Om VisibleDx',
-      description: 'VisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',
+      title: 'Om InvisibleDx',
+      description: 'InvisibleDx er et open-source uddannelsesværktøj til at lære om ME/CFS, Long COVID og POTS kriterier. Designet udelukkende til sundhedsuddannelse og forskning - IKKE til patientbehandling eller medicinsk brug.',
       badges: {
         sensitivity: '94% Sensitivitet',
         evidenceBased: 'Evidensbaseret',
@@ -866,7 +866,7 @@ export const da: Translation = {
       ]
     },
     bottom: {
-      version: 'VisibleDx v1.0 - Uddannelsesværktøj',
+      version: 'InvisibleDx v1.0 - Uddannelsesværktøj',
       copyright: '© 2025 Willem Gielen MD - MIT Licens',
       audienceLabel: 'For Sundhedsprofessionelle',
       badge: 'Forskning & Uddannelse'

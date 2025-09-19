@@ -1,0 +1,25 @@
+{
+  "id": "prt_9605efa14001NiJNTNl3BkLVAm",
+  "messageID": "msg_9605c2cf6001Thqy6FpRjAJ21H",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01BVa1XfDTjheZLbA2GHjWcL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/help-system.tsx",
+      "offset": 50,
+      "limit": 15
+    },
+    "output": "<file>\n00051|   const [selectedCategory, setSelectedCategory] = useState<string>('all')\n00052| \n00053|   const helpItems: HelpItem[] = [\n00054|     {\n00055|       id: 'getting-started',\n00056|       title: 'Getting Started with VisibleDx',\n00057|       content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n00058| \n00059| Start with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n00060| \n00061| Remember: This is an educational tool only - NOT for actual patient care.`,\n00062|       category: 'getting-started',\n00063|       keywords: ['start', 'begin', 'intro', 'first', 'how to'],\n00064|       relatedLinks: [\n00065|         { title: 'CDC ME/CFS Guidelines', url: 'https://www.cdc.gov/me-cfs/' },\n\n(File has more lines. Use 'offset' parameter to read beyond line 65)\n</file>",
+    "metadata": {
+      "preview": "  const [selectedCategory, setSelectedCategory] = useState<string>('all')\n\n  const helpItems: HelpItem[] = [\n    {\n      id: 'getting-started',\n      title: 'Getting Started with VisibleDx',\n      content: `VisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n\nStart with the \"Educational Simulation\" for a guided experience, or choose individual modules to focus on specific skills.\n\nRemember: This is an educational tool only - NOT for actual patient care.`,\n      category: 'getting-started',\n      keywords: ['start', 'begin', 'intro', 'first', 'how to'],\n      relatedLinks: [\n        { title: 'CDC ME/CFS Guidelines', url: 'https://www.cdc.gov/me-cfs/' },"
+    },
+    "title": "components/help-system.tsx",
+    "time": {
+      "start": 1758258462029,
+      "end": 1758258462036
+    }
+  }
+}
