@@ -1,0 +1,26 @@
+{
+  "id": "prt_960a67ec5001jd1MnxHI6gyNEM",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_012298N3nw8XAxzAcSzUkzqo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "  Eye,",
+      "newString": "  Search,"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -23,9 +23,9 @@\n import { Badge } from '@/components/ui/badge'\n import { \n   Home, \n   Menu, \n-  Eye, \n+  Search, \n   Clock, \n   AlertTriangle, \n   Heart, \n   Activity, \n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758263149018,
+      "end": 1758263149023
+    }
+  }
+}

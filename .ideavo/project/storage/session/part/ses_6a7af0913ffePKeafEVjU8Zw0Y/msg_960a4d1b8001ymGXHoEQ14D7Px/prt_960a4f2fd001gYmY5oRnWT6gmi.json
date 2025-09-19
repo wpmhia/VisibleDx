@@ -1,0 +1,26 @@
+{
+  "id": "prt_960a4f2fd001gYmY5oRnWT6gmi",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01FPmoCFjpGbRSNRLJvQSqD6",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build 2>&1 | grep -i error",
+      "description": "Check for any build errors that might cause loading issues"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 1,
+      "description": "Check for any build errors that might cause loading issues"
+    },
+    "title": "cd /home/user/project && npm run build 2>&1 | grep -i error",
+    "time": {
+      "start": 1758263047823,
+      "end": 1758263067697
+    }
+  }
+}

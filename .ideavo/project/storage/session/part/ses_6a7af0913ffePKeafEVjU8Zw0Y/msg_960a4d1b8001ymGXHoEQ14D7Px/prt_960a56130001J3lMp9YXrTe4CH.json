@@ -1,0 +1,26 @@
+{
+  "id": "prt_960a56130001J3lMp9YXrTe4CH",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01BTDkvBBVymRqwxHiLD2yh4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && timeout 5s npm run dev 2>&1 || echo \"Dev server check complete\"",
+      "description": "Quick check of dev server for any immediate errors"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 1961ms\nDev server check complete\n\u001b[?25h\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 dev\n> next dev\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n  - Environments: .env\n\n ✓ Starting...\n ✓ Ready in 1961ms\nDev server check complete\n\u001b[?25h\n",
+      "exit": 0,
+      "description": "Quick check of dev server for any immediate errors"
+    },
+    "title": "cd /home/user/project && timeout 5s npm run dev 2>&1 || echo \"Dev server check complete\"",
+    "time": {
+      "start": 1758263076236,
+      "end": 1758263081310
+    }
+  }
+}

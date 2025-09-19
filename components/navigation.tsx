@@ -24,7 +24,7 @@ import { Badge } from '@/components/ui/badge'
 import { 
   Home, 
   Menu, 
-  EyeOff, 
+  Search, 
   Clock, 
   AlertTriangle, 
   Heart, 
@@ -139,7 +139,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo and Home Link */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <EyeOff className="h-6 w-6 text-blue-600" />
+          <Search className="h-6 w-6 text-blue-600" />
           <div className="font-bold text-lg">
             <span className="text-blue-600">Invisible</span>
             <span className="text-gray-900">Dx</span>
@@ -242,7 +242,7 @@ export default function Navigation() {
             <SheetContent side="right">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <EyeOff className="h-5 w-5 text-blue-600" />
+                  <Search className="h-5 w-5 text-blue-600" />
                    InvisibleDx Menu
                 </SheetTitle>
               </SheetHeader>

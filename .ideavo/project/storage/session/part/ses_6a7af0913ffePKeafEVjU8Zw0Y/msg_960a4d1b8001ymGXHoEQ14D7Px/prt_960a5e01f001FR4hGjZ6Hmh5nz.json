@@ -1,0 +1,25 @@
+{
+  "id": "prt_960a5e01f001FR4hGjZ6Hmh5nz",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_016FnyVxcxwQEPnXfgCejLvz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 0,
+      "limit": 10
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { Alert, AlertDescription } from '@/components/ui/alert'\n00004| import { Badge } from '@/components/ui/badge'\n00005| import { Separator } from '@/components/ui/separator'\n00006| import { Info, EyeOff, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'\n00007| import { useTranslation } from '@/lib/language-context'\n00008| \n00009| export default function Disclaimer() {\n00010|   const { t } = useTranslation()\n\n(File has more lines. Use 'offset' parameter to read beyond line 10)\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { Alert, AlertDescription } from '@/components/ui/alert'\nimport { Badge } from '@/components/ui/badge'\nimport { Separator } from '@/components/ui/separator'\nimport { Info, EyeOff, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'\nimport { useTranslation } from '@/lib/language-context'\n\nexport default function Disclaimer() {\n  const { t } = useTranslation()"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758263108290,
+      "end": 1758263108292
+    }
+  }
+}

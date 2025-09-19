@@ -1,0 +1,26 @@
+{
+  "id": "prt_960a68e56001fGlqe1g5mFrtes",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01CV6oh7toxEeJ2VHKxtc5DR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "          <Eye className=\"h-6 w-6 text-blue-600\" />",
+      "newString": "          <Search className=\"h-6 w-6 text-blue-600\" />"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -138,9 +138,9 @@\n <header className=\"sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60\">\n   <div className=\"container mx-auto px-4 h-16 flex items-center justify-between\">\n     {/* Logo and Home Link */}\n     <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n-      <Eye className=\"h-6 w-6 text-blue-600\" />\n+      <Search className=\"h-6 w-6 text-blue-600\" />\n       <div className=\"font-bold text-lg\">\n         <span className=\"text-blue-600\">Invisible</span>\n         <span className=\"text-gray-900\">Dx</span>\n       </div>\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758263152912,
+      "end": 1758263152914
+    }
+  }
+}

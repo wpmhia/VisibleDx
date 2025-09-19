@@ -1,0 +1,18 @@
+{
+  "id": "prt_960a762c2001Stk6ZIMeDkkicW",
+  "messageID": "msg_960a4d1b8001ymGXHoEQ14D7Px",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "fix(icons): resolve loading issue by replacing EyeOff icon",
+  "cost": 0.6140367,
+  "tokens": {
+    "input": 5,
+    "output": 289,
+    "reasoning": 0,
+    "cache": {
+      "write": 708,
+      "read": 71898
+    }
+  }
+}
