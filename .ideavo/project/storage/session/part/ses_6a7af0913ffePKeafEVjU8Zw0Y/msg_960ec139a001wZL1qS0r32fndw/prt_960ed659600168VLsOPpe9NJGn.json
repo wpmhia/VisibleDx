@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ed659600168VLsOPpe9NJGn",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QKwDGUC94Dufx6wHwQZ8fS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 815,
+      "limit": 20
+    },
+    "output": "<file>\n00816|                     placeholder=\"110\"\n00817|                     value={patientData.standTest.peakHR || ''}\n00818|                     onChange={(e) => {\n00819|                       const peakHR = parseInt(e.target.value) || null\n00820|                       const baselineHR = patientData.standTest.baselineHR\n00821|                       const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false\n00822|                       \n00823|                       setPatientData(prev => ({\n00824|                         ...prev,\n00825|                         standTest: {\n00826|                           ...prev.standTest,\n00827|                           peakHR,\n00828|                           sustainedHR: peakHR,\n00829|                           meetsPOTS,\n00830|                           performed: true\n00831|                         }\n00832|                       }))\n00833|                     }}\n00834|                   />\n00835|                 </div>\n\n(File has more lines. Use 'offset' parameter to read beyond line 835)\n</file>",
+    "metadata": {
+      "preview": "                    placeholder=\"110\"\n                    value={patientData.standTest.peakHR || ''}\n                    onChange={(e) => {\n                      const peakHR = parseInt(e.target.value) || null\n                      const baselineHR = patientData.standTest.baselineHR\n                      const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false\n                      \n                      setPatientData(prev => ({\n                        ...prev,\n                        standTest: {\n                          ...prev.standTest,\n                          peakHR,\n                          sustainedHR: peakHR,\n                          meetsPOTS,\n                          performed: true\n                        }\n                      }))\n                    }}\n                  />\n                </div>"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758267795465,
+      "end": 1758267795470
+    }
+  }
+}

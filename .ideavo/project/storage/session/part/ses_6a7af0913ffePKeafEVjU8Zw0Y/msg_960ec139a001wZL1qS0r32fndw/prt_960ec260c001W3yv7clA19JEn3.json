@@ -1,0 +1,19 @@
+{
+  "id": "prt_960ec260c001W3yv7clA19JEn3",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018VzGf42GQUQwVa6aVSf6d2",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/.ideavo-attachments/Untitled_document.docx"
+    },
+    "error": "Error: File /.ideavo-attachments/Untitled_document.docx is not in the current working directory",
+    "time": {
+      "start": 1758267713295,
+      "end": 1758267713329
+    }
+  }
+}

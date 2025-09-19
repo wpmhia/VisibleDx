@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ee8035001op6zvnrssDlEjS",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01RY15z6UWVXuN3VZvbJvH8W",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build to test the enhanced POTS flowchart implementation"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/criteria-engine/page.tsx:157:7\nType error: Type 'string' is not assignable to type '\"high\" | \"medium\" | \"low\"'.\n\n\u001b[0m \u001b[90m 155 |\u001b[39m       criteria\u001b[33m:\u001b[39m potsChecked\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m       icdCode\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mconditions\u001b[33m.\u001b[39mpots\u001b[33m.\u001b[39micdCode\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m       confidence\u001b[33m:\u001b[39m potsConfidence\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 159 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 160 |\u001b[39m     \u001b[36mreturn\u001b[39m diagnoses\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/criteria-engine/page.tsx:157:7\nType error: Type 'string' is not assignable to type '\"high\" | \"medium\" | \"low\"'.\n\n\u001b[0m \u001b[90m 155 |\u001b[39m       criteria\u001b[33m:\u001b[39m potsChecked\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m       icdCode\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mconditions\u001b[33m.\u001b[39mpots\u001b[33m.\u001b[39micdCode\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m       confidence\u001b[33m:\u001b[39m potsConfidence\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 159 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 160 |\u001b[39m     \u001b[36mreturn\u001b[39m diagnoses\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build to test the enhanced POTS flowchart implementation"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758267867826,
+      "end": 1758267885626
+    }
+  }
+}

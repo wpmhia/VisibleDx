@@ -1,0 +1,27 @@
+{
+  "id": "prt_960ef78e60012oIV72391r2eOC",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01BXbbe4s8omKAPR3FbYoeBr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm start",
+      "timeout": 10000,
+      "description": "Start the server to test the enhanced POTS flowchart"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n\n ✓ Starting...\n ✓ Ready in 501ms\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:3000\n\n ✓ Starting...\n ✓ Ready in 501ms\n",
+      "exit": null,
+      "description": "Start the server to test the enhanced POTS flowchart"
+    },
+    "title": "cd /home/user/project && npm start",
+    "time": {
+      "start": 1758267931660,
+      "end": 1758267941672
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_960eed5fc001ah1B7H0shBcPTa",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01TJsCoS8dLucdqZRZVAN7LW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "    // Determine confidence based on additional criteria\n    let potsConfidence = 'low'\n    if (potsMet) {\n      if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n        potsConfidence = 'high'\n      } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n        potsConfidence = 'medium'\n      }\n    }",
+      "newString": "    // Determine confidence based on additional criteria\n    let potsConfidence: 'low' | 'medium' | 'high' = 'low'\n    if (potsMet) {\n      if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n        potsConfidence = 'high'\n      } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n        potsConfidence = 'medium'\n      }\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -138,9 +138,9 @@\n // POTS requires all 4 core criteria\n const potsMet = potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension\n \n // Determine confidence based on additional criteria\n-let potsConfidence = 'low'\n+let potsConfidence: 'low' | 'medium' | 'high' = 'low'\n if (potsMet) {\n   if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n     potsConfidence = 'high'\n   } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758267892054,
+      "end": 1758267892067
+    }
+  }
+}

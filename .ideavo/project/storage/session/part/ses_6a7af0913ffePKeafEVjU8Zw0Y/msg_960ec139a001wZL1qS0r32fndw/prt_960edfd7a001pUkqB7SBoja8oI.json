@@ -1,0 +1,26 @@
+{
+  "id": "prt_960edfd7a001pUkqB7SBoja8oI",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_019gb5PM6HgnRbtcyLpSRGAm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "oldString": "    // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n    const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length\n    const potsMet = potsEssential >= 4",
+      "newString": "    // Enhanced POTS Diagnosis following ESC 2018/AAS-EFAS 2021 flowchart\n    // Core criteria: HR increase + symptoms + duration + no OH\n    const potsHRIncrease = potsChecked.find(c => c.id === 'hr_increase')?.met || false\n    const potsSymptoms = potsChecked.find(c => c.id === 'symptoms')?.met || false\n    const potsDuration = potsChecked.find(c => c.id === 'duration_pots')?.met || false\n    const noOrthostHypotension = potsChecked.find(c => c.id === 'no_oh')?.met || false\n    const sustainedTachycardia = potsChecked.find(c => c.id === 'sustained')?.met || false\n    \n    // POTS requires all 4 core criteria\n    const potsMet = potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension\n    \n    // Determine confidence based on additional criteria\n    let potsConfidence = 'low'\n    if (potsMet) {\n      if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n        potsConfidence = 'high'\n      } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n        potsConfidence = 'medium'\n      }\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -126,12 +126,29 @@\n   icdCode: t.conditions.longCovid.icdCode,\n   confidence: longCovidMet ? 'high' : 'low'\n })\n \n-// POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n-const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length\n-const potsMet = potsEssential >= 4\n+// Enhanced POTS Diagnosis following ESC 2018/AAS-EFAS 2021 flowchart\n+// Core criteria: HR increase + symptoms + duration + no OH\n+const potsHRIncrease = potsChecked.find(c => c.id === 'hr_increase')?.met || false\n+const potsSymptoms = potsChecked.find(c => c.id === 'symptoms')?.met || false\n+const potsDuration = potsChecked.find(c => c.id === 'duration_pots')?.met || false\n+const noOrthostHypotension = potsChecked.find(c => c.id === 'no_oh')?.met || false\n+const sustainedTachycardia = potsChecked.find(c => c.id === 'sustained')?.met || false\n \n+// POTS requires all 4 core criteria\n+const potsMet = potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension\n+\n+// Determine confidence based on additional criteria\n+let potsConfidence = 'low'\n+if (potsMet) {\n+  if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n+    potsConfidence = 'high'\n+  } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n+    potsConfidence = 'medium'\n+  }\n+}\n+\n diagnoses.push({\n   id: 'pots',\n   condition: t.conditions.pots.fullName,\n   met: potsMet,\n"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758267840115,
+      "end": 1758267840121
+    }
+  }
+}

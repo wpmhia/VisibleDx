@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ecead5001XECffbtvB2NQMt",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01XKCLg3ysk8PVCWBtbaZ8nD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 365,
+      "limit": 10
+    },
+    "output": "<file>\n00366|     // POTS criteria\n00367|     const potsMet = standTest.meetsPOTS && quickScreen.answers[8] && (quickScreen.answers[5] || quickScreen.answers[6])\n00368|     \n00369|     setPatientData(prev => ({\n00370|       ...prev,\n00371|       diagnoses: {\n00372|         mecfs: { \n00373|           met: mecfsMet, \n00374|           confidence: mecfsMet ? (coreSymptoms === 3 && hasPEM ? 'high' : 'medium') : 'low' \n00375|         },\n\n(File has more lines. Use 'offset' parameter to read beyond line 375)\n</file>",
+    "metadata": {
+      "preview": "    // POTS criteria\n    const potsMet = standTest.meetsPOTS && quickScreen.answers[8] && (quickScreen.answers[5] || quickScreen.answers[6])\n    \n    setPatientData(prev => ({\n      ...prev,\n      diagnoses: {\n        mecfs: { \n          met: mecfsMet, \n          confidence: mecfsMet ? (coreSymptoms === 3 && hasPEM ? 'high' : 'medium') : 'low' \n        },"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758267764052,
+      "end": 1758267764054
+    }
+  }
+}

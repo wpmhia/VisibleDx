@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ed09b1001uHjDmZMlgxUaGx",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KKxHA42gvve4vJChz2knuL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 400,
+      "limit": 50
+    },
+    "output": "<file>\n00401|           'Very severe - unable to function, bedridden'\n00402|         ]\n00403|       },\n00404|       recoveryTime: {\n00405|         question: 'How long does it typically take for your symptoms to return to baseline after activity?',\n00406|         options: [\n00407|           'No recovery time needed',\n00408|           'A few hours',\n00409|           'About one day',\n00410|           'Several days (2-6 days)',\n00411|           'A week or more'\n00412|         ]\n00413|       }\n00414|     },\n00415|     results: {\n00416|       complete: 'PEM Assessment Complete',\n00417|       description: 'Post-Exertional Malaise evaluation based on DePaul criteria',\n00418|       status: 'PEM Status',\n00419|       present: 'Post-Exertional Malaise is likely present',\n00420|       absent: 'Post-Exertional Malaise is unlikely',\n00421|       severityLevels: {\n00422|         none: 'None',\n00423|         mild: 'Mild PEM',\n00424|         moderate: 'Moderate PEM',\n00425|         severe: 'Severe PEM'\n00426|       },\n00427|       clinicalInterpretation: 'Clinical Interpretation',\n00428|       recommendations: {\n00429|         severe: [\n00430|           'Strict activity pacing essential',\n00431|           'Consider disability evaluation',\n00432|           'Specialist ME/CFS clinic referral'\n00433|         ],\n00434|         moderate: [\n00435|           'Implement careful activity pacing',\n00436|           'Monitor for symptom progression',\n00437|           'Consider occupational therapy'\n00438|         ],\n00439|         mild: [\n00440|           'Begin gentle activity pacing',\n00441|           'Education on PEM recognition',\n00442|           'Regular symptom monitoring'\n00443|         ],\n00444|         none: [\n00445|           'PEM not significantly present',\n00446|           'Consider other diagnoses',\n00447|           'Standard activity as tolerated'\n00448|         ]\n00449|       },\n00450|       important: 'Important: PEM is the hallmark symptom of ME/CFS. If present, avoid activities that consistently trigger symptom worsening. Energy management and pacing are key treatment strategies.',\n\n(File has more lines. Use 'offset' parameter to read beyond line 450)\n</file>",
+    "metadata": {
+      "preview": "          'Very severe - unable to function, bedridden'\n        ]\n      },\n      recoveryTime: {\n        question: 'How long does it typically take for your symptoms to return to baseline after activity?',\n        options: [\n          'No recovery time needed',\n          'A few hours',\n          'About one day',\n          'Several days (2-6 days)',\n          'A week or more'\n        ]\n      }\n    },\n    results: {\n      complete: 'PEM Assessment Complete',\n      description: 'Post-Exertional Malaise evaluation based on DePaul criteria',\n      status: 'PEM Status',\n      present: 'Post-Exertional Malaise is likely present',\n      absent: 'Post-Exertional Malaise is unlikely',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758267771780,
+      "end": 1758267771783
+    }
+  }
+}

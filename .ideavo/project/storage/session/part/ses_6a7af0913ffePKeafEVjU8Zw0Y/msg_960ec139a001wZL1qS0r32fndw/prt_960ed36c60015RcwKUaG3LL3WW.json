@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ed36c60015RcwKUaG3LL3WW",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LHd9eqJ2sjPBCg4gWUyxqq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 480,
+      "limit": 40
+    },
+    "output": "<file>\n00481|         suspected: 'Suspected based on timing'\n00482|       }\n00483|     },\n00484|     pots: {\n00485|       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n00486|       description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',\n00487|       criteria: [\n00488|         'Heart rate increase ≥30 bpm within 10 minutes of standing',\n00489|         'Sustained heart rate ≥120 bpm while standing',\n00490|         'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n00491|         'Symptoms present for ≥3 months',\n00492|         'Absence of orthostatic hypotension'\n00493|       ]\n00494|     },\n00495|     results: {\n00496|       complete: 'Diagnostic Criteria Assessment Complete',\n00497|       description: 'Based on CDC, NASEM, ESC, WHO guidelines',\n00498|       diagnosesMet: 'Diagnoses Meeting Criteria',\n00499|       criteriaMet: 'CRITERIA MET',\n00500|       clinicalRecommendations: 'Clinical Recommendations',\n00501|       mecfsManagement: [\n00502|         'Implement activity pacing and energy management',\n00503|         'Avoid graded exercise therapy (GET)',\n00504|         'Consider symptom-directed treatments',\n00505|         'Specialist ME/CFS clinic referral if available'\n00506|       ],\n00507|       longCovidManagement: [\n00508|         'Multidisciplinary approach to symptom management',\n00509|         'Long COVID clinic referral if available',\n00510|         'Monitor for improvement over time',\n00511|         'Address individual symptoms (fatigue, cognitive, respiratory)'\n00512|       ],\n00513|       potsManagement: [\n00514|         'Proceed to subtype determination for targeted therapy',\n00515|         'Non-pharmacological: salt, fluids, compression garments',\n00516|         'Consider cardiology or autonomic specialist referral',\n00517|         'Gradual exercise reconditioning when appropriate'\n00518|       ],\n00519|       reassess: 'Reassess Criteria',\n00520|       downloadReport: 'Download Report',\n\n(File has more lines. Use 'offset' parameter to read beyond line 520)\n</file>",
+    "metadata": {
+      "preview": "        suspected: 'Suspected based on timing'\n      }\n    },\n    pots: {\n      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n      description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',\n      criteria: [\n        'Heart rate increase ≥30 bpm within 10 minutes of standing',\n        'Sustained heart rate ≥120 bpm while standing',\n        'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n        'Symptoms present for ≥3 months',\n        'Absence of orthostatic hypotension'\n      ]\n    },\n    results: {\n      complete: 'Diagnostic Criteria Assessment Complete',\n      description: 'Based on CDC, NASEM, ESC, WHO guidelines',\n      diagnosesMet: 'Diagnoses Meeting Criteria',\n      criteriaMet: 'CRITERIA MET',\n      clinicalRecommendations: 'Clinical Recommendations',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758267783456,
+      "end": 1758267783458
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ee6b2e001XHf7CutvgoEbON",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_015hdMvE9uLZfkuvxo68KsPN",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 25,
+      "limit": 20
+    },
+    "output": "<file>\n00026|   }\n00027| }\n00028| \n00029| const createSubtypes = (t: any): POTSSubtype[] => [\n00030|   {\n00031|     id: 'hypovolemic',\n00032|     name: t.subtype.subtypes.hypovolemic.name,\n00033|     description: t.subtype.subtypes.hypovolemic.description,\n00034|     icon: Droplets,\n00035|     color: 'blue',\n00036|     criteria: t.subtype.subtypes.hypovolemic.criteria.map((desc: string, index: number) => ({\n00037|       id: ['low_bp', 'thirst', 'salt_craving', 'volume_depletion', 'renin_high'][index],\n00038|       description: desc,\n00039|       checked: false\n00040|     })),\n00041|     treatments: {\n00042|       nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n00043|       firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n00044|       secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n00045|     }\n\n(File has more lines. Use 'offset' parameter to read beyond line 45)\n</file>",
+    "metadata": {
+      "preview": "  }\n}\n\nconst createSubtypes = (t: any): POTSSubtype[] => [\n  {\n    id: 'hypovolemic',\n    name: t.subtype.subtypes.hypovolemic.name,\n    description: t.subtype.subtypes.hypovolemic.description,\n    icon: Droplets,\n    color: 'blue',\n    criteria: t.subtype.subtypes.hypovolemic.criteria.map((desc: string, index: number) => ({\n      id: ['low_bp', 'thirst', 'salt_craving', 'volume_depletion', 'renin_high'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n    }"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758267862470,
+      "end": 1758267862472
+    }
+  }
+}

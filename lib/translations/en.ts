@@ -485,11 +485,11 @@ export const en: Translation = {
       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',
       description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',
       criteria: [
-        'Heart rate increase ≥30 bpm within 10 minutes of standing',
-        'Sustained heart rate ≥120 bpm while standing',
-        'Orthostatic symptoms (dizziness, palpitations, fatigue)',
-        'Symptoms present for ≥3 months',
-        'Absence of orthostatic hypotension'
+        'Heart rate increase ≥30 bpm within 10 minutes of standing (≥40 bpm for ages 12-19)',
+        'Sustained heart rate ≥120 bpm while standing OR sustained tachycardia',
+        'Orthostatic symptoms: dizziness, palpitations, fatigue, brain fog, or syncope',
+        'Chronic symptoms present for ≥3 months',
+        'Absence of orthostatic hypotension (SBP drop <20 mmHg or DBP drop <10 mmHg)'
       ]
     },
     results: {
@@ -764,10 +764,10 @@ export const en: Translation = {
       fullName: 'Postural Orthostatic Tachycardia Syndrome',
       icdCode: 'I47.1',
       criteria: [
-        'HR increase ≥30 bpm on standing',
-        'Orthostatic symptoms',
+        'HR increase ≥30 bpm on standing (≥40 for age 12-19)',
+        'Orthostatic symptoms (dizziness, palpitations, fatigue)',
         'Chronic duration ≥3 months',
-        'No orthostatic hypotension'
+        'No orthostatic hypotension (SBP <20mmHg, DBP <10mmHg drop)'
       ]
     }
   },

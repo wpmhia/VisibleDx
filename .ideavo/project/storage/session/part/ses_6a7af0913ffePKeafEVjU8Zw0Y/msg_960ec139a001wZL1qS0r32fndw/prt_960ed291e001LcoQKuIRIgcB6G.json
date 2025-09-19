@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ed291e001LcoQKuIRIgcB6G",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DtBsF17LEosZ9ky27Ce8pf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 760,
+      "limit": 30
+    },
+    "output": "<file>\n00761|     },\n00762|     pots: {\n00763|       name: 'POTS',\n00764|       fullName: 'Postural Orthostatic Tachycardia Syndrome',\n00765|       icdCode: 'I47.1',\n00766|       criteria: [\n00767|         'HR increase ≥30 bpm on standing',\n00768|         'Orthostatic symptoms',\n00769|         'Chronic duration ≥3 months',\n00770|         'No orthostatic hypotension'\n00771|       ]\n00772|     }\n00773|   },\n00774| \n00775|   navigation: {\n00776|     assessmentModules: 'Assessment Modules',\n00777|     guidelines: 'Guidelines',\n00778|     diagnosticTools: 'Educational Tools',\n00779|     clinicalGuidelines: 'Clinical Guidelines & References',\n00780|     guidelinesDescription: 'Evidence-based guidelines used in InvisibleDx educational modules',\n00781|     assessmentModulesSection: 'Assessment Modules',\n00782|     guidelinesSection: 'Guidelines & References',\n00783|     moreGuidelines: 'more guidelines',\n00784|     smartBadge: 'Smart'\n00785|   },\n00786| \n00787|   languages: {\n00788|     en: 'English',\n00789|     nl: 'Nederlands',\n00790|     da: 'Dansk'\n\n(File has more lines. Use 'offset' parameter to read beyond line 790)\n</file>",
+    "metadata": {
+      "preview": "    },\n    pots: {\n      name: 'POTS',\n      fullName: 'Postural Orthostatic Tachycardia Syndrome',\n      icdCode: 'I47.1',\n      criteria: [\n        'HR increase ≥30 bpm on standing',\n        'Orthostatic symptoms',\n        'Chronic duration ≥3 months',\n        'No orthostatic hypotension'\n      ]\n    }\n  },\n\n  navigation: {\n    assessmentModules: 'Assessment Modules',\n    guidelines: 'Guidelines',\n    diagnosticTools: 'Educational Tools',\n    clinicalGuidelines: 'Clinical Guidelines & References',\n    guidelinesDescription: 'Evidence-based guidelines used in InvisibleDx educational modules',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758267779381,
+      "end": 1758267779382
+    }
+  }
+}

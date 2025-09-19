@@ -1,0 +1,73 @@
+{
+  "id": "prt_960ecb1c3001kg654t7hwBI0Fw",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01Dt5qN8H2DjBUFFnmqr9kx1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Analyze current POTS implementation in the app",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "analyze-pots"
+        },
+        {
+          "content": "Review POTS diagnostic flowchart requirements",
+          "status": "pending",
+          "priority": "high",
+          "id": "review-pots-flowchart"
+        },
+        {
+          "content": "Update POTS logic to match flowchart if needed",
+          "status": "pending",
+          "priority": "high",
+          "id": "update-pots-logic"
+        },
+        {
+          "content": "Test POTS implementation",
+          "status": "pending",
+          "priority": "medium",
+          "id": "test-pots"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Analyze current POTS implementation in the app\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"analyze-pots\"\n  },\n  {\n    \"content\": \"Review POTS diagnostic flowchart requirements\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"review-pots-flowchart\"\n  },\n  {\n    \"content\": \"Update POTS logic to match flowchart if needed\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"update-pots-logic\"\n  },\n  {\n    \"content\": \"Test POTS implementation\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"test-pots\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Analyze current POTS implementation in the app",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "analyze-pots"
+        },
+        {
+          "content": "Review POTS diagnostic flowchart requirements",
+          "status": "pending",
+          "priority": "high",
+          "id": "review-pots-flowchart"
+        },
+        {
+          "content": "Update POTS logic to match flowchart if needed",
+          "status": "pending",
+          "priority": "high",
+          "id": "update-pots-logic"
+        },
+        {
+          "content": "Test POTS implementation",
+          "status": "pending",
+          "priority": "medium",
+          "id": "test-pots"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758267751019,
+      "end": 1758267751049
+    }
+  }
+}

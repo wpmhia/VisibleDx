@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ecc756001ewhGqubMipxeaG",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01E49Esa94pHV8uU2cZxzwbY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "POTS",
+      "include": "*.tsx"
+    },
+    "output": "Found 46 matches\n/home/user/project/components/disclaimer.tsx:\n  Line 105:                 ESC POTS Guidelines\n\n/home/user/project/components/navigation.tsx:\n  Line 116:     title: 'POTS - ESC Guidelines (2018)',\n  Line 121:     title: 'POTS - AAS/EFAS Consensus (2021)',\n\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 41:   const getPOTSCriteria = () => t.criteria.pots.criteria.map((desc, index) => ({\n  Line 49:   const [potsChecked, setPotsChecked] = useState(() => getPOTSCriteria())\n  Line 76:       const newCriteria = getPOTSCriteria()\n  Line 96:   const handlePOTSChange = (id: string, checked: boolean) => {\n  Line 130:     // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n  Line 155:       report += \"• No criteria met for ME/CFS, Long COVID, or POTS\\n\"\n  Line 289:                       <strong>POTS Management:</strong>\n  Line 304:                   setPotsChecked(getPOTSCriteria())\n  Line 435:                       onCheckedChange={(checked) => handlePOTSChange(criterion.id, !!checked)}\n\n/home/user/project/app/layout.tsx:\n  Line 13:   title: 'InvisibleDx: ME/CFS · Long COVID · POTS',\n\n/home/user/project/app/new-patient/page.tsx:\n  Line 39:     meetsPOTS: boolean\n  Line 76:     meetsPOTS: false\n  Line 245:       soap += `  - POTS Criteria: ${standTest.meetsPOTS ? t.soapNotes.potsCriteriaMet : t.soapNotes.potsNotMet}\\n`\n  Line 259:     if (diagnoses.pots.met) positiveDiagnoses.push(`POTS (I47.1) - ${diagnoses.pots.confidence} confidence`)\n  Line 296:       soap += `POTS Management:\\n`\n  Line 306:     soap += `  • Repeat stand test if POTS suspected but initial test inconclusive\\n`\n  Line 357:     const hasOrthostatic = quickScreen.answers[6] || standTest.meetsPOTS\n  Line 366:     // POTS criteria\n  Line 367:     const potsMet = standTest.meetsPOTS && quickScreen.answers[8] && (quickScreen.answers[5] || quickScreen.answers[6])\n  Line 445:                       <h3 className=\"font-semibold text-sm\">POTS (I47.1)</h3>\n  Line 479:                     <p><strong>{t.newPatient.results.potsCriteria}:</strong> {patientData.standTest.meetsPOTS ? t.common.met : t.common.notMet}</p>\n  Line 821:                       const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false\n  Line 829:                           meetsPOTS,\n  Line 839:                 <Alert className={patientData.standTest.meetsPOTS ? 'border-red-200 bg-red-50' : 'border-green-200 bg-green-50'}>\n  Line 843:                     {t.newPatient.standTest.potsCriteria} (≥30 {t.common.bpm}): {patientData.standTest.meetsPOTS ? t.common.met.toUpperCase() : t.common.notMet}\n\n/home/user/project/components/help-system.tsx:\n  Line 57:       content: `InvisibleDx is an educational tool for learning ME/CFS, Long COVID, and POTS diagnostic criteria. \n  Line 87:       content: `Learn the NASA lean test protocol for POTS assessment:\n  Line 92: 4. Review POTS diagnostic criteria\n  Line 119: • ESC POTS guidelines\n\n/home/user/project/app/red-flag-checker/page.tsx:\n  Line 197:                         Patient can proceed to targeted ME/CFS, Long COVID, or POTS assessment.\n\n/home/user/project/app/subtype-advisor/page.tsx:\n  Line 15: interface POTSSubtype {\n  Line 29: const createSubtypes = (t: any): POTSSubtype[] => [\n\n/home/user/project/app/stand-test/page.tsx:\n  Line 145:     // POTS criteria: HR increase ≥30 bpm (≥40 for ages 12-19)\n  Line 147:     const meetsPOTSCriteria = hrIncrease >= potsThreshold\n  Line 159:       meetsPOTSCriteria,\n  Line 192:                     results.meetsPOTSCriteria \n  Line 197:                   {results.meetsPOTSCriteria ? t.standTest.results.potsMet : t.standTest.results.potsNotMet}\n  Line 245:               {results.meetsPOTSCriteria && (\n  Line 249:                     <strong>POTS Criteria Met:</strong> Heart rate increase of {results.hrIncrease} bpm \n  Line 250:                     exceeds the threshold of {results.potsThreshold} bpm. Consider POTS subtyping and \n  Line 262:                   {results.meetsPOTSCriteria ? \n  Line 278:                   {results.meetsPOTSCriteria && (\n  Line 279:                     <p>• Continue to Subtype & Treatment Advisor for POTS management</p>",
+    "metadata": {
+      "matches": 46,
+      "truncated": false
+    },
+    "title": "POTS",
+    "time": {
+      "start": 1758267754824,
+      "end": 1758267754847
+    }
+  }
+}

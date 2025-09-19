@@ -1,0 +1,24 @@
+{
+  "id": "prt_960ec3580001lI5f2pgDmqbZ4e",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "list",
+  "callID": "toolu_01XYnytfhyNVMEkTgUhh7dkJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "path": "/home/user/project"
+    },
+    "output": "/home/user/project/\n  .ideavo-attachments/\n    508_2024_Article_2372.pdf\n    Untitled_document.docx\n  .next/\n    server/\n      app/\n        page.js\n        page_client-reference-manifest.js\n      static/\n        webpack/\n          633457081244afec._.hot-update.json\n      vendor-chunks/\n        @floating-ui.js\n        @radix-ui.js\n        @swc.js\n        @vercel.js\n        aria-hidden.js\n        class-variance-authority.js\n        clsx.js\n        get-nonce.js\n        lucide-react.js\n        next.js\n        react-remove-scroll-bar.js\n        react-remove-scroll.js\n        react-style-singleton.js\n        tailwind-merge.js\n        tslib.js\n        use-callback-ref.js\n        use-sidecar.js\n      app-paths-manifest.json\n      edge-runtime-webpack.js\n      interception-route-rewrite-manifest.js\n      middleware-build-manifest.js\n      middleware-manifest.json\n      middleware-react-loadable-manifest.js\n      middleware.js\n      next-font-manifest.js\n      next-font-manifest.json\n      pages-manifest.json\n      server-reference-manifest.js\n      server-reference-manifest.json\n      webpack-runtime.js\n    static/\n      chunks/\n        app/\n          layout.js\n          page.js\n        app-pages-internals.js\n        main-app.js\n        polyfills.js\n        webpack.js\n      css/\n        app/\n          layout.css\n      development/\n        _buildManifest.js\n        _ssgManifest.js\n      media/\n        19cfc7226ec3afaa-s.woff2\n        21350d82a1f187e9-s.woff2\n        8e9860b6e62d6359-s.woff2\n        ba9851c3c22cd980-s.woff2\n        c5fe6dc8356a8c31-s.woff2\n        df0a9ae256c0569c-s.woff2\n        e4af272ccee01ff0-s.p.woff2\n      webpack/\n        app/\n          layout.0a1dff3fae4265e3.hot-update.js\n        0a1dff3fae4265e3.webpack.hot-update.json\n        633457081244afec._.hot-update.json\n        webpack.0a1dff3fae4265e3.hot-update.js\n    types/\n      app/\n        layout.ts\n        page.ts\n      package.json\n    app-build-manifest.json\n    build-manifest.json\n    package.json\n    react-loadable-manifest.json\n    trace\n  components/\n    breadcrumb-nav.tsx\n    disclaimer.tsx\n    language-selector.tsx\n    navigation-controls.tsx\n    navigation.tsx\n    ppg-camera.tsx\n    progress-indicator.tsx\n    scroll-restoration.tsx\n    status-indicator.tsx\n  hooks/\n    use-keyboard-shortcuts.ts\n    use-toast.ts\n  lib/\n    translations/\n      da.ts\n      en.ts\n      index.ts\n      nl.ts\n      types.ts\n    design-system.ts\n    env-config.ts\n    language-context.tsx\n    utils.ts\n  prisma/\n    schema.prisma\n  public/\n    scripts/\n      iframe-navigation.js\n  .env\n  .gitignore\n  LICENSE\n  MULTILINGUAL_README.md\n  bun.lock\n  components.json\n  ideavo-server.log\n  middleware.ts\n  next-env.d.ts\n  next.config.js\n  package-lock.json\n  package.json\n  postcss.config.js\n  tailwind.config.ts\n  tsconfig.json\n",
+    "metadata": {
+      "count": 100,
+      "truncated": true
+    },
+    "title": "",
+    "time": {
+      "start": 1758267717147,
+      "end": 1758267717393
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "prt_960f00af8001fnO3ZknSH5FzTO",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(pots): implement comprehensive diagnostic flowchart",
+  "cost": 1.2114378,
+  "tokens": {
+    "input": 0,
+    "output": 899,
+    "reasoning": 0,
+    "cache": {
+      "write": 418,
+      "read": 89780
+    }
+  }
+}

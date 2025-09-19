@@ -363,8 +363,29 @@ export default function NewPatientWorkflow() {
     const hasMultiSystem = quickScreen.score >= 4
     const longCovidMet = hasCovidHistory && hasDuration && hasMultiSystem
     
-    // POTS criteria
-    const potsMet = standTest.meetsPOTS && quickScreen.answers[8] && (quickScreen.answers[5] || quickScreen.answers[6])
+    // Enhanced POTS criteria following ESC 2018/AAS-EFAS 2021 flowchart
+    const potsHRCriteria = standTest.meetsPOTS // HR increase ≥30 bpm
+    const potsSymptoms = quickScreen.answers[5] || quickScreen.answers[6] // Orthostatic symptoms
+    const potsDuration = quickScreen.answers[8] // ≥3 months duration
+    
+    // Additional POTS considerations
+    const hasOrthostatic症状s = quickScreen.answers[5] || quickScreen.answers[6] // dizziness, palpitations
+    const noOrthostatiHypotension = !quickScreen.answers[14] // Assuming question 14 is about OH
+    const sustainedTachycardia = standTest.peakHR && standTest.peakHR >= 120
+    
+    // POTS diagnosis requires: HR criteria + symptoms + duration + no OH
+    let potsConfidence = 'low'
+    let potsMet = false
+    
+    if (potsHRCriteria && potsSymptoms && potsDuration) {
+      potsMet = true
+      // Determine confidence level
+      if (sustainedTachycardia && noOrthostatiHypotension) {
+        potsConfidence = 'high'
+      } else if (potsHRCriteria && potsSymptoms) {
+        potsConfidence = 'medium'
+      }
+    }
     
     setPatientData(prev => ({
       ...prev,
@@ -379,7 +400,7 @@ export default function NewPatientWorkflow() {
         },
         pots: { 
           met: potsMet, 
-          confidence: potsMet ? 'high' : 'low' 
+          confidence: potsConfidence
         }
       }
     }))
@@ -818,7 +839,31 @@ export default function NewPatientWorkflow() {
                     onChange={(e) => {
                       const peakHR = parseInt(e.target.value) || null
                       const baselineHR = patientData.standTest.baselineHR
-                      const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false
+                      
+                      // Enhanced POTS criteria calculation
+                      let meetsPOTS = false
+                      let potsSubtype = ''
+                      
+                      if (peakHR && baselineHR) {
+                        const hrIncrease = peakHR - baselineHR
+                        const age = patientData.demographics.age || 25
+                        
+                        // Age-specific HR thresholds
+                        const potsThreshold = (age >= 12 && age <= 19) ? 40 : 30
+                        
+                        if (hrIncrease >= potsThreshold) {
+                          meetsPOTS = true
+                          
+                          // Determine potential subtype based on HR pattern
+                          if (peakHR >= 120) {
+                            potsSubtype = 'hyperadrenergic'
+                          } else if (hrIncrease >= 40) {
+                            potsSubtype = 'neuropathic'
+                          } else {
+                            potsSubtype = 'hypovolemic'
+                          }
+                        }
+                      }
                       
                       setPatientData(prev => ({
                         ...prev,

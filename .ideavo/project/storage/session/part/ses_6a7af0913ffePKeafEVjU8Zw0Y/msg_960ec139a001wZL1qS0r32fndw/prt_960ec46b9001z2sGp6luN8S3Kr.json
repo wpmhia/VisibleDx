@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ec46b9001z2sGp6luN8S3Kr",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01J5X7feFuz2orVh1A5Mj3oh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && file .ideavo-attachments/Untitled_document.docx",
+      "description": "Check file type of the POTS flowchart document"
+    },
+    "output": ".ideavo-attachments/Untitled_document.docx: Microsoft Word 2007+\n",
+    "metadata": {
+      "output": ".ideavo-attachments/Untitled_document.docx: Microsoft Word 2007+\n",
+      "exit": 0,
+      "description": "Check file type of the POTS flowchart document"
+    },
+    "title": "cd /home/user/project && file .ideavo-attachments/Untitled_document.docx",
+    "time": {
+      "start": 1758267722549,
+      "end": 1758267722835
+    }
+  }
+}

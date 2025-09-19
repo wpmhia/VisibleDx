@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ed19b5001A8HyU27qH19Sg3",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01QhmrrgnuL7oZdmDQJdv6ja",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "pots:",
+      "include": "*.ts"
+    },
+    "output": "Found 12 matches\n/home/user/project/lib/translations/da.ts:\n  Line 122:       pots: {\n  Line 492:     pots: {\n  Line 771:     pots: {\n\n/home/user/project/lib/translations/nl.ts:\n  Line 122:       pots: {\n  Line 484:     pots: {\n  Line 762:     pots: {\n\n/home/user/project/lib/translations/en.ts:\n  Line 122:       pots: {\n  Line 484:     pots: {\n  Line 762:     pots: {\n\n/home/user/project/lib/translations/types.ts:\n  Line 123:       pots: {\n  Line 376:     pots: {\n  Line 549:     pots: {",
+    "metadata": {
+      "matches": 12,
+      "truncated": false
+    },
+    "title": "pots:",
+    "time": {
+      "start": 1758267775781,
+      "end": 1758267775798
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ee53900013pn5CLudqVZp6m",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01SLmbhHNBwwKc7Sif7iWDdb",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      criteria: [\n        'HR increase ≥30 bpm on standing',\n        'Orthostatic symptoms',\n        'Chronic duration ≥3 months',\n        'No orthostatic hypotension'\n      ]",
+      "newString": "      criteria: [\n        'HR increase ≥30 bpm on standing (≥40 for age 12-19)',\n        'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n        'Chronic duration ≥3 months',\n        'No orthostatic hypotension (SBP <20mmHg, DBP <10mmHg drop)'\n      ]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -763,12 +763,12 @@\n     name: 'POTS',\n     fullName: 'Postural Orthostatic Tachycardia Syndrome',\n     icdCode: 'I47.1',\n     criteria: [\n-      'HR increase ≥30 bpm on standing',\n-      'Orthostatic symptoms',\n+      'HR increase ≥30 bpm on standing (≥40 for age 12-19)',\n+      'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n       'Chronic duration ≥3 months',\n-      'No orthostatic hypotension'\n+      'No orthostatic hypotension (SBP <20mmHg, DBP <10mmHg drop)'\n     ]\n   }\n },\n \n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758267857939,
+      "end": 1758267857945
+    }
+  }
+}

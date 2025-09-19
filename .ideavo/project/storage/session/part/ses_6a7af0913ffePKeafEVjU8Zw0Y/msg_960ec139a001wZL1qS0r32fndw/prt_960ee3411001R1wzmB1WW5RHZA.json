@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ee3411001R1wzmB1WW5RHZA",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0171nBqxzNA1i6fuAC4mPQzD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      criteria: [\n        'Heart rate increase ≥30 bpm within 10 minutes of standing',\n        'Sustained heart rate ≥120 bpm while standing',\n        'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n        'Symptoms present for ≥3 months',\n        'Absence of orthostatic hypotension'\n      ]",
+      "newString": "      criteria: [\n        'Heart rate increase ≥30 bpm within 10 minutes of standing (≥40 bpm for ages 12-19)',\n        'Sustained heart rate ≥120 bpm while standing OR sustained tachycardia',\n        'Orthostatic symptoms: dizziness, palpitations, fatigue, brain fog, or syncope',\n        'Chronic symptoms present for ≥3 months',\n        'Absence of orthostatic hypotension (SBP drop <20 mmHg or DBP drop <10 mmHg)'\n      ]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -484,13 +484,13 @@\n pots: {\n   title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n   description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',\n   criteria: [\n-    'Heart rate increase ≥30 bpm within 10 minutes of standing',\n-    'Sustained heart rate ≥120 bpm while standing',\n-    'Orthostatic symptoms (dizziness, palpitations, fatigue)',\n-    'Symptoms present for ≥3 months',\n-    'Absence of orthostatic hypotension'\n+    'Heart rate increase ≥30 bpm within 10 minutes of standing (≥40 bpm for ages 12-19)',\n+    'Sustained heart rate ≥120 bpm while standing OR sustained tachycardia',\n+    'Orthostatic symptoms: dizziness, palpitations, fatigue, brain fog, or syncope',\n+    'Chronic symptoms present for ≥3 months',\n+    'Absence of orthostatic hypotension (SBP drop <20 mmHg or DBP drop <10 mmHg)'\n   ]\n },\n results: {\n   complete: 'Diagnostic Criteria Assessment Complete',\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758267851601,
+      "end": 1758267851614
+    }
+  }
+}

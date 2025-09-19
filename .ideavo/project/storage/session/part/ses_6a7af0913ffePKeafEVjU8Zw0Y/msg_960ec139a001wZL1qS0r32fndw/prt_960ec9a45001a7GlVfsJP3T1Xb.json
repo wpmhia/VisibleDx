@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ec9a45001a7GlVfsJP3T1Xb",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01DBQfQcy2GbUy2XAyBuCmt2",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && unzip -j .ideavo-attachments/Untitled_document.docx word/media/image1.png -d /tmp && ls -la /tmp/image1.png",
+      "description": "Extract the flowchart image from the Word document"
+    },
+    "output": "Archive:  .ideavo-attachments/Untitled_document.docx\n  inflating: /tmp/image1.png         \n-rw-r--r-- 1 user user 114978 Sep 19 00:40 /tmp/image1.png\n",
+    "metadata": {
+      "output": "Archive:  .ideavo-attachments/Untitled_document.docx\n  inflating: /tmp/image1.png         \n-rw-r--r-- 1 user user 114978 Sep 19 00:40 /tmp/image1.png\n",
+      "exit": 0,
+      "description": "Extract the flowchart image from the Word document"
+    },
+    "title": "cd /home/user/project && unzip -j .ideavo-attachments/Untitled_document.docx word/media/image1.png -d /tmp && ls -la /tmp/image1.png",
+    "time": {
+      "start": 1758267743706,
+      "end": 1758267743737
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_960ec74be00164ZaE8h6DLCJZJ",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01ATrSYbMQ6FBSU82D3HWNoc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && unzip -l .ideavo-attachments/Untitled_document.docx",
+      "description": "List contents of the Word document"
+    },
+    "output": "Archive:  .ideavo-attachments/Untitled_document.docx\n  Length      Date    Time    Name\n---------  ---------- -----   ----\n     1690  2025-09-19 00:40   word/numbering.xml\n     2119  2025-09-19 00:40   word/settings.xml\n     1719  2025-09-19 00:40   word/fontTable.xml\n     5349  2025-09-19 00:40   word/styles.xml\n     3010  2025-09-19 00:40   word/document.xml\n      944  2025-09-19 00:40   word/_rels/document.xml.rels\n      298  2025-09-19 00:40   _rels/.rels\n     7643  2025-09-19 00:40   word/theme/theme1.xml\n   114978  2025-09-19 00:40   word/media/image1.png\n     1119  2025-09-19 00:40   [Content_Types].xml\n---------                     -------\n   138869                     10 files\n",
+    "metadata": {
+      "output": "Archive:  .ideavo-attachments/Untitled_document.docx\n  Length      Date    Time    Name\n---------  ---------- -----   ----\n     1690  2025-09-19 00:40   word/numbering.xml\n     2119  2025-09-19 00:40   word/settings.xml\n     1719  2025-09-19 00:40   word/fontTable.xml\n     5349  2025-09-19 00:40   word/styles.xml\n     3010  2025-09-19 00:40   word/document.xml\n      944  2025-09-19 00:40   word/_rels/document.xml.rels\n      298  2025-09-19 00:40   _rels/.rels\n     7643  2025-09-19 00:40   word/theme/theme1.xml\n   114978  2025-09-19 00:40   word/media/image1.png\n     1119  2025-09-19 00:40   [Content_Types].xml\n---------                     -------\n   138869                     10 files\n",
+      "exit": 0,
+      "description": "List contents of the Word document"
+    },
+    "title": "cd /home/user/project && unzip -l .ideavo-attachments/Untitled_document.docx",
+    "time": {
+      "start": 1758267733807,
+      "end": 1758267733848
+    }
+  }
+}

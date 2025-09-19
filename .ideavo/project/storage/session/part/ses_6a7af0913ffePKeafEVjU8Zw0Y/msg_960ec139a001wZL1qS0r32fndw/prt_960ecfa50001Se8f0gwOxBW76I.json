@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ecfa50001Se8f0gwOxBW76I",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01NtjKwwanzYQb3s8LBbkWoa",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 125,
+      "limit": 15
+    },
+    "output": "<file>\n00126|       icdCode: t.conditions.longCovid.icdCode,\n00127|       confidence: longCovidMet ? 'high' : 'low'\n00128|     })\n00129| \n00130|     // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n00131|     const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length\n00132|     const potsMet = potsEssential >= 4\n00133|     \n00134|     diagnoses.push({\n00135|       id: 'pots',\n00136|       condition: t.conditions.pots.fullName,\n00137|       met: potsMet,\n00138|       criteria: potsChecked,\n00139|       icdCode: t.conditions.pots.icdCode,\n00140|       confidence: potsMet ? 'high' : 'low'\n\n(File has more lines. Use 'offset' parameter to read beyond line 140)\n</file>",
+    "metadata": {
+      "preview": "      icdCode: t.conditions.longCovid.icdCode,\n      confidence: longCovidMet ? 'high' : 'low'\n    })\n\n    // POTS Diagnosis (requires HR increase + symptoms + duration + no OH)\n    const potsEssential = potsChecked.filter(c => ['hr_increase', 'symptoms', 'duration_pots', 'no_oh'].includes(c.id) && c.met).length\n    const potsMet = potsEssential >= 4\n    \n    diagnoses.push({\n      id: 'pots',\n      condition: t.conditions.pots.fullName,\n      met: potsMet,\n      criteria: potsChecked,\n      icdCode: t.conditions.pots.icdCode,\n      confidence: potsMet ? 'high' : 'low'"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758267767887,
+      "end": 1758267767889
+    }
+  }
+}

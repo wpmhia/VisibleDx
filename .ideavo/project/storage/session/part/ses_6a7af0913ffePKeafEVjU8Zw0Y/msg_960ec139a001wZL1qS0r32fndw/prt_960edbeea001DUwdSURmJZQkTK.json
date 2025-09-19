@@ -1,0 +1,26 @@
+{
+  "id": "prt_960edbeea001DUwdSURmJZQkTK",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BJQUbGHQeLuFijyywseS8A",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "                    onChange={(e) => {\n                      const peakHR = parseInt(e.target.value) || null\n                      const baselineHR = patientData.standTest.baselineHR\n                      const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false\n                      \n                      setPatientData(prev => ({\n                        ...prev,\n                        standTest: {\n                          ...prev.standTest,\n                          peakHR,\n                          sustainedHR: peakHR,\n                          meetsPOTS,\n                          performed: true\n                        }\n                      }))\n                    }}",
+      "newString": "                    onChange={(e) => {\n                      const peakHR = parseInt(e.target.value) || null\n                      const baselineHR = patientData.standTest.baselineHR\n                      \n                      // Enhanced POTS criteria calculation\n                      let meetsPOTS = false\n                      let potsSubtype = ''\n                      \n                      if (peakHR && baselineHR) {\n                        const hrIncrease = peakHR - baselineHR\n                        const age = patientData.demographics.age || 25\n                        \n                        // Age-specific HR thresholds\n                        const potsThreshold = (age >= 12 && age <= 19) ? 40 : 30\n                        \n                        if (hrIncrease >= potsThreshold) {\n                          meetsPOTS = true\n                          \n                          // Determine potential subtype based on HR pattern\n                          if (peakHR >= 120) {\n                            potsSubtype = 'hyperadrenergic'\n                          } else if (hrIncrease >= 40) {\n                            potsSubtype = 'neuropathic'\n                          } else {\n                            potsSubtype = 'hypovolemic'\n                          }\n                        }\n                      }\n                      \n                      setPatientData(prev => ({\n                        ...prev,\n                        standTest: {\n                          ...prev.standTest,\n                          peakHR,\n                          sustainedHR: peakHR,\n                          meetsPOTS,\n                          performed: true\n                        }\n                      }))\n                    }}"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -838,10 +838,34 @@\n value={patientData.standTest.peakHR || ''}\n onChange={(e) => {\n   const peakHR = parseInt(e.target.value) || null\n   const baselineHR = patientData.standTest.baselineHR\n-  const meetsPOTS = peakHR && baselineHR ? (peakHR - baselineHR >= 30) : false\n   \n+  // Enhanced POTS criteria calculation\n+  let meetsPOTS = false\n+  let potsSubtype = ''\n+  \n+  if (peakHR && baselineHR) {\n+    const hrIncrease = peakHR - baselineHR\n+    const age = patientData.demographics.age || 25\n+    \n+    // Age-specific HR thresholds\n+    const potsThreshold = (age >= 12 && age <= 19) ? 40 : 30\n+    \n+    if (hrIncrease >= potsThreshold) {\n+      meetsPOTS = true\n+      \n+      // Determine potential subtype based on HR pattern\n+      if (peakHR >= 120) {\n+        potsSubtype = 'hyperadrenergic'\n+      } else if (hrIncrease >= 40) {\n+        potsSubtype = 'neuropathic'\n+      } else {\n+        potsSubtype = 'hypovolemic'\n+      }\n+    }\n+  }\n+  \n   setPatientData(prev => ({\n     ...prev,\n     standTest: {\n       ...prev.standTest,\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758267824514,
+      "end": 1758267824526
+    }
+  }
+}

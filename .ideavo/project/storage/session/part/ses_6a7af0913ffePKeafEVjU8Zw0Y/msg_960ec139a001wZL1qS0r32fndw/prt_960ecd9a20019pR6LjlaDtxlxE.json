@@ -1,0 +1,25 @@
+{
+  "id": "prt_960ecd9a20019pR6LjlaDtxlxE",
+  "messageID": "msg_960ec139a001wZL1qS0r32fndw",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01BcjjGpq6g62qqa7NiW8vjj",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/stand-test/page.tsx",
+      "offset": 140,
+      "limit": 30
+    },
+    "output": "<file>\n00141|     const baselineHR = lyingReadings.reduce((sum, r) => sum + r.hr, 0) / lyingReadings.length\n00142|     const maxStandingHR = Math.max(...standingReadings.map(r => r.hr))\n00143|     const hrIncrease = maxStandingHR - baselineHR\n00144| \n00145|     // POTS criteria: HR increase ≥30 bpm (≥40 for ages 12-19)\n00146|     const potsThreshold = 30\n00147|     const meetsPOTSCriteria = hrIncrease >= potsThreshold\n00148| \n00149|     // Calculate sustained HR increase (average of standing phase)\n00150|     const sustainedStandingHR = standingReadings.reduce((sum, r) => sum + r.hr, 0) / standingReadings.length\n00151|     const sustainedHRIncrease = sustainedStandingHR - baselineHR\n00152| \n00153|     return {\n00154|       baselineHR: Math.round(baselineHR),\n00155|       maxStandingHR: Math.round(maxStandingHR),\n00156|       sustainedStandingHR: Math.round(sustainedStandingHR),\n00157|       hrIncrease: Math.round(hrIncrease),\n00158|       sustainedHRIncrease: Math.round(sustainedHRIncrease),\n00159|       meetsPOTSCriteria,\n00160|       potsThreshold\n00161|     }\n00162|   }\n00163| \n00164|   const formatTime = (seconds: number) => {\n00165|     const mins = Math.floor(seconds / 60)\n00166|     const secs = seconds % 60\n00167|     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`\n00168|   }\n00169| \n00170|   const currentPhaseData = getTestPhases()[currentPhase]\n\n(File has more lines. Use 'offset' parameter to read beyond line 170)\n</file>",
+    "metadata": {
+      "preview": "    const baselineHR = lyingReadings.reduce((sum, r) => sum + r.hr, 0) / lyingReadings.length\n    const maxStandingHR = Math.max(...standingReadings.map(r => r.hr))\n    const hrIncrease = maxStandingHR - baselineHR\n\n    // POTS criteria: HR increase ≥30 bpm (≥40 for ages 12-19)\n    const potsThreshold = 30\n    const meetsPOTSCriteria = hrIncrease >= potsThreshold\n\n    // Calculate sustained HR increase (average of standing phase)\n    const sustainedStandingHR = standingReadings.reduce((sum, r) => sum + r.hr, 0) / standingReadings.length\n    const sustainedHRIncrease = sustainedStandingHR - baselineHR\n\n    return {\n      baselineHR: Math.round(baselineHR),\n      maxStandingHR: Math.round(maxStandingHR),\n      sustainedStandingHR: Math.round(sustainedStandingHR),\n      hrIncrease: Math.round(hrIncrease),\n      sustainedHRIncrease: Math.round(sustainedHRIncrease),\n      meetsPOTSCriteria,\n      potsThreshold"
+    },
+    "title": "app/stand-test/page.tsx",
+    "time": {
+      "start": 1758267759648,
+      "end": 1758267759652
+    }
+  }
+}
