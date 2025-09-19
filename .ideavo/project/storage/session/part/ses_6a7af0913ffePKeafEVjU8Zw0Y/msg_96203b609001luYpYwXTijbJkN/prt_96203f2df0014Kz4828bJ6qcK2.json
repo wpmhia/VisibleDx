@@ -1,0 +1,25 @@
+{
+  "id": "prt_96203f2df0014Kz4828bJ6qcK2",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_014CpLLz22Tsq6GrxqYT35Em",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "mixed",
+      "include": "*.ts"
+    },
+    "output": "Found 4 matches\n/home/user/project/lib/translations/en.ts:\n  Line 657:       mixedSubtype: 'Mixed Subtype Considerations: This patient also shows features of multiple subtypes. Consider combination therapy approaches and monitor response to initial treatment.',\n\n/home/user/project/lib/translations/da.ts:\n  Line 666:       mixedSubtype: 'Blandede Subtype Overvejelser: Denne patient viser også træk af flere subtyper. Overvej kombinationsterapi tilgange og overvåg respons på initial behandling.',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 657:       mixedSubtype: 'Gemengde Subtype Overwegingen: Deze patiënt toont ook kenmerken van meerdere subtypes. Overweeg combinatietherapie benaderingen en monitor respons op initiële behandeling.',\n\n/home/user/project/lib/translations/types.ts:\n  Line 458:       mixedSubtype: string",
+    "metadata": {
+      "matches": 4,
+      "truncated": false
+    },
+    "title": "mixed",
+    "time": {
+      "start": 1758286050440,
+      "end": 1758286050451
+    }
+  }
+}

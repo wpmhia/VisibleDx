@@ -1,0 +1,25 @@
+{
+  "id": "prt_96203d673001I4DTvBBgvfMZlT",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01GoubLxWQLvMyKSdQAj9D89",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 40,
+      "limit": 30
+    },
+    "output": "<file>\n00041|     treatments: {\n00042|       nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n00043|       firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n00044|       secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n00045|     }\n00046|   },\n00047|   {\n00048|     id: 'neuropathic',\n00049|     name: t.subtype.subtypes.neuropathic.name,\n00050|     description: t.subtype.subtypes.neuropathic.description,\n00051|     icon: Brain,\n00052|     color: 'purple',\n00053|     criteria: t.subtype.subtypes.neuropathic.criteria.map((desc: string, index: number) => ({\n00054|       id: ['distal_neuropathy', 'gi_dysfunction', 'anhidrosis', 'pupil_abnormal', 'diabetes_autoimmune'][index],\n00055|       description: desc,\n00056|       checked: false\n00057|     })),\n00058|     treatments: {\n00059|       nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n00060|       firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n00061|       secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine\n00062|     }\n00063|   },\n00064|   {\n00065|     id: 'hyperadrenergic',\n00066|     name: t.subtype.subtypes.hyperadrenergic.name,\n00067|     description: t.subtype.subtypes.hyperadrenergic.description,\n00068|     icon: Activity,\n00069|     color: 'red',\n00070|     criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({\n\n(File has more lines. Use 'offset' parameter to read beyond line 70)\n</file>",
+    "metadata": {
+      "preview": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine\n    }\n  },\n  {\n    id: 'neuropathic',\n    name: t.subtype.subtypes.neuropathic.name,\n    description: t.subtype.subtypes.neuropathic.description,\n    icon: Brain,\n    color: 'purple',\n    criteria: t.subtype.subtypes.neuropathic.criteria.map((desc: string, index: number) => ({\n      id: ['distal_neuropathy', 'gi_dysfunction', 'anhidrosis', 'pupil_abnormal', 'diabetes_autoimmune'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286043359,
+      "end": 1758286043365
+    }
+  }
+}

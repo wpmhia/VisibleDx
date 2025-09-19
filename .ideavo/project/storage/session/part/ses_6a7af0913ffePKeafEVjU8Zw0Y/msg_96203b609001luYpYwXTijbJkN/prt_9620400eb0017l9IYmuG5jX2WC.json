@@ -1,0 +1,25 @@
+{
+  "id": "prt_9620400eb0017l9IYmuG5jX2WC",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KLRzP9cATn7T2uEvW3eqVh",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 570,
+      "limit": 50
+    },
+    "output": "<file>\n00571|         ],\n00572|         treatments: {\n00573|           nonPharmacological: [\n00574|             'Compression garments',\n00575|             'Leg elevation',\n00576|             'Avoid heat exposure',\n00577|             'Small frequent meals'\n00578|           ],\n00579|           firstLine: [\n00580|             'Midodrine 2.5-10mg TID',\n00581|             'Pyridostigmine 30-60mg TID'\n00582|           ],\n00583|           secondLine: [\n00584|             'Droxidopa (if available)',\n00585|             'Alpha-lipoic acid for neuropathy',\n00586|             'IVIG for autoimmune cases'\n00587|           ]\n00588|         }\n00589|       },\n00590|       hyperadrenergic: {\n00591|         name: 'Hyperadrenergic POTS',\n00592|         description: 'Excessive sympathetic nervous system activation',\n00593|         criteria: [\n00594|           'Hypertension when standing',\n00595|           'Anxiety, panic attacks, tremor',\n00596|           'Migraine headaches',\n00597|           'Cold hands and feet',\n00598|           'Elevated standing norepinephrine >600 pg/mL'\n00599|         ],\n00600|         treatments: {\n00601|           nonPharmacological: [\n00602|             'Stress reduction techniques',\n00603|             'Avoid stimulants (caffeine)',\n00604|             'Regular sleep schedule',\n00605|             'Gentle exercise'\n00606|           ],\n00607|           firstLine: [\n00608|             'Propranolol 10-20mg BID-QID',\n00609|             'Clonidine 0.1-0.2mg BID'\n00610|           ],\n00611|           secondLine: [\n00612|             'Ivabradine 2.5-7.5mg BID',\n00613|             'Methyldopa',\n00614|             'Labetalol for hypertension'\n00615|           ]\n00616|         }\n00617|       },\n00618|       autoimmune: {\n00619|         name: 'Autoimmune POTS',\n00620|         description: 'Autoimmune-mediated autonomic dysfunction',\n\n(File has more lines. Use 'offset' parameter to read beyond line 620)\n</file>",
+    "metadata": {
+      "preview": "        ],\n        treatments: {\n          nonPharmacological: [\n            'Compression garments',\n            'Leg elevation',\n            'Avoid heat exposure',\n            'Small frequent meals'\n          ],\n          firstLine: [\n            'Midodrine 2.5-10mg TID',\n            'Pyridostigmine 30-60mg TID'\n          ],\n          secondLine: [\n            'Droxidopa (if available)',\n            'Alpha-lipoic acid for neuropathy',\n            'IVIG for autoimmune cases'\n          ]\n        }\n      },\n      hyperadrenergic: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286054434,
+      "end": 1758286054436
+    }
+  }
+}

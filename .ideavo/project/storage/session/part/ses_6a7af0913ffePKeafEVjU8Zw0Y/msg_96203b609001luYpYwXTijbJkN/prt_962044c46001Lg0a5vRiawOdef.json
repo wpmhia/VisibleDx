@@ -1,0 +1,25 @@
+{
+  "id": "prt_962044c46001Lg0a5vRiawOdef",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01H6BQy2QQUCGp4Ek7MsXFgX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 200,
+      "limit": 50
+    },
+    "output": "<file>\n00201|     const scores = calculateSubtypeScores()\n00202|     const primarySubtype = scores[0]\n00203|     const secondarySubtypes = scores.filter(s => s.percentage >= 40 && s.id !== primarySubtype.id)\n00204|     \n00205|     return (\n00206|       <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n00207|         <div className=\"container mx-auto px-4 max-w-5xl\">\n00208|           <Card>\n00209|             <CardHeader className=\"text-center\">\n00210|                 <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n00211|                 <Users className=\"h-6 w-6 text-blue-600\" />\n00212|                 {t.subtype.results.complete}\n00213|               </CardTitle>\n00214|               <CardDescription>\n00215|                 {t.subtype.results.description}\n00216|               </CardDescription>\n00217|             </CardHeader>\n00218|             <CardContent className=\"space-y-6\">\n00219|               <div className=\"text-center\">\n00220|                 <Badge className={`px-4 py-2 text-lg bg-${primarySubtype.color}-100 text-${primarySubtype.color}-800`}>\n00221|                   {t.subtype.results.primary}: {primarySubtype.name}\n00222|                 </Badge>\n00223|                 <p className=\"text-sm text-gray-600 mt-2\">\n00224|                   {primarySubtype.percentage}% {t.subtype.results.likelihood} ({primarySubtype.score}/{primarySubtype.maxScore} {t.common.criteria})\n00225|                 </p>\n00226|               </div>\n00227| \n00228|               <div className=\"grid md:grid-cols-2 gap-6\">\n00229|                 <Card className={`border-${primarySubtype.color}-200`}>\n00230|                   <CardHeader className=\"pb-3\">\n00231|                     <CardTitle className={`text-lg text-${primarySubtype.color}-800 flex items-center gap-2`}>\n00232|                       <primarySubtype.icon className=\"h-5 w-5\" />\n00233|                       {primarySubtype.name}\n00234|                     </CardTitle>\n00235|                     <CardDescription>{primarySubtype.description}</CardDescription>\n00236|                   </CardHeader>\n00237|                   <CardContent>\n00238|                     <div className=\"space-y-2\">\n00239|                       <h4 className=\"font-semibold text-sm\">{t.subtype.results.criteriaMetTitle}:</h4>\n00240|                       {primarySubtype.criteria.filter(c => c.checked).map((criterion, index) => (\n00241|                         <div key={index} className=\"text-sm flex items-center gap-2\">\n00242|                           <span className=\"text-green-600\">✓</span>\n00243|                           {criterion.description}\n00244|                         </div>\n00245|                       ))}\n00246|                     </div>\n00247|                   </CardContent>\n00248|                 </Card>\n00249| \n00250|                 <div className=\"space-y-4\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 250)\n</file>",
+    "metadata": {
+      "preview": "    const scores = calculateSubtypeScores()\n    const primarySubtype = scores[0]\n    const secondarySubtypes = scores.filter(s => s.percentage >= 40 && s.id !== primarySubtype.id)\n    \n    return (\n      <div className=\"min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8\">\n        <div className=\"container mx-auto px-4 max-w-5xl\">\n          <Card>\n            <CardHeader className=\"text-center\">\n                <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n                <Users className=\"h-6 w-6 text-blue-600\" />\n                {t.subtype.results.complete}\n              </CardTitle>\n              <CardDescription>\n                {t.subtype.results.description}\n              </CardDescription>\n            </CardHeader>\n            <CardContent className=\"space-y-6\">\n              <div className=\"text-center\">\n                <Badge className={`px-4 py-2 text-lg bg-${primarySubtype.color}-100 text-${primarySubtype.color}-800`}>"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286073805,
+      "end": 1758286073807
+    }
+  }
+}

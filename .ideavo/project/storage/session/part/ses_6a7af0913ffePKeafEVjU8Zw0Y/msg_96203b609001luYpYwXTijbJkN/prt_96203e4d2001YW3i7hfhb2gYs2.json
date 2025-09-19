@@ -1,0 +1,25 @@
+{
+  "id": "prt_96203e4d2001YW3i7hfhb2gYs2",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01W2StLzMp3NBpDDrQqupSdx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 75,
+      "limit": 30
+    },
+    "output": "<file>\n00076|       nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n00077|       firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n00078|       secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n00079|     }\n00080|   },\n00081|   {\n00082|     id: 'autoimmune',\n00083|     name: t.subtype.subtypes.autoimmune.name,\n00084|     description: t.subtype.subtypes.autoimmune.description,\n00085|     icon: Shield,\n00086|     color: 'green',\n00087|     criteria: t.subtype.subtypes.autoimmune.criteria.map((desc: string, index: number) => ({\n00088|       id: ['autoimmune_history', 'rapid_onset', 'viral_trigger', 'antibodies', 'other_autoimmune'][index],\n00089|       description: desc,\n00090|       checked: false\n00091|     })),\n00092|     treatments: {\n00093|       nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n00094|       firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n00095|       secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine\n00096|     }\n00097|   }\n00098| ]\n00099| \n00100| export default function SubtypeAdvisor() {\n00101|   const { t } = useTranslation()\n00102|   const potsSubtypes = createSubtypes(t)\n00103|   const [subtypeData, setSubtypeData] = useState(potsSubtypes.map(s => ({ ...s })))\n00104|   const [patientAge, setPatientAge] = useState<number | null>(null)\n00105|   const [comorbidities, setComorbidities] = useState<string[]>([])\n\n(File has more lines. Use 'offset' parameter to read beyond line 105)\n</file>",
+    "metadata": {
+      "preview": "      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n    }\n  },\n  {\n    id: 'autoimmune',\n    name: t.subtype.subtypes.autoimmune.name,\n    description: t.subtype.subtypes.autoimmune.description,\n    icon: Shield,\n    color: 'green',\n    criteria: t.subtype.subtypes.autoimmune.criteria.map((desc: string, index: number) => ({\n      id: ['autoimmune_history', 'rapid_onset', 'viral_trigger', 'antibodies', 'other_autoimmune'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286046886,
+      "end": 1758286046888
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_962042db7001tLUmGIYDRtXH4k",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_012kgFD8KcqZL354S9oWYqVP",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 520,
+      "limit": 40
+    },
+    "output": "<file>\n00521|       potsSubtype: 'POTS Subtype Analysis'\n00522|     }\n00523|   },\n00524| \n00525|   subtype: {\n00526|     title: 'POTS Subtype & Treatment Advisor',\n00527|     description: 'Determine POTS subtype for personalized treatment recommendations',\n00528|     patientInfo: {\n00529|       title: 'Patient Information',\n00530|       description: 'Basic patient details for treatment planning',\n00531|       comorbidities: 'Relevant Comorbidities (check all that apply)',\n00532|       comorbidityOptions: ['Diabetes', 'Autoimmune Disease', 'EDS', 'MCAS']\n00533|     },\n00534|     subtypes: {\n00535|       hypovolemic: {\n00536|         name: 'Hypovolemic POTS',\n00537|         description: 'Low blood volume causing orthostatic intolerance',\n00538|         criteria: [\n00539|           'Low-normal blood pressure (<110/70)',\n00540|           'Excessive thirst',\n00541|           'Salt craving',\n00542|           'Signs of volume depletion',\n00543|           'Elevated renin/aldosterone (if available)'\n00544|         ],\n00545|         treatments: {\n00546|           nonPharmacological: [\n00547|             'Increase fluid intake to 2.5-3L daily',\n00548|             'Increase sodium intake to 8-10g daily',\n00549|             'Compression garments (30-40 mmHg)',\n00550|             'Gradual exercise reconditioning'\n00551|           ],\n00552|           firstLine: [\n00553|             'Fludrocortisone 0.1-0.2mg daily',\n00554|             'Salt tablets if dietary intake insufficient'\n00555|           ],\n00556|           secondLine: [\n00557|             'Desmopressin (DDAVP) for severe cases',\n00558|             'Erythropoietin if anemic'\n00559|           ]\n00560|         }\n\n(File has more lines. Use 'offset' parameter to read beyond line 560)\n</file>",
+    "metadata": {
+      "preview": "      potsSubtype: 'POTS Subtype Analysis'\n    }\n  },\n\n  subtype: {\n    title: 'POTS Subtype & Treatment Advisor',\n    description: 'Determine POTS subtype for personalized treatment recommendations',\n    patientInfo: {\n      title: 'Patient Information',\n      description: 'Basic patient details for treatment planning',\n      comorbidities: 'Relevant Comorbidities (check all that apply)',\n      comorbidityOptions: ['Diabetes', 'Autoimmune Disease', 'EDS', 'MCAS']\n    },\n    subtypes: {\n      hypovolemic: {\n        name: 'Hypovolemic POTS',\n        description: 'Low blood volume causing orthostatic intolerance',\n        criteria: [\n          'Low-normal blood pressure (<110/70)',\n          'Excessive thirst',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286065753,
+      "end": 1758286065755
+    }
+  }
+}

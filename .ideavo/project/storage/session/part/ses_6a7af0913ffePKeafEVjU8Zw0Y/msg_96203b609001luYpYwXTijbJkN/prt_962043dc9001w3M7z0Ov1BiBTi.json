@@ -1,0 +1,25 @@
+{
+  "id": "prt_962043dc9001w3M7z0Ov1BiBTi",
+  "messageID": "msg_96203b609001luYpYwXTijbJkN",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01A5eaUf355FFn2Az2P4QBLJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "monitor",
+      "include": "*.ts"
+    },
+    "output": "Found 12 matches\n/home/user/project/lib/translations/en.ts:\n  Line 90:         description: 'Standing test with heart rate monitoring (NASA protocol)'\n  Line 280:     description: 'NASA Lean Stand Test Protocol - 10 minute heart rate monitoring',\n  Line 283:       description: 'Choose your preferred method for heart rate monitoring',\n  Line 442:           'Regular symptom monitoring'\n  Line 657:       mixedSubtype: 'Mixed Subtype Considerations: This patient also shows features of multiple subtypes. Consider combination therapy approaches and monitor response to initial treatment.',\n  Line 726:       noDefinitiveDiagnoses: 'No Definitive Diagnoses: Consider alternative diagnoses, subclinical presentations, or ongoing symptom monitoring. Some patients may benefit from symptomatic treatment while monitoring for progression.',\n\n/home/user/project/lib/translations/nl.ts:\n  Line 90:         description: '10-min NASA Lean protocol met HR monitoring'\n  Line 280:     description: 'NASA Lean Sta Test Protocol - 10 minuten hartslagmonitoring',\n  Line 283:       description: 'Kies uw voorkeursmethode voor hartslagmonitoring',\n  Line 442:           'Regelmatige symptoommonitoring'\n  Line 657:       mixedSubtype: 'Gemengde Subtype Overwegingen: Deze patiënt toont ook kenmerken van meerdere subtypes. Overweeg combinatietherapie benaderingen en monitor respons op initiële behandeling.',\n  Line 726:       noDefinitiveDiagnoses: 'Geen Definitieve Diagnoses: Overweeg alternatieve diagnoses, subklinische presentaties, of lopende symptoommonitoring. Sommige patiënten kunnen baat hebben bij symptomatische behandeling tijdens monitoring voor progressie.',",
+    "metadata": {
+      "matches": 12,
+      "truncated": false
+    },
+    "title": "monitor",
+    "time": {
+      "start": 1758286069650,
+      "end": 1758286069665
+    }
+  }
+}
