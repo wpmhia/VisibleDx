@@ -1,0 +1,18 @@
+{
+  "id": "prt_960648691001k05jutkxpx4aVe",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "refactor(branding): update logo and domain to InvisibleDx",
+  "cost": 0.66340995,
+  "tokens": {
+    "input": 0,
+    "output": 585,
+    "reasoning": 0,
+    "cache": {
+      "write": 408,
+      "read": 66011
+    }
+  }
+}

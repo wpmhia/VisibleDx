@@ -1,0 +1,25 @@
+{
+  "id": "prt_9606347c9001KvD3wvTbdkyLE9",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01XW2wNKCuSFoQNYwSYBfUCk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "offset": 45,
+      "limit": 10
+    },
+    "output": "<file>\n00046|               </div>\n00047|               <div>\n00048|                 <a \n00049|                   href=\"https://www.nordjyskklinik.dk/\" \n00050|                   target=\"_blank\" \n00051|                   rel=\"noopener noreferrer\"\n00052|                   className=\"text-blue-600 hover:text-blue-700\"\n00053|                 >\n00054|                   Nordjysk Speciallaegeklinik\n00055|                 </a>\n\n(File has more lines. Use 'offset' parameter to read beyond line 55)\n</file>",
+    "metadata": {
+      "preview": "              </div>\n              <div>\n                <a \n                  href=\"https://www.nordjyskklinik.dk/\" \n                  target=\"_blank\" \n                  rel=\"noopener noreferrer\"\n                  className=\"text-blue-600 hover:text-blue-700\"\n                >\n                  Nordjysk Speciallaegeklinik\n                </a>"
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758258743555,
+      "end": 1758258743557
+    }
+  }
+}

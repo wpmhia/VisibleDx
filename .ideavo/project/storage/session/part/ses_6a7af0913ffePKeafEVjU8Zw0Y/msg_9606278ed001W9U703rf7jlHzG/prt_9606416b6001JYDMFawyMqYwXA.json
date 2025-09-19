@@ -1,0 +1,24 @@
+{
+  "id": "prt_9606416b6001JYDMFawyMqYwXA",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01UEmqn44k6gVZZD2NiEH6GB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "EyeOff"
+    },
+    "output": "Found 4 matches\n/home/user/project/components/disclaimer.tsx:\n  Line 6: import { Info, EyeOff, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'\n\n/home/user/project/components/navigation.tsx:\n  Line 27:   EyeOff, \n  Line 142:           <EyeOff className=\"h-6 w-6 text-blue-600\" />\n  Line 245:                   <EyeOff className=\"h-5 w-5 text-blue-600\" />",
+    "metadata": {
+      "matches": 4,
+      "truncated": false
+    },
+    "title": "EyeOff",
+    "time": {
+      "start": 1758258796579,
+      "end": 1758258796603
+    }
+  }
+}

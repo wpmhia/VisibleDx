@@ -1,0 +1,25 @@
+{
+  "id": "prt_9606353be001cNDlB8RdWFar67",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QWRcvnwobatiDorubuDPAc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/LICENSE",
+      "offset": 30,
+      "limit": 10
+    },
+    "output": "<file>\n00031| CREATOR INFORMATION:\n00032| Created by: Willem Gielen MD\n00033| LinkedIn: https://www.linkedin.com/in/willem-gielen/\n00034| Organization: Nordjysk Speciallaegeklinik\n00035| Location: Hjørring, Denmark\n00036| Website: https://www.nordjyskklinik.dk/\n00037| GitHub Repository: https://github.com/wpmhia/InvisibleDx\n</file>",
+    "metadata": {
+      "preview": "CREATOR INFORMATION:\nCreated by: Willem Gielen MD\nLinkedIn: https://www.linkedin.com/in/willem-gielen/\nOrganization: Nordjysk Speciallaegeklinik\nLocation: Hjørring, Denmark\nWebsite: https://www.nordjyskklinik.dk/\nGitHub Repository: https://github.com/wpmhia/InvisibleDx"
+    },
+    "title": "LICENSE",
+    "time": {
+      "start": 1758258746728,
+      "end": 1758258746730
+    }
+  }
+}

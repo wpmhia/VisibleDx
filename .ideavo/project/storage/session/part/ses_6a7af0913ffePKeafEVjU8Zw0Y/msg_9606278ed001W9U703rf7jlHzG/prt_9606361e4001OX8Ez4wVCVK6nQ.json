@@ -1,0 +1,44 @@
+{
+  "id": "prt_9606361e4001OX8Ez4wVCVK6nQ",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01CwG3RGjZnzz3CYiQXbZ5s1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/disclaimer.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "                  href=\"https://www.nordjyskklinik.dk/\"",
+          "newString": "                  href=\"https://InvisibleDx.com\""
+        },
+        {
+          "filePath": "/home/user/project/components/disclaimer.tsx",
+          "oldString": "                  Nordjysk Speciallaegeklinik",
+          "newString": "                  InvisibleDx.com"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -45,9 +45,9 @@\n   </a>\n </div>\n <div>\n   <a \n-    href=\"https://www.nordjyskklinik.dk/\" \n+    href=\"https://InvisibleDx.com\" \n     target=\"_blank\" \n     rel=\"noopener noreferrer\"\n     className=\"text-blue-600 hover:text-blue-700\"\n   >\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/components/disclaimer.tsx\n===================================================================\n--- /home/user/project/components/disclaimer.tsx\n+++ /home/user/project/components/disclaimer.tsx\n@@ -50,9 +50,9 @@\n     target=\"_blank\" \n     rel=\"noopener noreferrer\"\n     className=\"text-blue-600 hover:text-blue-700\"\n   >\n-    Nordjysk Speciallaegeklinik\n+    InvisibleDx.com\n   </a>\n </div>\n <div className=\"pt-2\">\n   <a \n"
+        }
+      ]
+    },
+    "title": "components/disclaimer.tsx",
+    "time": {
+      "start": 1758258751642,
+      "end": 1758258751654
+    }
+  }
+}

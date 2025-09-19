@@ -1,0 +1,25 @@
+{
+  "id": "prt_960630b9b001LHJcwSWPRW64HB",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01SRDuH4x17h3ZyEDakkqYm7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 0,
+      "limit": 30
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { useState } from 'react'\n00004| import Link from 'next/link'\n00005| import { Button } from '@/components/ui/button'\n00006| import {\n00007|   DropdownMenu,\n00008|   DropdownMenuContent,\n00009|   DropdownMenuGroup,\n00010|   DropdownMenuItem,\n00011|   DropdownMenuLabel,\n00012|   DropdownMenuSeparator,\n00013|   DropdownMenuTrigger,\n00014| } from '@/components/ui/dropdown-menu'\n00015| import {\n00016|   Sheet,\n00017|   SheetContent,\n00018|   SheetDescription,\n00019|   SheetHeader,\n00020|   SheetTitle,\n00021|   SheetTrigger,\n00022| } from '@/components/ui/sheet'\n00023| import { Badge } from '@/components/ui/badge'\n00024| import { \n00025|   Home, \n00026|   Menu, \n00027|   Stethoscope, \n00028|   Clock, \n00029|   AlertTriangle, \n00030|   Heart, \n\n(File has more lines. Use 'offset' parameter to read beyond line 30)\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { useState } from 'react'\nimport Link from 'next/link'\nimport { Button } from '@/components/ui/button'\nimport {\n  DropdownMenu,\n  DropdownMenuContent,\n  DropdownMenuGroup,\n  DropdownMenuItem,\n  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from '@/components/ui/dropdown-menu'\nimport {\n  Sheet,\n  SheetContent,\n  SheetDescription,\n  SheetHeader,\n  SheetTitle,"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758258728475,
+      "end": 1758258728477
+    }
+  }
+}

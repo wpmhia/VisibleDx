@@ -1,0 +1,25 @@
+{
+  "id": "prt_96062c3e4001HnvxbRMyvJDuUf",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Gi9r6ahfJunqLtGhn7FCrV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 140,
+      "limit": 10
+    },
+    "output": "<file>\n00141|         <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n00142|           <Stethoscope className=\"h-6 w-6 text-blue-600\" />\n00143|           <div className=\"font-bold text-lg\">\n00144|             <span className=\"text-blue-600\">Visible</span>\n00145|             <span className=\"text-gray-900\">Dx</span>\n00146|           </div>\n00147|         </Link>\n00148| \n00149|         {/* Desktop Navigation */}\n00150|         <nav className=\"hidden md:flex items-center gap-4\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 150)\n</file>",
+    "metadata": {
+      "preview": "        <Link href=\"/\" className=\"flex items-center gap-2 hover:opacity-80 transition-opacity\">\n          <Stethoscope className=\"h-6 w-6 text-blue-600\" />\n          <div className=\"font-bold text-lg\">\n            <span className=\"text-blue-600\">Visible</span>\n            <span className=\"text-gray-900\">Dx</span>\n          </div>\n        </Link>\n\n        {/* Desktop Navigation */}\n        <nav className=\"hidden md:flex items-center gap-4\">"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758258710315,
+      "end": 1758258710321
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "prt_9606422b2001bjoUfPpTvgnFU1",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_018bszo1M3JMBx9VxHzCDS2A",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "InvisibleDx\\.com"
+    },
+    "output": "Found 3 matches\n/home/user/project/components/disclaimer.tsx:\n  Line 49:                   href=\"https://InvisibleDx.com\" \n  Line 54:                   InvisibleDx.com\n\n/home/user/project/LICENSE:\n  Line 36: Website: https://InvisibleDx.com",
+    "metadata": {
+      "matches": 3,
+      "truncated": false
+    },
+    "title": "InvisibleDx\\.com",
+    "time": {
+      "start": 1758258799710,
+      "end": 1758258799723
+    }
+  }
+}

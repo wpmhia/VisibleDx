@@ -1,0 +1,24 @@
+{
+  "id": "prt_96062b5d60014F3Ba4MOhxq9gB",
+  "messageID": "msg_9606278ed001W9U703rf7jlHzG",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01HGWurvDm9xD7ryF4EQ9zCM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "nordjyskklinik\\.dk"
+    },
+    "output": "Found 2 matches\n/home/user/project/LICENSE:\n  Line 36: Website: https://www.nordjyskklinik.dk/\n\n/home/user/project/components/disclaimer.tsx:\n  Line 49:                   href=\"https://www.nordjyskklinik.dk/\"",
+    "metadata": {
+      "matches": 2,
+      "truncated": false
+    },
+    "title": "nordjyskklinik\\.dk",
+    "time": {
+      "start": 1758258706515,
+      "end": 1758258706532
+    }
+  }
+}

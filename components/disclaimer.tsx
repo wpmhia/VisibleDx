@@ -3,7 +3,7 @@
 import { Alert, AlertDescription } from '@/components/ui/alert'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Info, Stethoscope, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'
+import { Info, EyeOff, Shield, BookOpen, AlertTriangle, User, ExternalLink, Github } from 'lucide-react'
 import { useTranslation } from '@/lib/language-context'
 
 export default function Disclaimer() {
@@ -46,12 +46,12 @@ export default function Disclaimer() {
               </div>
               <div>
                 <a 
-                  href="https://www.nordjyskklinik.dk/" 
+                  href="https://InvisibleDx.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-700"
                 >
-                  Nordjysk Speciallaegeklinik
+                  InvisibleDx.com
                 </a>
               </div>
               <div className="pt-2">
