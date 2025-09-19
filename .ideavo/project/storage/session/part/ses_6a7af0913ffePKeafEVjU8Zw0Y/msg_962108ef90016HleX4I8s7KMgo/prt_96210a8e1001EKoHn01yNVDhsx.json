@@ -1,0 +1,22 @@
+{
+  "id": "prt_96210a8e1001EKoHn01yNVDhsx",
+  "messageID": "msg_962108ef90016HleX4I8s7KMgo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "webfetch",
+  "callID": "toolu_01F2pz6bCEr6jNh22yXmk6eg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "url": "https://lucide.dev/icons",
+      "format": "text"
+    },
+    "output": "Lucide\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n  \n  \n    Skip to contentLucide Main Navigation IconsGuidePackagesShowcaseLicenseAppearanceMenuReturn to top Sidebar Navigation  Customizer ColorStroke width2pxSize24pxAbsolute Stroke width Include external libs Lab View  All  Categories Accessibility30Accounts &amp; access133Animals22Arrows206Brands21Buildings25Charts31Communication54Connectivity89Cursors32Design144Coding &amp; development239Devices161Emoji21File icons164Finance55Food &amp; beverage69Gaming140Home54Layout138Mail26Mathematics73Medical42Multimedia137Nature20Navigation140Notification39People3Photography75Science30Seasons5Security57Shapes47Shopping27Social118Sports12Sustainability21Text formatting244Time &amp; calendar56Tools65Transportation60Travel65Weather42a-arrow-downa-arrow-upa-large-smallaccessibilityactivityair-ventairplayalarm-clockalarm-clock-checkalarm-clock-minusalarm-clock-offalarm-clock-plusalarm-smokealbumalign-center-horizontalalign-center-verticalalign-end-horizontalalign-end-verticalalign-horizontal-distribute-centeralign-horizontal-distribute-endalign-horizontal-distribute-startalign-horizontal-justify-centeralign-horizontal-justify-endalign-horizontal-justify-startalign-horizontal-space-aroundalign-horizontal-space-betweenalign-start-horizontalalign-start-verticalalign-vertical-distribute-centeralign-vertical-distribute-endalign-vertical-distribute-startalign-vertical-justify-centeralign-vertical-justify-endalign-vertical-justify-startalign-vertical-space-aroundalign-vertical-space-betweenambulanceampersandampersandsamphoraanchorangryannoyedantennaanvilapertureapp-windowapp-window-macapplearchivearchive-restorearchive-xarmchairarrow-big-downarrow-big-down-dasharrow-big-leftarrow-big-left-dasharrow-big-rightarrow-big-right-dasharrow-big-uparrow-big-up-dasharrow-downarrow-down-0-1arrow-down-1-0arrow-down-a-zarrow-down-from-linearrow-down-leftarrow-down-narrow-widearrow-down-rightarrow-down-to-dotarrow-down-to-linearrow-down-uparrow-down-wide-narrowarrow-down-z-aarrow-leftarrow-left-from-linearrow-left-rightarrow-left-to-linearrow-rightarrow-right-from-linearrow-right-leftarrow-right-to-linearrow-uparrow-up-0-1arrow-up-1-0arrow-up-a-zarrow-up-downarrow-up-from-dotarrow-up-from-linearrow-up-leftarrow-up-narrow-widearrow-up-rightarrow-up-to-linearrow-up-wide-narrowarrow-up-z-aarrows-up-from-lineasteriskat-signatomaudio-linesaudio-waveformawardaxeaxis-3dbabybackpackbadgebadge-alertbadge-centbadge-checkbadge-dollar-signbadge-eurobadge-indian-rupeebadge-infobadge-japanese-yenbadge-minusbadge-percentbadge-plusbadge-pound-sterlingbadge-question-markLicenseContributeChangelogGitHubIssuesReleased under the ISC License.Copyright © 2025 Lucide Contributors",
+    "metadata": {},
+    "title": "https://lucide.dev/icons (text/html; charset=utf-8)",
+    "time": {
+      "start": 1758286883536,
+      "end": 1758286883645
+    }
+  }
+}
