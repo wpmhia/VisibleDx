@@ -1,0 +1,11 @@
+{
+  "id": "prt_96209ae350011gPURrwFZThTgf",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I need to update the POTSSubtype interface to include the monitoring fields. Let me check the interface definition:",
+  "time": {
+    "start": 1758286426271,
+    "end": 1758286426271
+  }
+}

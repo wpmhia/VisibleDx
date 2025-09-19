@@ -1,0 +1,26 @@
+{
+  "id": "prt_96207e827001N56fXuKw6cJI54",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RxkwfyNfnh5W63czgZNdhf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "                  <CardContent>\n                    <ul className=\"space-y-2 text-sm\">\n                      {primarySubtype.treatments.secondLine.map((treatment, index) => (\n                        <li key={index} className=\"flex items-start gap-2\">\n                          <span className=\"text-purple-600 mt-1\">•</span>\n                          {treatment}\n                        </li>\n                      ))}\n                    </ul>\n                  </CardContent>\n                </Card>",
+      "newString": "                  <CardContent>\n                    <ul className=\"space-y-2 text-sm\">\n                      {primarySubtype.treatments.secondLine.map((treatment, index) => (\n                        <li key={index} className=\"flex items-start gap-2\">\n                          <span className=\"text-purple-600 mt-1\">•</span>\n                          {treatment}\n                        </li>\n                      ))}\n                    </ul>\n                    \n                    {primarySubtype.treatments.secondLineMonitoring && (\n                      <div className=\"mt-4 p-3 bg-red-50 border border-red-200 rounded-lg\">\n                        <h5 className=\"font-semibold text-sm text-red-800 mb-2 flex items-center gap-2\">\n                          <Activity className=\"h-4 w-4\" />\n                          Advanced Monitoring\n                        </h5>\n                        <ul className=\"space-y-1 text-xs\">\n                          {primarySubtype.treatments.secondLineMonitoring.map((monitoring, index) => (\n                            <li key={index} className=\"flex items-start gap-2\">\n                              <span className=\"text-red-600 mt-1\">⚠</span>\n                              {monitoring}\n                            </li>\n                          ))}\n                        </ul>\n                      </div>\n                    )}\n                  </CardContent>\n                </Card>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -339,8 +339,25 @@\n             {treatment}\n           </li>\n         ))}\n       </ul>\n+      \n+      {primarySubtype.treatments.secondLineMonitoring && (\n+        <div className=\"mt-4 p-3 bg-red-50 border border-red-200 rounded-lg\">\n+          <h5 className=\"font-semibold text-sm text-red-800 mb-2 flex items-center gap-2\">\n+            <Activity className=\"h-4 w-4\" />\n+            Advanced Monitoring\n+          </h5>\n+          <ul className=\"space-y-1 text-xs\">\n+            {primarySubtype.treatments.secondLineMonitoring.map((monitoring, index) => (\n+              <li key={index} className=\"flex items-start gap-2\">\n+                <span className=\"text-red-600 mt-1\">⚠</span>\n+                {monitoring}\n+              </li>\n+            ))}\n+          </ul>\n+        </div>\n+      )}\n     </CardContent>\n   </Card>\n </div>\n \n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286313626,
+      "end": 1758286313639
+    }
+  }
+}

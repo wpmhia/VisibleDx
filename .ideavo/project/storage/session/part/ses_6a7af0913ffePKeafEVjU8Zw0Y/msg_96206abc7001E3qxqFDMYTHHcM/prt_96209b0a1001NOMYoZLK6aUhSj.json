@@ -1,0 +1,25 @@
+{
+  "id": "prt_96209b0a1001NOMYoZLK6aUhSj",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VdiT5MGisTbf8FSYMiDWam",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 15,
+      "limit": 15
+    },
+    "output": "<file>\n00016|   id: string\n00017|   name: string\n00018|   description: string\n00019|   icon: any\n00020|   color: string\n00021|   criteria: { id: string; description: string; checked: boolean }[]\n00022|   treatments: {\n00023|     nonPharmacological: string[]\n00024|     firstLine: string[]\n00025|     secondLine: string[]\n00026|   }\n00027| }\n00028| \n00029| const createSubtypes = (t: any): POTSSubtype[] => [\n00030|   {\n\n(File has more lines. Use 'offset' parameter to read beyond line 30)\n</file>",
+    "metadata": {
+      "preview": "  id: string\n  name: string\n  description: string\n  icon: any\n  color: string\n  criteria: { id: string; description: string; checked: boolean }[]\n  treatments: {\n    nonPharmacological: string[]\n    firstLine: string[]\n    secondLine: string[]\n  }\n}\n\nconst createSubtypes = (t: any): POTSSubtype[] => [\n  {"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286426942,
+      "end": 1758286426945
+    }
+  }
+}

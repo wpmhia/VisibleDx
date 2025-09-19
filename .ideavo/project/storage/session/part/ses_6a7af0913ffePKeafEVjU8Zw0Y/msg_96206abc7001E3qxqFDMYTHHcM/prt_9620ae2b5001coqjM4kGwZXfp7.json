@@ -1,0 +1,27 @@
+{
+  "id": "prt_9620ae2b5001coqjM4kGwZXfp7",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01CrLJsFTVjhHSrDcjQaXFDQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && PORT=4000 npm start",
+      "timeout": 10000,
+      "description": "Start enhanced POTS treatment server on port 4000"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:4000\n\n ✓ Starting...\n ✓ Ready in 474ms\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 start\n> next start\n\n  ▲ Next.js 14.2.31\n  - Local:        http://localhost:4000\n\n ✓ Starting...\n ✓ Ready in 474ms\n",
+      "exit": null,
+      "description": "Start enhanced POTS treatment server on port 4000"
+    },
+    "title": "cd /home/user/project && PORT=4000 npm start",
+    "time": {
+      "start": 1758286505571,
+      "end": 1758286515585
+    }
+  }
+}

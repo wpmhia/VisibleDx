@@ -1,0 +1,25 @@
+{
+  "id": "prt_96207acc30018Ilx1e7dF4VhON",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_013vgz6EL7fxguW4mCQ6zUFW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 290,
+      "limit": 30
+    },
+    "output": "<file>\n00291|                 <Card className=\"border-blue-200 bg-blue-50\">\n00292|                   <CardHeader className=\"pb-3\">\n00293|                     <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n00294|                       <Pill className=\"h-5 w-5\" />\n00295|                       {t.subtype.results.firstLineRx}\n00296|                     </CardTitle>\n00297|                   </CardHeader>\n00298|                   <CardContent>\n00299|                     <ul className=\"space-y-2 text-sm\">\n00300|                       {primarySubtype.treatments.firstLine.map((treatment, index) => (\n00301|                         <li key={index} className=\"flex items-start gap-2\">\n00302|                           <span className=\"text-blue-600 mt-1\">•</span>\n00303|                           {treatment}\n00304|                         </li>\n00305|                       ))}\n00306|                     </ul>\n00307|                   </CardContent>\n00308|                 </Card>\n00309| \n00310|                 <Card className=\"border-purple-200 bg-purple-50\">\n00311|                   <CardHeader className=\"pb-3\">\n00312|                     <CardTitle className=\"text-lg text-purple-800 flex items-center gap-2\">\n00313|                       <Heart className=\"h-5 w-5\" />\n00314|                       {t.subtype.results.secondLineOptions}\n00315|                     </CardTitle>\n00316|                   </CardHeader>\n00317|                   <CardContent>\n00318|                     <ul className=\"space-y-2 text-sm\">\n00319|                       {primarySubtype.treatments.secondLine.map((treatment, index) => (\n00320|                         <li key={index} className=\"flex items-start gap-2\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 320)\n</file>",
+    "metadata": {
+      "preview": "                <Card className=\"border-blue-200 bg-blue-50\">\n                  <CardHeader className=\"pb-3\">\n                    <CardTitle className=\"text-lg text-blue-800 flex items-center gap-2\">\n                      <Pill className=\"h-5 w-5\" />\n                      {t.subtype.results.firstLineRx}\n                    </CardTitle>\n                  </CardHeader>\n                  <CardContent>\n                    <ul className=\"space-y-2 text-sm\">\n                      {primarySubtype.treatments.firstLine.map((treatment, index) => (\n                        <li key={index} className=\"flex items-start gap-2\">\n                          <span className=\"text-blue-600 mt-1\">•</span>\n                          {treatment}\n                        </li>\n                      ))}\n                    </ul>\n                  </CardContent>\n                </Card>\n\n                <Card className=\"border-purple-200 bg-purple-50\">"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286294939,
+      "end": 1758286294942
+    }
+  }
+}

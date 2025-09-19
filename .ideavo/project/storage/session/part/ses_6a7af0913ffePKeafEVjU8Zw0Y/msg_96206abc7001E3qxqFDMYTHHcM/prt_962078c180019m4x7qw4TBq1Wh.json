@@ -1,0 +1,27 @@
+{
+  "id": "prt_962078c180019m4x7qw4TBq1Wh",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01TiKcUvQRar7mCg3JPsBNQs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "        treatments: {\n          nonPharmacological: string[]\n          firstLine: string[]\n          secondLine: string[]\n        }",
+      "newString": "        treatments: {\n          nonPharmacological: string[]\n          firstLine: string[]\n          firstLineMonitoring?: string[]\n          secondLine: string[]\n          secondLineMonitoring?: string[]\n        }",
+      "replaceAll": true
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -410,9 +410,11 @@\n     criteria: string[]\n     treatments: {\n       nonPharmacological: string[]\n       firstLine: string[]\n+      firstLineMonitoring?: string[]\n       secondLine: string[]\n+      secondLineMonitoring?: string[]\n     }\n   }\n   neuropathic: {\n     name: string\n@@ -420,9 +422,11 @@\n     criteria: string[]\n     treatments: {\n       nonPharmacological: string[]\n       firstLine: string[]\n+      firstLineMonitoring?: string[]\n       secondLine: string[]\n+      secondLineMonitoring?: string[]\n     }\n   }\n   hyperadrenergic: {\n     name: string\n@@ -430,9 +434,11 @@\n     criteria: string[]\n     treatments: {\n       nonPharmacological: string[]\n       firstLine: string[]\n+      firstLineMonitoring?: string[]\n       secondLine: string[]\n+      secondLineMonitoring?: string[]\n     }\n   }\n   autoimmune: {\n     name: string\n@@ -440,9 +446,11 @@\n     criteria: string[]\n     treatments: {\n       nonPharmacological: string[]\n       firstLine: string[]\n+      firstLineMonitoring?: string[]\n       secondLine: string[]\n+      secondLineMonitoring?: string[]\n     }\n   }\n }\n results: {\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758286287430,
+      "end": 1758286287436
+    }
+  }
+}

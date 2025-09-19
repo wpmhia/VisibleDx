@@ -1,0 +1,25 @@
+{
+  "id": "prt_9620739d7001hfnMt5TZcuf61O",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01TKo83G76oUwSaQepFcpCCT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 600,
+      "limit": 20
+    },
+    "output": "<file>\n00601|           'Hypertension when standing',\n00602|           'Anxiety, panic attacks, tremor',\n00603|           'Migraine headaches',\n00604|           'Cold hands and feet',\n00605|           'Elevated standing norepinephrine >600 pg/mL'\n00606|         ],\n00607|         treatments: {\n00608|           nonPharmacological: [\n00609|             'Stress reduction techniques',\n00610|             'Avoid stimulants (caffeine)',\n00611|             'Regular sleep schedule',\n00612|             'Gentle exercise'\n00613|           ],\n00614|           firstLine: [\n00615|             'Propranolol 10-20mg BID-QID',\n00616|             'Clonidine 0.1-0.2mg BID'\n00617|           ],\n00618|           secondLine: [\n00619|             'Ivabradine 2.5-7.5mg BID',\n00620|             'Methyldopa',\n\n(File has more lines. Use 'offset' parameter to read beyond line 620)\n</file>",
+    "metadata": {
+      "preview": "          'Hypertension when standing',\n          'Anxiety, panic attacks, tremor',\n          'Migraine headaches',\n          'Cold hands and feet',\n          'Elevated standing norepinephrine >600 pg/mL'\n        ],\n        treatments: {\n          nonPharmacological: [\n            'Stress reduction techniques',\n            'Avoid stimulants (caffeine)',\n            'Regular sleep schedule',\n            'Gentle exercise'\n          ],\n          firstLine: [\n            'Propranolol 10-20mg BID-QID',\n            'Clonidine 0.1-0.2mg BID'\n          ],\n          secondLine: [\n            'Ivabradine 2.5-7.5mg BID',\n            'Methyldopa',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286265354,
+      "end": 1758286265357
+    }
+  }
+}

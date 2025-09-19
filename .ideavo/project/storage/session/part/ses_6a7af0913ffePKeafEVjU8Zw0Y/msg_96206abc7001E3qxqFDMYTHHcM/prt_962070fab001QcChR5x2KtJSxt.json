@@ -1,0 +1,25 @@
+{
+  "id": "prt_962070fab001QcChR5x2KtJSxt",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01BFcJU5XLwTc3PqdKxB2MU7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 545,
+      "limit": 20
+    },
+    "output": "<file>\n00546|           nonPharmacological: [\n00547|             'Increase fluid intake to 2.5-3L daily',\n00548|             'Increase sodium intake to 8-10g daily',\n00549|             'Compression garments (30-40 mmHg)',\n00550|             'Gradual exercise reconditioning'\n00551|           ],\n00552|           firstLine: [\n00553|             'Fludrocortisone 0.1-0.2mg daily',\n00554|             'Salt tablets if dietary intake insufficient'\n00555|           ],\n00556|           secondLine: [\n00557|             'Desmopressin (DDAVP) for severe cases',\n00558|             'Erythropoietin if anemic'\n00559|           ]\n00560|         }\n00561|       },\n00562|       neuropathic: {\n00563|         name: 'Neuropathic POTS',\n00564|         description: 'Peripheral autonomic neuropathy affecting blood vessel control',\n00565|         criteria: [\n\n(File has more lines. Use 'offset' parameter to read beyond line 565)\n</file>",
+    "metadata": {
+      "preview": "          nonPharmacological: [\n            'Increase fluid intake to 2.5-3L daily',\n            'Increase sodium intake to 8-10g daily',\n            'Compression garments (30-40 mmHg)',\n            'Gradual exercise reconditioning'\n          ],\n          firstLine: [\n            'Fludrocortisone 0.1-0.2mg daily',\n            'Salt tablets if dietary intake insufficient'\n          ],\n          secondLine: [\n            'Desmopressin (DDAVP) for severe cases',\n            'Erythropoietin if anemic'\n          ]\n        }\n      },\n      neuropathic: {\n        name: 'Neuropathic POTS',\n        description: 'Peripheral autonomic neuropathy affecting blood vessel control',\n        criteria: ["
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286254674,
+      "end": 1758286254680
+    }
+  }
+}

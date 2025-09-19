@@ -553,6 +553,13 @@ export const en: Translation = {
             'Fludrocortisone 0.1-0.2mg daily',
             'Salt tablets if dietary intake insufficient'
           ],
+          firstLineMonitoring: [
+            'Monitor serum electrolytes (K+, Na+) every 2-4 weeks initially',
+            'Weekly blood pressure checks (watch for hypertension >140/90)',
+            'Daily weight monitoring for fluid retention',
+            'Monitor for edema, dyspnea, or signs of heart failure',
+            'Contraindications: Active heart failure, severe hypertension, hypokalemia'
+          ],
           secondLine: [
             'Desmopressin (DDAVP) for severe cases',
             'Erythropoietin if anemic'
@@ -579,6 +586,13 @@ export const en: Translation = {
           firstLine: [
             'Midodrine 2.5-10mg TID',
             'Pyridostigmine 30-60mg TID'
+          ],
+          firstLineMonitoring: [
+            'Monitor supine blood pressure (risk of supine hypertension)',
+            'Take last dose 4+ hours before bedtime',
+            'Monitor for urinary retention, especially in men',
+            'Watch for scalp tingling, goosebumps (dose-related effects)',
+            'Contraindications: Severe heart disease, urinary retention, pheochromocytoma'
           ],
           secondLine: [
             'Droxidopa (if available)',
@@ -608,10 +622,23 @@ export const en: Translation = {
             'Propranolol 10-20mg BID-QID',
             'Clonidine 0.1-0.2mg BID'
           ],
+          firstLineMonitoring: [
+            'Monitor heart rate (target: reduce by 10-20 bpm)',
+            'Blood pressure monitoring (watch for hypotension)',
+            'Screen for asthma/COPD before starting beta-blockers',
+            'Monitor for fatigue, depression, or exercise intolerance',
+            'Contraindications: Asthma, severe heart failure, heart block'
+          ],
           secondLine: [
             'Ivabradine 2.5-7.5mg BID',
             'Methyldopa',
             'Labetalol for hypertension'
+          ],
+          secondLineMonitoring: [
+            'Ivabradine: ECG monitoring, target HR 60-70 bpm',
+            'Monitor for visual disturbances (phosphenes) with ivabradine',
+            'Avoid ivabradine with strong CYP3A4 inhibitors',
+            'Regular cardiac rhythm assessment'
           ]
         }
       },
@@ -636,10 +663,23 @@ export const en: Translation = {
             'Standard POTS medications',
             'Trial of corticosteroids'
           ],
+          firstLineMonitoring: [
+            'Monitor blood glucose (steroid-induced diabetes risk)',
+            'Watch for mood changes, insomnia with steroids',
+            'Bone density monitoring with long-term steroid use',
+            'Monitor for signs of infection (immunosuppression)',
+            'Regular complete blood count and metabolic panel'
+          ],
           secondLine: [
             'IVIG therapy',
             'Immunosuppressive agents',
             'Plasmapheresis for severe cases'
+          ],
+          secondLineMonitoring: [
+            'IVIG: Pre-medication for allergic reactions, monitor renal function',
+            'Immunosuppressants: Regular CBC, liver function, infection screening',
+            'Plasmapheresis: Coagulation monitoring, electrolyte replacement',
+            'Monitor for opportunistic infections with immunotherapy'
           ]
         }
       }

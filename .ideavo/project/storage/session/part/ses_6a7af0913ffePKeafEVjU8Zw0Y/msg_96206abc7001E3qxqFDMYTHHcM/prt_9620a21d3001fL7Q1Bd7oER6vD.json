@@ -1,0 +1,25 @@
+{
+  "id": "prt_9620a21d3001fL7Q1Bd7oER6vD",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_0114PU16x9PaWexNSme7Cxo8",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 75,
+      "limit": 10
+    },
+    "output": "<file>\n00076|     criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({\n00077|       id: ['high_bp', 'anxiety_panic', 'migraine', 'cold_hands', 'norepinephrine_high'][index],\n00078|       description: desc,\n00079|       checked: false\n00080|     })),\n00081|     treatments: {\n00082|       nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n00083|       firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n00084|       secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n00085|     }\n\n(File has more lines. Use 'offset' parameter to read beyond line 85)\n</file>",
+    "metadata": {
+      "preview": "    criteria: t.subtype.subtypes.hyperadrenergic.criteria.map((desc: string, index: number) => ({\n      id: ['high_bp', 'anxiety_panic', 'migraine', 'cold_hands', 'norepinephrine_high'][index],\n      description: desc,\n      checked: false\n    })),\n    treatments: {\n      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n    }"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286455790,
+      "end": 1758286455793
+    }
+  }
+}

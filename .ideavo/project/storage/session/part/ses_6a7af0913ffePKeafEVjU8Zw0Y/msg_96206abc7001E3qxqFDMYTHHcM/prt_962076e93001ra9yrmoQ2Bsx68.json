@@ -1,0 +1,25 @@
+{
+  "id": "prt_962076e93001ra9yrmoQ2Bsx68",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01CLTRED2mN8qGrWNFWZHto8",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 380,
+      "limit": 30
+    },
+    "output": "<file>\n00381|     results: {\n00382|       complete: string\n00383|       description: string\n00384|       diagnosesMet: string\n00385|       criteriaMet: string\n00386|       clinicalRecommendations: string\n00387|       mecfsManagement: string[]\n00388|       longCovidManagement: string[]\n00389|       potsManagement: string[]\n00390|       reassess: string\n00391|       downloadReport: string\n00392|       potsSubtype: string\n00393|     }\n00394|   }\n00395| \n00396|   // Subtype Advisor\n00397|   subtype: {\n00398|     title: string\n00399|     description: string\n00400|     patientInfo: {\n00401|       title: string\n00402|       description: string\n00403|       comorbidities: string\n00404|       comorbidityOptions: string[]\n00405|     }\n00406|     subtypes: {\n00407|       hypovolemic: {\n00408|         name: string\n00409|         description: string\n00410|         criteria: string[]\n\n(File has more lines. Use 'offset' parameter to read beyond line 410)\n</file>",
+    "metadata": {
+      "preview": "    results: {\n      complete: string\n      description: string\n      diagnosesMet: string\n      criteriaMet: string\n      clinicalRecommendations: string\n      mecfsManagement: string[]\n      longCovidManagement: string[]\n      potsManagement: string[]\n      reassess: string\n      downloadReport: string\n      potsSubtype: string\n    }\n  }\n\n  // Subtype Advisor\n  subtype: {\n    title: string\n    description: string\n    patientInfo: {"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758286278862,
+      "end": 1758286278863
+    }
+  }
+}

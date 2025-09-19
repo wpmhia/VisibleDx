@@ -1,0 +1,18 @@
+{
+  "id": "prt_9620baf59001rhvy7Cm4LHET0c",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "feat(pots): enhance treatment monitoring and mixed subtype navigation",
+  "cost": 1.7679742499999993,
+  "tokens": {
+    "input": 0,
+    "output": 1255,
+    "reasoning": 0,
+    "cache": {
+      "write": 434,
+      "read": 115773
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_962090f63001HuIabuJ3vQffYr",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VuBETpNJoMW1uMKhEfjAj9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 655,
+      "limit": 20
+    },
+    "output": "<file>\n00656|           nonPharmacological: [\n00657|             'Standard POTS measures',\n00658|             'Avoid infection triggers',\n00659|             'Stress management',\n00660|             'Anti-inflammatory diet'\n00661|           ],\n00662|           firstLine: [\n00663|             'Standard POTS medications',\n00664|             'Trial of corticosteroids'\n00665|           ],\n00666|           secondLine: [\n00667|             'IVIG therapy',\n00668|             'Immunosuppressive agents',\n00669|             'Plasmapheresis for severe cases'\n00670|           ]\n00671|         }\n00672|       }\n00673|     },\n00674|     results: {\n00675|       complete: 'POTS Subtype Analysis Complete',\n\n(File has more lines. Use 'offset' parameter to read beyond line 675)\n</file>",
+    "metadata": {
+      "preview": "          nonPharmacological: [\n            'Standard POTS measures',\n            'Avoid infection triggers',\n            'Stress management',\n            'Anti-inflammatory diet'\n          ],\n          firstLine: [\n            'Standard POTS medications',\n            'Trial of corticosteroids'\n          ],\n          secondLine: [\n            'IVIG therapy',\n            'Immunosuppressive agents',\n            'Plasmapheresis for severe cases'\n          ]\n        }\n      }\n    },\n    results: {\n      complete: 'POTS Subtype Analysis Complete',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286385265,
+      "end": 1758286385268
+    }
+  }
+}

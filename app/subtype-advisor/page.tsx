@@ -22,7 +22,9 @@ interface POTSSubtype {
   treatments: {
     nonPharmacological: string[]
     firstLine: string[]
+    firstLineMonitoring?: string[]
     secondLine: string[]
+    secondLineMonitoring?: string[]
   }
 }
 
@@ -41,7 +43,9 @@ const createSubtypes = (t: any): POTSSubtype[] => [
     treatments: {
       nonPharmacological: t.subtype.subtypes.hypovolemic.treatments.nonPharmacological,
       firstLine: t.subtype.subtypes.hypovolemic.treatments.firstLine,
-      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine
+      firstLineMonitoring: t.subtype.subtypes.hypovolemic.treatments.firstLineMonitoring,
+      secondLine: t.subtype.subtypes.hypovolemic.treatments.secondLine,
+      secondLineMonitoring: t.subtype.subtypes.hypovolemic.treatments.secondLineMonitoring
     }
   },
   {
@@ -58,7 +62,9 @@ const createSubtypes = (t: any): POTSSubtype[] => [
     treatments: {
       nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,
       firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,
-      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine
+      firstLineMonitoring: t.subtype.subtypes.neuropathic.treatments.firstLineMonitoring,
+      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine,
+      secondLineMonitoring: t.subtype.subtypes.neuropathic.treatments.secondLineMonitoring
     }
   },
   {
@@ -75,7 +81,9 @@ const createSubtypes = (t: any): POTSSubtype[] => [
     treatments: {
       nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,
       firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,
-      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine
+      firstLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.firstLineMonitoring,
+      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine,
+      secondLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.secondLineMonitoring
     }
   },
   {
@@ -92,7 +100,9 @@ const createSubtypes = (t: any): POTSSubtype[] => [
     treatments: {
       nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,
       firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,
-      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine
+      firstLineMonitoring: t.subtype.subtypes.autoimmune.treatments.firstLineMonitoring,
+      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine,
+      secondLineMonitoring: t.subtype.subtypes.autoimmune.treatments.secondLineMonitoring
     }
   }
 ]
@@ -104,6 +114,7 @@ export default function SubtypeAdvisor() {
   const [patientAge, setPatientAge] = useState<number | null>(null)
   const [comorbidities, setComorbidities] = useState<string[]>([])
   const [isComplete, setIsComplete] = useState(false)
+  const [expandedSubtype, setExpandedSubtype] = useState<string | null>(null)
 
   // Update subtype translations when language changes while preserving checked states
   useEffect(() => {
@@ -304,6 +315,23 @@ export default function SubtypeAdvisor() {
                         </li>
                       ))}
                     </ul>
+                    
+                    {primarySubtype.treatments.firstLineMonitoring && (
+                      <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                        <h5 className="font-semibold text-sm text-yellow-800 mb-2 flex items-center gap-2">
+                          <Activity className="h-4 w-4" />
+                          Required Monitoring
+                        </h5>
+                        <ul className="space-y-1 text-xs">
+                          {primarySubtype.treatments.firstLineMonitoring.map((monitoring, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="text-yellow-600 mt-1">⚠</span>
+                              {monitoring}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
 
@@ -323,6 +351,23 @@ export default function SubtypeAdvisor() {
                         </li>
                       ))}
                     </ul>
+                    
+                    {primarySubtype.treatments.secondLineMonitoring && (
+                      <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+                        <h5 className="font-semibold text-sm text-red-800 mb-2 flex items-center gap-2">
+                          <Activity className="h-4 w-4" />
+                          Advanced Monitoring
+                        </h5>
+                        <ul className="space-y-1 text-xs">
+                          {primarySubtype.treatments.secondLineMonitoring.map((monitoring, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <span className="text-red-600 mt-1">⚠</span>
+                              {monitoring}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </div>
@@ -331,9 +376,93 @@ export default function SubtypeAdvisor() {
                 <Alert className="border-yellow-200 bg-yellow-50">
                   <Shield className="h-4 w-4 text-yellow-600" />
                   <AlertDescription className="text-yellow-800">
-                    <strong>{t.subtype.results.mixedSubtype}</strong> {secondarySubtypes.map(s => s.name).join(t.subtype.results.and)}.
+                    <div>
+                      <strong>Mixed Subtype Detected:</strong> This patient also shows features of {secondarySubtypes.map(s => s.name).join(' and ')}.
+                    </div>
+                    <div className="mt-3 space-y-2">
+                      <p className="text-sm">Consider combination therapy approaches. View additional subtype treatments:</p>
+                      <div className="flex gap-2 flex-wrap">
+                        {secondarySubtypes.map(subtype => (
+                          <Button 
+                            key={subtype.id}
+                            size="sm" 
+                            variant="outline"
+                            className="h-8 text-xs"
+                            onClick={() => setExpandedSubtype(expandedSubtype === subtype.id ? null : subtype.id)}
+                          >
+                            {expandedSubtype === subtype.id ? 'Hide' : 'View'} {subtype.name} Treatment
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
                   </AlertDescription>
                 </Alert>
+              )}
+
+              {/* Expanded Subtype Treatment Details */}
+              {expandedSubtype && (
+                <Card className="border-yellow-300 bg-yellow-25">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-lg text-yellow-800 flex items-center gap-2">
+                      {(() => {
+                        const subtype = secondarySubtypes.find(s => s.id === expandedSubtype)
+                        return subtype ? <subtype.icon className="h-5 w-5" /> : null
+                      })()}
+                      {secondarySubtypes.find(s => s.id === expandedSubtype)?.name} - Additional Treatment Options
+                    </CardTitle>
+                    <CardDescription>
+                      {secondarySubtypes.find(s => s.id === expandedSubtype)?.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    {(() => {
+                      const subtype = secondarySubtypes.find(s => s.id === expandedSubtype)
+                      if (!subtype) return null
+                      
+                      return (
+                        <div className="grid md:grid-cols-2 gap-4">
+                          <div>
+                            <h5 className="font-semibold text-sm mb-2">First-Line Treatments</h5>
+                            <ul className="space-y-1 text-sm">
+                              {subtype.treatments.firstLine.map((treatment, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="text-blue-600 mt-1">•</span>
+                                  {treatment}
+                                </li>
+                              ))}
+                            </ul>
+                            
+                            {subtype.treatments.firstLineMonitoring && (
+                              <div className="mt-3 p-2 bg-yellow-50 border border-yellow-200 rounded">
+                                <h6 className="font-semibold text-xs text-yellow-800 mb-1">Monitoring Required</h6>
+                                <ul className="space-y-1 text-xs">
+                                  {subtype.treatments.firstLineMonitoring.map((monitoring, index) => (
+                                    <li key={index} className="flex items-start gap-2">
+                                      <span className="text-yellow-600 mt-1">⚠</span>
+                                      {monitoring}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            )}
+                          </div>
+                          
+                          <div>
+                            <h5 className="font-semibold text-sm mb-2">Second-Line Options</h5>
+                            <ul className="space-y-1 text-sm">
+                              {subtype.treatments.secondLine.map((treatment, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="text-purple-600 mt-1">•</span>
+                                  {treatment}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      )
+                    })()}
+                  </CardContent>
+                </Card>
               )}
 
               <div className="bg-gray-50 p-4 rounded-lg">

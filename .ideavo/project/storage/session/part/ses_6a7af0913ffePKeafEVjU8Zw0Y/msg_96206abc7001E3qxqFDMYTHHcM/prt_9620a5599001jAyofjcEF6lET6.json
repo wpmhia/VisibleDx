@@ -1,0 +1,26 @@
+{
+  "id": "prt_9620a5599001jAyofjcEF6lET6",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01CHSFg9E3qgdToB4ryzh98o",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine\n    }",
+      "newString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n      firstLineMonitoring: t.subtype.subtypes.autoimmune.treatments.firstLineMonitoring,\n      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine,\n      secondLineMonitoring: t.subtype.subtypes.autoimmune.treatments.secondLineMonitoring\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -99,9 +99,11 @@\n     })),\n     treatments: {\n       nonPharmacological: t.subtype.subtypes.autoimmune.treatments.nonPharmacological,\n       firstLine: t.subtype.subtypes.autoimmune.treatments.firstLine,\n-      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine\n+      firstLineMonitoring: t.subtype.subtypes.autoimmune.treatments.firstLineMonitoring,\n+      secondLine: t.subtype.subtypes.autoimmune.treatments.secondLine,\n+      secondLineMonitoring: t.subtype.subtypes.autoimmune.treatments.secondLineMonitoring\n     }\n   }\n ]\n \n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286470375,
+      "end": 1758286470379
+    }
+  }
+}

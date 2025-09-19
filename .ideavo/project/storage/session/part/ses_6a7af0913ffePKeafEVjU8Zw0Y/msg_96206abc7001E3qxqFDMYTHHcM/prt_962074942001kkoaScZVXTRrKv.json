@@ -1,0 +1,26 @@
+{
+  "id": "prt_962074942001kkoaScZVXTRrKv",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01RwHXv6Tszcjrum52s6HcyC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "          firstLine: [\n            'Propranolol 10-20mg BID-QID',\n            'Clonidine 0.1-0.2mg BID'\n          ],\n          secondLine: [\n            'Ivabradine 2.5-7.5mg BID',\n            'Methyldopa',\n            'Labetalol for hypertension'\n          ]",
+      "newString": "          firstLine: [\n            'Propranolol 10-20mg BID-QID',\n            'Clonidine 0.1-0.2mg BID'\n          ],\n          firstLineMonitoring: [\n            'Monitor heart rate (target: reduce by 10-20 bpm)',\n            'Blood pressure monitoring (watch for hypotension)',\n            'Screen for asthma/COPD before starting beta-blockers',\n            'Monitor for fatigue, depression, or exercise intolerance',\n            'Contraindications: Asthma, severe heart failure, heart block'\n          ],\n          secondLine: [\n            'Ivabradine 2.5-7.5mg BID',\n            'Methyldopa',\n            'Labetalol for hypertension'\n          ],\n          secondLineMonitoring: [\n            'Ivabradine: ECG monitoring, target HR 60-70 bpm',\n            'Monitor for visual disturbances (phosphenes) with ivabradine',\n            'Avoid ivabradine with strong CYP3A4 inhibitors',\n            'Regular cardiac rhythm assessment'\n          ]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -614,12 +614,25 @@\n     firstLine: [\n       'Propranolol 10-20mg BID-QID',\n       'Clonidine 0.1-0.2mg BID'\n     ],\n+    firstLineMonitoring: [\n+      'Monitor heart rate (target: reduce by 10-20 bpm)',\n+      'Blood pressure monitoring (watch for hypotension)',\n+      'Screen for asthma/COPD before starting beta-blockers',\n+      'Monitor for fatigue, depression, or exercise intolerance',\n+      'Contraindications: Asthma, severe heart failure, heart block'\n+    ],\n     secondLine: [\n       'Ivabradine 2.5-7.5mg BID',\n       'Methyldopa',\n       'Labetalol for hypertension'\n+    ],\n+    secondLineMonitoring: [\n+      'Ivabradine: ECG monitoring, target HR 60-70 bpm',\n+      'Monitor for visual disturbances (phosphenes) with ivabradine',\n+      'Avoid ivabradine with strong CYP3A4 inhibitors',\n+      'Regular cardiac rhythm assessment'\n     ]\n   }\n },\n autoimmune: {\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286274396,
+      "end": 1758286274404
+    }
+  }
+}

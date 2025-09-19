@@ -411,7 +411,9 @@ export interface Translation {
         treatments: {
           nonPharmacological: string[]
           firstLine: string[]
+          firstLineMonitoring?: string[]
           secondLine: string[]
+          secondLineMonitoring?: string[]
         }
       }
       neuropathic: {
@@ -421,7 +423,9 @@ export interface Translation {
         treatments: {
           nonPharmacological: string[]
           firstLine: string[]
+          firstLineMonitoring?: string[]
           secondLine: string[]
+          secondLineMonitoring?: string[]
         }
       }
       hyperadrenergic: {
@@ -431,7 +435,9 @@ export interface Translation {
         treatments: {
           nonPharmacological: string[]
           firstLine: string[]
+          firstLineMonitoring?: string[]
           secondLine: string[]
+          secondLineMonitoring?: string[]
         }
       }
       autoimmune: {
@@ -441,7 +447,9 @@ export interface Translation {
         treatments: {
           nonPharmacological: string[]
           firstLine: string[]
+          firstLineMonitoring?: string[]
           secondLine: string[]
+          secondLineMonitoring?: string[]
         }
       }
     }

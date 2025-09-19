@@ -1,0 +1,25 @@
+{
+  "id": "prt_962083ecd001nPvj01qhYOqsXN",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01K3jvqST9eFoxgrREy25AFB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "offset": 330,
+      "limit": 15
+    },
+    "output": "<file>\n00331|                       <Heart className=\"h-5 w-5\" />\n00332|                       {t.subtype.results.secondLineOptions}\n00333|                     </CardTitle>\n00334|                   </CardHeader>\n00335|                   <CardContent>\n00336|                     <ul className=\"space-y-2 text-sm\">\n00337|                       {primarySubtype.treatments.secondLine.map((treatment, index) => (\n00338|                         <li key={index} className=\"flex items-start gap-2\">\n00339|                           <span className=\"text-purple-600 mt-1\">•</span>\n00340|                           {treatment}\n00341|                         </li>\n00342|                       ))}\n00343|                     </ul>\n00344|                     \n00345|                     {primarySubtype.treatments.secondLineMonitoring && (\n\n(File has more lines. Use 'offset' parameter to read beyond line 345)\n</file>",
+    "metadata": {
+      "preview": "                      <Heart className=\"h-5 w-5\" />\n                      {t.subtype.results.secondLineOptions}\n                    </CardTitle>\n                  </CardHeader>\n                  <CardContent>\n                    <ul className=\"space-y-2 text-sm\">\n                      {primarySubtype.treatments.secondLine.map((treatment, index) => (\n                        <li key={index} className=\"flex items-start gap-2\">\n                          <span className=\"text-purple-600 mt-1\">•</span>\n                          {treatment}\n                        </li>\n                      ))}\n                    </ul>\n                    \n                    {primarySubtype.treatments.secondLineMonitoring && ("
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286332231,
+      "end": 1758286332233
+    }
+  }
+}

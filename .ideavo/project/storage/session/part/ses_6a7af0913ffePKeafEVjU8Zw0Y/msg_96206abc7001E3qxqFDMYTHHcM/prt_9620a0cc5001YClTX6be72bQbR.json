@@ -1,0 +1,26 @@
+{
+  "id": "prt_9620a0cc5001YClTX6be72bQbR",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01YLxTzhsiPoHKbSGJ4ZoSiC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine\n    }",
+      "newString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n      firstLineMonitoring: t.subtype.subtypes.neuropathic.treatments.firstLineMonitoring,\n      secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine,\n      secondLineMonitoring: t.subtype.subtypes.neuropathic.treatments.secondLineMonitoring\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -61,9 +61,11 @@\n   })),\n   treatments: {\n     nonPharmacological: t.subtype.subtypes.neuropathic.treatments.nonPharmacological,\n     firstLine: t.subtype.subtypes.neuropathic.treatments.firstLine,\n-    secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine\n+    firstLineMonitoring: t.subtype.subtypes.neuropathic.treatments.firstLineMonitoring,\n+    secondLine: t.subtype.subtypes.neuropathic.treatments.secondLine,\n+    secondLineMonitoring: t.subtype.subtypes.neuropathic.treatments.secondLineMonitoring\n   }\n },\n {\n   id: 'hyperadrenergic',\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286452127,
+      "end": 1758286452131
+    }
+  }
+}

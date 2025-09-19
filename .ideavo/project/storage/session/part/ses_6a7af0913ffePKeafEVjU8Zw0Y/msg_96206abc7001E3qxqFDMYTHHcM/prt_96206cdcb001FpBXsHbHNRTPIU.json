@@ -1,0 +1,73 @@
+{
+  "id": "prt_96206cdcb001FpBXsHbHNRTPIU",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01W12vGUyz9puF41EZ7ZFRdV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Add drug monitoring protocols for fludrocortisone, propranolol, and ivabradine",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "add-drug-monitoring"
+        },
+        {
+          "content": "Implement mixed subtype navigation buttons",
+          "status": "pending",
+          "priority": "high",
+          "id": "mixed-subtype-nav"
+        },
+        {
+          "content": "Enhance treatment data structure with monitoring requirements",
+          "status": "pending",
+          "priority": "high",
+          "id": "enhance-treatment-structure"
+        },
+        {
+          "content": "Test enhanced POTS treatment features",
+          "status": "pending",
+          "priority": "medium",
+          "id": "test-enhanced-pots"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Add drug monitoring protocols for fludrocortisone, propranolol, and ivabradine\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"add-drug-monitoring\"\n  },\n  {\n    \"content\": \"Implement mixed subtype navigation buttons\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"mixed-subtype-nav\"\n  },\n  {\n    \"content\": \"Enhance treatment data structure with monitoring requirements\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"enhance-treatment-structure\"\n  },\n  {\n    \"content\": \"Test enhanced POTS treatment features\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"test-enhanced-pots\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Add drug monitoring protocols for fludrocortisone, propranolol, and ivabradine",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "add-drug-monitoring"
+        },
+        {
+          "content": "Implement mixed subtype navigation buttons",
+          "status": "pending",
+          "priority": "high",
+          "id": "mixed-subtype-nav"
+        },
+        {
+          "content": "Enhance treatment data structure with monitoring requirements",
+          "status": "pending",
+          "priority": "high",
+          "id": "enhance-treatment-structure"
+        },
+        {
+          "content": "Test enhanced POTS treatment features",
+          "status": "pending",
+          "priority": "medium",
+          "id": "test-enhanced-pots"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758286239826,
+      "end": 1758286239872
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_96209215e001ntsm8JyCD02y2J",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01E7VUjqRb7zTZMmvvkn9xgf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "          firstLine: [\n            'Standard POTS medications',\n            'Trial of corticosteroids'\n          ],\n          secondLine: [\n            'IVIG therapy',\n            'Immunosuppressive agents',\n            'Plasmapheresis for severe cases'\n          ]",
+      "newString": "          firstLine: [\n            'Standard POTS medications',\n            'Trial of corticosteroids'\n          ],\n          firstLineMonitoring: [\n            'Monitor blood glucose (steroid-induced diabetes risk)',\n            'Watch for mood changes, insomnia with steroids',\n            'Bone density monitoring with long-term steroid use',\n            'Monitor for signs of infection (immunosuppression)',\n            'Regular complete blood count and metabolic panel'\n          ],\n          secondLine: [\n            'IVIG therapy',\n            'Immunosuppressive agents',\n            'Plasmapheresis for severe cases'\n          ],\n          secondLineMonitoring: [\n            'IVIG: Pre-medication for allergic reactions, monitor renal function',\n            'Immunosuppressants: Regular CBC, liver function, infection screening',\n            'Plasmapheresis: Coagulation monitoring, electrolyte replacement',\n            'Monitor for opportunistic infections with immunotherapy'\n          ]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -662,12 +662,25 @@\n       firstLine: [\n         'Standard POTS medications',\n         'Trial of corticosteroids'\n       ],\n+      firstLineMonitoring: [\n+        'Monitor blood glucose (steroid-induced diabetes risk)',\n+        'Watch for mood changes, insomnia with steroids',\n+        'Bone density monitoring with long-term steroid use',\n+        'Monitor for signs of infection (immunosuppression)',\n+        'Regular complete blood count and metabolic panel'\n+      ],\n       secondLine: [\n         'IVIG therapy',\n         'Immunosuppressive agents',\n         'Plasmapheresis for severe cases'\n+      ],\n+      secondLineMonitoring: [\n+        'IVIG: Pre-medication for allergic reactions, monitor renal function',\n+        'Immunosuppressants: Regular CBC, liver function, infection screening',\n+        'Plasmapheresis: Coagulation monitoring, electrolyte replacement',\n+        'Monitor for opportunistic infections with immunotherapy'\n       ]\n     }\n   }\n },\n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286394585,
+      "end": 1758286394598
+    }
+  }
+}

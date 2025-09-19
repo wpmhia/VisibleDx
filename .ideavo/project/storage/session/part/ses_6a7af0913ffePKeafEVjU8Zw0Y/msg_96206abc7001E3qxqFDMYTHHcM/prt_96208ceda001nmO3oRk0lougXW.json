@@ -1,0 +1,25 @@
+{
+  "id": "prt_96208ceda001nmO3oRk0lougXW",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011N2qqeBiyDn5QnNQpeLSyp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 575,
+      "limit": 20
+    },
+    "output": "<file>\n00576|           'Pupillary abnormalities',\n00577|           'History of diabetes or autoimmune disease'\n00578|         ],\n00579|         treatments: {\n00580|           nonPharmacological: [\n00581|             'Compression garments',\n00582|             'Leg elevation',\n00583|             'Avoid heat exposure',\n00584|             'Small frequent meals'\n00585|           ],\n00586|           firstLine: [\n00587|             'Midodrine 2.5-10mg TID',\n00588|             'Pyridostigmine 30-60mg TID'\n00589|           ],\n00590|           secondLine: [\n00591|             'Droxidopa (if available)',\n00592|             'Alpha-lipoic acid for neuropathy',\n00593|             'IVIG for autoimmune cases'\n00594|           ]\n00595|         }\n\n(File has more lines. Use 'offset' parameter to read beyond line 595)\n</file>",
+    "metadata": {
+      "preview": "          'Pupillary abnormalities',\n          'History of diabetes or autoimmune disease'\n        ],\n        treatments: {\n          nonPharmacological: [\n            'Compression garments',\n            'Leg elevation',\n            'Avoid heat exposure',\n            'Small frequent meals'\n          ],\n          firstLine: [\n            'Midodrine 2.5-10mg TID',\n            'Pyridostigmine 30-60mg TID'\n          ],\n          secondLine: [\n            'Droxidopa (if available)',\n            'Alpha-lipoic acid for neuropathy',\n            'IVIG for autoimmune cases'\n          ]\n        }"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286369504,
+      "end": 1758286369506
+    }
+  }
+}

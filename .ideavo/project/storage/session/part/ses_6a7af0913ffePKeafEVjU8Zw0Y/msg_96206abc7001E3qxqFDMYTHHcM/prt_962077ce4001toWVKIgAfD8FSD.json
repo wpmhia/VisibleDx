@@ -1,0 +1,25 @@
+{
+  "id": "prt_962077ce4001toWVKIgAfD8FSD",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01D3sr4Aw2FDH6B3aNtPjNMw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 410,
+      "limit": 30
+    },
+    "output": "<file>\n00411|         treatments: {\n00412|           nonPharmacological: string[]\n00413|           firstLine: string[]\n00414|           secondLine: string[]\n00415|         }\n00416|       }\n00417|       neuropathic: {\n00418|         name: string\n00419|         description: string\n00420|         criteria: string[]\n00421|         treatments: {\n00422|           nonPharmacological: string[]\n00423|           firstLine: string[]\n00424|           secondLine: string[]\n00425|         }\n00426|       }\n00427|       hyperadrenergic: {\n00428|         name: string\n00429|         description: string\n00430|         criteria: string[]\n00431|         treatments: {\n00432|           nonPharmacological: string[]\n00433|           firstLine: string[]\n00434|           secondLine: string[]\n00435|         }\n00436|       }\n00437|       autoimmune: {\n00438|         name: string\n00439|         description: string\n00440|         criteria: string[]\n\n(File has more lines. Use 'offset' parameter to read beyond line 440)\n</file>",
+    "metadata": {
+      "preview": "        treatments: {\n          nonPharmacological: string[]\n          firstLine: string[]\n          secondLine: string[]\n        }\n      }\n      neuropathic: {\n        name: string\n        description: string\n        criteria: string[]\n        treatments: {\n          nonPharmacological: string[]\n          firstLine: string[]\n          secondLine: string[]\n        }\n      }\n      hyperadrenergic: {\n        name: string\n        description: string\n        criteria: string[]"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758286282544,
+      "end": 1758286282546
+    }
+  }
+}

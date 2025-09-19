@@ -1,0 +1,26 @@
+{
+  "id": "prt_9620a2f950014xsqW4g6p1LNSr",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013iAGUnLZUh8yKkivJeSeoy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/subtype-advisor/page.tsx",
+      "oldString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n    }",
+      "newString": "    treatments: {\n      nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n      firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n      firstLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.firstLineMonitoring,\n      secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine,\n      secondLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.secondLineMonitoring\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/subtype-advisor/page.tsx\n===================================================================\n--- /home/user/project/app/subtype-advisor/page.tsx\n+++ /home/user/project/app/subtype-advisor/page.tsx\n@@ -80,9 +80,11 @@\n   })),\n   treatments: {\n     nonPharmacological: t.subtype.subtypes.hyperadrenergic.treatments.nonPharmacological,\n     firstLine: t.subtype.subtypes.hyperadrenergic.treatments.firstLine,\n-    secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine\n+    firstLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.firstLineMonitoring,\n+    secondLine: t.subtype.subtypes.hyperadrenergic.treatments.secondLine,\n+    secondLineMonitoring: t.subtype.subtypes.hyperadrenergic.treatments.secondLineMonitoring\n   }\n },\n {\n   id: 'autoimmune',\n"
+    },
+    "title": "app/subtype-advisor/page.tsx",
+    "time": {
+      "start": 1758286461000,
+      "end": 1758286461006
+    }
+  }
+}

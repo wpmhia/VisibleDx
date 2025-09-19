@@ -1,0 +1,25 @@
+{
+  "id": "prt_96208fe1a0013kIHc2Ed8SJZ3M",
+  "messageID": "msg_96206abc7001E3qxqFDMYTHHcM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01NpemP7LGLPd58YhYPDkGiw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 635,
+      "limit": 20
+    },
+    "output": "<file>\n00636|           ],\n00637|           secondLineMonitoring: [\n00638|             'Ivabradine: ECG monitoring, target HR 60-70 bpm',\n00639|             'Monitor for visual disturbances (phosphenes) with ivabradine',\n00640|             'Avoid ivabradine with strong CYP3A4 inhibitors',\n00641|             'Regular cardiac rhythm assessment'\n00642|           ]\n00643|         }\n00644|       },\n00645|       autoimmune: {\n00646|         name: 'Autoimmune POTS',\n00647|         description: 'Autoimmune-mediated autonomic dysfunction',\n00648|         criteria: [\n00649|           'Personal/family history of autoimmune disease',\n00650|           'Rapid onset of symptoms',\n00651|           'Viral illness trigger (EBV, COVID, etc.)',\n00652|           'Positive autonomic antibodies (if tested)',\n00653|           'Other autoimmune markers positive'\n00654|         ],\n00655|         treatments: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 655)\n</file>",
+    "metadata": {
+      "preview": "          ],\n          secondLineMonitoring: [\n            'Ivabradine: ECG monitoring, target HR 60-70 bpm',\n            'Monitor for visual disturbances (phosphenes) with ivabradine',\n            'Avoid ivabradine with strong CYP3A4 inhibitors',\n            'Regular cardiac rhythm assessment'\n          ]\n        }\n      },\n      autoimmune: {\n        name: 'Autoimmune POTS',\n        description: 'Autoimmune-mediated autonomic dysfunction',\n        criteria: [\n          'Personal/family history of autoimmune disease',\n          'Rapid onset of symptoms',\n          'Viral illness trigger (EBV, COVID, etc.)',\n          'Positive autonomic antibodies (if tested)',\n          'Other autoimmune markers positive'\n        ],\n        treatments: {"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758286381164,
+      "end": 1758286381166
+    }
+  }
+}
