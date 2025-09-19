@@ -1,0 +1,26 @@
+{
+  "id": "prt_960a381b0001X5kUsB6wBjB6fr",
+  "messageID": "msg_960a3676f001NNnsGjZun9UIv0",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01U3AzYASWTAnwkFV6QdnR18",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && ps aux | grep -E \"(next|node)\" | grep -v grep",
+      "description": "Check if Next.js server is still running"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": 1,
+      "description": "Check if Next.js server is still running"
+    },
+    "title": "cd /home/user/project && ps aux | grep -E \"(next|node)\" | grep -v grep",
+    "time": {
+      "start": 1758262953163,
+      "end": 1758262953196
+    }
+  }
+}
