@@ -34,7 +34,8 @@ import {
   BookOpen,
   ExternalLink,
   Info,
-  User
+  User,
+  Bug
 } from 'lucide-react'
 import { useTranslation } from '@/lib/language-context'
 import { LanguageSelector } from '@/components/language-selector'
@@ -139,7 +140,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo and Home Link */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <Search className="h-6 w-6 text-blue-600" />
+          <Bug className="h-6 w-6 text-blue-600" />
           <div className="font-bold text-lg">
             <span className="text-blue-600">Invisible</span>
             <span className="text-gray-900">Dx</span>
@@ -242,7 +243,7 @@ export default function Navigation() {
             <SheetContent side="right">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
-                  <Search className="h-5 w-5 text-blue-600" />
+                  <Bug className="h-5 w-5 text-blue-600" />
                    InvisibleDx Menu
                 </SheetTitle>
               </SheetHeader>

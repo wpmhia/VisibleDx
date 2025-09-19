@@ -1,0 +1,26 @@
+{
+  "id": "prt_9620f0aa9001ykKzWggNs784J0",
+  "messageID": "msg_9620e9ca800164wyMONr4oDU82",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015GE6f1JpgV5g4jg73VQQmy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <Search className=\"h-5 w-5 text-blue-600\" />\n                   InvisibleDx Menu\n                </SheetTitle>\n              </SheetHeader>",
+      "newString": "              <SheetHeader>\n                <SheetTitle className=\"flex items-center gap-2\">\n                  <Bug className=\"h-5 w-5 text-blue-600\" />\n                   InvisibleDx Menu\n                </SheetTitle>\n              </SheetHeader>"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -242,9 +242,9 @@\n </SheetTrigger>\n <SheetContent side=\"right\">\n   <SheetHeader>\n     <SheetTitle className=\"flex items-center gap-2\">\n-      <Search className=\"h-5 w-5 text-blue-600\" />\n+      <Bug className=\"h-5 w-5 text-blue-600\" />\n        InvisibleDx Menu\n     </SheetTitle>\n   </SheetHeader>\n   <div className=\"mt-6 space-y-4\">\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758286778836,
+      "end": 1758286778839
+    }
+  }
+}

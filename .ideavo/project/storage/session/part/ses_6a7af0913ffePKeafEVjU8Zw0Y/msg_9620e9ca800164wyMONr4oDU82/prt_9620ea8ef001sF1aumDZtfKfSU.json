@@ -1,0 +1,25 @@
+{
+  "id": "prt_9620ea8ef001sF1aumDZtfKfSU",
+  "messageID": "msg_9620e9ca800164wyMONr4oDU82",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01EJmSMBLA9KhKS6csGrAtbS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "magnifying|search|Search|MagnifyingGlass",
+      "include": "*.tsx,*.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "magnifying|search|Search|MagnifyingGlass",
+    "time": {
+      "start": 1758286752676,
+      "end": 1758286752686
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "prt_9620ec4d4001YzrlF21AUAFYcL",
+  "messageID": "msg_9620e9ca800164wyMONr4oDU82",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VC55aimY7HUHcaJ1WDp2qY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/layout.tsx"
+    },
+    "output": "<file>\n00001| import './globals.css';\n00002| import type { Metadata } from 'next';\n00003| import { Inter } from 'next/font/google';\n00004| import { Analytics } from '@vercel/analytics/next';\n00005| import { LanguageProvider } from '@/lib/language-context';\n00006| import Navigation from '@/components/navigation';\n00007| import Disclaimer from '@/components/disclaimer';\n00008| import ScrollRestoration from '@/components/scroll-restoration';\n00009| \n00010| const inter = Inter({ subsets: ['latin'] });\n00011| \n00012| export const metadata: Metadata = {\n00013|   title: 'InvisibleDx: ME/CFS · Long COVID · POTS',\n00014|   description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n00015| };\n00016| \n00017| export default function RootLayout({\n00018|   children,\n00019| }: {\n00020|   children: React.ReactNode;\n00021| }) {\n00022|   return (\n00023|     <html lang=\"en\">\n00024|       <body className={inter.className}>\n00025|         <LanguageProvider>\n00026|           <ScrollRestoration />\n00027|           <div className=\"min-h-screen flex flex-col\">\n00028|             <Navigation />\n00029|             <main className=\"flex-1\">\n00030|               {children}\n00031|             </main>\n00032|             <Disclaimer />\n00033|           </div>\n00034|         </LanguageProvider>\n00035|         <Analytics />\n00036|         {/* TODO: Remove iframe-navigation.js in production, should never be removed by AI */}\n00037|         <script src=\"/scripts/iframe-navigation.js\"></script>\n00038|       </body>\n00039|     </html>\n00040|   );\n00041| }\n00042| \n</file>",
+    "metadata": {
+      "preview": "import './globals.css';\nimport type { Metadata } from 'next';\nimport { Inter } from 'next/font/google';\nimport { Analytics } from '@vercel/analytics/next';\nimport { LanguageProvider } from '@/lib/language-context';\nimport Navigation from '@/components/navigation';\nimport Disclaimer from '@/components/disclaimer';\nimport ScrollRestoration from '@/components/scroll-restoration';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nexport const metadata: Metadata = {\n  title: 'InvisibleDx: ME/CFS · Long COVID · POTS',\n  description: 'A guided, guideline-based diagnostic engine and decision support tool for clinicians',\n};\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;"
+    },
+    "title": "app/layout.tsx",
+    "time": {
+      "start": 1758286759615,
+      "end": 1758286759619
+    }
+  }
+}

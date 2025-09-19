@@ -1,0 +1,25 @@
+{
+  "id": "prt_9620eb963001545wSULrd0a5qO",
+  "messageID": "msg_9620e9ca800164wyMONr4oDU82",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01PfcncbaUgx8riJoZwdN6oJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "logo|Logo|icon|Icon",
+      "include": "*.tsx,*.ts"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "logo|Logo|icon|Icon",
+    "time": {
+      "start": 1758286756715,
+      "end": 1758286756726
+    }
+  }
+}

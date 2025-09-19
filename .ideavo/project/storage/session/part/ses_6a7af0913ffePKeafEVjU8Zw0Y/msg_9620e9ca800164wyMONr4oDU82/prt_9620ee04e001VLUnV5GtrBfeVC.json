@@ -1,0 +1,26 @@
+{
+  "id": "prt_9620ee04e001VLUnV5GtrBfeVC",
+  "messageID": "msg_9620e9ca800164wyMONr4oDU82",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0136SGwKqNDoXioANNgVoqAf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User\n} from 'lucide-react'",
+      "newString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User,\n  Bug\n} from 'lucide-react'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -33,9 +33,10 @@\n   Settings,\n   BookOpen,\n   ExternalLink,\n   Info,\n-  User\n+  User,\n+  Bug\n } from 'lucide-react'\n import { useTranslation } from '@/lib/language-context'\n import { LanguageSelector } from '@/components/language-selector'\n \n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758286768948,
+      "end": 1758286768957
+    }
+  }
+}
