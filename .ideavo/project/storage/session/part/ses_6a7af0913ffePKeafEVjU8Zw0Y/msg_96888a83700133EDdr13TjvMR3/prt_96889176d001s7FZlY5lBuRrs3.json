@@ -1,0 +1,26 @@
+{
+  "id": "prt_96889176d001s7FZlY5lBuRrs3",
+  "messageID": "msg_96888a83700133EDdr13TjvMR3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01D9PkYFiSkMUuU74wY9Q7FY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 5 -B 5 \"EnergyActivity\" app/energy-management/page.tsx",
+      "description": "Find EnergyActivity type definition"
+    },
+    "output": "import { Progress } from '@/components/ui/progress'\nimport { Battery, CheckCircle, AlertTriangle, Clock, Target, Lightbulb } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface EnergyActivity {\n  type: 'cognitive' | 'physical' | 'emotional' | 'social'\n  activity: string\n  energyCost: number\n  duration: number\n  canReduce: boolean\n--\nexport default function EnergyManagement() {\n  const [currentStep, setCurrentStep] = useState(0)\n  const [assessmentData, setAssessmentData] = useState({\n    currentEnergyLevel: '',\n    symptoms: [] as string[],\n    dailyActivities: [] as EnergyActivity[],\n    triggers: [] as string[],\n    restPeriods: '',\n    goals: '',\n    energyLimits: ''\n  })\n",
+    "metadata": {
+      "output": "import { Progress } from '@/components/ui/progress'\nimport { Battery, CheckCircle, AlertTriangle, Clock, Target, Lightbulb } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\ninterface EnergyActivity {\n  type: 'cognitive' | 'physical' | 'emotional' | 'social'\n  activity: string\n  energyCost: number\n  duration: number\n  canReduce: boolean\n--\nexport default function EnergyManagement() {\n  const [currentStep, setCurrentStep] = useState(0)\n  const [assessmentData, setAssessmentData] = useState({\n    currentEnergyLevel: '',\n    symptoms: [] as string[],\n    dailyActivities: [] as EnergyActivity[],\n    triggers: [] as string[],\n    restPeriods: '',\n    goals: '',\n    energyLimits: ''\n  })\n",
+      "exit": 0,
+      "description": "Find EnergyActivity type definition"
+    },
+    "title": "cd /home/user/project && rg -A 5 -B 5 \"EnergyActivity\" app/energy-management/page.tsx",
+    "time": {
+      "start": 1758395439667,
+      "end": 1758395439682
+    }
+  }
+}

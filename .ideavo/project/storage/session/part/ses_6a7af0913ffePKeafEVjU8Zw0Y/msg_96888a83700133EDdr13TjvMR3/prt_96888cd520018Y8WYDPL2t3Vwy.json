@@ -1,0 +1,26 @@
+{
+  "id": "prt_96888cd520018Y8WYDPL2t3Vwy",
+  "messageID": "msg_96888a83700133EDdr13TjvMR3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01LNEY7qkffxcrW17fcViXPX",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 20 \"Map your daily activities\" app/energy-management/page.tsx",
+      "description": "Find the activity mapping section"
+    },
+    "output": "              {currentStep === 1 && \"Map your daily activities and energy costs\"}\n              {currentStep === 2 && \"Identify triggers for symptom worsening\"}\n              {currentStep === 3 && \"Set goals and energy limits\"}\n              {currentStep === 4 && \"Review your personalised plan\"}\n            </CardDescription>\n          </CardHeader>\n          <CardContent>\n            <div className=\"space-y-6\">\n              {currentStep === 0 && (\n                <div className=\"space-y-4\">\n                  <div>\n                    <Label className=\"text-base font-medium\">Current Energy Level</Label>\n                    <RadioGroup \n                      value={assessmentData.currentEnergyLevel} \n                      onValueChange={(value) => setAssessmentData(prev => ({ ...prev, currentEnergyLevel: value }))}\n                      className=\"mt-2\"\n                    >\n                      {energyLevels.map((level) => (\n                        <div key={level.value} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                          <RadioGroupItem value={level.value} id={level.value} className=\"mt-1\" />\n                          <Label htmlFor={level.value} className=\"cursor-pointer flex-1\">\n",
+    "metadata": {
+      "output": "              {currentStep === 1 && \"Map your daily activities and energy costs\"}\n              {currentStep === 2 && \"Identify triggers for symptom worsening\"}\n              {currentStep === 3 && \"Set goals and energy limits\"}\n              {currentStep === 4 && \"Review your personalised plan\"}\n            </CardDescription>\n          </CardHeader>\n          <CardContent>\n            <div className=\"space-y-6\">\n              {currentStep === 0 && (\n                <div className=\"space-y-4\">\n                  <div>\n                    <Label className=\"text-base font-medium\">Current Energy Level</Label>\n                    <RadioGroup \n                      value={assessmentData.currentEnergyLevel} \n                      onValueChange={(value) => setAssessmentData(prev => ({ ...prev, currentEnergyLevel: value }))}\n                      className=\"mt-2\"\n                    >\n                      {energyLevels.map((level) => (\n                        <div key={level.value} className=\"flex items-start space-x-3 p-3 rounded-lg border hover:bg-gray-50\">\n                          <RadioGroupItem value={level.value} id={level.value} className=\"mt-1\" />\n                          <Label htmlFor={level.value} className=\"cursor-pointer flex-1\">\n",
+      "exit": 0,
+      "description": "Find the activity mapping section"
+    },
+    "title": "cd /home/user/project && rg -A 20 \"Map your daily activities\" app/energy-management/page.tsx",
+    "time": {
+      "start": 1758395421200,
+      "end": 1758395421235
+    }
+  }
+}

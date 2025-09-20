@@ -1,0 +1,11 @@
+{
+  "id": "prt_968890339001fAIVOhUMWEKNrj",
+  "messageID": "msg_96888a83700133EDdr13TjvMR3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I need to check what the assessmentData structure includes for dailyActivities. Let me look at the initial state:",
+  "time": {
+    "start": 1758395434678,
+    "end": 1758395434678
+  }
+}

@@ -386,16 +386,186 @@ Remember: You are the expert in judging your own limits. Do not push through sym
                   {activityTypes.map((type) => (
                     <Card key={type.type} className="border-gray-200">
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-base">{type.label}</CardTitle>
+                        <CardTitle className="text-base flex items-center gap-2">
+                          {type.label}
+                        </CardTitle>
                         <CardDescription className="text-xs">{type.examples}</CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <div className="text-sm text-gray-600">
-                          Consider how much energy these activities cost you on a typical day.
+                        <div className="space-y-3">
+                          <p className="text-sm text-gray-600">
+                            Rate the energy cost of these activities (1 = Very Low, 5 = Very High):
+                          </p>
+                          
+                          {/* Sample activities for each category */}
+                          {type.type === 'cognitive' && (
+                            <div className="space-y-2">
+                              {['Reading for 30 minutes', 'Computer work for 1 hour', 'Making decisions/planning'].map((activity, idx) => (
+                                <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                  <span className="text-sm">{activity}</span>
+                                  <div className="flex gap-1">
+                                    {[1,2,3,4,5].map(cost => (
+                                      <Button
+                                        key={cost}
+                                        size="sm"
+                                        variant={assessmentData.dailyActivities.find(a => a.activity === activity)?.energyCost === cost ? "default" : "outline"}
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => {
+                                          const newActivity: EnergyActivity = {
+                                            type: type.type as 'cognitive' | 'physical' | 'emotional' | 'social',
+                                            activity,
+                                            energyCost: cost,
+                                            duration: 30,
+                                            canReduce: true
+                                          }
+                                          setAssessmentData(prev => ({
+                                            ...prev,
+                                            dailyActivities: [
+                                              ...prev.dailyActivities.filter(a => a.activity !== activity),
+                                              newActivity
+                                            ]
+                                          }))
+                                        }}
+                                      >
+                                        {cost}
+                                      </Button>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          
+                          {type.type === 'physical' && (
+                            <div className="space-y-2">
+                              {['Walking for 15 minutes', 'Light household tasks', 'Climbing stairs'].map((activity, idx) => (
+                                <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                  <span className="text-sm">{activity}</span>
+                                  <div className="flex gap-1">
+                                    {[1,2,3,4,5].map(cost => (
+                                      <Button
+                                        key={cost}
+                                        size="sm"
+                                        variant={assessmentData.dailyActivities.find(a => a.activity === activity)?.energyCost === cost ? "default" : "outline"}
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => {
+                                          const newActivity: EnergyActivity = {
+                                            type: type.type as 'cognitive' | 'physical' | 'emotional' | 'social',
+                                            activity,
+                                            energyCost: cost,
+                                            duration: 30,
+                                            canReduce: true
+                                          }
+                                          setAssessmentData(prev => ({
+                                            ...prev,
+                                            dailyActivities: [
+                                              ...prev.dailyActivities.filter(a => a.activity !== activity),
+                                              newActivity
+                                            ]
+                                          }))
+                                        }}
+                                      >
+                                        {cost}
+                                      </Button>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          
+                          {type.type === 'emotional' && (
+                            <div className="space-y-2">
+                              {['Difficult conversations', 'Managing stress/worry', 'Emotional situations'].map((activity, idx) => (
+                                <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                  <span className="text-sm">{activity}</span>
+                                  <div className="flex gap-1">
+                                    {[1,2,3,4,5].map(cost => (
+                                      <Button
+                                        key={cost}
+                                        size="sm"
+                                        variant={assessmentData.dailyActivities.find(a => a.activity === activity)?.energyCost === cost ? "default" : "outline"}
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => {
+                                          const newActivity: EnergyActivity = {
+                                            type: type.type as 'cognitive' | 'physical' | 'emotional' | 'social',
+                                            activity,
+                                            energyCost: cost,
+                                            duration: 30,
+                                            canReduce: true
+                                          }
+                                          setAssessmentData(prev => ({
+                                            ...prev,
+                                            dailyActivities: [
+                                              ...prev.dailyActivities.filter(a => a.activity !== activity),
+                                              newActivity
+                                            ]
+                                          }))
+                                        }}
+                                      >
+                                        {cost}
+                                      </Button>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          
+                          {type.type === 'social' && (
+                            <div className="space-y-2">
+                              {['Phone calls (30 min)', 'Social events/gatherings', 'Work meetings'].map((activity, idx) => (
+                                <div key={idx} className="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                  <span className="text-sm">{activity}</span>
+                                  <div className="flex gap-1">
+                                    {[1,2,3,4,5].map(cost => (
+                                      <Button
+                                        key={cost}
+                                        size="sm"
+                                        variant={assessmentData.dailyActivities.find(a => a.activity === activity)?.energyCost === cost ? "default" : "outline"}
+                                        className="w-8 h-8 p-0"
+                                        onClick={() => {
+                                          const newActivity: EnergyActivity = {
+                                            type: type.type as 'cognitive' | 'physical' | 'emotional' | 'social',
+                                            activity,
+                                            energyCost: cost,
+                                            duration: 30,
+                                            canReduce: true
+                                          }
+                                          setAssessmentData(prev => ({
+                                            ...prev,
+                                            dailyActivities: [
+                                              ...prev.dailyActivities.filter(a => a.activity !== activity),
+                                              newActivity
+                                            ]
+                                          }))
+                                        }}
+                                      >
+                                        {cost}
+                                      </Button>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </CardContent>
                     </Card>
                   ))}
+                  
+                  {assessmentData.dailyActivities.length > 0 && (
+                    <Card className="bg-green-50 border-green-200">
+                      <CardHeader>
+                        <CardTitle className="text-sm text-green-900">Activities Mapped ({assessmentData.dailyActivities.length})</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="text-xs text-green-800">
+                          You've mapped {assessmentData.dailyActivities.length} activities. This will help create your personalized energy management plan.
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
                 </div>
               )}
 

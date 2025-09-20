@@ -1,0 +1,25 @@
+{
+  "id": "prt_96888f53f001ofxNgRnHEaCbOm",
+  "messageID": "msg_96888a83700133EDdr13TjvMR3",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01BDeyQkzwdLphAekxMahHkB",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/energy-management/page.tsx",
+      "offset": 370,
+      "limit": 30
+    },
+    "output": "<file>\n00371|                             }}\n00372|                           />\n00373|                           <Label htmlFor={symptom} className=\"text-sm\">{symptom}</Label>\n00374|                         </div>\n00375|                       ))}\n00376|                     </div>\n00377|                   </div>\n00378|                 </div>\n00379|               )}\n00380| \n00381|               {currentStep === 1 && (\n00382|                 <div className=\"space-y-4\">\n00383|                   <p className=\"text-sm text-gray-600\">\n00384|                     NICE NG206: Consider all types of activity - cognitive, physical, emotional and social\n00385|                   </p>\n00386|                   {activityTypes.map((type) => (\n00387|                     <Card key={type.type} className=\"border-gray-200\">\n00388|                       <CardHeader className=\"pb-2\">\n00389|                         <CardTitle className=\"text-base\">{type.label}</CardTitle>\n00390|                         <CardDescription className=\"text-xs\">{type.examples}</CardDescription>\n00391|                       </CardHeader>\n00392|                       <CardContent>\n00393|                         <div className=\"text-sm text-gray-600\">\n00394|                           Consider how much energy these activities cost you on a typical day.\n00395|                         </div>\n00396|                       </CardContent>\n00397|                     </Card>\n00398|                   ))}\n00399|                 </div>\n00400|               )}\n\n(File has more lines. Use 'offset' parameter to read beyond line 400)\n</file>",
+    "metadata": {
+      "preview": "                            }}\n                          />\n                          <Label htmlFor={symptom} className=\"text-sm\">{symptom}</Label>\n                        </div>\n                      ))}\n                    </div>\n                  </div>\n                </div>\n              )}\n\n              {currentStep === 1 && (\n                <div className=\"space-y-4\">\n                  <p className=\"text-sm text-gray-600\">\n                    NICE NG206: Consider all types of activity - cognitive, physical, emotional and social\n                  </p>\n                  {activityTypes.map((type) => (\n                    <Card key={type.type} className=\"border-gray-200\">\n                      <CardHeader className=\"pb-2\">\n                        <CardTitle className=\"text-base\">{type.label}</CardTitle>\n                        <CardDescription className=\"text-xs\">{type.examples}</CardDescription>"
+    },
+    "title": "app/energy-management/page.tsx",
+    "time": {
+      "start": 1758395431299,
+      "end": 1758395431302
+    }
+  }
+}
