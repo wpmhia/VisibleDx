@@ -1,0 +1,7 @@
+{
+  "id": "prt_96876ada1002dZLaS21ThNV5AF",
+  "type": "text",
+  "text": "Build Error\nFailed to compile\n\nNext.js (14.2.31) is outdated (learn more)\n./lib/translations/en.ts\nError: \n  x Expected ',', got ';'\n     ,-[/home/user/project/lib/translations/en.ts:455:1]\n 455 |           'Standard activity guidelines may apply'\n 456 |         ]\n 457 |       },\n 458 |       important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n     :                                                                                                                                                                                                                                                                                         ^\n 459 |       retake: 'Retake Assessment'\n 460 |     }\n 461 |   },\n     `----",
+  "messageID": "msg_96876ada1001p2uQpy7vRGcMUS",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}
