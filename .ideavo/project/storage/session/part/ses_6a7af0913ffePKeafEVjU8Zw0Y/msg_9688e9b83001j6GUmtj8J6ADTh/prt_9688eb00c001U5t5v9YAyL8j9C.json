@@ -1,0 +1,19 @@
+{
+  "id": "prt_9688eb00c001U5t5v9YAyL8j9C",
+  "messageID": "msg_9688e9b83001j6GUmtj8J6ADTh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_018FbWwat82Mg5HVnyAdBWFh",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/.ideavo-attachments/Clinical_features_and_diagnosis_of_myalgic_encephalomyelitis_chronic_fatigue_syndrome_-_UpToDate_1_-compressed.pdf"
+    },
+    "error": "Error: Cannot read binary file: /home/user/project/.ideavo-attachments/Clinical_features_and_diagnosis_of_myalgic_encephalomyelitis_chronic_fatigue_syndrome_-_UpToDate_1_-compressed.pdf",
+    "time": {
+      "start": 1758395806610,
+      "end": 1758395806619
+    }
+  }
+}
