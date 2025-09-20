@@ -1,0 +1,35 @@
+{
+  "id": "prt_96875409c0012bpCBlXa2rkP6H",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01XUacrke66qaRYWcHh9fsxV",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      subtypeAdvisor: {\n        title: 'Clinical Management',\n        description: 'Condition subtyping & treatment planning examples'\n      }",
+          "newString": "      subtypeAdvisor: {\n        title: 'Clinical Management',\n        description: 'Condition subtyping & treatment planning examples'\n      },\n      energyManagement: {\n        title: 'Energy Management',\n        description: 'NICE NG206 energy management planning tool'\n      }"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -99,8 +99,12 @@\n   },\n   subtypeAdvisor: {\n     title: 'Clinical Management',\n     description: 'Condition subtyping & treatment planning examples'\n+  },\n+  energyManagement: {\n+    title: 'Energy Management',\n+    description: 'NICE NG206 energy management planning tool'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 year avg diagnostic delay',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394141576,
+      "end": 1758394141586
+    }
+  }
+}

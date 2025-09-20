@@ -1,0 +1,44 @@
+{
+  "id": "prt_968710f5d0016MXHeR9seUSbRO",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01L27tKs1zJEZmHMoPNRCzgx",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "  redFlag: {\n    title: 'Red-flag Checker',\n    description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',",
+          "newString": "  redFlag: {\n    title: 'NICE NG206 Differential Diagnosis',\n    description: 'NICE-compliant investigations to exclude other diagnoses when ME/CFS is suspected',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    routineLabs: {\n      title: 'Routine Screening Labs',\n      description: 'Select categories of tests to rule out common explanatory conditions',\n      categories: {\n        basicMetabolic: {\n          title: 'Basic Metabolic',\n          indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',\n          tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']\n        },\n        endocrine: {\n          title: 'Endocrine',\n          indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',\n          tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']\n        },\n        nutritional: {\n          title: 'Nutritional',\n          indication: 'Rule out nutritional deficiencies causing fatigue',\n          tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin']\n        },\n        autoimmune: {\n          title: 'Autoimmune',\n          indication: 'Screen for autoimmune conditions',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies']\n        },\n        cardiac: {\n          title: 'Cardiac',\n          indication: 'Rule out structural heart disease, heart failure',\n          tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP']\n        },\n        infectious: {\n          title: 'Infectious',\n          indication: 'Rule out chronic infections',\n          tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies']\n        }\n      }\n    },",
+          "newString": "    routineLabs: {\n      title: 'NICE NG206 Required Investigations',\n      description: 'Mandatory tests to exclude other diagnoses when ME/CFS is suspected',\n      categories: {\n        essential: {\n          title: 'Essential Tests (NICE NG206)',\n          indication: 'Required investigations for all patients with suspected ME/CFS',\n          tests: ['Urinalysis for protein, blood and glucose', 'Full blood count', 'Urea and electrolytes', 'Liver function', 'Thyroid function (TSH)', 'ESR or plasma viscosity', 'C-reactive protein', 'Calcium and phosphate', 'HbA1c', 'Serum ferritin', 'Coeliac screening', 'Creatine kinase']\n        },\n        additional: {\n          title: 'Additional Tests (Clinical Judgement)',\n          indication: 'Consider based on clinical presentation and history',\n          tests: ['Vitamin D', 'Vitamin B12 and folate levels', 'Serological tests if infection history', '9am cortisol for adrenal insufficiency']\n        },\n        paediatric: {\n          title: 'Additional Paediatric Considerations',\n          indication: 'Extra considerations for children and young people',\n          tests: ['Growth parameters', 'Developmental assessment', 'School attendance review', 'Family history review']\n        }\n      }\n    },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -206,10 +206,10 @@\n   }\n },\n \n redFlag: {\n-  title: 'Red-flag Checker',\n-  description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',\n+  title: 'NICE NG206 Differential Diagnosis',\n+  description: 'NICE-compliant investigations to exclude other diagnoses when ME/CFS is suspected',\n   symptoms: {\n     title: 'Red Flag Symptoms',\n     description: 'Check any symptoms present that may require urgent evaluation',\n     list: [\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -233,40 +233,25 @@\n   'Infectious/Malignancy',\n   'Hepatic'\n ],\n routineLabs: {\n-  title: 'Routine Screening Labs',\n-  description: 'Select categories of tests to rule out common explanatory conditions',\n+  title: 'NICE NG206 Required Investigations',\n+  description: 'Mandatory tests to exclude other diagnoses when ME/CFS is suspected',\n   categories: {\n-    basicMetabolic: {\n-      title: 'Basic Metabolic',\n-      indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',\n-      tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']\n+    essential: {\n+      title: 'Essential Tests (NICE NG206)',\n+      indication: 'Required investigations for all patients with suspected ME/CFS',\n+      tests: ['Urinalysis for protein, blood and glucose', 'Full blood count', 'Urea and electrolytes', 'Liver function', 'Thyroid function (TSH)', 'ESR or plasma viscosity', 'C-reactive protein', 'Calcium and phosphate', 'HbA1c', 'Serum ferritin', 'Coeliac screening', 'Creatine kinase']\n     },\n-    endocrine: {\n-      title: 'Endocrine',\n-      indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',\n-      tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']\n+    additional: {\n+      title: 'Additional Tests (Clinical Judgement)',\n+      indication: 'Consider based on clinical presentation and history',\n+      tests: ['Vitamin D', 'Vitamin B12 and folate levels', 'Serological tests if infection history', '9am cortisol for adrenal insufficiency']\n     },\n-    nutritional: {\n-      title: 'Nutritional',\n-      indication: 'Rule out nutritional deficiencies causing fatigue',\n-      tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin']\n-    },\n-    autoimmune: {\n-      title: 'Autoimmune',\n-      indication: 'Screen for autoimmune conditions',\n-      tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies']\n-    },\n-    cardiac: {\n-      title: 'Cardiac',\n-      indication: 'Rule out structural heart disease, heart failure',\n-      tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP']\n-    },\n-    infectious: {\n-      title: 'Infectious',\n-      indication: 'Rule out chronic infections',\n-      tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies']\n+    paediatric: {\n+      title: 'Additional Paediatric Considerations',\n+      indication: 'Extra considerations for children and young people',\n+      tests: ['Growth parameters', 'Developmental assessment', 'School attendance review', 'Family history review']\n     }\n   }\n },\n results: {\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758393879930,
+      "end": 1758393879949
+    }
+  }
+}

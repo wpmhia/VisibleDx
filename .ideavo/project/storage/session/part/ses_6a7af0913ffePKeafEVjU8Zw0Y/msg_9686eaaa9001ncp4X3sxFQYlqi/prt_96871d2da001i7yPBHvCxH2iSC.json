@@ -1,0 +1,44 @@
+{
+  "id": "prt_96871d2da001i7yPBHvCxH2iSC",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_017KKF4JsZX8zbSAuCY9VAqC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "  pem: {\n    title: 'PEM-Quest Assessment',\n    description: 'Post-Exertional Malaise evaluation - 5 validated questions',\n    about: {\n      title: 'About Post-Exertional Malaise (PEM)',\n      description: 'PEM is the worsening of symptoms following physical or mental activity that was previously tolerated. It\\'s a key feature of ME/CFS and often occurs in Long COVID. Symptoms may be delayed and can last days to weeks.'\n    },",
+          "newString": "  pem: {\n    title: 'NICE NG206 Post-Exertional Malaise Assessment',\n    description: 'NICE-compliant PEM evaluation based on NG206 core criteria',\n    about: {\n      title: 'NICE NG206 Definition of Post-Exertional Malaise',\n      description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'\n    },"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      important: 'Important: PEM is the hallmark symptom of ME/CFS. If present, avoid activities that consistently trigger symptom worsening. Energy management and pacing are key treatment strategies.',",
+          "newString": "      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -345,13 +345,13 @@\n   }\n },\n \n pem: {\n-  title: 'PEM-Quest Assessment',\n-  description: 'Post-Exertional Malaise evaluation - 5 validated questions',\n+  title: 'NICE NG206 Post-Exertional Malaise Assessment',\n+  description: 'NICE-compliant PEM evaluation based on NG206 core criteria',\n   about: {\n-    title: 'About Post-Exertional Malaise (PEM)',\n-    description: 'PEM is the worsening of symptoms following physical or mental activity that was previously tolerated. It\\'s a key feature of ME/CFS and often occurs in Long COVID. Symptoms may be delayed and can last days to weeks.'\n+    title: 'NICE NG206 Definition of Post-Exertional Malaise',\n+    description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'\n   },\n   questions: {\n     frequency: {\n       question: 'How often do you experience a worsening of symptoms following physical activity?',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -440,9 +440,9 @@\n         'Consider other diagnoses',\n         'Standard activity as tolerated'\n       ]\n     },\n-    important: 'Important: PEM is the hallmark symptom of ME/CFS. If present, avoid activities that consistently trigger symptom worsening. Energy management and pacing are key treatment strategies.',\n+    important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n     retake: 'Retake Assessment'\n   }\n },\n \n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758393924276,
+      "end": 1758393924292
+    }
+  }
+}

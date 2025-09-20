@@ -1,0 +1,44 @@
+{
+  "id": "prt_96873602e001toVFYlp61oHwb1",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_017tnRkMqiFVXr4GrypEMe9F",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "  criteria: {\n    title: 'Criteria Engine',\n    description: 'Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination',\n    mecfs: {\n      title: 'ME/CFS Criteria (CDC/NASEM 2015)',\n      description: 'Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance',\n      criteria: [\n        'Substantial reduction or impairment in activity levels that persists for ≥6 months',\n        'Post-exertional malaise (PEM) present',\n        'Unrefreshing sleep',\n        'Cognitive impairment (brain fog)',\n        'Orthostatic intolerance OR autonomic dysfunction'\n      ]\n    },",
+          "newString": "  criteria: {\n    title: 'NICE NG206 Diagnostic Criteria Engine',\n    description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n    mecfs: {\n      title: 'ME/CFS Criteria (NICE NG206)',\n      description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n      criteria: [\n        'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',\n        'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',\n        'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',\n        'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',\n        'Symptoms have persisted for 3 months',\n        'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',\n        'Symptoms are NOT explained by another condition (after appropriate investigations)'\n      ]\n    },"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      mecfsManagement: [\n        'Implement activity pacing and energy management',\n        'Avoid graded exercise therapy (GET)',\n        'Consider symptom-directed treatments',\n        'Specialist ME/CFS clinic referral if available'\n      ],",
+          "newString": "      mecfsManagement: [\n        'NICE NG206: Refer to ME/CFS specialist team for personalised care and support plan',\n        'Implement energy management - do not \"push through\" symptoms',\n        'DO NOT offer graded exercise therapy (GET) - contraindicated',\n        'DO NOT offer Lightning Process or therapies based on it',\n        'Provide information about ME/CFS and support for families/carers',\n        'Consider CBT to support symptom management (not curative)',\n        'Symptom management: rest, sleep, pain, orthostatic intolerance as needed',\n        'Review at least annually (6-monthly for children)'\n      ],"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -456,19 +456,21 @@\n   }\n },\n \n criteria: {\n-  title: 'Criteria Engine',\n-  description: 'Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination',\n+  title: 'NICE NG206 Diagnostic Criteria Engine',\n+  description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n   mecfs: {\n-    title: 'ME/CFS Criteria (CDC/NASEM 2015)',\n-    description: 'Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance',\n+    title: 'ME/CFS Criteria (NICE NG206)',\n+    description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n     criteria: [\n-      'Substantial reduction or impairment in activity levels that persists for ≥6 months',\n-      'Post-exertional malaise (PEM) present',\n-      'Unrefreshing sleep',\n-      'Cognitive impairment (brain fog)',\n-      'Orthostatic intolerance OR autonomic dysfunction'\n+      'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',\n+      'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',\n+      'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',\n+      'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',\n+      'Symptoms have persisted for 3 months',\n+      'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',\n+      'Symptoms are NOT explained by another condition (after appropriate investigations)'\n     ]\n   },\n   longCovid: {\n     title: 'Long COVID Criteria (WHO/NASEM 2024)',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -504,12 +504,16 @@\n diagnosesMet: 'Diagnoses Meeting Criteria',\n criteriaMet: 'CRITERIA MET',\n clinicalRecommendations: 'Clinical Recommendations',\n mecfsManagement: [\n-  'Implement activity pacing and energy management',\n-  'Avoid graded exercise therapy (GET)',\n-  'Consider symptom-directed treatments',\n-  'Specialist ME/CFS clinic referral if available'\n+  'NICE NG206: Refer to ME/CFS specialist team for personalised care and support plan',\n+  'Implement energy management - do not \"push through\" symptoms',\n+  'DO NOT offer graded exercise therapy (GET) - contraindicated',\n+  'DO NOT offer Lightning Process or therapies based on it',\n+  'Provide information about ME/CFS and support for families/carers',\n+  'Consider CBT to support symptom management (not curative)',\n+  'Symptom management: rest, sleep, pain, orthostatic intolerance as needed',\n+  'Review at least annually (6-monthly for children)'\n ],\n longCovidManagement: [\n   'Multidisciplinary approach to symptom management',\n   'Long COVID clinic referral if available',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394033219,
+      "end": 1758394033265
+    }
+  }
+}

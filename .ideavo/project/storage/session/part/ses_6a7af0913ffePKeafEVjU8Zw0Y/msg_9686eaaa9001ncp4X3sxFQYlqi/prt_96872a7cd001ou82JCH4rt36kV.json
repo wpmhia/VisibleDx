@@ -1,0 +1,35 @@
+{
+  "id": "prt_96872a7cd001ou82JCH4rt36kV",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_012kdfadsqFpr29UCFpiMnYR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/pem-quest/page.tsx",
+          "oldString": "  const calculatePEMScore = () => {\n    const pemQuestions = getPEMQuestions()\n    const totalScore = pemQuestions.reduce((sum, question) => {\n      const answer = answers[question.id]\n      const option = question.options.find(opt => opt.value === answer)\n      return sum + (option?.score || 0)\n    }, 0)\n\n    const maxScore = pemQuestions.reduce((sum, question) => {\n      return sum + Math.max(...question.options.map(opt => opt.score))\n    }, 0)\n\n    const percentage = (totalScore / maxScore) * 100\n\n    let severity = t.pem.results.severityLevels.none\n    let color = 'bg-green-100 text-green-800'\n    \n    if (percentage >= 75) {\n      severity = t.pem.results.severityLevels.severe\n      color = 'bg-red-100 text-red-800'\n    } else if (percentage >= 50) {\n      severity = t.pem.results.severityLevels.moderate\n      color = 'bg-orange-100 text-orange-800'\n    } else if (percentage >= 25) {\n      severity = t.pem.results.severityLevels.mild\n      color = 'bg-yellow-100 text-yellow-800'\n    }\n\n    const isPEMPresent = percentage >= 25\n\n    return {\n      totalScore,\n      maxScore,\n      percentage: Math.round(percentage),\n      severity,\n      color,\n      isPEMPresent\n    }\n  }",
+          "newString": "  const calculatePEMScore = () => {\n    const pemQuestions = getPEMQuestions()\n    const totalScore = pemQuestions.reduce((sum, question) => {\n      const answer = answers[question.id]\n      const option = question.options.find(opt => opt.value === answer)\n      return sum + (option?.score || 0)\n    }, 0)\n\n    const maxScore = pemQuestions.reduce((sum, question) => {\n      return sum + Math.max(...question.options.map(opt => opt.score))\n    }, 0)\n\n    const percentage = (totalScore / maxScore) * 100\n\n    // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics\n    const activityToleranceScore = answers['activity_tolerance'] ? getPEMQuestions()[0].options.find(opt => opt.value === answers['activity_tolerance'])?.score || 0 : 0\n    const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0\n    const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0\n    const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0\n    \n    // NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n    const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)\n\n    let severity = t.pem.results.severityLevels.none\n    let color = 'bg-green-100 text-green-800'\n    \n    if (niceCoreCriteria && percentage >= 70) {\n      severity = t.pem.results.severityLevels.severe\n      color = 'bg-red-100 text-red-800'\n    } else if (niceCoreCriteria && percentage >= 50) {\n      severity = t.pem.results.severityLevels.moderate\n      color = 'bg-orange-100 text-orange-800'\n    } else if (niceCoreCriteria) {\n      severity = t.pem.results.severityLevels.mild\n      color = 'bg-yellow-100 text-yellow-800'\n    }\n\n    const isPEMPresent = niceCoreCriteria\n\n    return {\n      totalScore,\n      maxScore,\n      percentage: Math.round(percentage),\n      severity,\n      color,\n      isPEMPresent,\n      niceCoreCriteria,\n      activityToleranceScore,\n      delayedOnsetScore,\n      disproportionateScore,\n      prolongedRecoveryScore\n    }\n  }"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -119,31 +119,45 @@\n   }, 0)\n \n   const percentage = (totalScore / maxScore) * 100\n \n+  // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics\n+  const activityToleranceScore = answers['activity_tolerance'] ? getPEMQuestions()[0].options.find(opt => opt.value === answers['activity_tolerance'])?.score || 0 : 0\n+  const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0\n+  const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0\n+  const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0\n+  \n+  // NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n+  const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)\n+\n   let severity = t.pem.results.severityLevels.none\n   let color = 'bg-green-100 text-green-800'\n   \n-  if (percentage >= 75) {\n+  if (niceCoreCriteria && percentage >= 70) {\n     severity = t.pem.results.severityLevels.severe\n     color = 'bg-red-100 text-red-800'\n-  } else if (percentage >= 50) {\n+  } else if (niceCoreCriteria && percentage >= 50) {\n     severity = t.pem.results.severityLevels.moderate\n     color = 'bg-orange-100 text-orange-800'\n-  } else if (percentage >= 25) {\n+  } else if (niceCoreCriteria) {\n     severity = t.pem.results.severityLevels.mild\n     color = 'bg-yellow-100 text-yellow-800'\n   }\n \n-  const isPEMPresent = percentage >= 25\n+  const isPEMPresent = niceCoreCriteria\n \n   return {\n     totalScore,\n     maxScore,\n     percentage: Math.round(percentage),\n     severity,\n     color,\n-    isPEMPresent\n+    isPEMPresent,\n+    niceCoreCriteria,\n+    activityToleranceScore,\n+    delayedOnsetScore,\n+    disproportionateScore,\n+    prolongedRecoveryScore\n   }\n }\n \n const pemQuestions = getPEMQuestions()\n"
+        }
+      ]
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758393982347,
+      "end": 1758393982352
+    }
+  }
+}

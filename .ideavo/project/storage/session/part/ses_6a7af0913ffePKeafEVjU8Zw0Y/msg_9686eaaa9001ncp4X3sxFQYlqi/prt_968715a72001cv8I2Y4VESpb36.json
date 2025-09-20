@@ -1,0 +1,35 @@
+{
+  "id": "prt_968715a72001cv8I2Y4VESpb36",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01NKuuBooRFWegQYNpdjtcbG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    results: {\n      complete: 'Red-flag Assessment Complete',\n      urgentEval: 'Urgent Evaluation Required',\n      priorityTests: 'Priority Tests (Red Flags)',\n      routineTests: 'Routine Screening Tests',\n      noRedFlags: 'No Red Flags Identified',\n      clinicalSupport: 'Clinical Decision Support',\n      urgent: 'Expedite workup due to high-priority red flags. Consider same-day or next-day evaluation. Hold off on ME/CFS/POTS assessment until red flags ruled out.',\n      priority: 'Complete recommended tests within 1-2 weeks. Can proceed with stand-test if cardiovascular red flags absent. Re-evaluate based on test results.',\n      routine: 'Proceed with routine screening labs. Can continue with ME/CFS/Long COVID/POTS assessment. Consider 4-6 week follow-up for test results.',\n      reassess: 'Reassess',\n      generateRecommendations: 'Generate Recommendations'\n    }",
+          "newString": "    results: {\n      complete: 'NICE NG206 Differential Diagnosis Complete',\n      urgentEval: 'Urgent Evaluation Required',\n      priorityTests: 'Priority Tests (Red Flags)',\n      routineTests: 'NICE NG206 Required Investigations',\n      noRedFlags: 'No Red Flags - Proceed with NICE Investigations',\n      clinicalSupport: 'NICE NG206 Clinical Guidance',\n      urgent: 'Red flags present - complete urgent evaluation before ME/CFS assessment. Consider primary care or specialist referral for red flag symptoms.',\n      priority: 'Complete NICE-required investigations. If normal, can proceed with ME/CFS diagnosis after 3 months of persistent symptoms.',\n      routine: 'No red flags identified. Complete NICE NG206 mandatory investigations to exclude other diagnoses. If investigations normal and symptoms persist for 3 months, diagnose ME/CFS and refer to specialist team.',\n      reassess: 'Reassess',\n      generateRecommendations: 'Generate NICE Recommendations'\n    }"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -254,19 +254,19 @@\n       }\n     }\n   },\n   results: {\n-    complete: 'Red-flag Assessment Complete',\n+    complete: 'NICE NG206 Differential Diagnosis Complete',\n     urgentEval: 'Urgent Evaluation Required',\n     priorityTests: 'Priority Tests (Red Flags)',\n-    routineTests: 'Routine Screening Tests',\n-    noRedFlags: 'No Red Flags Identified',\n-    clinicalSupport: 'Clinical Decision Support',\n-    urgent: 'Expedite workup due to high-priority red flags. Consider same-day or next-day evaluation. Hold off on ME/CFS/POTS assessment until red flags ruled out.',\n-    priority: 'Complete recommended tests within 1-2 weeks. Can proceed with stand-test if cardiovascular red flags absent. Re-evaluate based on test results.',\n-    routine: 'Proceed with routine screening labs. Can continue with ME/CFS/Long COVID/POTS assessment. Consider 4-6 week follow-up for test results.',\n+    routineTests: 'NICE NG206 Required Investigations',\n+    noRedFlags: 'No Red Flags - Proceed with NICE Investigations',\n+    clinicalSupport: 'NICE NG206 Clinical Guidance',\n+    urgent: 'Red flags present - complete urgent evaluation before ME/CFS assessment. Consider primary care or specialist referral for red flag symptoms.',\n+    priority: 'Complete NICE-required investigations. If normal, can proceed with ME/CFS diagnosis after 3 months of persistent symptoms.',\n+    routine: 'No red flags identified. Complete NICE NG206 mandatory investigations to exclude other diagnoses. If investigations normal and symptoms persist for 3 months, diagnose ME/CFS and refer to specialist team.',\n     reassess: 'Reassess',\n-    generateRecommendations: 'Generate Recommendations'\n+    generateRecommendations: 'Generate NICE Recommendations'\n   }\n },\n \n standTest: {\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758393893964,
+      "end": 1758393893975
+    }
+  }
+}

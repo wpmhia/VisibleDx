@@ -1,0 +1,44 @@
+{
+  "id": "prt_96873b13a001IXYTrHCrsj0KA8",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_016soDWQQDMMMQg26pm9CV75",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n    description: desc,\n    met: false\n  }))",
+          "newString": "  const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'duration', 'functional_impairment', 'exclusion'][index],\n    description: desc,\n    met: false\n  }))"
+        },
+        {
+          "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+          "oldString": "    // ME/CFS Diagnosis (requires fatigue, PEM, sleep, and either cognitive OR orthostatic)\n    const mecfsCore = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep'].includes(c.id) && c.met).length\n    const mecfsAdditional = mecfsChecked.filter(c => ['cognitive', 'orthostatic'].includes(c.id) && c.met).length\n    const mecfsMet = mecfsCore === 3 && mecfsAdditional >= 1\n    \n    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName,\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n    })",
+          "newString": "    // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met\n    const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length\n    const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false\n    const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false\n    const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false\n    \n    // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)\n    const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion\n    \n    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName + ' (NICE NG206)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')\n    })"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -26,9 +26,9 @@\n export default function CriteriaEngine() {\n   const { t } = useTranslation()\n   \n   const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({\n-    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],\n+    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'duration', 'functional_impairment', 'exclusion'][index],\n     description: desc,\n     met: false\n   }))\n   \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/criteria-engine/page.tsx\n===================================================================\n--- /home/user/project/app/criteria-engine/page.tsx\n+++ /home/user/project/app/criteria-engine/page.tsx\n@@ -101,20 +101,24 @@\n \n const calculateDiagnoses = (): DiagnosticCriteria[] => {\n   const diagnoses: DiagnosticCriteria[] = []\n \n-  // ME/CFS Diagnosis (requires fatigue, PEM, sleep, and either cognitive OR orthostatic)\n-  const mecfsCore = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep'].includes(c.id) && c.met).length\n-  const mecfsAdditional = mecfsChecked.filter(c => ['cognitive', 'orthostatic'].includes(c.id) && c.met).length\n-  const mecfsMet = mecfsCore === 3 && mecfsAdditional >= 1\n+  // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met\n+  const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length\n+  const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false\n+  const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false\n+  const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false\n   \n+  // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)\n+  const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion\n+  \n   diagnoses.push({\n     id: 'mecfs',\n-    condition: t.conditions.mecfs.fullName,\n+    condition: t.conditions.mecfs.fullName + ' (NICE NG206)',\n     met: mecfsMet,\n     criteria: mecfsChecked,\n     icdCode: t.conditions.mecfs.icdCode,\n-    confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'\n+    confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')\n   })\n \n   // Long COVID Diagnosis\n   const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3\n"
+        }
+      ]
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758394048307,
+      "end": 1758394048321
+    }
+  }
+}

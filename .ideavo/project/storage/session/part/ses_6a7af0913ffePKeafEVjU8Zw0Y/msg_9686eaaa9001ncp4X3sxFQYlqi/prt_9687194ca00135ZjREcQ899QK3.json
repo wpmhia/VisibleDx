@@ -1,0 +1,169 @@
+{
+  "id": "prt_9687194ca00135ZjREcQ899QK3",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01NMsxkA69dhSvzGqkV7rpkH",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update ME/CFS severity classification system based on NICE guideline (mild, moderate, severe, very severe)",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Enhance Quick Screen tool with NICE-compliant suspicion criteria (4 core symptoms)",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update Red Flag Checker with NICE differential diagnosis investigations",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Revise PEM Quest tool to align with NICE post-exertional malaise definition",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "4"
+        },
+        {
+          "content": "Update Criteria Engine with NICE diagnostic criteria and 3-month timeline",
+          "status": "pending",
+          "priority": "high",
+          "id": "5"
+        },
+        {
+          "content": "Create Energy Management tool based on NICE energy management principles",
+          "status": "pending",
+          "priority": "high",
+          "id": "6"
+        },
+        {
+          "content": "Add NICE-compliant sleep and rest management guidance",
+          "status": "pending",
+          "priority": "medium",
+          "id": "7"
+        },
+        {
+          "content": "Update Subtype Advisor with NICE symptom management recommendations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "8"
+        },
+        {
+          "content": "Add orthostatic intolerance assessment and guidance",
+          "status": "pending",
+          "priority": "medium",
+          "id": "9"
+        },
+        {
+          "content": "Create care planning and multidisciplinary team guidance section",
+          "status": "pending",
+          "priority": "medium",
+          "id": "10"
+        },
+        {
+          "content": "Add specific guidance for children and young people throughout app",
+          "status": "pending",
+          "priority": "medium",
+          "id": "11"
+        },
+        {
+          "content": "Include NICE flare-up and relapse management protocols",
+          "status": "pending",
+          "priority": "medium",
+          "id": "12"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update ME/CFS severity classification system based on NICE guideline (mild, moderate, severe, very severe)\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Enhance Quick Screen tool with NICE-compliant suspicion criteria (4 core symptoms)\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Update Red Flag Checker with NICE differential diagnosis investigations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Revise PEM Quest tool to align with NICE post-exertional malaise definition\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"4\"\n  },\n  {\n    \"content\": \"Update Criteria Engine with NICE diagnostic criteria and 3-month timeline\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"5\"\n  },\n  {\n    \"content\": \"Create Energy Management tool based on NICE energy management principles\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"6\"\n  },\n  {\n    \"content\": \"Add NICE-compliant sleep and rest management guidance\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"7\"\n  },\n  {\n    \"content\": \"Update Subtype Advisor with NICE symptom management recommendations\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"8\"\n  },\n  {\n    \"content\": \"Add orthostatic intolerance assessment and guidance\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"9\"\n  },\n  {\n    \"content\": \"Create care planning and multidisciplinary team guidance section\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"10\"\n  },\n  {\n    \"content\": \"Add specific guidance for children and young people throughout app\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"11\"\n  },\n  {\n    \"content\": \"Include NICE flare-up and relapse management protocols\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"12\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update ME/CFS severity classification system based on NICE guideline (mild, moderate, severe, very severe)",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Enhance Quick Screen tool with NICE-compliant suspicion criteria (4 core symptoms)",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update Red Flag Checker with NICE differential diagnosis investigations",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Revise PEM Quest tool to align with NICE post-exertional malaise definition",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "4"
+        },
+        {
+          "content": "Update Criteria Engine with NICE diagnostic criteria and 3-month timeline",
+          "status": "pending",
+          "priority": "high",
+          "id": "5"
+        },
+        {
+          "content": "Create Energy Management tool based on NICE energy management principles",
+          "status": "pending",
+          "priority": "high",
+          "id": "6"
+        },
+        {
+          "content": "Add NICE-compliant sleep and rest management guidance",
+          "status": "pending",
+          "priority": "medium",
+          "id": "7"
+        },
+        {
+          "content": "Update Subtype Advisor with NICE symptom management recommendations",
+          "status": "pending",
+          "priority": "medium",
+          "id": "8"
+        },
+        {
+          "content": "Add orthostatic intolerance assessment and guidance",
+          "status": "pending",
+          "priority": "medium",
+          "id": "9"
+        },
+        {
+          "content": "Create care planning and multidisciplinary team guidance section",
+          "status": "pending",
+          "priority": "medium",
+          "id": "10"
+        },
+        {
+          "content": "Add specific guidance for children and young people throughout app",
+          "status": "pending",
+          "priority": "medium",
+          "id": "11"
+        },
+        {
+          "content": "Include NICE flare-up and relapse management protocols",
+          "status": "pending",
+          "priority": "medium",
+          "id": "12"
+        }
+      ]
+    },
+    "title": "9 todos",
+    "time": {
+      "start": 1758393906153,
+      "end": 1758393906169
+    }
+  }
+}

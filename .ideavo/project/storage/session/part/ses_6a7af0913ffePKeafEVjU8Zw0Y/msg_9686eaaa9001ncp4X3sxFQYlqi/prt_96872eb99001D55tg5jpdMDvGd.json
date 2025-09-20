@@ -1,0 +1,35 @@
+{
+  "id": "prt_96872eb99001D55tg5jpdMDvGd",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01RvMgk45XzJMMbxZjtEXNWq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      recommendations: {\n        severe: [\n          'Strict activity pacing essential',\n          'Consider disability evaluation',\n          'Specialist ME/CFS clinic referral'\n        ],\n        moderate: [\n          'Implement careful activity pacing',\n          'Monitor for symptom progression',\n          'Consider occupational therapy'\n        ],\n        mild: [\n          'Begin gentle activity pacing',\n          'Education on PEM recognition',\n          'Regular symptom monitoring'\n        ],\n        none: [\n          'PEM not significantly present',\n          'Consider other diagnoses',\n          'Standard activity as tolerated'\n        ]\n      },",
+          "newString": "      recommendations: {\n        severe: [\n          'NICE NG206: Strict energy management within energy limits',\n          'Do not \"push through\" symptoms - this may worsen condition',\n          'Refer to ME/CFS specialist team for personalised care planning',\n          'Consider support for activities of daily living',\n          'Avoid graded exercise therapy (GET) - contraindicated in ME/CFS'\n        ],\n        moderate: [\n          'NICE NG206: Implement energy management principles',\n          'Establish sustainable activity pattern within energy limits',\n          'Plan periods of rest and activity',\n          'Monitor for flare-ups and adjust activity accordingly',\n          'Consider referral to ME/CFS specialist team'\n        ],\n        mild: [\n          'NICE NG206: Begin energy management approach',\n          'Learn to recognise early warning signs of PEM',\n          'Avoid activities that consistently trigger symptom worsening',\n          'Maintain activity within current energy limits',\n          'Regular review and adjustment of activity levels'\n        ],\n        none: [\n          'PEM criteria not met according to NICE NG206',\n          'Consider other causes of post-activity symptoms',\n          'Re-assess if symptom pattern changes',\n          'Standard activity guidelines may apply'\n        ]\n      },"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -423,26 +423,33 @@\n },\n clinicalInterpretation: 'Clinical Interpretation',\n recommendations: {\n   severe: [\n-    'Strict activity pacing essential',\n-    'Consider disability evaluation',\n-    'Specialist ME/CFS clinic referral'\n+    'NICE NG206: Strict energy management within energy limits',\n+    'Do not \"push through\" symptoms - this may worsen condition',\n+    'Refer to ME/CFS specialist team for personalised care planning',\n+    'Consider support for activities of daily living',\n+    'Avoid graded exercise therapy (GET) - contraindicated in ME/CFS'\n   ],\n   moderate: [\n-    'Implement careful activity pacing',\n-    'Monitor for symptom progression',\n-    'Consider occupational therapy'\n+    'NICE NG206: Implement energy management principles',\n+    'Establish sustainable activity pattern within energy limits',\n+    'Plan periods of rest and activity',\n+    'Monitor for flare-ups and adjust activity accordingly',\n+    'Consider referral to ME/CFS specialist team'\n   ],\n   mild: [\n-    'Begin gentle activity pacing',\n-    'Education on PEM recognition',\n-    'Regular symptom monitoring'\n+    'NICE NG206: Begin energy management approach',\n+    'Learn to recognise early warning signs of PEM',\n+    'Avoid activities that consistently trigger symptom worsening',\n+    'Maintain activity within current energy limits',\n+    'Regular review and adjustment of activity levels'\n   ],\n   none: [\n-    'PEM not significantly present',\n-    'Consider other diagnoses',\n-    'Standard activity as tolerated'\n+    'PEM criteria not met according to NICE NG206',\n+    'Consider other causes of post-activity symptoms',\n+    'Re-assess if symptom pattern changes',\n+    'Standard activity guidelines may apply'\n   ]\n },\n important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n retake: 'Retake Assessment'\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758393995890,
+      "end": 1758393995902
+    }
+  }
+}

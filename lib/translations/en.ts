@@ -100,6 +100,10 @@ export const en: Translation = {
       subtypeAdvisor: {
         title: 'Clinical Management',
         description: 'Condition subtyping & treatment planning examples'
+      },
+      energyManagement: {
+        title: 'Energy Management',
+        description: 'NICE NG206 energy management planning tool'
       }
     },
     stats: {
@@ -129,40 +133,43 @@ export const en: Translation = {
   },
 
   quickScreen: {
-    title: 'Quick-Screen Assessment',
-    description: '16 questions · ~2 minutes · 92% sensitivity',
+    title: 'NICE ME/CFS Screening Assessment',
+    description: 'NICE NG206 compliant screening · 4 core symptoms + additional features',
     questions: [
-      'Do you experience severe fatigue that is not relieved by rest?',
-      'Does physical or mental activity make your symptoms worse (Post-Exertional Malaise)?',
-      'Do you have unrefreshing sleep, regardless of duration?',
-      'Do you experience cognitive difficulties (brain fog, memory problems)?',
-      'Do you have palpitations or rapid heart rate, especially when standing?',
-      'Do you experience dizziness or lightheadedness when standing up?',
-      'Have you had COVID-19 or suspected COVID-19 infection?',
-      'Have your symptoms persisted for 3 months or longer?',
-      'Do you experience muscle pain or joint pain without swelling?',
-      'Do you have frequent headaches or changes in headache patterns?',
-      'Do you experience temperature dysregulation (feeling too hot/cold)?',
-      'Do you have gastrointestinal symptoms (nausea, bloating, changes in bowel habits)?',
-      'Do you experience shortness of breath or breathing difficulties?',
-      'Have you noticed decreased exercise tolerance or physical capacity?',
-      'Do you experience sensitivity to light, sound, or touch?',
-      'Have you been unable to maintain your previous level of activity?'
+      'Do you experience debilitating fatigue that is worsened by activity, not caused by excessive exertion, and not significantly relieved by rest?',
+      'Do you experience post-exertional malaise where symptoms worsen hours or days after activity, are disproportionate to the activity, and have prolonged recovery?',
+      'Do you have unrefreshing sleep or sleep disturbance (feeling exhausted/flu-like on waking, broken sleep, altered sleep pattern)?',
+      'Do you experience cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory problems, concentration issues)?',
+      'Do you experience orthostatic intolerance or autonomic dysfunction (dizziness, palpitations, fainting, nausea when standing/sitting upright)?',
+      'Do you have temperature hypersensitivity (profuse sweating, chills, hot flushes, feeling very cold)?',
+      'Do you experience neuromuscular symptoms (muscle twitching, myoclonic jerks)?',
+      'Do you have flu-like symptoms (sore throat, tender glands, nausea, chills, muscle aches)?',
+      'Do you have alcohol intolerance or intolerance to certain foods and chemicals?',
+      'Do you experience heightened sensory sensitivities (to light, sound, touch, taste, smell)?',
+      'Do you experience pain (pain on touch, muscle pain, headaches, eye pain, abdominal pain, joint pain without swelling)?',
+      'Have your symptoms persisted for at least 6 weeks (adults) or 4 weeks (children/young people)?',
+      'Has your ability to engage in occupational, educational, social or personal activities been significantly reduced from pre-illness levels?',
+      'Are your symptoms NOT explained by another medical condition?',
+      'Have you had COVID-19 or another triggering infection?',
+      'Do you meet severity criteria for moderate to severe impact on daily functioning?'
     ],
     categories: {
-      core: 'Core',
-      pem: 'PEM',
-      cardiovascular: 'Cardiovascular',
-      orthostatic: 'Orthostatic',
-      history: 'History',
-      duration: 'Duration',
-      pain: 'Pain',
-      neurological: 'Neurological',
-      autonomic: 'Autonomic',
-      gi: 'GI',
-      respiratory: 'Respiratory',
-      functional: 'Functional',
-      sensory: 'Sensory'
+      coreFatigue: 'Core: Debilitating Fatigue',
+      corePEM: 'Core: Post-Exertional Malaise',
+      coreSleep: 'Core: Unrefreshing Sleep',
+      coreCognitive: 'Core: Cognitive Difficulties',
+      additional: 'Additional: Orthostatic Intolerance',
+      autonomic: 'Additional: Temperature/Autonomic',
+      neuromuscular: 'Additional: Neuromuscular',
+      fluLike: 'Additional: Flu-like Symptoms',
+      intolerance: 'Additional: Food/Chemical Intolerance',
+      sensory: 'Additional: Sensory Hypersensitivity',
+      pain: 'Additional: Pain Symptoms',
+      duration: 'Diagnostic: Duration Criteria',
+      functional: 'Diagnostic: Functional Impairment',
+      exclusion: 'Diagnostic: Exclusion Criteria',
+      history: 'Risk Factor: Infection History',
+      severity: 'Assessment: Severity Level'
     },
     results: {
       complete: 'Screening Complete',
@@ -180,26 +187,32 @@ export const en: Translation = {
     },
     nextStepsRecommendations: {
       high: [
-        'Proceed to Red-flag Checker',
-        'Complete Stand-Test Pro',
-        'Consider PEM-Quest assessment'
+        'ME/CFS strongly suspected - NICE NG206 criteria met',
+        'Complete differential diagnosis workup (Red-flag Checker)',
+        'If no red flags: refer to ME/CFS specialist team after 3 months',
+        'Begin personalised advice on energy management',
+        'Advise rest and convalesce as needed',
+        'Schedule review before 3 months if symptoms worsen'
       ],
       medium: [
-        'Consider Red-flag Checker',
-        'Monitor symptoms closely',
-        'Follow-up in 4-6 weeks'
+        'Partial ME/CFS criteria met - continue monitoring',
+        'Consider differential diagnoses (Red-flag Checker)',
+        'Provide symptom management advice',
+        'Re-assess in 4-6 weeks for symptom progression',
+        'Monitor for development of full criteria'
       ],
       low: [
-        'Routine clinical assessment',
-        'Consider other diagnoses',
-        'Reassess if symptoms worsen'
+        'ME/CFS criteria not met based on current assessment',
+        'Consider other causes of fatigue and symptoms',
+        'Routine clinical evaluation as appropriate',
+        'Reassess if symptom pattern changes or worsens'
       ]
     }
   },
 
   redFlag: {
-    title: 'Red-flag Checker',
-    description: 'Identify symptoms requiring urgent evaluation and rule out explanatory diseases',
+    title: 'NICE NG206 Differential Diagnosis',
+    description: 'NICE-compliant investigations to exclude other diagnoses when ME/CFS is suspected',
     symptoms: {
       title: 'Red Flag Symptoms',
       description: 'Check any symptoms present that may require urgent evaluation',
@@ -225,53 +238,38 @@ export const en: Translation = {
       'Hepatic'
     ],
     routineLabs: {
-      title: 'Routine Screening Labs',
-      description: 'Select categories of tests to rule out common explanatory conditions',
+      title: 'NICE NG206 Required Investigations',
+      description: 'Mandatory tests to exclude other diagnoses when ME/CFS is suspected',
       categories: {
-        basicMetabolic: {
-          title: 'Basic Metabolic',
-          indication: 'Rule out anemia, infection, inflammation, electrolyte abnormalities',
-          tests: ['CBC with differential', 'Comprehensive metabolic panel', 'ESR', 'CRP']
+        essential: {
+          title: 'Essential Tests (NICE NG206)',
+          indication: 'Required investigations for all patients with suspected ME/CFS',
+          tests: ['Urinalysis for protein, blood and glucose', 'Full blood count', 'Urea and electrolytes', 'Liver function', 'Thyroid function (TSH)', 'ESR or plasma viscosity', 'C-reactive protein', 'Calcium and phosphate', 'HbA1c', 'Serum ferritin', 'Coeliac screening', 'Creatine kinase']
         },
-        endocrine: {
-          title: 'Endocrine',
-          indication: 'Rule out thyroid dysfunction, diabetes, adrenal insufficiency',
-          tests: ['TSH', 'Free T4', 'HbA1c', 'Cortisol (AM)', 'Vitamin D']
+        additional: {
+          title: 'Additional Tests (Clinical Judgement)',
+          indication: 'Consider based on clinical presentation and history',
+          tests: ['Vitamin D', 'Vitamin B12 and folate levels', 'Serological tests if infection history', '9am cortisol for adrenal insufficiency']
         },
-        nutritional: {
-          title: 'Nutritional',
-          indication: 'Rule out nutritional deficiencies causing fatigue',
-          tests: ['Vitamin B12', 'Folate', 'Iron studies', 'Ferritin']
-        },
-        autoimmune: {
-          title: 'Autoimmune',
-          indication: 'Screen for autoimmune conditions',
-          tests: ['ANA', 'RF', 'Anti-CCP', 'Celiac antibodies']
-        },
-        cardiac: {
-          title: 'Cardiac',
-          indication: 'Rule out structural heart disease, heart failure',
-          tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP']
-        },
-        infectious: {
-          title: 'Infectious',
-          indication: 'Rule out chronic infections',
-          tests: ['Hepatitis B/C', 'HIV', 'Lyme antibodies', 'CMV/EBV antibodies']
+        paediatric: {
+          title: 'Additional Paediatric Considerations',
+          indication: 'Extra considerations for children and young people',
+          tests: ['Growth parameters', 'Developmental assessment', 'School attendance review', 'Family history review']
         }
       }
     },
     results: {
-      complete: 'Red-flag Assessment Complete',
+      complete: 'NICE NG206 Differential Diagnosis Complete',
       urgentEval: 'Urgent Evaluation Required',
       priorityTests: 'Priority Tests (Red Flags)',
-      routineTests: 'Routine Screening Tests',
-      noRedFlags: 'No Red Flags Identified',
-      clinicalSupport: 'Clinical Decision Support',
-      urgent: 'Expedite workup due to high-priority red flags. Consider same-day or next-day evaluation. Hold off on ME/CFS/POTS assessment until red flags ruled out.',
-      priority: 'Complete recommended tests within 1-2 weeks. Can proceed with stand-test if cardiovascular red flags absent. Re-evaluate based on test results.',
-      routine: 'Proceed with routine screening labs. Can continue with ME/CFS/Long COVID/POTS assessment. Consider 4-6 week follow-up for test results.',
+      routineTests: 'NICE NG206 Required Investigations',
+      noRedFlags: 'No Red Flags - Proceed with NICE Investigations',
+      clinicalSupport: 'NICE NG206 Clinical Guidance',
+      urgent: 'Red flags present - complete urgent evaluation before ME/CFS assessment. Consider primary care or specialist referral for red flag symptoms.',
+      priority: 'Complete NICE-required investigations. If normal, can proceed with ME/CFS diagnosis after 3 months of persistent symptoms.',
+      routine: 'No red flags identified. Complete NICE NG206 mandatory investigations to exclude other diagnoses. If investigations normal and symptoms persist for 3 months, diagnose ME/CFS and refer to specialist team.',
       reassess: 'Reassess',
-      generateRecommendations: 'Generate Recommendations'
+      generateRecommendations: 'Generate NICE Recommendations'
     }
   },
 
@@ -352,63 +350,66 @@ export const en: Translation = {
   },
 
   pem: {
-    title: 'PEM-Quest Assessment',
-    description: 'Post-Exertional Malaise evaluation - 5 validated questions',
+    title: 'NICE NG206 Post-Exertional Malaise Assessment',
+    description: 'NICE-compliant PEM evaluation based on NG206 core criteria',
     about: {
-      title: 'About Post-Exertional Malaise (PEM)',
-      description: 'PEM is the worsening of symptoms following physical or mental activity that was previously tolerated. It\'s a key feature of ME/CFS and often occurs in Long COVID. Symptoms may be delayed and can last days to weeks.'
+      title: 'NICE NG206 Definition of Post-Exertional Malaise',
+      description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'
     },
     questions: {
-      frequency: {
-        question: 'How often do you experience a worsening of symptoms following physical activity?',
-        description: 'Consider activities like walking, climbing stairs, or household chores',
+      activityTolerance: {
+        question: 'Do you experience a worsening of symptoms after minimal cognitive, physical, emotional or social activity?',
+        description: 'NICE: Activity that could previously be tolerated or is minimal in nature',
         options: [
-          'Never',
-          'Rarely (less than 25% of the time)',
-          'Sometimes (25-50% of the time)',
-          'Often (50-75% of the time)',
-          'Always or almost always (more than 75% of the time)'
+          'No - I can tolerate normal levels of activity',
+          'Rarely - only after significant exertion',
+          'Sometimes - after moderate activity',
+          'Often - after minimal activity',
+          'Always - any activity worsens symptoms'
         ]
       },
-      mentalFrequency: {
-        question: 'How often do you experience a worsening of symptoms following mental activity?',
-        description: 'Consider activities like reading, concentrating, or problem-solving',
+      delayedOnset: {
+        question: 'When symptoms worsen after activity, is the onset often delayed by hours or days?',
+        description: 'NICE: The worsening may not be immediate but delayed',
         options: [
-          'Never',
-          'Rarely (less than 25% of the time)',
-          'Sometimes (25-50% of the time)',
-          'Often (50-75% of the time)',
-          'Always or almost always (more than 75% of the time)'
+          'No delayed onset - symptoms worsen immediately or not at all',
+          'Sometimes delayed by a few hours',
+          'Often delayed by several hours (4-12 hours)',
+          'Usually delayed by 1-2 days',
+          'Consistently delayed by days (sometimes 24-48+ hours)'
         ]
       },
-      onsetTime: {
-        question: 'How soon after activity do your symptoms typically worsen?',
+      disproportionate: {
+        question: 'When your symptoms worsen, is it disproportionate to the activity performed?',
+        description: 'NICE: The response is excessive compared to the activity undertaken',
         options: [
-          'No worsening occurs',
-          'During the activity',
-          'Immediately after (within 30 minutes)',
-          'Within a few hours (2-6 hours)',
-          'The next day or later'
+          'No - symptom worsening matches activity level',
+          'Slightly disproportionate',
+          'Moderately disproportionate',
+          'Significantly disproportionate',
+          'Severely disproportionate - minimal activity causes major symptom flare'
         ]
       },
-      severity: {
-        question: 'How severe is the worsening of your symptoms after activity?',
+      prolongedRecovery: {
+        question: 'How long does the prolonged recovery time last after symptom worsening?',
+        description: 'NICE: Recovery may last hours, days, weeks or longer',
         options: [
-          'No worsening',
-          'Mild - slightly worse than before activity',
-          'Moderate - noticeably worse, but manageable',
-          'Severe - significantly worse, difficult to function',
-          'Very severe - unable to function, bedridden'
+          'No prolonged recovery needed',
+          'Hours to recover',
+          'Days to recover',
+          'Weeks to recover',
+          'Weeks to months or may not fully recover'
         ]
       },
-      recoveryTime: {
-        question: 'How long does it typically take for your symptoms to return to baseline after activity?',
+      activityTypes: {
+        question: 'Which types of activity trigger your post-exertional malaise?',
+        description: 'NICE: PEM can follow any type of activity - cognitive, physical, emotional or social',
         options: [
-          'No recovery time needed',
-          'A few hours',
-          'About one day',
-          'Several days (2-6 days)',
-          'A week or more'
+          'No activities trigger PEM',
+          'Only intense physical activity',
+          'Physical and some cognitive activity',
+          'Physical, cognitive, and emotional stress',
+          'All types: physical, cognitive, emotional, and social activity'
         ]
       }
     },
@@ -427,43 +428,52 @@ export const en: Translation = {
       clinicalInterpretation: 'Clinical Interpretation',
       recommendations: {
         severe: [
-          'Strict activity pacing essential',
-          'Consider disability evaluation',
-          'Specialist ME/CFS clinic referral'
+          'NICE NG206: Strict energy management within energy limits',
+          'Do not "push through" symptoms - this may worsen condition',
+          'Refer to ME/CFS specialist team for personalised care planning',
+          'Consider support for activities of daily living',
+          'Avoid graded exercise therapy (GET) - contraindicated in ME/CFS'
         ],
         moderate: [
-          'Implement careful activity pacing',
-          'Monitor for symptom progression',
-          'Consider occupational therapy'
+          'NICE NG206: Implement energy management principles',
+          'Establish sustainable activity pattern within energy limits',
+          'Plan periods of rest and activity',
+          'Monitor for flare-ups and adjust activity accordingly',
+          'Consider referral to ME/CFS specialist team'
         ],
         mild: [
-          'Begin gentle activity pacing',
-          'Education on PEM recognition',
-          'Regular symptom monitoring'
+          'NICE NG206: Begin energy management approach',
+          'Learn to recognise early warning signs of PEM',
+          'Avoid activities that consistently trigger symptom worsening',
+          'Maintain activity within current energy limits',
+          'Regular review and adjustment of activity levels'
         ],
         none: [
-          'PEM not significantly present',
-          'Consider other diagnoses',
-          'Standard activity as tolerated'
+          'PEM criteria not met according to NICE NG206',
+          'Consider other causes of post-activity symptoms',
+          'Re-assess if symptom pattern changes',
+          'Standard activity guidelines may apply'
         ]
       },
-      important: 'Important: PEM is the hallmark symptom of ME/CFS. If present, avoid activities that consistently trigger symptom worsening. Energy management and pacing are key treatment strategies.',
+      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not "push through" their symptoms. Energy management is the recommended approach.';
       retake: 'Retake Assessment'
     }
   },
 
   criteria: {
-    title: 'Criteria Engine',
-    description: 'Apply CDC, NASEM, ESC, WHO diagnostic criteria for final determination',
+    title: 'NICE NG206 Diagnostic Criteria Engine',
+    description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',
     mecfs: {
-      title: 'ME/CFS Criteria (CDC/NASEM 2015)',
-      description: 'Requires substantial fatigue, PEM, unrefreshing sleep, AND either cognitive impairment OR orthostatic intolerance',
+      title: 'ME/CFS Criteria (NICE NG206)',
+      description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',
       criteria: [
-        'Substantial reduction or impairment in activity levels that persists for ≥6 months',
-        'Post-exertional malaise (PEM) present',
-        'Unrefreshing sleep',
-        'Cognitive impairment (brain fog)',
-        'Orthostatic intolerance OR autonomic dysfunction'
+        'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',
+        'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',
+        'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',
+        'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',
+        'Symptoms have persisted for 3 months',
+        'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',
+        'Symptoms are NOT explained by another condition (after appropriate investigations)'
       ]
     },
     longCovid: {
@@ -499,10 +509,14 @@ export const en: Translation = {
       criteriaMet: 'CRITERIA MET',
       clinicalRecommendations: 'Clinical Recommendations',
       mecfsManagement: [
-        'Implement activity pacing and energy management',
-        'Avoid graded exercise therapy (GET)',
-        'Consider symptom-directed treatments',
-        'Specialist ME/CFS clinic referral if available'
+        'NICE NG206: Refer to ME/CFS specialist team for personalised care and support plan',
+        'Implement energy management - do not "push through" symptoms',
+        'DO NOT offer graded exercise therapy (GET) - contraindicated',
+        'DO NOT offer Lightning Process or therapies based on it',
+        'Provide information about ME/CFS and support for families/carers',
+        'Consider CBT to support symptom management (not curative)',
+        'Symptom management: rest, sleep, pain, orthostatic intolerance as needed',
+        'Review at least annually (6-monthly for children)'
       ],
       longCovidManagement: [
         'Multidisciplinary approach to symptom management',

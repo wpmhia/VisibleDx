@@ -1,0 +1,44 @@
+{
+  "id": "prt_968702bb60019kjTC0cH4mq5rz",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01GVcvLPSWJqyX6CV1uMgFdL",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "const questionCategories = [\n  \"core\", \"pem\", \"core\", \"core\", \"cardiovascular\", \"orthostatic\", \"history\", \n  \"duration\", \"pain\", \"neurological\", \"autonomic\", \"gi\", \"respiratory\", \n  \"functional\", \"sensory\", \"functional\"\n]",
+          "newString": "const questionCategories = [\n  \"coreFatigue\", \"corePEM\", \"coreSleep\", \"coreCognitive\", \"additional\", \"autonomic\", \n  \"neuromuscular\", \"fluLike\", \"intolerance\", \"sensory\", \"pain\", \"duration\", \n  \"functional\", \"exclusion\", \"history\", \"severity\"\n]"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "  const calculateRisk = () => {\n    const totalYes = Object.values(answers).filter(Boolean).length\n    const coreSymptoms = [1, 3, 4].filter(id => answers[id]).length\n    const pemPresent = answers[2]\n    const covidHistory = answers[7]\n    const chronicity = answers[8]\n    \n    let riskLevel = 'Low'\n    let riskColor = 'bg-green-100 text-green-800'\n    \n    if (totalYes >= 8 && coreSymptoms >= 2 && pemPresent && chronicity) {\n      riskLevel = 'High'\n      riskColor = 'bg-red-100 text-red-800'\n    } else if (totalYes >= 5 && (coreSymptoms >= 2 || pemPresent)) {\n      riskLevel = 'Medium'\n      riskColor = 'bg-yellow-100 text-yellow-800'\n    }\n    \n    return { riskLevel, riskColor, totalYes, coreSymptoms, pemPresent, covidHistory, chronicity }\n  }",
+          "newString": "  const calculateRisk = () => {\n    const totalYes = Object.values(answers).filter(Boolean).length\n    \n    // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n    const coreFatigue = answers[1] // Debilitating fatigue\n    const corePEM = answers[2] // Post-exertional malaise\n    const coreSleep = answers[3] // Unrefreshing sleep\n    const coreCognitive = answers[4] // Cognitive difficulties\n    const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length\n    \n    // NICE Diagnostic Requirements\n    const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)\n    const functionalImpairment = answers[13] // Significant reduction in activity\n    const notExplainedOtherwise = answers[14] // Not explained by other condition\n    \n    // Additional symptoms count\n    const additionalSymptoms = [5, 6, 7, 8, 9, 10, 11].filter(id => answers[id]).length\n    \n    // Risk history\n    const infectionHistory = answers[15]\n    const severityLevel = answers[16]\n    \n    let riskLevel = 'Low'\n    let riskColor = 'bg-green-100 text-green-800'\n    \n    // NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise\n    if (coreSymptoms === 4 && durationMet && functionalImpairment && notExplainedOtherwise) {\n      riskLevel = 'High'\n      riskColor = 'bg-red-100 text-red-800'\n    } else if (coreSymptoms >= 3 && (durationMet || functionalImpairment) && additionalSymptoms >= 2) {\n      riskLevel = 'Medium'\n      riskColor = 'bg-yellow-100 text-yellow-800'\n    }\n    \n    return { \n      riskLevel, \n      riskColor, \n      totalYes, \n      coreSymptoms, \n      coreFatigue,\n      corePEM, \n      coreSleep,\n      coreCognitive,\n      durationMet, \n      functionalImpairment,\n      notExplainedOtherwise,\n      additionalSymptoms,\n      infectionHistory, \n      severityLevel \n    }\n  }"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -9,11 +9,11 @@\n import Link from 'next/link'\n import { useTranslation } from '@/lib/language-context'\n \n const questionCategories = [\n-  \"core\", \"pem\", \"core\", \"core\", \"cardiovascular\", \"orthostatic\", \"history\", \n-  \"duration\", \"pain\", \"neurological\", \"autonomic\", \"gi\", \"respiratory\", \n-  \"functional\", \"sensory\", \"functional\"\n+  \"coreFatigue\", \"corePEM\", \"coreSleep\", \"coreCognitive\", \"additional\", \"autonomic\", \n+  \"neuromuscular\", \"fluLike\", \"intolerance\", \"sensory\", \"pain\", \"duration\", \n+  \"functional\", \"exclusion\", \"history\", \"severity\"\n ]\n \n export default function QuickScreen() {\n   const [answers, setAnswers] = useState<Record<number, boolean>>({})\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -45,25 +45,56 @@\n }\n \n const calculateRisk = () => {\n   const totalYes = Object.values(answers).filter(Boolean).length\n-  const coreSymptoms = [1, 3, 4].filter(id => answers[id]).length\n-  const pemPresent = answers[2]\n-  const covidHistory = answers[7]\n-  const chronicity = answers[8]\n   \n+  // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n+  const coreFatigue = answers[1] // Debilitating fatigue\n+  const corePEM = answers[2] // Post-exertional malaise\n+  const coreSleep = answers[3] // Unrefreshing sleep\n+  const coreCognitive = answers[4] // Cognitive difficulties\n+  const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length\n+  \n+  // NICE Diagnostic Requirements\n+  const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)\n+  const functionalImpairment = answers[13] // Significant reduction in activity\n+  const notExplainedOtherwise = answers[14] // Not explained by other condition\n+  \n+  // Additional symptoms count\n+  const additionalSymptoms = [5, 6, 7, 8, 9, 10, 11].filter(id => answers[id]).length\n+  \n+  // Risk history\n+  const infectionHistory = answers[15]\n+  const severityLevel = answers[16]\n+  \n   let riskLevel = 'Low'\n   let riskColor = 'bg-green-100 text-green-800'\n   \n-  if (totalYes >= 8 && coreSymptoms >= 2 && pemPresent && chronicity) {\n+  // NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise\n+  if (coreSymptoms === 4 && durationMet && functionalImpairment && notExplainedOtherwise) {\n     riskLevel = 'High'\n     riskColor = 'bg-red-100 text-red-800'\n-  } else if (totalYes >= 5 && (coreSymptoms >= 2 || pemPresent)) {\n+  } else if (coreSymptoms >= 3 && (durationMet || functionalImpairment) && additionalSymptoms >= 2) {\n     riskLevel = 'Medium'\n     riskColor = 'bg-yellow-100 text-yellow-800'\n   }\n   \n-  return { riskLevel, riskColor, totalYes, coreSymptoms, pemPresent, covidHistory, chronicity }\n+  return { \n+    riskLevel, \n+    riskColor, \n+    totalYes, \n+    coreSymptoms, \n+    coreFatigue,\n+    corePEM, \n+    coreSleep,\n+    coreCognitive,\n+    durationMet, \n+    functionalImpairment,\n+    notExplainedOtherwise,\n+    additionalSymptoms,\n+    infectionHistory, \n+    severityLevel \n+  }\n }\n \n const progress = ((currentQuestion + 1) / t.quickScreen.questions.length) * 100\n const currentQuestionData = {\n"
+        }
+      ]
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758393820948,
+      "end": 1758393820962
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "prt_96870a1f50010F18XC3I986IL5",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01L4D9rtnz4G4nD9Xzyag7JG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    nextStepsRecommendations: {\n      high: [\n        'Proceed to Red-flag Checker',\n        'Complete Stand-Test Pro',\n        'Consider PEM-Quest assessment'\n      ],\n      medium: [\n        'Consider Red-flag Checker',\n        'Monitor symptoms closely',\n        'Follow-up in 4-6 weeks'\n      ],\n      low: [\n        'Routine clinical assessment',\n        'Consider other diagnoses',\n        'Reassess if symptoms worsen'\n      ]\n    }",
+          "newString": "    nextStepsRecommendations: {\n      high: [\n        'ME/CFS strongly suspected - NICE NG206 criteria met',\n        'Complete differential diagnosis workup (Red-flag Checker)',\n        'If no red flags: refer to ME/CFS specialist team after 3 months',\n        'Begin personalised advice on energy management',\n        'Advise rest and convalesce as needed',\n        'Schedule review before 3 months if symptoms worsen'\n      ],\n      medium: [\n        'Partial ME/CFS criteria met - continue monitoring',\n        'Consider differential diagnoses (Red-flag Checker)',\n        'Provide symptom management advice',\n        'Re-assess in 4-6 weeks for symptom progression',\n        'Monitor for development of full criteria'\n      ],\n      low: [\n        'ME/CFS criteria not met based on current assessment',\n        'Consider other causes of fatigue and symptoms',\n        'Routine clinical evaluation as appropriate',\n        'Reassess if symptom pattern changes or worsens'\n      ]\n    }"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -182,21 +182,27 @@\n     retake: 'Retake Screening'\n   },\n   nextStepsRecommendations: {\n     high: [\n-      'Proceed to Red-flag Checker',\n-      'Complete Stand-Test Pro',\n-      'Consider PEM-Quest assessment'\n+      'ME/CFS strongly suspected - NICE NG206 criteria met',\n+      'Complete differential diagnosis workup (Red-flag Checker)',\n+      'If no red flags: refer to ME/CFS specialist team after 3 months',\n+      'Begin personalised advice on energy management',\n+      'Advise rest and convalesce as needed',\n+      'Schedule review before 3 months if symptoms worsen'\n     ],\n     medium: [\n-      'Consider Red-flag Checker',\n-      'Monitor symptoms closely',\n-      'Follow-up in 4-6 weeks'\n+      'Partial ME/CFS criteria met - continue monitoring',\n+      'Consider differential diagnoses (Red-flag Checker)',\n+      'Provide symptom management advice',\n+      'Re-assess in 4-6 weeks for symptom progression',\n+      'Monitor for development of full criteria'\n     ],\n     low: [\n-      'Routine clinical assessment',\n-      'Consider other diagnoses',\n-      'Reassess if symptoms worsen'\n+      'ME/CFS criteria not met based on current assessment',\n+      'Consider other causes of fatigue and symptoms',\n+      'Routine clinical evaluation as appropriate',\n+      'Reassess if symptom pattern changes or worsens'\n     ]\n   }\n },\n \n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758393844543,
+      "end": 1758393844559
+    }
+  }
+}

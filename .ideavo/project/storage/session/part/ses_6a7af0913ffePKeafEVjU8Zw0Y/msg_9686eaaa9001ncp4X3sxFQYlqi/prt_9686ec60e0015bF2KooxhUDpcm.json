@@ -1,0 +1,19 @@
+{
+  "id": "prt_9686ec60e0015bF2KooxhUDpcm",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RGFq5zYYyaZL6dUdba2LZ4",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/.ideavo-attachments/myalgic-encephalomyelitis-or-encephalopathychronic-fatigue-syndrome-diagnosis-and-management-pdf-66143718094021.pdf"
+    },
+    "error": "Error: Cannot read binary file: /home/user/project/.ideavo-attachments/myalgic-encephalomyelitis-or-encephalopathychronic-fatigue-syndrome-diagnosis-and-management-pdf-66143718094021.pdf",
+    "time": {
+      "start": 1758393715909,
+      "end": 1758393715915
+    }
+  }
+}

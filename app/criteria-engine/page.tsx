@@ -27,7 +27,7 @@ export default function CriteriaEngine() {
   const { t } = useTranslation()
   
   const getMECFSCriteria = () => t.criteria.mecfs.criteria.map((desc, index) => ({
-    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'orthostatic'][index],
+    id: ['fatigue', 'pem', 'sleep', 'cognitive', 'duration', 'functional_impairment', 'exclusion'][index],
     description: desc,
     met: false
   }))
@@ -102,18 +102,22 @@ export default function CriteriaEngine() {
   const calculateDiagnoses = (): DiagnosticCriteria[] => {
     const diagnoses: DiagnosticCriteria[] = []
 
-    // ME/CFS Diagnosis (requires fatigue, PEM, sleep, and either cognitive OR orthostatic)
-    const mecfsCore = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep'].includes(c.id) && c.met).length
-    const mecfsAdditional = mecfsChecked.filter(c => ['cognitive', 'orthostatic'].includes(c.id) && c.met).length
-    const mecfsMet = mecfsCore === 3 && mecfsAdditional >= 1
+    // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met
+    const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length
+    const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false
+    const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false
+    const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false
+    
+    // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)
+    const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion
     
     diagnoses.push({
       id: 'mecfs',
-      condition: t.conditions.mecfs.fullName,
+      condition: t.conditions.mecfs.fullName + ' (NICE NG206)',
       met: mecfsMet,
       criteria: mecfsChecked,
       icdCode: t.conditions.mecfs.icdCode,
-      confidence: mecfsMet ? (mecfsCore === 3 && mecfsAdditional === 2 ? 'high' : 'medium') : 'low'
+      confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')
     })
 
     // Long COVID Diagnosis

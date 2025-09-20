@@ -1,0 +1,18 @@
+{
+  "id": "prt_96875d0da001dK6xbEO8t1aSas",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "model": "Claude Sonnet 4",
+  "type": "finish",
+  "commitMessage": "docs(nice-ng206): implement comprehensive guideline updates",
+  "cost": 1.5974434500000003,
+  "tokens": {
+    "input": 0,
+    "output": 595,
+    "reasoning": 0,
+    "cache": {
+      "write": 1169,
+      "read": 112830
+    }
+  }
+}

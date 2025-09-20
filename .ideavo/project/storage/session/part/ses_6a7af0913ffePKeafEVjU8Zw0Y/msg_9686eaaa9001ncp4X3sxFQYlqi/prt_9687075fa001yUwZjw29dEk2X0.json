@@ -1,0 +1,35 @@
+{
+  "id": "prt_9687075fa001yUwZjw29dEk2X0",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01BoPVeP23hMyRvTLZvvXNnC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "                <div className=\"bg-gray-50 p-4 rounded-lg\">\n                  <h4 className=\"font-semibold mb-2\">{t.common.results}</h4>\n                  <ul className=\"text-sm space-y-1\">\n                    <li>{t.quickScreen.results.totalResponses}: {risk.totalYes}/16</li>\n                    <li>{t.quickScreen.results.coreSymptoms}: {risk.coreSymptoms}/3</li>\n                    <li>{t.quickScreen.results.pemPresent}: {risk.pemPresent ? t.common.yes : t.common.no}</li>\n                    <li>{t.quickScreen.results.covidHistory}: {risk.covidHistory ? t.common.yes : t.common.no}</li>\n                    <li>{t.quickScreen.results.chronicSymptoms}: {risk.chronicity ? t.common.yes : t.common.no}</li>\n                  </ul>\n                </div>",
+          "newString": "                <div className=\"bg-gray-50 p-4 rounded-lg\">\n                  <h4 className=\"font-semibold mb-2\">NICE NG206 Assessment</h4>\n                  <ul className=\"text-sm space-y-1\">\n                    <li><strong>Core Symptoms:</strong> {risk.coreSymptoms}/4 present</li>\n                    <li>• Debilitating Fatigue: {risk.coreFatigue ? t.common.yes : t.common.no}</li>\n                    <li>• Post-Exertional Malaise: {risk.corePEM ? t.common.yes : t.common.no}</li>\n                    <li>• Unrefreshing Sleep: {risk.coreSleep ? t.common.yes : t.common.no}</li>\n                    <li>• Cognitive Difficulties: {risk.coreCognitive ? t.common.yes : t.common.no}</li>\n                    <li><strong>Duration Criteria:</strong> {risk.durationMet ? '✓ Met' : '✗ Not Met'}</li>\n                    <li><strong>Functional Impairment:</strong> {risk.functionalImpairment ? '✓ Present' : '✗ Absent'}</li>\n                    <li><strong>Additional Symptoms:</strong> {risk.additionalSymptoms}/7</li>\n                    <li><strong>Total Responses:</strong> {risk.totalYes}/16</li>\n                  </ul>\n                </div>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -130,15 +130,19 @@\n </div>\n \n <div className=\"grid md:grid-cols-2 gap-4\">\n   <div className=\"bg-gray-50 p-4 rounded-lg\">\n-    <h4 className=\"font-semibold mb-2\">{t.common.results}</h4>\n+    <h4 className=\"font-semibold mb-2\">NICE NG206 Assessment</h4>\n     <ul className=\"text-sm space-y-1\">\n-      <li>{t.quickScreen.results.totalResponses}: {risk.totalYes}/16</li>\n-      <li>{t.quickScreen.results.coreSymptoms}: {risk.coreSymptoms}/3</li>\n-      <li>{t.quickScreen.results.pemPresent}: {risk.pemPresent ? t.common.yes : t.common.no}</li>\n-      <li>{t.quickScreen.results.covidHistory}: {risk.covidHistory ? t.common.yes : t.common.no}</li>\n-      <li>{t.quickScreen.results.chronicSymptoms}: {risk.chronicity ? t.common.yes : t.common.no}</li>\n+      <li><strong>Core Symptoms:</strong> {risk.coreSymptoms}/4 present</li>\n+      <li>• Debilitating Fatigue: {risk.coreFatigue ? t.common.yes : t.common.no}</li>\n+      <li>• Post-Exertional Malaise: {risk.corePEM ? t.common.yes : t.common.no}</li>\n+      <li>• Unrefreshing Sleep: {risk.coreSleep ? t.common.yes : t.common.no}</li>\n+      <li>• Cognitive Difficulties: {risk.coreCognitive ? t.common.yes : t.common.no}</li>\n+      <li><strong>Duration Criteria:</strong> {risk.durationMet ? '✓ Met' : '✗ Not Met'}</li>\n+      <li><strong>Functional Impairment:</strong> {risk.functionalImpairment ? '✓ Present' : '✗ Absent'}</li>\n+      <li><strong>Additional Symptoms:</strong> {risk.additionalSymptoms}/7</li>\n+      <li><strong>Total Responses:</strong> {risk.totalYes}/16</li>\n     </ul>\n   </div>\n \n   <div className=\"bg-blue-50 p-4 rounded-lg\">\n"
+        }
+      ]
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758393832724,
+      "end": 1758393832733
+    }
+  }
+}

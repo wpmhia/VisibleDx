@@ -49,52 +49,56 @@ export default function PEMQuest() {
   }
 
   const getPEMQuestions = () => {
-    const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,2,3,4,3], [0,1,2,3,4], [0,1,2,3,4]]
+    // NICE NG206 aligned scoring: Higher scores indicate more severe PEM
+    const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]
     
     return [
       {
-        id: 'frequency',
-        question: t.pem.questions.frequency.question,
-        description: t.pem.questions.frequency.description,
-        options: t.pem.questions.frequency.options.map((label, index) => ({
-          value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],
+        id: 'activity_tolerance',
+        question: t.pem.questions.activityTolerance.question,
+        description: t.pem.questions.activityTolerance.description,
+        options: t.pem.questions.activityTolerance.options.map((label, index) => ({
+          value: ['none', 'rare', 'sometimes', 'often', 'always'][index],
           label,
           score: scoreArrays[0][index]
         }))
       },
       {
-        id: 'mental_frequency',
-        question: t.pem.questions.mentalFrequency.question,
-        description: t.pem.questions.mentalFrequency.description,
-        options: t.pem.questions.mentalFrequency.options.map((label, index) => ({
-          value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],
+        id: 'delayed_onset',
+        question: t.pem.questions.delayedOnset.question,
+        description: t.pem.questions.delayedOnset.description,
+        options: t.pem.questions.delayedOnset.options.map((label, index) => ({
+          value: ['no_delay', 'hours', 'several_hours', 'one_two_days', 'days_plus'][index],
           label,
           score: scoreArrays[1][index]
         }))
       },
       {
-        id: 'onset_time',
-        question: t.pem.questions.onsetTime.question,
-        options: t.pem.questions.onsetTime.options.map((label, index) => ({
-          value: ['no_worsening', 'during', 'immediately', 'hours', 'next_day'][index],
+        id: 'disproportionate',
+        question: t.pem.questions.disproportionate.question,
+        description: t.pem.questions.disproportionate.description,
+        options: t.pem.questions.disproportionate.options.map((label, index) => ({
+          value: ['proportionate', 'slightly', 'moderately', 'significantly', 'severely'][index],
           label,
           score: scoreArrays[2][index]
         }))
       },
       {
-        id: 'severity',
-        question: t.pem.questions.severity.question,
-        options: t.pem.questions.severity.options.map((label, index) => ({
-          value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],
+        id: 'prolonged_recovery',
+        question: t.pem.questions.prolongedRecovery.question,
+        description: t.pem.questions.prolongedRecovery.description,
+        options: t.pem.questions.prolongedRecovery.options.map((label, index) => ({
+          value: ['no_recovery', 'hours', 'days', 'weeks', 'weeks_months'][index],
           label,
           score: scoreArrays[3][index]
         }))
       },
       {
-        id: 'recovery_time',
-        question: t.pem.questions.recoveryTime.question,
-        options: t.pem.questions.recoveryTime.options.map((label, index) => ({
-          value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],
+        id: 'activity_types',
+        question: t.pem.questions.activityTypes.question,
+        description: t.pem.questions.activityTypes.description,
+        options: t.pem.questions.activityTypes.options.map((label, index) => ({
+          value: ['none', 'physical_only', 'physical_cognitive', 'physical_cognitive_emotional', 'all_types'][index],
           label,
           score: scoreArrays[4][index]
         }))
@@ -116,21 +120,30 @@ export default function PEMQuest() {
 
     const percentage = (totalScore / maxScore) * 100
 
+    // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics
+    const activityToleranceScore = answers['activity_tolerance'] ? getPEMQuestions()[0].options.find(opt => opt.value === answers['activity_tolerance'])?.score || 0 : 0
+    const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0
+    const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0
+    const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0
+    
+    // NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features
+    const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)
+
     let severity = t.pem.results.severityLevels.none
     let color = 'bg-green-100 text-green-800'
     
-    if (percentage >= 75) {
+    if (niceCoreCriteria && percentage >= 70) {
       severity = t.pem.results.severityLevels.severe
       color = 'bg-red-100 text-red-800'
-    } else if (percentage >= 50) {
+    } else if (niceCoreCriteria && percentage >= 50) {
       severity = t.pem.results.severityLevels.moderate
       color = 'bg-orange-100 text-orange-800'
-    } else if (percentage >= 25) {
+    } else if (niceCoreCriteria) {
       severity = t.pem.results.severityLevels.mild
       color = 'bg-yellow-100 text-yellow-800'
     }
 
-    const isPEMPresent = percentage >= 25
+    const isPEMPresent = niceCoreCriteria
 
     return {
       totalScore,
@@ -138,7 +151,12 @@ export default function PEMQuest() {
       percentage: Math.round(percentage),
       severity,
       color,
-      isPEMPresent
+      isPEMPresent,
+      niceCoreCriteria,
+      activityToleranceScore,
+      delayedOnsetScore,
+      disproportionateScore,
+      prolongedRecoveryScore
     }
   }
 

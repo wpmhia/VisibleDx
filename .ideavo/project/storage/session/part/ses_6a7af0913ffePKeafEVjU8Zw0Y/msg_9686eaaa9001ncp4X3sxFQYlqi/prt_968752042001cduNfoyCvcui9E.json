@@ -1,0 +1,24 @@
+{
+  "id": "prt_968752042001cduNfoyCvcui9E",
+  "messageID": "msg_9686eaaa9001ncp4X3sxFQYlqi",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LndFzoW7wxTDmySemGY7Af",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "limit": 50
+    },
+    "output": "<file>\n00001| 'use client'\n00002| \n00003| import { useState } from 'react'\n00004| import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\n00005| import { Button } from '@/components/ui/button'\n00006| import { Badge } from '@/components/ui/badge'\n00007| import { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'\n00008| import Link from 'next/link'\n00009| import { useTranslation } from '@/lib/language-context'\n00010| \n00011| const getModules = (t: any) => [\n00012|   {\n00013|     id: 'quick-screen',\n00014|     title: t.dashboard.modules.quickScreen.title,\n00015|     description: t.dashboard.modules.quickScreen.description,\n00016|     icon: Clock,\n00017|     route: '/quick-screen'\n00018|   },\n00019|   {\n00020|     id: 'red-flag',\n00021|     title: t.dashboard.modules.redFlag.title,\n00022|     description: t.dashboard.modules.redFlag.description,\n00023|     icon: FileText,\n00024|     route: '/red-flag-checker'\n00025|   },\n00026|   {\n00027|     id: 'stand-test',\n00028|     title: t.dashboard.modules.standTest.title,\n00029|     description: t.dashboard.modules.standTest.description,\n00030|     icon: Heart,\n00031|     route: '/stand-test'\n00032|   },\n00033|   {\n00034|     id: 'pem-quest',\n00035|     title: t.dashboard.modules.pemQuest.title,\n00036|     description: t.dashboard.modules.pemQuest.description,\n00037|     icon: Activity,\n00038|     route: '/pem-quest'\n00039|   },\n00040|   {\n00041|     id: 'criteria-engine',\n00042|     title: t.dashboard.modules.criteriaEngine.title,\n00043|     description: t.dashboard.modules.criteriaEngine.description,\n00044|     icon: BarChart3,\n00045|     route: '/criteria-engine'\n00046|   },\n00047|   {\n00048|     id: 'subtype-advisor',\n00049|     title: t.dashboard.modules.subtypeAdvisor.title,\n00050|     description: t.dashboard.modules.subtypeAdvisor.description,\n\n(File has more lines. Use 'offset' parameter to read beyond line 50)\n</file>",
+    "metadata": {
+      "preview": "'use client'\n\nimport { useState } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Button } from '@/components/ui/button'\nimport { Badge } from '@/components/ui/badge'\nimport { Activity, Clock, Users, FileText, BarChart3, Heart, User } from 'lucide-react'\nimport Link from 'next/link'\nimport { useTranslation } from '@/lib/language-context'\n\nconst getModules = (t: any) => [\n  {\n    id: 'quick-screen',\n    title: t.dashboard.modules.quickScreen.title,\n    description: t.dashboard.modules.quickScreen.description,\n    icon: Clock,\n    route: '/quick-screen'\n  },\n  {\n    id: 'red-flag',"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758394131243,
+      "end": 1758394131246
+    }
+  }
+}
