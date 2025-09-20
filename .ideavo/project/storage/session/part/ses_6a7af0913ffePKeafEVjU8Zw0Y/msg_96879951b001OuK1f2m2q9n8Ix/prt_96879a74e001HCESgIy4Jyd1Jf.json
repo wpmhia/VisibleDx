@@ -1,0 +1,26 @@
+{
+  "id": "prt_96879a74e001HCESgIy4Jyd1Jf",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WyFgHpDFPh7Nd7nGd9wTbR",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "oldString": "      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n      retake: 'Retake Assessment'",
+      "newString": "      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.',\n      retake: 'Retake Assessment'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -454,9 +454,9 @@\n         'Re-assess if symptom pattern changes',\n         'Standard activity guidelines may apply'\n       ]\n     },\n-    important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n+    important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.',\n     retake: 'Retake Assessment'\n   }\n },\n \n"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394429215,
+      "end": 1758394429230
+    }
+  }
+}

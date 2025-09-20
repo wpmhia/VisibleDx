@@ -1,0 +1,25 @@
+{
+  "id": "prt_9688102ff001zGLA2rENIVK5PI",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UVdaxMiUEbTzgqYRNf4BZ1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 50,
+      "limit": 30
+    },
+    "output": "<file>\n00051|   }\n00052| }\n00053| \n00054| const initialPatientData: PatientData = {\n00055|   demographics: {\n00056|     age: null,\n00057|     gender: '',\n00058|     clinicianName: '',\n00059|     patientId: ''\n00060|   },\n00061|   quickScreen: {\n00062|     answers: {},\n00063|     score: 0,\n00064|     riskLevel: 'low'\n00065|   },\n00066|   redFlags: {\n00067|     symptoms: [],\n00068|     labsRecommended: [],\n00069|     priority: 'routine'\n00070|   },\n00071|   standTest: {\n00072|     performed: false,\n00073|     baselineHR: null,\n00074|     peakHR: null,\n00075|     sustainedHR: null,\n00076|     meetsPOTS: false\n00077|   },\n00078|   pemQuest: {\n00079|     answers: {},\n00080|     score: 0,\n\n(File has more lines. Use 'offset' parameter to read beyond line 80)\n</file>",
+    "metadata": {
+      "preview": "  }\n}\n\nconst initialPatientData: PatientData = {\n  demographics: {\n    age: null,\n    gender: '',\n    clinicianName: '',\n    patientId: ''\n  },\n  quickScreen: {\n    answers: {},\n    score: 0,\n    riskLevel: 'low'\n  },\n  redFlags: {\n    symptoms: [],\n    labsRecommended: [],\n    priority: 'routine'\n  },"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758394910357,
+      "end": 1758394910360
+    }
+  }
+}

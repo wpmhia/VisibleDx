@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687faaaf001x9MJ1s4DI0SHIV",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MEk2jTkVKxsEVUceoNS2s7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "      categories: {\n        basicMetabolic: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        endocrine: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        nutritional: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        autoimmune: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        cardiac: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        infectious: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n      }",
+      "newString": "      categories: {\n        essential: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        additional: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n        paediatric: {\n          title: string\n          indication: string\n          tests: string[]\n        }\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -190,38 +190,23 @@\n routineLabs: {\n   title: string\n   description: string\n   categories: {\n-    basicMetabolic: {\n+    essential: {\n       title: string\n       indication: string\n       tests: string[]\n     }\n-    endocrine: {\n+    additional: {\n       title: string\n       indication: string\n       tests: string[]\n     }\n-    nutritional: {\n+    paediatric: {\n       title: string\n       indication: string\n       tests: string[]\n     }\n-    autoimmune: {\n-      title: string\n-      indication: string\n-      tests: string[]\n-    }\n-    cardiac: {\n-      title: string\n-      indication: string\n-      tests: string[]\n-    }\n-    infectious: {\n-      title: string\n-      indication: string\n-      tests: string[]\n-    }\n   }\n }\n results: {\n   complete: string\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758394824215,
+      "end": 1758394824233
+    }
+  }
+}

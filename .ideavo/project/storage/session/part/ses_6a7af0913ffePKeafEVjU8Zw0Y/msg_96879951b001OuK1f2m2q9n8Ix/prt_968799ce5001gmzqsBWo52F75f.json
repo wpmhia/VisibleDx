@@ -1,0 +1,25 @@
+{
+  "id": "prt_968799ce5001gmzqsBWo52F75f",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01W5p7spLhU7CGuwCwkrdyFp",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 450,
+      "limit": 20
+    },
+    "output": "<file>\n00451|         none: [\n00452|           'PEM criteria not met according to NICE NG206',\n00453|           'Consider other causes of post-activity symptoms',\n00454|           'Re-assess if symptom pattern changes',\n00455|           'Standard activity guidelines may apply'\n00456|         ]\n00457|       },\n00458|       important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n00459|       retake: 'Retake Assessment'\n00460|     }\n00461|   },\n00462| \n00463|   criteria: {\n00464|     title: 'NICE NG206 Diagnostic Criteria Engine',\n00465|     description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n00466|     mecfs: {\n00467|       title: 'ME/CFS Criteria (NICE NG206)',\n00468|       description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n00469|       criteria: [\n00470|         'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',\n\n(File has more lines. Use 'offset' parameter to read beyond line 470)\n</file>",
+    "metadata": {
+      "preview": "        none: [\n          'PEM criteria not met according to NICE NG206',\n          'Consider other causes of post-activity symptoms',\n          'Re-assess if symptom pattern changes',\n          'Standard activity guidelines may apply'\n        ]\n      },\n      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.';\n      retake: 'Retake Assessment'\n    }\n  },\n\n  criteria: {\n    title: 'NICE NG206 Diagnostic Criteria Engine',\n    description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n    mecfs: {\n      title: 'ME/CFS Criteria (NICE NG206)',\n      description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n      criteria: [\n        'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394425362,
+      "end": 1758394425376
+    }
+  }
+}

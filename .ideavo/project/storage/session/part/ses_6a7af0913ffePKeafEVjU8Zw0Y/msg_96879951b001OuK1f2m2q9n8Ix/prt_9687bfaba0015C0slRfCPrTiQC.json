@@ -1,0 +1,11 @@
+{
+  "id": "prt_9687bfaba0015C0slRfCPrTiQC",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I need to update both Danish and Dutch translations to match the new structure. Let me replace the old PEM questions structure in both files:",
+  "time": {
+    "start": 1758394580445,
+    "end": 1758394580445
+  }
+}

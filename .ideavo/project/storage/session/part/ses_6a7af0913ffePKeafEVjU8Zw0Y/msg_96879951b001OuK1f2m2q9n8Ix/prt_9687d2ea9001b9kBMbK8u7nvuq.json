@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687d2ea9001b9kBMbK8u7nvuq",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01KfJMNf8B9bpeGaKEXTmH74",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 360,
+      "limit": 60
+    },
+    "output": "<file>\n00361|     questions: {\n00362|       frequency: {\n00363|         question: 'Hoe vaak ervaart u een verergering van symptomen na fysieke activiteit?',\n00364|         description: 'Denk aan activiteiten zoals lopen, traplopen, of huishoudelijke taken',\n00365|         options: [\n00366|           'Nooit',\n00367|           'Zelden (minder dan 25% van de tijd)',\n00368|           'Soms (25-50% van de tijd)',\n00369|           'Vaak (50-75% van de tijd)',\n00370|           'Altijd of bijna altijd (meer dan 75% van de tijd)'\n00371|         ]\n00372|       },\n00373|       mentalFrequency: {\n00374|         question: 'Hoe vaak ervaart u een verergering van symptomen na mentale activiteit?',\n00375|         description: 'Denk aan activiteiten zoals lezen, concentreren, of problemen oplossen',\n00376|         options: [\n00377|           'Nooit',\n00378|           'Zelden (minder dan 25% van de tijd)',\n00379|           'Soms (25-50% van de tijd)',\n00380|           'Vaak (50-75% van de tijd)',\n00381|           'Altijd of bijna altijd (meer dan 75% van de tijd)'\n00382|         ]\n00383|       },\n00384|       onsetTime: {\n00385|         question: 'Hoe snel na activiteit verergeren uw symptomen meestal?',\n00386|         options: [\n00387|           'Geen verergering treedt op',\n00388|           'Tijdens de activiteit',\n00389|           'Onmiddellijk na (binnen 30 minuten)',\n00390|           'Binnen een paar uur (2-6 uur)',\n00391|           'De volgende dag of later'\n00392|         ]\n00393|       },\n00394|       severity: {\n00395|         question: 'Hoe ernstig is de verergering van uw symptomen na activiteit?',\n00396|         options: [\n00397|           'Geen verergering',\n00398|           'Mild - iets erger dan voor activiteit',\n00399|           'Matig - merkbaar erger, maar beheersbaar',\n00400|           'Ernstig - aanzienlijk erger, moeilijk functioneren',\n00401|           'Zeer ernstig - niet in staat te functioneren, bedlegerig'\n00402|         ]\n00403|       },\n00404|       recoveryTime: {\n00405|         question: 'Hoe lang duurt het meestal voordat uw symptomen terugkeren naar baseline na activiteit?',\n00406|         options: [\n00407|           'Geen hersteltijd nodig',\n00408|           'Een paar uur',\n00409|           'Ongeveer een dag',\n00410|           'Meerdere dagen (2-6 dagen)',\n00411|           'Een week of meer'\n00412|         ]\n00413|       }\n00414|     },\n00415|     results: {\n00416|       complete: 'PEM Beoordeling Voltooid',\n00417|       description: 'Post-Exertionele Malaise evaluatie gebaseerd op DePaul criteria',\n00418|       status: 'PEM Status',\n00419|       present: 'Post-Exertionele Malaise is waarschijnlijk aanwezig',\n00420|       absent: 'Post-Exertionele Malaise is onwaarschijnlijk',\n\n(File has more lines. Use 'offset' parameter to read beyond line 420)\n</file>",
+    "metadata": {
+      "preview": "    questions: {\n      frequency: {\n        question: 'Hoe vaak ervaart u een verergering van symptomen na fysieke activiteit?',\n        description: 'Denk aan activiteiten zoals lopen, traplopen, of huishoudelijke taken',\n        options: [\n          'Nooit',\n          'Zelden (minder dan 25% van de tijd)',\n          'Soms (25-50% van de tijd)',\n          'Vaak (50-75% van de tijd)',\n          'Altijd of bijna altijd (meer dan 75% van de tijd)'\n        ]\n      },\n      mentalFrequency: {\n        question: 'Hoe vaak ervaart u een verergering van symptomen na mentale activiteit?',\n        description: 'Denk aan activiteiten zoals lezen, concentreren, of problemen oplossen',\n        options: [\n          'Nooit',\n          'Zelden (minder dan 25% van de tijd)',\n          'Soms (25-50% van de tijd)',\n          'Vaak (50-75% van de tijd)',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758394659112,
+      "end": 1758394659114
+    }
+  }
+}

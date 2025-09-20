@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687ad37e001ZFOAi7nkYCv96B",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01UoY8NMQuHUZoZBZWy7HGeK",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "questions:",
+      "include": "lib/translations/en.ts"
+    },
+    "output": "Found 2 matches\n/home/user/project/lib/translations/en.ts:\n  Line 138:     questions: [\n  Line 359:     questions: {",
+    "metadata": {
+      "matches": 2,
+      "truncated": false
+    },
+    "title": "questions:",
+    "time": {
+      "start": 1758394504471,
+      "end": 1758394504484
+    }
+  }
+}

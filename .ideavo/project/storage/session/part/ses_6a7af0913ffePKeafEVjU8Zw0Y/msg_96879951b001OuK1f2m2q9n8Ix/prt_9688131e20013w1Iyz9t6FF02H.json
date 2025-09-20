@@ -1,0 +1,26 @@
+{
+  "id": "prt_9688131e20013w1Iyz9t6FF02H",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01YQu3r9C4s1E1wfSRWDSjGY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "oldString": "const createPemQuestions = (t: any) => [\n  {\n    id: 'frequency',\n    question: t.pem.questions.frequency.question,\n    options: t.pem.questions.frequency.options.map((label: string, index: number) => ({\n      value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'severity',\n    question: t.pem.questions.severity.question,\n    options: t.pem.questions.severity.options.map((label: string, index: number) => ({\n      value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'recovery_time',\n    question: t.pem.questions.recoveryTime.question,\n    options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({\n      value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],\n      label,\n      score: index\n    }))\n  }\n]",
+      "newString": "const createPemQuestions = (t: any) => [\n  {\n    id: 'activity_tolerance',\n    question: t.pem.questions.activityTolerance.question,\n    options: t.pem.questions.activityTolerance.options.map((label: string, index: number) => ({\n      value: ['none', 'rarely', 'sometimes', 'often', 'always'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'delayed_onset',\n    question: t.pem.questions.delayedOnset.question,\n    options: t.pem.questions.delayedOnset.options.map((label: string, index: number) => ({\n      value: ['no_delay', 'few_hours', 'several_hours', 'one_two_days', 'days'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'disproportionate',\n    question: t.pem.questions.disproportionate.question,\n    options: t.pem.questions.disproportionate.options.map((label: string, index: number) => ({\n      value: ['no', 'slightly', 'moderately', 'significantly', 'severely'][index],\n      label,\n      score: index\n    }))\n  }\n]"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/new-patient/page.tsx\n===================================================================\n--- /home/user/project/app/new-patient/page.tsx\n+++ /home/user/project/app/new-patient/page.tsx\n@@ -103,30 +103,30 @@\n }))\n \n const createPemQuestions = (t: any) => [\n   {\n-    id: 'frequency',\n-    question: t.pem.questions.frequency.question,\n-    options: t.pem.questions.frequency.options.map((label: string, index: number) => ({\n-      value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],\n+    id: 'activity_tolerance',\n+    question: t.pem.questions.activityTolerance.question,\n+    options: t.pem.questions.activityTolerance.options.map((label: string, index: number) => ({\n+      value: ['none', 'rarely', 'sometimes', 'often', 'always'][index],\n       label,\n       score: index\n     }))\n   },\n   {\n-    id: 'severity',\n-    question: t.pem.questions.severity.question,\n-    options: t.pem.questions.severity.options.map((label: string, index: number) => ({\n-      value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],\n+    id: 'delayed_onset',\n+    question: t.pem.questions.delayedOnset.question,\n+    options: t.pem.questions.delayedOnset.options.map((label: string, index: number) => ({\n+      value: ['no_delay', 'few_hours', 'several_hours', 'one_two_days', 'days'][index],\n       label,\n       score: index\n     }))\n   },\n   {\n-    id: 'recovery_time',\n-    question: t.pem.questions.recoveryTime.question,\n-    options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({\n-      value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],\n+    id: 'disproportionate',\n+    question: t.pem.questions.disproportionate.question,\n+    options: t.pem.questions.disproportionate.options.map((label: string, index: number) => ({\n+      value: ['no', 'slightly', 'moderately', 'significantly', 'severely'][index],\n       label,\n       score: index\n     }))\n   }\n"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758394927436,
+      "end": 1758394927452
+    }
+  }
+}

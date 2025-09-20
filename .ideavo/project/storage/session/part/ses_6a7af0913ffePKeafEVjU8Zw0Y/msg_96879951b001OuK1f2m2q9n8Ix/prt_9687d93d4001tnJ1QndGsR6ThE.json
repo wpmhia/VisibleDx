@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687d93d4001tnJ1QndGsR6ThE",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01F4NVcBNNUz4G4vAqFK7zT1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Run build after updating all translation files"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:104:7\nType error: Object literal may only specify known properties, and 'energyManagement' does not exist in type '{ quickScreen: { title: string; description: string; }; redFlag: { title: string; description: string; }; standTest: { title: string; description: string; }; pemQuest: { title: string; description: string; }; criteriaEngine: { ...; }; subtypeAdvisor: { ...; }; }'.\n\n\u001b[0m \u001b[90m 102 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'Condition subtyping & treatment planning examples'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 103 |\u001b[39m       }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       energyManagement\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 105 |\u001b[39m         title\u001b[33m:\u001b[39m \u001b[32m'Energy Management'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 106 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'NICE NG206 energy management planning tool'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 107 |\u001b[39m       }\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:104:7\nType error: Object literal may only specify known properties, and 'energyManagement' does not exist in type '{ quickScreen: { title: string; description: string; }; redFlag: { title: string; description: string; }; standTest: { title: string; description: string; }; pemQuest: { title: string; description: string; }; criteriaEngine: { ...; }; subtypeAdvisor: { ...; }; }'.\n\n\u001b[0m \u001b[90m 102 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'Condition subtyping & treatment planning examples'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 103 |\u001b[39m       }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 104 |\u001b[39m       energyManagement\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 105 |\u001b[39m         title\u001b[33m:\u001b[39m \u001b[32m'Energy Management'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 106 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'NICE NG206 energy management planning tool'\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 107 |\u001b[39m       }\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Run build after updating all translation files"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758394685277,
+      "end": 1758394710410
+    }
+  }
+}

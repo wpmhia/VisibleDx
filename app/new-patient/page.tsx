@@ -104,28 +104,28 @@ const createRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: 
 
 const createPemQuestions = (t: any) => [
   {
-    id: 'frequency',
-    question: t.pem.questions.frequency.question,
-    options: t.pem.questions.frequency.options.map((label: string, index: number) => ({
-      value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],
+    id: 'activity_tolerance',
+    question: t.pem.questions.activityTolerance.question,
+    options: t.pem.questions.activityTolerance.options.map((label: string, index: number) => ({
+      value: ['none', 'rarely', 'sometimes', 'often', 'always'][index],
       label,
       score: index
     }))
   },
   {
-    id: 'severity',
-    question: t.pem.questions.severity.question,
-    options: t.pem.questions.severity.options.map((label: string, index: number) => ({
-      value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],
+    id: 'delayed_onset',
+    question: t.pem.questions.delayedOnset.question,
+    options: t.pem.questions.delayedOnset.options.map((label: string, index: number) => ({
+      value: ['no_delay', 'few_hours', 'several_hours', 'one_two_days', 'days'][index],
       label,
       score: index
     }))
   },
   {
-    id: 'recovery_time',
-    question: t.pem.questions.recoveryTime.question,
-    options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({
-      value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],
+    id: 'disproportionate',
+    question: t.pem.questions.disproportionate.question,
+    options: t.pem.questions.disproportionate.options.map((label: string, index: number) => ({
+      value: ['no', 'slightly', 'moderately', 'significantly', 'severely'][index],
       label,
       score: index
     }))

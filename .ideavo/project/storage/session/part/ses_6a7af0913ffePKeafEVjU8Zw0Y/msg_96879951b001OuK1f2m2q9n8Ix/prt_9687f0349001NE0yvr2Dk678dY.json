@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687f0349001NE0yvr2Dk678dY",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01Ky1nVQyXkrkWQGtb1bH1m2",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 20 \"categories:\" lib/translations/nl.ts",
+      "description": "Check quickScreen categories in Dutch translations"
+    },
+    "output": "    categories: {\n      core: 'Kern',\n      pem: 'PEM',\n      cardiovascular: 'Cardiovasculair',\n      orthostatic: 'Orthostatisch',\n      history: 'Geschiedenis',\n      duration: 'Duur',\n      pain: 'Pijn',\n      neurological: 'Neurologisch',\n      autonomic: 'Autonoom',\n      gi: 'GI',\n      respiratory: 'Ademhaling',\n      functional: 'Functioneel',\n      sensory: 'Sensorisch'\n    },\n    results: {\n      complete: 'Screening Voltooid',\n      riskAssessment: 'Gebaseerd op uw antwoorden, hier is uw risicobeoordeling',\n      lowRisk: 'Laag Risico voor ME/CVS, Long COVID, of POTS',\n      mediumRisk: 'Gemiddeld Risico voor ME/CVS, Long COVID, of POTS',\n      highRisk: 'Hoog Risico voor ME/CVS, Long COVID, of POTS',\n--\n      categories: {\n        basicMetabolic: {\n          title: 'Basis Metabolisme',\n          indication: 'Sluit anemie, infectie, ontsteking, elektrolytafwijkingen uit',\n          tests: ['Volledige bloedtelling met differentiatie', 'Uitgebreid metabolisme panel', 'BSE', 'CRP']\n        },\n        endocrine: {\n          title: 'Endocrien',\n          indication: 'Sluit schildklierdisfunctie, diabetes, bijnierinsufficientie uit',\n          tests: ['TSH', 'Vrij T4', 'HbA1c', 'Cortisol (ochtend)', 'Vitamine D']\n        },\n        nutritional: {\n          title: 'Voeding',\n          indication: 'Sluit voedingstekorten die vermoeidheid veroorzaken uit',\n          tests: ['Vitamine B12', 'Folaat', 'IJzerstudies', 'Ferritine']\n        },\n        autoimmune: {\n          title: 'Auto-immuun',\n          indication: 'Screen voor auto-immuunziekten',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Coeliakie antilichamen']\n        },\n",
+    "metadata": {
+      "output": "    categories: {\n      core: 'Kern',\n      pem: 'PEM',\n      cardiovascular: 'Cardiovasculair',\n      orthostatic: 'Orthostatisch',\n      history: 'Geschiedenis',\n      duration: 'Duur',\n      pain: 'Pijn',\n      neurological: 'Neurologisch',\n      autonomic: 'Autonoom',\n      gi: 'GI',\n      respiratory: 'Ademhaling',\n      functional: 'Functioneel',\n      sensory: 'Sensorisch'\n    },\n    results: {\n      complete: 'Screening Voltooid',\n      riskAssessment: 'Gebaseerd op uw antwoorden, hier is uw risicobeoordeling',\n      lowRisk: 'Laag Risico voor ME/CVS, Long COVID, of POTS',\n      mediumRisk: 'Gemiddeld Risico voor ME/CVS, Long COVID, of POTS',\n      highRisk: 'Hoog Risico voor ME/CVS, Long COVID, of POTS',\n--\n      categories: {\n        basicMetabolic: {\n          title: 'Basis Metabolisme',\n          indication: 'Sluit anemie, infectie, ontsteking, elektrolytafwijkingen uit',\n          tests: ['Volledige bloedtelling met differentiatie', 'Uitgebreid metabolisme panel', 'BSE', 'CRP']\n        },\n        endocrine: {\n          title: 'Endocrien',\n          indication: 'Sluit schildklierdisfunctie, diabetes, bijnierinsufficientie uit',\n          tests: ['TSH', 'Vrij T4', 'HbA1c', 'Cortisol (ochtend)', 'Vitamine D']\n        },\n        nutritional: {\n          title: 'Voeding',\n          indication: 'Sluit voedingstekorten die vermoeidheid veroorzaken uit',\n          tests: ['Vitamine B12', 'Folaat', 'IJzerstudies', 'Ferritine']\n        },\n        autoimmune: {\n          title: 'Auto-immuun',\n          indication: 'Screen voor auto-immuunziekten',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Coeliakie antilichamen']\n        },\n",
+      "exit": 0,
+      "description": "Check quickScreen categories in Dutch translations"
+    },
+    "title": "cd /home/user/project && rg -A 20 \"categories:\" lib/translations/nl.ts",
+    "time": {
+      "start": 1758394779535,
+      "end": 1758394779550
+    }
+  }
+}

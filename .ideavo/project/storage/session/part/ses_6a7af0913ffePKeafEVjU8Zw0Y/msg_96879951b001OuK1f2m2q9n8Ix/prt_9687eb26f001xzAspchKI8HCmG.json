@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687eb26f001xzAspchKI8HCmG",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017vXE6LwS9QDiSmc7inqrkT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 155,
+      "limit": 20
+    },
+    "output": "<file>\n00156|     categories: {\n00157|       coreFatigue: 'Core: Debilitating Fatigue',\n00158|       corePEM: 'Core: Post-Exertional Malaise',\n00159|       coreSleep: 'Core: Unrefreshing Sleep',\n00160|       coreCognitive: 'Core: Cognitive Difficulties',\n00161|       additional: 'Additional: Orthostatic Intolerance',\n00162|       autonomic: 'Additional: Temperature/Autonomic',\n00163|       neuromuscular: 'Additional: Neuromuscular',\n00164|       fluLike: 'Additional: Flu-like Symptoms',\n00165|       intolerance: 'Additional: Food/Chemical Intolerance',\n00166|       sensory: 'Additional: Sensory Hypersensitivity',\n00167|       pain: 'Additional: Pain Symptoms',\n00168|       duration: 'Diagnostic: Duration Criteria',\n00169|       functional: 'Diagnostic: Functional Impairment',\n00170|       exclusion: 'Diagnostic: Exclusion Criteria',\n00171|       history: 'Risk Factor: Infection History',\n00172|       severity: 'Assessment: Severity Level'\n00173|     },\n00174|     results: {\n00175|       complete: 'Screening Complete',\n\n(File has more lines. Use 'offset' parameter to read beyond line 175)\n</file>",
+    "metadata": {
+      "preview": "    categories: {\n      coreFatigue: 'Core: Debilitating Fatigue',\n      corePEM: 'Core: Post-Exertional Malaise',\n      coreSleep: 'Core: Unrefreshing Sleep',\n      coreCognitive: 'Core: Cognitive Difficulties',\n      additional: 'Additional: Orthostatic Intolerance',\n      autonomic: 'Additional: Temperature/Autonomic',\n      neuromuscular: 'Additional: Neuromuscular',\n      fluLike: 'Additional: Flu-like Symptoms',\n      intolerance: 'Additional: Food/Chemical Intolerance',\n      sensory: 'Additional: Sensory Hypersensitivity',\n      pain: 'Additional: Pain Symptoms',\n      duration: 'Diagnostic: Duration Criteria',\n      functional: 'Diagnostic: Functional Impairment',\n      exclusion: 'Diagnostic: Exclusion Criteria',\n      history: 'Risk Factor: Infection History',\n      severity: 'Assessment: Severity Level'\n    },\n    results: {\n      complete: 'Screening Complete',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394758435,
+      "end": 1758394758437
+    }
+  }
+}

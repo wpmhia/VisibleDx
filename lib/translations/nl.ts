@@ -100,6 +100,10 @@ export const nl: Translation = {
       subtypeAdvisor: {
         title: 'Subtype & Rx Adviseur',
         description: 'Gepersonaliseerde behandelingsaanbevelingen'
+      },
+      energyManagement: {
+        title: 'Energiebeheer',
+        description: 'NICE NG206 energiebeheer planningsgereedschap'
       }
     },
     stats: {
@@ -150,19 +154,22 @@ export const nl: Translation = {
       'Bent u niet in staat uw vorige activiteitenniveau te handhaven?'
     ],
     categories: {
-      core: 'Kern',
-      pem: 'PEM',
-      cardiovascular: 'Cardiovasculair',
-      orthostatic: 'Orthostatisch',
-      history: 'Geschiedenis',
-      duration: 'Duur',
-      pain: 'Pijn',
-      neurological: 'Neurologisch',
-      autonomic: 'Autonoom',
-      gi: 'GI',
-      respiratory: 'Ademhaling',
-      functional: 'Functioneel',
-      sensory: 'Sensorisch'
+      coreFatigue: 'Kern: Invaliderende Vermoeidheid',
+      corePEM: 'Kern: Post-Exertionele Malaise',
+      coreSleep: 'Kern: Niet-verfrissende Slaap',
+      coreCognitive: 'Kern: Cognitieve Problemen',
+      additional: 'Aanvullend: Orthostatische Intolerantie',
+      autonomic: 'Aanvullend: Temperatuur/Autonoom',
+      neuromuscular: 'Aanvullend: Neuromusculair',
+      fluLike: 'Aanvullend: Griepachtige Symptomen',
+      intolerance: 'Aanvullend: Voedsel/Chemische Intolerantie',
+      sensory: 'Aanvullend: Sensorische Overgevoeligheid',
+      pain: 'Aanvullend: Pijnsymptomen',
+      duration: 'Diagnostisch: Duratiecriteria',
+      functional: 'Diagnostisch: Functionele Beperking',
+      exclusion: 'Diagnostisch: Exclusiecriteria',
+      history: 'Risicofactor: Infectiegeschiedenis',
+      severity: 'Beoordeling: Ernstniveau'
     },
     results: {
       complete: 'Screening Voltooid',
@@ -225,38 +232,23 @@ export const nl: Translation = {
       'Hepatisch'
     ],
     routineLabs: {
-      title: 'Routine Screening Labs',
-      description: 'Selecteer categorieën van tests om veel voorkomende verklarende aandoeningen uit te sluiten',
+      title: 'NICE NG206 Vereiste Onderzoeken',
+      description: 'Verplichte tests om andere diagnoses uit te sluiten wanneer ME/CFS wordt vermoed',
       categories: {
-        basicMetabolic: {
-          title: 'Basis Metabolisme',
-          indication: 'Sluit anemie, infectie, ontsteking, elektrolytafwijkingen uit',
-          tests: ['Volledige bloedtelling met differentiatie', 'Uitgebreid metabolisme panel', 'BSE', 'CRP']
+        essential: {
+          title: 'Essentiële Tests (NICE NG206)',
+          indication: 'Vereiste onderzoeken voor alle patiënten met vermoedelijke ME/CFS',
+          tests: ['Urineanalyse voor eiwit, bloed en glucose', 'Volledige bloedtelling', 'Ureum en elektrolyten', 'Leverfunctie', 'Schildklierfunctie (TSH)', 'BSE of plasmaviscositeit', 'C-reactief proteïne', 'Calcium en fosfaat', 'HbA1c', 'Serum ferritine', 'Coeliakie screening', 'Creatinekinase']
         },
-        endocrine: {
-          title: 'Endocrien',
-          indication: 'Sluit schildklierdisfunctie, diabetes, bijnierinsufficientie uit',
-          tests: ['TSH', 'Vrij T4', 'HbA1c', 'Cortisol (ochtend)', 'Vitamine D']
+        additional: {
+          title: 'Aanvullende Tests (Klinisch Oordeel)',
+          indication: 'Overweeg gebaseerd op klinische presentatie en geschiedenis',
+          tests: ['Vitamine D', 'Vitamine B12 en folaatspiegels', 'Serologische tests bij infectiegeschiedenis', '9 uur cortisol voor bijnierinsufficientie']
         },
-        nutritional: {
-          title: 'Voeding',
-          indication: 'Sluit voedingstekorten die vermoeidheid veroorzaken uit',
-          tests: ['Vitamine B12', 'Folaat', 'IJzerstudies', 'Ferritine']
-        },
-        autoimmune: {
-          title: 'Auto-immuun',
-          indication: 'Screen voor auto-immuunziekten',
-          tests: ['ANA', 'RF', 'Anti-CCP', 'Coeliakie antilichamen']
-        },
-        cardiac: {
-          title: 'Hartgerelateerd',
-          indication: 'Sluit structurele hartziekte, hartfalen uit',
-          tests: ['ECG', 'Echocardiogram', 'BNP/NT-proBNP']
-        },
-        infectious: {
-          title: 'Infectieus',
-          indication: 'Sluit chronische infecties uit',
-          tests: ['Hepatitis B/C', 'HIV', 'Lyme antilichamen', 'CMV/EBV antilichamen']
+        paediatric: {
+          title: 'Aanvullende Pediatrische Overwegingen',
+          indication: 'Extra overwegingen voor kinderen en jongeren',
+          tests: ['Groeiparameters', 'Ontwikkelingsbeoordeling', 'Schoolfrequentie beoordeling', 'Familiegeschiedenis beoordeling']
         }
       }
     },
@@ -359,56 +351,59 @@ export const nl: Translation = {
       description: 'PEM is de verergering van symptomen na fysieke of mentale activiteit die voorheen werd verdragen. Het is een kernkenmerk van ME/CVS en komt vaak voor bij Long COVID. Symptomen kunnen vertraagd zijn en dagen tot weken duren.'
     },
     questions: {
-      frequency: {
-        question: 'Hoe vaak ervaart u een verergering van symptomen na fysieke activiteit?',
-        description: 'Denk aan activiteiten zoals lopen, traplopen, of huishoudelijke taken',
+      activityTolerance: {
+        question: 'Ervaart u een verergering van symptomen na minimale cognitieve, fysieke, emotionele of sociale activiteit?',
+        description: 'NICE: Activiteit die eerder kon worden verdragen of minimaal van aard is',
         options: [
-          'Nooit',
-          'Zelden (minder dan 25% van de tijd)',
-          'Soms (25-50% van de tijd)',
-          'Vaak (50-75% van de tijd)',
-          'Altijd of bijna altijd (meer dan 75% van de tijd)'
+          'Nee - ik kan normale activiteitsniveaus verdragen',
+          'Zelden - alleen na aanzienlijke inspanning',
+          'Soms - na matige activiteit',
+          'Vaak - na minimale activiteit',
+          'Altijd - elke activiteit verergert symptomen'
         ]
       },
-      mentalFrequency: {
-        question: 'Hoe vaak ervaart u een verergering van symptomen na mentale activiteit?',
-        description: 'Denk aan activiteiten zoals lezen, concentreren, of problemen oplossen',
+      delayedOnset: {
+        question: 'Wanneer symptomen verergeren na activiteit, is het begin vaak vertraagd met uren of dagen?',
+        description: 'NICE: De verergering kan niet onmiddellijk zijn, maar vertraagd',
         options: [
-          'Nooit',
-          'Zelden (minder dan 25% van de tijd)',
-          'Soms (25-50% van de tijd)',
-          'Vaak (50-75% van de tijd)',
-          'Altijd of bijna altijd (meer dan 75% van de tijd)'
+          'Geen vertraagd begin - symptomen verergeren onmiddellijk of helemaal niet',
+          'Soms vertraagd met een paar uur',
+          'Vaak vertraagd met meerdere uren (4-12 uur)',
+          'Meestal vertraagd met 1-2 dagen',
+          'Consequent vertraagd met dagen (soms 24-48+ uur)'
         ]
       },
-      onsetTime: {
-        question: 'Hoe snel na activiteit verergeren uw symptomen meestal?',
+      disproportionate: {
+        question: 'Wanneer uw symptomen verergeren, is dit onevenredig ten opzichte van de uitgevoerde activiteit?',
+        description: 'NICE: De reactie is overdreven vergeleken met de ondernomen activiteit',
         options: [
-          'Geen verergering treedt op',
-          'Tijdens de activiteit',
-          'Onmiddellijk na (binnen 30 minuten)',
-          'Binnen een paar uur (2-6 uur)',
-          'De volgende dag of later'
+          'Nee - symptoomverergering komt overeen met activiteitsniveau',
+          'Enigszins onevenredig',
+          'Matig onevenredig',
+          'Aanzienlijk onevenredig',
+          'Ernstig onevenredig - minimale activiteit veroorzaakt grote symptoomopvlamming'
         ]
       },
-      severity: {
-        question: 'Hoe ernstig is de verergering van uw symptomen na activiteit?',
+      prolongedRecovery: {
+        question: 'Hoe lang duurt de verlengde hersteltijd na symptoomverergering?',
+        description: 'NICE: Herstel kan uren, dagen, weken of langer duren',
         options: [
-          'Geen verergering',
-          'Mild - iets erger dan voor activiteit',
-          'Matig - merkbaar erger, maar beheersbaar',
-          'Ernstig - aanzienlijk erger, moeilijk functioneren',
-          'Zeer ernstig - niet in staat te functioneren, bedlegerig'
+          'Geen verlengd herstel nodig',
+          'Uren om te herstellen',
+          'Dagen om te herstellen',
+          'Weken om te herstellen',
+          'Weken tot maanden of herstelt mogelijk niet volledig'
         ]
       },
-      recoveryTime: {
-        question: 'Hoe lang duurt het meestal voordat uw symptomen terugkeren naar baseline na activiteit?',
+      activityTypes: {
+        question: 'Welke soorten activiteit veroorzaken uw post-exertionele malaise?',
+        description: 'NICE: PEM kan volgen op elk type activiteit - cognitief, fysiek, emotioneel of sociaal',
         options: [
-          'Geen hersteltijd nodig',
-          'Een paar uur',
-          'Ongeveer een dag',
-          'Meerdere dagen (2-6 dagen)',
-          'Een week of meer'
+          'Geen activiteiten veroorzaken PEM',
+          'Alleen intense fysieke activiteit',
+          'Fysieke en wat cognitieve activiteit',
+          'Fysieke, cognitieve en emotionele stress',
+          'Alle soorten: fysieke, cognitieve, emotionele en sociale activiteit'
         ]
       }
     },

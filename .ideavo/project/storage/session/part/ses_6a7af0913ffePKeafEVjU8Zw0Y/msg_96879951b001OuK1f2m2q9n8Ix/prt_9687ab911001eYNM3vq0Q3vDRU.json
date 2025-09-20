@@ -1,0 +1,20 @@
+{
+  "id": "prt_9687ab911001eYNM3vq0Q3vDRU",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01PQq9HeYMKqjNoYwfqnyyJZ",
+  "state": {
+    "status": "error",
+    "input": {
+      "pattern": "questions:\\s*{",
+      "include": "lib/translations/en.ts"
+    },
+    "error": "Error: ripgrep failed: regex parse error:\n    questions:\\s*{\n                 ^\nerror: unclosed counted repetition\n",
+    "time": {
+      "start": 1758394497922,
+      "end": 1758394497933
+    }
+  }
+}

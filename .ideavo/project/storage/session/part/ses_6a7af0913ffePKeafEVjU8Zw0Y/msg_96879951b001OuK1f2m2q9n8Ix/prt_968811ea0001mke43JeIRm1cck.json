@@ -1,0 +1,25 @@
+{
+  "id": "prt_968811ea0001mke43JeIRm1cck",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01HdV9wJnk1VNo8PQGLx2hZt",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/new-patient/page.tsx",
+      "offset": 105,
+      "limit": 30
+    },
+    "output": "<file>\n00106|   {\n00107|     id: 'frequency',\n00108|     question: t.pem.questions.frequency.question,\n00109|     options: t.pem.questions.frequency.options.map((label: string, index: number) => ({\n00110|       value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],\n00111|       label,\n00112|       score: index\n00113|     }))\n00114|   },\n00115|   {\n00116|     id: 'severity',\n00117|     question: t.pem.questions.severity.question,\n00118|     options: t.pem.questions.severity.options.map((label: string, index: number) => ({\n00119|       value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],\n00120|       label,\n00121|       score: index\n00122|     }))\n00123|   },\n00124|   {\n00125|     id: 'recovery_time',\n00126|     question: t.pem.questions.recoveryTime.question,\n00127|     options: t.pem.questions.recoveryTime.options.map((label: string, index: number) => ({\n00128|       value: ['no_recovery_needed', 'hours', 'one_day', 'several_days', 'week_or_more'][index],\n00129|       label,\n00130|       score: index\n00131|     }))\n00132|   }\n00133| ]\n00134| \n00135| export default function NewPatientWorkflow() {\n\n(File has more lines. Use 'offset' parameter to read beyond line 135)\n</file>",
+    "metadata": {
+      "preview": "  {\n    id: 'frequency',\n    question: t.pem.questions.frequency.question,\n    options: t.pem.questions.frequency.options.map((label: string, index: number) => ({\n      value: ['never', 'rarely', 'sometimes', 'often', 'always'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'severity',\n    question: t.pem.questions.severity.question,\n    options: t.pem.questions.severity.options.map((label: string, index: number) => ({\n      value: ['none', 'mild', 'moderate', 'severe', 'very_severe'][index],\n      label,\n      score: index\n    }))\n  },\n  {\n    id: 'recovery_time',"
+    },
+    "title": "app/new-patient/page.tsx",
+    "time": {
+      "start": 1758394917085,
+      "end": 1758394917087
+    }
+  }
+}

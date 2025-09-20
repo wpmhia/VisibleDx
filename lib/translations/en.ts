@@ -455,7 +455,7 @@ export const en: Translation = {
           'Standard activity guidelines may apply'
         ]
       },
-      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not "push through" their symptoms. Energy management is the recommended approach.';
+      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not "push through" their symptoms. Energy management is the recommended approach.',
       retake: 'Retake Assessment'
     }
   },

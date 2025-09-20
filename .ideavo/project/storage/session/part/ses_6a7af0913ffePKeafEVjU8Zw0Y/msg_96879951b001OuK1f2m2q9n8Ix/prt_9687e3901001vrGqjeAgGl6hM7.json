@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687e3901001vrGqjeAgGl6hM7",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01KCALZdWTCph1kt2PP5sLEY",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Adviseur',\n        description: 'Gepersonaliseerde behandelingsaanbevelingen'\n      }",
+      "newString": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Adviseur',\n        description: 'Gepersonaliseerde behandelingsaanbevelingen'\n      },\n      energyManagement: {\n        title: 'Energiebeheer',\n        description: 'NICE NG206 energiebeheer planningsgereedschap'\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -99,8 +99,12 @@\n   },\n   subtypeAdvisor: {\n     title: 'Subtype & Rx Adviseur',\n     description: 'Gepersonaliseerde behandelingsaanbevelingen'\n+  },\n+  energyManagement: {\n+    title: 'Energiebeheer',\n+    description: 'NICE NG206 energiebeheer planningsgereedschap'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 jaar gem. diagnostische vertraging',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758394728470,
+      "end": 1758394728477
+    }
+  }
+}

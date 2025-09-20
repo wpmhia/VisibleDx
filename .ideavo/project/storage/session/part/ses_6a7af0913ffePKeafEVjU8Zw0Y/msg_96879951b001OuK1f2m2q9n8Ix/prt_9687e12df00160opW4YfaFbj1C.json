@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687e12df00160opW4YfaFbj1C",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01Gh4oWSHL4Er88YYYNSxoL4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 10 \"subtypeAdvisor:\" lib/translations/da.ts",
+      "description": "Check dashboard modules in Danish translations"
+    },
+    "output": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Rådgiver',\n        description: 'Personaliserede behandlingsanbefalinger'\n      }\n    },\n    stats: {\n      diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',\n      doctorsConsulted: '≥7 læger typisk konsulteret',\n      sensitivityValidated: '94% sensitivitet valideret'\n    },\n    algorithm: {\n",
+    "metadata": {
+      "output": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Rådgiver',\n        description: 'Personaliserede behandlingsanbefalinger'\n      }\n    },\n    stats: {\n      diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',\n      doctorsConsulted: '≥7 læger typisk konsulteret',\n      sensitivityValidated: '94% sensitivitet valideret'\n    },\n    algorithm: {\n",
+      "exit": 0,
+      "description": "Check dashboard modules in Danish translations"
+    },
+    "title": "cd /home/user/project && rg -A 10 \"subtypeAdvisor:\" lib/translations/da.ts",
+    "time": {
+      "start": 1758394717889,
+      "end": 1758394717940
+    }
+  }
+}

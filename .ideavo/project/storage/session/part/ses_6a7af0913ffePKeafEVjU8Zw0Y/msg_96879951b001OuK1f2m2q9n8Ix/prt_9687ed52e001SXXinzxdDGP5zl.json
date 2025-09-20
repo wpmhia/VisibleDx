@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687ed52e001SXXinzxdDGP5zl",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_018NWMEWKKJZdZkow6eoJV5Z",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 20 \"categories:\" lib/translations/da.ts",
+      "description": "Check quickScreen categories in Danish translations"
+    },
+    "output": "    categories: {\n      core: 'Kerne',\n      pem: 'PEM',\n      cardiovascular: 'Kardiovaskulær',\n      orthostatic: 'Ortostatisk',\n      history: 'Historie',\n      duration: 'Varighed',\n      pain: 'Smerte',\n      neurological: 'Neurologisk',\n      autonomic: 'Autonom',\n      gi: 'GI',\n      respiratory: 'Respiratorisk',\n      functional: 'Funktionel',\n      sensory: 'Sensorisk'\n    },\n    results: {\n      complete: 'Screening Afsluttet',\n      riskAssessment: 'Baseret på dine svar, her er din risikovurdering',\n      lowRisk: 'Lav Risiko for ME/CFS, Lang COVID eller POTS',\n      mediumRisk: 'Mellem Risiko for ME/CFS, Lang COVID eller POTS',\n      highRisk: 'Høj Risiko for ME/CFS, Lang COVID eller POTS',\n--\n      categories: {\n        basicMetabolic: {\n          title: 'Basis Metabolisk',\n          indication: 'Udeluk anæmi, infektion, inflammation, elektrolytforstyrrelser',\n          tests: ['Komplet blodtælling med differentiering', 'Omfattende metabolisk panel', 'BSR', 'CRP']\n        },\n        endocrine: {\n          title: 'Endokrin',\n          indication: 'Udeluk skjoldbruskkirteldysfunktion, diabetes, binyrebarkinsufficiens',\n          tests: ['TSH', 'Fri T4', 'HbA1c', 'Cortisol (morgen)', 'Vitamin D']\n        },\n        nutritional: {\n          title: 'Ernæringsmæssig',\n          indication: 'Udeluk ernæringsmangel, der forårsager træthed',\n          tests: ['Vitamin B12', 'Folat', 'Jernundersøgelser', 'Ferritin']\n        },\n        autoimmune: {\n          title: 'Autoimmun',\n          indication: 'Screen for autoimmune tilstande',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Cøliaki antistoffer']\n        },\n",
+    "metadata": {
+      "output": "    categories: {\n      core: 'Kerne',\n      pem: 'PEM',\n      cardiovascular: 'Kardiovaskulær',\n      orthostatic: 'Ortostatisk',\n      history: 'Historie',\n      duration: 'Varighed',\n      pain: 'Smerte',\n      neurological: 'Neurologisk',\n      autonomic: 'Autonom',\n      gi: 'GI',\n      respiratory: 'Respiratorisk',\n      functional: 'Funktionel',\n      sensory: 'Sensorisk'\n    },\n    results: {\n      complete: 'Screening Afsluttet',\n      riskAssessment: 'Baseret på dine svar, her er din risikovurdering',\n      lowRisk: 'Lav Risiko for ME/CFS, Lang COVID eller POTS',\n      mediumRisk: 'Mellem Risiko for ME/CFS, Lang COVID eller POTS',\n      highRisk: 'Høj Risiko for ME/CFS, Lang COVID eller POTS',\n--\n      categories: {\n        basicMetabolic: {\n          title: 'Basis Metabolisk',\n          indication: 'Udeluk anæmi, infektion, inflammation, elektrolytforstyrrelser',\n          tests: ['Komplet blodtælling med differentiering', 'Omfattende metabolisk panel', 'BSR', 'CRP']\n        },\n        endocrine: {\n          title: 'Endokrin',\n          indication: 'Udeluk skjoldbruskkirteldysfunktion, diabetes, binyrebarkinsufficiens',\n          tests: ['TSH', 'Fri T4', 'HbA1c', 'Cortisol (morgen)', 'Vitamin D']\n        },\n        nutritional: {\n          title: 'Ernæringsmæssig',\n          indication: 'Udeluk ernæringsmangel, der forårsager træthed',\n          tests: ['Vitamin B12', 'Folat', 'Jernundersøgelser', 'Ferritin']\n        },\n        autoimmune: {\n          title: 'Autoimmun',\n          indication: 'Screen for autoimmune tilstande',\n          tests: ['ANA', 'RF', 'Anti-CCP', 'Cøliaki antistoffer']\n        },\n",
+      "exit": 0,
+      "description": "Check quickScreen categories in Danish translations"
+    },
+    "title": "cd /home/user/project && rg -A 20 \"categories:\" lib/translations/da.ts",
+    "time": {
+      "start": 1758394767541,
+      "end": 1758394767566
+    }
+  }
+}

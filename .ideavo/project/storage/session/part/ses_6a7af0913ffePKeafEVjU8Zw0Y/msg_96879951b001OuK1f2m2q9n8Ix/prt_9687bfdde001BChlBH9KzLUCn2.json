@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687bfdde001BChlBH9KzLUCn2",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LEgRdSTbikhuvPNSMaWRUu",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 365,
+      "limit": 50
+    },
+    "output": "<file>\n00366|     // ... continue with other pem translations\n00367|     questions: {\n00368|       frequency: {\n00369|         question: 'Hvor ofte oplever du en forværring af symptomer efter fysisk aktivitet?',\n00370|         description: 'Overvej aktiviteter som gang, trappegang eller husarbejde',\n00371|         options: [\n00372|           'Aldrig',\n00373|           'Sjældent (mindre end 25% af tiden)',\n00374|           'Nogle gange (25-50% af tiden)',\n00375|           'Ofte (50-75% af tiden)',\n00376|           'Altid eller næsten altid (mere end 75% af tiden)'\n00377|         ]\n00378|       },\n00379|       // Continue with other questions...\n00380|       mentalFrequency: {\n00381|         question: 'Hvor ofte oplever du en forværring af symptomer efter mental aktivitet?',\n00382|         description: 'Overvej aktiviteter som læsning, koncentration eller problemløsning',\n00383|         options: [\n00384|           'Aldrig',\n00385|           'Sjældent (mindre end 25% af tiden)',\n00386|           'Nogle gange (25-50% af tiden)',\n00387|           'Ofte (50-75% af tiden)',\n00388|           'Altid eller næsten altid (mere end 75% af tiden)'\n00389|         ]\n00390|       },\n00391|       onsetTime: {\n00392|         question: 'Hvor hurtigt efter aktivitet forværres dine symptomer typisk?',\n00393|         options: [\n00394|           'Ingen forværring opstår',\n00395|           'Under aktiviteten',\n00396|           'Umiddelbart efter (inden for 30 minutter)',\n00397|           'Inden for få timer (2-6 timer)',\n00398|           'Næste dag eller senere'\n00399|         ]\n00400|       },\n00401|       severity: {\n00402|         question: 'Hvor alvorlig er forværringen af dine symptomer efter aktivitet?',\n00403|         options: [\n00404|           'Ingen forværring',\n00405|           'Mild - lidt værre end før aktivitet',\n00406|           'Moderat - mærkbart værre, men håndterbar',\n00407|           'Alvorlig - betydeligt værre, svært at fungere',\n00408|           'Meget alvorlig - ude af stand til at fungere, sengeliggende'\n00409|         ]\n00410|       },\n00411|       recoveryTime: {\n00412|         question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',\n00413|         options: [\n00414|           'Ingen restitutionstid nødvendig',\n00415|           'Få timer',\n\n(File has more lines. Use 'offset' parameter to read beyond line 415)\n</file>",
+    "metadata": {
+      "preview": "    // ... continue with other pem translations\n    questions: {\n      frequency: {\n        question: 'Hvor ofte oplever du en forværring af symptomer efter fysisk aktivitet?',\n        description: 'Overvej aktiviteter som gang, trappegang eller husarbejde',\n        options: [\n          'Aldrig',\n          'Sjældent (mindre end 25% af tiden)',\n          'Nogle gange (25-50% af tiden)',\n          'Ofte (50-75% af tiden)',\n          'Altid eller næsten altid (mere end 75% af tiden)'\n        ]\n      },\n      // Continue with other questions...\n      mentalFrequency: {\n        question: 'Hvor ofte oplever du en forværring af symptomer efter mental aktivitet?',\n        description: 'Overvej aktiviteter som læsning, koncentration eller problemløsning',\n        options: [\n          'Aldrig',\n          'Sjældent (mindre end 25% af tiden)',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758394581079,
+      "end": 1758394581081
+    }
+  }
+}

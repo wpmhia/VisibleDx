@@ -1,0 +1,11 @@
+{
+  "id": "prt_96880fade001Sz3PSRLCS6YZKV",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The issue is that the new-patient page is still trying to use the old PEM question structure. I can see it's trying to access `t.pem.questions.frequency.question` which no longer exists. I need to update the createPemQuestions function to use the new question names:",
+  "time": {
+    "start": 1758394909437,
+    "end": 1758394909437
+  }
+}

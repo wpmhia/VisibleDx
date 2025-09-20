@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687a48c6001ek70vlHr6VeCWv",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01WAhk8uTeHynZAurRPnaJsD",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Run build again after TypeScript fix"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/pem-quest/page.tsx:58:35\nType error: Property 'activityTolerance' does not exist on type '{ frequency: { question: string; description: string; options: string[]; }; mentalFrequency: { question: string; description: string; options: string[]; }; onsetTime: { question: string; options: string[]; }; severity: { ...; }; recoveryTime: { ...; }; }'.\n\n\u001b[0m \u001b[90m 56 |\u001b[39m       {\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         id\u001b[33m:\u001b[39m \u001b[32m'activity_tolerance'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         question\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39mquestion\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m         description\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39mdescription\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m         options\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39moptions\u001b[33m.\u001b[39mmap((label\u001b[33m,\u001b[39m index) \u001b[33m=>\u001b[39m ({\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m           value\u001b[33m:\u001b[39m [\u001b[32m'none'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'rare'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'sometimes'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'often'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'always'\u001b[39m][index]\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/pem-quest/page.tsx:58:35\nType error: Property 'activityTolerance' does not exist on type '{ frequency: { question: string; description: string; options: string[]; }; mentalFrequency: { question: string; description: string; options: string[]; }; onsetTime: { question: string; options: string[]; }; severity: { ...; }; recoveryTime: { ...; }; }'.\n\n\u001b[0m \u001b[90m 56 |\u001b[39m       {\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m         id\u001b[33m:\u001b[39m \u001b[32m'activity_tolerance'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m         question\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39mquestion\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m         description\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39mdescription\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m         options\u001b[33m:\u001b[39m t\u001b[33m.\u001b[39mpem\u001b[33m.\u001b[39mquestions\u001b[33m.\u001b[39mactivityTolerance\u001b[33m.\u001b[39moptions\u001b[33m.\u001b[39mmap((label\u001b[33m,\u001b[39m index) \u001b[33m=>\u001b[39m ({\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m           value\u001b[33m:\u001b[39m [\u001b[32m'none'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'rare'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'sometimes'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'often'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'always'\u001b[39m][index]\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Run build again after TypeScript fix"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758394469079,
+      "end": 1758394482788
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687b184c00192Y8NbMj6dXtty",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Do31Md3RWhrJbuppb2Rzro",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "    questions: {\n      frequency: {\n        question: string\n        description: string\n        options: string[]\n      }\n      mentalFrequency: {\n        question: string\n        description: string\n        options: string[]\n      }\n      onsetTime: {\n        question: string\n        options: string[]\n      }\n      severity: {\n        question: string\n        options: string[]\n      }\n      recoveryTime: {\n        question: string\n        options: string[]\n      }\n    }",
+      "newString": "    questions: {\n      activityTolerance: {\n        question: string\n        description: string\n        options: string[]\n      }\n      delayedOnset: {\n        question: string\n        description: string\n        options: string[]\n      }\n      disproportionate: {\n        question: string\n        description: string\n        options: string[]\n      }\n      prolongedRecovery: {\n        question: string\n        description: string\n        options: string[]\n      }\n      activityTypes: {\n        question: string\n        description: string\n        options: string[]\n      }\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -306,28 +306,31 @@\n   title: string\n   description: string\n }\n questions: {\n-  frequency: {\n+  activityTolerance: {\n     question: string\n     description: string\n     options: string[]\n   }\n-  mentalFrequency: {\n+  delayedOnset: {\n     question: string\n     description: string\n     options: string[]\n   }\n-  onsetTime: {\n+  disproportionate: {\n     question: string\n+    description: string\n     options: string[]\n   }\n-  severity: {\n+  prolongedRecovery: {\n     question: string\n+    description: string\n     options: string[]\n   }\n-  recoveryTime: {\n+  activityTypes: {\n     question: string\n+    description: string\n     options: string[]\n   }\n }\n results: {\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758394524949,
+      "end": 1758394524958
+    }
+  }
+}

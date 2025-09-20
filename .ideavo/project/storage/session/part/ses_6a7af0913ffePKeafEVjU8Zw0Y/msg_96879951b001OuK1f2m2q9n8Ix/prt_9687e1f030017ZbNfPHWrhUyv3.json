@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687e1f030017ZbNfPHWrhUyv3",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01GhVBFFA4NBgGTPdDb8PGYM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Rådgiver',\n        description: 'Personaliserede behandlingsanbefalinger'\n      }",
+      "newString": "      subtypeAdvisor: {\n        title: 'Subtype & Rx Rådgiver',\n        description: 'Personaliserede behandlingsanbefalinger'\n      },\n      energyManagement: {\n        title: 'Energistyring',\n        description: 'NICE NG206 energistyringsplanlægningsværktøj'\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -99,8 +99,12 @@\n   },\n   subtypeAdvisor: {\n     title: 'Subtype & Rx Rådgiver',\n     description: 'Personaliserede behandlingsanbefalinger'\n+  },\n+  energyManagement: {\n+    title: 'Energistyring',\n+    description: 'NICE NG206 energistyringsplanlægningsværktøj'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758394721938,
+      "end": 1758394721952
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687f1296001gy9sRoKBYNPSXh",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01FngGfDRaMWf7rBKJ6ermWc",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "    categories: {\n      core: 'Kern',\n      pem: 'PEM',\n      cardiovascular: 'Cardiovasculair',\n      orthostatic: 'Orthostatisch',\n      history: 'Geschiedenis',\n      duration: 'Duur',\n      pain: 'Pijn',\n      neurological: 'Neurologisch',\n      autonomic: 'Autonoom',\n      gi: 'GI',\n      respiratory: 'Ademhaling',\n      functional: 'Functioneel',\n      sensory: 'Sensorisch'\n    },",
+      "newString": "    categories: {\n      coreFatigue: 'Kern: Invaliderende Vermoeidheid',\n      corePEM: 'Kern: Post-Exertionele Malaise',\n      coreSleep: 'Kern: Niet-verfrissende Slaap',\n      coreCognitive: 'Kern: Cognitieve Problemen',\n      additional: 'Aanvullend: Orthostatische Intolerantie',\n      autonomic: 'Aanvullend: Temperatuur/Autonoom',\n      neuromuscular: 'Aanvullend: Neuromusculair',\n      fluLike: 'Aanvullend: Griepachtige Symptomen',\n      intolerance: 'Aanvullend: Voedsel/Chemische Intolerantie',\n      sensory: 'Aanvullend: Sensorische Overgevoeligheid',\n      pain: 'Aanvullend: Pijnsymptomen',\n      duration: 'Diagnostisch: Duratiecriteria',\n      functional: 'Diagnostisch: Functionele Beperking',\n      exclusion: 'Diagnostisch: Exclusiecriteria',\n      history: 'Risicofactor: Infectiegeschiedenis',\n      severity: 'Beoordeling: Ernstniveau'\n    },"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -153,21 +153,24 @@\n   'Heeft u gevoeligheid voor licht, geluid of aanraking?',\n   'Bent u niet in staat uw vorige activiteitenniveau te handhaven?'\n ],\n categories: {\n-  core: 'Kern',\n-  pem: 'PEM',\n-  cardiovascular: 'Cardiovasculair',\n-  orthostatic: 'Orthostatisch',\n-  history: 'Geschiedenis',\n-  duration: 'Duur',\n-  pain: 'Pijn',\n-  neurological: 'Neurologisch',\n-  autonomic: 'Autonoom',\n-  gi: 'GI',\n-  respiratory: 'Ademhaling',\n-  functional: 'Functioneel',\n-  sensory: 'Sensorisch'\n+  coreFatigue: 'Kern: Invaliderende Vermoeidheid',\n+  corePEM: 'Kern: Post-Exertionele Malaise',\n+  coreSleep: 'Kern: Niet-verfrissende Slaap',\n+  coreCognitive: 'Kern: Cognitieve Problemen',\n+  additional: 'Aanvullend: Orthostatische Intolerantie',\n+  autonomic: 'Aanvullend: Temperatuur/Autonoom',\n+  neuromuscular: 'Aanvullend: Neuromusculair',\n+  fluLike: 'Aanvullend: Griepachtige Symptomen',\n+  intolerance: 'Aanvullend: Voedsel/Chemische Intolerantie',\n+  sensory: 'Aanvullend: Sensorische Overgevoeligheid',\n+  pain: 'Aanvullend: Pijnsymptomen',\n+  duration: 'Diagnostisch: Duratiecriteria',\n+  functional: 'Diagnostisch: Functionele Beperking',\n+  exclusion: 'Diagnostisch: Exclusiecriteria',\n+  history: 'Risicofactor: Infectiegeschiedenis',\n+  severity: 'Beoordeling: Ernstniveau'\n },\n results: {\n   complete: 'Screening Voltooid',\n   riskAssessment: 'Gebaseerd op uw antwoorden, hier is uw risicobeoordeling',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758394788601,
+      "end": 1758394788610
+    }
+  }
+}

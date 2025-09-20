@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687c9e5f0011WIPl3LDqvsQFI",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01VkGL8w3AdwEqZM2NXWBQEs",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -n -A 5 \"recoveryTime:\" lib/translations/da.ts",
+      "description": "Find end of PEM questions in Danish translations"
+    },
+    "output": "411:      recoveryTime: {\n412-        question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',\n413-        options: [\n414-          'Ingen restitutionstid nødvendig',\n415-          'Få timer',\n416-          'Omkring en dag',\n",
+    "metadata": {
+      "output": "411:      recoveryTime: {\n412-        question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',\n413-        options: [\n414-          'Ingen restitutionstid nødvendig',\n415-          'Få timer',\n416-          'Omkring en dag',\n",
+      "exit": 0,
+      "description": "Find end of PEM questions in Danish translations"
+    },
+    "title": "cd /home/user/project && rg -n -A 5 \"recoveryTime:\" lib/translations/da.ts",
+    "time": {
+      "start": 1758394622342,
+      "end": 1758394622359
+    }
+  }
+}

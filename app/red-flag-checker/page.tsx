@@ -29,34 +29,19 @@ const getRedFlagSymptoms = (t: any) => t.redFlag.symptoms.list.map((symptom: str
 
 const getRoutineLabs = (t: any) => [
   {
-    category: t.redFlag.routineLabs.categories.basicMetabolic.title,
-    tests: t.redFlag.routineLabs.categories.basicMetabolic.tests,
-    indication: t.redFlag.routineLabs.categories.basicMetabolic.indication
+    category: t.redFlag.routineLabs.categories.essential.title,
+    tests: t.redFlag.routineLabs.categories.essential.tests,
+    indication: t.redFlag.routineLabs.categories.essential.indication
   },
   {
-    category: t.redFlag.routineLabs.categories.endocrine.title,
-    tests: t.redFlag.routineLabs.categories.endocrine.tests,
-    indication: t.redFlag.routineLabs.categories.endocrine.indication
+    category: t.redFlag.routineLabs.categories.additional.title,
+    tests: t.redFlag.routineLabs.categories.additional.tests,
+    indication: t.redFlag.routineLabs.categories.additional.indication
   },
   {
-    category: t.redFlag.routineLabs.categories.nutritional.title,
-    tests: t.redFlag.routineLabs.categories.nutritional.tests,
-    indication: t.redFlag.routineLabs.categories.nutritional.indication
-  },
-  {
-    category: t.redFlag.routineLabs.categories.autoimmune.title,
-    tests: t.redFlag.routineLabs.categories.autoimmune.tests,
-    indication: t.redFlag.routineLabs.categories.autoimmune.indication
-  },
-  {
-    category: t.redFlag.routineLabs.categories.cardiac.title,
-    tests: t.redFlag.routineLabs.categories.cardiac.tests,
-    indication: t.redFlag.routineLabs.categories.cardiac.indication
-  },
-  {
-    category: t.redFlag.routineLabs.categories.infectious.title,
-    tests: t.redFlag.routineLabs.categories.infectious.tests,
-    indication: t.redFlag.routineLabs.categories.infectious.indication
+    category: t.redFlag.routineLabs.categories.paediatric.title,
+    tests: t.redFlag.routineLabs.categories.paediatric.tests,
+    indication: t.redFlag.routineLabs.categories.paediatric.indication
   }
 ]
 

@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687af0d8001FXR43aw01MZGSc",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01CGWfioCLFW3xynRaVwntou",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && rg -A 5 -B 5 \"interface.*Translation\" lib/translations/",
+      "description": "Check for TypeScript interface definitions"
+    },
+    "output": "lib/translations/types.ts:export interface Translation {\nlib/translations/types.ts-  // App Title and Navigation\nlib/translations/types.ts-  app: {\nlib/translations/types.ts-    title: string\nlib/translations/types.ts-    subtitle: string\nlib/translations/types.ts-    tagline: string\n",
+    "metadata": {
+      "output": "lib/translations/types.ts:export interface Translation {\nlib/translations/types.ts-  // App Title and Navigation\nlib/translations/types.ts-  app: {\nlib/translations/types.ts-    title: string\nlib/translations/types.ts-    subtitle: string\nlib/translations/types.ts-    tagline: string\n",
+      "exit": 0,
+      "description": "Check for TypeScript interface definitions"
+    },
+    "title": "cd /home/user/project && rg -A 5 -B 5 \"interface.*Translation\" lib/translations/",
+    "time": {
+      "start": 1758394512584,
+      "end": 1758394512607
+    }
+  }
+}

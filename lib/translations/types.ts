@@ -102,6 +102,10 @@ export interface Translation {
         title: string
         description: string
       }
+      energyManagement: {
+        title: string
+        description: string
+      }
     }
     stats: {
       diagnosticDelay: string
@@ -135,19 +139,22 @@ export interface Translation {
     description: string
     questions: string[]
     categories: {
-      core: string
-      pem: string
-      cardiovascular: string
-      orthostatic: string
-      history: string
-      duration: string
-      pain: string
-      neurological: string
+      coreFatigue: string
+      corePEM: string
+      coreSleep: string
+      coreCognitive: string
+      additional: string
       autonomic: string
-      gi: string
-      respiratory: string
-      functional: string
+      neuromuscular: string
+      fluLike: string
+      intolerance: string
       sensory: string
+      pain: string
+      duration: string
+      functional: string
+      exclusion: string
+      history: string
+      severity: string
     }
     results: {
       complete: string
@@ -184,32 +191,17 @@ export interface Translation {
       title: string
       description: string
       categories: {
-        basicMetabolic: {
+        essential: {
           title: string
           indication: string
           tests: string[]
         }
-        endocrine: {
+        additional: {
           title: string
           indication: string
           tests: string[]
         }
-        nutritional: {
-          title: string
-          indication: string
-          tests: string[]
-        }
-        autoimmune: {
-          title: string
-          indication: string
-          tests: string[]
-        }
-        cardiac: {
-          title: string
-          indication: string
-          tests: string[]
-        }
-        infectious: {
+        paediatric: {
           title: string
           indication: string
           tests: string[]
@@ -307,26 +299,29 @@ export interface Translation {
       description: string
     }
     questions: {
-      frequency: {
+      activityTolerance: {
         question: string
         description: string
         options: string[]
       }
-      mentalFrequency: {
+      delayedOnset: {
         question: string
         description: string
         options: string[]
       }
-      onsetTime: {
+      disproportionate: {
         question: string
+        description: string
         options: string[]
       }
-      severity: {
+      prolongedRecovery: {
         question: string
+        description: string
         options: string[]
       }
-      recoveryTime: {
+      activityTypes: {
         question: string
+        description: string
         options: string[]
       }
     }

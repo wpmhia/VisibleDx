@@ -1,0 +1,11 @@
+{
+  "id": "prt_9687aebaa0014wBtCWmX0IhSkq",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The translations structure looks correct. Let me check the TypeScript type definitions to see if there's a type mismatch. The error suggests that the `questions` property might not be properly typed. Let me check if there are any type definitions:",
+  "time": {
+    "start": 1758394511574,
+    "end": 1758394511574
+  }
+}

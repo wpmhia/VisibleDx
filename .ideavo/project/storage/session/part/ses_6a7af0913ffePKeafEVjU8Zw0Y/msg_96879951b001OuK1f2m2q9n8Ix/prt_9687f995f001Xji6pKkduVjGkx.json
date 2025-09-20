@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687f995f001Xji6pKkduVjGkx",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01LSC279o2YJJZDi5YZVeKLH",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 240,
+      "limit": 30
+    },
+    "output": "<file>\n00241|       title: 'NICE NG206 Required Investigations',\n00242|       description: 'Mandatory tests to exclude other diagnoses when ME/CFS is suspected',\n00243|       categories: {\n00244|         essential: {\n00245|           title: 'Essential Tests (NICE NG206)',\n00246|           indication: 'Required investigations for all patients with suspected ME/CFS',\n00247|           tests: ['Urinalysis for protein, blood and glucose', 'Full blood count', 'Urea and electrolytes', 'Liver function', 'Thyroid function (TSH)', 'ESR or plasma viscosity', 'C-reactive protein', 'Calcium and phosphate', 'HbA1c', 'Serum ferritin', 'Coeliac screening', 'Creatine kinase']\n00248|         },\n00249|         additional: {\n00250|           title: 'Additional Tests (Clinical Judgement)',\n00251|           indication: 'Consider based on clinical presentation and history',\n00252|           tests: ['Vitamin D', 'Vitamin B12 and folate levels', 'Serological tests if infection history', '9am cortisol for adrenal insufficiency']\n00253|         },\n00254|         paediatric: {\n00255|           title: 'Additional Paediatric Considerations',\n00256|           indication: 'Extra considerations for children and young people',\n00257|           tests: ['Growth parameters', 'Developmental assessment', 'School attendance review', 'Family history review']\n00258|         }\n00259|       }\n00260|     },\n00261|     results: {\n00262|       complete: 'NICE NG206 Differential Diagnosis Complete',\n00263|       urgentEval: 'Urgent Evaluation Required',\n00264|       priorityTests: 'Priority Tests (Red Flags)',\n00265|       routineTests: 'NICE NG206 Required Investigations',\n00266|       noRedFlags: 'No Red Flags - Proceed with NICE Investigations',\n00267|       clinicalSupport: 'NICE NG206 Clinical Guidance',\n00268|       urgent: 'Red flags present - complete urgent evaluation before ME/CFS assessment. Consider primary care or specialist referral for red flag symptoms.',\n00269|       priority: 'Complete NICE-required investigations. If normal, can proceed with ME/CFS diagnosis after 3 months of persistent symptoms.',\n00270|       routine: 'No red flags identified. Complete NICE NG206 mandatory investigations to exclude other diagnoses. If investigations normal and symptoms persist for 3 months, diagnose ME/CFS and refer to specialist team.',\n\n(File has more lines. Use 'offset' parameter to read beyond line 270)\n</file>",
+    "metadata": {
+      "preview": "      title: 'NICE NG206 Required Investigations',\n      description: 'Mandatory tests to exclude other diagnoses when ME/CFS is suspected',\n      categories: {\n        essential: {\n          title: 'Essential Tests (NICE NG206)',\n          indication: 'Required investigations for all patients with suspected ME/CFS',\n          tests: ['Urinalysis for protein, blood and glucose', 'Full blood count', 'Urea and electrolytes', 'Liver function', 'Thyroid function (TSH)', 'ESR or plasma viscosity', 'C-reactive protein', 'Calcium and phosphate', 'HbA1c', 'Serum ferritin', 'Coeliac screening', 'Creatine kinase']\n        },\n        additional: {\n          title: 'Additional Tests (Clinical Judgement)',\n          indication: 'Consider based on clinical presentation and history',\n          tests: ['Vitamin D', 'Vitamin B12 and folate levels', 'Serological tests if infection history', '9am cortisol for adrenal insufficiency']\n        },\n        paediatric: {\n          title: 'Additional Paediatric Considerations',\n          indication: 'Extra considerations for children and young people',\n          tests: ['Growth parameters', 'Developmental assessment', 'School attendance review', 'Family history review']\n        }\n      }\n    },"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394817555,
+      "end": 1758394817558
+    }
+  }
+}

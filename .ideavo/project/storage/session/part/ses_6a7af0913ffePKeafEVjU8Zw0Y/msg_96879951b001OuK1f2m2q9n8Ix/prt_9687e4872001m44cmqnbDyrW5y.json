@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687e4872001m44cmqnbDyrW5y",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_019A8yzp3yUDs5vvEqCs4HGF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Run build after adding energyManagement to all translations"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:157:7\nType error: Object literal may only specify known properties, and 'coreFatigue' does not exist in type '{ core: string; pem: string; cardiovascular: string; orthostatic: string; history: string; duration: string; pain: string; neurological: string; autonomic: string; gi: string; respiratory: string; functional: string; sensory: string; }'.\n\n\u001b[0m \u001b[90m 155 |\u001b[39m     ]\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m     categories\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m       coreFatigue\u001b[33m:\u001b[39m \u001b[32m'Core: Debilitating Fatigue'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m       corePEM\u001b[33m:\u001b[39m \u001b[32m'Core: Post-Exertional Malaise'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 159 |\u001b[39m       coreSleep\u001b[33m:\u001b[39m \u001b[32m'Core: Unrefreshing Sleep'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 160 |\u001b[39m       coreCognitive\u001b[33m:\u001b[39m \u001b[32m'Core: Cognitive Difficulties'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/en.ts:157:7\nType error: Object literal may only specify known properties, and 'coreFatigue' does not exist in type '{ core: string; pem: string; cardiovascular: string; orthostatic: string; history: string; duration: string; pain: string; neurological: string; autonomic: string; gi: string; respiratory: string; functional: string; sensory: string; }'.\n\n\u001b[0m \u001b[90m 155 |\u001b[39m     ]\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m     categories\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 157 |\u001b[39m       coreFatigue\u001b[33m:\u001b[39m \u001b[32m'Core: Debilitating Fatigue'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m       corePEM\u001b[33m:\u001b[39m \u001b[32m'Core: Post-Exertional Malaise'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 159 |\u001b[39m       coreSleep\u001b[33m:\u001b[39m \u001b[32m'Core: Unrefreshing Sleep'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 160 |\u001b[39m       coreCognitive\u001b[33m:\u001b[39m \u001b[32m'Core: Cognitive Difficulties'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Run build after adding energyManagement to all translations"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758394731496,
+      "end": 1758394752428
+    }
+  }
+}

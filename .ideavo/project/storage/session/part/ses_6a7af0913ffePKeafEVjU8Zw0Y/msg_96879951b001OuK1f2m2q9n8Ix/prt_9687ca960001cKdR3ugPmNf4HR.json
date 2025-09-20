@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687ca960001cKdR3ugPmNf4HR",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01MSCkrio7D6wRr7Szvq814y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 410,
+      "limit": 15
+    },
+    "output": "<file>\n00411|       recoveryTime: {\n00412|         question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',\n00413|         options: [\n00414|           'Ingen restitutionstid nødvendig',\n00415|           'Få timer',\n00416|           'Omkring en dag',\n00417|           'Flere dage (2-6 dage)',\n00418|           'En uge eller mere'\n00419|         ]\n00420|       }\n00421|     },\n00422|     results: {\n00423|       complete: 'PEM Vurdering Afsluttet',\n00424|       description: 'Post-Exertionel Utilpashed evaluering baseret på DePaul kriterier',\n00425|       status: 'PEM Status',\n\n(File has more lines. Use 'offset' parameter to read beyond line 425)\n</file>",
+    "metadata": {
+      "preview": "      recoveryTime: {\n        question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',\n        options: [\n          'Ingen restitutionstid nødvendig',\n          'Få timer',\n          'Omkring en dag',\n          'Flere dage (2-6 dage)',\n          'En uge eller mere'\n        ]\n      }\n    },\n    results: {\n      complete: 'PEM Vurdering Afsluttet',\n      description: 'Post-Exertionel Utilpashed evaluering baseret på DePaul kriterier',\n      status: 'PEM Status',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758394625028,
+      "end": 1758394625031
+    }
+  }
+}

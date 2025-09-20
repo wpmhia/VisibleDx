@@ -1,0 +1,11 @@
+{
+  "id": "prt_9687b0b8d001c913HOxL4y2F52",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Now I can see the issue! The TypeScript interface definition for `pem.questions` (lines 309-332) doesn't include `activityTolerance`. It only has `frequency`, `mentalFrequency`, `onsetTime`, `severity`, and `recoveryTime`. But the actual translations file has `activityTolerance`, `delayedOnset`, `disproportionate`, `prolongedRecovery`, and `activityTypes`.\n\nI need to update the TypeScript interface to match the actual translation structure:",
+  "time": {
+    "start": 1758394521674,
+    "end": 1758394521674
+  }
+}

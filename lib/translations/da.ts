@@ -100,6 +100,10 @@ export const da: Translation = {
       subtypeAdvisor: {
         title: 'Subtype & Rx Rådgiver',
         description: 'Personaliserede behandlingsanbefalinger'
+      },
+      energyManagement: {
+        title: 'Energistyring',
+        description: 'NICE NG206 energistyringsplanlægningsværktøj'
       }
     },
     stats: {
@@ -153,19 +157,22 @@ export const da: Translation = {
       'Har du været ude af stand til at opretholde dit tidligere aktivitetsniveau?'
     ],
     categories: {
-      core: 'Kerne',
-      pem: 'PEM',
-      cardiovascular: 'Kardiovaskulær',
-      orthostatic: 'Ortostatisk',
-      history: 'Historie',
-      duration: 'Varighed',
-      pain: 'Smerte',
-      neurological: 'Neurologisk',
-      autonomic: 'Autonom',
-      gi: 'GI',
-      respiratory: 'Respiratorisk',
-      functional: 'Funktionel',
-      sensory: 'Sensorisk'
+      coreFatigue: 'Kerne: Invaliderende Træthed',
+      corePEM: 'Kerne: Post-Exertionel Utilpashed',
+      coreSleep: 'Kerne: Ikke-forfriskende Søvn',
+      coreCognitive: 'Kerne: Kognitive Problemer',
+      additional: 'Yderligere: Ortostatisk Intolerance',
+      autonomic: 'Yderligere: Temperatur/Autonom',
+      neuromuscular: 'Yderligere: Neuromuskulær',
+      fluLike: 'Yderligere: Influenzalignende Symptomer',
+      intolerance: 'Yderligere: Mad/Kemisk Intolerance',
+      sensory: 'Yderligere: Sensorisk Overfølsomhed',
+      pain: 'Yderligere: Smertesymptomer',
+      duration: 'Diagnostisk: Varighedskriterier',
+      functional: 'Diagnostisk: Funktionel Svækkelse',
+      exclusion: 'Diagnostisk: Eksklusionskriterier',
+      history: 'Risikofaktor: Infektionshistorie',
+      severity: 'Vurdering: Sværhedsgrad'
     },
     results: {
       complete: 'Screening Afsluttet',
@@ -228,38 +235,23 @@ export const da: Translation = {
       'Hepatisk'
     ],
     routineLabs: {
-      title: 'Rutine Screening Laboratorier',
-      description: 'Vælg kategorier af tests for at udelukke almindelige forklarende tilstande',
+      title: 'NICE NG206 Påkrævede Undersøgelser',
+      description: 'Obligatoriske tests for at udelukke andre diagnoser når ME/CFS mistænkes',
       categories: {
-        basicMetabolic: {
-          title: 'Basis Metabolisk',
-          indication: 'Udeluk anæmi, infektion, inflammation, elektrolytforstyrrelser',
-          tests: ['Komplet blodtælling med differentiering', 'Omfattende metabolisk panel', 'BSR', 'CRP']
+        essential: {
+          title: 'Essentielle Tests (NICE NG206)',
+          indication: 'Påkrævede undersøgelser for alle patienter med mistænkt ME/CFS',
+          tests: ['Urinanalyse for protein, blod og glukose', 'Fuld blodtælling', 'Urinstof og elektrolytter', 'Leverfunktion', 'Skjoldbruskkirtelfunktion (TSH)', 'BSR eller plasmaviskositet', 'C-reaktivt protein', 'Calcium og fosfat', 'HbA1c', 'Serum ferritin', 'Cøliaki screening', 'Kreatinkinase']
         },
-        endocrine: {
-          title: 'Endokrin',
-          indication: 'Udeluk skjoldbruskkirteldysfunktion, diabetes, binyrebarkinsufficiens',
-          tests: ['TSH', 'Fri T4', 'HbA1c', 'Cortisol (morgen)', 'Vitamin D']
+        additional: {
+          title: 'Yderligere Tests (Klinisk Vurdering)',
+          indication: 'Overvej baseret på klinisk præsentation og historie',
+          tests: ['Vitamin D', 'Vitamin B12 og folatniveauer', 'Serologiske tests ved infektionshistorie', '9am cortisol for binyrebarkinsufficiens']
         },
-        nutritional: {
-          title: 'Ernæringsmæssig',
-          indication: 'Udeluk ernæringsmangel, der forårsager træthed',
-          tests: ['Vitamin B12', 'Folat', 'Jernundersøgelser', 'Ferritin']
-        },
-        autoimmune: {
-          title: 'Autoimmun',
-          indication: 'Screen for autoimmune tilstande',
-          tests: ['ANA', 'RF', 'Anti-CCP', 'Cøliaki antistoffer']
-        },
-        cardiac: {
-          title: 'Hjerte',
-          indication: 'Udeluk strukturel hjertesygdom, hjertesvigt',
-          tests: ['EKG', 'Ekkokardiogram', 'BNP/NT-proBNP']
-        },
-        infectious: {
-          title: 'Infektiøs',
-          indication: 'Udeluk kroniske infektioner',
-          tests: ['Hepatitis B/C', 'HIV', 'Lyme antistoffer', 'CMV/EBV antistoffer']
+        paediatric: {
+          title: 'Yderligere Pædiatriske Overvejelser',
+          indication: 'Ekstra overvejelser for børn og unge',
+          tests: ['Vækstparametre', 'Udviklingsvurdering', 'Skolefremmødegennemgang', 'Familiehistoriegennemgang']
         }
       }
     },
@@ -365,57 +357,59 @@ export const da: Translation = {
     },
     // ... continue with other pem translations
     questions: {
-      frequency: {
-        question: 'Hvor ofte oplever du en forværring af symptomer efter fysisk aktivitet?',
-        description: 'Overvej aktiviteter som gang, trappegang eller husarbejde',
+      activityTolerance: {
+        question: 'Oplever du en forværring af symptomer efter minimal kognitiv, fysisk, følelsesmæssig eller social aktivitet?',
+        description: 'NICE: Aktivitet der tidligere kunne tolereres eller er minimal i karakter',
         options: [
-          'Aldrig',
-          'Sjældent (mindre end 25% af tiden)',
-          'Nogle gange (25-50% af tiden)',
-          'Ofte (50-75% af tiden)',
-          'Altid eller næsten altid (mere end 75% af tiden)'
+          'Nej - jeg kan tolerere normale aktivitetsniveauer',
+          'Sjældent - kun efter betydelig anstrengelse',
+          'Nogle gange - efter moderat aktivitet',
+          'Ofte - efter minimal aktivitet',
+          'Altid - enhver aktivitet forværrer symptomer'
         ]
       },
-      // Continue with other questions...
-      mentalFrequency: {
-        question: 'Hvor ofte oplever du en forværring af symptomer efter mental aktivitet?',
-        description: 'Overvej aktiviteter som læsning, koncentration eller problemløsning',
+      delayedOnset: {
+        question: 'Når symptomer forværres efter aktivitet, er begyndelsen ofte forsinket med timer eller dage?',
+        description: 'NICE: Forværringen kan ikke være umiddelbar, men forsinket',
         options: [
-          'Aldrig',
-          'Sjældent (mindre end 25% af tiden)',
-          'Nogle gange (25-50% af tiden)',
-          'Ofte (50-75% af tiden)',
-          'Altid eller næsten altid (mere end 75% af tiden)'
+          'Ingen forsinket begyndelse - symptomer forværres straks eller slet ikke',
+          'Nogle gange forsinket med få timer',
+          'Ofte forsinket med flere timer (4-12 timer)',
+          'Sædvanligvis forsinket med 1-2 dage',
+          'Konsekvent forsinket med dage (nogle gange 24-48+ timer)'
         ]
       },
-      onsetTime: {
-        question: 'Hvor hurtigt efter aktivitet forværres dine symptomer typisk?',
+      disproportionate: {
+        question: 'Når dine symptomer forværres, er det uforholdsmæssigt i forhold til den udførte aktivitet?',
+        description: 'NICE: Reaktionen er overdreven sammenlignet med den udførte aktivitet',
         options: [
-          'Ingen forværring opstår',
-          'Under aktiviteten',
-          'Umiddelbart efter (inden for 30 minutter)',
-          'Inden for få timer (2-6 timer)',
-          'Næste dag eller senere'
+          'Nej - symptomforværring matcher aktivitetsniveau',
+          'Lidt uforholdsmæssig',
+          'Moderat uforholdsmæssig',
+          'Betydeligt uforholdsmæssig',
+          'Alvorligt uforholdsmæssig - minimal aktivitet forårsager større symptomopblussen'
         ]
       },
-      severity: {
-        question: 'Hvor alvorlig er forværringen af dine symptomer efter aktivitet?',
+      prolongedRecovery: {
+        question: 'Hvor længe varer den forlængede restitutionstid efter symptomforværring?',
+        description: 'NICE: Restitution kan vare timer, dage, uger eller længere',
         options: [
-          'Ingen forværring',
-          'Mild - lidt værre end før aktivitet',
-          'Moderat - mærkbart værre, men håndterbar',
-          'Alvorlig - betydeligt værre, svært at fungere',
-          'Meget alvorlig - ude af stand til at fungere, sengeliggende'
+          'Ingen forlænget restitution nødvendig',
+          'Timer at komme sig',
+          'Dage at komme sig',
+          'Uger at komme sig',
+          'Uger til måneder eller kommer måske ikke helt sig'
         ]
       },
-      recoveryTime: {
-        question: 'Hvor længe tager det typisk for dine symptomer at vende tilbage til baseline efter aktivitet?',
+      activityTypes: {
+        question: 'Hvilke typer aktivitet udløser din post-exertionelle utilpashed?',
+        description: 'NICE: PEM kan følge enhver type aktivitet - kognitiv, fysisk, følelsesmæssig eller social',
         options: [
-          'Ingen restitutionstid nødvendig',
-          'Få timer',
-          'Omkring en dag',
-          'Flere dage (2-6 dage)',
-          'En uge eller mere'
+          'Ingen aktiviteter udløser PEM',
+          'Kun intens fysisk aktivitet',
+          'Fysisk og noget kognitiv aktivitet',
+          'Fysisk, kognitiv og følelsesmæssig stress',
+          'Alle typer: fysisk, kognitiv, følelsesmæssig og social aktivitet'
         ]
       }
     },

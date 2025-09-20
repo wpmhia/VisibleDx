@@ -1,0 +1,11 @@
+{
+  "id": "prt_968812a75001AyWrZ3dm5Zf4Ic",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I need to update the createPemQuestions function to use the new question structure. The new questions are: activityTolerance, delayedOnset, disproportionate, prolongedRecovery, activityTypes. Let me update this:",
+  "time": {
+    "start": 1758394921440,
+    "end": 1758394921440
+  }
+}

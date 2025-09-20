@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687aaa28001ZMQff95liL0vSa",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01FX5yTWPBXGJ2bUokbY2u5o",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "offset": 50,
+      "limit": 20
+    },
+    "output": "<file>\n00051|   const getPEMQuestions = () => {\n00052|     // NICE NG206 aligned scoring: Higher scores indicate more severe PEM\n00053|     const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]\n00054|     \n00055|     return [\n00056|       {\n00057|         id: 'activity_tolerance',\n00058|         question: t.pem.questions.activityTolerance.question,\n00059|         description: t.pem.questions.activityTolerance.description,\n00060|         options: t.pem.questions.activityTolerance.options.map((label, index) => ({\n00061|           value: ['none', 'rare', 'sometimes', 'often', 'always'][index],\n00062|           label,\n00063|           score: scoreArrays[0][index]\n00064|         }))\n00065|       },\n00066|       {\n00067|         id: 'delayed_onset',\n00068|         question: t.pem.questions.delayedOnset.question,\n00069|         description: t.pem.questions.delayedOnset.description,\n00070|         options: t.pem.questions.delayedOnset.options.map((label, index) => ({\n\n(File has more lines. Use 'offset' parameter to read beyond line 70)\n</file>",
+    "metadata": {
+      "preview": "  const getPEMQuestions = () => {\n    // NICE NG206 aligned scoring: Higher scores indicate more severe PEM\n    const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]\n    \n    return [\n      {\n        id: 'activity_tolerance',\n        question: t.pem.questions.activityTolerance.question,\n        description: t.pem.questions.activityTolerance.description,\n        options: t.pem.questions.activityTolerance.options.map((label, index) => ({\n          value: ['none', 'rare', 'sometimes', 'often', 'always'][index],\n          label,\n          score: scoreArrays[0][index]\n        }))\n      },\n      {\n        id: 'delayed_onset',\n        question: t.pem.questions.delayedOnset.question,\n        description: t.pem.questions.delayedOnset.description,\n        options: t.pem.questions.delayedOnset.options.map((label, index) => ({"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758394494577,
+      "end": 1758394494579
+    }
+  }
+}

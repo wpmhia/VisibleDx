@@ -95,7 +95,7 @@ export default function EnergyManagement() {
       emergencyProtocol: 'What to do during flare-ups'
     }
 
-    const recommendations = []
+    const recommendations: string[] = []
     
     if (budget.availableEnergy < 30) {
       recommendations.push('Focus on essential activities only')

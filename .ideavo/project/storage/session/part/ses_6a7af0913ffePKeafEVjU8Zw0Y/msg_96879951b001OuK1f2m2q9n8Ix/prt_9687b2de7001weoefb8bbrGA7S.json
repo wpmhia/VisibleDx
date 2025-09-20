@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687b2de7001weoefb8bbrGA7S",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01BWHDgNEnhb8kmeW9WqUGNC",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Run build to check if TypeScript errors are resolved"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/da.ts:368:7\nType error: Object literal may only specify known properties, and 'frequency' does not exist in type '{ activityTolerance: { question: string; description: string; options: string[]; }; delayedOnset: { question: string; description: string; options: string[]; }; disproportionate: { question: string; description: string; options: string[]; }; prolongedRecovery: { ...; }; activityTypes: { ...; }; }'.\n\n\u001b[0m \u001b[90m 366 |\u001b[39m     \u001b[90m// ... continue with other pem translations\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 367 |\u001b[39m     questions\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 368 |\u001b[39m       frequency\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 369 |\u001b[39m         question\u001b[33m:\u001b[39m \u001b[32m'Hvor ofte oplever du en forværring af symptomer efter fysisk aktivitet?'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 370 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'Overvej aktiviteter som gang, trappegang eller husarbejde'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 371 |\u001b[39m         options\u001b[33m:\u001b[39m [\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./lib/translations/da.ts:368:7\nType error: Object literal may only specify known properties, and 'frequency' does not exist in type '{ activityTolerance: { question: string; description: string; options: string[]; }; delayedOnset: { question: string; description: string; options: string[]; }; disproportionate: { question: string; description: string; options: string[]; }; prolongedRecovery: { ...; }; activityTypes: { ...; }; }'.\n\n\u001b[0m \u001b[90m 366 |\u001b[39m     \u001b[90m// ... continue with other pem translations\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 367 |\u001b[39m     questions\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 368 |\u001b[39m       frequency\u001b[33m:\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 369 |\u001b[39m         question\u001b[33m:\u001b[39m \u001b[32m'Hvor ofte oplever du en forværring af symptomer efter fysisk aktivitet?'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 370 |\u001b[39m         description\u001b[33m:\u001b[39m \u001b[32m'Overvej aktiviteter som gang, trappegang eller husarbejde'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 371 |\u001b[39m         options\u001b[33m:\u001b[39m [\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Run build to check if TypeScript errors are resolved"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758394527899,
+      "end": 1758394545522
+    }
+  }
+}

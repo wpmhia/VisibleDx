@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687a8b3b001RZok65Y0dcyvw3",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01B1xxmdjGr9EryYvXVLizmg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 370,
+      "limit": 50
+    },
+    "output": "<file>\n00371|       delayedOnset: {\n00372|         question: 'When symptoms worsen after activity, is the onset often delayed by hours or days?',\n00373|         description: 'NICE: The worsening may not be immediate but delayed',\n00374|         options: [\n00375|           'No delayed onset - symptoms worsen immediately or not at all',\n00376|           'Sometimes delayed by a few hours',\n00377|           'Often delayed by several hours (4-12 hours)',\n00378|           'Usually delayed by 1-2 days',\n00379|           'Consistently delayed by days (sometimes 24-48+ hours)'\n00380|         ]\n00381|       },\n00382|       disproportionate: {\n00383|         question: 'When your symptoms worsen, is it disproportionate to the activity performed?',\n00384|         description: 'NICE: The response is excessive compared to the activity undertaken',\n00385|         options: [\n00386|           'No - symptom worsening matches activity level',\n00387|           'Slightly disproportionate',\n00388|           'Moderately disproportionate',\n00389|           'Significantly disproportionate',\n00390|           'Severely disproportionate - minimal activity causes major symptom flare'\n00391|         ]\n00392|       },\n00393|       prolongedRecovery: {\n00394|         question: 'How long does the prolonged recovery time last after symptom worsening?',\n00395|         description: 'NICE: Recovery may last hours, days, weeks or longer',\n00396|         options: [\n00397|           'No prolonged recovery needed',\n00398|           'Hours to recover',\n00399|           'Days to recover',\n00400|           'Weeks to recover',\n00401|           'Weeks to months or may not fully recover'\n00402|         ]\n00403|       },\n00404|       activityTypes: {\n00405|         question: 'Which types of activity trigger your post-exertional malaise?',\n00406|         description: 'NICE: PEM can follow any type of activity - cognitive, physical, emotional or social',\n00407|         options: [\n00408|           'No activities trigger PEM',\n00409|           'Only intense physical activity',\n00410|           'Physical and some cognitive activity',\n00411|           'Physical, cognitive, and emotional stress',\n00412|           'All types: physical, cognitive, emotional, and social activity'\n00413|         ]\n00414|       }\n00415|     },\n00416|     results: {\n00417|       complete: 'PEM Assessment Complete',\n00418|       description: 'Post-Exertional Malaise evaluation based on DePaul criteria',\n00419|       status: 'PEM Status',\n00420|       present: 'Post-Exertional Malaise is likely present',\n\n(File has more lines. Use 'offset' parameter to read beyond line 420)\n</file>",
+    "metadata": {
+      "preview": "      delayedOnset: {\n        question: 'When symptoms worsen after activity, is the onset often delayed by hours or days?',\n        description: 'NICE: The worsening may not be immediate but delayed',\n        options: [\n          'No delayed onset - symptoms worsen immediately or not at all',\n          'Sometimes delayed by a few hours',\n          'Often delayed by several hours (4-12 hours)',\n          'Usually delayed by 1-2 days',\n          'Consistently delayed by days (sometimes 24-48+ hours)'\n        ]\n      },\n      disproportionate: {\n        question: 'When your symptoms worsen, is it disproportionate to the activity performed?',\n        description: 'NICE: The response is excessive compared to the activity undertaken',\n        options: [\n          'No - symptom worsening matches activity level',\n          'Slightly disproportionate',\n          'Moderately disproportionate',\n          'Significantly disproportionate',\n          'Severely disproportionate - minimal activity causes major symptom flare'"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758394486300,
+      "end": 1758394486302
+    }
+  }
+}

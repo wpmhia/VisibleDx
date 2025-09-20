@@ -1,0 +1,26 @@
+{
+  "id": "prt_9687ebe1b0012DApxx0RvbUc4T",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_016Q4oB76ZS6VNi3U5sm8t1z",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "oldString": "    categories: {\n      core: string\n      pem: string\n      cardiovascular: string\n      orthostatic: string\n      history: string\n      duration: string\n      pain: string\n      neurological: string\n      autonomic: string\n      gi: string\n      respiratory: string\n      functional: string\n      sensory: string\n    }",
+      "newString": "    categories: {\n      coreFatigue: string\n      corePEM: string\n      coreSleep: string\n      coreCognitive: string\n      additional: string\n      autonomic: string\n      neuromuscular: string\n      fluLike: string\n      intolerance: string\n      sensory: string\n      pain: string\n      duration: string\n      functional: string\n      exclusion: string\n      history: string\n      severity: string\n    }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/types.ts\n===================================================================\n--- /home/user/project/lib/translations/types.ts\n+++ /home/user/project/lib/translations/types.ts\n@@ -138,21 +138,24 @@\n title: string\n description: string\n questions: string[]\n categories: {\n-  core: string\n-  pem: string\n-  cardiovascular: string\n-  orthostatic: string\n-  history: string\n-  duration: string\n-  pain: string\n-  neurological: string\n+  coreFatigue: string\n+  corePEM: string\n+  coreSleep: string\n+  coreCognitive: string\n+  additional: string\n   autonomic: string\n-  gi: string\n-  respiratory: string\n-  functional: string\n+  neuromuscular: string\n+  fluLike: string\n+  intolerance: string\n   sensory: string\n+  pain: string\n+  duration: string\n+  functional: string\n+  exclusion: string\n+  history: string\n+  severity: string\n }\n results: {\n   complete: string\n   riskAssessment: string\n"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758394763088,
+      "end": 1758394763095
+    }
+  }
+}

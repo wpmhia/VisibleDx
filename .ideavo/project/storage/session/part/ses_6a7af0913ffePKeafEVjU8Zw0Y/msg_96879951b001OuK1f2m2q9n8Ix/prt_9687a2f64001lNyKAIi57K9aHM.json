@@ -1,0 +1,25 @@
+{
+  "id": "prt_9687a2f64001lNyKAIi57K9aHM",
+  "messageID": "msg_96879951b001OuK1f2m2q9n8Ix",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RKGJv3M93jRtA3dMEsifGy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/energy-management/page.tsx",
+      "offset": 90,
+      "limit": 30
+    },
+    "output": "<file>\n00091|       dailyEnergyBudget: budget.safeLevel,\n00092|       restSchedule: 'Plan rest periods between activities',\n00093|       activityPacing: 'Break activities into smaller chunks',\n00094|       monitoringSigns: 'Watch for early warning signs of energy depletion',\n00095|       emergencyProtocol: 'What to do during flare-ups'\n00096|     }\n00097| \n00098|     const recommendations = []\n00099|     \n00100|     if (budget.availableEnergy < 30) {\n00101|       recommendations.push('Focus on essential activities only')\n00102|       recommendations.push('Frequent rest periods (every 15-30 minutes)')\n00103|       recommendations.push('Consider assistance with daily activities')\n00104|     } else if (budget.availableEnergy < 60) {\n00105|       recommendations.push('Moderate activity levels with regular breaks')\n00106|       recommendations.push('Alternate between different types of activities')\n00107|       recommendations.push('Plan demanding activities for your best time of day')\n00108|     } else {\n00109|       recommendations.push('Maintain awareness of energy limits')\n00110|       recommendations.push('Pre-emptive rest before activities')\n00111|       recommendations.push('Monitor for gradual increases in tolerance')\n00112|     }\n00113| \n00114|     return { plan, recommendations, budget }\n00115|   }\n00116| \n00117|   const nextStep = () => {\n00118|     if (currentStep < steps.length - 1) {\n00119|       setCurrentStep(prev => prev + 1)\n00120|     } else {\n\n(File has more lines. Use 'offset' parameter to read beyond line 120)\n</file>",
+    "metadata": {
+      "preview": "      dailyEnergyBudget: budget.safeLevel,\n      restSchedule: 'Plan rest periods between activities',\n      activityPacing: 'Break activities into smaller chunks',\n      monitoringSigns: 'Watch for early warning signs of energy depletion',\n      emergencyProtocol: 'What to do during flare-ups'\n    }\n\n    const recommendations = []\n    \n    if (budget.availableEnergy < 30) {\n      recommendations.push('Focus on essential activities only')\n      recommendations.push('Frequent rest periods (every 15-30 minutes)')\n      recommendations.push('Consider assistance with daily activities')\n    } else if (budget.availableEnergy < 60) {\n      recommendations.push('Moderate activity levels with regular breaks')\n      recommendations.push('Alternate between different types of activities')\n      recommendations.push('Plan demanding activities for your best time of day')\n    } else {\n      recommendations.push('Maintain awareness of energy limits')\n      recommendations.push('Pre-emptive rest before activities')"
+    },
+    "title": "app/energy-management/page.tsx",
+    "time": {
+      "start": 1758394462834,
+      "end": 1758394462838
+    }
+  }
+}
