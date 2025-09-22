@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712c3aed001Mkmr90CCUjNiqS",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01F6XATw7RDBwbCKPuLA2XnZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 460,
+      "limit": 30
+    },
+    "output": "<file>\n00461|   criteria: {\n00462|     title: 'Kriterier Motor',\n00463|     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n00464|     mecfs: {\n00465|       title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n00466|       description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n00467|       criteria: [\n00468|         'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n00469|         'Post-exertionel utilpashed (PEM) til stede',\n00470|         'Ikke-forfriskende søvn',\n00471|         'Kognitiv svækkelse (hjernetåge)',\n00472|         'Ortostatisk intolerance ELLER autonom dysfunktion'\n00473|       ]\n00474|     },\n00475|     longCovid: {\n00476|       title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n00477|       description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n00478|       criteria: [\n00479|         'Bekræftet eller sandsynlig SARS-CoV-2 infektion',\n00480|         'Symptomer fortsætter ≥3 måneder fra akut sygdom',\n00481|         'Multi-system symptomer, der påvirker daglig funktionsevne',\n00482|         'Symptomer ikke forklaret af alternativ diagnose'\n00483|       ],\n00484|       timing: {\n00485|         confirmed: 'Bekræftet ved test',\n00486|         probable: 'Sandsynlig baseret på symptomer/eksponering',\n00487|         suspected: 'Mistænkt baseret på timing'\n00488|       }\n00489|     },\n00490|     pots: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 490)\n</file>",
+    "metadata": {
+      "preview": "  criteria: {\n    title: 'Kriterier Motor',\n    description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n    mecfs: {\n      title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n      criteria: [\n        'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n        'Post-exertionel utilpashed (PEM) til stede',\n        'Ikke-forfriskende søvn',\n        'Kognitiv svækkelse (hjernetåge)',\n        'Ortostatisk intolerance ELLER autonom dysfunktion'\n      ]\n    },\n    longCovid: {\n      title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n      description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n      criteria: [\n        'Bekræftet eller sandsynlig SARS-CoV-2 infektion',\n        'Symptomer fortsætter ≥3 måneder fra akut sygdom',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758540348835,
+      "end": 1758540348838
+    }
+  }
+}

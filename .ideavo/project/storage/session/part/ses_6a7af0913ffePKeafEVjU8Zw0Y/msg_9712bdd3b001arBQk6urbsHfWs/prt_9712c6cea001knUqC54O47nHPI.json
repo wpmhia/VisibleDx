@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712c6cea001knUqC54O47nHPI",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Ban5pCxpRK6dCyrWHV9mBZ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 460,
+      "limit": 30
+    },
+    "output": "<file>\n00461|         'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n00462|         'Post-exertionele malaise (PEM) aanwezig',\n00463|         'Niet-verkwikkende slaap',\n00464|         'Cognitieve stoornissen (brain fog)',\n00465|         'Orthostatische intolerantie OF autonome disfunctie'\n00466|       ]\n00467|     },\n00468|     longCovid: {\n00469|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00470|       description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n00471|       criteria: [\n00472|         'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n00473|         'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n00474|         'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n00475|         'Symptomen niet verklaard door alternatieve diagnose'\n00476|       ],\n00477|       timing: {\n00478|         confirmed: 'Bevestigd door test',\n00479|         probable: 'Waarschijnlijk gebaseerd op symptomen/blootstelling',\n00480|         suspected: 'Vermoed gebaseerd op timing'\n00481|       }\n00482|     },\n00483|     pots: {\n00484|       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n00485|       description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',\n00486|       criteria: [\n00487|         'Hartslagtoename ≥30 spm binnen 10 minuten van staan',\n00488|         'Aanhoudende hartslag ≥120 spm tijdens staan',\n00489|         'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',\n00490|         'Symptomen aanwezig voor ≥3 maanden',\n\n(File has more lines. Use 'offset' parameter to read beyond line 490)\n</file>",
+    "metadata": {
+      "preview": "        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n        'Post-exertionele malaise (PEM) aanwezig',\n        'Niet-verkwikkende slaap',\n        'Cognitieve stoornissen (brain fog)',\n        'Orthostatische intolerantie OF autonome disfunctie'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n      criteria: [\n        'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n        'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n        'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n        'Symptomen niet verklaard door alternatieve diagnose'\n      ],\n      timing: {\n        confirmed: 'Bevestigd door test',\n        probable: 'Waarschijnlijk gebaseerd op symptomen/blootstelling',\n        suspected: 'Vermoed gebaseerd op timing'"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540361639,
+      "end": 1758540361641
+    }
+  }
+}

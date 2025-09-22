@@ -1,0 +1,11 @@
+{
+  "id": "prt_9712d1ce80016P10CmxHknfEiV",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "✅ **NICE NG206 branding removed** from Criteria Engine across all language files. The diagnostic platform is now completely **framework-agnostic** with:\n\n- **ME/CFS Criteria** (no specific guideline mentioned)\n- **POTS Criteria** (ESC 2018/AAS-EFAS 2021) \n- **Long COVID Criteria** (WHO/NASEM 2024)\n- **POTS Subtypes** (Hypovolemic, Hyperadrenergic, Neuropathic, Autoimmune)\n\nBuild completed successfully with no errors. The transformation to a multi-framework diagnostic platform is now complete!",
+  "time": {
+    "start": 1758540409768,
+    "end": 1758540409768
+  }
+}

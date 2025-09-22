@@ -468,8 +468,8 @@ export const en: Translation = {
     title: 'Diagnostic Criteria Engine',
     description: 'Apply multiple diagnostic criteria frameworks for complex conditions',
     mecfs: {
-      title: 'ME/CFS Criteria (NICE NG206)',
-      description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',
+        title: 'ME/CFS Criteria',
+        description: 'Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',
       criteria: [
         'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',
         'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',

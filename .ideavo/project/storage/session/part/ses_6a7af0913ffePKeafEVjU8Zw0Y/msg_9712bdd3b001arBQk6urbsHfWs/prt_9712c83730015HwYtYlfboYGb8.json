@@ -1,0 +1,35 @@
+{
+  "id": "prt_9712c83730015HwYtYlfboYGb8",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01Qtzth1zhaut8AjmGSLVcYG",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "        title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',",
+          "newString": "        title: 'ME/CVS Criteria',\n        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -454,10 +454,10 @@\n criteria: {\n   title: 'Criteria Engine',\n   description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n   mecfs: {\n-    title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n-    description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n+      title: 'ME/CVS Criteria',\n+      description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n     criteria: [\n       'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n       'Post-exertionele malaise (PEM) aanwezig',\n       'Niet-verkwikkende slaap',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540369151,
+      "end": 1758540369163
+    }
+  }
+}

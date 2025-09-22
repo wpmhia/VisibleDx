@@ -455,8 +455,8 @@ export const nl: Translation = {
     title: 'Criteria Engine',
     description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',
     mecfs: {
-      title: 'ME/CVS Criteria (CDC/NASEM 2015)',
-      description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',
+        title: 'ME/CVS Criteria',
+        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',
       criteria: [
         'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',
         'Post-exertionele malaise (PEM) aanwezig',

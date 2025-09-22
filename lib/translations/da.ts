@@ -462,8 +462,8 @@ export const da: Translation = {
     title: 'Kriterier Motor',
     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',
     mecfs: {
-      title: 'ME/CFS Kriterier (CDC/NASEM 2015)',
-      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',
+        title: 'ME/CFS Kriterier',
+        description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',
       criteria: [
         'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',
         'Post-exertionel utilpashed (PEM) til stede',

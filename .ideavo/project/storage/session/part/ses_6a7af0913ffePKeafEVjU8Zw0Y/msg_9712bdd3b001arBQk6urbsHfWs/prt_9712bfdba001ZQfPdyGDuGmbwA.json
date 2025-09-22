@@ -1,0 +1,26 @@
+{
+  "id": "prt_9712bfdba001ZQfPdyGDuGmbwA",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01A6noAGyb9Xp34meNFNaSkj",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "        title: 'ME/CFS Criteria (NICE NG206)',\n        description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',",
+          "newString": "        title: 'ME/CFS Criteria',\n        description: 'Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/en.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758540334670,
+      "end": 1758540334677
+    }
+  }
+}

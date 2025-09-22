@@ -1,0 +1,73 @@
+{
+  "id": "prt_9712d0ed2001RUzdxCx19a7ZPW",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01VXAWniVfNkr1fz1JKWcS8w",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Remove NICE NG206 branding from English translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Remove NICE NG206 branding from Danish translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Remove NICE NG206 branding from Dutch translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Test build to ensure no errors",
+          "status": "completed",
+          "priority": "medium",
+          "id": "4"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Remove NICE NG206 branding from English translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Remove NICE NG206 branding from Danish translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Remove NICE NG206 branding from Dutch translations\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Test build to ensure no errors\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"4\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Remove NICE NG206 branding from English translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Remove NICE NG206 branding from Danish translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Remove NICE NG206 branding from Dutch translations",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Test build to ensure no errors",
+          "status": "completed",
+          "priority": "medium",
+          "id": "4"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758540403885,
+      "end": 1758540403900
+    }
+  }
+}

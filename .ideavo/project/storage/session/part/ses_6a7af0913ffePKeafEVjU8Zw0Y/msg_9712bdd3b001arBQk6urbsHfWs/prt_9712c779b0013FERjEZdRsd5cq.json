@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712c779b0013FERjEZdRsd5cq",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Dqj31z8LbTToA7dCE8Hufk",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 450,
+      "limit": 20
+    },
+    "output": "<file>\n00451|     }\n00452|   },\n00453| \n00454|   criteria: {\n00455|     title: 'Criteria Engine',\n00456|     description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n00457|     mecfs: {\n00458|       title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n00459|       description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n00460|       criteria: [\n00461|         'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n00462|         'Post-exertionele malaise (PEM) aanwezig',\n00463|         'Niet-verkwikkende slaap',\n00464|         'Cognitieve stoornissen (brain fog)',\n00465|         'Orthostatische intolerantie OF autonome disfunctie'\n00466|       ]\n00467|     },\n00468|     longCovid: {\n00469|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00470|       description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n\n(File has more lines. Use 'offset' parameter to read beyond line 470)\n</file>",
+    "metadata": {
+      "preview": "    }\n  },\n\n  criteria: {\n    title: 'Criteria Engine',\n    description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n    mecfs: {\n      title: 'ME/CVS Criteria (CDC/NASEM 2015)',\n      description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n      criteria: [\n        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n        'Post-exertionele malaise (PEM) aanwezig',\n        'Niet-verkwikkende slaap',\n        'Cognitieve stoornissen (brain fog)',\n        'Orthostatische intolerantie OF autonome disfunctie'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540364293,
+      "end": 1758540364294
+    }
+  }
+}

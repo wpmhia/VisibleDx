@@ -1,0 +1,35 @@
+{
+  "id": "prt_9712c47a1001tXFtCuvnyzjTkj",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01RyKmAjBDMLLTaeQYX7bR2w",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "        title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n        description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',",
+          "newString": "        title: 'ME/CFS Kriterier',\n        description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -461,10 +461,10 @@\n criteria: {\n   title: 'Kriterier Motor',\n   description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n   mecfs: {\n-    title: 'ME/CFS Kriterier (CDC/NASEM 2015)',\n-    description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n+      title: 'ME/CFS Kriterier',\n+      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n     criteria: [\n       'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n       'Post-exertionel utilpashed (PEM) til stede',\n       'Ikke-forfriskende søvn',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758540353780,
+      "end": 1758540353795
+    }
+  }
+}

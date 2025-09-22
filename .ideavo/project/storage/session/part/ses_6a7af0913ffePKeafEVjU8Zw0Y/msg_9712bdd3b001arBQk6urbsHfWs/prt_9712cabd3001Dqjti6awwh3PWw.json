@@ -1,0 +1,26 @@
+{
+  "id": "prt_9712cabd3001Dqjti6awwh3PWw",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_018Me3LqCwhhMEkUb3NzC3Wn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "npm run build",
+      "description": "Test build to ensure no errors after removing NICE NG206 branding"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/14) ...\n   Generating static pages (3/14) \r\n   Generating static pages (6/14) \r\n   Generating static pages (10/14) \r\n ✓ Generating static pages (14/14)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                              Size     First Load JS\n┌ ○ /                                    2.21 kB         133 kB\n├ ○ /_not-found                          873 B          88.1 kB\n├ ○ /case-analyzer                       8.93 kB         140 kB\n├ ○ /criteria-engine                     7.24 kB         143 kB\n├ ○ /energy-management                   9.56 kB         136 kB\n├ ○ /env-check                           175 B          96.1 kB\n├ ○ /new-patient                         11.3 kB         138 kB\n├ ○ /pem-quest                           6.25 kB         142 kB\n├ ○ /quick-screen                        4.49 kB         136 kB\n├ ○ /red-flag-checker                    7.83 kB         139 kB\n├ ○ /stand-test                          7.67 kB         139 kB\n└ ○ /subtype-advisor                     9.59 kB         132 kB\n+ First Load JS shared by all            87.2 kB\n  ├ chunks/117-ca925d992231ea0f.js       31.6 kB\n  ├ chunks/fd9d1056-9e191f0896c1d560.js  53.6 kB\n  └ other shared chunks (total)          1.96 kB\n\n\nƒ Middleware                             26.6 kB\n\n○  (Static)  prerendered as static content\n\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/14) ...\n   Generating static pages (3/14) \r\n   Generating static pages (6/14) \r\n   Generating static pages (10/14) \r\n ✓ Generating static pages (14/14)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                              Size     First Load JS\n┌ ○ /                                    2.21 kB         133 kB\n├ ○ /_not-found                          873 B          88.1 kB\n├ ○ /case-analyzer                       8.93 kB         140 kB\n├ ○ /criteria-engine                     7.24 kB         143 kB\n├ ○ /energy-management                   9.56 kB         136 kB\n├ ○ /env-check                           175 B          96.1 kB\n├ ○ /new-patient                         11.3 kB         138 kB\n├ ○ /pem-quest                           6.25 kB         142 kB\n├ ○ /quick-screen                        4.49 kB         136 kB\n├ ○ /red-flag-checker                    7.83 kB         139 kB\n├ ○ /stand-test                          7.67 kB         139 kB\n└ ○ /subtype-advisor                     9.59 kB         132 kB\n+ First Load JS shared by all            87.2 kB\n  ├ chunks/117-ca925d992231ea0f.js       31.6 kB\n  ├ chunks/fd9d1056-9e191f0896c1d560.js  53.6 kB\n  └ other shared chunks (total)          1.96 kB\n\n\nƒ Middleware                             26.6 kB\n\n○  (Static)  prerendered as static content\n\n",
+      "exit": 0,
+      "description": "Test build to ensure no errors after removing NICE NG206 branding"
+    },
+    "title": "npm run build",
+    "time": {
+      "start": 1758540377648,
+      "end": 1758540400125
+    }
+  }
+}

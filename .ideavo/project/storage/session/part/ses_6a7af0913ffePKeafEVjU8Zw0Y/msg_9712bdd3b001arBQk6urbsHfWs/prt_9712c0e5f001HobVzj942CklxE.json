@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712c0e5f001HobVzj942CklxE",
+  "messageID": "msg_9712bdd3b001arBQk6urbsHfWs",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01QyNzh9BzNg3RRWMmrRYBoy",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 460,
+      "limit": 30
+    },
+    "output": "<file>\n00461|       },\n00462|       important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.',\n00463|       retake: 'Retake Assessment'\n00464|     }\n00465|   },\n00466| \n00467|   criteria: {\n00468|     title: 'Diagnostic Criteria Engine',\n00469|     description: 'Apply multiple diagnostic criteria frameworks for complex conditions',\n00470|     mecfs: {\n00471|       title: 'ME/CFS Criteria (NICE NG206)',\n00472|       description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n00473|       criteria: [\n00474|         'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',\n00475|         'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',\n00476|         'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',\n00477|         'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',\n00478|         'Symptoms have persisted for 3 months',\n00479|         'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',\n00480|         'Symptoms are NOT explained by another condition (after appropriate investigations)'\n00481|       ]\n00482|     },\n00483|     longCovid: {\n00484|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00485|       description: 'Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms',\n00486|       criteria: [\n00487|         'Confirmed or probable SARS-CoV-2 infection',\n00488|         'Symptoms persist ≥3 months from acute illness',\n00489|         'Multi-system symptoms affecting daily functioning',\n00490|         'Symptoms not explained by alternative diagnosis'\n\n(File has more lines. Use 'offset' parameter to read beyond line 490)\n</file>",
+    "metadata": {
+      "preview": "      },\n      important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.',\n      retake: 'Retake Assessment'\n    }\n  },\n\n  criteria: {\n    title: 'Diagnostic Criteria Engine',\n    description: 'Apply multiple diagnostic criteria frameworks for complex conditions',\n    mecfs: {\n      title: 'ME/CFS Criteria (NICE NG206)',\n      description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n      criteria: [\n        'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',\n        'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',\n        'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',\n        'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',\n        'Symptoms have persisted for 3 months',\n        'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',\n        'Symptoms are NOT explained by another condition (after appropriate investigations)'"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758540337094,
+      "end": 1758540337099
+    }
+  }
+}
