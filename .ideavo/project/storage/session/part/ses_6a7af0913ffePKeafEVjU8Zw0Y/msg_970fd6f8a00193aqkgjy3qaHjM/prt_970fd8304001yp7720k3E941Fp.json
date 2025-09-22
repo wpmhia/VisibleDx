@@ -1,0 +1,11 @@
+{
+  "id": "prt_970fd8304001yp7720k3E941Fp",
+  "messageID": "msg_970fd6f8a00193aqkgjy3qaHjM",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! You want to create a **Case Analysis Tool** where:\n\n1. **Input**: Clinician pastes/types a patient case into a text field\n2. **Processing**: App analyzes the case text \n3. **Output**: App provides diagnostic assessment and ratings\n\n## Implementation Plan:\n\n### New Module: \"Case Analyzer\"\n- **Text input area** for patient case description\n- **Analysis engine** that extracts key clinical features\n- **Scoring system** based on NICE NG206 criteria\n- **Results display** with diagnostic likelihood and recommendations\n\n### Text Analysis Approach (No AI needed):\n- **Keyword matching** for ME/CFS symptoms\n- **Pattern recognition** for duration, triggers, severity\n- **Scoring algorithms** based on established criteria\n- **Rule-based assessment** following diagnostic guidelines\n\n### Output Features:\n- **ME/CFS likelihood score** (0-100%)\n- **Criteria assessment** (which NICE NG206 criteria are met)\n- **Red flag detection** (concerning symptoms requiring urgent evaluation)\n- **PEM indicators** (post-exertional malaise evidence)\n- **Differential diagnoses** to consider\n- **Next steps recommendations**\n\n### Example Analysis:\n```\nInput: \"32-year-old presents with 6 months of severe fatigue after flu-like illness, worsens with activity, brain fog, unrefreshing sleep...\"\n\nOutput:\n- ME/CFS Likelihood: 85%\n- Duration criteria: ✓ Met (6 months)\n- PEM evidence: ✓ Strong\n- Core symptoms: 4/4 present\n- Red flags: None detected\n- Recommendation: Proceed with ME/CFS workup\n```\n\nThis would be a powerful clinical decision support tool that helps clinicians systematically evaluate patient presentations against established diagnostic criteria.\n\nWould you like me to proceed with implementing this Case Analyzer module?",
+  "time": {
+    "start": 1758537295300,
+    "end": 1758537295300
+  }
+}
