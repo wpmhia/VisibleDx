@@ -1,0 +1,7 @@
+{
+  "id": "prt_970f9ce3f002n8vkRz1urXT8gn",
+  "type": "text",
+  "text": "The sandbox iq50iou8uj9ip0qsxpds5 is running but there's no service running on port 4000.\n\n4000-iq50iou8uj9ip0qsxpds5.e2b.app\nConnection refused on port 4000\nPlease ensure that your service is properly configured and running on the specified port.\n\nCheck the sandbox logs for more informatio",
+  "messageID": "msg_970f9ce3f001BgHKyZIuYdcOLu",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y"
+}

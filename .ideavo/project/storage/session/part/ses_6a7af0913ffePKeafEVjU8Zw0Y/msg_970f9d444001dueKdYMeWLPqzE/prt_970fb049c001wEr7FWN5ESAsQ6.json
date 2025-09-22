@@ -1,0 +1,11 @@
+{
+  "id": "prt_970fb049c001wEr7FWN5ESAsQ6",
+  "messageID": "msg_970f9d444001dueKdYMeWLPqzE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "The Next.js application is now running on port 3000. The correct URL should be:\n\n**3000-iq50iou8uj9ip0qsxpds5.e2b.app**\n\nThe application includes:\n- **Dashboard** - Overview and navigation\n- **Quick Screen** - NICE NG206 compliant screening tool\n- **Red Flag Checker** - Differential diagnosis tool  \n- **Stand Test** - POTS assessment\n- **PEM Quest** - Post-exertional malaise evaluation\n- **Criteria Engine** - Diagnostic criteria application\n- **Energy Management** - NICE NG206 energy management planning (newly added)\n- **Subtype Advisor** - Treatment recommendations\n\nAll modules have been updated with current NICE NG206 guidelines and the activity mapping interface in Energy Management has been fixed to allow proper user interaction.",
+  "time": {
+    "start": 1758537126595,
+    "end": 1758537126595
+  }
+}

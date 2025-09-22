@@ -1,0 +1,26 @@
+{
+  "id": "prt_970f9f00b001C5WymMCuOfXzq2",
+  "messageID": "msg_970f9d444001dueKdYMeWLPqzE",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01HMCd7nJxrUs8deAzwrsr1z",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && ps aux | grep node",
+      "description": "Check if any Node processes are running"
+    },
+    "output": "user       23789  0.0  0.0   2580   896 ?        S    10:30   0:00 /bin/sh -c cd /home/user/project && ps aux | grep node\nuser       23791  0.0  0.0   3328  1452 ?        S    10:30   0:00 grep node\n",
+    "metadata": {
+      "output": "user       23789  0.0  0.0   2580   896 ?        S    10:30   0:00 /bin/sh -c cd /home/user/project && ps aux | grep node\nuser       23791  0.0  0.0   3328  1452 ?        S    10:30   0:00 grep node\n",
+      "exit": 0,
+      "description": "Check if any Node processes are running"
+    },
+    "title": "cd /home/user/project && ps aux | grep node",
+    "time": {
+      "start": 1758537052953,
+      "end": 1758537052993
+    }
+  }
+}
