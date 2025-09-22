@@ -1,0 +1,11 @@
+{
+  "id": "prt_97116056400131Q3GEDO7VDF4B",
+  "messageID": "msg_971141e12001ptFJB92KznEc8O",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! Now the Case Analyzer should be visible on the homepage. The build is successful and the module is properly integrated.\n\n## ✅ Case Analyzer Now on Homepage!\n\nThe Case Analyzer is now fully integrated and should appear on the homepage at **3000-iq50iou8uj9ip0qsxpds5.e2b.app** with:\n\n### 📍 **Homepage Integration**\n- **New module card** in the main grid\n- **Search icon** (magnifying glass)\n- **Title**: \"Case Analyzer\" (or translated versions)\n- **Description**: \"AI-powered clinical case analysis for ME/CFS assessment\"\n- **\"Start Assessment\" button** linking to `/case-analyzer`\n\n### 🔧 **Available Features**\n1. **Text input area** for pasting patient cases\n2. **Analyze Case button** with processing animation\n3. **Comprehensive results** with:\n   - ME/CFS likelihood percentage and confidence level\n   - NICE NG206 criteria checklist\n   - Post-exertional malaise assessment\n   - Key clinical findings\n   - Red flag detection\n   - Clinical recommendations\n   - Differential diagnoses to consider\n\n### 📊 **Example Usage**\nTry pasting this sample case:\n```\n28-year-old female with 7-month history of severe debilitating fatigue following viral illness. Reports profound exhaustion that worsens significantly after minimal physical or mental activity. Experiences crashes lasting several days after simple tasks. Sleep is unrefreshing despite 10+ hours. Significant brain fog with memory and concentration problems. Previously active runner, now struggles with basic daily activities.\n```\n\nThe Case Analyzer will provide a detailed assessment based on NICE NG206 criteria and clinical patterns!",
+  "time": {
+    "start": 1758538903920,
+    "end": 1758538903920
+  }
+}

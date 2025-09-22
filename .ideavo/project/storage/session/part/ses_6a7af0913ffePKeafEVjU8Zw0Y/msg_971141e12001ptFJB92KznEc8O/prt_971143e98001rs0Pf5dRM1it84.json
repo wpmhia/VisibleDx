@@ -1,0 +1,26 @@
+{
+  "id": "prt_971143e98001rs0Pf5dRM1it84",
+  "messageID": "msg_971141e12001ptFJB92KznEc8O",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01X2rSKbLiBSgLknB4qa8gs9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && pkill -f \"next\"",
+      "description": "Stop any running Next.js processes"
+    },
+    "output": "",
+    "metadata": {
+      "output": "",
+      "exit": null,
+      "description": "Stop any running Next.js processes"
+    },
+    "title": "cd /home/user/project && pkill -f \"next\"",
+    "time": {
+      "start": 1758538776956,
+      "end": 1758538777002
+    }
+  }
+}

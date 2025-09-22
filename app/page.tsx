@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Activity, Clock, Users, FileText, BarChart3, Heart, User, Battery } from 'lucide-react'
+import { Activity, Clock, Users, FileText, BarChart3, Heart, User, Battery, Search } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
@@ -57,6 +57,13 @@ const getModules = (t: any) => [
     description: t.dashboard.modules.energyManagement.description,
     icon: Battery,
     route: '/energy-management'
+  },
+  {
+    id: 'case-analyzer',
+    title: t.dashboard.modules.caseAnalyzer.title,
+    description: t.dashboard.modules.caseAnalyzer.description,
+    icon: Search,
+    route: '/case-analyzer'
   }
 ]
 
