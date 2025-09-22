@@ -17,77 +17,125 @@ import {
   Heart,
   Activity,
   Lightbulb,
-  ArrowLeft
+  ArrowLeft,
+  Droplets,
+  Shield,
+  Zap,
+  Users
 } from 'lucide-react'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/language-context'
 
-interface CaseAnalysisResult {
-  overallScore: number
-  mecfsLikelihood: 'very-high' | 'high' | 'moderate' | 'low' | 'very-low'
-  criteriaAssessment: {
-    debilitatingFatigue: boolean
-    postExertionalMalaise: boolean
-    unrefreshingSleep: boolean
-    cognitiveDifficulties: boolean
-    duration: boolean
-  }
-  redFlags: string[]
-  pemIndicators: {
-    present: boolean
-    severity: 'none' | 'mild' | 'moderate' | 'severe'
-    evidence: string[]
-  }
-  differentialDiagnoses: string[]
-  recommendations: string[]
+interface DiagnosticFramework {
+  id: string
+  name: string
+  icon: any
+  likelihood: 'very-high' | 'high' | 'moderate' | 'low' | 'very-low'
+  score: number
+  criteriaAssessment: Record<string, boolean>
   keyFindings: string[]
+  recommendations: string[]
+  icdCode: string
+  confidence: 'high' | 'medium' | 'low'
 }
 
-// Clinical keyword patterns for analysis
+interface CaseAnalysisResult {
+  frameworks: DiagnosticFramework[]
+  redFlags: string[]
+  keyFindings: string[]
+  overallRecommendations: string[]
+  primaryDiagnosis: string | null
+  secondaryDiagnoses: string[]
+}
+
+// Comprehensive clinical keyword patterns for all diagnostic frameworks
 const CLINICAL_PATTERNS = {
-  // Core ME/CFS symptoms
-  debilitatingFatigue: [
-    'severe fatigue', 'debilitating fatigue', 'exhaustion', 'extreme tiredness',
-    'profound fatigue', 'overwhelming fatigue', 'crushing fatigue'
+  // ME/CFS (NICE NG206)
+  mecfs: {
+    debilitatingFatigue: [
+      'severe fatigue', 'debilitating fatigue', 'exhaustion', 'extreme tiredness',
+      'profound fatigue', 'overwhelming fatigue', 'crushing fatigue', 'disabling fatigue'
+    ],
+    postExertionalMalaise: [
+      'post-exertional malaise', 'PEM', 'crashes after activity', 'worsens with activity',
+      'worse after exercise', 'activity intolerance', 'delayed recovery', 'payback',
+      'flare after activity', 'symptom exacerbation', 'delayed symptom onset'
+    ],
+    unrefreshingSleep: [
+      'unrefreshing sleep', 'non-restorative sleep', 'wakes tired', 'poor sleep quality',
+      'sleep doesn\'t help', 'still tired after sleep', 'no rest from sleep'
+    ],
+    cognitiveDifficulties: [
+      'brain fog', 'cognitive dysfunction', 'memory problems', 'concentration issues',
+      'word finding difficulties', 'mental fatigue', 'confusion', 'cognitive impairment'
+    ],
+    duration: [
+      'months', 'chronic', 'ongoing', 'persistent', 'long-term', '6 months', 'year', '3 months'
+    ]
+  },
+
+  // POTS
+  pots: {
+    heartRateIncrease: [
+      'tachycardia on standing', 'heart rate increase', 'racing heart when standing',
+      'palpitations standing', 'fast pulse standing', '30 bpm increase', 'HR increase'
+    ],
+    orthostatic: [
+      'dizziness on standing', 'lightheaded standing', 'orthostatic intolerance',
+      'syncope', 'presyncope', 'fainting', 'near fainting', 'dizzy when upright'
+    ],
+    symptoms: [
+      'fatigue', 'weakness', 'tremor', 'nausea', 'headache', 'mental clouding',
+      'chest discomfort', 'shortness of breath'
+    ],
+    duration: [
+      'months', 'chronic', 'ongoing', 'persistent', '6 months'
+    ]
+  },
+
+  // POTS Subtypes
+  hypovolemic: [
+    'low blood pressure', 'thirst', 'salt craving', 'volume depletion', 'dehydration',
+    'increased renin', 'low blood volume'
   ],
-  postExertionalMalaise: [
-    'post-exertional malaise', 'PEM', 'crashes after activity', 'worsens with activity',
-    'worse after exercise', 'activity intolerance', 'delayed recovery', 'payback',
-    'flare after activity', 'symptom exacerbation'
+  hyperadrenergic: [
+    'high blood pressure', 'anxiety', 'panic attacks', 'migraine', 'cold hands',
+    'high norepinephrine', 'tremor', 'sweating'
   ],
-  unrefreshingSleep: [
-    'unrefreshing sleep', 'non-restorative sleep', 'wakes tired', 'poor sleep quality',
-    'sleep doesn\'t help', 'still tired after sleep', 'no rest from sleep'
+  neuropathic: [
+    'distal neuropathy', 'GI dysfunction', 'gastroparesis', 'anhidrosis', 'pupil abnormalities',
+    'diabetes', 'autoimmune neuropathy', 'small fiber neuropathy'
   ],
-  cognitiveDifficulties: [
-    'brain fog', 'cognitive dysfunction', 'memory problems', 'concentration issues',
-    'word finding difficulties', 'mental fatigue', 'confusion', 'cognitive impairment'
+  autoimmune: [
+    'autoimmune history', 'rapid onset', 'viral trigger', 'autoantibodies',
+    'other autoimmune conditions', 'antibodies', 'immune dysfunction', 'PAIS'
   ],
-  
-  // Duration indicators
-  duration: [
-    'months', 'chronic', 'ongoing', 'persistent', 'long-term', '6 months', 'year'
-  ],
-  
-  // Red flag symptoms
+
+  // Long COVID
+  longCovid: {
+    covidHistory: [
+      'COVID-19', 'coronavirus', 'SARS-CoV-2', 'positive test', 'covid infection',
+      'post-covid', 'long covid', 'long-haul covid'
+    ],
+    duration: [
+      '4 weeks', 'months after covid', 'persistent symptoms', 'ongoing since covid'
+    ],
+    multisystem: [
+      'multiple symptoms', 'systemic symptoms', 'multiorgan', 'widespread symptoms'
+    ]
+  },
+
+  // Red Flags
   redFlags: [
     'weight loss', 'fever', 'night sweats', 'lymphadenopathy', 'neurological deficits',
-    'chest pain', 'shortness of breath', 'bleeding', 'jaundice', 'seizures'
+    'chest pain', 'shortness of breath', 'bleeding', 'jaundice', 'seizures',
+    'new headache', 'visual changes', 'weakness', 'sensory loss'
   ],
-  
-  // Triggering events
+
+  // Triggers
   triggers: [
     'viral infection', 'flu', 'COVID', 'mononucleosis', 'stress', 'surgery',
-    'vaccination', 'bacterial infection', 'illness'
-  ],
-  
-  // Additional symptoms
-  orthostatic: [
-    'dizziness on standing', 'palpitations', 'racing heart', 'orthostatic intolerance',
-    'POTS', 'tachycardia on standing'
-  ],
-  pain: [
-    'muscle pain', 'joint pain', 'headaches', 'sore throat', 'tender lymph nodes'
+    'vaccination', 'bacterial infection', 'illness', 'EBV', 'CMV'
   ]
 }
 
@@ -99,112 +147,232 @@ export default function CaseAnalyzer() {
 
   const analyzeCaseText = (text: string): CaseAnalysisResult => {
     const lowerText = text.toLowerCase()
+    const frameworks: DiagnosticFramework[] = []
     
-    // Check core criteria
-    const criteriaAssessment = {
-      debilitatingFatigue: CLINICAL_PATTERNS.debilitatingFatigue.some(pattern => 
+    // ME/CFS Analysis (NICE NG206)
+    const mecfsCriteria = {
+      debilitatingFatigue: CLINICAL_PATTERNS.mecfs.debilitatingFatigue.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
       ),
-      postExertionalMalaise: CLINICAL_PATTERNS.postExertionalMalaise.some(pattern => 
+      postExertionalMalaise: CLINICAL_PATTERNS.mecfs.postExertionalMalaise.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
       ),
-      unrefreshingSleep: CLINICAL_PATTERNS.unrefreshingSleep.some(pattern => 
+      unrefreshingSleep: CLINICAL_PATTERNS.mecfs.unrefreshingSleep.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
       ),
-      cognitiveDifficulties: CLINICAL_PATTERNS.cognitiveDifficulties.some(pattern => 
+      cognitiveDifficulties: CLINICAL_PATTERNS.mecfs.cognitiveDifficulties.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
       ),
-      duration: CLINICAL_PATTERNS.duration.some(pattern => 
+      duration: CLINICAL_PATTERNS.mecfs.duration.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
       )
     }
-
-    // Calculate core symptom score
-    const coreSymptoms = Object.values(criteriaAssessment).filter(Boolean).length
     
+    const mecfsCoreSymptoms = Object.values(mecfsCriteria).filter(Boolean).length
+    let mecfsScore = mecfsCoreSymptoms * 20 // Each criterion worth 20 points
+    const mecfsLikelihood = mecfsScore >= 80 ? 'very-high' : 
+                           mecfsScore >= 60 ? 'high' : 
+                           mecfsScore >= 40 ? 'moderate' : 
+                           mecfsScore >= 20 ? 'low' : 'very-low'
+    
+    const mecfsFindings: string[] = []
+    if (mecfsCriteria.debilitatingFatigue) mecfsFindings.push('Debilitating fatigue present')
+    if (mecfsCriteria.postExertionalMalaise) mecfsFindings.push('Post-exertional malaise documented')
+    if (mecfsCriteria.unrefreshingSleep) mecfsFindings.push('Unrefreshing sleep reported')
+    if (mecfsCriteria.cognitiveDifficulties) mecfsFindings.push('Cognitive difficulties noted')
+    if (mecfsCriteria.duration) mecfsFindings.push('Chronic duration (≥3 months)')
+
+    frameworks.push({
+      id: 'mecfs',
+      name: 'ME/CFS (NICE NG206)',
+      icon: Brain,
+      likelihood: mecfsLikelihood,
+      score: mecfsScore,
+      criteriaAssessment: mecfsCriteria,
+      keyFindings: mecfsFindings,
+      recommendations: mecfsScore >= 60 ? [
+        'Strong consideration for ME/CFS diagnosis',
+        'Complete NICE NG206 investigations',
+        'Consider specialist referral'
+      ] : ['Possible ME/CFS - requires further assessment'],
+      icdCode: 'G93.3',
+      confidence: mecfsCoreSymptoms >= 4 ? 'high' : mecfsCoreSymptoms >= 3 ? 'medium' : 'low'
+    })
+
+    // POTS Analysis
+    const potsCriteria = {
+      heartRateIncrease: CLINICAL_PATTERNS.pots.heartRateIncrease.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ),
+      orthostatic: CLINICAL_PATTERNS.pots.orthostatic.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ),
+      symptoms: CLINICAL_PATTERNS.pots.symptoms.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ),
+      duration: CLINICAL_PATTERNS.pots.duration.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      )
+    }
+    
+    const potsCoreSymptoms = Object.values(potsCriteria).filter(Boolean).length
+    let potsScore = potsCoreSymptoms * 25 // Each criterion worth 25 points
+    const potsLikelihood = potsScore >= 75 ? 'very-high' : 
+                          potsScore >= 50 ? 'high' : 
+                          potsScore >= 25 ? 'moderate' : 'low'
+    
+    const potsFindings: string[] = []
+    if (potsCriteria.heartRateIncrease) potsFindings.push('Heart rate increase on standing')
+    if (potsCriteria.orthostatic) potsFindings.push('Orthostatic symptoms present')
+    if (potsCriteria.symptoms) potsFindings.push('Associated POTS symptoms')
+    if (potsCriteria.duration) potsFindings.push('Chronic symptoms')
+
+    frameworks.push({
+      id: 'pots',
+      name: 'POTS',
+      icon: Heart,
+      likelihood: potsLikelihood,
+      score: potsScore,
+      criteriaAssessment: potsCriteria,
+      keyFindings: potsFindings,
+      recommendations: potsScore >= 50 ? [
+        'Consider POTS diagnosis',
+        'Perform stand test or tilt table',
+        'Consider POTS subtyping'
+      ] : ['Consider orthostatic intolerance assessment'],
+      icdCode: 'G90.1',
+      confidence: potsCoreSymptoms >= 3 ? 'high' : potsCoreSymptoms >= 2 ? 'medium' : 'low'
+    })
+
+    // Long COVID Analysis
+    const longCovidCriteria = {
+      covidHistory: CLINICAL_PATTERNS.longCovid.covidHistory.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ),
+      duration: CLINICAL_PATTERNS.longCovid.duration.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ),
+      multisystem: CLINICAL_PATTERNS.longCovid.multisystem.some(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      )
+    }
+    
+    const longCovidSymptoms = Object.values(longCovidCriteria).filter(Boolean).length
+    let longCovidScore = longCovidSymptoms * 33 // Each criterion worth 33 points
+    const longCovidLikelihood = longCovidScore >= 66 ? 'high' : 
+                               longCovidScore >= 33 ? 'moderate' : 'low'
+    
+    const longCovidFindings: string[] = []
+    if (longCovidCriteria.covidHistory) longCovidFindings.push('COVID-19 infection history')
+    if (longCovidCriteria.duration) longCovidFindings.push('Persistent symptoms post-COVID')
+    if (longCovidCriteria.multisystem) longCovidFindings.push('Multi-system involvement')
+
+    frameworks.push({
+      id: 'longcovid',
+      name: 'Long COVID',
+      icon: Zap,
+      likelihood: longCovidLikelihood,
+      score: longCovidScore,
+      criteriaAssessment: longCovidCriteria,
+      keyFindings: longCovidFindings,
+      recommendations: longCovidScore >= 33 ? [
+        'Consider Long COVID diagnosis',
+        'Multidisciplinary assessment',
+        'Symptom-based management'
+      ] : ['Monitor for post-COVID symptoms'],
+      icdCode: 'U09.9',
+      confidence: longCovidSymptoms >= 2 ? 'high' : 'low'
+    })
+
+    // POTS Subtype Analysis
+    const subtypeScores = {
+      hypovolemic: CLINICAL_PATTERNS.hypovolemic.filter(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ).length,
+      hyperadrenergic: CLINICAL_PATTERNS.hyperadrenergic.filter(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ).length,
+      neuropathic: CLINICAL_PATTERNS.neuropathic.filter(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ).length,
+      autoimmune: CLINICAL_PATTERNS.autoimmune.filter(pattern => 
+        lowerText.includes(pattern.toLowerCase())
+      ).length
+    }
+
+    // Add subtype frameworks if POTS is suspected
+    if (potsScore >= 25) {
+      Object.entries(subtypeScores).forEach(([subtype, score]) => {
+        if (score > 0) {
+          const subtypeScore = (score / 3) * 100 // Normalize to 100
+          const subtypeLikelihood = subtypeScore >= 66 ? 'high' : 
+                                   subtypeScore >= 33 ? 'moderate' : 'low'
+          
+          frameworks.push({
+            id: `pots_${subtype}`,
+            name: `POTS - ${subtype.charAt(0).toUpperCase() + subtype.slice(1)}`,
+            icon: subtype === 'hypovolemic' ? Droplets : 
+                  subtype === 'hyperadrenergic' ? Activity :
+                  subtype === 'neuropathic' ? Brain : Shield,
+            likelihood: subtypeLikelihood,
+            score: subtypeScore,
+            criteriaAssessment: { [subtype]: score > 0 },
+            keyFindings: [`${subtype} POTS features present`],
+            recommendations: [`Consider ${subtype} POTS subtype treatment`],
+            icdCode: 'G90.1',
+            confidence: score >= 2 ? 'high' : 'medium'
+          })
+        }
+      })
+    }
+
     // Check for red flags
     const redFlags = CLINICAL_PATTERNS.redFlags.filter(flag => 
       lowerText.includes(flag.toLowerCase())
     )
 
-    // Assess PEM
-    const pemEvidence = CLINICAL_PATTERNS.postExertionalMalaise.filter(pattern => 
-      lowerText.includes(pattern.toLowerCase())
-    )
-    
-    const pemIndicators = {
-      present: pemEvidence.length > 0,
-      severity: pemEvidence.length >= 3 ? 'severe' : 
-               pemEvidence.length >= 2 ? 'moderate' : 
-               pemEvidence.length >= 1 ? 'mild' : 'none' as 'none' | 'mild' | 'moderate' | 'severe',
-      evidence: pemEvidence
-    }
+    // Sort frameworks by likelihood and score
+    frameworks.sort((a, b) => {
+      const likelihoodOrder = { 'very-high': 5, 'high': 4, 'moderate': 3, 'low': 2, 'very-low': 1 }
+      return likelihoodOrder[b.likelihood] - likelihoodOrder[a.likelihood] || b.score - a.score
+    })
 
-    // Calculate overall score (0-100)
-    let score = 0
-    score += coreSymptoms * 15 // Core symptoms worth 15 points each
-    score += criteriaAssessment.duration ? 20 : 0 // Duration worth 20 points
-    score += pemIndicators.present ? 10 : 0 // PEM bonus
-    
-    // Penalty for red flags
-    score -= redFlags.length * 10
+    // Determine primary and secondary diagnoses
+    const primaryFramework = frameworks.find(f => f.likelihood === 'very-high' || f.likelihood === 'high')
+    const primaryDiagnosis = primaryFramework ? primaryFramework.name : null
+    const secondaryDiagnoses = frameworks
+      .filter(f => f !== primaryFramework && (f.likelihood === 'moderate' || f.likelihood === 'high'))
+      .map(f => f.name)
 
-    // Ensure score is between 0-100
-    score = Math.max(0, Math.min(100, score))
+    // Generate overall key findings
+    const keyFindings = frameworks
+      .filter(f => f.likelihood !== 'very-low' && f.likelihood !== 'low')
+      .flatMap(f => f.keyFindings)
 
-    // Determine likelihood
-    let mecfsLikelihood: 'very-high' | 'high' | 'moderate' | 'low' | 'very-low'
-    if (score >= 80) mecfsLikelihood = 'very-high'
-    else if (score >= 65) mecfsLikelihood = 'high'
-    else if (score >= 40) mecfsLikelihood = 'moderate'
-    else if (score >= 20) mecfsLikelihood = 'low'
-    else mecfsLikelihood = 'very-low'
-
-    // Generate findings
-    const keyFindings: string[] = []
-    if (criteriaAssessment.debilitatingFatigue) keyFindings.push('Debilitating fatigue documented')
-    if (criteriaAssessment.postExertionalMalaise) keyFindings.push('Post-exertional malaise present')
-    if (criteriaAssessment.unrefreshingSleep) keyFindings.push('Unrefreshing sleep reported')
-    if (criteriaAssessment.cognitiveDifficulties) keyFindings.push('Cognitive difficulties noted')
-    if (criteriaAssessment.duration) keyFindings.push('Chronic duration (≥3 months)')
-
-    // Generate recommendations
-    const recommendations: string[] = []
-    if (score >= 60) {
-      recommendations.push('Strong consideration for ME/CFS diagnosis')
-      recommendations.push('Complete NICE NG206 required investigations')
-      recommendations.push('Consider referral to ME/CFS specialist service')
-    } else if (score >= 30) {
-      recommendations.push('Possible ME/CFS - requires further assessment')
-      recommendations.push('Consider 3-month follow-up if symptoms persist')
-    } else {
-      recommendations.push('Low probability of ME/CFS')
-      recommendations.push('Consider alternative diagnoses')
-    }
-
+    // Generate overall recommendations
+    const overallRecommendations: string[] = []
     if (redFlags.length > 0) {
-      recommendations.unshift('RED FLAGS PRESENT - Urgent evaluation required')
+      overallRecommendations.push('🚨 RED FLAGS PRESENT - Urgent evaluation required')
+    }
+    
+    if (primaryDiagnosis) {
+      overallRecommendations.push(`Primary consideration: ${primaryDiagnosis}`)
+    }
+    
+    if (secondaryDiagnoses.length > 0) {
+      overallRecommendations.push(`Also consider: ${secondaryDiagnoses.join(', ')}`)
     }
 
-    // Differential diagnoses to consider
-    const differentialDiagnoses = [
-      'Thyroid dysfunction',
-      'Sleep disorders',
-      'Depression/anxiety',
-      'Autoimmune conditions',
-      'Chronic infections',
-      'Fibromyalgia'
-    ]
+    overallRecommendations.push('Complete targeted diagnostic workup')
+    overallRecommendations.push('Consider specialist referral if indicated')
 
     return {
-      overallScore: score,
-      mecfsLikelihood,
-      criteriaAssessment,
+      frameworks,
       redFlags,
-      pemIndicators,
-      differentialDiagnoses,
-      recommendations,
-      keyFindings
+      keyFindings,
+      overallRecommendations,
+      primaryDiagnosis,
+      secondaryDiagnoses
     }
   }
 
@@ -234,11 +402,11 @@ export default function CaseAnalyzer() {
 
   const getLikelihoodText = (likelihood: string) => {
     switch (likelihood) {
-      case 'very-high': return 'Very High (80-100%)'
-      case 'high': return 'High (65-79%)'
-      case 'moderate': return 'Moderate (40-64%)'
-      case 'low': return 'Low (20-39%)'
-      case 'very-low': return 'Very Low (0-19%)'
+      case 'very-high': return 'Very High'
+      case 'high': return 'High'
+      case 'moderate': return 'Moderate'
+      case 'low': return 'Low'
+      case 'very-low': return 'Very Low'
       default: return 'Unknown'
     }
   }
@@ -258,7 +426,7 @@ export default function CaseAnalyzer() {
             <FileText className="h-6 w-6 text-blue-600" />
             <div>
               <h1 className="text-3xl font-bold text-gray-900">Case Analyzer</h1>
-              <p className="text-gray-600">AI-powered clinical case analysis for ME/CFS assessment</p>
+              <p className="text-gray-600">Multi-framework clinical case analysis for ME/CFS, POTS, Long COVID & more</p>
             </div>
           </div>
         </div>
@@ -284,8 +452,11 @@ export default function CaseAnalyzer() {
                   <Textarea
                     placeholder="Enter patient case details here... 
 
-Example:
-32-year-old female presents with 8-month history of severe, debilitating fatigue following viral illness. Reports profound exhaustion that worsens significantly with minimal physical or mental activity. Experiences 'crashes' lasting days after simple tasks like grocery shopping. Sleep is unrefreshing despite 10+ hours. Significant brain fog with memory and concentration problems. Previously active marathon runner, now struggles with basic daily activities..."
+Example with POTS:
+28-year-old patient with 6-month history of severe fatigue and dizziness on standing. Heart rate increases from 70 to 120 bpm when standing, with palpitations and lightheadedness. Reports post-exertional malaise after minimal activity. Has history of autoimmune conditions and viral trigger. Also experiences brain fog, unrefreshing sleep, and salt cravings. POTS suspected with possible autoimmune (PAIS) subtype.
+
+Example with Long COVID:
+35-year-old with COVID-19 infection 8 months ago, now experiencing persistent multi-system symptoms including debilitating fatigue, brain fog, and exercise intolerance..."
                     value={caseText}
                     onChange={(e) => setCaseText(e.target.value)}
                     className="min-h-[300px] text-sm"
@@ -324,7 +495,7 @@ Example:
                 <Alert>
                   <Lightbulb className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>Tip:</strong> Include details about fatigue severity, activity tolerance, sleep quality, cognitive symptoms, duration, and any triggering events for best analysis.
+                    <strong>Tip:</strong> Include details about fatigue, orthostatic symptoms, heart rate changes, post-exertional malaise, sleep quality, cognitive symptoms, autoimmune history, COVID history, and triggering events for comprehensive analysis across all diagnostic frameworks.
                   </AlertDescription>
                 </Alert>
               </div>
@@ -335,66 +506,151 @@ Example:
           <div className="space-y-6">
             {analysisResult ? (
               <>
-                {/* Overall Assessment */}
+                {/* Red Flags Alert */}
+                {analysisResult.redFlags.length > 0 && (
+                  <Alert className="border-red-200 bg-red-50">
+                    <AlertTriangle className="h-4 w-4 text-red-600" />
+                    <AlertDescription className="text-red-800">
+                      <strong>🚨 RED FLAGS DETECTED:</strong> {analysisResult.redFlags.join(', ')}
+                      <br /><strong>Urgent evaluation required before proceeding with complex diagnoses.</strong>
+                    </AlertDescription>
+                  </Alert>
+                )}
+
+                {/* Primary Diagnosis */}
+                {analysisResult.primaryDiagnosis && (
+                  <Card className="border-2 border-blue-500 bg-blue-50">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2 text-blue-900">
+                        <CheckCircle className="h-5 w-5" />
+                        Primary Diagnostic Consideration
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="text-lg font-semibold text-blue-900">
+                        {analysisResult.primaryDiagnosis}
+                      </div>
+                      {analysisResult.secondaryDiagnoses.length > 0 && (
+                        <div className="mt-2 text-sm text-blue-800">
+                          <strong>Also consider:</strong> {analysisResult.secondaryDiagnoses.join(', ')}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* All Diagnostic Frameworks */}
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5" />
-                      ME/CFS Likelihood Assessment
+                      <Users className="h-5 w-5" />
+                      Multi-Framework Analysis Results
                     </CardTitle>
+                    <CardDescription>
+                      Assessment across all available diagnostic criteria
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-4">
-                      <div className="text-center">
-                        <div className="text-3xl font-bold mb-2">{analysisResult.overallScore}%</div>
-                        <Badge className={`text-sm ${getLikelihoodColor(analysisResult.mecfsLikelihood)}`}>
-                          {getLikelihoodText(analysisResult.mecfsLikelihood)}
-                        </Badge>
-                      </div>
-                      
-                      <Progress value={analysisResult.overallScore} className="h-3" />
-                      
-                      {analysisResult.redFlags.length > 0 && (
-                        <Alert className="border-red-200 bg-red-50">
-                          <AlertTriangle className="h-4 w-4 text-red-600" />
-                          <AlertDescription className="text-red-800">
-                            <strong>Red Flags Detected:</strong> {analysisResult.redFlags.join(', ')}
-                          </AlertDescription>
-                        </Alert>
-                      )}
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {analysisResult.frameworks.map((framework) => (
+                        <Card key={framework.id} className={`${
+                          framework.likelihood === 'very-high' || framework.likelihood === 'high' 
+                            ? 'border-2 border-orange-400 bg-orange-50' 
+                            : framework.likelihood === 'moderate' 
+                            ? 'border-yellow-300 bg-yellow-50'
+                            : 'border-gray-200'
+                        }`}>
+                          <CardHeader className="pb-3">
+                            <CardTitle className="text-sm flex items-center gap-2">
+                              <framework.icon className="h-4 w-4" />
+                              {framework.name}
+                            </CardTitle>
+                            <div className="flex justify-between items-center">
+                              <Badge className={`text-xs ${getLikelihoodColor(framework.likelihood)}`}>
+                                {getLikelihoodText(framework.likelihood)}
+                              </Badge>
+                              <Badge variant="outline" className="text-xs">
+                                {framework.score}% • {framework.confidence}
+                              </Badge>
+                            </div>
+                            <div className="text-xs text-gray-600">
+                              ICD-10: {framework.icdCode}
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <div className="space-y-2">
+                              <Progress value={framework.score} className="h-2" />
+                              
+                              {framework.keyFindings.length > 0 && (
+                                <div>
+                                  <div className="text-xs font-medium text-gray-700 mb-1">Key Findings:</div>
+                                  {framework.keyFindings.map((finding, idx) => (
+                                    <div key={idx} className="text-xs text-gray-600 flex items-start gap-1">
+                                      <CheckCircle className="h-3 w-3 text-green-600 mt-0.5 flex-shrink-0" />
+                                      {finding}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                              
+                              {framework.recommendations.length > 0 && (
+                                <div>
+                                  <div className="text-xs font-medium text-gray-700 mb-1">Recommendations:</div>
+                                  {framework.recommendations.map((rec, idx) => (
+                                    <div key={idx} className="text-xs text-blue-700 flex items-start gap-1">
+                                      <span className="text-blue-600 mt-0.5">•</span>
+                                      {rec}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
                     </div>
                   </CardContent>
                 </Card>
 
-                {/* NICE NG206 Criteria Assessment */}
+                {/* Overall Key Findings */}
+                {analysisResult.keyFindings.length > 0 && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Heart className="h-5 w-5" />
+                        Overall Key Clinical Findings
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid md:grid-cols-2 gap-2">
+                        {analysisResult.keyFindings.map((finding, idx) => (
+                          <div key={idx} className="flex items-start gap-2 text-sm">
+                            <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
+                            {finding}
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {/* Overall Recommendations */}
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <Brain className="h-5 w-5" />
-                      NICE NG206 Criteria Assessment
+                      <Lightbulb className="h-5 w-5" />
+                      Clinical Recommendations
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-3">
-                      {[
-                        { key: 'debilitatingFatigue', label: 'Debilitating fatigue' },
-                        { key: 'postExertionalMalaise', label: 'Post-exertional malaise' },
-                        { key: 'unrefreshingSleep', label: 'Unrefreshing sleep' },
-                        { key: 'cognitiveDifficulties', label: 'Cognitive difficulties' },
-                        { key: 'duration', label: 'Duration ≥3 months' }
-                      ].map(({ key, label }) => (
-                        <div key={key} className="flex items-center gap-2">
-                          {analysisResult.criteriaAssessment[key as keyof typeof analysisResult.criteriaAssessment] ? (
-                            <CheckCircle className="h-4 w-4 text-green-600" />
-                          ) : (
-                            <div className="w-4 h-4 rounded-full border-2 border-gray-300" />
-                          )}
-                          <span className={`text-sm ${
-                            analysisResult.criteriaAssessment[key as keyof typeof analysisResult.criteriaAssessment] 
-                              ? 'text-green-800 font-medium' 
-                              : 'text-gray-600'
-                          }`}>
-                            {label}
+                    <div className="space-y-2">
+                      {analysisResult.overallRecommendations.map((rec, idx) => (
+                        <div key={idx} className="flex items-start gap-2">
+                          <span className={`mt-1 ${rec.includes('🚨') ? 'text-red-600' : 'text-blue-600'}`}>
+                            {rec.includes('🚨') ? '🚨' : '•'}
+                          </span>
+                          <span className={`text-sm ${rec.includes('🚨') ? 'text-red-800 font-semibold' : ''}`}>
+                            {rec.replace('🚨 ', '')}
                           </span>
                         </div>
                       ))}
@@ -402,82 +658,44 @@ Example:
                   </CardContent>
                 </Card>
 
-                {/* PEM Assessment */}
-                {analysisResult.pemIndicators.present && (
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <Activity className="h-5 w-5" />
-                        Post-Exertional Malaise
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-2">
-                        <Badge variant="outline" className="capitalize">
-                          {analysisResult.pemIndicators.severity} severity
-                        </Badge>
-                        <div className="text-sm text-gray-600">
-                          <strong>Evidence found:</strong>
-                          <ul className="list-disc list-inside mt-1">
-                            {analysisResult.pemIndicators.evidence.map((evidence, idx) => (
-                              <li key={idx}>{evidence}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                )}
-
-                {/* Key Findings */}
-                <Card>
+                {/* Next Steps */}
+                <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
                   <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Heart className="h-5 w-5" />
-                      Key Clinical Findings
+                    <CardTitle className="flex items-center gap-2 text-blue-900">
+                      <Activity className="h-5 w-5" />
+                      Suggested Next Steps
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="space-y-2">
-                      {analysisResult.keyFindings.map((finding, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          <CheckCircle className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                          <span className="text-sm">{finding}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Recommendations */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Clinical Recommendations</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2">
-                      {analysisResult.recommendations.map((rec, idx) => (
-                        <div key={idx} className="flex items-start gap-2">
-                          <span className="text-blue-600 mt-1">•</span>
-                          <span className="text-sm">{rec}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Differential Diagnoses */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Consider Alternative Diagnoses</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 gap-2">
-                      {analysisResult.differentialDiagnoses.map((diagnosis, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs">
-                          {diagnosis}
-                        </Badge>
-                      ))}
+                    <div className="space-y-3">
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <Link href="/quick-screen" 
+                          className="flex items-center gap-2 p-3 bg-white rounded-lg border hover:shadow-md transition-shadow">
+                          <Clock className="h-4 w-4 text-blue-600" />
+                          <div>
+                            <div className="text-sm font-medium">Quick Screen</div>
+                            <div className="text-xs text-gray-600">Structured assessment</div>
+                          </div>
+                        </Link>
+                        
+                        <Link href="/stand-test" 
+                          className="flex items-center gap-2 p-3 bg-white rounded-lg border hover:shadow-md transition-shadow">
+                          <Heart className="h-4 w-4 text-red-600" />
+                          <div>
+                            <div className="text-sm font-medium">Stand Test</div>
+                            <div className="text-xs text-gray-600">POTS evaluation</div>
+                          </div>
+                        </Link>
+                        
+                        <Link href="/criteria-engine" 
+                          className="flex items-center gap-2 p-3 bg-white rounded-lg border hover:shadow-md transition-shadow">
+                          <Brain className="h-4 w-4 text-purple-600" />
+                          <div>
+                            <div className="text-sm font-medium">Criteria Engine</div>
+                            <div className="text-xs text-gray-600">Formal diagnosis</div>
+                          </div>
+                        </Link>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>

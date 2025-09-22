@@ -1,0 +1,11 @@
+{
+  "id": "prt_9711bf9ae001iYWKT2t5oRW8HQ",
+  "messageID": "msg_9711b80a5001bVZPJ0r9XNFluA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "Perfect! Now I understand the full scope of diagnostic frameworks available in this app. Based on my research, I can see that the app supports:\n\n1. **ME/CFS** (NICE NG206 criteria)\n2. **POTS** (ESC 2018/AAS-EFAS 2021 criteria) \n3. **Long COVID** \n4. **POTS Subtypes** (Hypovolemic, Neuropathic, Hyperadrenergic, Autoimmune)\n5. **Red Flag** conditions\n6. **PEM assessment**\n7. **Energy Management** (NICE NG206)\n\nLet me completely rewrite the Case Analyzer to support all these frameworks with proper text pattern recognition for POTS and PAIS (which seems to be covered under POTS Autoimmune subtype):",
+  "time": {
+    "start": 1758539288006,
+    "end": 1758539288006
+  }
+}

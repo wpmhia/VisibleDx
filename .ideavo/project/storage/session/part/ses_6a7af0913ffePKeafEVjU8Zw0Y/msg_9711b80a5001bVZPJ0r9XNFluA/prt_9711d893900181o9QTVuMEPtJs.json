@@ -1,0 +1,26 @@
+{
+  "id": "prt_9711d893900181o9QTVuMEPtJs",
+  "messageID": "msg_9711b80a5001bVZPJ0r9XNFluA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01H3iPDZnpgSU9ZoaXA8owXM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "  const getLikelihoodColor = (likelihood: string) => {\n    switch (likelihood) {\n      case 'very-high': return 'bg-red-100 text-red-800 border-red-200'\n      case 'high': return 'bg-orange-100 text-orange-800 border-orange-200'\n      case 'moderate': return 'bg-yellow-100 text-yellow-800 border-yellow-200'\n      case 'low': return 'bg-blue-100 text-blue-800 border-blue-200'\n      case 'very-low': return 'bg-gray-100 text-gray-800 border-gray-200'\n      default: return 'bg-gray-100 text-gray-800 border-gray-200'\n    }\n  }\n\n  const getLikelihoodText = (likelihood: string) => {\n    switch (likelihood) {\n      case 'very-high': return 'Very High (80-100%)'\n      case 'high': return 'High (65-79%)'\n      case 'moderate': return 'Moderate (40-64%)'\n      case 'low': return 'Low (20-39%)'\n      case 'very-low': return 'Very Low (0-19%)'\n      default: return 'Unknown'\n    }\n  }",
+      "newString": "  const getLikelihoodColor = (likelihood: string) => {\n    switch (likelihood) {\n      case 'very-high': return 'bg-red-100 text-red-800 border-red-200'\n      case 'high': return 'bg-orange-100 text-orange-800 border-orange-200'\n      case 'moderate': return 'bg-yellow-100 text-yellow-800 border-yellow-200'\n      case 'low': return 'bg-blue-100 text-blue-800 border-blue-200'\n      case 'very-low': return 'bg-gray-100 text-gray-800 border-gray-200'\n      default: return 'bg-gray-100 text-gray-800 border-gray-200'\n    }\n  }\n\n  const getLikelihoodText = (likelihood: string) => {\n    switch (likelihood) {\n      case 'very-high': return 'Very High'\n      case 'high': return 'High'\n      case 'moderate': return 'Moderate'\n      case 'low': return 'Low'\n      case 'very-low': return 'Very Low'\n      default: return 'Unknown'\n    }\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/case-analyzer/page.tsx\n===================================================================\n--- /home/user/project/app/case-analyzer/page.tsx\n+++ /home/user/project/app/case-analyzer/page.tsx\n@@ -401,13 +401,13 @@\n }\n \n const getLikelihoodText = (likelihood: string) => {\n   switch (likelihood) {\n-    case 'very-high': return 'Very High (80-100%)'\n-    case 'high': return 'High (65-79%)'\n-    case 'moderate': return 'Moderate (40-64%)'\n-    case 'low': return 'Low (20-39%)'\n-    case 'very-low': return 'Very Low (0-19%)'\n+    case 'very-high': return 'Very High'\n+    case 'high': return 'High'\n+    case 'moderate': return 'Moderate'\n+    case 'low': return 'Low'\n+    case 'very-low': return 'Very Low'\n     default: return 'Unknown'\n   }\n }\n \n"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539391498,
+      "end": 1758539391508
+    }
+  }
+}

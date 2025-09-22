@@ -1,0 +1,73 @@
+{
+  "id": "prt_9711b9249001GOniLx7USPM1a5",
+  "messageID": "msg_9711b80a5001bVZPJ0r9XNFluA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01RhCqMhddxKfnYENpmK2QNS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Expand Case Analyzer to support all diagnostic frameworks (POTS, PAIS, etc.)",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "expand_case_analyzer"
+        },
+        {
+          "content": "Research existing app modules to identify all diagnostic criteria",
+          "status": "pending",
+          "priority": "high",
+          "id": "research_existing_modules"
+        },
+        {
+          "content": "Update text analysis engine to detect POTS and PAIS patterns",
+          "status": "pending",
+          "priority": "high",
+          "id": "update_analysis_engine"
+        },
+        {
+          "content": "Add comparative scoring across multiple diagnostic frameworks",
+          "status": "pending",
+          "priority": "medium",
+          "id": "add_comparative_scoring"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Expand Case Analyzer to support all diagnostic frameworks (POTS, PAIS, etc.)\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"expand_case_analyzer\"\n  },\n  {\n    \"content\": \"Research existing app modules to identify all diagnostic criteria\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"research_existing_modules\"\n  },\n  {\n    \"content\": \"Update text analysis engine to detect POTS and PAIS patterns\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"update_analysis_engine\"\n  },\n  {\n    \"content\": \"Add comparative scoring across multiple diagnostic frameworks\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"add_comparative_scoring\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Expand Case Analyzer to support all diagnostic frameworks (POTS, PAIS, etc.)",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "expand_case_analyzer"
+        },
+        {
+          "content": "Research existing app modules to identify all diagnostic criteria",
+          "status": "pending",
+          "priority": "high",
+          "id": "research_existing_modules"
+        },
+        {
+          "content": "Update text analysis engine to detect POTS and PAIS patterns",
+          "status": "pending",
+          "priority": "high",
+          "id": "update_analysis_engine"
+        },
+        {
+          "content": "Add comparative scoring across multiple diagnostic frameworks",
+          "status": "pending",
+          "priority": "medium",
+          "id": "add_comparative_scoring"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758539259295,
+      "end": 1758539259304
+    }
+  }
+}

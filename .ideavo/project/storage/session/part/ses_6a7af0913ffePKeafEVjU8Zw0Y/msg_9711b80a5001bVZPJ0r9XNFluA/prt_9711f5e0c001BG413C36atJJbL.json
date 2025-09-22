@@ -1,0 +1,26 @@
+{
+  "id": "prt_9711f5e0c001BG413C36atJJbL",
+  "messageID": "msg_9711b80a5001bVZPJ0r9XNFluA",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_015WocusTknBLkzPiGfmEakm",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "    frameworks.push({\n      id: 'longcovid',\n      name: 'Long COVID',\n      icon: Virus,\n      likelihood: longCovidLikelihood,\n      score: longCovidScore,\n      criteriaAssessment: longCovidCriteria,\n      keyFindings: longCovidFindings,\n      recommendations: longCovidScore >= 33 ? [\n        'Consider Long COVID diagnosis',\n        'Multidisciplinary assessment',\n        'Symptom-based management'\n      ] : ['Monitor for post-COVID symptoms'],\n      icdCode: 'U09.9',\n      confidence: longCovidSymptoms >= 2 ? 'high' : 'low'\n    })",
+      "newString": "    frameworks.push({\n      id: 'longcovid',\n      name: 'Long COVID',\n      icon: Zap,\n      likelihood: longCovidLikelihood,\n      score: longCovidScore,\n      criteriaAssessment: longCovidCriteria,\n      keyFindings: longCovidFindings,\n      recommendations: longCovidScore >= 33 ? [\n        'Consider Long COVID diagnosis',\n        'Multidisciplinary assessment',\n        'Symptom-based management'\n      ] : ['Monitor for post-COVID symptoms'],\n      icdCode: 'U09.9',\n      confidence: longCovidSymptoms >= 2 ? 'high' : 'low'\n    })"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/case-analyzer/page.tsx\n===================================================================\n--- /home/user/project/app/case-analyzer/page.tsx\n+++ /home/user/project/app/case-analyzer/page.tsx\n@@ -269,9 +269,9 @@\n \n frameworks.push({\n   id: 'longcovid',\n   name: 'Long COVID',\n-  icon: Virus,\n+  icon: Zap,\n   likelihood: longCovidLikelihood,\n   score: longCovidScore,\n   criteriaAssessment: longCovidCriteria,\n   keyFindings: longCovidFindings,\n"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539509974,
+      "end": 1758539509979
+    }
+  }
+}
