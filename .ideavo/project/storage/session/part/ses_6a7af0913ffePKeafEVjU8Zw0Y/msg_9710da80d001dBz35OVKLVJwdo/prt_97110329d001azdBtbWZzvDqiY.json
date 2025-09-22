@@ -1,0 +1,25 @@
+{
+  "id": "prt_97110329d001azdBtbWZzvDqiY",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01RSnfB5Nfd1zSfYsPdWkeFS",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/types.ts",
+      "offset": 95,
+      "limit": 15
+    },
+    "output": "<file>\n00096|       }\n00097|       criteriaEngine: {\n00098|         title: string\n00099|         description: string\n00100|       }\n00101|       subtypeAdvisor: {\n00102|         title: string\n00103|         description: string\n00104|       }\n00105|       energyManagement: {\n00106|         title: string\n00107|         description: string\n00108|       }\n00109|     }\n00110|     stats: {\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "      }\n      criteriaEngine: {\n        title: string\n        description: string\n      }\n      subtypeAdvisor: {\n        title: string\n        description: string\n      }\n      energyManagement: {\n        title: string\n        description: string\n      }\n    }\n    stats: {"
+    },
+    "title": "lib/translations/types.ts",
+    "time": {
+      "start": 1758538511682,
+      "end": 1758538511684
+    }
+  }
+}

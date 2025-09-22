@@ -104,6 +104,10 @@ export const en: Translation = {
       energyManagement: {
         title: 'Energy Management',
         description: 'NICE NG206 energy management planning tool'
+      },
+      caseAnalyzer: {
+        title: 'Case Analyzer',
+        description: 'AI-powered clinical case analysis for ME/CFS assessment'
       }
     },
     stats: {

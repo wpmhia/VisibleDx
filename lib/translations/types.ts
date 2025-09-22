@@ -106,6 +106,10 @@ export interface Translation {
         title: string
         description: string
       }
+      caseAnalyzer: {
+        title: string
+        description: string
+      }
     }
     stats: {
       diagnosticDelay: string

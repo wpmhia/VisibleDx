@@ -1,0 +1,25 @@
+{
+  "id": "prt_97110a0630014pwJF469qVoQA0",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01ShtVJd2BXQephEhGp3CVaf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 95,
+      "limit": 15
+    },
+    "output": "<file>\n00096|       criteriaEngine: {\n00097|         title: 'Criteria Engine',\n00098|         description: 'CDC, IOM, ESC, WHO richtlijnen met ICD-10 codes'\n00099|       },\n00100|       subtypeAdvisor: {\n00101|         title: 'Subtype & Rx Adviseur',\n00102|         description: 'Gepersonaliseerde behandelingsaanbevelingen'\n00103|       },\n00104|       energyManagement: {\n00105|         title: 'Energiebeheer',\n00106|         description: 'NICE NG206 energiebeheer planningsgereedschap'\n00107|       }\n00108|     },\n00109|     stats: {\n00110|       diagnosticDelay: '4-5 jaar gem. diagnostische vertraging',\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "      criteriaEngine: {\n        title: 'Criteria Engine',\n        description: 'CDC, IOM, ESC, WHO richtlijnen met ICD-10 codes'\n      },\n      subtypeAdvisor: {\n        title: 'Subtype & Rx Adviseur',\n        description: 'Gepersonaliseerde behandelingsaanbevelingen'\n      },\n      energyManagement: {\n        title: 'Energiebeheer',\n        description: 'NICE NG206 energiebeheer planningsgereedschap'\n      }\n    },\n    stats: {\n      diagnosticDelay: '4-5 jaar gem. diagnostische vertraging',"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758538539680,
+      "end": 1758538539682
+    }
+  }
+}

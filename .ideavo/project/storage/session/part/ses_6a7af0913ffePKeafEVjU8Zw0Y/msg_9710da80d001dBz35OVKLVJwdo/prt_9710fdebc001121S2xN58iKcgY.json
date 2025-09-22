@@ -1,0 +1,25 @@
+{
+  "id": "prt_9710fdebc001121S2xN58iKcgY",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01AKLJyPRLZNN1TMnVyPzk6a",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "offset": 105,
+      "limit": 10
+    },
+    "output": "<file>\n00106|         description: 'NICE NG206 energy management planning tool'\n00107|       }\n00108|     },\n00109|     stats: {\n00110|       diagnosticDelay: '4-5 year avg diagnostic delay',\n00111|       doctorsConsulted: '≥7 doctors typically consulted',\n00112|       sensitivityValidated: '94% sensitivity validated'\n00113|     },\n00114|     algorithm: {\n00115|       title: 'Educational Algorithm',\n\n(File has more lines. Use 'offset' parameter to read beyond line 115)\n</file>",
+    "metadata": {
+      "preview": "        description: 'NICE NG206 energy management planning tool'\n      }\n    },\n    stats: {\n      diagnosticDelay: '4-5 year avg diagnostic delay',\n      doctorsConsulted: '≥7 doctors typically consulted',\n      sensitivityValidated: '94% sensitivity validated'\n    },\n    algorithm: {\n      title: 'Educational Algorithm',"
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758538490225,
+      "end": 1758538490227
+    }
+  }
+}

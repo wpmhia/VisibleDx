@@ -1,0 +1,26 @@
+{
+  "id": "prt_9710fc5f60010aHpdFM4Gh2oxh",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Vtu2CaV1YLabTCnSLj8b4F",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "  {\n    href: '/subtype-advisor',\n    icon: Settings,\n    title: t.dashboard.modules.subtypeAdvisor.title,\n    description: t.dashboard.modules.subtypeAdvisor.description,\n    badge: null\n  }",
+      "newString": "  {\n    href: '/subtype-advisor',\n    icon: Settings,\n    title: t.dashboard.modules.subtypeAdvisor.title,\n    description: t.dashboard.modules.subtypeAdvisor.description,\n    badge: null\n  },\n  {\n    href: '/energy-management',\n    icon: Battery,\n    title: t.dashboard.modules.energyManagement.title,\n    description: t.dashboard.modules.energyManagement.description,\n    badge: null\n  },\n  {\n    href: '/case-analyzer',\n    icon: FileText,\n    title: 'Case Analyzer',\n    description: 'AI-powered clinical case analysis for ME/CFS assessment',\n    badge: 'NEW'\n  }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -90,8 +90,22 @@\n     icon: Settings,\n     title: t.dashboard.modules.subtypeAdvisor.title,\n     description: t.dashboard.modules.subtypeAdvisor.description,\n     badge: null\n+  },\n+  {\n+    href: '/energy-management',\n+    icon: Battery,\n+    title: t.dashboard.modules.energyManagement.title,\n+    description: t.dashboard.modules.energyManagement.description,\n+    badge: null\n+  },\n+  {\n+    href: '/case-analyzer',\n+    icon: FileText,\n+    title: 'Case Analyzer',\n+    description: 'AI-powered clinical case analysis for ME/CFS assessment',\n+    badge: 'NEW'\n   }\n ]\n \n const guidelines = [\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758538485978,
+      "end": 1758538485983
+    }
+  }
+}

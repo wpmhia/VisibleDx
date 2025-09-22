@@ -1,0 +1,26 @@
+{
+  "id": "prt_97110afd8001WrFCp2BA3caq5m",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01TC1tkFVPh8W1BXj4sGyVot",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "      energyManagement: {\n        title: 'Energiebeheer',\n        description: 'NICE NG206 energiebeheer planningsgereedschap'\n      }",
+      "newString": "      energyManagement: {\n        title: 'Energiebeheer',\n        description: 'NICE NG206 energiebeheer planningsgereedschap'\n      },\n      caseAnalyzer: {\n        title: 'Case Analyzer',\n        description: 'AI-gedreven klinische case analyse voor ME/CFS beoordeling'\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -103,8 +103,12 @@\n   },\n   energyManagement: {\n     title: 'Energiebeheer',\n     description: 'NICE NG206 energiebeheer planningsgereedschap'\n+  },\n+  caseAnalyzer: {\n+    title: 'Case Analyzer',\n+    description: 'AI-gedreven klinische case analyse voor ME/CFS beoordeling'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 jaar gem. diagnostische vertraging',\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758538544809,
+      "end": 1758538544816
+    }
+  }
+}

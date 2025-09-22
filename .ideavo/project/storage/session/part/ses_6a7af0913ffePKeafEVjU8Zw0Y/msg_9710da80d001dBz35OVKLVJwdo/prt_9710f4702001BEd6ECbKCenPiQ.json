@@ -1,0 +1,25 @@
+{
+  "id": "prt_9710f4702001BEd6ECbKCenPiQ",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UiEx3W65SPQgdUJmuShtEP",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 50,
+      "limit": 50
+    },
+    "output": "<file>\n00051|   {\n00052|     href: '/quick-screen',\n00053|     icon: Clock,\n00054|     title: t.dashboard.modules.quickScreen.title,\n00055|     description: t.dashboard.modules.quickScreen.description,\n00056|     badge: null\n00057|   },\n00058|   {\n00059|     href: '/red-flag-checker',\n00060|     icon: AlertTriangle,\n00061|     title: t.dashboard.modules.redFlag.title,\n00062|     description: t.dashboard.modules.redFlag.description,\n00063|     badge: null\n00064|   },\n00065|   {\n00066|     href: '/stand-test',\n00067|     icon: Heart,\n00068|     title: t.dashboard.modules.standTest.title,\n00069|     description: t.dashboard.modules.standTest.description,\n00070|     badge: null\n00071|   },\n00072|   {\n00073|     href: '/pem-quest',\n00074|     icon: Activity,\n00075|     title: t.dashboard.modules.pemQuest.title,\n00076|     description: t.dashboard.modules.pemQuest.description,\n00077|     badge: null\n00078|   },\n00079|   {\n00080|     href: '/criteria-engine',\n00081|     icon: BarChart3,\n00082|     title: t.dashboard.modules.criteriaEngine.title,\n00083|     description: t.dashboard.modules.criteriaEngine.description,\n00084|     badge: null\n00085|   },\n00086|   {\n00087|     href: '/subtype-advisor',\n00088|     icon: Settings,\n00089|     title: t.dashboard.modules.subtypeAdvisor.title,\n00090|     description: t.dashboard.modules.subtypeAdvisor.description,\n00091|     badge: null\n00092|   }\n00093| ]\n00094| \n00095| const guidelines = [\n00096|   {\n00097|     title: 'ME/CFS Basics - CDC (2024)',\n00098|     url: 'https://www.cdc.gov/me-cfs/about/',\n00099|     organization: 'CDC'\n00100|   },\n\n(File has more lines. Use 'offset' parameter to read beyond line 100)\n</file>",
+    "metadata": {
+      "preview": "  {\n    href: '/quick-screen',\n    icon: Clock,\n    title: t.dashboard.modules.quickScreen.title,\n    description: t.dashboard.modules.quickScreen.description,\n    badge: null\n  },\n  {\n    href: '/red-flag-checker',\n    icon: AlertTriangle,\n    title: t.dashboard.modules.redFlag.title,\n    description: t.dashboard.modules.redFlag.description,\n    badge: null\n  },\n  {\n    href: '/stand-test',\n    icon: Heart,\n    title: t.dashboard.modules.standTest.title,\n    description: t.dashboard.modules.standTest.description,\n    badge: null"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758538451523,
+      "end": 1758538451526
+    }
+  }
+}

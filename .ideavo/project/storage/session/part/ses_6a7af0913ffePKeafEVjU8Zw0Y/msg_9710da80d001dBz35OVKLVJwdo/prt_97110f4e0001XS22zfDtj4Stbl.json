@@ -1,0 +1,26 @@
+{
+  "id": "prt_97110f4e0001XS22zfDtj4Stbl",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01UwtooDSpHP7Y3K9zayDYy7",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Test build with new Case Analyzer module"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/case-analyzer/page.tsx:165:66\nType error: Argument of type 'string' is not assignable to parameter of type 'never'.\n\n\u001b[0m \u001b[90m 163 |\u001b[39m     \u001b[90m// Generate findings\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 164 |\u001b[39m     \u001b[36mconst\u001b[39m keyFindings \u001b[33m=\u001b[39m []\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mdebilitatingFatigue) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Debilitating fatigue documented'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 166 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mpostExertionalMalaise) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Post-exertional malaise present'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 167 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39munrefreshingSleep) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Unrefreshing sleep reported'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 168 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mcognitiveDifficulties) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Cognitive difficulties noted'\u001b[39m)\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/case-analyzer/page.tsx:165:66\nType error: Argument of type 'string' is not assignable to parameter of type 'never'.\n\n\u001b[0m \u001b[90m 163 |\u001b[39m     \u001b[90m// Generate findings\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 164 |\u001b[39m     \u001b[36mconst\u001b[39m keyFindings \u001b[33m=\u001b[39m []\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 165 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mdebilitatingFatigue) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Debilitating fatigue documented'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 166 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mpostExertionalMalaise) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Post-exertional malaise present'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 167 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39munrefreshingSleep) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Unrefreshing sleep reported'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 168 |\u001b[39m     \u001b[36mif\u001b[39m (criteriaAssessment\u001b[33m.\u001b[39mcognitiveDifficulties) keyFindings\u001b[33m.\u001b[39mpush(\u001b[32m'Cognitive difficulties noted'\u001b[39m)\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Test build with new Case Analyzer module"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758538561433,
+      "end": 1758538597384
+    }
+  }
+}

@@ -34,7 +34,9 @@ import {
   BookOpen,
   ExternalLink,
   Info,
-  User
+  User,
+  FileText,
+  Battery
 } from 'lucide-react'
 import VirusIcon from '@/components/virus-icon'
 import { useTranslation } from '@/lib/language-context'
@@ -89,6 +91,20 @@ const getAssessmentModules = (t: any) => [
     title: t.dashboard.modules.subtypeAdvisor.title,
     description: t.dashboard.modules.subtypeAdvisor.description,
     badge: null
+  },
+  {
+    href: '/energy-management',
+    icon: Battery,
+    title: t.dashboard.modules.energyManagement.title,
+    description: t.dashboard.modules.energyManagement.description,
+    badge: null
+  },
+  {
+    href: '/case-analyzer',
+    icon: FileText,
+    title: t.dashboard.modules.caseAnalyzer.title,
+    description: t.dashboard.modules.caseAnalyzer.description,
+    badge: 'NEW'
   }
 ]
 

@@ -1,0 +1,25 @@
+{
+  "id": "prt_971107b630014kEuGLxLYIxiCA",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01UqMgNfVuepwSivZbScWcQJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 95,
+      "limit": 15
+    },
+    "output": "<file>\n00096|       criteriaEngine: {\n00097|         title: 'Kriterier Motor',\n00098|         description: 'CDC, IOM, ESC, WHO retningslinjer med ICD-10 koder'\n00099|       },\n00100|       subtypeAdvisor: {\n00101|         title: 'Subtype & Rx Rådgiver',\n00102|         description: 'Personaliserede behandlingsanbefalinger'\n00103|       },\n00104|       energyManagement: {\n00105|         title: 'Energistyring',\n00106|         description: 'NICE NG206 energistyringsplanlægningsværktøj'\n00107|       }\n00108|     },\n00109|     stats: {\n00110|       diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "      criteriaEngine: {\n        title: 'Kriterier Motor',\n        description: 'CDC, IOM, ESC, WHO retningslinjer med ICD-10 koder'\n      },\n      subtypeAdvisor: {\n        title: 'Subtype & Rx Rådgiver',\n        description: 'Personaliserede behandlingsanbefalinger'\n      },\n      energyManagement: {\n        title: 'Energistyring',\n        description: 'NICE NG206 energistyringsplanlægningsværktøj'\n      }\n    },\n    stats: {\n      diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758538530213,
+      "end": 1758538530215
+    }
+  }
+}

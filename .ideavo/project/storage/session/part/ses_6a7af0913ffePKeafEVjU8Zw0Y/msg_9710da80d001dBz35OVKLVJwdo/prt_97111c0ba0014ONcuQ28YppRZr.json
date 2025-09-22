@@ -1,0 +1,26 @@
+{
+  "id": "prt_97111c0ba0014ONcuQ28YppRZr",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_013qktoENcDqXdh3dDvnnd5s",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "    // Generate recommendations\n    const recommendations = []",
+      "newString": "    // Generate recommendations\n    const recommendations: string[] = []"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/case-analyzer/page.tsx\n===================================================================\n--- /home/user/project/app/case-analyzer/page.tsx\n+++ /home/user/project/app/case-analyzer/page.tsx\n@@ -168,9 +168,9 @@\n if (criteriaAssessment.cognitiveDifficulties) keyFindings.push('Cognitive difficulties noted')\n if (criteriaAssessment.duration) keyFindings.push('Chronic duration (≥3 months)')\n \n // Generate recommendations\n-const recommendations = []\n+const recommendations: string[] = []\n if (score >= 60) {\n   recommendations.push('Strong consideration for ME/CFS diagnosis')\n   recommendations.push('Complete NICE NG206 required investigations')\n   recommendations.push('Consider referral to ME/CFS specialist service')\n"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758538613668,
+      "end": 1758538613673
+    }
+  }
+}

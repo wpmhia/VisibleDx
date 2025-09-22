@@ -1,0 +1,25 @@
+{
+  "id": "prt_970ff5236001NC9UHwSO2rrYPD",
+  "messageID": "msg_970ff2714001g4EaLYBcdFtWgh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01GNxRU52TTaJaEHrhhocYfT",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "offset": 10,
+      "limit": 30
+    },
+    "output": "<file>\n00011|   DropdownMenuLabel,\n00012|   DropdownMenuSeparator,\n00013|   DropdownMenuTrigger,\n00014| } from '@/components/ui/dropdown-menu'\n00015| import {\n00016|   Sheet,\n00017|   SheetContent,\n00018|   SheetDescription,\n00019|   SheetHeader,\n00020|   SheetTitle,\n00021|   SheetTrigger,\n00022| } from '@/components/ui/sheet'\n00023| import { Badge } from '@/components/ui/badge'\n00024| import { \n00025|   Home, \n00026|   Menu, \n00027|   Search, \n00028|   Clock, \n00029|   AlertTriangle, \n00030|   Heart, \n00031|   Activity, \n00032|   BarChart3, \n00033|   Settings,\n00034|   BookOpen,\n00035|   ExternalLink,\n00036|   Info,\n00037|   User\n00038| } from 'lucide-react'\n00039| import VirusIcon from '@/components/virus-icon'\n00040| import { useTranslation } from '@/lib/language-context'\n\n(File has more lines. Use 'offset' parameter to read beyond line 40)\n</file>",
+    "metadata": {
+      "preview": "  DropdownMenuLabel,\n  DropdownMenuSeparator,\n  DropdownMenuTrigger,\n} from '@/components/ui/dropdown-menu'\nimport {\n  Sheet,\n  SheetContent,\n  SheetDescription,\n  SheetHeader,\n  SheetTitle,\n  SheetTrigger,\n} from '@/components/ui/sheet'\nimport { Badge } from '@/components/ui/badge'\nimport { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, "
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758537405955,
+      "end": 1758537405965
+    }
+  }
+}

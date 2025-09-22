@@ -1,0 +1,26 @@
+{
+  "id": "prt_971108c0e001wKkR4ZT9rWIt36",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01QxNA9daeymuYVxnC8JWnfw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "      energyManagement: {\n        title: 'Energistyring',\n        description: 'NICE NG206 energistyringsplanlægningsværktøj'\n      }",
+      "newString": "      energyManagement: {\n        title: 'Energistyring',\n        description: 'NICE NG206 energistyringsplanlægningsværktøj'\n      },\n      caseAnalyzer: {\n        title: 'Sag Analysator',\n        description: 'AI-drevet klinisk sag analyse for ME/CFS vurdering'\n      }"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -103,8 +103,12 @@\n   },\n   energyManagement: {\n     title: 'Energistyring',\n     description: 'NICE NG206 energistyringsplanlægningsværktøj'\n+  },\n+  caseAnalyzer: {\n+    title: 'Sag Analysator',\n+    description: 'AI-drevet klinisk sag analyse for ME/CFS vurdering'\n   }\n },\n stats: {\n   diagnosticDelay: '4-5 år gns. diagnostisk forsinkelse',\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758538535579,
+      "end": 1758538535593
+    }
+  }
+}

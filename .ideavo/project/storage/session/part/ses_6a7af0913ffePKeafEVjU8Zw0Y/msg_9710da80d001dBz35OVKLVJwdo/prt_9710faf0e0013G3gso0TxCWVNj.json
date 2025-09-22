@@ -1,0 +1,26 @@
+{
+  "id": "prt_9710faf0e0013G3gso0TxCWVNj",
+  "messageID": "msg_9710da80d001dBz35OVKLVJwdo",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01BxnEdMEPb1mKH6jPCEb6s9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/components/navigation.tsx",
+      "oldString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User\n} from 'lucide-react'",
+      "newString": "import { \n  Home, \n  Menu, \n  Search, \n  Clock, \n  AlertTriangle, \n  Heart, \n  Activity, \n  BarChart3, \n  Settings,\n  BookOpen,\n  ExternalLink,\n  Info,\n  User,\n  FileText,\n  Battery\n} from 'lucide-react'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/components/navigation.tsx\n===================================================================\n--- /home/user/project/components/navigation.tsx\n+++ /home/user/project/components/navigation.tsx\n@@ -33,9 +33,11 @@\n   Settings,\n   BookOpen,\n   ExternalLink,\n   Info,\n-  User\n+  User,\n+  FileText,\n+  Battery\n } from 'lucide-react'\n import VirusIcon from '@/components/virus-icon'\n import { useTranslation } from '@/lib/language-context'\n import { LanguageSelector } from '@/components/language-selector'\n"
+    },
+    "title": "components/navigation.tsx",
+    "time": {
+      "start": 1758538479414,
+      "end": 1758538479425
+    }
+  }
+}

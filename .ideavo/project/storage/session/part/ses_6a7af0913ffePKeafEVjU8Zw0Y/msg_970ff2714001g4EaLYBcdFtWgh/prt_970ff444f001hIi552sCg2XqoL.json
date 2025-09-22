@@ -1,0 +1,24 @@
+{
+  "id": "prt_970ff444f001hIi552sCg2XqoL",
+  "messageID": "msg_970ff2714001g4EaLYBcdFtWgh",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "list",
+  "callID": "toolu_018RNYfbbBzyA3rADva5TNg9",
+  "state": {
+    "status": "completed",
+    "input": {
+      "path": "/home/user/project/app"
+    },
+    "output": "/home/user/project/app/\n  criteria-engine/\n    page.tsx\n  energy-management/\n    page.tsx\n  env-check/\n    page.tsx\n  new-patient/\n    page.tsx\n  pem-quest/\n    page.tsx\n  quick-screen/\n    page.tsx\n  red-flag-checker/\n    page.tsx\n  stand-test/\n    page.tsx\n  subtype-advisor/\n    page.tsx\n  globals.css\n  layout.tsx\n  page.tsx\n",
+    "metadata": {
+      "count": 12,
+      "truncated": false
+    },
+    "title": "app",
+    "time": {
+      "start": 1758537401882,
+      "end": 1758537401912
+    }
+  }
+}
