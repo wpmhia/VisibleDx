@@ -1,0 +1,62 @@
+{
+  "id": "prt_971253fe5001V4XMF63DeBH78D",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_018R2TzyDddjLXUR1cZhB41n",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "    // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)",
+          "newString": "    // Core Symptoms (all 4 required for suspected ME/CFS)"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "    // NICE Diagnostic Requirements",
+          "newString": "    // Diagnostic Requirements"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "    // NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise",
+          "newString": "    // Clinical Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise"
+        },
+        {
+          "filePath": "/home/user/project/app/quick-screen/page.tsx",
+          "oldString": "                  <h4 className=\"font-semibold mb-2\">NICE NG206 Assessment</h4>",
+          "newString": "                  <h4 className=\"font-semibold mb-2\">Clinical Assessment</h4>"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -46,9 +46,9 @@\n \n const calculateRisk = () => {\n   const totalYes = Object.values(answers).filter(Boolean).length\n   \n-  // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n+  // Core Symptoms (all 4 required for suspected ME/CFS)\n   const coreFatigue = answers[1] // Debilitating fatigue\n   const corePEM = answers[2] // Post-exertional malaise\n   const coreSleep = answers[3] // Unrefreshing sleep\n   const coreCognitive = answers[4] // Cognitive difficulties\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -53,9 +53,9 @@\n const coreSleep = answers[3] // Unrefreshing sleep\n const coreCognitive = answers[4] // Cognitive difficulties\n const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length\n \n-// NICE Diagnostic Requirements\n+// Diagnostic Requirements\n const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)\n const functionalImpairment = answers[13] // Significant reduction in activity\n const notExplainedOtherwise = answers[14] // Not explained by other condition\n \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -68,9 +68,9 @@\n \n let riskLevel = 'Low'\n let riskColor = 'bg-green-100 text-green-800'\n \n-// NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise\n+// Clinical Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise\n if (coreSymptoms === 4 && durationMet && functionalImpairment && notExplainedOtherwise) {\n   riskLevel = 'High'\n   riskColor = 'bg-red-100 text-red-800'\n } else if (coreSymptoms >= 3 && (durationMet || functionalImpairment) && additionalSymptoms >= 2) {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/quick-screen/page.tsx\n===================================================================\n--- /home/user/project/app/quick-screen/page.tsx\n+++ /home/user/project/app/quick-screen/page.tsx\n@@ -130,9 +130,9 @@\n </div>\n \n <div className=\"grid md:grid-cols-2 gap-4\">\n   <div className=\"bg-gray-50 p-4 rounded-lg\">\n-    <h4 className=\"font-semibold mb-2\">NICE NG206 Assessment</h4>\n+    <h4 className=\"font-semibold mb-2\">Clinical Assessment</h4>\n     <ul className=\"text-sm space-y-1\">\n       <li><strong>Core Symptoms:</strong> {risk.coreSymptoms}/4 present</li>\n       <li>• Debilitating Fatigue: {risk.coreFatigue ? t.common.yes : t.common.no}</li>\n       <li>• Post-Exertional Malaise: {risk.corePEM ? t.common.yes : t.common.no}</li>\n"
+        }
+      ]
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758539894655,
+      "end": 1758539894668
+    }
+  }
+}

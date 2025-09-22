@@ -1,0 +1,26 @@
+{
+  "id": "prt_971257cd2001EWUGoeMdB6e4UM",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "bash",
+  "callID": "toolu_01Tsvg4gLRxWbdqSF8B2qmP4",
+  "state": {
+    "status": "completed",
+    "input": {
+      "command": "cd /home/user/project && npm run build",
+      "description": "Build the application to check for errors"
+    },
+    "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/pem-quest/page.tsx:155:7\nType error: Cannot find name 'niceCoreCriteria'. Did you mean 'clinicalCoreCriteria'?\n\n\u001b[0m \u001b[90m 153 |\u001b[39m       color\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 154 |\u001b[39m       isPEMPresent\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m       niceCoreCriteria\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m       activityToleranceScore\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 157 |\u001b[39m       delayedOnsetScore\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m       disproportionateScore\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+    "metadata": {
+      "output": "\n> ideavo-nextjs@0.1.0 build\n> next build\n\n  ▲ Next.js 14.2.31\n  - Environments: .env\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\nFailed to compile.\n\n./app/pem-quest/page.tsx:155:7\nType error: Cannot find name 'niceCoreCriteria'. Did you mean 'clinicalCoreCriteria'?\n\n\u001b[0m \u001b[90m 153 |\u001b[39m       color\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 154 |\u001b[39m       isPEMPresent\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 155 |\u001b[39m       niceCoreCriteria\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 156 |\u001b[39m       activityToleranceScore\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 157 |\u001b[39m       delayedOnsetScore\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 158 |\u001b[39m       disproportionateScore\u001b[33m,\u001b[39m\u001b[0m\nNext.js build worker exited with code: 1 and signal: null\n",
+      "exit": 1,
+      "description": "Build the application to check for errors"
+    },
+    "title": "cd /home/user/project && npm run build",
+    "time": {
+      "start": 1758539906919,
+      "end": 1758539923456
+    }
+  }
+}

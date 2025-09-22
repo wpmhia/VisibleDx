@@ -1,0 +1,25 @@
+{
+  "id": "prt_971268abb0017dNUcrlXIbSrJ2",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01SgT5Y8ctUTzYUD4PzPDHXz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 200,
+      "limit": 30
+    },
+    "output": "<file>\n\n</file>",
+    "metadata": {
+      "preview": ""
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758539975932,
+      "end": 1758539975933
+    }
+  }
+}

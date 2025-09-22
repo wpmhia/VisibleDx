@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712698890017dgWNuAf0i2s6l",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01Bo3ZzLJb2ZwDRfWBZfxdHE",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 150,
+      "limit": 50
+    },
+    "output": "<file>\n00151|               <div className=\"border border-blue-200 bg-blue-50 p-3 rounded-md\">\n00152|                 <h4 className=\"font-medium text-blue-900 mb-1\">{t.dashboard.algorithm.mecfs.title}</h4>\n00153|                 <p className=\"text-blue-700 text-xs\">{t.dashboard.algorithm.mecfs.criteria}</p>\n00154|               </div>\n00155|               <div className=\"border border-green-200 bg-green-50 p-3 rounded-md\">\n00156|                 <h4 className=\"font-medium text-green-900 mb-1\">{t.dashboard.algorithm.longCovid.title}</h4>\n00157|                 <p className=\"text-green-700 text-xs\">{t.dashboard.algorithm.longCovid.criteria}</p>\n00158|               </div>\n00159|               <div className=\"border border-purple-200 bg-purple-50 p-3 rounded-md\">\n00160|                 <h4 className=\"font-medium text-purple-900 mb-1\">{t.dashboard.algorithm.pots.title}</h4>\n00161|                 <p className=\"text-purple-700 text-xs\">{t.dashboard.algorithm.pots.criteria}</p>\n00162|               </div>\n00163|             </div>\n00164|           </CardContent>\n00165|         </Card>\n00166| \n00167|         <div className=\"text-center\">\n00168|           <p className=\"text-gray-600 text-sm\">\n00169|             {t.app.tagline}\n00170|           </p>\n00171|         </div>\n00172|       </div>\n00173|     </div>\n00174|   )\n00175| }\n00176| \n</file>",
+    "metadata": {
+      "preview": "              <div className=\"border border-blue-200 bg-blue-50 p-3 rounded-md\">\n                <h4 className=\"font-medium text-blue-900 mb-1\">{t.dashboard.algorithm.mecfs.title}</h4>\n                <p className=\"text-blue-700 text-xs\">{t.dashboard.algorithm.mecfs.criteria}</p>\n              </div>\n              <div className=\"border border-green-200 bg-green-50 p-3 rounded-md\">\n                <h4 className=\"font-medium text-green-900 mb-1\">{t.dashboard.algorithm.longCovid.title}</h4>\n                <p className=\"text-green-700 text-xs\">{t.dashboard.algorithm.longCovid.criteria}</p>\n              </div>\n              <div className=\"border border-purple-200 bg-purple-50 p-3 rounded-md\">\n                <h4 className=\"font-medium text-purple-900 mb-1\">{t.dashboard.algorithm.pots.title}</h4>\n                <p className=\"text-purple-700 text-xs\">{t.dashboard.algorithm.pots.criteria}</p>\n              </div>\n            </div>\n          </CardContent>\n        </Card>\n\n        <div className=\"text-center\">\n          <p className=\"text-gray-600 text-sm\">\n            {t.app.tagline}\n          </p>"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758539979517,
+      "end": 1758539979518
+    }
+  }
+}

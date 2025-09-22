@@ -1,0 +1,26 @@
+{
+  "id": "prt_971271c3a001knMU2BRETuQ6L2",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01LYa2Cp3mVa5RpDYdVufMzQ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "oldString": "        description: 'NICE NG206 energistyringsplanlægningsværktøj'",
+      "newString": "        description: 'Klinisk energistyringsplanlægningsværktøj'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -102,9 +102,9 @@\n   description: 'Personaliserede behandlingsanbefalinger'\n },\n energyManagement: {\n   title: 'Energistyring',\n-  description: 'NICE NG206 energistyringsplanlægningsværktøj'\n+  description: 'Klinisk energistyringsplanlægningsværktøj'\n },\n caseAnalyzer: {\n   title: 'Sag Analysator',\n   description: 'AI-drevet klinisk sag analyse for ME/CFS vurdering'\n"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758540013553,
+      "end": 1758540013566
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_97125ce4e001DFzmOMhSDZtBhk",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01GstRz915a3MRwyk41Q1F7K",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "offset": 150,
+      "limit": 10
+    },
+    "output": "<file>\n00151|       percentage: Math.round(percentage),\n00152|       severity,\n00153|       color,\n00154|       isPEMPresent,\n00155|       niceCoreCriteria,\n00156|       activityToleranceScore,\n00157|       delayedOnsetScore,\n00158|       disproportionateScore,\n00159|       prolongedRecoveryScore\n00160|     }\n\n(File has more lines. Use 'offset' parameter to read beyond line 160)\n</file>",
+    "metadata": {
+      "preview": "      percentage: Math.round(percentage),\n      severity,\n      color,\n      isPEMPresent,\n      niceCoreCriteria,\n      activityToleranceScore,\n      delayedOnsetScore,\n      disproportionateScore,\n      prolongedRecoveryScore\n    }"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758539927933,
+      "end": 1758539927936
+    }
+  }
+}

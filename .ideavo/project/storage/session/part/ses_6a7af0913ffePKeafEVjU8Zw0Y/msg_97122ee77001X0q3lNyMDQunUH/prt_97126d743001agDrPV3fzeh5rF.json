@@ -1,0 +1,89 @@
+{
+  "id": "prt_97126d743001agDrPV3fzeh5rF",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01LyJEMBPVh3Z9Ls2sGR6tCz",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/en.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "        description: 'NICE NG206 energy management planning tool'",
+          "newString": "        description: 'Clinical energy management planning tool'"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    description: 'NICE NG206 compliant screening · 4 core symptoms + additional features',",
+          "newString": "    description: 'Clinical screening · 4 core symptoms + additional features',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "        'ME/CFS strongly suspected - NICE NG206 criteria met',",
+          "newString": "        'ME/CFS strongly suspected - clinical criteria met',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    title: 'NICE NG206 Post-Exertional Malaise Assessment',",
+          "newString": "    title: 'Post-Exertional Malaise Assessment',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "      title: 'NICE NG206 Definition of Post-Exertional Malaise',",
+          "newString": "      title: 'Clinical Definition of Post-Exertional Malaise',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    title: 'NICE NG206 Diagnostic Criteria Engine',",
+          "newString": "    title: 'Diagnostic Criteria Engine',"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/en.ts",
+          "oldString": "    description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',",
+          "newString": "    description: 'Apply multiple diagnostic criteria frameworks for complex conditions',"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -102,9 +102,9 @@\n   description: 'Condition subtyping & treatment planning examples'\n },\n energyManagement: {\n   title: 'Energy Management',\n-  description: 'NICE NG206 energy management planning tool'\n+  description: 'Clinical energy management planning tool'\n },\n caseAnalyzer: {\n   title: 'Case Analyzer',\n   description: 'AI-powered clinical case analysis for ME/CFS assessment'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -137,9 +137,9 @@\n },\n \n quickScreen: {\n   title: 'NICE ME/CFS Screening Assessment',\n-  description: 'NICE NG206 compliant screening · 4 core symptoms + additional features',\n+  description: 'Clinical screening · 4 core symptoms + additional features',\n   questions: [\n     'Do you experience debilitating fatigue that is worsened by activity, not caused by excessive exertion, and not significantly relieved by rest?',\n     'Do you experience post-exertional malaise where symptoms worsen hours or days after activity, are disproportionate to the activity, and have prolonged recovery?',\n     'Do you have unrefreshing sleep or sleep disturbance (feeling exhausted/flu-like on waking, broken sleep, altered sleep pattern)?',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -190,9 +190,9 @@\n   retake: 'Retake Screening'\n },\n nextStepsRecommendations: {\n   high: [\n-    'ME/CFS strongly suspected - NICE NG206 criteria met',\n+    'ME/CFS strongly suspected - clinical criteria met',\n     'Complete differential diagnosis workup (Red-flag Checker)',\n     'If no red flags: refer to ME/CFS specialist team after 3 months',\n     'Begin personalised advice on energy management',\n     'Advise rest and convalesce as needed',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -353,9 +353,9 @@\n   }\n },\n \n pem: {\n-  title: 'NICE NG206 Post-Exertional Malaise Assessment',\n+  title: 'Post-Exertional Malaise Assessment',\n   description: 'NICE-compliant PEM evaluation based on NG206 core criteria',\n   about: {\n     title: 'NICE NG206 Definition of Post-Exertional Malaise',\n     description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -356,9 +356,9 @@\n pem: {\n   title: 'Post-Exertional Malaise Assessment',\n   description: 'NICE-compliant PEM evaluation based on NG206 core criteria',\n   about: {\n-    title: 'NICE NG206 Definition of Post-Exertional Malaise',\n+    title: 'Clinical Definition of Post-Exertional Malaise',\n     description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'\n   },\n   questions: {\n     activityTolerance: {\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -464,9 +464,9 @@\n   }\n },\n \n criteria: {\n-  title: 'NICE NG206 Diagnostic Criteria Engine',\n+  title: 'Diagnostic Criteria Engine',\n   description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n   mecfs: {\n     title: 'ME/CFS Criteria (NICE NG206)',\n     description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/en.ts\n===================================================================\n--- /home/user/project/lib/translations/en.ts\n+++ /home/user/project/lib/translations/en.ts\n@@ -465,9 +465,9 @@\n },\n \n criteria: {\n   title: 'Diagnostic Criteria Engine',\n-  description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n+  description: 'Apply multiple diagnostic criteria frameworks for complex conditions',\n   mecfs: {\n     title: 'ME/CFS Criteria (NICE NG206)',\n     description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n     criteria: [\n"
+        }
+      ]
+    },
+    "title": "lib/translations/en.ts",
+    "time": {
+      "start": 1758540000282,
+      "end": 1758540000325
+    }
+  }
+}

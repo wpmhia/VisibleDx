@@ -1,0 +1,73 @@
+{
+  "id": "prt_971230f1a001FfBlfzHmaEo52o",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_01MpUPvjE2hW26JeHyd3kp4Y",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Remove NICE NG206 branding from multi-guideline modules",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "remove_nice_branding"
+        },
+        {
+          "content": "Update Criteria Engine to be framework-agnostic",
+          "status": "pending",
+          "priority": "high",
+          "id": "update_criteria_engine"
+        },
+        {
+          "content": "Update Energy Management to be more general",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update_energy_management"
+        },
+        {
+          "content": "Update navigation and descriptions",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update_navigation"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Remove NICE NG206 branding from multi-guideline modules\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"remove_nice_branding\"\n  },\n  {\n    \"content\": \"Update Criteria Engine to be framework-agnostic\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"update_criteria_engine\"\n  },\n  {\n    \"content\": \"Update Energy Management to be more general\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"update_energy_management\"\n  },\n  {\n    \"content\": \"Update navigation and descriptions\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"update_navigation\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Remove NICE NG206 branding from multi-guideline modules",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "remove_nice_branding"
+        },
+        {
+          "content": "Update Criteria Engine to be framework-agnostic",
+          "status": "pending",
+          "priority": "high",
+          "id": "update_criteria_engine"
+        },
+        {
+          "content": "Update Energy Management to be more general",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update_energy_management"
+        },
+        {
+          "content": "Update navigation and descriptions",
+          "status": "pending",
+          "priority": "medium",
+          "id": "update_navigation"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758539749621,
+      "end": 1758539749648
+    }
+  }
+}

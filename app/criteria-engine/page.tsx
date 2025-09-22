@@ -102,22 +102,22 @@ export default function CriteriaEngine() {
   const calculateDiagnoses = (): DiagnosticCriteria[] => {
     const diagnoses: DiagnosticCriteria[] = []
 
-    // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met
-    const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length
-    const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false
-    const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false
-    const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false
+    // ME/CFS Diagnosis - requires ALL 7 criteria to be met
+    const mecfsCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length
+    const mecfsDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false
+    const mecfsFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false
+    const mecfsExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false
     
-    // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)
-    const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion
+    // ME/CFS: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)
+    const mecfsMet = mecfsCoreSymptoms === 4 && mecfsDuration && mecfsFunctionalImpairment && mecfsExclusion
     
     diagnoses.push({
       id: 'mecfs',
-      condition: t.conditions.mecfs.fullName + ' (NICE NG206)',
+      condition: t.conditions.mecfs.fullName,
       met: mecfsMet,
       criteria: mecfsChecked,
       icdCode: t.conditions.mecfs.icdCode,
-      confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')
+      confidence: mecfsMet ? 'high' : (mecfsCoreSymptoms >= 3 && (mecfsDuration || mecfsFunctionalImpairment) ? 'medium' : 'low')
     })
 
     // Long COVID Diagnosis

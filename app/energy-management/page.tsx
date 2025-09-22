@@ -138,10 +138,10 @@ export default function EnergyManagement() {
             <CardHeader className="text-center">
               <CardTitle className="flex items-center justify-center gap-2 text-2xl">
                 <CheckCircle className="h-6 w-6 text-green-600" />
-                NICE NG206 Energy Management Plan
+                Energy Management Plan
               </CardTitle>
               <CardDescription>
-                Personalised energy management based on NICE guidelines for ME/CFS
+                Personalised energy management for complex chronic conditions
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -181,7 +181,7 @@ export default function EnergyManagement() {
                   <CardHeader>
                     <CardTitle className="text-lg flex items-center gap-2">
                       <Target className="h-5 w-5" />
-                      NICE NG206 Principles
+                      Energy Management Principles
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -200,7 +200,7 @@ export default function EnergyManagement() {
               <Alert className="border-yellow-200 bg-yellow-50">
                 <Lightbulb className="h-4 w-4" />
                 <AlertDescription>
-                  <strong>NICE NG206 Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.
+                     <strong>Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.
                 </AlertDescription>
               </Alert>
 
@@ -264,7 +264,7 @@ export default function EnergyManagement() {
                   Create New Plan
                 </Button>
                 <Button onClick={() => {
-                  const content = `NICE NG206 Energy Management Plan
+                  const content = `Energy Management Plan
                   
 Energy Budget: ${Math.round(budget.safeLevel)}% daily
 Current Energy Level: ${assessmentData.currentEnergyLevel}
@@ -302,7 +302,7 @@ Remember: You are the expert in judging your own limits. Do not push through sym
           <div className="flex items-center gap-4 mb-4">
             <Battery className="h-5 w-5 text-blue-600" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">NICE NG206 Energy Management</h1>
+              <h1 className="text-2xl font-bold text-gray-900">Energy Management</h1>
               <p className="text-gray-600">Create your personalised energy management plan</p>
             </div>
           </div>
@@ -381,7 +381,7 @@ Remember: You are the expert in judging your own limits. Do not push through sym
               {currentStep === 1 && (
                 <div className="space-y-4">
                   <p className="text-sm text-gray-600">
-                    NICE NG206: Consider all types of activity - cognitive, physical, emotional and social
+                    Consider all types of activity - cognitive, physical, emotional and social
                   </p>
                   {activityTypes.map((type) => (
                     <Card key={type.type} className="border-gray-200">

@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712438ec001AMF7CJbzpKu9On",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VX7f5d3gMJ517eXbjGdB17",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "offset": 50,
+      "limit": 10
+    },
+    "output": "<file>\n00051| // Comprehensive clinical keyword patterns for all diagnostic frameworks\n00052| const CLINICAL_PATTERNS = {\n00053|   // ME/CFS (NICE NG206)\n00054|   mecfs: {\n00055|     debilitatingFatigue: [\n00056|       'severe fatigue', 'debilitating fatigue', 'exhaustion', 'extreme tiredness',\n00057|       'profound fatigue', 'overwhelming fatigue', 'crushing fatigue', 'disabling fatigue'\n00058|     ],\n00059|     postExertionalMalaise: [\n00060|       'post-exertional malaise', 'PEM', 'crashes after activity', 'worsens with activity',\n\n(File has more lines. Use 'offset' parameter to read beyond line 60)\n</file>",
+    "metadata": {
+      "preview": "// Comprehensive clinical keyword patterns for all diagnostic frameworks\nconst CLINICAL_PATTERNS = {\n  // ME/CFS (NICE NG206)\n  mecfs: {\n    debilitatingFatigue: [\n      'severe fatigue', 'debilitating fatigue', 'exhaustion', 'extreme tiredness',\n      'profound fatigue', 'overwhelming fatigue', 'crushing fatigue', 'disabling fatigue'\n    ],\n    postExertionalMalaise: [\n      'post-exertional malaise', 'PEM', 'crashes after activity', 'worsens with activity',"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539824019,
+      "end": 1758539824021
+    }
+  }
+}

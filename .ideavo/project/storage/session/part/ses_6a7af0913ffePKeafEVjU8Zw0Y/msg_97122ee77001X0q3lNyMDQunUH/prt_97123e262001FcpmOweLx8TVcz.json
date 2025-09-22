@@ -1,0 +1,89 @@
+{
+  "id": "prt_97123e262001FcpmOweLx8TVcz",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_011F9bsDTqgdPP9aMFWWvVES",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/energy-management/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                NICE NG206 Energy Management Plan",
+          "newString": "                Energy Management Plan"
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                Personalised energy management based on NICE guidelines for ME/CFS",
+          "newString": "                Personalised energy management for complex chronic conditions"
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                      NICE NG206 Principles",
+          "newString": "                      Energy Management Principles"
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                     <strong>NICE NG206 Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.",
+          "newString": "                     <strong>Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits."
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                  const content = `NICE NG206 Energy Management Plan",
+          "newString": "                  const content = `Energy Management Plan"
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "              <h1 className=\"text-2xl font-bold text-gray-900\">NICE NG206 Energy Management</h1>",
+          "newString": "              <h1 className=\"text-2xl font-bold text-gray-900\">Energy Management</h1>"
+        },
+        {
+          "filePath": "/home/user/project/app/energy-management/page.tsx",
+          "oldString": "                    NICE NG206: Consider all types of activity - cognitive, physical, emotional and social",
+          "newString": "                    Consider all types of activity - cognitive, physical, emotional and social"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -137,9 +137,9 @@\n <Card>\n   <CardHeader className=\"text-center\">\n     <CardTitle className=\"flex items-center justify-center gap-2 text-2xl\">\n       <CheckCircle className=\"h-6 w-6 text-green-600\" />\n-      NICE NG206 Energy Management Plan\n+      Energy Management Plan\n     </CardTitle>\n     <CardDescription>\n       Personalised energy management based on NICE guidelines for ME/CFS\n     </CardDescription>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -140,9 +140,9 @@\n     <CheckCircle className=\"h-6 w-6 text-green-600\" />\n     Energy Management Plan\n   </CardTitle>\n   <CardDescription>\n-    Personalised energy management based on NICE guidelines for ME/CFS\n+    Personalised energy management for complex chronic conditions\n   </CardDescription>\n </CardHeader>\n <CardContent className=\"space-y-6\">\n   <div className=\"grid md:grid-cols-2 gap-6\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -180,9 +180,9 @@\n <Card className=\"border-green-200 bg-green-50\">\n   <CardHeader>\n     <CardTitle className=\"text-lg flex items-center gap-2\">\n       <Target className=\"h-5 w-5\" />\n-      NICE NG206 Principles\n+      Energy Management Principles\n     </CardTitle>\n   </CardHeader>\n   <CardContent>\n     <ul className=\"text-sm space-y-2\">\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -199,9 +199,9 @@\n \n <Alert className=\"border-yellow-200 bg-yellow-50\">\n   <Lightbulb className=\"h-4 w-4\" />\n   <AlertDescription>\n-    <strong>NICE NG206 Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.\n+       <strong>Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.\n   </AlertDescription>\n </Alert>\n \n <Card>\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -263,9 +263,9 @@\n                 }} variant=\"outline\">\n                   Create New Plan\n                 </Button>\n                 <Button onClick={() => {\n-                  const content = `NICE NG206 Energy Management Plan\n+                  const content = `Energy Management Plan\n                   \n Energy Budget: ${Math.round(budget.safeLevel)}% daily\n Current Energy Level: ${assessmentData.currentEnergyLevel}\n Symptoms: ${assessmentData.symptoms.join(', ')}\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -301,9 +301,9 @@\n <div className=\"mb-6\">\n   <div className=\"flex items-center gap-4 mb-4\">\n     <Battery className=\"h-5 w-5 text-blue-600\" />\n     <div>\n-      <h1 className=\"text-2xl font-bold text-gray-900\">NICE NG206 Energy Management</h1>\n+      <h1 className=\"text-2xl font-bold text-gray-900\">Energy Management</h1>\n       <p className=\"text-gray-600\">Create your personalised energy management plan</p>\n     </div>\n   </div>\n   \n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/app/energy-management/page.tsx\n===================================================================\n--- /home/user/project/app/energy-management/page.tsx\n+++ /home/user/project/app/energy-management/page.tsx\n@@ -380,9 +380,9 @@\n \n {currentStep === 1 && (\n   <div className=\"space-y-4\">\n     <p className=\"text-sm text-gray-600\">\n-      NICE NG206: Consider all types of activity - cognitive, physical, emotional and social\n+      Consider all types of activity - cognitive, physical, emotional and social\n     </p>\n     {activityTypes.map((type) => (\n       <Card key={type.type} className=\"border-gray-200\">\n         <CardHeader className=\"pb-2\">\n"
+        }
+      ]
+    },
+    "title": "app/energy-management/page.tsx",
+    "time": {
+      "start": 1758539809207,
+      "end": 1758539809267
+    }
+  }
+}

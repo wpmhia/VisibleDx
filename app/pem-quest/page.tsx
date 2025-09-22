@@ -49,7 +49,7 @@ export default function PEMQuest() {
   }
 
   const getPEMQuestions = () => {
-    // NICE NG206 aligned scoring: Higher scores indicate more severe PEM
+    // Clinical scoring: Higher scores indicate more severe PEM
     const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]
     
     return [
@@ -120,30 +120,30 @@ export default function PEMQuest() {
 
     const percentage = (totalScore / maxScore) * 100
 
-    // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics
+    // Clinical Assessment: PEM requires worsening after activity with specific characteristics
     const activityToleranceScore = answers['activity_tolerance'] ? getPEMQuestions()[0].options.find(opt => opt.value === answers['activity_tolerance'])?.score || 0 : 0
     const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0
     const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0
     const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0
     
-    // NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features
-    const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)
+    // Clinical criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features
+    const clinicalCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)
 
     let severity = t.pem.results.severityLevels.none
     let color = 'bg-green-100 text-green-800'
     
-    if (niceCoreCriteria && percentage >= 70) {
+    if (clinicalCoreCriteria && percentage >= 70) {
       severity = t.pem.results.severityLevels.severe
       color = 'bg-red-100 text-red-800'
-    } else if (niceCoreCriteria && percentage >= 50) {
+    } else if (clinicalCoreCriteria && percentage >= 50) {
       severity = t.pem.results.severityLevels.moderate
       color = 'bg-orange-100 text-orange-800'
-    } else if (niceCoreCriteria) {
+    } else if (clinicalCoreCriteria) {
       severity = t.pem.results.severityLevels.mild
       color = 'bg-yellow-100 text-yellow-800'
     }
 
-    const isPEMPresent = niceCoreCriteria
+    const isPEMPresent = clinicalCoreCriteria
 
     return {
       totalScore,
@@ -152,7 +152,7 @@ export default function PEMQuest() {
       severity,
       color,
       isPEMPresent,
-      niceCoreCriteria,
+      clinicalCoreCriteria,
       activityToleranceScore,
       delayedOnsetScore,
       disproportionateScore,

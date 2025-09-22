@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712325ff00190ahk488rSU4UA",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01LAjY5JPwoxz7Kyie8882TF",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "NICE NG206",
+      "include": "*.tsx"
+    },
+    "output": "Found 18 matches\n/home/user/project/app/case-analyzer/page.tsx:\n  Line 53:   // ME/CFS (NICE NG206)\n  Line 152:     // ME/CFS Analysis (NICE NG206)\n  Line 187:       name: 'ME/CFS (NICE NG206)',\n  Line 195:         'Complete NICE NG206 investigations',\n\n/home/user/project/app/energy-management/page.tsx:\n  Line 141:                 NICE NG206 Energy Management Plan\n  Line 184:                       NICE NG206 Principles\n  Line 203:                   <strong>NICE NG206 Key Point:</strong> Energy management helps you learn to use the amount of energy you have while reducing your risk of post-exertional malaise. You are the expert in judging your own limits.\n  Line 267:                   const content = `NICE NG206 Energy Management Plan\n  Line 305:               <h1 className=\"text-2xl font-bold text-gray-900\">NICE NG206 Energy Management</h1>\n  Line 384:                     NICE NG206: Consider all types of activity - cognitive, physical, emotional and social\n\n/home/user/project/app/criteria-engine/page.tsx:\n  Line 105:     // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met\n  Line 111:     // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)\n  Line 116:       condition: t.conditions.mecfs.fullName + ' (NICE NG206)',\n\n/home/user/project/app/pem-quest/page.tsx:\n  Line 52:     // NICE NG206 aligned scoring: Higher scores indicate more severe PEM\n  Line 123:     // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics\n\n/home/user/project/app/quick-screen/page.tsx:\n  Line 50:     // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n  Line 72:     // NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise\n  Line 134:                   <h4 className=\"font-semibold mb-2\">NICE NG206 Assessment</h4>",
+    "metadata": {
+      "matches": 18,
+      "truncated": false
+    },
+    "title": "NICE NG206",
+    "time": {
+      "start": 1758539753371,
+      "end": 1758539753389
+    }
+  }
+}

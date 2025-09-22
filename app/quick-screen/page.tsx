@@ -47,14 +47,14 @@ export default function QuickScreen() {
   const calculateRisk = () => {
     const totalYes = Object.values(answers).filter(Boolean).length
     
-    // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)
+    // Core Symptoms (all 4 required for suspected ME/CFS)
     const coreFatigue = answers[1] // Debilitating fatigue
     const corePEM = answers[2] // Post-exertional malaise
     const coreSleep = answers[3] // Unrefreshing sleep
     const coreCognitive = answers[4] // Cognitive difficulties
     const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length
     
-    // NICE Diagnostic Requirements
+    // Diagnostic Requirements
     const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)
     const functionalImpairment = answers[13] // Significant reduction in activity
     const notExplainedOtherwise = answers[14] // Not explained by other condition
@@ -69,7 +69,7 @@ export default function QuickScreen() {
     let riskLevel = 'Low'
     let riskColor = 'bg-green-100 text-green-800'
     
-    // NICE NG206 Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise
+    // Clinical Suspicion Criteria: All 4 core symptoms + duration + functional impairment + not explained otherwise
     if (coreSymptoms === 4 && durationMet && functionalImpairment && notExplainedOtherwise) {
       riskLevel = 'High'
       riskColor = 'bg-red-100 text-red-800'
@@ -131,7 +131,7 @@ export default function QuickScreen() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">NICE NG206 Assessment</h4>
+                  <h4 className="font-semibold mb-2">Clinical Assessment</h4>
                   <ul className="text-sm space-y-1">
                     <li><strong>Core Symptoms:</strong> {risk.coreSymptoms}/4 present</li>
                     <li>• Debilitating Fatigue: {risk.coreFatigue ? t.common.yes : t.common.no}</li>

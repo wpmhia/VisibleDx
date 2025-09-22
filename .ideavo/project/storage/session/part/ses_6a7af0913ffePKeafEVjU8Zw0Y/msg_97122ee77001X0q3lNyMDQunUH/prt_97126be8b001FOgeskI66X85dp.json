@@ -1,0 +1,11 @@
+{
+  "id": "prt_97126be8b001FOgeskI66X85dp",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "I need to update the translation files to remove NICE NG206 branding from multi-guideline modules, but keep it where it's specifically referring to the NICE guideline itself (like in the red flag checker and energy management specific sections). Let me update the appropriate sections:",
+  "time": {
+    "start": 1758539990345,
+    "end": 1758539990345
+  }
+}

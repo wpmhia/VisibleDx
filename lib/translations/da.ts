@@ -103,7 +103,7 @@ export const da: Translation = {
       },
       energyManagement: {
         title: 'Energistyring',
-        description: 'NICE NG206 energistyringsplanlægningsværktøj'
+        description: 'Klinisk energistyringsplanlægningsværktøj'
       },
       caseAnalyzer: {
         title: 'Sag Analysator',

@@ -50,7 +50,7 @@ interface CaseAnalysisResult {
 
 // Comprehensive clinical keyword patterns for all diagnostic frameworks
 const CLINICAL_PATTERNS = {
-  // ME/CFS (NICE NG206)
+  // ME/CFS
   mecfs: {
     debilitatingFatigue: [
       'severe fatigue', 'debilitating fatigue', 'exhaustion', 'extreme tiredness',
@@ -149,7 +149,7 @@ export default function CaseAnalyzer() {
     const lowerText = text.toLowerCase()
     const frameworks: DiagnosticFramework[] = []
     
-    // ME/CFS Analysis (NICE NG206)
+    // ME/CFS Analysis
     const mecfsCriteria = {
       debilitatingFatigue: CLINICAL_PATTERNS.mecfs.debilitatingFatigue.some(pattern => 
         lowerText.includes(pattern.toLowerCase())
@@ -184,7 +184,7 @@ export default function CaseAnalyzer() {
 
     frameworks.push({
       id: 'mecfs',
-      name: 'ME/CFS (NICE NG206)',
+      name: 'ME/CFS',
       icon: Brain,
       likelihood: mecfsLikelihood,
       score: mecfsScore,
@@ -192,7 +192,7 @@ export default function CaseAnalyzer() {
       keyFindings: mecfsFindings,
       recommendations: mecfsScore >= 60 ? [
         'Strong consideration for ME/CFS diagnosis',
-        'Complete NICE NG206 investigations',
+        'Complete diagnostic investigations',
         'Consider specialist referral'
       ] : ['Possible ME/CFS - requires further assessment'],
       icdCode: 'G93.3',

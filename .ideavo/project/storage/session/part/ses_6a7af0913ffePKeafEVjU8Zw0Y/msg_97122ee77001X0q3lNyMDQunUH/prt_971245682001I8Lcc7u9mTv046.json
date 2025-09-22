@@ -1,0 +1,25 @@
+{
+  "id": "prt_971245682001I8Lcc7u9mTv046",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01EGmso9Mo69KAkJbwRou2S1",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "offset": 150,
+      "limit": 10
+    },
+    "output": "<file>\n00151|     \n00152|     // ME/CFS Analysis (NICE NG206)\n00153|     const mecfsCriteria = {\n00154|       debilitatingFatigue: CLINICAL_PATTERNS.mecfs.debilitatingFatigue.some(pattern => \n00155|         lowerText.includes(pattern.toLowerCase())\n00156|       ),\n00157|       postExertionalMalaise: CLINICAL_PATTERNS.mecfs.postExertionalMalaise.some(pattern => \n00158|         lowerText.includes(pattern.toLowerCase())\n00159|       ),\n00160|       unrefreshingSleep: CLINICAL_PATTERNS.mecfs.unrefreshingSleep.some(pattern => \n\n(File has more lines. Use 'offset' parameter to read beyond line 160)\n</file>",
+    "metadata": {
+      "preview": "    \n    // ME/CFS Analysis (NICE NG206)\n    const mecfsCriteria = {\n      debilitatingFatigue: CLINICAL_PATTERNS.mecfs.debilitatingFatigue.some(pattern => \n        lowerText.includes(pattern.toLowerCase())\n      ),\n      postExertionalMalaise: CLINICAL_PATTERNS.mecfs.postExertionalMalaise.some(pattern => \n        lowerText.includes(pattern.toLowerCase())\n      ),\n      unrefreshingSleep: CLINICAL_PATTERNS.mecfs.unrefreshingSleep.some(pattern => "
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539831523,
+      "end": 1758539831525
+    }
+  }
+}

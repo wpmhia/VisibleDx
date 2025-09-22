@@ -1,0 +1,26 @@
+{
+  "id": "prt_97126fa41001zGlsSx9XEo5NwV",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_017zLycm6mgts2Y346ju8h2p",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "        description: 'NICE NG206 energistyringsplanlægningsværktøj'",
+          "newString": "        description: 'Klinisk energistyringsplanlægningsværktøj'"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/lib/translations/da.ts before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758540005602,
+      "end": 1758540005618
+    }
+  }
+}

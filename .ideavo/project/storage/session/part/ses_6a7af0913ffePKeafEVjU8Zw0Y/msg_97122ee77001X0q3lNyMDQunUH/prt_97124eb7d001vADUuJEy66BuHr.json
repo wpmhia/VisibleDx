@@ -1,0 +1,26 @@
+{
+  "id": "prt_97124eb7d001vADUuJEy66BuHr",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01AdfCAoaWEhw6U2oornAe8A",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "oldString": "    // NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n    const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)",
+      "newString": "    // Clinical criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n    const clinicalCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -125,10 +125,10 @@\n const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0\n const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0\n const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0\n \n-// NICE criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n-const niceCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)\n+// Clinical criteria: Must have worsening (score >=2), with delay/disproportionate/prolonged features\n+const clinicalCoreCriteria = activityToleranceScore >= 2 && (delayedOnsetScore >= 2 || disproportionateScore >= 2 || prolongedRecoveryScore >= 2)\n \n let severity = t.pem.results.severityLevels.none\n let color = 'bg-green-100 text-green-800'\n \n"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758539870993,
+      "end": 1758539870998
+    }
+  }
+}

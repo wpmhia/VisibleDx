@@ -103,7 +103,7 @@ export const nl: Translation = {
       },
       energyManagement: {
         title: 'Energiebeheer',
-        description: 'NICE NG206 energiebeheer planningsgereedschap'
+        description: 'Klinisch energiebeheer planningsgereedschap'
       },
       caseAnalyzer: {
         title: 'Case Analyzer',

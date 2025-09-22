@@ -1,0 +1,25 @@
+{
+  "id": "prt_97123d27f001rsrJNkpfumTSpw",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01J2FRpcHHD3nfx3F3AZKNQW",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/energy-management/page.tsx",
+      "offset": 140,
+      "limit": 10
+    },
+    "output": "<file>\n00141|                 NICE NG206 Energy Management Plan\n00142|               </CardTitle>\n00143|               <CardDescription>\n00144|                 Personalised energy management based on NICE guidelines for ME/CFS\n00145|               </CardDescription>\n00146|             </CardHeader>\n00147|             <CardContent className=\"space-y-6\">\n00148|               <div className=\"grid md:grid-cols-2 gap-6\">\n00149|                 <Card className=\"border-blue-200 bg-blue-50\">\n00150|                   <CardHeader>\n\n(File has more lines. Use 'offset' parameter to read beyond line 150)\n</file>",
+    "metadata": {
+      "preview": "                NICE NG206 Energy Management Plan\n              </CardTitle>\n              <CardDescription>\n                Personalised energy management based on NICE guidelines for ME/CFS\n              </CardDescription>\n            </CardHeader>\n            <CardContent className=\"space-y-6\">\n              <div className=\"grid md:grid-cols-2 gap-6\">\n                <Card className=\"border-blue-200 bg-blue-50\">\n                  <CardHeader>"
+    },
+    "title": "app/energy-management/page.tsx",
+    "time": {
+      "start": 1758539797790,
+      "end": 1758539797793
+    }
+  }
+}

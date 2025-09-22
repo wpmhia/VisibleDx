@@ -103,7 +103,7 @@ export const en: Translation = {
       },
       energyManagement: {
         title: 'Energy Management',
-        description: 'NICE NG206 energy management planning tool'
+        description: 'Clinical energy management planning tool'
       },
       caseAnalyzer: {
         title: 'Case Analyzer',
@@ -138,7 +138,7 @@ export const en: Translation = {
 
   quickScreen: {
     title: 'NICE ME/CFS Screening Assessment',
-    description: 'NICE NG206 compliant screening · 4 core symptoms + additional features',
+    description: 'Clinical screening · 4 core symptoms + additional features',
     questions: [
       'Do you experience debilitating fatigue that is worsened by activity, not caused by excessive exertion, and not significantly relieved by rest?',
       'Do you experience post-exertional malaise where symptoms worsen hours or days after activity, are disproportionate to the activity, and have prolonged recovery?',
@@ -191,7 +191,7 @@ export const en: Translation = {
     },
     nextStepsRecommendations: {
       high: [
-        'ME/CFS strongly suspected - NICE NG206 criteria met',
+        'ME/CFS strongly suspected - clinical criteria met',
         'Complete differential diagnosis workup (Red-flag Checker)',
         'If no red flags: refer to ME/CFS specialist team after 3 months',
         'Begin personalised advice on energy management',
@@ -354,10 +354,10 @@ export const en: Translation = {
   },
 
   pem: {
-    title: 'NICE NG206 Post-Exertional Malaise Assessment',
+    title: 'Post-Exertional Malaise Assessment',
     description: 'NICE-compliant PEM evaluation based on NG206 core criteria',
     about: {
-      title: 'NICE NG206 Definition of Post-Exertional Malaise',
+      title: 'Clinical Definition of Post-Exertional Malaise',
       description: 'Post-exertional malaise is a worsening of symptoms after minimal cognitive, physical, emotional or social activity. The worsening is often delayed by hours or days, is disproportionate to the activity, and has prolonged recovery time that may last hours, days, weeks or longer.'
     },
     questions: {
@@ -465,8 +465,8 @@ export const en: Translation = {
   },
 
   criteria: {
-    title: 'NICE NG206 Diagnostic Criteria Engine',
-    description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',
+    title: 'Diagnostic Criteria Engine',
+    description: 'Apply multiple diagnostic criteria frameworks for complex conditions',
     mecfs: {
       title: 'ME/CFS Criteria (NICE NG206)',
       description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',

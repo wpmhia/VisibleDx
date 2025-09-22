@@ -1,0 +1,25 @@
+{
+  "id": "prt_97126772d001GzUV6KqEOMPY0J",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01U48GQyyHT6pWwmbYM6wSgU",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/page.tsx",
+      "offset": 80,
+      "limit": 20
+    },
+    "output": "<file>\n00081|           </h1>\n00082|           <p className=\"text-lg text-gray-600 max-w-2xl mx-auto\">\n00083|             {t.app.subtitle}\n00084|           </p>\n00085|         </div>\n00086| \n00087|         <div className=\"mb-8\">\n00088|           <Card className=\"border border-green-200 bg-green-50\">\n00089|             <CardContent className=\"p-6\">\n00090|               <div className=\"flex items-center justify-between\">\n00091|                 <div className=\"flex items-center gap-4\">\n00092|                   <div className=\"p-2 bg-green-100 rounded-lg\">\n00093|                     <User className=\"h-6 w-6 text-green-600\" />\n00094|                   </div>\n00095|                   <div>\n00096|                     <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n00097|                     <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n00098|                   </div>\n00099|                 </div>\n00100|                 <Button asChild className=\"bg-green-600 hover:bg-green-700\">\n\n(File has more lines. Use 'offset' parameter to read beyond line 100)\n</file>",
+    "metadata": {
+      "preview": "          </h1>\n          <p className=\"text-lg text-gray-600 max-w-2xl mx-auto\">\n            {t.app.subtitle}\n          </p>\n        </div>\n\n        <div className=\"mb-8\">\n          <Card className=\"border border-green-200 bg-green-50\">\n            <CardContent className=\"p-6\">\n              <div className=\"flex items-center justify-between\">\n                <div className=\"flex items-center gap-4\">\n                  <div className=\"p-2 bg-green-100 rounded-lg\">\n                    <User className=\"h-6 w-6 text-green-600\" />\n                  </div>\n                  <div>\n                    <h3 className=\"text-lg font-semibold text-green-900\">{t.dashboard.smartAssessment.title}</h3>\n                    <p className=\"text-sm text-green-700\">{t.dashboard.smartAssessment.description}</p>\n                  </div>\n                </div>\n                <Button asChild className=\"bg-green-600 hover:bg-green-700\">"
+    },
+    "title": "app/page.tsx",
+    "time": {
+      "start": 1758539971158,
+      "end": 1758539971160
+    }
+  }
+}

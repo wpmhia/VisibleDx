@@ -1,0 +1,41 @@
+{
+  "id": "prt_971240f72001T1Egi9NCmH8eWi",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_019EGEVaHj9fopnVfXqmos1F",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "edits": [
+        {
+          "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+          "oldString": "  // ME/CFS (NICE NG206)",
+          "newString": "  // ME/CFS"
+        },
+        {
+          "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+          "oldString": "    // ME/CFS Analysis (NICE NG206)",
+          "newString": "    // ME/CFS Analysis"
+        },
+        {
+          "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+          "oldString": "      name: 'ME/CFS (NICE NG206)',",
+          "newString": "      name: 'ME/CFS',"
+        },
+        {
+          "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+          "oldString": "        'Complete NICE NG206 investigations',",
+          "newString": "        'Complete diagnostic investigations',"
+        }
+      ]
+    },
+    "error": "Error: You must read the file /home/user/project/app/case-analyzer/page.tsx before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758539815673,
+      "end": 1758539815691
+    }
+  }
+}

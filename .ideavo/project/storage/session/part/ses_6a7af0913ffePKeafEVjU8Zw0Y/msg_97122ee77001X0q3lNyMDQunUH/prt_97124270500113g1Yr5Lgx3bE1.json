@@ -1,0 +1,21 @@
+{
+  "id": "prt_97124270500113g1Yr5Lgx3bE1",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01WmfiMFfis9zHuk58q4BxwB",
+  "state": {
+    "status": "error",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "  // ME/CFS (NICE NG206)\n  mecfs: {",
+      "newString": "  // ME/CFS\n  mecfs: {"
+    },
+    "error": "Error: You must read the file /home/user/project/app/case-analyzer/page.tsx before overwriting it. Use the Read tool first",
+    "time": {
+      "start": 1758539819862,
+      "end": 1758539819863
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "prt_97127c1b2001zy4PBIey7EPNey",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_01JCU7rHPGKu181ZtpQDX3PJ",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "NICE NG206",
+      "include": "*.tsx"
+    },
+    "output": "No files found",
+    "metadata": {
+      "matches": 0,
+      "truncated": false
+    },
+    "title": "NICE NG206",
+    "time": {
+      "start": 1758540055423,
+      "end": 1758540055434
+    }
+  }
+}

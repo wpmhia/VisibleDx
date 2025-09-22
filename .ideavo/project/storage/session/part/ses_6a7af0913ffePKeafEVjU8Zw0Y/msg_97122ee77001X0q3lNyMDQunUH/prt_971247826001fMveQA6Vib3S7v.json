@@ -1,0 +1,25 @@
+{
+  "id": "prt_971247826001fMveQA6Vib3S7v",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_011LJ9N6VKs8hWLpNFSCi9si",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "offset": 185,
+      "limit": 10
+    },
+    "output": "<file>\n00186|       id: 'mecfs',\n00187|       name: 'ME/CFS (NICE NG206)',\n00188|       icon: Brain,\n00189|       likelihood: mecfsLikelihood,\n00190|       score: mecfsScore,\n00191|       criteriaAssessment: mecfsCriteria,\n00192|       keyFindings: mecfsFindings,\n00193|       recommendations: mecfsScore >= 60 ? [\n00194|         'Strong consideration for ME/CFS diagnosis',\n00195|         'Complete NICE NG206 investigations',\n\n(File has more lines. Use 'offset' parameter to read beyond line 195)\n</file>",
+    "metadata": {
+      "preview": "      id: 'mecfs',\n      name: 'ME/CFS (NICE NG206)',\n      icon: Brain,\n      likelihood: mecfsLikelihood,\n      score: mecfsScore,\n      criteriaAssessment: mecfsCriteria,\n      keyFindings: mecfsFindings,\n      recommendations: mecfsScore >= 60 ? [\n        'Strong consideration for ME/CFS diagnosis',\n        'Complete NICE NG206 investigations',"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539840102,
+      "end": 1758539840104
+    }
+  }
+}

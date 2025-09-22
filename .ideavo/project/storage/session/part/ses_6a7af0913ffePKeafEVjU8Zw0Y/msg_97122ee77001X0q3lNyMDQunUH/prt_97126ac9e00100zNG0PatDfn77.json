@@ -1,0 +1,26 @@
+{
+  "id": "prt_97126ac9e00100zNG0PatDfn77",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "grep",
+  "callID": "toolu_012NmkZyzncPrEYE98vB6jWr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "pattern": "NICE NG206",
+      "path": "lib/translations",
+      "include": "*.ts"
+    },
+    "output": "Found 28 matches\nlib/translations/nl.ts:\n  Line 106:         description: 'NICE NG206 energiebeheer planningsgereedschap'\n  Line 239:       title: 'NICE NG206 Vereiste Onderzoeken',\n  Line 243:           title: 'Essentiële Tests (NICE NG206)',\n\nlib/translations/da.ts:\n  Line 106:         description: 'NICE NG206 energistyringsplanlægningsværktøj'\n  Line 242:       title: 'NICE NG206 Påkrævede Undersøgelser',\n  Line 246:           title: 'Essentielle Tests (NICE NG206)',\n\nlib/translations/en.ts:\n  Line 106:         description: 'NICE NG206 energy management planning tool'\n  Line 141:     description: 'NICE NG206 compliant screening · 4 core symptoms + additional features',\n  Line 194:         'ME/CFS strongly suspected - NICE NG206 criteria met',\n  Line 218:     title: 'NICE NG206 Differential Diagnosis',\n  Line 245:       title: 'NICE NG206 Required Investigations',\n  Line 249:           title: 'Essential Tests (NICE NG206)',\n  Line 266:       complete: 'NICE NG206 Differential Diagnosis Complete',\n  Line 269:       routineTests: 'NICE NG206 Required Investigations',\n  Line 271:       clinicalSupport: 'NICE NG206 Clinical Guidance',\n  Line 274:       routine: 'No red flags identified. Complete NICE NG206 mandatory investigations to exclude other diagnoses. If investigations normal and symptoms persist for 3 months, diagnose ME/CFS and refer to specialist team.',\n  Line 357:     title: 'NICE NG206 Post-Exertional Malaise Assessment',\n  Line 360:       title: 'NICE NG206 Definition of Post-Exertional Malaise',\n  Line 435:           'NICE NG206: Strict energy management within energy limits',\n  Line 442:           'NICE NG206: Implement energy management principles',\n  Line 449:           'NICE NG206: Begin energy management approach',\n  Line 456:           'PEM criteria not met according to NICE NG206',\n  Line 462:       important: 'NICE NG206: PEM is a core diagnostic criterion for ME/CFS. The NICE guideline emphasizes that people with ME/CFS should not use more energy than they perceive they have and should not \"push through\" their symptoms. Energy management is the recommended approach.',\n  Line 468:     title: 'NICE NG206 Diagnostic Criteria Engine',\n  Line 469:     description: 'Apply NICE NG206 diagnostic criteria for ME/CFS (3-month timeline)',\n  Line 471:       title: 'ME/CFS Criteria (NICE NG206)',\n  Line 472:       description: 'NICE NG206: Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',\n  Line 516:         'NICE NG206: Refer to ME/CFS specialist team for personalised care and support plan',",
+    "metadata": {
+      "matches": 28,
+      "truncated": false
+    },
+    "title": "NICE NG206",
+    "time": {
+      "start": 1758539984755,
+      "end": 1758539984771
+    }
+  }
+}

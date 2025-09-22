@@ -1,0 +1,25 @@
+{
+  "id": "prt_97124a7bf001BHjjHK8wZBixuF",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_017t177cGJz9Je96PGFcxipM",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "offset": 50,
+      "limit": 10
+    },
+    "output": "<file>\n00051|   const getPEMQuestions = () => {\n00052|     // NICE NG206 aligned scoring: Higher scores indicate more severe PEM\n00053|     const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]\n00054|     \n00055|     return [\n00056|       {\n00057|         id: 'activity_tolerance',\n00058|         question: t.pem.questions.activityTolerance.question,\n00059|         description: t.pem.questions.activityTolerance.description,\n00060|         options: t.pem.questions.activityTolerance.options.map((label, index) => ({\n\n(File has more lines. Use 'offset' parameter to read beyond line 60)\n</file>",
+    "metadata": {
+      "preview": "  const getPEMQuestions = () => {\n    // NICE NG206 aligned scoring: Higher scores indicate more severe PEM\n    const scoreArrays = [[0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4], [0,1,2,3,4]]\n    \n    return [\n      {\n        id: 'activity_tolerance',\n        question: t.pem.questions.activityTolerance.question,\n        description: t.pem.questions.activityTolerance.description,\n        options: t.pem.questions.activityTolerance.options.map((label, index) => ({"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758539852303,
+      "end": 1758539852306
+    }
+  }
+}

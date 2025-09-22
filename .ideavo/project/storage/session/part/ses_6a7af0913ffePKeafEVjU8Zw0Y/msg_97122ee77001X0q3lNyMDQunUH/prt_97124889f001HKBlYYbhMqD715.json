@@ -1,0 +1,26 @@
+{
+  "id": "prt_97124889f001HKBlYYbhMqD715",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01Bs1XB6r44MK7mP4Ua1w1M3",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "      name: 'ME/CFS (NICE NG206)',",
+      "newString": "      name: 'ME/CFS',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/case-analyzer/page.tsx\n===================================================================\n--- /home/user/project/app/case-analyzer/page.tsx\n+++ /home/user/project/app/case-analyzer/page.tsx\n@@ -183,9 +183,9 @@\n if (mecfsCriteria.duration) mecfsFindings.push('Chronic duration (≥3 months)')\n \n frameworks.push({\n   id: 'mecfs',\n-  name: 'ME/CFS (NICE NG206)',\n+  name: 'ME/CFS',\n   icon: Brain,\n   likelihood: mecfsLikelihood,\n   score: mecfsScore,\n   criteriaAssessment: mecfsCriteria,\n"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539844489,
+      "end": 1758539844498
+    }
+  }
+}

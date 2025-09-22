@@ -1,0 +1,26 @@
+{
+  "id": "prt_971273bfc001ZXJUZuICUSGHjf",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01MFE83MqLNYgvWG7cLt5bMn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "oldString": "        description: 'NICE NG206 energiebeheer planningsgereedschap'",
+      "newString": "        description: 'Klinisch energiebeheer planningsgereedschap'"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -102,9 +102,9 @@\n   description: 'Gepersonaliseerde behandelingsaanbevelingen'\n },\n energyManagement: {\n   title: 'Energiebeheer',\n-  description: 'NICE NG206 energiebeheer planningsgereedschap'\n+  description: 'Klinisch energiebeheer planningsgereedschap'\n },\n caseAnalyzer: {\n   title: 'Case Analyzer',\n   description: 'AI-gedreven klinische case analyse voor ME/CFS beoordeling'\n"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540021656,
+      "end": 1758540021669
+    }
+  }
+}

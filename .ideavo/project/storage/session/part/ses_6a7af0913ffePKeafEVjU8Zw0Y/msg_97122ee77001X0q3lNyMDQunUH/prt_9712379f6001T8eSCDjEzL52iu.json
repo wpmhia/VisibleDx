@@ -1,0 +1,25 @@
+{
+  "id": "prt_9712379f6001T8eSCDjEzL52iu",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_014tVPDWmCr1LPtmYHTqWztn",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/criteria-engine/page.tsx",
+      "offset": 100,
+      "limit": 50
+    },
+    "output": "<file>\n00101| \n00102|   const calculateDiagnoses = (): DiagnosticCriteria[] => {\n00103|     const diagnoses: DiagnosticCriteria[] = []\n00104| \n00105|     // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met\n00106|     const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length\n00107|     const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false\n00108|     const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false\n00109|     const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false\n00110|     \n00111|     // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)\n00112|     const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion\n00113|     \n00114|     diagnoses.push({\n00115|       id: 'mecfs',\n00116|       condition: t.conditions.mecfs.fullName + ' (NICE NG206)',\n00117|       met: mecfsMet,\n00118|       criteria: mecfsChecked,\n00119|       icdCode: t.conditions.mecfs.icdCode,\n00120|       confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')\n00121|     })\n00122| \n00123|     // Long COVID Diagnosis\n00124|     const longCovidMet = longCovidChecked.filter(c => c.met).length >= 3\n00125|     diagnoses.push({\n00126|       id: 'longcovid',\n00127|       condition: t.conditions.longCovid.fullName,\n00128|       met: longCovidMet,\n00129|       criteria: longCovidChecked,\n00130|       icdCode: t.conditions.longCovid.icdCode,\n00131|       confidence: longCovidMet ? 'high' : 'low'\n00132|     })\n00133| \n00134|     // Enhanced POTS Diagnosis following ESC 2018/AAS-EFAS 2021 flowchart\n00135|     // Core criteria: HR increase + symptoms + duration + no OH\n00136|     const potsHRIncrease = potsChecked.find(c => c.id === 'hr_increase')?.met || false\n00137|     const potsSymptoms = potsChecked.find(c => c.id === 'symptoms')?.met || false\n00138|     const potsDuration = potsChecked.find(c => c.id === 'duration_pots')?.met || false\n00139|     const noOrthostHypotension = potsChecked.find(c => c.id === 'no_oh')?.met || false\n00140|     const sustainedTachycardia = potsChecked.find(c => c.id === 'sustained')?.met || false\n00141|     \n00142|     // POTS requires all 4 core criteria\n00143|     const potsMet = potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension\n00144|     \n00145|     // Determine confidence based on additional criteria\n00146|     let potsConfidence: 'low' | 'medium' | 'high' = 'low'\n00147|     if (potsMet) {\n00148|       if (sustainedTachycardia && potsHRIncrease && potsSymptoms && potsDuration && noOrthostHypotension) {\n00149|         potsConfidence = 'high'\n00150|       } else if (potsHRIncrease && potsSymptoms && potsDuration) {\n\n(File has more lines. Use 'offset' parameter to read beyond line 150)\n</file>",
+    "metadata": {
+      "preview": "\n  const calculateDiagnoses = (): DiagnosticCriteria[] => {\n    const diagnoses: DiagnosticCriteria[] = []\n\n    // NICE NG206 ME/CFS Diagnosis - requires ALL 7 criteria to be met\n    const niceCoreSymptoms = mecfsChecked.filter(c => ['fatigue', 'pem', 'sleep', 'cognitive'].includes(c.id) && c.met).length\n    const niceDuration = mecfsChecked.find(c => c.id === 'duration')?.met || false\n    const niceFunctionalImpairment = mecfsChecked.find(c => c.id === 'functional_impairment')?.met || false\n    const niceExclusion = mecfsChecked.find(c => c.id === 'exclusion')?.met || false\n    \n    // NICE NG206: ALL criteria must be met (all 4 core symptoms + duration + functional impairment + exclusion)\n    const mecfsMet = niceCoreSymptoms === 4 && niceDuration && niceFunctionalImpairment && niceExclusion\n    \n    diagnoses.push({\n      id: 'mecfs',\n      condition: t.conditions.mecfs.fullName + ' (NICE NG206)',\n      met: mecfsMet,\n      criteria: mecfsChecked,\n      icdCode: t.conditions.mecfs.icdCode,\n      confidence: mecfsMet ? 'high' : (niceCoreSymptoms >= 3 && (niceDuration || niceFunctionalImpairment) ? 'medium' : 'low')"
+    },
+    "title": "app/criteria-engine/page.tsx",
+    "time": {
+      "start": 1758539775123,
+      "end": 1758539775126
+    }
+  }
+}

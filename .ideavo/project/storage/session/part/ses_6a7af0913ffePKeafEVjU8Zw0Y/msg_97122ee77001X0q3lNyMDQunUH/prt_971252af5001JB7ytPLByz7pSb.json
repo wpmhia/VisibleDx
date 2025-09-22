@@ -1,0 +1,25 @@
+{
+  "id": "prt_971252af5001JB7ytPLByz7pSb",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01SRtvjQ6Cqb35ftHNpF82Lw",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/quick-screen/page.tsx",
+      "offset": 48,
+      "limit": 10
+    },
+    "output": "<file>\n00049|     \n00050|     // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n00051|     const coreFatigue = answers[1] // Debilitating fatigue\n00052|     const corePEM = answers[2] // Post-exertional malaise\n00053|     const coreSleep = answers[3] // Unrefreshing sleep\n00054|     const coreCognitive = answers[4] // Cognitive difficulties\n00055|     const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length\n00056|     \n00057|     // NICE Diagnostic Requirements\n00058|     const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)\n\n(File has more lines. Use 'offset' parameter to read beyond line 58)\n</file>",
+    "metadata": {
+      "preview": "    \n    // NICE NG206 Core Symptoms (all 4 required for suspected ME/CFS)\n    const coreFatigue = answers[1] // Debilitating fatigue\n    const corePEM = answers[2] // Post-exertional malaise\n    const coreSleep = answers[3] // Unrefreshing sleep\n    const coreCognitive = answers[4] // Cognitive difficulties\n    const coreSymptoms = [coreFatigue, corePEM, coreSleep, coreCognitive].filter(Boolean).length\n    \n    // NICE Diagnostic Requirements\n    const durationMet = answers[12] // Duration criteria (6 weeks adults/4 weeks children)"
+    },
+    "title": "app/quick-screen/page.tsx",
+    "time": {
+      "start": 1758539885938,
+      "end": 1758539885940
+    }
+  }
+}

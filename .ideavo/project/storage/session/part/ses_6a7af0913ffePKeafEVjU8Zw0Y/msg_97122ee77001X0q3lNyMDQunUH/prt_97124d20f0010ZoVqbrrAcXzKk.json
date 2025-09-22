@@ -1,0 +1,26 @@
+{
+  "id": "prt_97124d20f0010ZoVqbrrAcXzKk",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_019q2DHzBdDheEWH5sEXHcGP",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "oldString": "    // NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics",
+      "newString": "    // Clinical Assessment: PEM requires worsening after activity with specific characteristics"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -119,9 +119,9 @@\n }, 0)\n \n const percentage = (totalScore / maxScore) * 100\n \n-// NICE NG206 Assessment: PEM requires worsening after activity with specific characteristics\n+// Clinical Assessment: PEM requires worsening after activity with specific characteristics\n const activityToleranceScore = answers['activity_tolerance'] ? getPEMQuestions()[0].options.find(opt => opt.value === answers['activity_tolerance'])?.score || 0 : 0\n const delayedOnsetScore = answers['delayed_onset'] ? getPEMQuestions()[1].options.find(opt => opt.value === answers['delayed_onset'])?.score || 0 : 0\n const disproportionateScore = answers['disproportionate'] ? getPEMQuestions()[2].options.find(opt => opt.value === answers['disproportionate'])?.score || 0 : 0\n const prolongedRecoveryScore = answers['prolonged_recovery'] ? getPEMQuestions()[3].options.find(opt => opt.value === answers['prolonged_recovery'])?.score || 0 : 0\n"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758539863472,
+      "end": 1758539863486
+    }
+  }
+}

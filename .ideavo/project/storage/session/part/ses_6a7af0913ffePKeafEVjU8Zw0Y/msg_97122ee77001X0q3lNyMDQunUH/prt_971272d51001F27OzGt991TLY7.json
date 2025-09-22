@@ -1,0 +1,25 @@
+{
+  "id": "prt_971272d51001F27OzGt991TLY7",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01ETQSuXEBuC2M5pA8y7h2ur",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 105,
+      "limit": 5
+    },
+    "output": "<file>\n00106|         description: 'NICE NG206 energiebeheer planningsgereedschap'\n00107|       },\n00108|       caseAnalyzer: {\n00109|         title: 'Case Analyzer',\n00110|         description: 'AI-gedreven klinische case analyse voor ME/CFS beoordeling'\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "        description: 'NICE NG206 energiebeheer planningsgereedschap'\n      },\n      caseAnalyzer: {\n        title: 'Case Analyzer',\n        description: 'AI-gedreven klinische case analyse voor ME/CFS beoordeling'"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540017530,
+      "end": 1758540017532
+    }
+  }
+}

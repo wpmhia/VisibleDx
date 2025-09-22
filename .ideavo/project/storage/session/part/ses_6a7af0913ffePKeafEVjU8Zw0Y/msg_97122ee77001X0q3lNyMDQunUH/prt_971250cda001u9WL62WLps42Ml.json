@@ -1,0 +1,26 @@
+{
+  "id": "prt_971250cda001u9WL62WLps42Ml",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_01N5ArCXC8Hq8Ycw9Rx73uYq",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/pem-quest/page.tsx",
+      "oldString": "    if (niceCoreCriteria && percentage >= 70) {\n      severity = t.pem.results.severityLevels.severe\n      color = 'bg-red-100 text-red-800'\n    } else if (niceCoreCriteria && percentage >= 50) {\n      severity = t.pem.results.severityLevels.moderate\n      color = 'bg-orange-100 text-orange-800'\n    } else if (niceCoreCriteria) {\n      severity = t.pem.results.severityLevels.mild\n      color = 'bg-yellow-100 text-yellow-800'\n    }\n\n    const isPEMPresent = niceCoreCriteria",
+      "newString": "    if (clinicalCoreCriteria && percentage >= 70) {\n      severity = t.pem.results.severityLevels.severe\n      color = 'bg-red-100 text-red-800'\n    } else if (clinicalCoreCriteria && percentage >= 50) {\n      severity = t.pem.results.severityLevels.moderate\n      color = 'bg-orange-100 text-orange-800'\n    } else if (clinicalCoreCriteria) {\n      severity = t.pem.results.severityLevels.mild\n      color = 'bg-yellow-100 text-yellow-800'\n    }\n\n    const isPEMPresent = clinicalCoreCriteria"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/pem-quest/page.tsx\n===================================================================\n--- /home/user/project/app/pem-quest/page.tsx\n+++ /home/user/project/app/pem-quest/page.tsx\n@@ -131,20 +131,20 @@\n \n let severity = t.pem.results.severityLevels.none\n let color = 'bg-green-100 text-green-800'\n \n-if (niceCoreCriteria && percentage >= 70) {\n+if (clinicalCoreCriteria && percentage >= 70) {\n   severity = t.pem.results.severityLevels.severe\n   color = 'bg-red-100 text-red-800'\n-} else if (niceCoreCriteria && percentage >= 50) {\n+} else if (clinicalCoreCriteria && percentage >= 50) {\n   severity = t.pem.results.severityLevels.moderate\n   color = 'bg-orange-100 text-orange-800'\n-} else if (niceCoreCriteria) {\n+} else if (clinicalCoreCriteria) {\n   severity = t.pem.results.severityLevels.mild\n   color = 'bg-yellow-100 text-yellow-800'\n }\n \n-const isPEMPresent = niceCoreCriteria\n+const isPEMPresent = clinicalCoreCriteria\n \n return {\n   totalScore,\n   maxScore,\n"
+    },
+    "title": "app/pem-quest/page.tsx",
+    "time": {
+      "start": 1758539881120,
+      "end": 1758539881126
+    }
+  }
+}

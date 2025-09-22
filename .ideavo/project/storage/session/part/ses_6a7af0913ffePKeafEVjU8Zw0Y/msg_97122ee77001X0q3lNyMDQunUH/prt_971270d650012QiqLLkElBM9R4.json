@@ -1,0 +1,25 @@
+{
+  "id": "prt_971270d650012QiqLLkElBM9R4",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01VGuKgDM6i3LVw4DZQAAqsg",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "offset": 105,
+      "limit": 5
+    },
+    "output": "<file>\n00106|         description: 'NICE NG206 energistyringsplanlægningsværktøj'\n00107|       },\n00108|       caseAnalyzer: {\n00109|         title: 'Sag Analysator',\n00110|         description: 'AI-drevet klinisk sag analyse for ME/CFS vurdering'\n\n(File has more lines. Use 'offset' parameter to read beyond line 110)\n</file>",
+    "metadata": {
+      "preview": "        description: 'NICE NG206 energistyringsplanlægningsværktøj'\n      },\n      caseAnalyzer: {\n        title: 'Sag Analysator',\n        description: 'AI-drevet klinisk sag analyse for ME/CFS vurdering'"
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758540009428,
+      "end": 1758540009430
+    }
+  }
+}

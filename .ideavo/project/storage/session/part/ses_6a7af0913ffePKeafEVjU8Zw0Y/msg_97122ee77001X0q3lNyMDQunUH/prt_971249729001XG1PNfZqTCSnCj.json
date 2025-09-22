@@ -1,0 +1,26 @@
+{
+  "id": "prt_971249729001XG1PNfZqTCSnCj",
+  "messageID": "msg_97122ee77001X0q3lNyMDQunUH",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "edit",
+  "callID": "toolu_0162LPJEnufCMG4fTJdNmrKf",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/app/case-analyzer/page.tsx",
+      "oldString": "        'Complete NICE NG206 investigations',",
+      "newString": "        'Complete diagnostic investigations',"
+    },
+    "output": "",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /home/user/project/app/case-analyzer/page.tsx\n===================================================================\n--- /home/user/project/app/case-analyzer/page.tsx\n+++ /home/user/project/app/case-analyzer/page.tsx\n@@ -191,9 +191,9 @@\n criteriaAssessment: mecfsCriteria,\n keyFindings: mecfsFindings,\n recommendations: mecfsScore >= 60 ? [\n   'Strong consideration for ME/CFS diagnosis',\n-  'Complete NICE NG206 investigations',\n+  'Complete diagnostic investigations',\n   'Consider specialist referral'\n ] : ['Possible ME/CFS - requires further assessment'],\n icdCode: 'G93.3',\n confidence: mecfsCoreSymptoms >= 4 ? 'high' : mecfsCoreSymptoms >= 3 ? 'medium' : 'low'\n"
+    },
+    "title": "app/case-analyzer/page.tsx",
+    "time": {
+      "start": 1758539848229,
+      "end": 1758539848241
+    }
+  }
+}
