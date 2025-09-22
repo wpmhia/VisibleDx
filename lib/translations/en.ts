@@ -468,26 +468,27 @@ export const en: Translation = {
     title: 'Diagnostic Criteria Engine',
     description: 'Apply multiple diagnostic criteria frameworks for complex conditions',
     mecfs: {
-        title: 'ME/CFS Criteria',
-        description: 'Diagnose ME/CFS if ALL symptoms present for 3 months and NOT explained by another condition',
+        title: 'ME/CFS Criteria (ICD-10: G93.3)',
+        description: 'Based on 2015 IOM/NAM criteria - requires substantial activity reduction >6 months (adults) or >3 months (children)',
       criteria: [
-        'Debilitating fatigue worsened by activity, not caused by excessive exertion, not significantly relieved by rest',
-        'Post-exertional malaise: worsening often delayed by hours/days, disproportionate to activity, prolonged recovery',
-        'Unrefreshing sleep or sleep disturbance (exhausted/flu-like on waking, broken sleep, altered pattern)',
-        'Cognitive difficulties (brain fog, problems finding words/numbers, difficulty speaking, memory/concentration issues)',
-        'Symptoms have persisted for 3 months',
-        'Significant reduction in ability to engage in occupational, educational, social or personal activities from pre-illness levels',
-        'Symptoms are NOT explained by another condition (after appropriate investigations)'
+        'Substantial reduction in ability to engage in pre-illness activity levels, lasting >6 months in adults',
+        'Profound fatigue with new/definite onset (not lifelong), not from excessive exertion, not substantially relieved by rest',
+        'Post-exertional malaise (PEM): worsening of symptoms after physical/cognitive/emotional effort, often delayed onset and prolonged recovery',
+        'Unrefreshing sleep',
+        'EITHER cognitive impairment (slowed processing, memory problems, attention deficits) OR orthostatic intolerance (symptoms worsen on standing)',
+        'Symptoms NOT fully explained by other medical/psychiatric conditions (comorbidities may be present)'
       ]
     },
     longCovid: {
-      title: 'Long COVID Criteria (WHO/NASEM 2024)',
-      description: 'Post-acute sequelae of SARS-CoV-2 infection with persistent multi-system symptoms',
+      title: 'Long COVID Criteria (WHO 2021)',
+      description: 'Post-COVID condition with symptoms starting within 3 months of infection, persisting ≥2 months',
       criteria: [
-        'Confirmed or probable SARS-CoV-2 infection',
-        'Symptoms persist ≥3 months from acute illness',
-        'Multi-system symptoms affecting daily functioning',
-        'Symptoms not explained by alternative diagnosis'
+        'History of confirmed or probable SARS-CoV-2 infection',
+        'Symptoms start within 3 months of infection onset',
+        'Symptoms persist for at least 2 months',
+        'Common symptoms: fatigue, dyspnea, cognitive dysfunction, chest pain, palpitations, post-exertional symptom exacerbation',
+        'Symptoms may be new after recovery or persist from initial illness; may fluctuate or recur',
+        'Cannot be explained by alternative diagnosis (after appropriate testing)'
       ],
       timing: {
         confirmed: 'Confirmed by test',
@@ -496,14 +497,15 @@ export const en: Translation = {
       }
     },
     pots: {
-      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',
-      description: 'Heart rate increase ≥30 bpm within 10 minutes of standing, with symptoms but without orthostatic hypotension',
+      title: 'POTS Criteria',
+      description: 'Sustained HR increase ≥30 bpm (adults) or ≥40 bpm (12-19 years) within 10 minutes of standing, lasting ≥3 months',
       criteria: [
-        'Heart rate increase ≥30 bpm within 10 minutes of standing (≥40 bpm for ages 12-19)',
-        'Sustained heart rate ≥120 bpm while standing OR sustained tachycardia',
-        'Orthostatic symptoms: dizziness, palpitations, fatigue, brain fog, or syncope',
-        'Chronic symptoms present for ≥3 months',
-        'Absence of orthostatic hypotension (SBP drop <20 mmHg or DBP drop <10 mmHg)'
+        'Sustained heart rate increase ≥30 bpm in adults (≥40 bpm ages 12-19) within 10 minutes of standing',
+        'Often absolute orthostatic tachycardia >120 bpm when standing',
+        'NO orthostatic hypotension (SBP drop <20 mmHg, DBP drop <10 mmHg)',
+        'Chronic orthostatic intolerance symptoms ≥3 months (lightheadedness, palpitations, fatigue, cognitive difficulties)',
+        'Symptoms relieved by recumbence',
+        'Not better explained by other causes (dehydration, medications, cardiac disease, adrenal insufficiency)'
       ]
     },
     results: {

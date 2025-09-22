@@ -1,0 +1,53 @@
+{
+  "id": "prt_97132f8ef0012KjpKnJJq1senj",
+  "messageID": "msg_97131bb6c0016ly0Coim1BcWS9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01KkevitvaXJurQDPpjz7zCr",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/da.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "        title: 'ME/CFS Kriterier',\n        description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n      criteria: [\n        'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n        'Post-exertionel utilpashed (PEM) til stede',\n        'Ikke-forfriskende søvn',\n        'Kognitiv svækkelse (hjernetåge)',\n        'Ortostatisk intolerance ELLER autonom dysfunktion'\n      ]",
+          "newString": "        title: 'ME/CFS Kriterier (ICD-10: G93.3)',\n        description: 'Baseret på 2015 IOM/NAM kriterier - kræver betydelig aktivitetsreduktion >6 måneder (voksne) eller >3 måneder (børn)',\n      criteria: [\n        'Betydelig reduktion i evnen til at deltage i før-sygdoms aktivitetsniveauer, varer >6 måneder hos voksne',\n        'Dyb træthed med ny/bestemt begyndelse (ikke livslang), ikke fra overdreven anstrengelse, ikke væsentligt lindret af hvile',\n        'Post-exertionel utilpashed (PEM): forværring af symptomer efter fysisk/kognitiv/emotionel anstrengelse, ofte forsinket begyndelse og forlænget restitution',\n        'Ikke-forfriskende søvn',\n        'ENTEN kognitiv svækkelse (langsommere behandling, hukommelsesproblemer, opmærksomhedsdeficit) ELLER ortostatisk intolerance (symptomer forværres ved ståen)',\n        'Symptomer IKKE fuldt forklaret af andre medicinske/psykiatriske tilstande (komorbiditeter kan være til stede)'\n      ]"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n      description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n      criteria: [\n        'Bekræftet eller sandsynlig SARS-CoV-2 infektion',\n        'Symptomer fortsætter ≥3 måneder fra akut sygdom',\n        'Multi-system symptomer, der påvirker daglig funktionsevne',\n        'Symptomer ikke forklaret af alternativ diagnose'\n      ],",
+          "newString": "      title: 'Lang COVID Kriterier (WHO 2021)',\n      description: 'Post-COVID tilstand med symptomer, der starter inden for 3 måneder efter infektion, varer ≥2 måneder',\n      criteria: [\n        'Historie med bekræftet eller sandsynlig SARS-CoV-2 infektion',\n        'Symptomer starter inden for 3 måneder efter infektionsbegyndelse',\n        'Symptomer varer mindst 2 måneder',\n        'Almindelige symptomer: træthed, åndenød, kognitiv dysfunktion, brystsmerter, hjertebanken, post-exertionel symptomforværring',\n        'Symptomer kan være nye efter restitution eller fortsætte fra initial sygdom; kan fluktuere eller vende tilbage',\n        'Kan ikke forklares af alternativ diagnose (efter passende testning)'\n      ],"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/da.ts",
+          "oldString": "      title: 'POTS Kriterier (ESC 2018/AAS-EFAS 2021)',\n      description: 'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå, med symptomer men uden ortostatisk hypotension',\n      criteria: [\n        'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå',\n        'Vedvarende hjertefrekvens ≥120 slag/min mens stående',\n        'Ortostatiske symptomer (svimmelhed, hjertebanken, træthed)',\n        'Symptomer til stede i ≥3 måneder',\n        'Fravær af ortostatisk hypotension'\n      ]",
+          "newString": "      title: 'POTS Kriterier',\n      description: 'Vedvarende HR stigning ≥30 spm (voksne) eller ≥40 spm (12-19 år) inden for 10 minutter af ståen, varer ≥3 måneder',\n      criteria: [\n        'Vedvarende hjertefrekvens stigning ≥30 spm hos voksne (≥40 spm alder 12-19) inden for 10 minutter af ståen',\n        'Ofte absolut ortostatisk takykardi >120 spm når stående',\n        'INGEN ortostatisk hypotension (SBP fald <20 mmHg, DBP fald <10 mmHg)',\n        'Kronisk ortostatisk intolerance symptomer ≥3 måneder (svimmelhed, hjertebanken, træthed, kognitive vanskeligheder)',\n        'Symptomer lindret ved at ligge ned',\n        'Ikke bedre forklaret af andre årsager (dehydrering, medicin, hjertesygdom, binyre insufficiens)'\n      ]"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -461,16 +461,17 @@\n criteria: {\n   title: 'Kriterier Motor',\n   description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',\n   mecfs: {\n-      title: 'ME/CFS Kriterier',\n-      description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',\n+      title: 'ME/CFS Kriterier (ICD-10: G93.3)',\n+      description: 'Baseret på 2015 IOM/NAM kriterier - kræver betydelig aktivitetsreduktion >6 måneder (voksne) eller >3 måneder (børn)',\n     criteria: [\n-      'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',\n-      'Post-exertionel utilpashed (PEM) til stede',\n+      'Betydelig reduktion i evnen til at deltage i før-sygdoms aktivitetsniveauer, varer >6 måneder hos voksne',\n+      'Dyb træthed med ny/bestemt begyndelse (ikke livslang), ikke fra overdreven anstrengelse, ikke væsentligt lindret af hvile',\n+      'Post-exertionel utilpashed (PEM): forværring af symptomer efter fysisk/kognitiv/emotionel anstrengelse, ofte forsinket begyndelse og forlænget restitution',\n       'Ikke-forfriskende søvn',\n-      'Kognitiv svækkelse (hjernetåge)',\n-      'Ortostatisk intolerance ELLER autonom dysfunktion'\n+      'ENTEN kognitiv svækkelse (langsommere behandling, hukommelsesproblemer, opmærksomhedsdeficit) ELLER ortostatisk intolerance (symptomer forværres ved ståen)',\n+      'Symptomer IKKE fuldt forklaret af andre medicinske/psykiatriske tilstande (komorbiditeter kan være til stede)'\n     ]\n   },\n   longCovid: {\n     title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -473,15 +473,17 @@\n     'Symptomer IKKE fuldt forklaret af andre medicinske/psykiatriske tilstande (komorbiditeter kan være til stede)'\n   ]\n },\n longCovid: {\n-  title: 'Lang COVID Kriterier (WHO/NASEM 2024)',\n-  description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',\n+  title: 'Lang COVID Kriterier (WHO 2021)',\n+  description: 'Post-COVID tilstand med symptomer, der starter inden for 3 måneder efter infektion, varer ≥2 måneder',\n   criteria: [\n-    'Bekræftet eller sandsynlig SARS-CoV-2 infektion',\n-    'Symptomer fortsætter ≥3 måneder fra akut sygdom',\n-    'Multi-system symptomer, der påvirker daglig funktionsevne',\n-    'Symptomer ikke forklaret af alternativ diagnose'\n+    'Historie med bekræftet eller sandsynlig SARS-CoV-2 infektion',\n+    'Symptomer starter inden for 3 måneder efter infektionsbegyndelse',\n+    'Symptomer varer mindst 2 måneder',\n+    'Almindelige symptomer: træthed, åndenød, kognitiv dysfunktion, brystsmerter, hjertebanken, post-exertionel symptomforværring',\n+    'Symptomer kan være nye efter restitution eller fortsætte fra initial sygdom; kan fluktuere eller vende tilbage',\n+    'Kan ikke forklares af alternativ diagnose (efter passende testning)'\n   ],\n   timing: {\n     confirmed: 'Bekræftet ved test',\n     probable: 'Sandsynlig baseret på symptomer/eksponering',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/da.ts\n===================================================================\n--- /home/user/project/lib/translations/da.ts\n+++ /home/user/project/lib/translations/da.ts\n@@ -490,16 +490,17 @@\n     suspected: 'Mistænkt baseret på timing'\n   }\n },\n pots: {\n-  title: 'POTS Kriterier (ESC 2018/AAS-EFAS 2021)',\n-  description: 'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå, med symptomer men uden ortostatisk hypotension',\n+  title: 'POTS Kriterier',\n+  description: 'Vedvarende HR stigning ≥30 spm (voksne) eller ≥40 spm (12-19 år) inden for 10 minutter af ståen, varer ≥3 måneder',\n   criteria: [\n-    'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå',\n-    'Vedvarende hjertefrekvens ≥120 slag/min mens stående',\n-    'Ortostatiske symptomer (svimmelhed, hjertebanken, træthed)',\n-    'Symptomer til stede i ≥3 måneder',\n-    'Fravær af ortostatisk hypotension'\n+    'Vedvarende hjertefrekvens stigning ≥30 spm hos voksne (≥40 spm alder 12-19) inden for 10 minutter af ståen',\n+    'Ofte absolut ortostatisk takykardi >120 spm når stående',\n+    'INGEN ortostatisk hypotension (SBP fald <20 mmHg, DBP fald <10 mmHg)',\n+    'Kronisk ortostatisk intolerance symptomer ≥3 måneder (svimmelhed, hjertebanken, træthed, kognitive vanskeligheder)',\n+    'Symptomer lindret ved at ligge ned',\n+    'Ikke bedre forklaret af andre årsager (dehydrering, medicin, hjertesygdom, binyre insufficiens)'\n   ]\n },\n results: {\n   complete: 'Diagnostiske Kriterier Vurdering Afsluttet',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/da.ts",
+    "time": {
+      "start": 1758540812603,
+      "end": 1758540812632
+    }
+  }
+}

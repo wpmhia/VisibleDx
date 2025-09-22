@@ -1,0 +1,97 @@
+{
+  "id": "prt_9713470920015ITvv3wpJUlknF",
+  "messageID": "msg_97131bb6c0016ly0Coim1BcWS9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_018fbFkDJ6C22GGrdNd2c891",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update ME/CFS criteria to match 2015 IOM/NAM standards",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update Long COVID criteria to match WHO 2021 definition",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update POTS criteria with precise hemodynamic thresholds",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update Danish translation criteria",
+          "status": "completed",
+          "priority": "high",
+          "id": "4"
+        },
+        {
+          "content": "Update Dutch translation criteria",
+          "status": "completed",
+          "priority": "high",
+          "id": "5"
+        },
+        {
+          "content": "Test build after criteria updates",
+          "status": "completed",
+          "priority": "medium",
+          "id": "6"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update ME/CFS criteria to match 2015 IOM/NAM standards\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Update Long COVID criteria to match WHO 2021 definition\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Update POTS criteria with precise hemodynamic thresholds\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Update Danish translation criteria\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"4\"\n  },\n  {\n    \"content\": \"Update Dutch translation criteria\",\n    \"status\": \"completed\",\n    \"priority\": \"high\",\n    \"id\": \"5\"\n  },\n  {\n    \"content\": \"Test build after criteria updates\",\n    \"status\": \"completed\",\n    \"priority\": \"medium\",\n    \"id\": \"6\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update ME/CFS criteria to match 2015 IOM/NAM standards",
+          "status": "completed",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update Long COVID criteria to match WHO 2021 definition",
+          "status": "completed",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update POTS criteria with precise hemodynamic thresholds",
+          "status": "completed",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Update Danish translation criteria",
+          "status": "completed",
+          "priority": "high",
+          "id": "4"
+        },
+        {
+          "content": "Update Dutch translation criteria",
+          "status": "completed",
+          "priority": "high",
+          "id": "5"
+        },
+        {
+          "content": "Test build after criteria updates",
+          "status": "completed",
+          "priority": "medium",
+          "id": "6"
+        }
+      ]
+    },
+    "title": "0 todos",
+    "time": {
+      "start": 1758540888228,
+      "end": 1758540888252
+    }
+  }
+}

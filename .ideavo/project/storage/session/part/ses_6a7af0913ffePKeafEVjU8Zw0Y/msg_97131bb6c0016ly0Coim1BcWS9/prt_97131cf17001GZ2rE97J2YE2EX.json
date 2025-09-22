@@ -1,0 +1,73 @@
+{
+  "id": "prt_97131cf17001GZ2rE97J2YE2EX",
+  "messageID": "msg_97131bb6c0016ly0Coim1BcWS9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "todowrite",
+  "callID": "toolu_011L8p9Bca1fZQ41Q7WdAjYo",
+  "state": {
+    "status": "completed",
+    "input": {
+      "todos": [
+        {
+          "content": "Update ME/CFS criteria to match 2015 IOM/NAM standards",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update Long COVID criteria to match WHO 2021 definition",
+          "status": "pending",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update POTS criteria with precise hemodynamic thresholds",
+          "status": "pending",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Test build after criteria updates",
+          "status": "pending",
+          "priority": "medium",
+          "id": "4"
+        }
+      ]
+    },
+    "output": "[\n  {\n    \"content\": \"Update ME/CFS criteria to match 2015 IOM/NAM standards\",\n    \"status\": \"in_progress\",\n    \"priority\": \"high\",\n    \"id\": \"1\"\n  },\n  {\n    \"content\": \"Update Long COVID criteria to match WHO 2021 definition\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"2\"\n  },\n  {\n    \"content\": \"Update POTS criteria with precise hemodynamic thresholds\",\n    \"status\": \"pending\",\n    \"priority\": \"high\",\n    \"id\": \"3\"\n  },\n  {\n    \"content\": \"Test build after criteria updates\",\n    \"status\": \"pending\",\n    \"priority\": \"medium\",\n    \"id\": \"4\"\n  }\n]",
+    "metadata": {
+      "todos": [
+        {
+          "content": "Update ME/CFS criteria to match 2015 IOM/NAM standards",
+          "status": "in_progress",
+          "priority": "high",
+          "id": "1"
+        },
+        {
+          "content": "Update Long COVID criteria to match WHO 2021 definition",
+          "status": "pending",
+          "priority": "high",
+          "id": "2"
+        },
+        {
+          "content": "Update POTS criteria with precise hemodynamic thresholds",
+          "status": "pending",
+          "priority": "high",
+          "id": "3"
+        },
+        {
+          "content": "Test build after criteria updates",
+          "status": "pending",
+          "priority": "medium",
+          "id": "4"
+        }
+      ]
+    },
+    "title": "4 todos",
+    "time": {
+      "start": 1758540716588,
+      "end": 1758540716610
+    }
+  }
+}

@@ -455,24 +455,27 @@ export const nl: Translation = {
     title: 'Criteria Engine',
     description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',
     mecfs: {
-        title: 'ME/CVS Criteria',
-        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',
+        title: 'ME/CVS Criteria (ICD-10: G93.3)',
+        description: 'Gebaseerd op 2015 IOM/NAM criteria - vereist substantiële activiteitsreductie >6 maanden (volwassenen) of >3 maanden (kinderen)',
       criteria: [
-        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',
-        'Post-exertionele malaise (PEM) aanwezig',
+        'Substantiële vermindering in het vermogen om deel te nemen aan pre-ziekte activiteitsniveaus, duurt >6 maanden bij volwassenen',
+        'Diepe vermoeidheid met nieuwe/definitieve aanvang (niet levenslang), niet door overmatige inspanning, niet substantieel verlicht door rust',
+        'Post-exertionele malaise (PEM): verslechtering van symptomen na fysieke/cognitieve/emotionele inspanning, vaak vertraagde aanvang en verlengd herstel',
         'Niet-verkwikkende slaap',
-        'Cognitieve stoornissen (brain fog)',
-        'Orthostatische intolerantie OF autonome disfunctie'
+        'OFWEL cognitieve stoornissen (langzamere verwerking, geheugenproblemen, aandachtsproblemen) OF orthostatische intolerantie (symptomen verergeren bij staan)',
+        'Symptomen NIET volledig verklaard door andere medische/psychiatrische aandoeningen (comorbiditeiten kunnen aanwezig zijn)'
       ]
     },
     longCovid: {
-      title: 'Long COVID Criteria (WHO/NASEM 2024)',
-      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',
+      title: 'Long COVID Criteria (WHO 2021)',
+      description: 'Post-COVID aandoening met symptomen die beginnen binnen 3 maanden na infectie, aanhouden ≥2 maanden',
       criteria: [
-        'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',
-        'Symptomen houden ≥3 maanden aan vanaf acute ziekte',
-        'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',
-        'Symptomen niet verklaard door alternatieve diagnose'
+        'Geschiedenis van bevestigde of waarschijnlijke SARS-CoV-2 infectie',
+        'Symptomen beginnen binnen 3 maanden na aanvang infectie',
+        'Symptomen houden minstens 2 maanden aan',
+        'Veel voorkomende symptomen: vermoeidheid, kortademigheid, cognitieve disfunctie, borstpijn, hartkloppingen, post-exertionele symptoomverergering',
+        'Symptomen kunnen nieuw zijn na herstel of aanhouden vanaf initiële ziekte; kunnen fluctueren of terugkeren',
+        'Kunnen niet worden verklaard door alternatieve diagnose (na gepaste testen)'
       ],
       timing: {
         confirmed: 'Bevestigd door test',
@@ -481,14 +484,15 @@ export const nl: Translation = {
       }
     },
     pots: {
-      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',
-      description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',
+      title: 'POTS Criteria',
+      description: 'Aanhoudende HR toename ≥30 spm (volwassenen) of ≥40 spm (12-19 jaar) binnen 10 minuten van staan, duurt ≥3 maanden',
       criteria: [
-        'Hartslagtoename ≥30 spm binnen 10 minuten van staan',
-        'Aanhoudende hartslag ≥120 spm tijdens staan',
-        'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',
-        'Symptomen aanwezig voor ≥3 maanden',
-        'Afwezigheid van orthostatische hypotensie'
+        'Aanhoudende hartslagtoename ≥30 spm bij volwassenen (≥40 spm leeftijd 12-19) binnen 10 minuten van staan',
+        'Vaak absolute orthostatische tachycardie >120 spm wanneer staand',
+        'GEEN orthostatische hypotensie (SBP daling <20 mmHg, DBP daling <10 mmHg)',
+        'Chronische orthostatische intolerantie symptomen ≥3 maanden (duizeligheid, hartkloppingen, vermoeidheid, cognitieve problemen)',
+        'Symptomen verlicht door liggen',
+        'Niet beter verklaard door andere oorzaken (dehydratie, medicatie, hartziekte, bijnierinsufficiëntie)'
       ]
     },
     results: {

@@ -1,0 +1,25 @@
+{
+  "id": "prt_97133752d001MTn1eSI6SjDS3c",
+  "messageID": "msg_97131bb6c0016ly0Coim1BcWS9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "read",
+  "callID": "toolu_01DJHBNNBTGyUWmWxYA9B298",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "offset": 455,
+      "limit": 50
+    },
+    "output": "<file>\n00456|     description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n00457|     mecfs: {\n00458|         title: 'ME/CVS Criteria',\n00459|         description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n00460|       criteria: [\n00461|         'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n00462|         'Post-exertionele malaise (PEM) aanwezig',\n00463|         'Niet-verkwikkende slaap',\n00464|         'Cognitieve stoornissen (brain fog)',\n00465|         'Orthostatische intolerantie OF autonome disfunctie'\n00466|       ]\n00467|     },\n00468|     longCovid: {\n00469|       title: 'Long COVID Criteria (WHO/NASEM 2024)',\n00470|       description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n00471|       criteria: [\n00472|         'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n00473|         'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n00474|         'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n00475|         'Symptomen niet verklaard door alternatieve diagnose'\n00476|       ],\n00477|       timing: {\n00478|         confirmed: 'Bevestigd door test',\n00479|         probable: 'Waarschijnlijk gebaseerd op symptomen/blootstelling',\n00480|         suspected: 'Vermoed gebaseerd op timing'\n00481|       }\n00482|     },\n00483|     pots: {\n00484|       title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n00485|       description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',\n00486|       criteria: [\n00487|         'Hartslagtoename ≥30 spm binnen 10 minuten van staan',\n00488|         'Aanhoudende hartslag ≥120 spm tijdens staan',\n00489|         'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',\n00490|         'Symptomen aanwezig voor ≥3 maanden',\n00491|         'Afwezigheid van orthostatische hypotensie'\n00492|       ]\n00493|     },\n00494|     results: {\n00495|       complete: 'Diagnostische Criteria Beoordeling Voltooid',\n00496|       description: 'Gebaseerd op CDC, NASEM, ESC, WHO richtlijnen',\n00497|       diagnosesMet: 'Diagnoses Die Voldoen aan Criteria',\n00498|       criteriaMet: 'CRITERIA VOLDAAN',\n00499|       clinicalRecommendations: 'Klinische Aanbevelingen',\n00500|       mecfsManagement: [\n00501|         'Implementeer activiteitenpacing en energiemanagement',\n00502|         'Vermijd graded exercise therapy (GET)',\n00503|         'Overweeg symptoom-gerichte behandelingen',\n00504|         'Specialist ME/CVS kliniek verwijzing indien beschikbaar'\n00505|       ],\n\n(File has more lines. Use 'offset' parameter to read beyond line 505)\n</file>",
+    "metadata": {
+      "preview": "    description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n    mecfs: {\n        title: 'ME/CVS Criteria',\n        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n      criteria: [\n        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n        'Post-exertionele malaise (PEM) aanwezig',\n        'Niet-verkwikkende slaap',\n        'Cognitieve stoornissen (brain fog)',\n        'Orthostatische intolerantie OF autonome disfunctie'\n      ]\n    },\n    longCovid: {\n      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n      criteria: [\n        'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n        'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n        'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n        'Symptomen niet verklaard door alternatieve diagnose'"
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540822104,
+      "end": 1758540822106
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "prt_97133826e001UWRjXAa0D4mcM6",
+  "messageID": "msg_97131bb6c0016ly0Coim1BcWS9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "tool",
+  "tool": "multiedit",
+  "callID": "toolu_01XVz7pwFzNe7ZRYCc5Vo46q",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/home/user/project/lib/translations/nl.ts",
+      "edits": [
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "        title: 'ME/CVS Criteria',\n        description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n      criteria: [\n        'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n        'Post-exertionele malaise (PEM) aanwezig',\n        'Niet-verkwikkende slaap',\n        'Cognitieve stoornissen (brain fog)',\n        'Orthostatische intolerantie OF autonome disfunctie'\n      ]",
+          "newString": "        title: 'ME/CVS Criteria (ICD-10: G93.3)',\n        description: 'Gebaseerd op 2015 IOM/NAM criteria - vereist substantiële activiteitsreductie >6 maanden (volwassenen) of >3 maanden (kinderen)',\n      criteria: [\n        'Substantiële vermindering in het vermogen om deel te nemen aan pre-ziekte activiteitsniveaus, duurt >6 maanden bij volwassenen',\n        'Diepe vermoeidheid met nieuwe/definitieve aanvang (niet levenslang), niet door overmatige inspanning, niet substantieel verlicht door rust',\n        'Post-exertionele malaise (PEM): verslechtering van symptomen na fysieke/cognitieve/emotionele inspanning, vaak vertraagde aanvang en verlengd herstel',\n        'Niet-verkwikkende slaap',\n        'OFWEL cognitieve stoornissen (langzamere verwerking, geheugenproblemen, aandachtsproblemen) OF orthostatische intolerantie (symptomen verergeren bij staan)',\n        'Symptomen NIET volledig verklaard door andere medische/psychiatrische aandoeningen (comorbiditeiten kunnen aanwezig zijn)'\n      ]"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      title: 'Long COVID Criteria (WHO/NASEM 2024)',\n      description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n      criteria: [\n        'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n        'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n        'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n        'Symptomen niet verklaard door alternatieve diagnose'\n      ],",
+          "newString": "      title: 'Long COVID Criteria (WHO 2021)',\n      description: 'Post-COVID aandoening met symptomen die beginnen binnen 3 maanden na infectie, aanhouden ≥2 maanden',\n      criteria: [\n        'Geschiedenis van bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n        'Symptomen beginnen binnen 3 maanden na aanvang infectie',\n        'Symptomen houden minstens 2 maanden aan',\n        'Veel voorkomende symptomen: vermoeidheid, kortademigheid, cognitieve disfunctie, borstpijn, hartkloppingen, post-exertionele symptoomverergering',\n        'Symptomen kunnen nieuw zijn na herstel of aanhouden vanaf initiële ziekte; kunnen fluctueren of terugkeren',\n        'Kunnen niet worden verklaard door alternatieve diagnose (na gepaste testen)'\n      ],"
+        },
+        {
+          "filePath": "/home/user/project/lib/translations/nl.ts",
+          "oldString": "      title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n      description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',\n      criteria: [\n        'Hartslagtoename ≥30 spm binnen 10 minuten van staan',\n        'Aanhoudende hartslag ≥120 spm tijdens staan',\n        'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',\n        'Symptomen aanwezig voor ≥3 maanden',\n        'Afwezigheid van orthostatische hypotensie'\n      ]",
+          "newString": "      title: 'POTS Criteria',\n      description: 'Aanhoudende HR toename ≥30 spm (volwassenen) of ≥40 spm (12-19 jaar) binnen 10 minuten van staan, duurt ≥3 maanden',\n      criteria: [\n        'Aanhoudende hartslagtoename ≥30 spm bij volwassenen (≥40 spm leeftijd 12-19) binnen 10 minuten van staan',\n        'Vaak absolute orthostatische tachycardie >120 spm wanneer staand',\n        'GEEN orthostatische hypotensie (SBP daling <20 mmHg, DBP daling <10 mmHg)',\n        'Chronische orthostatische intolerantie symptomen ≥3 maanden (duizeligheid, hartkloppingen, vermoeidheid, cognitieve problemen)',\n        'Symptomen verlicht door liggen',\n        'Niet beter verklaard door andere oorzaken (dehydratie, medicatie, hartziekte, bijnierinsufficiëntie)'\n      ]"
+        }
+      ]
+    },
+    "output": "",
+    "metadata": {
+      "results": [
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -454,16 +454,17 @@\n criteria: {\n   title: 'Criteria Engine',\n   description: 'Pas CDC, NASEM, ESC, WHO diagnostische criteria toe voor definitieve bepaling',\n   mecfs: {\n-      title: 'ME/CVS Criteria',\n-      description: 'Vereist substantiële vermoeidheid, PEM, niet-verkwikkende slaap, EN cognitieve stoornissen OF orthostatische intolerantie',\n+      title: 'ME/CVS Criteria (ICD-10: G93.3)',\n+      description: 'Gebaseerd op 2015 IOM/NAM criteria - vereist substantiële activiteitsreductie >6 maanden (volwassenen) of >3 maanden (kinderen)',\n     criteria: [\n-      'Substantiële vermindering of beperking van activiteitenniveaus die ≥6 maanden aanhoudt',\n-      'Post-exertionele malaise (PEM) aanwezig',\n+      'Substantiële vermindering in het vermogen om deel te nemen aan pre-ziekte activiteitsniveaus, duurt >6 maanden bij volwassenen',\n+      'Diepe vermoeidheid met nieuwe/definitieve aanvang (niet levenslang), niet door overmatige inspanning, niet substantieel verlicht door rust',\n+      'Post-exertionele malaise (PEM): verslechtering van symptomen na fysieke/cognitieve/emotionele inspanning, vaak vertraagde aanvang en verlengd herstel',\n       'Niet-verkwikkende slaap',\n-      'Cognitieve stoornissen (brain fog)',\n-      'Orthostatische intolerantie OF autonome disfunctie'\n+      'OFWEL cognitieve stoornissen (langzamere verwerking, geheugenproblemen, aandachtsproblemen) OF orthostatische intolerantie (symptomen verergeren bij staan)',\n+      'Symptomen NIET volledig verklaard door andere medische/psychiatrische aandoeningen (comorbiditeiten kunnen aanwezig zijn)'\n     ]\n   },\n   longCovid: {\n     title: 'Long COVID Criteria (WHO/NASEM 2024)',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -466,15 +466,17 @@\n     'Symptomen NIET volledig verklaard door andere medische/psychiatrische aandoeningen (comorbiditeiten kunnen aanwezig zijn)'\n   ]\n },\n longCovid: {\n-  title: 'Long COVID Criteria (WHO/NASEM 2024)',\n-  description: 'Post-acute gevolgen van SARS-CoV-2 infectie met persistente multi-systeem symptomen',\n+  title: 'Long COVID Criteria (WHO 2021)',\n+  description: 'Post-COVID aandoening met symptomen die beginnen binnen 3 maanden na infectie, aanhouden ≥2 maanden',\n   criteria: [\n-    'Bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n-    'Symptomen houden ≥3 maanden aan vanaf acute ziekte',\n-    'Multi-systeem symptomen die dagelijks functioneren beïnvloeden',\n-    'Symptomen niet verklaard door alternatieve diagnose'\n+    'Geschiedenis van bevestigde of waarschijnlijke SARS-CoV-2 infectie',\n+    'Symptomen beginnen binnen 3 maanden na aanvang infectie',\n+    'Symptomen houden minstens 2 maanden aan',\n+    'Veel voorkomende symptomen: vermoeidheid, kortademigheid, cognitieve disfunctie, borstpijn, hartkloppingen, post-exertionele symptoomverergering',\n+    'Symptomen kunnen nieuw zijn na herstel of aanhouden vanaf initiële ziekte; kunnen fluctueren of terugkeren',\n+    'Kunnen niet worden verklaard door alternatieve diagnose (na gepaste testen)'\n   ],\n   timing: {\n     confirmed: 'Bevestigd door test',\n     probable: 'Waarschijnlijk gebaseerd op symptomen/blootstelling',\n"
+        },
+        {
+          "diagnostics": {},
+          "diff": "Index: /home/user/project/lib/translations/nl.ts\n===================================================================\n--- /home/user/project/lib/translations/nl.ts\n+++ /home/user/project/lib/translations/nl.ts\n@@ -483,16 +483,17 @@\n     suspected: 'Vermoed gebaseerd op timing'\n   }\n },\n pots: {\n-  title: 'POTS Criteria (ESC 2018/AAS-EFAS 2021)',\n-  description: 'Hartslagtoename ≥30 spm binnen 10 minuten van staan, met symptomen maar zonder orthostatische hypotensie',\n+  title: 'POTS Criteria',\n+  description: 'Aanhoudende HR toename ≥30 spm (volwassenen) of ≥40 spm (12-19 jaar) binnen 10 minuten van staan, duurt ≥3 maanden',\n   criteria: [\n-    'Hartslagtoename ≥30 spm binnen 10 minuten van staan',\n-    'Aanhoudende hartslag ≥120 spm tijdens staan',\n-    'Orthostatische symptomen (duizeligheid, hartkloppingen, vermoeidheid)',\n-    'Symptomen aanwezig voor ≥3 maanden',\n-    'Afwezigheid van orthostatische hypotensie'\n+    'Aanhoudende hartslagtoename ≥30 spm bij volwassenen (≥40 spm leeftijd 12-19) binnen 10 minuten van staan',\n+    'Vaak absolute orthostatische tachycardie >120 spm wanneer staand',\n+    'GEEN orthostatische hypotensie (SBP daling <20 mmHg, DBP daling <10 mmHg)',\n+    'Chronische orthostatische intolerantie symptomen ≥3 maanden (duizeligheid, hartkloppingen, vermoeidheid, cognitieve problemen)',\n+    'Symptomen verlicht door liggen',\n+    'Niet beter verklaard door andere oorzaken (dehydratie, medicatie, hartziekte, bijnierinsufficiëntie)'\n   ]\n },\n results: {\n   complete: 'Diagnostische Criteria Beoordeling Voltooid',\n"
+        }
+      ]
+    },
+    "title": "lib/translations/nl.ts",
+    "time": {
+      "start": 1758540848021,
+      "end": 1758540848053
+    }
+  }
+}

@@ -462,24 +462,27 @@ export const da: Translation = {
     title: 'Kriterier Motor',
     description: 'Anvend CDC, NASEM, ESC, WHO diagnostiske kriterier for endelig bestemmelse',
     mecfs: {
-        title: 'ME/CFS Kriterier',
-        description: 'Kræver betydelig træthed, PEM, ikke-forfriskende søvn, OG enten kognitiv svækkelse ELLER ortostatisk intolerance',
+        title: 'ME/CFS Kriterier (ICD-10: G93.3)',
+        description: 'Baseret på 2015 IOM/NAM kriterier - kræver betydelig aktivitetsreduktion >6 måneder (voksne) eller >3 måneder (børn)',
       criteria: [
-        'Betydelig reduktion eller svækkelse af aktivitetsniveauer, der varer ≥6 måneder',
-        'Post-exertionel utilpashed (PEM) til stede',
+        'Betydelig reduktion i evnen til at deltage i før-sygdoms aktivitetsniveauer, varer >6 måneder hos voksne',
+        'Dyb træthed med ny/bestemt begyndelse (ikke livslang), ikke fra overdreven anstrengelse, ikke væsentligt lindret af hvile',
+        'Post-exertionel utilpashed (PEM): forværring af symptomer efter fysisk/kognitiv/emotionel anstrengelse, ofte forsinket begyndelse og forlænget restitution',
         'Ikke-forfriskende søvn',
-        'Kognitiv svækkelse (hjernetåge)',
-        'Ortostatisk intolerance ELLER autonom dysfunktion'
+        'ENTEN kognitiv svækkelse (langsommere behandling, hukommelsesproblemer, opmærksomhedsdeficit) ELLER ortostatisk intolerance (symptomer forværres ved ståen)',
+        'Symptomer IKKE fuldt forklaret af andre medicinske/psykiatriske tilstande (komorbiditeter kan være til stede)'
       ]
     },
     longCovid: {
-      title: 'Lang COVID Kriterier (WHO/NASEM 2024)',
-      description: 'Post-akutte følger af SARS-CoV-2 infektion med vedvarende multi-system symptomer',
+      title: 'Lang COVID Kriterier (WHO 2021)',
+      description: 'Post-COVID tilstand med symptomer, der starter inden for 3 måneder efter infektion, varer ≥2 måneder',
       criteria: [
-        'Bekræftet eller sandsynlig SARS-CoV-2 infektion',
-        'Symptomer fortsætter ≥3 måneder fra akut sygdom',
-        'Multi-system symptomer, der påvirker daglig funktionsevne',
-        'Symptomer ikke forklaret af alternativ diagnose'
+        'Historie med bekræftet eller sandsynlig SARS-CoV-2 infektion',
+        'Symptomer starter inden for 3 måneder efter infektionsbegyndelse',
+        'Symptomer varer mindst 2 måneder',
+        'Almindelige symptomer: træthed, åndenød, kognitiv dysfunktion, brystsmerter, hjertebanken, post-exertionel symptomforværring',
+        'Symptomer kan være nye efter restitution eller fortsætte fra initial sygdom; kan fluktuere eller vende tilbage',
+        'Kan ikke forklares af alternativ diagnose (efter passende testning)'
       ],
       timing: {
         confirmed: 'Bekræftet ved test',
@@ -488,14 +491,15 @@ export const da: Translation = {
       }
     },
     pots: {
-      title: 'POTS Kriterier (ESC 2018/AAS-EFAS 2021)',
-      description: 'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå, med symptomer men uden ortostatisk hypotension',
+      title: 'POTS Kriterier',
+      description: 'Vedvarende HR stigning ≥30 spm (voksne) eller ≥40 spm (12-19 år) inden for 10 minutter af ståen, varer ≥3 måneder',
       criteria: [
-        'Hjertefrekvens stigning ≥30 slag/min inden for 10 minutter af at stå',
-        'Vedvarende hjertefrekvens ≥120 slag/min mens stående',
-        'Ortostatiske symptomer (svimmelhed, hjertebanken, træthed)',
-        'Symptomer til stede i ≥3 måneder',
-        'Fravær af ortostatisk hypotension'
+        'Vedvarende hjertefrekvens stigning ≥30 spm hos voksne (≥40 spm alder 12-19) inden for 10 minutter af ståen',
+        'Ofte absolut ortostatisk takykardi >120 spm når stående',
+        'INGEN ortostatisk hypotension (SBP fald <20 mmHg, DBP fald <10 mmHg)',
+        'Kronisk ortostatisk intolerance symptomer ≥3 måneder (svimmelhed, hjertebanken, træthed, kognitive vanskeligheder)',
+        'Symptomer lindret ved at ligge ned',
+        'Ikke bedre forklaret af andre årsager (dehydrering, medicin, hjertesygdom, binyre insufficiens)'
       ]
     },
     results: {
