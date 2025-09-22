@@ -1,0 +1,11 @@
+{
+  "id": "prt_97129ae74001D63yuPRuSYGQAK",
+  "messageID": "msg_97129a8ad001eSENa7wJ41KFw9",
+  "sessionID": "ses_6a7af0913ffePKeafEVjU8Zw0Y",
+  "type": "text",
+  "text": "# Conversation Summary\n\n## What Was Done\n- **Expanded Case Analyzer** from ME/CFS-only to comprehensive multi-framework diagnostic tool supporting:\n  - ME/CFS (clinical criteria)  \n  - POTS (ESC 2018/AAS-EFAS 2021 criteria)\n  - POTS Subtypes (Hypovolemic, Hyperadrenergic, Neuropathic, Autoimmune/PAIS)\n  - Long COVID (WHO criteria)\n- **Removed NICE NG206 branding** from multiple modules to create framework-agnostic platform\n- **Updated files:** `/app/case-analyzer/page.tsx`, `/app/criteria-engine/page.tsx`, `/app/energy-management/page.tsx`, `/app/pem-quest/page.tsx`, `/app/quick-screen/page.tsx`, and all three translation files\n\n## Current Issue\n**Remaining NICE NG206 branding spotted** in Criteria Engine's ME/CFS section:\n- Shows \"ME/CFS Criteria (NICE NG206)\" instead of generic \"ME/CFS Criteria\"\n- Makes multi-framework tool appear NICE-focused rather than framework-agnostic\n\n## Files Currently Being Modified\n- `/lib/translations/en.ts` (lines 471-472)\n- `/lib/translations/da.ts` (ME/CFS criteria section)\n- `/lib/translations/nl.ts` (ME/CFS criteria section)\n\n## What Needs to Be Done Next\n1. **Update translation files** to change:\n   - \"ME/CFS Criteria (NICE NG206)\" → \"ME/CFS Criteria\"\n   - Remove \"NICE NG206:\" prefix from diagnostic descriptions\n2. **Ensure consistency** across all three language files\n3. **Test build** to confirm no errors\n\n## Goal\nComplete transformation to truly **framework-agnostic multi-guideline diagnostic platform** where NICE NG206 is just one of many supported guidelines, not the primary focus. The app now provides equal emphasis on ME/CFS, POTS, Long COVID, and other diagnostic frameworks.",
+  "time": {
+    "start": 1758540187164,
+    "end": 1758540187164
+  }
+}
